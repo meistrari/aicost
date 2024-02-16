@@ -1,6 +1,6 @@
 {
   "name": "aicost",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An utility for calculating the cost of AI models",
   "scripts": {
     "prepublishOnly": "nr build",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
     "@types/bun": "latest",
+    "bumpp": "^9.3.0",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3",
     "unbuild": "^2.0.0"
@@ -21,7 +22,9 @@
     "typescript": "^5.0.0"
   },
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.mjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

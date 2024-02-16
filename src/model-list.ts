@@ -1,3 +1,5 @@
+// Last updated: 2024-02-16T15:04:09.753Z
+
 type AICostModel = {
     maxTokens: number | null
     name: string
@@ -15,7 +17,7 @@ export const AICostModelList = {
     'openai': [
         {
             maxTokens: 8192,
-            name: 'gpt-4',
+            name: 'gpt-4' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -24,7 +26,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'gpt-4-turbo-preview',
+            name: 'gpt-4-turbo-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -33,7 +35,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'gpt-4-0314',
+            name: 'gpt-4-0314' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -42,7 +44,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'gpt-4-0613',
+            name: 'gpt-4-0613' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -51,7 +53,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'gpt-4-32k',
+            name: 'gpt-4-32k' as const,
             type: 'chat',
             inputCost: 0.00006,
             inputCostUnit: 'token',
@@ -60,7 +62,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'gpt-4-32k-0314',
+            name: 'gpt-4-32k-0314' as const,
             type: 'chat',
             inputCost: 0.00006,
             inputCostUnit: 'token',
@@ -69,7 +71,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'gpt-4-32k-0613',
+            name: 'gpt-4-32k-0613' as const,
             type: 'chat',
             inputCost: 0.00006,
             inputCostUnit: 'token',
@@ -78,7 +80,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'gpt-4-1106-preview',
+            name: 'gpt-4-1106-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -87,7 +89,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'gpt-4-0125-preview',
+            name: 'gpt-4-0125-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -96,7 +98,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'gpt-4-vision-preview',
+            name: 'gpt-4-vision-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -105,7 +107,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'gpt-4-1106-vision-preview',
+            name: 'gpt-4-1106-vision-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -114,7 +116,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4097,
-            name: 'gpt-3.5-turbo',
+            name: 'gpt-3.5-turbo' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -123,7 +125,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4097,
-            name: 'gpt-3.5-turbo-0301',
+            name: 'gpt-3.5-turbo-0301' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -132,7 +134,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4097,
-            name: 'gpt-3.5-turbo-0613',
+            name: 'gpt-3.5-turbo-0613' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -141,7 +143,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'gpt-3.5-turbo-1106',
+            name: 'gpt-3.5-turbo-1106' as const,
             type: 'chat',
             inputCost: 0.000001,
             inputCostUnit: 'token',
@@ -150,7 +152,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'gpt-3.5-turbo-0125',
+            name: 'gpt-3.5-turbo-0125' as const,
             type: 'chat',
             inputCost: 5e-7,
             inputCostUnit: 'token',
@@ -159,7 +161,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'gpt-3.5-turbo-16k',
+            name: 'gpt-3.5-turbo-16k' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -168,7 +170,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'gpt-3.5-turbo-16k-0613',
+            name: 'gpt-3.5-turbo-16k-0613' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -177,7 +179,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4097,
-            name: 'ft:gpt-3.5-turbo',
+            name: 'ft:gpt-3.5-turbo' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -186,7 +188,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'text-embedding-3-large',
+            name: 'text-embedding-3-large' as const,
             type: 'embedding',
             inputCost: 1.3e-7,
             inputCostUnit: 'token',
@@ -195,7 +197,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'text-embedding-3-small',
+            name: 'text-embedding-3-small' as const,
             type: 'embedding',
             inputCost: 2e-8,
             inputCostUnit: 'token',
@@ -204,7 +206,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'text-embedding-ada-002',
+            name: 'text-embedding-ada-002' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -213,7 +215,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'text-embedding-ada-002-v2',
+            name: 'text-embedding-ada-002-v2' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -224,7 +226,7 @@ export const AICostModelList = {
     'azure': [
         {
             maxTokens: 128000,
-            name: 'azure/gpt-4-0125-preview',
+            name: 'azure/gpt-4-0125-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -233,7 +235,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'azure/gpt-4-1106-preview',
+            name: 'azure/gpt-4-1106-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -242,7 +244,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'azure/gpt-4-0613',
+            name: 'azure/gpt-4-0613' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -251,7 +253,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'azure/gpt-4-32k-0613',
+            name: 'azure/gpt-4-32k-0613' as const,
             type: 'chat',
             inputCost: 0.00006,
             inputCostUnit: 'token',
@@ -260,7 +262,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'azure/gpt-4-32k',
+            name: 'azure/gpt-4-32k' as const,
             type: 'chat',
             inputCost: 0.00006,
             inputCostUnit: 'token',
@@ -269,7 +271,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'azure/gpt-4',
+            name: 'azure/gpt-4' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -278,7 +280,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'azure/gpt-4-turbo',
+            name: 'azure/gpt-4-turbo' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -287,7 +289,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 128000,
-            name: 'azure/gpt-4-turbo-vision-preview',
+            name: 'azure/gpt-4-turbo-vision-preview' as const,
             type: 'chat',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -296,7 +298,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'azure/gpt-35-turbo-16k-0613',
+            name: 'azure/gpt-35-turbo-16k-0613' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -305,7 +307,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'azure/gpt-35-turbo-1106',
+            name: 'azure/gpt-35-turbo-1106' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -314,7 +316,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16385,
-            name: 'azure/gpt-35-turbo-16k',
+            name: 'azure/gpt-35-turbo-16k' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -323,7 +325,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4097,
-            name: 'azure/gpt-35-turbo',
+            name: 'azure/gpt-35-turbo' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -332,7 +334,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'azure/ada',
+            name: 'azure/ada' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -341,7 +343,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'azure/text-embedding-ada-002',
+            name: 'azure/text-embedding-ada-002' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -352,7 +354,7 @@ export const AICostModelList = {
     'text-completion-openai': [
         {
             maxTokens: 16384,
-            name: 'babbage-002',
+            name: 'babbage-002' as const,
             type: 'completion',
             inputCost: 4e-7,
             inputCostUnit: 'token',
@@ -361,7 +363,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'davinci-002',
+            name: 'davinci-002' as const,
             type: 'completion',
             inputCost: 0.000002,
             inputCostUnit: 'token',
@@ -370,7 +372,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'gpt-3.5-turbo-instruct',
+            name: 'gpt-3.5-turbo-instruct' as const,
             type: 'completion',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -381,7 +383,7 @@ export const AICostModelList = {
     'anthropic': [
         {
             maxTokens: 100000,
-            name: 'claude-instant-1',
+            name: 'claude-instant-1' as const,
             type: 'chat',
             inputCost: 0.00000163,
             inputCostUnit: 'token',
@@ -390,7 +392,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'claude-instant-1.2',
+            name: 'claude-instant-1.2' as const,
             type: 'chat',
             inputCost: 1.63e-7,
             inputCostUnit: 'token',
@@ -399,7 +401,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'claude-2',
+            name: 'claude-2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -408,7 +410,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 200000,
-            name: 'claude-2.1',
+            name: 'claude-2.1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -419,7 +421,7 @@ export const AICostModelList = {
     'mistral': [
         {
             maxTokens: 8192,
-            name: 'mistral/mistral-tiny',
+            name: 'mistral/mistral-tiny' as const,
             type: 'chat',
             inputCost: 1.5e-7,
             inputCostUnit: 'token',
@@ -428,7 +430,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'mistral/mistral-small',
+            name: 'mistral/mistral-small' as const,
             type: 'chat',
             inputCost: 6.6e-7,
             inputCostUnit: 'token',
@@ -437,7 +439,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'mistral/mistral-medium',
+            name: 'mistral/mistral-medium' as const,
             type: 'chat',
             inputCost: 0.00000273,
             inputCostUnit: 'token',
@@ -446,7 +448,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'mistral/mistral-embed',
+            name: 'mistral/mistral-embed' as const,
             type: 'embedding',
             inputCost: 1.11e-7,
             inputCostUnit: 'token',
@@ -457,7 +459,7 @@ export const AICostModelList = {
     'vertex-ai': [
         {
             maxTokens: 8192,
-            name: 'text-bison',
+            name: 'text-bison' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -466,7 +468,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'text-bison@001',
+            name: 'text-bison@001' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -475,7 +477,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'text-unicorn',
+            name: 'text-unicorn' as const,
             type: 'completion',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -484,7 +486,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'text-unicorn@001',
+            name: 'text-unicorn@001' as const,
             type: 'completion',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -493,7 +495,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'chat-bison',
+            name: 'chat-bison' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -502,7 +504,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'chat-bison@001',
+            name: 'chat-bison@001' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -511,7 +513,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'chat-bison@002',
+            name: 'chat-bison@002' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -520,7 +522,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32000,
-            name: 'chat-bison-32k',
+            name: 'chat-bison-32k' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -529,7 +531,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 6144,
-            name: 'code-bison',
+            name: 'code-bison' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -538,7 +540,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 6144,
-            name: 'code-bison@001',
+            name: 'code-bison@001' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -547,7 +549,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'code-gecko@001',
+            name: 'code-gecko@001' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -556,7 +558,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'code-gecko@002',
+            name: 'code-gecko@002' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -565,7 +567,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'code-gecko',
+            name: 'code-gecko' as const,
             type: 'completion',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -574,7 +576,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32760,
-            name: 'gemini-pro',
+            name: 'gemini-pro' as const,
             type: 'chat',
             inputCost: 2.5e-7,
             inputCostUnit: 'token',
@@ -583,7 +585,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32760,
-            name: 'gemini-1.0-pro',
+            name: 'gemini-1.0-pro' as const,
             type: 'chat',
             inputCost: 2.5e-7,
             inputCostUnit: 'token',
@@ -592,7 +594,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'gemini-pro-vision',
+            name: 'gemini-pro-vision' as const,
             type: 'chat',
             inputCost: 2.5e-7,
             inputCostUnit: 'token',
@@ -601,7 +603,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'gemini-1.0-pro-vision',
+            name: 'gemini-1.0-pro-vision' as const,
             type: 'chat',
             inputCost: 2.5e-7,
             inputCostUnit: 'token',
@@ -610,7 +612,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 3072,
-            name: 'textembedding-gecko',
+            name: 'textembedding-gecko' as const,
             type: 'embedding',
             inputCost: 6.25e-9,
             inputCostUnit: 'token',
@@ -619,7 +621,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 3072,
-            name: 'textembedding-gecko-multilingual',
+            name: 'textembedding-gecko-multilingual' as const,
             type: 'embedding',
             inputCost: 6.25e-9,
             inputCostUnit: 'token',
@@ -628,7 +630,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 3072,
-            name: 'textembedding-gecko-multilingual@001',
+            name: 'textembedding-gecko-multilingual@001' as const,
             type: 'embedding',
             inputCost: 6.25e-9,
             inputCostUnit: 'token',
@@ -637,7 +639,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 3072,
-            name: 'textembedding-gecko@001',
+            name: 'textembedding-gecko@001' as const,
             type: 'embedding',
             inputCost: 6.25e-9,
             inputCostUnit: 'token',
@@ -646,7 +648,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 3072,
-            name: 'textembedding-gecko@003',
+            name: 'textembedding-gecko@003' as const,
             type: 'embedding',
             inputCost: 6.25e-9,
             inputCostUnit: 'token',
@@ -657,7 +659,7 @@ export const AICostModelList = {
     'vertex_ai-code-chat-models': [
         {
             maxTokens: 6144,
-            name: 'codechat-bison',
+            name: 'codechat-bison' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -666,7 +668,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 6144,
-            name: 'codechat-bison@001',
+            name: 'codechat-bison@001' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -675,7 +677,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32000,
-            name: 'codechat-bison-32k',
+            name: 'codechat-bison-32k' as const,
             type: 'chat',
             inputCost: 1.25e-7,
             inputCostUnit: 'token',
@@ -686,7 +688,7 @@ export const AICostModelList = {
     'cohere': [
         {
             maxTokens: 4096,
-            name: 'command-nightly',
+            name: 'command-nightly' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -695,7 +697,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'command',
+            name: 'command' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -704,7 +706,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'command-light',
+            name: 'command-light' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -713,7 +715,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'command-medium-beta',
+            name: 'command-medium-beta' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -722,7 +724,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'command-xlarge-beta',
+            name: 'command-xlarge-beta' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -733,7 +735,7 @@ export const AICostModelList = {
     'replicate': [
         {
             maxTokens: 4096,
-            name: 'replicate/llama-2-70b-chat:2c1608e18606fad2812020dc541930f2d0495ce32eee50074220b87300bc16e1',
+            name: 'replicate/llama-2-70b-chat:2c1608e18606fad2812020dc541930f2d0495ce32eee50074220b87300bc16e1' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: null,
@@ -744,7 +746,7 @@ export const AICostModelList = {
     'openrouter': [
         {
             maxTokens: 4095,
-            name: 'openrouter/openai/gpt-3.5-turbo',
+            name: 'openrouter/openai/gpt-3.5-turbo' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -753,7 +755,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16383,
-            name: 'openrouter/openai/gpt-3.5-turbo-16k',
+            name: 'openrouter/openai/gpt-3.5-turbo-16k' as const,
             type: 'chat',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -762,7 +764,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'openrouter/openai/gpt-4',
+            name: 'openrouter/openai/gpt-4' as const,
             type: 'chat',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -771,7 +773,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'openrouter/anthropic/claude-instant-v1',
+            name: 'openrouter/anthropic/claude-instant-v1' as const,
             type: 'chat',
             inputCost: 0.00000163,
             inputCostUnit: 'token',
@@ -780,7 +782,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'openrouter/anthropic/claude-2',
+            name: 'openrouter/anthropic/claude-2' as const,
             type: 'chat',
             inputCost: 0.00001102,
             inputCostUnit: 'token',
@@ -789,7 +791,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8000,
-            name: 'openrouter/google/palm-2-chat-bison',
+            name: 'openrouter/google/palm-2-chat-bison' as const,
             type: 'chat',
             inputCost: 5e-7,
             inputCostUnit: 'token',
@@ -798,7 +800,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8000,
-            name: 'openrouter/google/palm-2-codechat-bison',
+            name: 'openrouter/google/palm-2-codechat-bison' as const,
             type: 'chat',
             inputCost: 5e-7,
             inputCostUnit: 'token',
@@ -807,7 +809,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/meta-llama/llama-2-13b-chat',
+            name: 'openrouter/meta-llama/llama-2-13b-chat' as const,
             type: 'chat',
             inputCost: 2e-7,
             inputCostUnit: 'token',
@@ -816,7 +818,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/meta-llama/llama-2-70b-chat',
+            name: 'openrouter/meta-llama/llama-2-70b-chat' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -825,7 +827,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8096,
-            name: 'openrouter/meta-llama/codellama-34b-instruct',
+            name: 'openrouter/meta-llama/codellama-34b-instruct' as const,
             type: 'chat',
             inputCost: 5e-7,
             inputCostUnit: 'token',
@@ -834,7 +836,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/nousresearch/nous-hermes-llama2-13b',
+            name: 'openrouter/nousresearch/nous-hermes-llama2-13b' as const,
             type: 'chat',
             inputCost: 2e-7,
             inputCostUnit: 'token',
@@ -843,7 +845,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8000,
-            name: 'openrouter/mancer/weaver',
+            name: 'openrouter/mancer/weaver' as const,
             type: 'chat',
             inputCost: 0.000005625,
             inputCostUnit: 'token',
@@ -852,7 +854,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'openrouter/gryphe/mythomax-l2-13b',
+            name: 'openrouter/gryphe/mythomax-l2-13b' as const,
             type: 'chat',
             inputCost: 0.000001875,
             inputCostUnit: 'token',
@@ -861,7 +863,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/jondurbin/airoboros-l2-70b-2.1',
+            name: 'openrouter/jondurbin/airoboros-l2-70b-2.1' as const,
             type: 'chat',
             inputCost: 0.000013875,
             inputCostUnit: 'token',
@@ -870,7 +872,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 6144,
-            name: 'openrouter/undi95/remm-slerp-l2-13b',
+            name: 'openrouter/undi95/remm-slerp-l2-13b' as const,
             type: 'chat',
             inputCost: 0.000001875,
             inputCostUnit: 'token',
@@ -879,7 +881,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/pygmalionai/mythalion-13b',
+            name: 'openrouter/pygmalionai/mythalion-13b' as const,
             type: 'chat',
             inputCost: 0.000001875,
             inputCostUnit: 'token',
@@ -888,7 +890,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'openrouter/mistralai/mistral-7b-instruct',
+            name: 'openrouter/mistralai/mistral-7b-instruct' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: null,
@@ -899,7 +901,7 @@ export const AICostModelList = {
     'ai21': [
         {
             maxTokens: 8192,
-            name: 'j2-ultra',
+            name: 'j2-ultra' as const,
             type: 'completion',
             inputCost: 0.000015,
             inputCostUnit: 'token',
@@ -908,7 +910,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'j2-mid',
+            name: 'j2-mid' as const,
             type: 'completion',
             inputCost: 0.00001,
             inputCostUnit: 'token',
@@ -917,7 +919,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'j2-light',
+            name: 'j2-light' as const,
             type: 'completion',
             inputCost: 0.000003,
             inputCostUnit: 'token',
@@ -928,7 +930,7 @@ export const AICostModelList = {
     'nlp_cloud': [
         {
             maxTokens: 4096,
-            name: 'dolphin',
+            name: 'dolphin' as const,
             type: 'completion',
             inputCost: 0.00002,
             inputCostUnit: 'token',
@@ -937,7 +939,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'chatdolphin',
+            name: 'chatdolphin' as const,
             type: 'chat',
             inputCost: 0.00002,
             inputCostUnit: 'token',
@@ -948,7 +950,7 @@ export const AICostModelList = {
     'aleph_alpha': [
         {
             maxTokens: 2048,
-            name: 'luminous-base',
+            name: 'luminous-base' as const,
             type: 'completion',
             inputCost: 0.00003,
             inputCostUnit: 'token',
@@ -957,7 +959,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'luminous-base-control',
+            name: 'luminous-base-control' as const,
             type: 'chat',
             inputCost: 0.0000375,
             inputCostUnit: 'token',
@@ -966,7 +968,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'luminous-extended',
+            name: 'luminous-extended' as const,
             type: 'completion',
             inputCost: 0.000045,
             inputCostUnit: 'token',
@@ -975,7 +977,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'luminous-extended-control',
+            name: 'luminous-extended-control' as const,
             type: 'chat',
             inputCost: 0.00005625,
             inputCostUnit: 'token',
@@ -984,7 +986,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'luminous-supreme',
+            name: 'luminous-supreme' as const,
             type: 'completion',
             inputCost: 0.000175,
             inputCostUnit: 'token',
@@ -993,7 +995,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'luminous-supreme-control',
+            name: 'luminous-supreme-control' as const,
             type: 'chat',
             inputCost: 0.00021875,
             inputCostUnit: 'token',
@@ -1004,7 +1006,7 @@ export const AICostModelList = {
     'bedrock': [
         {
             maxTokens: 8191,
-            name: 'ai21.j2-mid-v1',
+            name: 'ai21.j2-mid-v1' as const,
             type: 'chat',
             inputCost: 0.0000125,
             inputCostUnit: 'token',
@@ -1013,7 +1015,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8191,
-            name: 'ai21.j2-ultra-v1',
+            name: 'ai21.j2-ultra-v1' as const,
             type: 'chat',
             inputCost: 0.0000188,
             inputCostUnit: 'token',
@@ -1022,7 +1024,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8000,
-            name: 'amazon.titan-text-lite-v1',
+            name: 'amazon.titan-text-lite-v1' as const,
             type: 'chat',
             inputCost: 3e-7,
             inputCostUnit: 'token',
@@ -1031,7 +1033,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8000,
-            name: 'amazon.titan-text-express-v1',
+            name: 'amazon.titan-text-express-v1' as const,
             type: 'chat',
             inputCost: 0.0000013,
             inputCostUnit: 'token',
@@ -1040,7 +1042,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'amazon.titan-embed-text-v1',
+            name: 'amazon.titan-embed-text-v1' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -1049,7 +1051,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'anthropic.claude-v1',
+            name: 'anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1058,7 +1060,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/anthropic.claude-v1',
+            name: 'bedrock/us-east-1/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1067,7 +1069,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/anthropic.claude-v1',
+            name: 'bedrock/us-west-2/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1076,7 +1078,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/anthropic.claude-v1',
+            name: 'bedrock/ap-northeast-1/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1085,7 +1087,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1094,7 +1096,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1103,7 +1105,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/anthropic.claude-v1',
+            name: 'bedrock/eu-central-1/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1112,7 +1114,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1121,7 +1123,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1130,7 +1132,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1139,7 +1141,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1148,7 +1150,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1157,7 +1159,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v1',
+            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1166,7 +1168,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'anthropic.claude-v2',
+            name: 'anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1175,7 +1177,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/anthropic.claude-v2',
+            name: 'bedrock/us-east-1/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1184,7 +1186,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/anthropic.claude-v2',
+            name: 'bedrock/us-west-2/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1193,7 +1195,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/anthropic.claude-v2',
+            name: 'bedrock/ap-northeast-1/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1202,7 +1204,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1211,7 +1213,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1220,7 +1222,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/anthropic.claude-v2',
+            name: 'bedrock/eu-central-1/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1229,7 +1231,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1238,7 +1240,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1247,7 +1249,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1256,7 +1258,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1265,7 +1267,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1274,7 +1276,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v2',
+            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v2' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1283,7 +1285,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 200000,
-            name: 'anthropic.claude-v2:1',
+            name: 'anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1292,7 +1294,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/anthropic.claude-v2:1',
+            name: 'bedrock/us-east-1/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1301,7 +1303,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/anthropic.claude-v2:1',
+            name: 'bedrock/us-west-2/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1310,7 +1312,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/anthropic.claude-v2:1',
+            name: 'bedrock/ap-northeast-1/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1319,7 +1321,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1328,7 +1330,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1337,7 +1339,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/anthropic.claude-v2:1',
+            name: 'bedrock/eu-central-1/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: 0.000008,
             inputCostUnit: 'token',
@@ -1346,7 +1348,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1355,7 +1357,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1364,7 +1366,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1373,7 +1375,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1382,7 +1384,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1391,7 +1393,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v2:1',
+            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-v2:1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1400,7 +1402,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'anthropic.claude-instant-v1',
+            name: 'anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: 0.00000163,
             inputCostUnit: 'token',
@@ -1409,7 +1411,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/anthropic.claude-instant-v1',
+            name: 'bedrock/us-east-1/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: 8e-7,
             inputCostUnit: 'token',
@@ -1418,7 +1420,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/us-east-1/1-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1427,7 +1429,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/us-east-1/6-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1436,7 +1438,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/us-west-2/1-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1445,7 +1447,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/us-west-2/6-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1454,7 +1456,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/us-west-2/anthropic.claude-instant-v1',
+            name: 'bedrock/us-west-2/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: 8e-7,
             inputCostUnit: 'token',
@@ -1463,7 +1465,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/anthropic.claude-instant-v1',
+            name: 'bedrock/ap-northeast-1/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: 0.00000223,
             inputCostUnit: 'token',
@@ -1472,7 +1474,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1481,7 +1483,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1490,7 +1492,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/anthropic.claude-instant-v1',
+            name: 'bedrock/eu-central-1/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: 0.00000248,
             inputCostUnit: 'token',
@@ -1499,7 +1501,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/eu-central-1/1-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1508,7 +1510,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 100000,
-            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-instant-v1',
+            name: 'bedrock/eu-central-1/6-month-commitment/anthropic.claude-instant-v1' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1517,7 +1519,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'cohere.command-text-v14',
+            name: 'cohere.command-text-v14' as const,
             type: 'chat',
             inputCost: 0.0000015,
             inputCostUnit: 'token',
@@ -1526,7 +1528,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'bedrock/*/1-month-commitment/cohere.command-text-v14',
+            name: 'bedrock/*/1-month-commitment/cohere.command-text-v14' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1535,7 +1537,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'bedrock/*/6-month-commitment/cohere.command-text-v14',
+            name: 'bedrock/*/6-month-commitment/cohere.command-text-v14' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1544,7 +1546,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4000,
-            name: 'cohere.command-light-text-v14',
+            name: 'cohere.command-light-text-v14' as const,
             type: 'chat',
             inputCost: 3e-7,
             inputCostUnit: 'token',
@@ -1553,7 +1555,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'bedrock/*/1-month-commitment/cohere.command-light-text-v14',
+            name: 'bedrock/*/1-month-commitment/cohere.command-light-text-v14' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1562,7 +1564,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'bedrock/*/6-month-commitment/cohere.command-light-text-v14',
+            name: 'bedrock/*/6-month-commitment/cohere.command-light-text-v14' as const,
             type: 'chat',
             inputCost: null,
             inputCostUnit: null,
@@ -1571,7 +1573,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 512,
-            name: 'cohere.embed-english-v3',
+            name: 'cohere.embed-english-v3' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -1580,7 +1582,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 512,
-            name: 'cohere.embed-multilingual-v3',
+            name: 'cohere.embed-multilingual-v3' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -1589,7 +1591,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'meta.llama2-13b-chat-v1',
+            name: 'meta.llama2-13b-chat-v1' as const,
             type: 'chat',
             inputCost: 7.5e-7,
             inputCostUnit: 'token',
@@ -1598,7 +1600,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'meta.llama2-70b-chat-v1',
+            name: 'meta.llama2-70b-chat-v1' as const,
             type: 'chat',
             inputCost: 0.00000195,
             inputCostUnit: 'token',
@@ -1609,7 +1611,7 @@ export const AICostModelList = {
     'sagemaker': [
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-7b',
+            name: 'sagemaker/meta-textgeneration-llama-2-7b' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1618,7 +1620,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-7b-f',
+            name: 'sagemaker/meta-textgeneration-llama-2-7b-f' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: null,
@@ -1627,7 +1629,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-13b',
+            name: 'sagemaker/meta-textgeneration-llama-2-13b' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1636,7 +1638,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-13b-f',
+            name: 'sagemaker/meta-textgeneration-llama-2-13b-f' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: null,
@@ -1645,7 +1647,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-70b',
+            name: 'sagemaker/meta-textgeneration-llama-2-70b' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1654,7 +1656,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'sagemaker/meta-textgeneration-llama-2-70b-b-f',
+            name: 'sagemaker/meta-textgeneration-llama-2-70b-b-f' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: null,
@@ -1665,7 +1667,7 @@ export const AICostModelList = {
     'ollama': [
         {
             maxTokens: 4096,
-            name: 'ollama/llama2',
+            name: 'ollama/llama2' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1674,7 +1676,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'ollama/llama2:13b',
+            name: 'ollama/llama2:13b' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1683,7 +1685,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'ollama/llama2:70b',
+            name: 'ollama/llama2:70b' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1692,7 +1694,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'ollama/llama2-uncensored',
+            name: 'ollama/llama2-uncensored' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1701,7 +1703,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'ollama/mistral',
+            name: 'ollama/mistral' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1710,7 +1712,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'ollama/codellama',
+            name: 'ollama/codellama' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1719,7 +1721,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'ollama/orca-mini',
+            name: 'ollama/orca-mini' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1728,7 +1730,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'ollama/vicuna',
+            name: 'ollama/vicuna' as const,
             type: 'completion',
             inputCost: 0,
             inputCostUnit: null,
@@ -1739,7 +1741,7 @@ export const AICostModelList = {
     'deepinfra': [
         {
             maxTokens: 4096,
-            name: 'deepinfra/lizpreciatior/lzlv_70b_fp16_hf',
+            name: 'deepinfra/lizpreciatior/lzlv_70b_fp16_hf' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1748,7 +1750,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/Gryphe/MythoMax-L2-13b',
+            name: 'deepinfra/Gryphe/MythoMax-L2-13b' as const,
             type: 'chat',
             inputCost: 2.2e-7,
             inputCostUnit: 'token',
@@ -1757,7 +1759,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'deepinfra/mistralai/Mistral-7B-Instruct-v0.1',
+            name: 'deepinfra/mistralai/Mistral-7B-Instruct-v0.1' as const,
             type: 'chat',
             inputCost: 1.3e-7,
             inputCostUnit: 'token',
@@ -1766,7 +1768,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/meta-llama/Llama-2-70b-chat-hf',
+            name: 'deepinfra/meta-llama/Llama-2-70b-chat-hf' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1775,7 +1777,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'deepinfra/cognitivecomputations/dolphin-2.6-mixtral-8x7b',
+            name: 'deepinfra/cognitivecomputations/dolphin-2.6-mixtral-8x7b' as const,
             type: 'chat',
             inputCost: 2.7e-7,
             inputCostUnit: 'token',
@@ -1784,7 +1786,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/codellama/CodeLlama-34b-Instruct-hf',
+            name: 'deepinfra/codellama/CodeLlama-34b-Instruct-hf' as const,
             type: 'chat',
             inputCost: 6e-7,
             inputCostUnit: 'token',
@@ -1793,7 +1795,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/deepinfra/mixtral',
+            name: 'deepinfra/deepinfra/mixtral' as const,
             type: 'completion',
             inputCost: 2.7e-7,
             inputCostUnit: 'token',
@@ -1802,7 +1804,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/Phind/Phind-CodeLlama-34B-v2',
+            name: 'deepinfra/Phind/Phind-CodeLlama-34B-v2' as const,
             type: 'chat',
             inputCost: 6e-7,
             inputCostUnit: 'token',
@@ -1811,7 +1813,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1',
+            name: 'deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1' as const,
             type: 'chat',
             inputCost: 2.7e-7,
             inputCostUnit: 'token',
@@ -1820,7 +1822,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/deepinfra/airoboros-70b',
+            name: 'deepinfra/deepinfra/airoboros-70b' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1829,7 +1831,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/01-ai/Yi-34B-Chat',
+            name: 'deepinfra/01-ai/Yi-34B-Chat' as const,
             type: 'chat',
             inputCost: 6e-7,
             inputCostUnit: 'token',
@@ -1838,7 +1840,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/01-ai/Yi-6B-200K',
+            name: 'deepinfra/01-ai/Yi-6B-200K' as const,
             type: 'completion',
             inputCost: 1.3e-7,
             inputCostUnit: 'token',
@@ -1847,7 +1849,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/jondurbin/airoboros-l2-70b-gpt4-1.4.1',
+            name: 'deepinfra/jondurbin/airoboros-l2-70b-gpt4-1.4.1' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1856,7 +1858,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/meta-llama/Llama-2-13b-chat-hf',
+            name: 'deepinfra/meta-llama/Llama-2-13b-chat-hf' as const,
             type: 'chat',
             inputCost: 2.2e-7,
             inputCostUnit: 'token',
@@ -1865,7 +1867,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 32768,
-            name: 'deepinfra/amazon/MistralLite',
+            name: 'deepinfra/amazon/MistralLite' as const,
             type: 'chat',
             inputCost: 2e-7,
             inputCostUnit: 'token',
@@ -1874,7 +1876,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/meta-llama/Llama-2-7b-chat-hf',
+            name: 'deepinfra/meta-llama/Llama-2-7b-chat-hf' as const,
             type: 'chat',
             inputCost: 1.3e-7,
             inputCostUnit: 'token',
@@ -1883,7 +1885,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/01-ai/Yi-34B-200K',
+            name: 'deepinfra/01-ai/Yi-34B-200K' as const,
             type: 'completion',
             inputCost: 6e-7,
             inputCostUnit: 'token',
@@ -1892,7 +1894,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'deepinfra/openchat/openchat_3.5',
+            name: 'deepinfra/openchat/openchat_3.5' as const,
             type: 'chat',
             inputCost: 1.3e-7,
             inputCostUnit: 'token',
@@ -1903,7 +1905,7 @@ export const AICostModelList = {
     'perplexity': [
         {
             maxTokens: 16384,
-            name: 'perplexity/codellama-34b-instruct',
+            name: 'perplexity/codellama-34b-instruct' as const,
             type: 'chat',
             inputCost: 3.5e-7,
             inputCostUnit: 'token',
@@ -1912,7 +1914,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'perplexity/codellama-70b-instruct',
+            name: 'perplexity/codellama-70b-instruct' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1921,7 +1923,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'perplexity/pplx-7b-chat',
+            name: 'perplexity/pplx-7b-chat' as const,
             type: 'chat',
             inputCost: 7e-8,
             inputCostUnit: 'token',
@@ -1930,7 +1932,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/pplx-70b-chat',
+            name: 'perplexity/pplx-70b-chat' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1939,7 +1941,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/pplx-7b-online',
+            name: 'perplexity/pplx-7b-online' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: 'request',
@@ -1948,7 +1950,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/pplx-70b-online',
+            name: 'perplexity/pplx-70b-online' as const,
             type: 'chat',
             inputCost: 0,
             inputCostUnit: 'request',
@@ -1957,7 +1959,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/llama-2-70b-chat',
+            name: 'perplexity/llama-2-70b-chat' as const,
             type: 'chat',
             inputCost: 7e-7,
             inputCostUnit: 'token',
@@ -1966,7 +1968,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/mistral-7b-instruct',
+            name: 'perplexity/mistral-7b-instruct' as const,
             type: 'chat',
             inputCost: 7e-8,
             inputCostUnit: 'token',
@@ -1975,7 +1977,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'perplexity/mixtral-8x7b-instruct',
+            name: 'perplexity/mixtral-8x7b-instruct' as const,
             type: 'chat',
             inputCost: 7e-8,
             inputCostUnit: 'token',
@@ -1986,7 +1988,7 @@ export const AICostModelList = {
     'anyscale': [
         {
             maxTokens: 16384,
-            name: 'anyscale/mistralai/Mistral-7B-Instruct-v0.1',
+            name: 'anyscale/mistralai/Mistral-7B-Instruct-v0.1' as const,
             type: 'chat',
             inputCost: 1.5e-7,
             inputCostUnit: 'token',
@@ -1995,7 +1997,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'anyscale/HuggingFaceH4/zephyr-7b-beta',
+            name: 'anyscale/HuggingFaceH4/zephyr-7b-beta' as const,
             type: 'chat',
             inputCost: 1.5e-7,
             inputCostUnit: 'token',
@@ -2004,7 +2006,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'anyscale/meta-llama/Llama-2-7b-chat-hf',
+            name: 'anyscale/meta-llama/Llama-2-7b-chat-hf' as const,
             type: 'chat',
             inputCost: 1.5e-7,
             inputCostUnit: 'token',
@@ -2013,7 +2015,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'anyscale/meta-llama/Llama-2-13b-chat-hf',
+            name: 'anyscale/meta-llama/Llama-2-13b-chat-hf' as const,
             type: 'chat',
             inputCost: 2.5e-7,
             inputCostUnit: 'token',
@@ -2022,7 +2024,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'anyscale/meta-llama/Llama-2-70b-chat-hf',
+            name: 'anyscale/meta-llama/Llama-2-70b-chat-hf' as const,
             type: 'chat',
             inputCost: 0.000001,
             inputCostUnit: 'token',
@@ -2031,7 +2033,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 16384,
-            name: 'anyscale/codellama/CodeLlama-34b-Instruct-hf',
+            name: 'anyscale/codellama/CodeLlama-34b-Instruct-hf' as const,
             type: 'chat',
             inputCost: 0.000001,
             inputCostUnit: 'token',
@@ -2042,7 +2044,7 @@ export const AICostModelList = {
     'cloudflare': [
         {
             maxTokens: 3072,
-            name: 'cloudflare/@cf/meta/llama-2-7b-chat-fp16',
+            name: 'cloudflare/@cf/meta/llama-2-7b-chat-fp16' as const,
             type: 'chat',
             inputCost: 0.000001923,
             inputCostUnit: 'token',
@@ -2051,7 +2053,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 2048,
-            name: 'cloudflare/@cf/meta/llama-2-7b-chat-int8',
+            name: 'cloudflare/@cf/meta/llama-2-7b-chat-int8' as const,
             type: 'chat',
             inputCost: 0.000001923,
             inputCostUnit: 'token',
@@ -2060,7 +2062,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 8192,
-            name: 'cloudflare/@cf/mistral/mistral-7b-instruct-v0.1',
+            name: 'cloudflare/@cf/mistral/mistral-7b-instruct-v0.1' as const,
             type: 'chat',
             inputCost: 0.000001923,
             inputCostUnit: 'token',
@@ -2069,7 +2071,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'cloudflare/@hf/thebloke/codellama-7b-instruct-awq',
+            name: 'cloudflare/@hf/thebloke/codellama-7b-instruct-awq' as const,
             type: 'chat',
             inputCost: 0.000001923,
             inputCostUnit: 'token',
@@ -2080,7 +2082,7 @@ export const AICostModelList = {
     'voyage': [
         {
             maxTokens: 4096,
-            name: 'voyage/voyage-01',
+            name: 'voyage/voyage-01' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -2089,7 +2091,7 @@ export const AICostModelList = {
         },
         {
             maxTokens: 4096,
-            name: 'voyage/voyage-lite-01',
+            name: 'voyage/voyage-lite-01' as const,
             type: 'embedding',
             inputCost: 1e-7,
             inputCostUnit: 'token',
@@ -2097,4 +2099,4 @@ export const AICostModelList = {
             outputCostUnit: null,
         },
     ],
-} as Record<AICostModelProvider, AICostModel[]>
+} as const

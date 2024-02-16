@@ -1,15 +1,69 @@
-# llmcost
+# aicost
+A simple, efficient library for calculating AI model costs across various providers. It's completely type safe.
 
-To install dependencies:
-
+## Installation
 ```bash
-bun install
+npm install aicost
 ```
 
-To run:
+## Usage
+### Calculate Cost
+Calculate the cost of using an AI model based on input and output amounts.
 
-```bash
-bun run index.ts
+```ts
+import { calculateCost } from 'aicost'
+
+const cost = calculateCost({
+    provider: 'openai',
+    model: 'gpt-3.5-turbo',
+    inputAmount: 6032,
+    outputAmount: 1238
+})
+
+console.log(cost)
+```
+```js
+{
+  inputCost: 0.18096,
+  outputCost: 0.07428,
+  inputCostUnit: "token",
+  outputCostUnit: "token",
+}
 ```
 
-This project was created using `bun init` in bun v1.0.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### Get information for a model
+Retrieve detailed information about a specific AI model.
+
+```javascript
+import { getModelInfo } from 'aicost'
+
+const modelInfo = getModelInfo({
+    provider: 'YourProviderName',
+    model: 'YourModelName'
+})
+
+console.log(modelInfo)
+
+```
+
+### List supported providers
+List all available AI model providers.
+
+```javascript
+import { getProviderList } from 'aicost'
+
+const providers = getProviderList()
+
+console.log(providers)
+```
+
+### List supported models from a provider
+Get a list of all models offered by a specific provider.
+
+```javascript
+import { getModelList } from 'aicost'
+
+const models = getModelList('YourProviderName')
+
+console.log(models)
+```

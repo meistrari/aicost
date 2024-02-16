@@ -73,6 +73,10 @@ type AICostModel = {
 
 modelListFileContent += modelType
 modelListFileContent += `export type AICostModelProvider = ${providerTypeUnion}\n\n`
-modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${JSON.stringify(modelPerProvider, null, 4)} as Record<AICostModelProvider, AICostModel[]>\n\n`
+
+const modelPerProviderContent = JSON.stringify(modelPerProvider, null, 4)
+    .replace(/"name": "([^"]+)"/g, '"name": "$1" as const')
+
+modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as Record<AICostModelProvider, AICostModel[]>\n\n`
 
 await $`echo ${modelListFileContent} > src/model-list.ts`

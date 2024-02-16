@@ -1,9 +1,9 @@
 import type { AICostModelProvider } from './model-list'
 import { AICostModelList } from './model-list'
 
-export function calculateCost(options: {
-    provider: AICostModelProvider
-    model: string
+export function calculateCost<P extends AICostModelProvider>(options: {
+    provider: P
+    model: typeof AICostModelList[P][number]['name']
     inputAmount: number
     outputAmount?: number
 }) {
@@ -14,8 +14,10 @@ export function calculateCost(options: {
 
     const { inputCost, outputCost } = modelInfo
 
-    const resolvedInputCost = (inputCost ?? 0) * options.inputAmount
-    const resolvedOutputCost = (outputCost ?? 0) * (options.outputAmount ?? 0)
+    const precision = 10000000000
+
+    const resolvedInputCost = Math.round(((inputCost ?? 0) * precision) * options.inputAmount) / precision
+    const resolvedOutputCost = Math.round(((outputCost ?? 0) * precision) * (options.outputAmount ?? 0)) / precision
 
     return {
         inputCost: resolvedInputCost,
