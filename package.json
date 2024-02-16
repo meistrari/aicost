@@ -1,0 +1,35 @@
+{
+  "name": "aicost",
+  "version": "0.0.1",
+  "description": "An utility for calculating the cost of AI models",
+  "scripts": {
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "build": "unbuild"
+  },
+  "keywords": [],
+  "author": "Henrique Cunha <henrique@meistrari.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.4",
+    "@types/bun": "latest",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "files": ["dist"],
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  }
+}
