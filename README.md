@@ -68,4 +68,4 @@ console.log(models)
 ```
 
 ## Credits
-The information present on this package is extracted from the amazing work done at [LiteLLM](https://github.com/BerriAI/litellm/), if you're using python, check them out!
+The information present on this package is extracted from the amazing work done at [*LiteLLM ↗*](https://github.com/BerriAI/litellm/), if you're using python, check them out!
