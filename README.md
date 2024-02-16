@@ -22,7 +22,7 @@ const cost = calculateCost({
 
 console.log(cost)
 ```
-```js
+```ts
 {
   inputCost: 0.18096,
   outputCost: 0.07428,
@@ -34,7 +34,7 @@ console.log(cost)
 ### Get information for a model
 Retrieve detailed information about a specific AI model.
 
-```javascript
+```ts
 import { getModelInfo } from 'aicost'
 
 const modelInfo = getModelInfo({
@@ -48,7 +48,7 @@ console.log(modelInfo)
 ### List supported providers
 List all available AI model providers.
 
-```javascript
+```ts
 import { getProviderList } from 'aicost'
 
 const providers = getProviderList()
@@ -59,7 +59,7 @@ console.log(providers.includes('anthropic'))
 ### List supported models from a provider
 Get a list of all models offered by a specific provider.
 
-```javascript
+```ts
 import { getModelList } from 'aicost'
 
 const models = getModelList('cohere')
