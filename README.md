@@ -38,12 +38,11 @@ Retrieve detailed information about a specific AI model.
 import { getModelInfo } from 'aicost'
 
 const modelInfo = getModelInfo({
-    provider: 'YourProviderName',
-    model: 'YourModelName'
+    provider: 'openai',
+    model: 'gpt-4'
 })
 
 console.log(modelInfo)
-
 ```
 
 ### List supported providers
@@ -54,7 +53,7 @@ import { getProviderList } from 'aicost'
 
 const providers = getProviderList()
 
-console.log(providers)
+console.log(providers.includes('anthropic'))
 ```
 
 ### List supported models from a provider
@@ -63,7 +62,10 @@ Get a list of all models offered by a specific provider.
 ```javascript
 import { getModelList } from 'aicost'
 
-const models = getModelList('YourProviderName')
+const models = getModelList('cohere')
 
 console.log(models)
 ```
+
+## Credits
+The information present on this package is extracted from the amazing work done at (LiteLLM)[https://github.com/BerriAI/litellm/], if you're using python, check them out!
