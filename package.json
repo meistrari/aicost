@@ -1,11 +1,11 @@
 {
   "name": "aicost",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An utility for calculating the cost of AI models",
   "scripts": {
     "prepublishOnly": "nr build",
     "release": "bunx bumpp && npm publish",
-    "build": "unbuild",
+    "build": "bunx unbuild",
     "index": "bun run scripts/index-model-info.ts"
   },
   "keywords": [],
