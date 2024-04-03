@@ -1,11 +1,12 @@
 {
   "name": "aicost",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An utility for calculating the cost of AI models",
   "scripts": {
     "prepublishOnly": "nr build",
-    "release": "bumpp && npm publish",
-    "build": "unbuild"
+    "release": "bunx bumpp && npm publish",
+    "build": "unbuild",
+    "index": "bun run scripts/index-model-info.ts"
   },
   "keywords": [],
   "author": "Henrique Cunha <henrique@meistrari.com>",
