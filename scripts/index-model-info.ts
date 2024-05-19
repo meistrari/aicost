@@ -56,14 +56,19 @@ const modelPerProvider = modelList.reduce((acc, { model, name }) => {
     return acc
 }, {} as Record<string, any>)
 
-let modelListFileContent = `// Last updated: ${new Date().toISOString()}\n\n`
-
 const providerTypeUnion = Object.keys(modelPerProvider).map(provider => `'${provider}'`).join(' | ')
 
-modelListFileContent += `export type AICostModelProvider = ${providerTypeUnion}\n\n`
+let modelListFileContent = `export type AICostModelProvider = ${providerTypeUnion}\n\n`
 
 const modelPerProviderContent = JSON.stringify(modelPerProvider, null, 4)
 
-modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as const\n\n`
+modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as const`
 
-await $`echo ${modelListFileContent} > src/model-list.ts`
+const oldModelListFileContent = (await Bun.file('src/model-list.ts').text()).split('\n').slice(2).join('\n').trim()
+
+if (oldModelListFileContent !== modelListFileContent) {
+    modelListFileContent = `// Last updated: ${new Date().toISOString()}\n\n${modelListFileContent}`
+    await $`echo ${modelListFileContent} > src/model-list.ts`
+} else {
+    console.log('No changes detected!')
+}
