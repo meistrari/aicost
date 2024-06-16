@@ -1,6 +1,36 @@
 import type { AICostModelProvider } from './model-list'
 import { AICostModelList } from './model-list'
 
+let cachedList: any = null
+let lastFetchTime: number | null = null
+
+/**
+ * Fetches the list of available AI model providers 
+ * and their associated model information.
+ * 
+ * - It first fetches from the latest version of the
+ * list from the github repository.
+ * - If the list couldn't be fetched, it falls back to
+ * the static list imported from the package itself. 
+ * 
+ * @returns The list of available AI model providers and their associated model information.
+ */
+export async function getAICostModelList() {
+    const now = Date.now()
+    const thirtyMinutes = 30 * 60 * 1000
+
+    if (cachedList && lastFetchTime && (now - lastFetchTime < thirtyMinutes)) {
+        return cachedList
+    }
+
+    cachedList = await fetch('https://raw.githubusercontent.com/meistrari/aicost/main/model-list.json')
+        .then(res => res.json() as any)
+        .catch(() => AICostModelList)
+
+    lastFetchTime = now
+    return cachedList
+}
+
 export function calculateCost<P extends AICostModelProvider>(options: {
     provider: P
     model: typeof AICostModelList[P][number]['name']

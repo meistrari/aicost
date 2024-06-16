@@ -1,7 +1,7 @@
 import { $ } from 'bun'
 
 const modelIndex = await fetch('https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json')
-    .then(res => res.json())
+    .then(res => res.json() as any)
 
 const modelList = Object.entries(modelIndex).map(([name, model]) => {
     return { name, model: model as any }
@@ -56,7 +56,12 @@ const modelPerProvider = modelList.reduce((acc, { model, name }) => {
     return acc
 }, {} as Record<string, any>)
 
-let modelListFileContent = `// Last updated: ${new Date().toISOString()}\n\n`
+let modelListFileContent = [
+    `// Last updated: ${new Date().toISOString()}`,
+    `// Next update: ${new Date(new Date().getTime() + (6 * 60 * 60 * 1000)).toISOString()}`,
+    '\n',
+].join('\n')
+
 
 const providerTypeUnion = Object.keys(modelPerProvider).map(provider => `'${provider}'`).join(' | ')
 
@@ -67,3 +72,4 @@ const modelPerProviderContent = JSON.stringify(modelPerProvider, null, 4)
 modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as const\n\n`
 
 await $`echo ${modelListFileContent} > src/model-list.ts`
+await $`echo ${modelPerProviderContent} > model-list.json`
