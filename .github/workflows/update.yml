@@ -3,7 +3,7 @@ name: Update model list
 on:
   schedule:
     - cron: "0 */6 * * *"
-    
+
 jobs:
   update:
     name: Update model list
@@ -30,11 +30,9 @@ jobs:
     - name: Update model list
       run: bun run scripts/index-model-info.ts
 
-
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "chore: update model list"
         commit_user_name: mojo-jojo-bot[bot]
         commit_user_email: "${{ secrets.BOT_ID }}+mojo-jojo-bot[bot][bot]@users.noreply.github.com"
-        push_options: --force
