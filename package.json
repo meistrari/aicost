@@ -1,6 +1,6 @@
 {
   "name": "aicost",
-  "version": "0.1.4",
+  "version": "1.0.0",
   "description": "An utility for calculating the cost of AI models",
   "scripts": {
     "prepublishOnly": "nr build",
