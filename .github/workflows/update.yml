@@ -1,0 +1,40 @@
+name: Update model list
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  update:
+    name: Update model list
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Get Token
+      id: auth
+      uses: peter-murray/workflow-application-token-action@e8782d687a306fb13d733244d0f2a50e272d3752 # pin@v1
+      with:
+        application_id: ${{ secrets.BOT_ID }}
+        application_private_key: ${{ secrets.BOT_PRIVATE_KEY }}
+
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.auth.outputs.token }}
+
+    - name: Setup Bun
+      uses: oven-sh/setup-bun@v1
+
+
+    - name: Update model list
+      run: bun run scripts/index-model-info.ts
+
+
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "chore: update model list"
+        commit_user_name: mojo-jojo-bot[bot]
+        commit_user_email: "${{ secrets.BOT_ID }}+mojo-jojo-bot[bot][bot]@users.noreply.github.com"
+        push_options: --force
