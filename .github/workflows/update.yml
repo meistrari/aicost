@@ -1,9 +1,9 @@
 name: Update model list
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-
+  schedule:
+    - cron: "0 */6 * * *"
+    
 jobs:
   update:
     name: Update model list
