@@ -17,14 +17,18 @@ let lastFetchTime: number | null = null
  */
 export async function getAICostModelList() {
     const now = Date.now()
-    const thirtyMinutes = 30 * 60 * 1000
+    const ttl = 30 * 60 * 1000
 
-    if (cachedList && lastFetchTime && (now - lastFetchTime < thirtyMinutes)) {
+    if (cachedList && lastFetchTime && (now - lastFetchTime < ttl)) {
         return cachedList as typeof AICostModelList
     }
 
     cachedList = await fetch('https://raw.githubusercontent.com/meistrari/aicost/main/model-list.json')
         .then(res => res.json() as any)
+        .then(res => {
+            console.log('Fetched list from github')
+            return res
+        })
         .catch(() => AICostModelList)
 
     lastFetchTime = now
