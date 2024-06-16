@@ -20,7 +20,7 @@ export async function getAICostModelList() {
     const thirtyMinutes = 30 * 60 * 1000
 
     if (cachedList && lastFetchTime && (now - lastFetchTime < thirtyMinutes)) {
-        return cachedList
+        return cachedList as typeof AICostModelList
     }
 
     cachedList = await fetch('https://raw.githubusercontent.com/meistrari/aicost/main/model-list.json')
@@ -28,16 +28,17 @@ export async function getAICostModelList() {
         .catch(() => AICostModelList)
 
     lastFetchTime = now
-    return cachedList
+    return cachedList as typeof AICostModelList
 }
 
-export function calculateCost<P extends AICostModelProvider>(options: {
+export async function calculateCost<P extends AICostModelProvider>(options: {
     provider: P
     model: typeof AICostModelList[P][number]['name']
     inputAmount: number
     outputAmount?: number
 }) {
-    const modelInfo = AICostModelList[options.provider].find(m => m.name === options.model)
+    const modelList = await getAICostModelList()
+    const modelInfo = modelList[options.provider].find(m => m.name === options.model)
 
     if (!modelInfo)
         throw new Error(`Model ${options.model} not found for provider ${options.provider}`)
@@ -57,17 +58,20 @@ export function calculateCost<P extends AICostModelProvider>(options: {
     }
 }
 
-export function getModelInfo(options: {
+export async function getModelInfo(options: {
     provider: AICostModelProvider
     model: string
 }) {
-    return AICostModelList[options.provider].find(m => m.name === options.model)
+    const modelList = await getAICostModelList()
+    return modelList[options.provider].find(m => m.name === options.model)
 }
 
-export function getProviderList() {
-    return Object.keys(AICostModelList) as AICostModelProvider[]
+export async function getProviderList() {
+    const modelList = await getAICostModelList()
+    return Object.keys(modelList) as AICostModelProvider[]
 }
 
-export function getModelList(provider: AICostModelProvider) {
-    return AICostModelList[provider]
+export async function getModelList(provider: AICostModelProvider) {
+    const modelList = await getAICostModelList()
+    return modelList[provider]
 }
