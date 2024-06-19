@@ -943,6 +943,15 @@
         },
         {
             "maxTokens": 8192,
+            "name": "gemini-1.5-flash",
+            "type": "chat",
+            "inputCost": 3.125e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9.375e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "gemini-1.5-flash-001",
             "type": "chat",
             "inputCost": 3.125e-8,
