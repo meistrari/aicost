@@ -208,6 +208,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4096,
+            "name": "ft:gpt-4-0613",
+            "type": "chat",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "ft:gpt-4o-2024-05-13",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8191,
             "name": "text-embedding-3-large",
             "type": "embedding",
@@ -900,108 +918,108 @@
             "maxTokens": 8192,
             "name": "gemini-pro",
             "type": "chat",
-            "inputCost": 3.125e-8,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.0-pro",
             "type": "chat",
-            "inputCost": 3.125e-8,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.0-pro-001",
             "type": "chat",
-            "inputCost": 3.125e-8,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.0-pro-002",
             "type": "chat",
-            "inputCost": 3.125e-8,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro",
             "type": "chat",
-            "inputCost": 3.125e-7,
+            "inputCost": 0.000005,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "gemini-1.5-flash",
-            "type": "chat",
-            "inputCost": 3.125e-8,
-            "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "gemini-1.5-flash-001",
-            "type": "chat",
-            "inputCost": 3.125e-8,
-            "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "gemini-1.5-flash-preview-0514",
-            "type": "chat",
-            "inputCost": 3.125e-8,
-            "inputCostUnit": "token",
-            "outputCost": 9.375e-8,
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-001",
             "type": "chat",
-            "inputCost": 3.125e-7,
+            "inputCost": 0.000005,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-7,
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0514",
             "type": "chat",
-            "inputCost": 3.125e-7,
+            "inputCost": 0.000005,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-7,
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0215",
             "type": "chat",
-            "inputCost": 3.125e-7,
+            "inputCost": 0.000005,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-7,
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0409",
             "type": "chat",
-            "inputCost": 3.125e-7,
+            "inputCost": 0.000005,
             "inputCostUnit": "token",
-            "outputCost": 9.375e-7,
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.5-flash",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.5-flash-001",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.5-flash-preview-0514",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
