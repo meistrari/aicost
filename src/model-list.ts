@@ -1,5 +1,5 @@
-// Last updated: 2024-06-20T12:05:00.087Z
-// Next update: 2024-06-20T18:05:00.087Z
+// Last updated: 2024-06-20T18:04:27.207Z
+// Next update: 2024-06-21T00:04:27.207Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'groq' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -605,6 +605,15 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "claude-3-5-sonnet-20240620",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
         }
     ],
     "mistral": [
@@ -1187,6 +1196,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-5-sonnet@20240620",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "vertex_ai/claude-3-haiku@20240307",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -1400,6 +1418,15 @@ export const AICostModelList = {
         }
     ],
     "openrouter": [
+        {
+            "maxTokens": 4096,
+            "name": "openrouter/deepseek/deepseek-coder",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 65536,
             "name": "openrouter/microsoft/wizardlm-2-8x22b:nitro",
@@ -2005,6 +2032,15 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "anthropic.claude-3-sonnet-20240229-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
