@@ -805,6 +805,35 @@
             "outputCostUnit": "token"
         }
     ],
+    "friendliai": [
+        {
+            "maxTokens": 32768,
+            "name": "friendliai/mixtral-8x7b-instruct-v0-1",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "friendliai/meta-llama-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "friendliai/meta-llama-3-70b-instruct",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        }
+    ],
     "vertex-ai": [
         {
             "maxTokens": 1024,

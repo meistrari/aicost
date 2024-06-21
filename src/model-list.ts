@@ -1,7 +1,7 @@
-// Last updated: 2024-06-21T00:12:24.984Z
-// Next update: 2024-06-21T06:12:24.984Z
+// Last updated: 2024-06-21T06:04:22.739Z
+// Next update: 2024-06-21T12:04:22.739Z
 
-export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'groq' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -808,6 +808,35 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        }
+    ],
+    "friendliai": [
+        {
+            "maxTokens": 32768,
+            "name": "friendliai/mixtral-8x7b-instruct-v0-1",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "friendliai/meta-llama-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "friendliai/meta-llama-3-70b-instruct",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
             "outputCostUnit": "token"
         }
     ],
