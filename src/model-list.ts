@@ -1,5 +1,5 @@
-// Last updated: 2024-06-25T12:05:09.838Z
-// Next update: 2024-06-25T18:05:09.838Z
+// Last updated: 2024-06-25T18:05:08.575Z
+// Next update: 2024-06-26T00:05:08.575Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -780,7 +780,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 1e-7,
+            "outputCost": 8e-8,
             "outputCostUnit": "token"
         },
         {
@@ -796,18 +796,18 @@ export const AICostModelList = {
             "maxTokens": 32768,
             "name": "groq/mixtral-8x7b-32768",
             "type": "chat",
-            "inputCost": 2.7e-7,
+            "inputCost": 2.4e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.7e-7,
+            "outputCost": 2.4e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "groq/gemma-7b-it",
             "type": "chat",
-            "inputCost": 1e-7,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 1e-7,
+            "outputCost": 7e-8,
             "outputCostUnit": "token"
         }
     ],
