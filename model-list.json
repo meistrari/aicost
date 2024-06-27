@@ -2759,6 +2759,15 @@
     ],
     "ollama": [
         {
+            "maxTokens": 8192,
+            "name": "ollama/codegemma",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 4096,
             "name": "ollama/llama2",
             "type": "completion",
