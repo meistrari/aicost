@@ -1,7 +1,7 @@
-// Last updated: 2024-06-27T00:12:51.334Z
-// Next update: 2024-06-27T06:12:51.334Z
+// Last updated: 2024-06-27T06:04:25.273Z
+// Next update: 2024-06-27T12:04:25.273Z
 
-export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -764,6 +764,46 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         }
     ],
+    "codestral": [
+        {
+            "maxTokens": 8191,
+            "name": "codestral/codestral-latest",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8191,
+            "name": "codestral/codestral-2405",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
+    "text-completion-codestral": [
+        {
+            "maxTokens": 8191,
+            "name": "text-completion-codestral/codestral-latest",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8191,
+            "name": "text-completion-codestral/codestral-2405",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "groq": [
         {
             "maxTokens": 4096,
@@ -842,8 +882,35 @@ export const AICostModelList = {
     ],
     "vertex-ai": [
         {
-            "maxTokens": 1024,
+            "maxTokens": 2048,
             "name": "text-bison",
+            "type": "completion",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "text-bison@001",
+            "type": "completion",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "text-bison@002",
+            "type": "completion",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "text-bison32k",
             "type": "completion",
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
@@ -852,7 +919,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 1024,
-            "name": "text-bison@001",
+            "name": "text-bison32k@002",
             "type": "completion",
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
@@ -914,6 +981,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "chat-bison-32k@002",
+            "type": "chat",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 1024,
             "name": "code-bison",
             "type": "chat",
@@ -925,6 +1001,33 @@ export const AICostModelList = {
         {
             "maxTokens": 1024,
             "name": "code-bison@001",
+            "type": "completion",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "code-bison@002",
+            "type": "completion",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "code-bison32k",
+            "type": "completion",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "code-bison-32k@002",
             "type": "completion",
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
@@ -959,6 +1062,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 64,
+            "name": "code-gecko-latest",
+            "type": "completion",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "gemini-pro",
             "type": "chat",
@@ -979,6 +1091,24 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "gemini-1.0-pro-001",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.0-ultra",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.0-ultra-001",
             "type": "chat",
             "inputCost": 5e-7,
             "inputCostUnit": "token",
@@ -1187,6 +1317,15 @@ export const AICostModelList = {
     "vertex_ai-code-chat-models": [
         {
             "maxTokens": 1024,
+            "name": "codechat-bison@latest",
+            "type": "chat",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
             "name": "codechat-bison",
             "type": "chat",
             "inputCost": 1.25e-7,
@@ -1204,8 +1343,26 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 1024,
+            "name": "codechat-bison@002",
+            "type": "chat",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "codechat-bison-32k",
+            "type": "chat",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.25e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "codechat-bison-32k@002",
             "type": "chat",
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
