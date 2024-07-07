@@ -1,5 +1,5 @@
-// Last updated: 2024-07-06T18:03:34.856Z
-// Next update: 2024-07-07T00:03:34.856Z
+// Last updated: 2024-07-07T00:14:18.021Z
+// Next update: 2024-07-07T06:14:18.021Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
