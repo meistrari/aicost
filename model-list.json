@@ -536,6 +536,44 @@
             "outputCostUnit": null
         }
     ],
+    "azure_ai": [
+        {
+            "maxTokens": 4096,
+            "name": "azure_ai/jamba-instruct",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "azure_ai/mistral-large",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "azure_ai/mistral-small",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "azure_ai/Meta-Llama-3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 3.7e-7,
+            "outputCostUnit": "token"
+        }
+    ],
     "anthropic": [
         {
             "maxTokens": 8191,
