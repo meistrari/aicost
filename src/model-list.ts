@@ -1,5 +1,5 @@
-// Last updated: 2024-07-17T18:04:08.626Z
-// Next update: 2024-07-18T00:04:08.626Z
+// Last updated: 2024-07-18T00:12:57.914Z
+// Next update: 2024-07-18T06:12:57.914Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -886,6 +886,24 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama3-groq-70b-8192-tool-use-preview",
+            "type": "chat",
+            "inputCost": 8.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama3-groq-8b-8192-tool-use-preview",
+            "type": "chat",
+            "inputCost": 1.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.9e-7,
             "outputCostUnit": "token"
         }
     ],
