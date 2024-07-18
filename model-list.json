@@ -20,6 +20,24 @@
         },
         {
             "maxTokens": 4096,
+            "name": "gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-mini-2024-07-18",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.000005,
