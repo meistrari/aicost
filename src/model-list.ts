@@ -1,5 +1,5 @@
-// Last updated: 2024-07-18T00:12:57.914Z
-// Next update: 2024-07-18T06:12:57.914Z
+// Last updated: 2024-07-18T06:04:29.799Z
+// Next update: 2024-07-18T12:04:29.799Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1287,6 +1287,24 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 5e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "medlm-medium",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "medlm-large",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
         },
         {
             "maxTokens": 3072,

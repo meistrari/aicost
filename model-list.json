@@ -1283,6 +1283,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "medlm-medium",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "medlm-large",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 3072,
             "name": "text-embedding-004",
             "type": "embedding",
