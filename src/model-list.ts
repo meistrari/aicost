@@ -1,5 +1,5 @@
-// Last updated: 2024-07-19T00:13:20.141Z
-// Next update: 2024-07-19T06:13:20.141Z
+// Last updated: 2024-07-19T06:04:37.493Z
+// Next update: 2024-07-19T12:04:37.493Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1568,15 +1568,6 @@ export const AICostModelList = {
         }
     ],
     "replicate": [
-        {
-            "maxTokens": 4096,
-            "name": "replicate/llama-2-70b-chat:2c1608e18606fad2812020dc541930f2d0495ce32eee50074220b87300bc16e1",
-            "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
         {
             "maxTokens": 4096,
             "name": "replicate/meta/llama-2-13b",
