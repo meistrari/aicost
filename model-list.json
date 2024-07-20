@@ -2167,6 +2167,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4096,
+            "name": "ai21.jamba-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4000,
             "name": "amazon.titan-text-lite-v1",
             "type": "chat",

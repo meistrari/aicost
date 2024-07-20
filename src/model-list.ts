@@ -1,5 +1,5 @@
-// Last updated: 2024-07-20T00:12:37.990Z
-// Next update: 2024-07-20T06:12:37.990Z
+// Last updated: 2024-07-20T06:04:58.728Z
+// Next update: 2024-07-20T12:04:58.728Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2170,6 +2170,15 @@ export const AICostModelList = {
             "inputCost": 0.0000188,
             "inputCostUnit": "token",
             "outputCost": 0.0000188,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "ai21.jamba-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
             "outputCostUnit": "token"
         },
         {
