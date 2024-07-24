@@ -1,7 +1,7 @@
-// Last updated: 2024-07-24T00:14:05.475Z
-// Next update: 2024-07-24T06:14:05.475Z
+// Last updated: 2024-07-24T06:04:23.224Z
+// Next update: 2024-07-24T12:04:23.224Z
 
-export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -1534,6 +1534,17 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000075,
             "outputCostUnit": "token"
+        }
+    ],
+    "vertex_ai-llama_models": [
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-405b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "cohere_chat": [

@@ -1530,6 +1530,17 @@
             "outputCostUnit": "token"
         }
     ],
+    "vertex_ai-llama_models": [
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-405b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "cohere_chat": [
         {
             "maxTokens": 4096,
