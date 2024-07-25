@@ -1,5 +1,5 @@
-// Last updated: 2024-07-25T00:13:08.311Z
-// Next update: 2024-07-25T06:13:08.311Z
+// Last updated: 2024-07-25T06:04:44.003Z
+// Next update: 2024-07-25T12:04:44.003Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -755,12 +755,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 128000,
             "name": "mistral/mistral-large-latest",
             "type": "chat",
-            "inputCost": 0.000004,
+            "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 0.000012,
+            "outputCost": 0.000009,
             "outputCostUnit": "token"
         },
         {
@@ -770,6 +770,15 @@ export const AICostModelList = {
             "inputCost": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "mistral/mistral-large-2407",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
             "outputCostUnit": "token"
         },
         {
@@ -945,6 +954,33 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "groq/llama3-70b-8192",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.1-8b-instant",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.1-70b-versatile",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.1-405b-reasoning",
             "type": "chat",
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
