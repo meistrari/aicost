@@ -2350,6 +2350,15 @@
         },
         {
             "maxTokens": 8191,
+            "name": "mistral.mistral-large-2407-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
             "name": "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -3075,6 +3084,15 @@
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "meta.llama3-1-405b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000532,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
             "outputCostUnit": "token"
         }
     ],

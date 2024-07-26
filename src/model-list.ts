@@ -1,5 +1,5 @@
-// Last updated: 2024-07-26T00:12:59.262Z
-// Next update: 2024-07-26T06:12:59.262Z
+// Last updated: 2024-07-26T06:04:48.483Z
+// Next update: 2024-07-26T12:04:48.483Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2356,6 +2356,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8191,
+            "name": "mistral.mistral-large-2407-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
             "name": "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -3081,6 +3090,15 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "meta.llama3-1-405b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000532,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
             "outputCostUnit": "token"
         }
     ],
