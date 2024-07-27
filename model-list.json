@@ -3218,6 +3218,15 @@
         },
         {
             "maxTokens": 8192,
+            "name": "ollama/llama3.1",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
             "name": "ollama/mistral",
             "type": "completion",
             "inputCost": 0,
