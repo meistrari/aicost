@@ -1,5 +1,5 @@
-// Last updated: 2024-07-28T00:14:50.551Z
-// Next update: 2024-07-28T06:14:50.551Z
+// Last updated: 2024-07-28T06:04:08.559Z
+// Next update: 2024-07-28T12:04:08.559Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1611,6 +1611,15 @@ export const AICostModelList = {
         }
     ],
     "vertex_ai-mistral_models": [
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-large@latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 8191,
             "name": "vertex_ai/mistral-large@2407",
