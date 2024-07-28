@@ -1,5 +1,5 @@
-// Last updated: 2024-07-27T18:04:21.497Z
-// Next update: 2024-07-28T00:04:21.497Z
+// Last updated: 2024-07-28T00:14:50.551Z
+// Next update: 2024-07-28T06:14:50.551Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -3637,7 +3637,7 @@ export const AICostModelList = {
     "fireworks_ai": [
         {
             "maxTokens": 8192,
-            "name": "fireworks_ai/firefunction-v2",
+            "name": "fireworks_ai/accounts/fireworks/models/firefunction-v2",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
@@ -3646,7 +3646,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 65536,
-            "name": "fireworks_ai/mixtral-8x22b-instruct-hf",
+            "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct-hf",
             "type": "chat",
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
@@ -3655,7 +3655,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 32768,
-            "name": "fireworks_ai/qwen2-72b-instruct",
+            "name": "fireworks_ai/accounts/fireworks/models/qwen2-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
@@ -3664,7 +3664,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 32768,
-            "name": "fireworks_ai/yi-large",
+            "name": "fireworks_ai/accounts/fireworks/models/yi-large",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -3673,7 +3673,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 65536,
-            "name": "fireworks_ai/deepseek-coder-v2-instruct",
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-v2-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
