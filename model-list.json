@@ -3935,6 +3935,24 @@
     ],
     "databricks": [
         {
+            "maxTokens": 128000,
+            "name": "databricks/databricks-meta-llama-3-1-405b-instruct",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "databricks/databricks-meta-llama-3-1-70b-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32768,
             "name": "databricks/databricks-dbrx-instruct",
             "type": "chat",
