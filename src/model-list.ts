@@ -1,5 +1,5 @@
-// Last updated: 2024-08-01T18:04:02.890Z
-// Next update: 2024-08-02T00:04:02.890Z
+// Last updated: 2024-08-02T00:13:09.060Z
+// Next update: 2024-08-02T06:13:09.060Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1649,9 +1649,27 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "vertex_ai/mistral-nemo@latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "vertex_ai/mistral-nemo@2407",
             "type": "chat",
             "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral@latest",
+            "type": "chat",
+            "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
             "outputCostUnit": "token"

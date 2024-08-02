@@ -1643,9 +1643,27 @@
         },
         {
             "maxTokens": 128000,
+            "name": "vertex_ai/mistral-nemo@latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "vertex_ai/mistral-nemo@2407",
             "type": "chat",
             "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral@latest",
+            "type": "chat",
+            "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
             "outputCostUnit": "token"
