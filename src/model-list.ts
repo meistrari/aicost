@@ -1,5 +1,5 @@
-// Last updated: 2024-08-05T12:05:08.943Z
-// Next update: 2024-08-05T18:05:08.943Z
+// Last updated: 2024-08-05T18:04:10.039Z
+// Next update: 2024-08-06T00:04:10.039Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -25,7 +25,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -34,7 +34,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -371,7 +371,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "azure/global-standard/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -380,7 +380,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "azure/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.65e-7,
