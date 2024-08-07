@@ -47,6 +47,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "gpt-4-turbo-preview",
             "type": "chat",
             "inputCost": 0.00001,
