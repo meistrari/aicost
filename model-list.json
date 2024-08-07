@@ -244,12 +244,12 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "ft:gpt-4o-2024-05-13",
+            "maxTokens": 16384,
+            "name": "ft:gpt-4o-mini-2024-07-18",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token"
         },
         {
