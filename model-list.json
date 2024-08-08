@@ -3246,6 +3246,60 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 32768,
+            "name": "ollama/codegeex4",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/deepseek-coder-v2-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/deepseek-coder-v2-base",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/deepseek-coder-v2-lite-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/deepseek-coder-v2-lite-base",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/internlm2_5-20b-chat",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 4096,
             "name": "ollama/llama2",
             "type": "completion",
@@ -3300,8 +3354,17 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 32768,
             "name": "ollama/llama3.1",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "ollama/mistral-large-instruct-2407",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,

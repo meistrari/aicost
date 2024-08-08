@@ -1,5 +1,5 @@
-// Last updated: 2024-08-07T18:04:00.112Z
-// Next update: 2024-08-08T00:04:00.112Z
+// Last updated: 2024-08-08T00:13:20.454Z
+// Next update: 2024-08-08T06:13:20.454Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -3252,6 +3252,60 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
+            "maxTokens": 32768,
+            "name": "ollama/codegeex4",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/deepseek-coder-v2-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/deepseek-coder-v2-base",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/deepseek-coder-v2-lite-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/deepseek-coder-v2-lite-base",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ollama/internlm2_5-20b-chat",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 4096,
             "name": "ollama/llama2",
             "type": "completion",
@@ -3306,8 +3360,17 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 32768,
             "name": "ollama/llama3.1",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "ollama/mistral-large-instruct-2407",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
