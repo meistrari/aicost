@@ -1,5 +1,5 @@
-// Last updated: 2024-08-09T18:04:11.700Z
-// Next update: 2024-08-10T00:04:11.700Z
+// Last updated: 2024-08-10T00:13:15.197Z
+// Next update: 2024-08-10T06:13:15.198Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1758,6 +1758,60 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 512,
+            "name": "embed-english-v3.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "embed-english-light-v3.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "embed-multilingual-v3.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "embed-english-v2.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "embed-english-light-v2.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 256,
+            "name": "embed-multilingual-v2.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "replicate": [
