@@ -38,6 +38,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "chatgpt-4o-latest",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.000005,
