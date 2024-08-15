@@ -3709,6 +3709,69 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 131072,
+            "name": "perplexity/llama-3.1-70b-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "perplexity/llama-3.1-8b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 127072,
+            "name": "perplexity/llama-3.1-sonar-huge-128k-online",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 127072,
+            "name": "perplexity/llama-3.1-sonar-large-128k-online",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "perplexity/llama-3.1-sonar-large-128k-chat",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "perplexity/llama-3.1-sonar-small-128k-chat",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 127072,
+            "name": "perplexity/llama-3.1-sonar-small-128k-online",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "perplexity/pplx-7b-chat",
             "type": "chat",
