@@ -1,5 +1,5 @@
-// Last updated: 2024-08-17T18:03:58.074Z
-// Next update: 2024-08-18T00:03:58.074Z
+// Last updated: 2024-08-18T00:14:37.650Z
+// Next update: 2024-08-18T06:14:37.650Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -3379,6 +3379,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
+            "name": "ollama/llama2:7b",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
             "name": "ollama/llama2:13b",
             "type": "completion",
             "inputCost": 0,
@@ -3407,6 +3416,15 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "ollama/llama3",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/llama3:8b",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,

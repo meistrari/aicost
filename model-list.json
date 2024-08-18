@@ -3373,6 +3373,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "ollama/llama2:7b",
+            "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
             "name": "ollama/llama2:13b",
             "type": "completion",
             "inputCost": 0,
@@ -3401,6 +3410,15 @@
         {
             "maxTokens": 8192,
             "name": "ollama/llama3",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "ollama/llama3:8b",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
