@@ -1,5 +1,5 @@
-// Last updated: 2024-08-21T12:05:08.871Z
-// Next update: 2024-08-21T18:05:08.871Z
+// Last updated: 2024-08-21T18:04:24.702Z
+// Next update: 2024-08-22T00:04:24.702Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2018,6 +2018,15 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "openrouter/anthropic/claude-3.5-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "openrouter/anthropic/claude-3.5-sonnet:beta",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
