@@ -1,5 +1,5 @@
-// Last updated: 2024-08-27T18:04:25.503Z
-// Next update: 2024-08-28T00:04:25.503Z
+// Last updated: 2024-08-28T00:13:37.712Z
+// Next update: 2024-08-28T06:13:37.712Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2321,6 +2321,51 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-mini@001",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-large@001",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-mini",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-large",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         },
         {

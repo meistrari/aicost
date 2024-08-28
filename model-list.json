@@ -2318,6 +2318,51 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-mini@001",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-large@001",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-mini",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-1.5-large",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "j2-mid",
             "type": "completion",
