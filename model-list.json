@@ -2559,6 +2559,15 @@
         },
         {
             "maxTokens": 8191,
+            "name": "mistral.mistral-small-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
             "name": "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
