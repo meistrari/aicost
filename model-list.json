@@ -1401,7 +1401,16 @@
         },
         {
             "maxTokens": 8192,
-            "name": "gemini-experimental",
+            "name": "gemini-pro-experimental",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-pro-flash",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
