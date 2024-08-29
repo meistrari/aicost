@@ -1,5 +1,5 @@
-// Last updated: 2024-08-29T00:13:55.512Z
-// Next update: 2024-08-29T06:13:55.512Z
+// Last updated: 2024-08-29T06:04:56.558Z
+// Next update: 2024-08-29T12:04:56.558Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -3278,9 +3278,72 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "meta.llama3-8b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 4e-7,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-east-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-west-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-south-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/ca-central-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-west-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-west-2/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/sa-east-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000101,
             "outputCostUnit": "token"
         },
         {
@@ -3293,21 +3356,84 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "bedrock/us-east-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000265,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-west-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000265,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-south-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000318,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000042,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/ca-central-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000305,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000403,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-west-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000286,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000378,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-west-2/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000345,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000455,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/sa-east-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000445,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000588,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 128000,
             "name": "meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 4e-7,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 2.2e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 0.00000265,
+            "inputCost": 9.9e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000035,
+            "outputCost": 9.9e-7,
             "outputCostUnit": "token"
         },
         {
