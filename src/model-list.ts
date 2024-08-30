@@ -1,7 +1,7 @@
-// Last updated: 2024-08-30T00:14:05.700Z
-// Next update: 2024-08-30T06:14:05.700Z
+// Last updated: 2024-08-30T06:04:43.510Z
+// Next update: 2024-08-30T12:04:43.510Z
 
-export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -1708,6 +1708,53 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        }
+    ],
+    "vertex_ai-ai21_models": [
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/jamba-1.5-mini@001",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/jamba-1.5-large@001",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/jamba-1.5",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/jamba-1.5-mini",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/jamba-1.5-large",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         }
     ],
