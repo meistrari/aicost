@@ -1063,6 +1063,26 @@
             "outputCostUnit": "token"
         }
     ],
+    "cerebras": [
+        {
+            "maxTokens": 128000,
+            "name": "cerebras/llama3.1-8b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "cerebras/llama3.1-70b",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        }
+    ],
     "friendliai": [
         {
             "maxTokens": 32768,
