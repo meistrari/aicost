@@ -444,6 +444,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 16384,
             "name": "babbage-002",
             "type": "completion",
@@ -621,6 +630,24 @@
             "name": "azure/gpt-35-turbo-1106",
             "type": "chat",
             "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-0613",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-0301",
+            "type": "chat",
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
             "outputCostUnit": "token"
@@ -1159,6 +1186,15 @@
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/gemma2-9b-it",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {

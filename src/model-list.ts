@@ -1,5 +1,5 @@
-// Last updated: 2024-09-19T18:04:14.822Z
-// Next update: 2024-09-20T00:04:14.822Z
+// Last updated: 2024-09-20T00:14:48.916Z
+// Next update: 2024-09-20T06:14:48.916Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -450,6 +450,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 16384,
             "name": "babbage-002",
             "type": "completion",
@@ -627,6 +636,24 @@ export const AICostModelList = {
             "name": "azure/gpt-35-turbo-1106",
             "type": "chat",
             "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-0613",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-0301",
+            "type": "chat",
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
             "outputCostUnit": "token"
@@ -1165,6 +1192,15 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/gemma2-9b-it",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
