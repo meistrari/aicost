@@ -1838,6 +1838,24 @@
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-70b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-8b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "vertex_ai-mistral_models": [

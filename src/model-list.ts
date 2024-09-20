@@ -1,5 +1,5 @@
-// Last updated: 2024-09-20T12:05:22.962Z
-// Next update: 2024-09-20T18:05:22.962Z
+// Last updated: 2024-09-20T18:04:25.328Z
+// Next update: 2024-09-21T00:04:25.328Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1839,6 +1839,24 @@ export const AICostModelList = {
         {
             "maxTokens": 32000,
             "name": "vertex_ai/meta/llama3-405b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-70b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vertex_ai/meta/llama3-8b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
