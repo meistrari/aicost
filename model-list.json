@@ -4471,6 +4471,53 @@
             "outputCostUnit": "token"
         }
     ],
+    "fireworks_ai-embedding-models": [
+        {
+            "maxTokens": 8192,
+            "name": "fireworks_ai/nomic-ai/nomic-embed-text-v1.5",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "fireworks_ai/nomic-ai/nomic-embed-text-v1",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "fireworks_ai/WhereIsAI/UAE-Large-V1",
+            "type": "embedding",
+            "inputCost": 1.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "fireworks_ai/thenlper/gte-large",
+            "type": "embedding",
+            "inputCost": 1.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "fireworks_ai/thenlper/gte-base",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "anyscale": [
         {
             "maxTokens": 16384,
