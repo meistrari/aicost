@@ -2931,7 +2931,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2967,7 +2967,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2994,7 +2994,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "eu.anthropic.claude-3-sonnet-20240229-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3003,7 +3003,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
