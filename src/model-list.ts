@@ -1,7 +1,7 @@
-// Last updated: 2024-09-26T00:14:44.038Z
-// Next update: 2024-09-26T06:14:44.038Z
+// Last updated: 2024-09-26T06:04:48.795Z
+// Next update: 2024-09-26T12:04:48.795Z
 
-export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -812,6 +812,24 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000016,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 512,
+            "name": "azure_ai/Cohere-embed-v3-english",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "azure_ai/Cohere-embed-v3-multilingual",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "anthropic": [
@@ -1526,6 +1544,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "gemini-1.5-pro-002",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "gemini-1.5-pro-001",
             "type": "chat",
             "inputCost": 0.000005,
@@ -1572,6 +1599,15 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash-exp-0827",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-1.5-flash-002",
             "type": "chat",
             "inputCost": 5e-7,
             "inputCostUnit": "token",
@@ -1857,6 +1893,15 @@ export const AICostModelList = {
         {
             "maxTokens": 32000,
             "name": "vertex_ai/meta/llama3-8b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/meta/llama-3.2-90b-vision-instruct-maas",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
@@ -3839,6 +3884,107 @@ export const AICostModelList = {
             "outputCostUnit": null
         }
     ],
+    "together_ai": [
+        {
+            "maxTokens": null,
+            "name": "together-ai-up-to-4b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-4.1b-8b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000,
+            "name": "together-ai-8.1b-21b",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-21.1b-41b",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-41.1b-80b",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-81.1b-110b",
+            "type": "chat",
+            "inputCost": 0.0000018,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-embedding-up-to-150m",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together-ai-embedding-151m-to-350m",
+            "type": "embedding",
+            "inputCost": 1.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/mistralai/Mixtral-8x7B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/mistralai/Mistral-7B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/togethercomputer/CodeLlama-34b-Instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
     "ollama": [
         {
             "maxTokens": 8192,
@@ -4431,6 +4577,42 @@ export const AICostModelList = {
         }
     ],
     "fireworks_ai": [
+        {
+            "maxTokens": 16384,
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-1b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-3b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-11b-vision-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "accounts/fireworks/models/llama-v3p2-90b-vision-instruct",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 8192,
             "name": "fireworks_ai/accounts/fireworks/models/firefunction-v2",
