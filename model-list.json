@@ -983,6 +983,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 128000,
+            "name": "mistral/pixtral-12b-2409",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8191,
             "name": "mistral/open-mistral-7b",
             "type": "chat",
