@@ -1,5 +1,5 @@
-// Last updated: 2024-10-08T12:05:59.502Z
-// Next update: 2024-10-08T18:05:59.502Z
+// Last updated: 2024-10-08T18:04:20.428Z
+// Next update: 2024-10-09T00:04:20.428Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1180,9 +1180,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "groq/llama-3.1-8b-instant",
             "type": "chat",
-            "inputCost": 5.9e-7,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 7.9e-7,
+            "outputCost": 8e-8,
             "outputCostUnit": "token"
         },
         {
@@ -4097,7 +4097,7 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "ollama/llama2",
-            "type": "completion",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,
@@ -4106,7 +4106,7 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "ollama/llama2:7b",
-            "type": "completion",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,
@@ -4115,7 +4115,7 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "ollama/llama2:13b",
-            "type": "completion",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,
@@ -4124,7 +4124,7 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "ollama/llama2:70b",
-            "type": "completion",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,
