@@ -1,5 +1,5 @@
-// Last updated: 2024-10-10T06:05:03.757Z
-// Next update: 2024-10-10T12:05:03.757Z
+// Last updated: 2024-10-10T12:05:58.405Z
+// Next update: 2024-10-10T18:05:58.405Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1546,99 +1546,99 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-002",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-001",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0514",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0215",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-pro-preview-0409",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 3.125e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 4.688e-9,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 4.6875e-9,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash-exp-0827",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 4.688e-9,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 4.6875e-9,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash-002",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 4.688e-9,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 4.6875e-9,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash-001",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 4.688e-9,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 4.6875e-9,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-1.5-flash-preview-0514",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 4.688e-9,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 4.6875e-9,
             "outputCostUnit": "token"
         },
         {
