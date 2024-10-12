@@ -509,6 +509,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4096,
+            "name": "azure/gpt-4o-2024-05-13",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 16384,
             "name": "azure/global-standard/gpt-4o-2024-08-06",
             "type": "chat",
