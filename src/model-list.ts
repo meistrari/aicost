@@ -1,5 +1,5 @@
-// Last updated: 2024-10-23T00:15:06.174Z
-// Next update: 2024-10-23T06:15:06.174Z
+// Last updated: 2024-10-23T06:05:01.013Z
+// Next update: 2024-10-23T12:05:01.013Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -815,7 +815,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-8B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
@@ -824,7 +824,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-70B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 0.00000268,
             "inputCostUnit": "token",
@@ -833,7 +833,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-405B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.00000533,
             "inputCostUnit": "token",
@@ -5130,6 +5130,15 @@ export const AICostModelList = {
             "name": "voyage/voyage-lite-02-instruct",
             "type": "embedding",
             "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4000,
+            "name": "voyage/voyage-finance-2",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null

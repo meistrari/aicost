@@ -809,7 +809,7 @@
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-8B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
@@ -818,7 +818,7 @@
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-70B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 0.00000268,
             "inputCostUnit": "token",
@@ -827,7 +827,7 @@
         },
         {
             "maxTokens": 128000,
-            "name": "azure_ai/Meta-Llama-31-405B-Instruct",
+            "name": "azure_ai/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.00000533,
             "inputCostUnit": "token",
@@ -5124,6 +5124,15 @@
             "name": "voyage/voyage-lite-02-instruct",
             "type": "embedding",
             "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4000,
+            "name": "voyage/voyage-finance-2",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
