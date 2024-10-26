@@ -1,5 +1,5 @@
-// Last updated: 2024-10-25T18:04:40.976Z
-// Next update: 2024-10-26T00:04:40.976Z
+// Last updated: 2024-10-26T00:14:47.587Z
+// Next update: 2024-10-26T06:14:47.587Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2142,16 +2142,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 512,
-            "name": "embed-english-v3.0",
-            "type": "embedding",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-english-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2160,7 +2151,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-multilingual-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2169,7 +2160,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 4096,
             "name": "embed-english-v2.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2178,7 +2169,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-english-light-v2.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2187,8 +2178,17 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 256,
+            "maxTokens": 768,
             "name": "embed-multilingual-v2.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "embed-english-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
             "inputCostUnit": "token",

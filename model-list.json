@@ -2136,16 +2136,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 512,
-            "name": "embed-english-v3.0",
-            "type": "embedding",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-english-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2154,7 +2145,7 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-multilingual-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2163,7 +2154,7 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 4096,
             "name": "embed-english-v2.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2172,7 +2163,7 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 512,
+            "maxTokens": 1024,
             "name": "embed-english-light-v2.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2181,8 +2172,17 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 256,
+            "maxTokens": 768,
             "name": "embed-multilingual-v2.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "embed-english-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
