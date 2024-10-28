@@ -1,5 +1,5 @@
-// Last updated: 2024-10-28T12:06:12.264Z
-// Next update: 2024-10-28T18:06:12.264Z
+// Last updated: 2024-10-28T18:04:36.112Z
+// Next update: 2024-10-29T00:04:36.112Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2941,6 +2941,15 @@ export const AICostModelList = {
             "name": "amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128,
+            "name": "amazon.titan-embed-image-v1",
+            "type": "embedding",
+            "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null

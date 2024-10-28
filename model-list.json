@@ -2940,6 +2940,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 128,
+            "name": "amazon.titan-embed-image-v1",
+            "type": "embedding",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 8191,
             "name": "mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
