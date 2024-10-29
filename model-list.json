@@ -563,6 +563,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 16384,
+            "name": "azure/gpt-4o-mini-2024-07-18",
+            "type": "chat",
+            "inputCost": 1.65e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/gpt-4-turbo-2024-04-09",
             "type": "chat",
