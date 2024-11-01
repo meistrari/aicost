@@ -1196,6 +1196,17 @@
             "outputCostUnit": null
         }
     ],
+    "xai": [
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-beta",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        }
+    ],
     "groq": [
         {
             "maxTokens": 4096,
