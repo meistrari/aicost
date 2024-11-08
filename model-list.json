@@ -1026,7 +1026,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "claude-3-5-haiku-20241022",
             "type": "chat",
             "inputCost": 0.000001,
@@ -2065,7 +2065,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
             "type": "chat",
             "inputCost": 0.000001,
@@ -2547,7 +2547,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "openrouter/anthropic/claude-3-5-haiku-20241022",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3266,7 +3266,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3320,7 +3320,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3374,7 +3374,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "eu.anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
