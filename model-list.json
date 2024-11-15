@@ -4140,6 +4140,15 @@
         },
         {
             "maxTokens": 128000,
+            "name": "us.meta.llama3-1-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -4149,7 +4158,25 @@
         },
         {
             "maxTokens": 128000,
+            "name": "us.meta.llama3-1-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 9.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "meta.llama3-1-405b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000532,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000532,
             "inputCostUnit": "token",

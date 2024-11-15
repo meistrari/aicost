@@ -1,5 +1,5 @@
-// Last updated: 2024-11-15T12:06:00.585Z
-// Next update: 2024-11-15T18:06:00.585Z
+// Last updated: 2024-11-15T18:04:50.307Z
+// Next update: 2024-11-16T00:04:50.307Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -4146,6 +4146,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "us.meta.llama3-1-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -4155,7 +4164,25 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "us.meta.llama3-1-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 9.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "meta.llama3-1-405b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000532,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000532,
             "inputCostUnit": "token",
