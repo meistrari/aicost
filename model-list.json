@@ -2887,6 +2887,15 @@
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 33792,
+            "name": "openrouter/qwen/qwen-2.5-coder-32b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
         }
     ],
     "ai21": [
