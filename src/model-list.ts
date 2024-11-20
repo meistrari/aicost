@@ -1,5 +1,5 @@
-// Last updated: 2024-11-19T18:04:53.541Z
-// Next update: 2024-11-20T00:04:53.541Z
+// Last updated: 2024-11-20T00:15:47.892Z
+// Next update: 2024-11-20T06:15:47.892Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2062,21 +2062,21 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "vertex_ai/claude-3-haiku@20240307",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000125,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-haiku@20240307",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
             "outputCostUnit": "token"
         },
         {
@@ -5095,6 +5095,15 @@ export const AICostModelList = {
         {
             "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-72b-instruct",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",

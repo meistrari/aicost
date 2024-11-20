@@ -2056,21 +2056,21 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "vertex_ai/claude-3-haiku@20240307",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000125,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-haiku@20240307",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
             "outputCostUnit": "token"
         },
         {
@@ -5089,6 +5089,15 @@
         {
             "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-72b-instruct",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
