@@ -1,5 +1,5 @@
-// Last updated: 2024-11-20T18:04:56.739Z
-// Next update: 2024-11-21T00:04:56.739Z
+// Last updated: 2024-11-21T00:15:58.992Z
+// Next update: 2024-11-21T06:15:58.992Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -117,6 +117,15 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
@@ -350,6 +359,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 16384,
+            "name": "ft:gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.00000375,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "ft:gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 3e-7,
@@ -533,6 +551,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 16384,
+            "name": "azure/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/gpt-4o-2024-05-13",
             "type": "chat",
@@ -544,6 +571,15 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "azure/global-standard/gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/global-standard/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
@@ -1070,15 +1106,6 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "claude-3-5-sonnet-20241022",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "anthropic/claude-3-5-sonnet-20241022",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -2036,7 +2063,25 @@ export const AICostModelList = {
     "vertex_ai-anthropic_models": [
         {
             "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "vertex_ai/claude-3-sonnet@20240229",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -2054,11 +2099,47 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "vertex_ai/claude-3-5-sonnet-v2",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-sonnet-v2@20241022",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-haiku",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "vertex_ai/claude-3-haiku@20240307",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-3-5-haiku",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
@@ -2072,11 +2153,11 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
-            "name": "vertex_ai/claude-3-haiku@20240307",
+            "name": "vertex_ai/claude-3-opus",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 0.000015,
             "inputCostUnit": "token",
-            "outputCost": 0.00000125,
+            "outputCost": 0.000075,
             "outputCostUnit": "token"
         },
         {
