@@ -1,5 +1,5 @@
-// Last updated: 2024-12-05T06:05:35.086Z
-// Next update: 2024-12-05T12:05:35.086Z
+// Last updated: 2024-12-05T12:06:34.623Z
+// Next update: 2024-12-05T18:06:34.623Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -3452,114 +3452,6 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "us.anthropic.claude-3-sonnet-20240229-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "us.anthropic.claude-3-haiku-20240307-v1:0",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000125,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.000005,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "us.anthropic.claude-3-opus-20240229-v1:0",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "eu.anthropic.claude-3-sonnet-20240229-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "eu.anthropic.claude-3-5-sonnet-20241022-v2:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "eu.anthropic.claude-3-haiku-20240307-v1:0",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000125,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "eu.anthropic.claude-3-5-haiku-20241022-v1:0",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.000005,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "eu.anthropic.claude-3-opus-20240229-v1:0",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8191,
             "name": "anthropic.claude-v1",
             "type": "chat",
@@ -4581,6 +4473,33 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 8.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 0.0000035,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": null,
