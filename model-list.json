@@ -1362,6 +1362,24 @@
     ],
     "groq": [
         {
+            "maxTokens": 128000,
+            "name": "groq/llama-3.3-70b-versatile",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.3-70b-specdec",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "groq/llama2-70b-4096",
             "type": "chat",
@@ -1971,10 +1989,19 @@
             "outputCostUnit": null
         },
         {
-            "maxTokens": 3072,
+            "maxTokens": 2048,
             "name": "text-embedding-004",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 2048,
+            "name": "text-embedding-005",
+            "type": "embedding",
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -1983,7 +2010,7 @@
             "maxTokens": 2048,
             "name": "text-multilingual-embedding-002",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -1992,7 +2019,7 @@
             "maxTokens": 3072,
             "name": "textembedding-gecko",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2001,7 +2028,7 @@
             "maxTokens": 3072,
             "name": "textembedding-gecko-multilingual",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2010,7 +2037,7 @@
             "maxTokens": 3072,
             "name": "textembedding-gecko-multilingual@001",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2019,7 +2046,7 @@
             "maxTokens": 3072,
             "name": "textembedding-gecko@001",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2028,7 +2055,7 @@
             "maxTokens": 3072,
             "name": "textembedding-gecko@003",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null

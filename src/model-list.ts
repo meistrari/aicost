@@ -1,5 +1,5 @@
-// Last updated: 2024-12-07T00:16:14.019Z
-// Next update: 2024-12-07T06:16:14.019Z
+// Last updated: 2024-12-07T06:04:47.711Z
+// Next update: 2024-12-07T12:04:47.711Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1368,6 +1368,24 @@ export const AICostModelList = {
     ],
     "groq": [
         {
+            "maxTokens": 128000,
+            "name": "groq/llama-3.3-70b-versatile",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.3-70b-specdec",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "groq/llama2-70b-4096",
             "type": "chat",
@@ -1977,10 +1995,19 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 3072,
+            "maxTokens": 2048,
             "name": "text-embedding-004",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 2048,
+            "name": "text-embedding-005",
+            "type": "embedding",
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -1989,7 +2016,7 @@ export const AICostModelList = {
             "maxTokens": 2048,
             "name": "text-multilingual-embedding-002",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -1998,7 +2025,7 @@ export const AICostModelList = {
             "maxTokens": 3072,
             "name": "textembedding-gecko",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2007,7 +2034,7 @@ export const AICostModelList = {
             "maxTokens": 3072,
             "name": "textembedding-gecko-multilingual",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2016,7 +2043,7 @@ export const AICostModelList = {
             "maxTokens": 3072,
             "name": "textembedding-gecko-multilingual@001",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2025,7 +2052,7 @@ export const AICostModelList = {
             "maxTokens": 3072,
             "name": "textembedding-gecko@001",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
@@ -2034,7 +2061,7 @@ export const AICostModelList = {
             "maxTokens": 3072,
             "name": "textembedding-gecko@003",
             "type": "embedding",
-            "inputCost": 6.25e-9,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
