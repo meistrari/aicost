@@ -38,6 +38,15 @@
         },
         {
             "maxTokens": 16384,
+            "name": "gpt-4o-mini-audio-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -52,6 +61,15 @@
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o1",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
             "outputCostUnit": "token"
         },
         {
@@ -84,6 +102,15 @@
         {
             "maxTokens": 32768,
             "name": "o1-preview-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
@@ -124,6 +151,51 @@
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-realtime-preview-2024-10-01",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-realtime-preview",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-mini-realtime-preview",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-mini-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
             "outputCostUnit": "token"
         },
         {
