@@ -1,5 +1,5 @@
-// Last updated: 2024-12-18T00:15:53.892Z
-// Next update: 2024-12-18T06:15:53.892Z
+// Last updated: 2024-12-18T06:05:14.486Z
+// Next update: 2024-12-18T12:05:14.486Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -922,7 +922,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/mistral-large-2407",
             "type": "chat",
             "inputCost": 0.000002,
@@ -931,7 +931,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/ministral-3b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -940,7 +940,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "azure_ai/Llama-3.2-11B-Vision-Instruct",
             "type": "chat",
             "inputCost": 3.7e-7,
@@ -949,7 +949,16 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
+            "name": "azure_ai/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 7.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
             "name": "azure_ai/Llama-3.2-90B-Vision-Instruct",
             "type": "chat",
             "inputCost": 0.00000204,
@@ -958,7 +967,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 2048,
             "name": "azure_ai/Meta-Llama-3-70B-Instruct",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -967,7 +976,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "azure_ai/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 3e-7,
@@ -976,7 +985,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "azure_ai/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 0.00000268,
@@ -985,7 +994,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "azure_ai/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.00000533,
@@ -994,7 +1003,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3.5-mini-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -1003,7 +1012,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3.5-vision-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -1012,7 +1021,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3.5-MoE-instruct",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -1030,7 +1039,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3-mini-128k-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -1039,7 +1048,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3-small-8k-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1048,7 +1057,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3-small-128k-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1066,7 +1075,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "azure_ai/Phi-3-medium-128k-instruct",
             "type": "chat",
             "inputCost": 1.7e-7,
