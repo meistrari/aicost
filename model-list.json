@@ -1,4 +1,69 @@
 {
+    "sambanova": [
+        {
+            "maxTokens": 16000,
+            "name": "sambanova/Meta-Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "sambanova/Meta-Llama-3.1-70B-Instruct",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16000,
+            "name": "sambanova/Meta-Llama-3.1-405B-Instruct",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16000,
+            "name": "sambanova/Meta-Llama-3.2-1B-Instruct",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4000,
+            "name": "sambanova/Meta-Llama-3.2-3B-Instruct",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8000,
+            "name": "sambanova/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8000,
+            "name": "sambanova/Qwen2.5-72B-Instruct",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        }
+    ],
     "openai": [
         {
             "maxTokens": 4096,
