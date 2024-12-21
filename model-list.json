@@ -4295,6 +4295,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "meta.llama3-3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "meta.llama2-13b-chat-v1",
             "type": "chat",
             "inputCost": 7.5e-7,
