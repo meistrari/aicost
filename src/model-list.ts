@@ -1,7 +1,7 @@
-// Last updated: 2024-12-21T18:04:03.865Z
-// Next update: 2024-12-22T00:04:03.865Z
+// Last updated: 2024-12-22T00:16:48.483Z
+// Next update: 2024-12-22T06:16:48.483Z
 
-export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
+export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -569,33 +569,6 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4097,
-            "name": "azure/gpt-3.5-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 16384,
             "name": "babbage-002",
             "type": "completion",
@@ -956,6 +929,35 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "azure_text": [
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-3.5-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
         }
     ],
     "azure_ai": [

@@ -563,33 +563,6 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4097,
-            "name": "azure/gpt-3.5-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 16384,
             "name": "babbage-002",
             "type": "completion",
@@ -950,6 +923,35 @@
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "azure_text": [
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-3.5-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
         }
     ],
     "azure_ai": [
