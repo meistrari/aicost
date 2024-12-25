@@ -1,5 +1,5 @@
-// Last updated: 2024-12-25T00:15:04.808Z
-// Next update: 2024-12-25T06:15:04.808Z
+// Last updated: 2024-12-25T06:05:03.136Z
+// Next update: 2024-12-25T12:05:03.136Z
 
 export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -92,6 +92,15 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "gpt-4o-audio-preview",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-4o-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
@@ -4303,15 +4312,6 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
-            "name": "meta.llama3-3-70b-instruct-v1:0",
-            "type": "chat",
-            "inputCost": 7.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
             "name": "meta.llama2-13b-chat-v1",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -4643,6 +4643,15 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "meta.llama3-3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token"
         }
     ],

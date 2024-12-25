@@ -94,6 +94,15 @@
         },
         {
             "maxTokens": 16384,
+            "name": "gpt-4o-audio-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "gpt-4o-audio-preview-2024-10-01",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -4297,15 +4306,6 @@
         },
         {
             "maxTokens": 4096,
-            "name": "meta.llama3-3-70b-instruct-v1:0",
-            "type": "chat",
-            "inputCost": 7.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
             "name": "meta.llama2-13b-chat-v1",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -4637,6 +4637,15 @@
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "meta.llama3-3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token"
         }
     ],
