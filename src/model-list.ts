@@ -1,5 +1,5 @@
-// Last updated: 2024-12-28T00:15:00.077Z
-// Next update: 2024-12-28T06:15:00.077Z
+// Last updated: 2024-12-28T06:04:41.886Z
+// Next update: 2024-12-28T12:04:41.886Z
 
 export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2460,27 +2460,36 @@ export const AICostModelList = {
             "maxTokens": 8191,
             "name": "vertex_ai/mistral-large@latest",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000009,
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-large@2411",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8191,
             "name": "vertex_ai/mistral-large@2407",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000009,
+            "outputCost": 0.000006,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "vertex_ai/mistral-nemo@latest",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token"
         },
         {
@@ -2496,18 +2505,18 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "vertex_ai/codestral@latest",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "vertex_ai/codestral@2405",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         }
     ],
