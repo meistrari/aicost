@@ -1,5 +1,5 @@
-// Last updated: 2024-12-28T12:05:04.045Z
-// Next update: 2024-12-28T18:05:04.045Z
+// Last updated: 2024-12-28T18:04:08.374Z
+// Next update: 2024-12-29T00:04:08.374Z
 
 export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -2467,7 +2467,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8191,
-            "name": "vertex_ai/mistral-large@2411",
+            "name": "vertex_ai/mistral-large@2411-001",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-large-2411",
             "type": "chat",
             "inputCost": 0.000002,
             "inputCostUnit": "token",

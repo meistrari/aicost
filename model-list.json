@@ -2461,7 +2461,16 @@
         },
         {
             "maxTokens": 8191,
-            "name": "vertex_ai/mistral-large@2411",
+            "name": "vertex_ai/mistral-large@2411-001",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-large-2411",
             "type": "chat",
             "inputCost": 0.000002,
             "inputCostUnit": "token",
