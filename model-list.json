@@ -2812,7 +2812,16 @@
     ],
     "openrouter": [
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-chat",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
