@@ -1449,7 +1449,7 @@
     "deepseek": [
         {
             "maxTokens": 4096,
-            "name": "deepseek-chat",
+            "name": "deepseek/deepseek-chat",
             "type": "chat",
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
@@ -1458,7 +1458,7 @@
         },
         {
             "maxTokens": 4096,
-            "name": "deepseek-coder",
+            "name": "deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
@@ -3657,7 +3657,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3711,7 +3711,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3765,7 +3765,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "eu.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
