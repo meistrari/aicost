@@ -2591,6 +2591,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "command-r7b-12-2024",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.75e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "command-light",
             "type": "chat",
             "inputCost": 3e-7,
