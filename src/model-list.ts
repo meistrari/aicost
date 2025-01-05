@@ -1,5 +1,5 @@
-// Last updated: 2025-01-05T06:04:36.228Z
-// Next update: 2025-01-05T12:04:36.228Z
+// Last updated: 2025-01-05T12:05:28.903Z
+// Next update: 2025-01-05T18:05:28.903Z
 
 export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1718,17 +1718,8 @@ export const AICostModelList = {
     ],
     "friendliai": [
         {
-            "maxTokens": 32768,
-            "name": "friendliai/mixtral-8x7b-instruct-v0-1",
-            "type": "chat",
-            "inputCost": 4e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8192,
-            "name": "friendliai/meta-llama-3-8b-instruct",
+            "name": "friendliai/meta-llama-3.1-8b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
@@ -1737,11 +1728,11 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
-            "name": "friendliai/meta-llama-3-70b-instruct",
+            "name": "friendliai/meta-llama-3.1-70b-instruct",
             "type": "chat",
-            "inputCost": 8e-7,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 8e-7,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         }
     ],
@@ -5573,6 +5564,15 @@ export const AICostModelList = {
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
             "outputCostUnit": "token"
         }
     ],

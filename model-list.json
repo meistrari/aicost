@@ -1712,17 +1712,8 @@
     ],
     "friendliai": [
         {
-            "maxTokens": 32768,
-            "name": "friendliai/mixtral-8x7b-instruct-v0-1",
-            "type": "chat",
-            "inputCost": 4e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8192,
-            "name": "friendliai/meta-llama-3-8b-instruct",
+            "name": "friendliai/meta-llama-3.1-8b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
@@ -1731,11 +1722,11 @@
         },
         {
             "maxTokens": 8192,
-            "name": "friendliai/meta-llama-3-70b-instruct",
+            "name": "friendliai/meta-llama-3.1-70b-instruct",
             "type": "chat",
-            "inputCost": 8e-7,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 8e-7,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         }
     ],
@@ -5567,6 +5558,15 @@
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
             "outputCostUnit": "token"
         }
     ],
