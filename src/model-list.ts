@@ -1,5 +1,5 @@
-// Last updated: 2025-01-07T00:15:54.064Z
-// Next update: 2025-01-07T06:15:54.064Z
+// Last updated: 2025-01-07T06:04:58.855Z
+// Next update: 2025-01-07T12:04:58.855Z
 
 export type AICostModelProvider = 'sambanova' | 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks'
 
@@ -1329,9 +1329,18 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "mistral/mistral-large-latest",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000009,
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "mistral/mistral-large-2411",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
             "outputCostUnit": "token"
         },
         {
@@ -1350,6 +1359,24 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000009,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "mistral/pixtral-large-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "mistral/pixtral-large-2411",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
             "outputCostUnit": "token"
         },
         {
@@ -5800,6 +5827,24 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-finance-2",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4000,
+            "name": "voyage/voyage-lite-02-instruct",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 16000,
             "name": "voyage/voyage-law-2",
             "type": "embedding",
@@ -5827,17 +5872,44 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 4000,
-            "name": "voyage/voyage-lite-02-instruct",
+            "maxTokens": 32000,
+            "name": "voyage/voyage-3-large",
             "type": "embedding",
-            "inputCost": 1e-7,
+            "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
         },
         {
-            "maxTokens": 4000,
-            "name": "voyage/voyage-finance-2",
+            "maxTokens": 32000,
+            "name": "voyage/voyage-3",
+            "type": "embedding",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-3-lite",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-code-3",
+            "type": "embedding",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-multimodal-3",
             "type": "embedding",
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
