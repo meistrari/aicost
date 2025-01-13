@@ -563,6 +563,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 100000,
+            "name": "azure/o1",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32768,
             "name": "azure/o1-preview",
             "type": "chat",
