@@ -1,5 +1,5 @@
-// Last updated: 2025-01-16T00:15:00.597Z
-// Next update: 2025-01-16T06:15:00.597Z
+// Last updated: 2025-01-16T06:04:51.813Z
+// Next update: 2025-01-16T12:04:51.813Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -2116,6 +2116,15 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "gemini-2.0-flash-exp",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-2.0-flash-thinking-exp",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
