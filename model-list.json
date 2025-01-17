@@ -5470,6 +5470,15 @@
         },
         {
             "maxTokens": 16384,
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-8b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 2e-7,
