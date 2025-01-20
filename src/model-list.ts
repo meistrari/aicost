@@ -1,5 +1,5 @@
-// Last updated: 2025-01-20T12:05:50.473Z
-// Next update: 2025-01-20T18:05:50.473Z
+// Last updated: 2025-01-20T18:04:34.181Z
+// Next update: 2025-01-21T00:04:34.181Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -4645,6 +4645,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
+            "name": "us.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -4654,7 +4663,25 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 4096,
+            "name": "us.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
             "inputCostUnit": "token",
