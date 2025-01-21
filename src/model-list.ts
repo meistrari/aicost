@@ -1,5 +1,5 @@
-// Last updated: 2025-01-20T18:04:34.181Z
-// Next update: 2025-01-21T00:04:34.181Z
+// Last updated: 2025-01-21T00:14:50.968Z
+// Next update: 2025-01-21T06:14:50.968Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -4853,6 +4853,24 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 8.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         },
         {
             "maxTokens": null,

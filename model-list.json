@@ -4850,6 +4850,24 @@
         },
         {
             "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 8.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 6e-7,
