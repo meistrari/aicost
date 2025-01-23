@@ -1419,6 +1419,15 @@
     ],
     "deepseek": [
         {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-reasoner",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "deepseek/deepseek-chat",
             "type": "chat",
