@@ -2802,6 +2802,15 @@
     "openrouter": [
         {
             "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-r1",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/deepseek/deepseek-chat",
             "type": "chat",
             "inputCost": 1.4e-7,
