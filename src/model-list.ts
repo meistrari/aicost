@@ -1,5 +1,5 @@
-// Last updated: 2025-01-30T18:04:46.770Z
-// Next update: 2025-01-31T00:04:46.770Z
+// Last updated: 2025-01-31T00:15:00.671Z
+// Next update: 2025-01-31T06:15:00.671Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -1568,6 +1568,15 @@ export const AICostModelList = {
     ],
     "groq": [
         {
+            "maxTokens": 131072,
+            "name": "groq/deepseek-r1-distill-llama-70b",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "groq/llama-3.3-70b-versatile",
             "type": "chat",
@@ -2197,6 +2206,15 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "gemini-2.0-flash-thinking-exp",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gemini-2.0-flash-thinking-exp-01-21",
             "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
