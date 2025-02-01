@@ -563,6 +563,15 @@
     ],
     "azure": [
         {
+            "maxTokens": 100000,
+            "name": "azure/o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 65536,
             "name": "azure/o1-mini",
             "type": "chat",
@@ -2165,27 +2174,27 @@
             "maxTokens": 2048,
             "name": "gemini-pro-vision",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 2048,
             "name": "gemini-1.0-pro-vision",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 2048,
             "name": "gemini-1.0-pro-vision-001",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {

@@ -1,5 +1,5 @@
-// Last updated: 2025-02-01T00:16:15.564Z
-// Next update: 2025-02-01T06:16:15.564Z
+// Last updated: 2025-02-01T06:04:21.648Z
+// Next update: 2025-02-01T12:04:21.648Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -568,6 +568,15 @@ export const AICostModelList = {
         }
     ],
     "azure": [
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 65536,
             "name": "azure/o1-mini",
@@ -2171,27 +2180,27 @@ export const AICostModelList = {
             "maxTokens": 2048,
             "name": "gemini-pro-vision",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 2048,
             "name": "gemini-1.0-pro-vision",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 2048,
             "name": "gemini-1.0-pro-vision-001",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
