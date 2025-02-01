@@ -85,9 +85,27 @@
             "maxTokens": 65536,
             "name": "o1-mini",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.0000011,
             "inputCostUnit": "token",
-            "outputCost": 0.000012,
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
             "outputCostUnit": "token"
         },
         {
