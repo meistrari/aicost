@@ -1473,7 +1473,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "deepseek/deepseek-chat",
             "type": "chat",
             "inputCost": 1.4e-7,
