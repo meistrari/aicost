@@ -1,5 +1,5 @@
-// Last updated: 2025-02-03T00:15:33.247Z
-// Next update: 2025-02-03T06:15:33.247Z
+// Last updated: 2025-02-03T06:05:10.835Z
+// Next update: 2025-02-03T12:05:10.835Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -587,15 +587,6 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
-            "name": "azure/deepseek-r1",
-            "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
-        {
             "maxTokens": 65536,
             "name": "azure/o1-mini",
             "type": "chat",
@@ -959,6 +950,15 @@ export const AICostModelList = {
         }
     ],
     "azure_ai": [
+        {
+            "maxTokens": 8192,
+            "name": "azure_ai/deepseek-r1",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
         {
             "maxTokens": 4096,
             "name": "azure_ai/jamba-instruct",

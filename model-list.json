@@ -581,15 +581,6 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
-            "name": "azure/deepseek-r1",
-            "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
-        {
             "maxTokens": 65536,
             "name": "azure/o1-mini",
             "type": "chat",
@@ -953,6 +944,15 @@
         }
     ],
     "azure_ai": [
+        {
+            "maxTokens": 8192,
+            "name": "azure_ai/deepseek-r1",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
         {
             "maxTokens": 4096,
             "name": "azure_ai/jamba-instruct",
