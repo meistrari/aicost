@@ -1,5 +1,5 @@
-// Last updated: 2025-02-04T18:04:42.551Z
-// Next update: 2025-02-05T00:04:42.551Z
+// Last updated: 2025-02-05T00:15:19.590Z
+// Next update: 2025-02-05T06:15:19.590Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -2628,6 +2628,15 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "vertex_ai/codestral@2405",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral-2501",
             "type": "chat",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
