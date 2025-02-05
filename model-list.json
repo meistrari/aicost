@@ -503,15 +503,6 @@
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
-        },
-        {
-            "maxTokens": 100000,
-            "name": "azure/o3-mini-2025-01-31",
-            "type": "chat",
-            "inputCost": 0.0000011,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000044,
-            "outputCostUnit": "token"
         }
     ],
     "text-completion-openai": [
@@ -571,6 +562,15 @@
         }
     ],
     "azure": [
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 100000,
             "name": "azure/o3-mini",
