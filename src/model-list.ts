@@ -1,5 +1,5 @@
-// Last updated: 2025-02-07T12:05:46.680Z
-// Next update: 2025-02-07T18:05:46.680Z
+// Last updated: 2025-02-07T18:04:50.252Z
+// Next update: 2025-02-08T00:04:50.252Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -1482,9 +1482,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "deepseek/deepseek-chat",
             "type": "chat",
-            "inputCost": 1.4e-7,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.8e-7,
+            "outputCost": 0.0000011,
             "outputCostUnit": "token"
         },
         {
