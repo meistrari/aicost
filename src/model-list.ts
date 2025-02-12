@@ -1,5 +1,5 @@
-// Last updated: 2025-02-12T12:05:50.136Z
-// Next update: 2025-02-12T18:05:50.136Z
+// Last updated: 2025-02-12T18:04:44.685Z
+// Next update: 2025-02-13T00:04:44.685Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -5605,6 +5605,24 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 127072,
+            "name": "perplexity/sonar",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "perplexity/sonar-pro",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
