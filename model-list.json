@@ -843,6 +843,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "azure/gpt-3.5-turbo-0125",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "azure/gpt-35-turbo-16k",
             "type": "chat",
             "inputCost": 0.000003,
@@ -853,6 +862,15 @@
         {
             "maxTokens": 4096,
             "name": "azure/gpt-35-turbo",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
             "inputCostUnit": "token",
