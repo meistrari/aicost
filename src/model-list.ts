@@ -1,5 +1,5 @@
-// Last updated: 2025-02-18T18:05:01.500Z
-// Next update: 2025-02-19T00:05:01.500Z
+// Last updated: 2025-02-19T00:15:19.201Z
+// Next update: 2025-02-19T06:15:19.201Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -3029,6 +3029,15 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.0000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/google/gemini-2.0-flash-001",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
             "outputCostUnit": "token"
         },
         {

@@ -3026,6 +3026,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "openrouter/google/gemini-2.0-flash-001",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 65536,
             "name": "openrouter/mistralai/mixtral-8x22b-instruct",
             "type": "chat",
