@@ -2526,6 +2526,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-3-7-sonnet-20250219",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "vertex_ai/claude-3-haiku",
             "type": "chat",
@@ -3863,15 +3872,6 @@
         },
         {
             "maxTokens": 8192,
-            "name": "anthropic.claude-3-7-sonnet-20250219-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
             "name": "anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4932,6 +4932,15 @@
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-3-7-sonnet-20250219-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {

@@ -1,5 +1,5 @@
-// Last updated: 2025-02-25T00:15:42.175Z
-// Next update: 2025-02-25T06:15:42.176Z
+// Last updated: 2025-02-25T06:05:14.023Z
+// Next update: 2025-02-25T12:05:14.023Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -2532,6 +2532,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-3-7-sonnet-20250219",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "vertex_ai/claude-3-haiku",
             "type": "chat",
@@ -3869,15 +3878,6 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
-            "name": "anthropic.claude-3-7-sonnet-20250219-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
             "name": "anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4938,6 +4938,15 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-3-7-sonnet-20250219-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
