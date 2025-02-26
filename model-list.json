@@ -3188,6 +3188,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "openrouter/anthropic/claude-3.7-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/anthropic/claude-3.7-sonnet:beta",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 200000,
             "name": "openrouter/anthropic/claude-3-sonnet",
             "type": "chat",
