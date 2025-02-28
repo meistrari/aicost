@@ -1265,9 +1265,9 @@
             "maxTokens": 8192,
             "name": "claude-3-5-haiku-20241022",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 0.000004,
             "outputCostUnit": "token"
         },
         {
