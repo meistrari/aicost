@@ -1,5 +1,5 @@
-// Last updated: 2025-02-27T18:04:55.144Z
-// Next update: 2025-02-28T00:04:55.144Z
+// Last updated: 2025-02-28T00:15:47.303Z
+// Next update: 2025-02-28T06:15:47.303Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -22,6 +22,24 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-4.5-preview",
+            "type": "chat",
+            "inputCost": 0.000075,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-4.5-preview-2025-02-27",
+            "type": "chat",
+            "inputCost": 0.000075,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
             "outputCostUnit": "token"
         },
         {

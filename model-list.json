@@ -20,6 +20,24 @@
         },
         {
             "maxTokens": 16384,
+            "name": "gpt-4.5-preview",
+            "type": "chat",
+            "inputCost": 0.000075,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-4.5-preview-2025-02-27",
+            "type": "chat",
+            "inputCost": 0.000075,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "gpt-4o-audio-preview",
             "type": "chat",
             "inputCost": 0.0000025,
