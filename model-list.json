@@ -3944,6 +3944,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "bedrock/invoke/anthropic.claude-3-5-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
