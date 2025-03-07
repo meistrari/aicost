@@ -4990,6 +4990,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.84e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -5008,6 +5017,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.12e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -5022,6 +5040,15 @@
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000105,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000042,
             "outputCostUnit": "token"
         },
         {
