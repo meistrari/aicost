@@ -1366,18 +1366,18 @@
             "maxTokens": 8191,
             "name": "mistral/mistral-small",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 3e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8191,
             "name": "mistral/mistral-small-latest",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 3e-7,
             "outputCostUnit": "token"
         },
         {
@@ -3610,6 +3610,24 @@
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-large-1.6",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "jamba-mini-1.6",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
             "outputCostUnit": "token"
         },
         {
