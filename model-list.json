@@ -5125,6 +5125,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "us.deepseek.r1-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000135,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000054,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "meta.llama3-3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
