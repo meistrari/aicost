@@ -1,5 +1,5 @@
-// Last updated: 2025-03-13T00:16:31.305Z
-// Next update: 2025-03-13T06:16:31.305Z
+// Last updated: 2025-03-13T06:05:17.403Z
+// Next update: 2025-03-13T12:05:17.403Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova'
 
@@ -587,12 +587,84 @@ export const AICostModelList = {
     ],
     "azure": [
         {
+            "maxTokens": 4096,
+            "name": "azure/gpt-4o-mini-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/eu/gpt-4o-mini-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 6.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/us/gpt-4o-mini-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 6.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/gpt-4o-realtime-preview-2024-10-01",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/us/gpt-4o-realtime-preview-2024-10-01",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/eu/gpt-4o-realtime-preview-2024-10-01",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 100000,
             "name": "azure/o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/us/o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/eu/o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
             "outputCostUnit": "token"
         },
         {
@@ -623,6 +695,24 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 65536,
+            "name": "azure/us/o1-mini-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65536,
+            "name": "azure/eu/o1-mini-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 100000,
             "name": "azure/o1",
             "type": "chat",
@@ -641,6 +731,24 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 100000,
+            "name": "azure/us/o1-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/eu/o1-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32768,
             "name": "azure/o1-preview",
             "type": "chat",
@@ -656,6 +764,24 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/us/o1-preview-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/eu/o1-preview-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
             "outputCostUnit": "token"
         },
         {
@@ -686,6 +812,24 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 16384,
+            "name": "azure/us/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/eu/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/gpt-4o-2024-05-13",
             "type": "chat",
@@ -701,6 +845,24 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/us/gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/eu/gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
             "outputCostUnit": "token"
         },
         {
@@ -733,6 +895,24 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "azure/gpt-4o-mini-2024-07-18",
+            "type": "chat",
+            "inputCost": 1.65e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/us/gpt-4o-mini-2024-07-18",
+            "type": "chat",
+            "inputCost": 1.65e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/eu/gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.65e-7,
             "inputCostUnit": "token",
