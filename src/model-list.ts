@@ -1,5 +1,5 @@
-// Last updated: 2025-03-19T00:16:19.176Z
-// Next update: 2025-03-19T06:16:19.176Z
+// Last updated: 2025-03-19T06:05:27.443Z
+// Next update: 2025-03-19T12:05:27.443Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -785,21 +785,39 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "azure/gpt-4o",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/global/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 16384,
             "name": "azure/gpt-4o-2024-08-06",
             "type": "chat",
-            "inputCost": 0.00000275,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000011,
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/global/gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {

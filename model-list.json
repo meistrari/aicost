@@ -779,21 +779,39 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "azure/gpt-4o",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/global/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 16384,
             "name": "azure/gpt-4o-2024-08-06",
             "type": "chat",
-            "inputCost": 0.00000275,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000011,
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/global/gpt-4o-2024-08-06",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
