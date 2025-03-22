@@ -780,6 +780,15 @@
         },
         {
             "maxTokens": 16384,
+            "name": "azure/gpt-4.5-preview",
+            "type": "chat",
+            "inputCost": 0.000075,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "azure/gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -1235,6 +1244,15 @@
         {
             "maxTokens": 8191,
             "name": "azure_ai/mistral-small",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/mistral-small-2503",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
