@@ -2702,6 +2702,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 8192,
+            "name": "text-embedding-large-exp-03-07",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 3072,
             "name": "textembedding-gecko",
             "type": "embedding",
