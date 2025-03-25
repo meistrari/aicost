@@ -3034,6 +3034,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-small-2503@001",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/mistral-small-2503",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 128000,
             "name": "vertex_ai/mistral-nemo@2407",
             "type": "chat",
