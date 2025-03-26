@@ -2675,6 +2675,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": null,
+            "name": "gemini-2.0-flash-lite",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 2048,
             "name": "text-embedding-004",
             "type": "embedding",
