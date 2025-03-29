@@ -2720,6 +2720,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 2048,
+            "name": "multimodalembedding@001",
+            "type": "embedding",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 8192,
             "name": "text-embedding-large-exp-03-07",
             "type": "embedding",
