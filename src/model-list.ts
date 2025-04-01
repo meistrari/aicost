@@ -1,5 +1,5 @@
-// Last updated: 2025-04-01T00:19:04.285Z
-// Next update: 2025-04-01T06:19:04.285Z
+// Last updated: 2025-04-01T06:05:32.016Z
+// Next update: 2025-04-01T12:05:32.016Z
 
 export type AICostModelProvider = 'openai' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -2633,6 +2633,15 @@ export const AICostModelList = {
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gemini-2.5-pro-exp-03-25",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
             "outputCostUnit": null
         },
         {
@@ -6709,6 +6718,15 @@ export const AICostModelList = {
     ],
     "databricks": [
         {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-3-7-sonnet",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00017857,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 128000,
             "name": "databricks/databricks-meta-llama-3-1-405b-instruct",
             "type": "chat",
@@ -6728,7 +6746,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
-            "name": "databricks/meta-llama-3.3-70b-instruct",
+            "name": "databricks/databricks-meta-llama-3-3-70b-instruct",
             "type": "chat",
             "inputCost": 0.00000100002,
             "inputCostUnit": "token",
