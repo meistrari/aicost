@@ -3613,6 +3613,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 32000,
+            "name": "mistralai/mistral-small-3.1-24b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32769,
             "name": "openrouter/cognitivecomputations/dolphin-mixtral-8x7b",
             "type": "chat",
@@ -3721,12 +3730,30 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 65536,
+            "name": "openrouter/openai/o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65536,
+            "name": "openrouter/openai/o3-mini-high",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "openrouter/openai/gpt-4o",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {

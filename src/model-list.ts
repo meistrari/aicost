@@ -1,5 +1,5 @@
-// Last updated: 2025-04-05T12:05:34.259Z
-// Next update: 2025-04-05T18:05:34.259Z
+// Last updated: 2025-04-05T18:04:31.920Z
+// Next update: 2025-04-06T00:04:31.920Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -3619,6 +3619,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 32000,
+            "name": "mistralai/mistral-small-3.1-24b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32769,
             "name": "openrouter/cognitivecomputations/dolphin-mixtral-8x7b",
             "type": "chat",
@@ -3727,12 +3736,30 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 65536,
+            "name": "openrouter/openai/o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65536,
+            "name": "openrouter/openai/o3-mini-high",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "openrouter/openai/gpt-4o",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
