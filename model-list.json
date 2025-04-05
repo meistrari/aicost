@@ -559,6 +559,17 @@
             "outputCostUnit": null
         }
     ],
+    "watsonx": [
+        {
+            "maxTokens": 8192,
+            "name": "watsonx/ibm/granite-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 0.0002,
+            "inputCostUnit": "token",
+            "outputCost": 0.0002,
+            "outputCostUnit": "token"
+        }
+    ],
     "text-completion-openai": [
         {
             "maxTokens": 16384,
