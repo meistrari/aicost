@@ -1317,6 +1317,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "azure_ai/mistral-large-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "azure_ai/ministral-3b",
             "type": "chat",
             "inputCost": 4e-8,
