@@ -1,5 +1,5 @@
-// Last updated: 2025-04-10T00:16:22.776Z
-// Next update: 2025-04-10T06:16:22.776Z
+// Last updated: 2025-04-10T06:05:26.516Z
+// Next update: 2025-04-10T12:05:26.516Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -2659,19 +2659,19 @@ export const AICostModelList = {
             "maxTokens": 65536,
             "name": "gemini-2.5-pro-exp-03-25",
             "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "gemini-2.0-pro-exp-02-05",
             "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
@@ -2721,6 +2721,15 @@ export const AICostModelList = {
         {
             "maxTokens": null,
             "name": "gemini-2.0-flash-lite",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "gemini-2.0-flash-lite-001",
             "type": "chat",
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
