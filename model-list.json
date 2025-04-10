@@ -1400,19 +1400,19 @@
             "maxTokens": 4096,
             "name": "azure_ai/Phi-4-mini-instruct",
             "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 4096,
             "name": "azure_ai/Phi-4-multimodal-instruct",
             "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0.00032,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 16384,
