@@ -656,6 +656,33 @@
         },
         {
             "maxTokens": 4096,
+            "name": "azure/gpt-4o-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/us/gpt-4o-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure/eu/gpt-4o-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "azure/gpt-4o-realtime-preview-2024-10-01",
             "type": "chat",
             "inputCost": 0.000005,
