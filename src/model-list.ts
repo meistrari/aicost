@@ -1,5 +1,5 @@
-// Last updated: 2025-04-11T18:05:10.949Z
-// Next update: 2025-04-12T00:05:10.949Z
+// Last updated: 2025-04-12T00:16:16.737Z
+// Next update: 2025-04-12T06:16:16.737Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -2006,6 +2006,60 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-beta",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-fast-beta",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-fast-latest",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-beta",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-fast-beta",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-fast-latest",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
             "outputCostUnit": "token"
         },
         {
