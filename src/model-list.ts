@@ -1,5 +1,5 @@
-// Last updated: 2025-04-16T18:05:07.724Z
-// Next update: 2025-04-17T00:05:07.724Z
+// Last updated: 2025-04-17T00:16:38.863Z
+// Next update: 2025-04-17T06:16:38.863Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -206,6 +206,24 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 100000,
+            "name": "o3",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-2025-04-16",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
             "name": "o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -216,6 +234,24 @@ export const AICostModelList = {
         {
             "maxTokens": 100000,
             "name": "o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o4-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
