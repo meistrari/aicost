@@ -1,5 +1,5 @@
-// Last updated: 2025-04-18T00:16:35.809Z
-// Next update: 2025-04-18T06:16:35.809Z
+// Last updated: 2025-04-18T06:05:29.722Z
+// Next update: 2025-04-18T12:05:29.722Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -724,6 +724,24 @@ export const AICostModelList = {
     ],
     "azure": [
         {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-2025-04-14",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/gpt-4o-mini-realtime-preview-2024-12-17",
             "type": "chat",
@@ -802,6 +820,15 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o4-mini-2025-04-16",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
             "outputCostUnit": "token"
         },
         {

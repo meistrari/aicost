@@ -718,6 +718,24 @@
     ],
     "azure": [
         {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-2025-04-14",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/gpt-4o-mini-realtime-preview-2024-12-17",
             "type": "chat",
@@ -796,6 +814,15 @@
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o4-mini-2025-04-16",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
             "outputCostUnit": "token"
         },
         {
