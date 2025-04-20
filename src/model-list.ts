@@ -1,5 +1,5 @@
-// Last updated: 2025-04-20T00:18:23.450Z
-// Next update: 2025-04-20T06:18:23.450Z
+// Last updated: 2025-04-20T06:04:59.476Z
+// Next update: 2025-04-20T12:04:59.476Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -739,6 +739,69 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-mini",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-mini-2025-04-14",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-nano",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "azure/gpt-4.1-nano-2025-04-14",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3-2025-04-16",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o4-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
             "outputCostUnit": "token"
         },
         {
