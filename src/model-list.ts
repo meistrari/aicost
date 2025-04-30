@@ -1,7 +1,7 @@
-// Last updated: 2025-04-30T00:17:12.119Z
-// Next update: 2025-04-30T06:17:12.119Z
+// Last updated: 2025-04-30T06:05:34.801Z
+// Next update: 2025-04-30T12:05:34.801Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'text-completion-openai' | 'azure' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -666,63 +666,16 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         }
     ],
-    "text-completion-openai": [
-        {
-            "maxTokens": 16384,
-            "name": "ft:davinci-002",
-            "type": "completion",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 16384,
-            "name": "ft:babbage-002",
-            "type": "completion",
-            "inputCost": 4e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 16384,
-            "name": "babbage-002",
-            "type": "completion",
-            "inputCost": 4e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 16384,
-            "name": "davinci-002",
-            "type": "completion",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "gpt-3.5-turbo-instruct",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4097,
-            "name": "gpt-3.5-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        }
-    ],
     "azure": [
+        {
+            "maxTokens": 1024,
+            "name": "computer-use-preview",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 1024,
             "name": "azure/computer-use-preview",
@@ -1451,6 +1404,62 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "text-completion-openai": [
+        {
+            "maxTokens": 16384,
+            "name": "ft:davinci-002",
+            "type": "completion",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "ft:babbage-002",
+            "type": "completion",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "babbage-002",
+            "type": "completion",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "davinci-002",
+            "type": "completion",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-3.5-turbo-instruct",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4097,
+            "name": "gpt-3.5-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
         }
     ],
     "azure_text": [
@@ -6052,6 +6061,69 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/meta-llama/Llama-3.2-3B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen2.5-7B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen2.5-72B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-V3",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/mistralai/Mistral-Small-24B-Instruct-2501",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
         }
     ],
     "ollama": [
@@ -6779,6 +6851,51 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 20480,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 20480,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-basic",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/llama4-maverick-instruct-basic",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/llama4-scout-instruct-basic",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         }
     ],
