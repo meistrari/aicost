@@ -1,5 +1,5 @@
-// Last updated: 2025-05-02T00:17:15.164Z
-// Next update: 2025-05-02T06:17:15.164Z
+// Last updated: 2025-05-02T06:05:34.179Z
+// Next update: 2025-05-02T12:05:34.179Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
@@ -3353,6 +3353,42 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 10000000,
+            "name": "vertex_ai/meta/llama-4-scout-17b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000000,
+            "name": "vertex_ai/meta/llama-4-scout-128b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "vertex_ai/meta/llama-4-maverick-17b-128e-instruct-maas",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "vertex_ai/meta/llama-4-maverick-17b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 32000,

@@ -3349,6 +3349,42 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 10000000,
+            "name": "vertex_ai/meta/llama-4-scout-17b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000000,
+            "name": "vertex_ai/meta/llama-4-scout-128b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "vertex_ai/meta/llama-4-maverick-17b-128e-instruct-maas",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "vertex_ai/meta/llama-4-maverick-17b-16e-instruct-maas",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32000,
             "name": "vertex_ai/meta/llama3-70b-instruct-maas",
             "type": "chat",
