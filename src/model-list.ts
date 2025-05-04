@@ -1,7 +1,7 @@
-// Last updated: 2025-05-03T18:04:36.896Z
-// Next update: 2025-05-04T00:04:36.896Z
+// Last updated: 2025-05-04T00:19:14.923Z
+// Next update: 2025-05-04T06:19:14.923Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -3225,6 +3225,44 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         }
     ],
+    "meta_llama": [
+        {
+            "maxTokens": 128000,
+            "name": "meta_llama/Llama-4-Scout-17B-16E-Instruct-FP8",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "meta_llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "meta_llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "meta_llama/Llama-3.3-8B-Instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
     "vertex_ai-anthropic_models": [
         {
             "maxTokens": 4096,
@@ -3365,7 +3403,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 10000000,
-            "name": "vertex_ai/meta/llama-4-scout-128b-16e-instruct-maas",
+            "name": "vertex_ai/meta/llama-4-scout-17b-128e-instruct-maas",
             "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
@@ -6672,24 +6710,6 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 127072,
-            "name": "perplexity/sonar",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.000001,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 200000,
-            "name": "perplexity/sonar-pro",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 8192,
             "name": "perplexity/pplx-7b-chat",
             "type": "chat",
@@ -6786,6 +6806,15 @@ export const AICostModelList = {
             "inputCost": 0,
             "inputCostUnit": "request",
             "outputCost": 0.0000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 12000,
+            "name": "perplexity/sonar-deep-research",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         }
     ],
