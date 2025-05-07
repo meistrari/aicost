@@ -5936,6 +5936,42 @@
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "meta.llama4-maverick-17b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "us.meta.llama4-maverick-17b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "meta.llama4-scout-17b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "us.meta.llama4-scout-17b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token"
         }
     ],
     "sagemaker": [
