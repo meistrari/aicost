@@ -6848,7 +6848,43 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 12000,
+            "maxTokens": 128000,
+            "name": "perplexity/sonar",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8000,
+            "name": "perplexity/sonar-pro",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "perplexity/sonar-reasoning",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "perplexity/sonar-reasoning-pro",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "perplexity/sonar-deep-research",
             "type": "chat",
             "inputCost": 0.000002,
@@ -7717,6 +7753,134 @@
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        }
+    ],
+    "nscale": [
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-3B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-7B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/QwQ-32B",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+            "type": "chat",
+            "inputCost": 3.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.75e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/mistralai/mixtral-8x22b-instruct-v0.1",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
         }
     ]
 }

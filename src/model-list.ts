@@ -1,7 +1,7 @@
-// Last updated: 2025-05-08T12:06:34.131Z
-// Next update: 2025-05-08T18:06:34.131Z
+// Last updated: 2025-05-08T18:05:02.595Z
+// Next update: 2025-05-09T00:05:02.595Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -6854,7 +6854,43 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 12000,
+            "maxTokens": 128000,
+            "name": "perplexity/sonar",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8000,
+            "name": "perplexity/sonar-pro",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "perplexity/sonar-reasoning",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "perplexity/sonar-reasoning-pro",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "perplexity/sonar-deep-research",
             "type": "chat",
             "inputCost": 0.000002,
@@ -7723,6 +7759,134 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        }
+    ],
+    "nscale": [
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-3B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-7B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/Qwen/QwQ-32B",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+            "type": "chat",
+            "inputCost": 3.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.75e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/mistralai/mixtral-8x22b-instruct-v0.1",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "nscale/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
         }
     ]
 } as const
