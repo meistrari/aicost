@@ -1791,6 +1791,15 @@
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/embed-v-4-0",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "anthropic": [
