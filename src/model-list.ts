@@ -1,5 +1,5 @@
-// Last updated: 2025-05-14T18:05:07.389Z
-// Next update: 2025-05-15T00:05:07.389Z
+// Last updated: 2025-05-15T00:16:12.595Z
+// Next update: 2025-05-15T06:16:12.595Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale'
 
@@ -2353,7 +2353,7 @@ export const AICostModelList = {
     ],
     "groq": [
         {
-            "maxTokens": 131072,
+            "maxTokens": 128000,
             "name": "groq/deepseek-r1-distill-llama-70b",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -2362,7 +2362,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 32768,
             "name": "groq/llama-3.3-70b-versatile",
             "type": "chat",
             "inputCost": 5.9e-7,
@@ -2377,6 +2377,15 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-guard-3-8b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
@@ -2488,6 +2497,33 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "groq/meta-llama/llama-4-scout-17b-16e-instruct",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/meta-llama/llama-4-maverick-17b-128e-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "groq/mistral-saba-24b",
+            "type": "chat",
+            "inputCost": 7.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32768,
             "name": "groq/mixtral-8x7b-32768",
             "type": "chat",
@@ -2530,6 +2566,15 @@ export const AICostModelList = {
             "inputCost": 1.9e-7,
             "inputCostUnit": "token",
             "outputCost": 1.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "groq/qwen-qwq-32b",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.9e-7,
             "outputCostUnit": "token"
         }
     ],
