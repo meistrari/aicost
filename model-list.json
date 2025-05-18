@@ -7972,5 +7972,25 @@
             "outputCost": 2e-7,
             "outputCostUnit": "token"
         }
+    ],
+    "featherless_ai": [
+        {
+            "maxTokens": 32768,
+            "name": "featherless_ai/featherless-ai/Qwerky-72B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "featherless_ai/featherless-ai/Qwerky-QwQ-32B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
     ]
 }
