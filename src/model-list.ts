@@ -1,5 +1,5 @@
-// Last updated: 2025-05-19T00:18:33.368Z
-// Next update: 2025-05-19T06:18:33.368Z
+// Last updated: 2025-05-19T06:06:05.235Z
+// Next update: 2025-05-19T12:06:05.235Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -7570,7 +7570,7 @@ export const AICostModelList = {
     ],
     "sambanova": [
         {
-            "maxTokens": 16000,
+            "maxTokens": 16384,
             "name": "sambanova/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -7579,16 +7579,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
-            "name": "sambanova/Meta-Llama-3.1-70B-Instruct",
-            "type": "chat",
-            "inputCost": 6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 16000,
+            "maxTokens": 16384,
             "name": "sambanova/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.000005,
@@ -7597,8 +7588,62 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": 16384,
             "name": "sambanova/Meta-Llama-3.2-1B-Instruct",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "sambanova/Meta-Llama-3.2-3B-Instruct",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "sambanova/Llama-4-Maverick-17B-128E-Instruct",
+            "type": "chat",
+            "inputCost": 6.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "sambanova/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "sambanova/Meta-Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "sambanova/Meta-Llama-Guard-3-8B",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "sambanova/Qwen3-32B",
             "type": "chat",
             "inputCost": 4e-7,
             "inputCostUnit": "token",
@@ -7606,30 +7651,48 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4000,
-            "name": "sambanova/Meta-Llama-3.2-3B-Instruct",
+            "maxTokens": 16384,
+            "name": "sambanova/QwQ-32B",
             "type": "chat",
-            "inputCost": 8e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000016,
+            "outputCost": 0.000001,
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8000,
-            "name": "sambanova/Qwen2.5-Coder-32B-Instruct",
+            "maxTokens": 4096,
+            "name": "sambanova/Qwen2-Audio-7B-Instruct",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 0.0001,
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8000,
-            "name": "sambanova/Qwen2.5-72B-Instruct",
+            "maxTokens": 131072,
+            "name": "sambanova/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000004,
+            "outputCost": 0.0000014,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "sambanova/DeepSeek-R1",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000007,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "sambanova/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
             "outputCostUnit": "token"
         }
     ],
