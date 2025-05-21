@@ -1,5 +1,5 @@
-// Last updated: 2025-05-21T00:17:58.838Z
-// Next update: 2025-05-21T06:17:58.838Z
+// Last updated: 2025-05-21T06:05:39.068Z
+// Next update: 2025-05-21T12:05:39.068Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -3089,6 +3089,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 65535,
+            "name": "gemini-2.5-flash-preview-05-20",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
             "name": "gemini-2.5-flash-preview-04-17",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -3135,6 +3144,24 @@ export const AICostModelList = {
         {
             "maxTokens": 65535,
             "name": "gemini-2.5-pro-preview-03-25",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gemini-2.0-flash-preview-image-generation",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
+            "name": "gemini-2.5-pro-preview-tts",
             "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
