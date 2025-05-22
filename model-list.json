@@ -2256,6 +2256,15 @@
         },
         {
             "maxTokens": 131072,
+            "name": "xai/grok-3",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
             "name": "xai/grok-3-beta",
             "type": "chat",
             "inputCost": 0.000003,
