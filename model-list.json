@@ -7526,6 +7526,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 128000,
+            "name": "databricks/databricks-llama-4-maverick",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32768,
             "name": "databricks/databricks-dbrx-instruct",
             "type": "chat",
