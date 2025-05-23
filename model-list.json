@@ -1533,6 +1533,15 @@
         },
         {
             "maxTokens": 8191,
+            "name": "azure_ai/mistral-medium-2505",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
             "name": "azure_ai/mistral-large",
             "type": "chat",
             "inputCost": 0.000004,
@@ -1912,7 +1921,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "claude-opus-4-20250514",
             "type": "chat",
             "inputCost": 0.000015,
@@ -1921,7 +1930,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3466,7 +3475,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "vertex_ai/claude-opus-4@20250514",
             "type": "chat",
             "inputCost": 0.000015,
@@ -3475,7 +3484,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4@20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6064,7 +6073,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6073,7 +6082,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6100,7 +6109,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "us.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6109,7 +6118,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6118,7 +6127,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "eu.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6127,7 +6136,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7585,7 +7594,7 @@
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.00017857,
+            "outputCost": 0.000017857,
             "outputCostUnit": "token"
         },
         {

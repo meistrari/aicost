@@ -1,5 +1,5 @@
-// Last updated: 2025-05-23T00:17:32.523Z
-// Next update: 2025-05-23T06:17:32.523Z
+// Last updated: 2025-05-23T06:05:30.417Z
+// Next update: 2025-05-23T12:05:30.417Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -1539,6 +1539,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8191,
+            "name": "azure_ai/mistral-medium-2505",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
             "name": "azure_ai/mistral-large",
             "type": "chat",
             "inputCost": 0.000004,
@@ -1918,7 +1927,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "claude-opus-4-20250514",
             "type": "chat",
             "inputCost": 0.000015,
@@ -1927,7 +1936,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3472,7 +3481,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "vertex_ai/claude-opus-4@20250514",
             "type": "chat",
             "inputCost": 0.000015,
@@ -3481,7 +3490,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4@20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6070,7 +6079,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6079,7 +6088,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6106,7 +6115,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "us.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6115,7 +6124,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6124,7 +6133,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "eu.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6133,7 +6142,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7591,7 +7600,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.00017857,
+            "outputCost": 0.000017857,
             "outputCostUnit": "token"
         },
         {
