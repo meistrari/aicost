@@ -137,6 +137,15 @@
         },
         {
             "maxTokens": 16384,
+            "name": "gpt-4o-mini-audio-preview",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
             "name": "gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2007,9 +2016,18 @@
             "maxTokens": 8191,
             "name": "mistral/mistral-medium-latest",
             "type": "chat",
-            "inputCost": 0.0000027,
+            "inputCost": 4e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000081,
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "mistral/mistral-medium-2505",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
             "outputCostUnit": "token"
         },
         {
