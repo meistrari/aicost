@@ -3933,6 +3933,15 @@
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1024,
+            "name": "embed-v4.0",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "replicate": [
