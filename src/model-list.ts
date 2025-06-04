@@ -1,5 +1,5 @@
-// Last updated: 2025-06-03T18:05:31.164Z
-// Next update: 2025-06-04T00:05:31.164Z
+// Last updated: 2025-06-04T00:18:07.865Z
+// Next update: 2025-06-04T06:18:07.865Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -2668,6 +2668,15 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "cerebras/qwen-3-32b",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
         }
     ],
     "friendliai": [
@@ -3236,6 +3245,15 @@ export const AICostModelList = {
             "name": "text-embedding-004",
             "type": "embedding",
             "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 2048,
+            "name": "gemini-embedding-001",
+            "type": "embedding",
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null

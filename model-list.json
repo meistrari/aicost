@@ -2662,6 +2662,15 @@
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "cerebras/qwen-3-32b",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
         }
     ],
     "friendliai": [
@@ -3230,6 +3239,15 @@
             "name": "text-embedding-004",
             "type": "embedding",
             "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 2048,
+            "name": "gemini-embedding-001",
+            "type": "embedding",
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
