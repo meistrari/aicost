@@ -1,5 +1,5 @@
-// Last updated: 2025-06-04T00:18:07.865Z
-// Next update: 2025-06-04T06:18:07.865Z
+// Last updated: 2025-06-04T06:05:44.628Z
+// Next update: 2025-06-04T12:05:44.628Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -1947,6 +1947,24 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "claude-sonnet-4-20250514",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "claude-4-opus-20250514",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-4-sonnet-20250514",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -7217,7 +7235,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 16384,
-            "name": "accounts/fireworks/models/llama-v3p2-90b-vision-instruct",
+            "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-90b-vision-instruct",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
@@ -7303,6 +7321,15 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 160000,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-0528",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         },
         {
