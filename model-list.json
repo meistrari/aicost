@@ -6537,6 +6537,42 @@
         },
         {
             "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mistral-Small-24B-Instruct-2501",
             "type": "chat",
             "inputCost": null,
