@@ -3969,15 +3969,6 @@
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
-        },
-        {
-            "maxTokens": 1024,
-            "name": "embed-v4.0",
-            "type": "embedding",
-            "inputCost": 1.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
         }
     ],
     "replicate": [
@@ -6529,42 +6520,6 @@
         {
             "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
             "type": "chat",
             "inputCost": null,
             "inputCostUnit": null,

@@ -1,5 +1,5 @@
-// Last updated: 2025-06-05T06:05:50.767Z
-// Next update: 2025-06-05T12:05:50.767Z
+// Last updated: 2025-06-05T12:06:52.292Z
+// Next update: 2025-06-05T18:06:52.292Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -3975,15 +3975,6 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
-        },
-        {
-            "maxTokens": 1024,
-            "name": "embed-v4.0",
-            "type": "embedding",
-            "inputCost": 1.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
         }
     ],
     "replicate": [
@@ -6535,42 +6526,6 @@ export const AICostModelList = {
         {
             "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": null,
-            "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
             "type": "chat",
             "inputCost": null,
             "inputCostUnit": null,
