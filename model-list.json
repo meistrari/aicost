@@ -6046,7 +6046,7 @@
     ],
     "bedrock_converse": [
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -6055,7 +6055,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -6064,7 +6064,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 4.6e-8,
@@ -6073,7 +6073,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -6082,7 +6082,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -6091,7 +6091,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 7.8e-8,
@@ -6100,7 +6100,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -6109,7 +6109,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -6118,7 +6118,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 0.00000105,
@@ -6127,7 +6127,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-premier-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,

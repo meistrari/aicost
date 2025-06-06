@@ -1,5 +1,5 @@
-// Last updated: 2025-06-06T06:05:38.949Z
-// Next update: 2025-06-06T12:05:38.949Z
+// Last updated: 2025-06-06T12:06:46.459Z
+// Next update: 2025-06-06T18:06:46.459Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -6052,7 +6052,7 @@ export const AICostModelList = {
     ],
     "bedrock_converse": [
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -6061,7 +6061,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -6070,7 +6070,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 4.6e-8,
@@ -6079,7 +6079,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -6088,7 +6088,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -6097,7 +6097,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 7.8e-8,
@@ -6106,7 +6106,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -6115,7 +6115,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -6124,7 +6124,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "eu.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 0.00000105,
@@ -6133,7 +6133,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 10000,
             "name": "us.amazon.nova-premier-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,
