@@ -1,7 +1,7 @@
-// Last updated: 2025-06-06T18:05:23.139Z
-// Next update: 2025-06-07T00:05:23.139Z
+// Last updated: 2025-06-07T00:17:41.280Z
+// Next update: 2025-06-07T06:17:41.280Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'nebius'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -8284,125 +8284,6 @@ export const AICostModelList = {
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": null,
-            "outputCostUnit": null
-        }
-    ],
-    "nebius": [
-        {
-            "maxTokens": 128000,
-            "name": "nebius/deepseek-ai/DeepSeek-V3-0324",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "nebius/deepseek-ai/DeepSeek-V3-0324-fast",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000006,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "nebius/deepseek-ai/DeepSeek-R1-0528",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "nebius/deepseek-ai/DeepSeek-R1-fast",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000006,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "nebius/meta-llama/Llama-3.3-70B-Instruct",
-            "type": "chat",
-            "inputCost": 1.3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 40000,
-            "name": "nebius/Qwen/Qwen3-235B-A22B",
-            "type": "chat",
-            "inputCost": 2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 40000,
-            "name": "nebius/Qwen/Qwen3-30B-A3B",
-            "type": "chat",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 40000,
-            "name": "nebius/Qwen/Qwen3-30B-A3B-fast",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 9e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 40000,
-            "name": "nebius/Qwen/Qwen3-32B-fast",
-            "type": "chat",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 32000,
-            "name": "nebius/Qwen/Qwen2.5-VL-72B-Instruct",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.5e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "nebius/google/gemma-3-27b-it-fast",
-            "type": "chat",
-            "inputCost": 2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 32000,
-            "name": "nebius/BAAI/bge-en-icl",
-            "type": "embedding",
-            "inputCost": 1e-8,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
-        },
-        {
-            "maxTokens": 32000,
-            "name": "nebius/BAAI/bge-multilingual-gemma2",
-            "type": "embedding",
-            "inputCost": 1e-8,
-            "inputCostUnit": "token",
-            "outputCost": 0,
             "outputCostUnit": null
         }
     ]
