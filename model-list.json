@@ -3557,11 +3557,29 @@
         },
         {
             "maxTokens": 32000,
+            "name": "vertex_ai/claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
             "name": "vertex_ai/claude-opus-4@20250514",
             "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vertex_ai/claude-sonnet-4",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
