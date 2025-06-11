@@ -218,20 +218,38 @@
         },
         {
             "maxTokens": 100000,
+            "name": "o3-pro",
+            "type": "chat",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-pro-2025-06-10",
+            "type": "chat",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
             "name": "o3",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.00004,
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 100000,
             "name": "o3-2025-04-16",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.00004,
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         },
         {
@@ -2218,6 +2236,24 @@
             "inputCostUnit": "token",
             "outputCost": 3e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40000,
+            "name": "mistral/magistral-medium-2506",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40000,
+            "name": "mistral/magistral-small-2506",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         },
         {
             "maxTokens": 8192,
