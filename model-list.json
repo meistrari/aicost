@@ -218,24 +218,6 @@
         },
         {
             "maxTokens": 100000,
-            "name": "o3-pro",
-            "type": "chat",
-            "inputCost": 0.00002,
-            "inputCostUnit": "token",
-            "outputCost": 0.00008,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 100000,
-            "name": "o3-pro-2025-06-10",
-            "type": "chat",
-            "inputCost": 0.00002,
-            "inputCostUnit": "token",
-            "outputCost": 0.00008,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 100000,
             "name": "o3",
             "type": "chat",
             "inputCost": 0.000002,
