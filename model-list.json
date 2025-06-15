@@ -2221,6 +2221,15 @@
         },
         {
             "maxTokens": 40000,
+            "name": "mistral/magistral-medium-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40000,
             "name": "mistral/magistral-medium-2506",
             "type": "chat",
             "inputCost": 0.000002,
@@ -2230,12 +2239,21 @@
         },
         {
             "maxTokens": 40000,
+            "name": "mistral/magistral-small-latest",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40000,
             "name": "mistral/magistral-small-2506",
             "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": null,
-            "outputCost": 0,
-            "outputCostUnit": null
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
@@ -2364,6 +2382,15 @@
         },
         {
             "maxTokens": 131072,
+            "name": "xai/grok-3-latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
             "name": "xai/grok-3-beta",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2391,6 +2418,42 @@
         },
         {
             "maxTokens": 131072,
+            "name": "xai/grok-3-mini",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-latest",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-fast",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xai/grok-3-mini-fast-latest",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
             "name": "xai/grok-3-mini-beta",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2401,15 +2464,6 @@
         {
             "maxTokens": 131072,
             "name": "xai/grok-3-mini-fast-beta",
-            "type": "chat",
-            "inputCost": 6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000004,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 131072,
-            "name": "xai/grok-3-mini-fast-latest",
             "type": "chat",
             "inputCost": 6e-7,
             "inputCostUnit": "token",
