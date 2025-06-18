@@ -3254,6 +3254,15 @@
         },
         {
             "maxTokens": 65535,
+            "name": "gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
             "name": "gemini-2.5-flash-preview-05-20",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -3268,6 +3277,15 @@
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
+            "name": "gemini-2.5-flash-lite-preview-06-17",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
             "outputCostUnit": "token"
         },
         {
@@ -4201,6 +4219,15 @@
     "openrouter": [
         {
             "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-r1-0528",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000215,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/deepseek/deepseek-r1",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -4237,6 +4264,15 @@
         },
         {
             "maxTokens": 8192,
+            "name": "openrouter/google/gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/google/gemini-pro-1.5",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -4251,6 +4287,15 @@
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/google/gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
             "outputCostUnit": "token"
         },
         {
@@ -4355,6 +4400,15 @@
         {
             "maxTokens": 200000,
             "name": "openrouter/anthropic/claude-3-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/anthropic/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
