@@ -1,5 +1,5 @@
-// Last updated: 2025-06-20T00:17:52.572Z
-// Next update: 2025-06-20T06:17:52.572Z
+// Last updated: 2025-06-20T06:05:36.035Z
+// Next update: 2025-06-20T12:05:36.035Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai'
 
@@ -5330,6 +5330,42 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4096,
+            "name": "apac.anthropic.claude-3-haiku-20240307-v1:0",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "apac.anthropic.claude-3-sonnet-20240229-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "apac.anthropic.claude-3-5-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "apac.anthropic.claude-3-5-sonnet-20241022-v2:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "eu.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
@@ -6296,6 +6332,33 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 10000,
+            "name": "apac.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.48e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000,
+            "name": "apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.52e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000,
+            "name": "apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000336,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000,
             "name": "us.amazon.nova-premier-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -6369,6 +6432,15 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
