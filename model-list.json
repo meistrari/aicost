@@ -773,9 +773,9 @@
             "maxTokens": 100000,
             "name": "azure/o3",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.00004,
+            "outputCost": 0.000008,
             "outputCostUnit": "token"
         },
         {
