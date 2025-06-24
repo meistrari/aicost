@@ -4435,7 +4435,16 @@
         },
         {
             "maxTokens": 32000,
-            "name": "mistralai/mistral-small-3.1-24b-instruct",
+            "name": "openrouter/mistralai/mistral-small-3.1-24b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "openrouter/mistralai/mistral-small-3.2-24b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
