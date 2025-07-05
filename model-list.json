@@ -676,6 +676,15 @@
             "inputCostUnit": "token",
             "outputCost": 0.0002,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "watsonx/mistralai/mistral-large",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
         }
     ],
     "azure": [
