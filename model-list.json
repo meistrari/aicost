@@ -6334,6 +6334,24 @@
     ],
     "bedrock_converse": [
         {
+            "maxTokens": 128000,
+            "name": "eu.mistral.pixtral-large-2502-v1:0",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.mistral.pixtral-large-2502-v1:0",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 10000,
             "name": "amazon.nova-micro-v1:0",
             "type": "chat",
@@ -8589,6 +8607,44 @@
         {
             "maxTokens": 32768,
             "name": "featherless_ai/featherless-ai/Qwerky-QwQ-32B",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
+    "dashscope": [
+        {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen-max",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-plus-latest",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-turbo-latest",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": null,
             "inputCostUnit": null,
