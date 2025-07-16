@@ -2631,6 +2631,15 @@
             "inputCostUnit": "token",
             "outputCost": 3.9e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "groq/moonshotai-kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
         }
     ],
     "cerebras": [
@@ -6885,6 +6894,15 @@
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
         }
     ],
     "ollama": [

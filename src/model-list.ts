@@ -1,5 +1,5 @@
-// Last updated: 2025-07-16T12:07:23.049Z
-// Next update: 2025-07-16T18:07:23.049Z
+// Last updated: 2025-07-16T18:05:33.900Z
+// Next update: 2025-07-17T00:05:33.900Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
 
@@ -2636,6 +2636,15 @@ export const AICostModelList = {
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
             "outputCost": 3.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "groq/moonshotai-kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
             "outputCostUnit": "token"
         }
     ],
@@ -6891,6 +6900,15 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
         }
     ],
     "ollama": [
