@@ -1,7 +1,7 @@
-// Last updated: 2025-07-16T00:18:57.275Z
-// Next update: 2025-07-16T06:18:57.275Z
+// Last updated: 2025-07-16T06:06:22.016Z
+// Next update: 2025-07-16T12:06:22.016Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'anthropic' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -1844,179 +1844,6 @@ export const AICostModelList = {
             "outputCostUnit": null
         }
     ],
-    "anthropic": [
-        {
-            "maxTokens": 8191,
-            "name": "claude-instant-1",
-            "type": "chat",
-            "inputCost": 0.00000163,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000551,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "claude-instant-1.2",
-            "type": "chat",
-            "inputCost": 1.63e-7,
-            "inputCostUnit": "token",
-            "outputCost": 5.51e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "claude-2",
-            "type": "chat",
-            "inputCost": 0.000008,
-            "inputCostUnit": "token",
-            "outputCost": 0.000024,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "claude-2.1",
-            "type": "chat",
-            "inputCost": 0.000008,
-            "inputCostUnit": "token",
-            "outputCost": 0.000024,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "claude-3-haiku-20240307",
-            "type": "chat",
-            "inputCost": 2.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000125,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "claude-3-5-haiku-20241022",
-            "type": "chat",
-            "inputCost": 8e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000004,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "claude-3-5-haiku-latest",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.000005,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "claude-3-opus-latest",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "claude-3-opus-20240229",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "claude-3-sonnet-20240229",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "claude-3-5-sonnet-latest",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "claude-3-5-sonnet-20240620",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 32000,
-            "name": "claude-opus-4-20250514",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 64000,
-            "name": "claude-sonnet-4-20250514",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 32000,
-            "name": "claude-4-opus-20250514",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 64000,
-            "name": "claude-4-sonnet-20250514",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "claude-3-7-sonnet-latest",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "claude-3-7-sonnet-20250219",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "claude-3-5-sonnet-20241022",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token"
-        }
-    ],
     "mistral": [
         {
             "maxTokens": 8191,
@@ -2867,6 +2694,161 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        }
+    ],
+    "anthropic": [
+        {
+            "maxTokens": 8191,
+            "name": "claude-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.000024,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "claude-2.1",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.000024,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "claude-3-haiku-20240307",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "claude-3-5-haiku-20241022",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "claude-3-5-haiku-latest",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "claude-3-opus-latest",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "claude-3-opus-20240229",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "claude-3-sonnet-20240229",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "claude-3-5-sonnet-latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "claude-3-5-sonnet-20240620",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "claude-opus-4-20250514",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-sonnet-4-20250514",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "claude-4-opus-20250514",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-4-sonnet-20250514",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "claude-3-7-sonnet-latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "claude-3-7-sonnet-20250219",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "claude-3-5-sonnet-20241022",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         }
     ],
@@ -6842,19 +6824,19 @@ export const AICostModelList = {
             "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.5e-7,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-4-Scout-17B-16E-Instruct",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.9e-7,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": null,
@@ -6887,10 +6869,19 @@ export const AICostModelList = {
             "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000007,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": null,
