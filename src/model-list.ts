@@ -1,5 +1,5 @@
-// Last updated: 2025-07-18T12:07:14.325Z
-// Next update: 2025-07-18T18:07:14.325Z
+// Last updated: 2025-07-18T18:05:31.045Z
+// Next update: 2025-07-19T00:05:31.045Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
 
@@ -1519,6 +1519,42 @@ export const AICostModelList = {
         }
     ],
     "azure_ai": [
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-3",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/global/grok-3",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/global/grok-3-mini",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000127,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-3-mini",
+            "type": "chat",
+            "inputCost": 2.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000138,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 8192,
             "name": "azure_ai/deepseek-r1",
