@@ -7954,6 +7954,35 @@
             "outputCostUnit": "token"
         }
     ],
+    "v0": [
+        {
+            "maxTokens": 128000,
+            "name": "v0/v0-1.0-md",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "v0/v0-1.5-md",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 512000,
+            "name": "v0/v0-1.5-lg",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        }
+    ],
     "voyage": [
         {
             "maxTokens": 4096,
