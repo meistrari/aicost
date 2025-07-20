@@ -1,5 +1,5 @@
-// Last updated: 2025-07-19T18:04:50.212Z
-// Next update: 2025-07-20T00:04:50.212Z
+// Last updated: 2025-07-20T00:21:14.381Z
+// Next update: 2025-07-20T06:21:14.381Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
 
@@ -2685,7 +2685,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 131072,
-            "name": "groq/moonshotai-kimi-k2-instruct",
+            "name": "groq/moonshotai/kimi-k2-instruct",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
@@ -4897,6 +4897,15 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/switchpoint/router",
+            "type": "chat",
+            "inputCost": 8.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000034,
+            "outputCostUnit": "token"
         }
     ],
     "ai21": [
@@ -6390,6 +6399,186 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000002,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-east-1/amazon.titan-embed-text-v1",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0",
+            "type": "embedding",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8000,
+            "name": "bedrock/us-gov-east-1/amazon.titan-text-express-v1",
+            "type": "chat",
+            "inputCost": 0.0000013,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000017,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4000,
+            "name": "bedrock/us-gov-east-1/amazon.titan-text-lite-v1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "bedrock/us-gov-east-1/amazon.titan-text-premier-v1:0",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-3-5-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000036,
+            "inputCostUnit": "token",
+            "outputCost": 0.000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-3-haiku-20240307-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
+            "name": "bedrock/us-gov-east-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000265,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
+            "name": "bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000265,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/amazon.titan-embed-text-v1",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0",
+            "type": "embedding",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8000,
+            "name": "bedrock/us-gov-west-1/amazon.titan-text-express-v1",
+            "type": "chat",
+            "inputCost": 0.0000013,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000017,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4000,
+            "name": "bedrock/us-gov-west-1/amazon.titan-text-lite-v1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "bedrock/us-gov-west-1/amazon.titan-text-premier-v1:0",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000036,
+            "inputCostUnit": "token",
+            "outputCost": 0.000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-3-haiku-20240307-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
+            "name": "bedrock/us-gov-west-1/meta.llama3-70b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000265,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
+            "name": "bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000265,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000,
+            "name": "bedrock/us-gov-east-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 10000,
+            "name": "bedrock/us-gov-west-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token"
         }
     ],
     "bedrock_converse": [
@@ -6920,7 +7109,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": null,
+            "maxTokens": 8192,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -6929,7 +7118,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": null,
+            "maxTokens": 20480,
             "name": "together_ai/deepseek-ai/DeepSeek-R1",
             "type": "chat",
             "inputCost": 0.000003,
@@ -8764,37 +8953,37 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "moonshot/moonshot-v1-8k",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 32768,
             "name": "moonshot/moonshot-v1-32k",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "moonshot/moonshot-v1-128k",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "moonshot/moonshot-v1-auto",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
@@ -8809,28 +8998,100 @@ export const AICostModelList = {
             "maxTokens": 32768,
             "name": "moonshot/moonshot-v1-32k-0430",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "moonshot/moonshot-v1-128k-0430",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "moonshot/moonshot-v1-8k-0430",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "moonshot/kimi-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "moonshot/kimi-latest-8k",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "moonshot/kimi-latest-32k",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "moonshot/kimi-latest-128k",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "moonshot/kimi-thinking-preview",
+            "type": "chat",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "moonshot/moonshot-v1-8k-vision-preview",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "moonshot/moonshot-v1-32k-vision-preview",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "moonshot/moonshot-v1-128k-vision-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
         }
     ]
 } as const
