@@ -1,7 +1,7 @@
-// Last updated: 2025-07-21T18:05:46.621Z
-// Next update: 2025-07-22T00:05:46.621Z
+// Last updated: 2025-07-22T00:19:32.449Z
+// Next update: 2025-07-22T06:19:32.449Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'qwen' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -2675,12 +2675,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
-            "name": "groq/qwen-qwq-32b",
+            "maxTokens": 131000,
+            "name": "groq/qwen/qwen3-32b",
             "type": "chat",
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
-            "outputCost": 3.9e-7,
+            "outputCost": 5.9e-7,
             "outputCostUnit": "token"
         },
         {
@@ -4905,6 +4905,17 @@ export const AICostModelList = {
             "inputCost": 8.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000034,
+            "outputCostUnit": "token"
+        }
+    ],
+    "qwen": [
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/qwen/qwen-vl-plus",
+            "type": "chat",
+            "inputCost": 0.00021,
+            "inputCostUnit": "token",
+            "outputCost": 0.00063,
             "outputCostUnit": "token"
         }
     ],
@@ -7927,6 +7938,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 16384,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct",
             "type": "chat",
@@ -9273,6 +9293,26 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        }
+    ],
+    "morph": [
+        {
+            "maxTokens": 16000,
+            "name": "morph/morph-v3-fast",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16000,
+            "name": "morph/morph-v3-large",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000019,
             "outputCostUnit": "token"
         }
     ]
