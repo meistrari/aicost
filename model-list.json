@@ -3478,6 +3478,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 65535,
+            "name": "gemini-2.0-flash-live-preview-04-09",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 2048,
             "name": "text-embedding-004",
             "type": "embedding",
@@ -3916,6 +3925,33 @@
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/meta/llama-3.1-8b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/meta/llama-3.1-70b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
