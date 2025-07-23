@@ -1,7 +1,7 @@
-// Last updated: 2025-07-23T00:19:15.952Z
-// Next update: 2025-07-23T06:19:15.952Z
+// Last updated: 2025-07-23T06:06:38.404Z
+// Next update: 2025-07-23T12:06:38.404Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -2675,12 +2675,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
-            "name": "groq/qwen-qwq-32b",
+            "maxTokens": 131000,
+            "name": "groq/qwen/qwen3-32b",
             "type": "chat",
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
-            "outputCost": 3.9e-7,
+            "outputCost": 5.9e-7,
             "outputCostUnit": "token"
         },
         {
@@ -4932,6 +4932,15 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/qwen/qwen-vl-plus",
+            "type": "chat",
+            "inputCost": 0.00021,
+            "inputCostUnit": "token",
+            "outputCost": 0.00063,
             "outputCostUnit": "token"
         },
         {
@@ -7963,6 +7972,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 16384,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct",
             "type": "chat",
@@ -8214,16 +8232,335 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         }
     ],
-    "voyage": [
+    "lambda_ai": [
         {
-            "maxTokens": 4096,
-            "name": "voyage/voyage-01",
-            "type": "embedding",
+            "maxTokens": 131072,
+            "name": "lambda_ai/deepseek-llama3.3-70b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/deepseek-r1-0528",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/deepseek-r1-671b",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/deepseek-v3-0324",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/hermes3-405b",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/hermes3-70b",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/hermes3-8b",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/lfm-40b",
+            "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": null
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
         },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/lfm-7b",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama-4-maverick-17b-128e-instruct-fp8",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "lambda_ai/llama-4-scout-17b-16e-instruct",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.1-405b-instruct-fp8",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.1-70b-instruct-fp8",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.1-8b-instruct",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.1-nemotron-70b-instruct-fp8",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.2-11b-vision-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.2-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/llama3.3-70b-instruct-fp8",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/qwen25-coder-32b-instruct",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "lambda_ai/qwen3-32b-fp8",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        }
+    ],
+    "hyperbolic": [
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/deepseek-ai/DeepSeek-R1-0528",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/Qwen/Qwen3-235B-A22B",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/Qwen/QwQ-32B",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/deepseek-ai/DeepSeek-R1",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/deepseek-ai/DeepSeek-V3",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/Qwen/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/meta-llama/Llama-3.2-3B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/Qwen/Qwen2.5-72B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "hyperbolic/meta-llama/Meta-Llama-3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/meta-llama/Meta-Llama-3.1-405B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "hyperbolic/meta-llama/Meta-Llama-3.1-70B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        }
+    ],
+    "voyage": [
         {
             "maxTokens": 4096,
             "name": "voyage/voyage-lite-01",
