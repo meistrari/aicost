@@ -2747,24 +2747,6 @@
     ],
     "anthropic": [
         {
-            "maxTokens": 8191,
-            "name": "claude-2",
-            "type": "chat",
-            "inputCost": 0.000008,
-            "inputCostUnit": "token",
-            "outputCost": 0.000024,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "claude-2.1",
-            "type": "chat",
-            "inputCost": 0.000008,
-            "inputCostUnit": "token",
-            "outputCost": 0.000024,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 4096,
             "name": "claude-3-haiku-20240307",
             "type": "chat",
@@ -2807,15 +2789,6 @@
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "claude-3-sonnet-20240229",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
