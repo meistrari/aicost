@@ -1,5 +1,5 @@
-// Last updated: 2025-07-25T00:19:14.869Z
-// Next update: 2025-07-25T06:19:14.869Z
+// Last updated: 2025-07-25T06:06:20.280Z
+// Next update: 2025-07-25T12:06:20.280Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
@@ -369,6 +369,15 @@ export const AICostModelList = {
         {
             "maxTokens": 4096,
             "name": "gpt-4o-realtime-preview-2024-12-17",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-4o-realtime-preview-2025-06-03",
             "type": "chat",
             "inputCost": 0.000005,
             "inputCostUnit": "token",
@@ -4923,6 +4932,15 @@ export const AICostModelList = {
             "inputCost": 0.00021,
             "inputCostUnit": "token",
             "outputCost": 0.00063,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "openrouter/qwen/qwen3-coder",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
