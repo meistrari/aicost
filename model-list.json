@@ -4374,9 +4374,9 @@
             "maxTokens": 2048,
             "name": "openrouter/bytedance/ui-tars-1.5-7b",
             "type": "chat",
-            "inputCost": 0.1,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.2,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
@@ -4932,9 +4932,9 @@
             "maxTokens": 8192,
             "name": "openrouter/qwen/qwen-vl-plus",
             "type": "chat",
-            "inputCost": 0.00021,
+            "inputCost": 2.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00063,
+            "outputCost": 6.3e-7,
             "outputCostUnit": "token"
         },
         {

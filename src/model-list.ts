@@ -1,5 +1,5 @@
-// Last updated: 2025-07-27T12:06:37.979Z
-// Next update: 2025-07-27T18:06:37.979Z
+// Last updated: 2025-07-27T18:05:14.956Z
+// Next update: 2025-07-28T00:05:14.956Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
@@ -4380,9 +4380,9 @@ export const AICostModelList = {
             "maxTokens": 2048,
             "name": "openrouter/bytedance/ui-tars-1.5-7b",
             "type": "chat",
-            "inputCost": 0.1,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.2,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
@@ -4938,9 +4938,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "openrouter/qwen/qwen-vl-plus",
             "type": "chat",
-            "inputCost": 0.00021,
+            "inputCost": 2.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00063,
+            "outputCost": 6.3e-7,
             "outputCostUnit": "token"
         },
         {
