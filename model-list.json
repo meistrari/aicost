@@ -4371,6 +4371,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 256000,
+            "name": "openrouter/x-ai/grok-4",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 2048,
             "name": "openrouter/bytedance/ui-tars-1.5-7b",
             "type": "chat",
