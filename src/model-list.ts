@@ -1,5 +1,5 @@
-// Last updated: 2025-08-05T12:08:00.730Z
-// Next update: 2025-08-05T18:08:00.730Z
+// Last updated: 2025-08-06T00:19:23.869Z
+// Next update: 2025-08-06T06:19:23.869Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
@@ -2827,6 +2827,15 @@ export const AICostModelList = {
         {
             "maxTokens": 32000,
             "name": "claude-opus-4-20250514",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "claude-opus-4-1-20250805",
             "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
@@ -6782,6 +6791,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 32000,
+            "name": "anthropic.claude-opus-4-1-20250805-v1:0",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
             "name": "anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6818,6 +6836,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 32000,
+            "name": "us.anthropic.claude-opus-4-1-20250805-v1:0",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
             "name": "us.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6832,6 +6859,15 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "eu.anthropic.claude-opus-4-1-20250805-v1:0",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
             "outputCostUnit": "token"
         },
         {
@@ -8023,6 +8059,42 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "fireworks_ai/accounts/fireworks/models/glm-4p5",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "fireworks_ai/accounts/fireworks/models/glm-4p5-air",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         }
     ],
