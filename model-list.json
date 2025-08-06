@@ -3710,6 +3710,24 @@
     "vertex_ai-anthropic_models": [
         {
             "maxTokens": 4096,
+            "name": "vertex_ai/claude-opus-4-1",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "vertex_ai/claude-opus-4-1@20250805",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "vertex_ai/claude-3-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
