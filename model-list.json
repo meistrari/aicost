@@ -6802,6 +6802,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 128000,
+            "name": "openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 32000,
             "name": "anthropic.claude-opus-4-1-20250805-v1:0",
             "type": "chat",

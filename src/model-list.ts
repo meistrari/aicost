@@ -1,5 +1,5 @@
-// Last updated: 2025-08-06T12:07:57.035Z
-// Next update: 2025-08-06T18:07:57.035Z
+// Last updated: 2025-08-06T18:05:43.776Z
+// Next update: 2025-08-07T00:05:43.776Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph'
 
@@ -6805,6 +6805,24 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.0000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
