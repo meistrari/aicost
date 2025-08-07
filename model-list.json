@@ -2694,6 +2694,24 @@
             "inputCostUnit": "token",
             "outputCost": 0.000003,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "groq/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32766,
+            "name": "groq/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token"
         }
     ],
     "cerebras": [
