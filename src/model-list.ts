@@ -1,5 +1,5 @@
-// Last updated: 2025-08-08T12:07:33.766Z
-// Next update: 2025-08-08T18:07:33.766Z
+// Last updated: 2025-08-08T18:05:04.032Z
+// Next update: 2025-08-09T00:05:04.032Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -232,12 +232,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 128000,
             "name": "gpt-5-chat",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.00000125,
             "inputCostUnit": "token",
-            "outputCost": 0.00002,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
@@ -839,12 +839,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 128000,
             "name": "azure/gpt-5-chat",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.00000125,
             "inputCostUnit": "token",
-            "outputCost": 0.00002,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
