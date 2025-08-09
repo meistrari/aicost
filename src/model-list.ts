@@ -1,5 +1,5 @@
-// Last updated: 2025-08-09T00:17:50.953Z
-// Next update: 2025-08-09T06:17:50.953Z
+// Last updated: 2025-08-09T06:05:30.026Z
+// Next update: 2025-08-09T12:05:30.026Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -2900,6 +2900,24 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 8e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "cerebras/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "cerebras/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.9e-7,
+            "outputCostUnit": "token"
         }
     ],
     "friendliai": [
@@ -4986,6 +5004,24 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
             "outputCostUnit": "token"
         },
         {

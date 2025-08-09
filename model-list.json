@@ -2894,6 +2894,24 @@
             "inputCostUnit": "token",
             "outputCost": 8e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "cerebras/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "cerebras/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.9e-7,
+            "outputCostUnit": "token"
         }
     ],
     "friendliai": [
@@ -4980,6 +4998,24 @@
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
             "outputCostUnit": "token"
         },
         {
