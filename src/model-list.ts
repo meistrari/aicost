@@ -1,5 +1,5 @@
-// Last updated: 2025-08-10T12:06:39.674Z
-// Next update: 2025-08-10T18:06:39.674Z
+// Last updated: 2025-08-10T18:04:59.450Z
+// Next update: 2025-08-11T00:04:59.450Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -8305,7 +8305,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 96000,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -8314,7 +8314,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 96000,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5-air",
             "type": "chat",
             "inputCost": 2.2e-7,

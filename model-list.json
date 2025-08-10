@@ -8299,7 +8299,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 96000,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -8308,7 +8308,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 96000,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5-air",
             "type": "chat",
             "inputCost": 2.2e-7,
