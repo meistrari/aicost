@@ -1,7 +1,7 @@
-// Last updated: 2025-08-09T18:05:06.383Z
-// Next update: 2025-08-10T00:05:06.383Z
+// Last updated: 2025-08-10T00:20:58.158Z
+// Next update: 2025-08-10T06:20:58.158Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -9461,6 +9461,125 @@ export const AICostModelList = {
         {
             "maxTokens": 8000,
             "name": "snowflake/gemma-7b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
+    "gradient_ai": [
+        {
+            "maxTokens": 1024,
+            "name": "gradient_ai/anthropic-claude-3.7-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "gradient_ai/anthropic-claude-3.5-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "gradient_ai/anthropic-claude-3.5-haiku",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1024,
+            "name": "gradient_ai/anthropic-claude-3-opus",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8000,
+            "name": "gradient_ai/deepseek-r1-distill-llama-70b",
+            "type": "chat",
+            "inputCost": 9.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2048,
+            "name": "gradient_ai/llama3.3-70b-instruct",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 512,
+            "name": "gradient_ai/llama3-8b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 512,
+            "name": "gradient_ai/mistral-nemo-instruct-2407",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "gradient_ai/openai-o3",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 100000,
+            "name": "gradient_ai/openai-o3-mini",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gradient_ai/openai-gpt-4o",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gradient_ai/openai-gpt-4o-mini",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 2048,
+            "name": "gradient_ai/alibaba-qwen3-32b",
             "type": "chat",
             "inputCost": null,
             "inputCostUnit": null,
