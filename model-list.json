@@ -4805,7 +4805,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 64000,
             "name": "openrouter/anthropic/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
