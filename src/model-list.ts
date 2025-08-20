@@ -1,5 +1,5 @@
-// Last updated: 2025-08-20T00:17:09.825Z
-// Next update: 2025-08-20T06:17:09.825Z
+// Last updated: 2025-08-20T06:05:57.653Z
+// Next update: 2025-08-20T12:05:57.653Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -3050,7 +3050,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": 1000000,
             "name": "claude-4-sonnet-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7471,6 +7471,42 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-fp8-tput",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
             "type": "chat",
@@ -7490,6 +7526,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1-0528-tput",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mistral-Small-24B-Instruct-2501",
             "type": "chat",
             "inputCost": null,
@@ -7504,6 +7549,33 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/OpenAI/gpt-oss-20B",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/zai-org/GLM-4.5-Air-FP8",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
             "outputCostUnit": "token"
         }
     ],

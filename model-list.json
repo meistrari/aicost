@@ -3044,7 +3044,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": 1000000,
             "name": "claude-4-sonnet-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7465,6 +7465,42 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-Instruct-2507-tput",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-235B-A22B-fp8-tput",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
             "type": "chat",
@@ -7484,6 +7520,15 @@
         },
         {
             "maxTokens": null,
+            "name": "together_ai/deepseek-ai/DeepSeek-R1-0528-tput",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mistral-Small-24B-Instruct-2501",
             "type": "chat",
             "inputCost": null,
@@ -7498,6 +7543,33 @@
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/OpenAI/gpt-oss-20B",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/zai-org/GLM-4.5-Air-FP8",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
             "outputCostUnit": "token"
         }
     ],
