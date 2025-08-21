@@ -4080,6 +4080,26 @@
             "outputCostUnit": "token"
         }
     ],
+    "vertex_ai-qwen_models": [
+        {
+            "maxTokens": 32768,
+            "name": "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        }
+    ],
     "vertex_ai-llama_models": [
         {
             "maxTokens": 32000,
@@ -8321,6 +8341,15 @@
         {
             "maxTokens": 8192,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3-0324",
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
