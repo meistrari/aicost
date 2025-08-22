@@ -1,5 +1,5 @@
-// Last updated: 2025-08-22T06:05:42.535Z
-// Next update: 2025-08-22T12:05:42.535Z
+// Last updated: 2025-08-22T12:06:45.688Z
+// Next update: 2025-08-22T18:06:45.688Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -7828,66 +7828,12 @@ export const AICostModelList = {
     ],
     "deepinfra": [
         {
-            "maxTokens": 4096,
-            "name": "deepinfra/lizpreciatior/lzlv_70b_fp16_hf",
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-V3",
             "type": "chat",
-            "inputCost": 7e-7,
+            "inputCost": 3.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 9e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/Gryphe/MythoMax-L2-13b",
-            "type": "chat",
-            "inputCost": 2.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.2e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "deepinfra/mistralai/Mistral-7B-Instruct-v0.1",
-            "type": "chat",
-            "inputCost": 1.3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/meta-llama/Llama-2-70b-chat-hf",
-            "type": "chat",
-            "inputCost": 7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 9e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "deepinfra/cognitivecomputations/dolphin-2.6-mixtral-8x7b",
-            "type": "chat",
-            "inputCost": 2.7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.7e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/codellama/CodeLlama-34b-Instruct-hf",
-            "type": "chat",
-            "inputCost": 6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/deepinfra/mixtral",
-            "type": "completion",
-            "inputCost": 2.7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.7e-7,
+            "outputCost": 8.9e-7,
             "outputCostUnit": "token"
         },
         {
@@ -7900,12 +7846,912 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 1.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/google/gemma-2-9b-it",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 6e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1-0528-Turbo",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2-7B-Instruct",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "deepinfra/Qwen/QVQ-72B-Preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/microsoft/Phi-4-multimodal-instruct",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "deepinfra/mistralai/Devstral-Small-2507",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/microsoft/WizardLM-2-7B",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/meta-llama/Llama-3.2-90B-Vision-Instruct",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
             "name": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "deepinfra/anthropic/claude-3-7-sonnet-latest",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/cognitivecomputations/dolphin-2.9.1-llama-3-70b",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40960,
+            "name": "deepinfra/Qwen/Qwen3-235B-A22B",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/deepseek-ai/DeepSeek-V3-0324-Turbo",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65536,
+            "name": "deepinfra/microsoft/WizardLM-2-8x22B",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/Sao10K/L3-8B-Lunaris-v1-Turbo",
+            "type": "chat",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/meta-llama/Llama-Guard-4-12B",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/Gryphe/MythoMax-L2-13b",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-3.2-1B-Instruct",
+            "type": "chat",
+            "inputCost": 5e-9,
+            "inputCostUnit": "token",
+            "outputCost": 1e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/google/gemma-2-27b-it",
             "type": "chat",
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 2.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "deepinfra/Qwen/Qwen2.5-VL-32B-Instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65536,
+            "name": "deepinfra/mistralai/Mixtral-8x22B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2.5-7B-Instruct",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "deepinfra/google/gemini-1.5-flash-8b",
+            "type": "chat",
+            "inputCost": 3.75e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-70B",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-Guard-3-8B",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/lizpreciatior/lzlv_70b_fp16_hf",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/meta-llama/Llama-2-13b-chat-hf",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "deepinfra/anthropic/claude-4-opus",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000825,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/openchat/openchat-3.6-8b",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/google/gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/Austism/chronos-hermes-13b-v2",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/Sao10K/L3.1-70B-Euryale-v2.2",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/QwQ-32B-Preview",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "deepinfra/anthropic/claude-4-sonnet",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/microsoft/Phi-3-medium-4k-instruct",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/mattshumer/Reflection-Llama-3.1-70B",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/openchat/openchat_3.5",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3",
+            "type": "chat",
+            "inputCost": 6.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-V3.1",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2.5-Coder-7B",
+            "type": "chat",
+            "inputCost": 2.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/cognitivecomputations/dolphin-2.6-mixtral-8x7b",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/meta-llama/Meta-Llama-3.1-405B-Instruct",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-Prover-V2-671B",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000218,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/zai-org/GLM-4.5",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-3.2-3B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/meta-llama/Meta-Llama-3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "deepinfra/google/gemini-1.5-flash",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/KoboldAI/LLaMA2-13B-Tiefighter",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "deepinfra/google/gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 8.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000007,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40960,
+            "name": "deepinfra/Qwen/Qwen3-30B-A3B",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/Qwen/QwQ-32B",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/Sao10K/L3-70B-Euryale-v2.1",
+            "type": "chat",
+            "inputCost": 7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/microsoft/phi-4-reasoning-plus",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/google/gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "deepinfra/google/gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 2.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000175,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000215,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/mistralai/Mistral-7B-Instruct-v0.3",
+            "type": "chat",
+            "inputCost": 2.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2.5-72B-Instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40960,
+            "name": "deepinfra/Qwen/Qwen3-14B",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "deepinfra/allenai/olmOCR-7B-0725-FP8",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 16384,
+            "name": "deepinfra/microsoft/phi-4",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B",
+            "type": "chat",
+            "inputCost": 7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/zai-org/GLM-4.5-Air",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/google/codegemma-7b-it",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/mistralai/Mistral-Nemo-Instruct-2407",
+            "type": "chat",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/openbmb/MiniCPM-Llama3-V-2_5",
+            "type": "chat",
+            "inputCost": 3.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/bigcode/starcoder2-15b-instruct-v0.1",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 327680,
+            "name": "deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "deepinfra/google/gemini-2.0-flash-001",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/Gryphe/MythoMax-L2-13b-turbo",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/google/gemma-1.1-7b-it",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40960,
+            "name": "deepinfra/Qwen/Qwen3-32B",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/meta-llama/Llama-2-70b-chat-hf",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepinfra/nvidia/Nemotron-4-340B-Instruct",
+            "type": "chat",
+            "inputCost": 0.0000042,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000042,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1-0528",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000215,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-R1-Turbo",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/NovaSky-AI/Sky-T1-32B-Preview",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "deepinfra/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/mistralai/Mistral-7B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": 5.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "deepinfra/Qwen/Qwen2-72B-Instruct",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepinfra/Sao10K/L3-8B-Lunaris-v1",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 6e-8,
             "outputCostUnit": "token"
         },
         {
@@ -7918,102 +8764,66 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "deepinfra/01-ai/Yi-34B-Chat",
+            "maxTokens": 131072,
+            "name": "deepinfra/google/gemma-3-4b-it",
             "type": "chat",
-            "inputCost": 6e-7,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 4e-8,
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "deepinfra/01-ai/Yi-6B-200K",
-            "type": "completion",
-            "inputCost": 1.3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/jondurbin/airoboros-l2-70b-gpt4-1.4.1",
-            "type": "chat",
-            "inputCost": 7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 9e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/meta-llama/Llama-2-13b-chat-hf",
-            "type": "chat",
-            "inputCost": 2.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.2e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "deepinfra/amazon/MistralLite",
-            "type": "chat",
-            "inputCost": 2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepinfra/meta-llama/Llama-2-7b-chat-hf",
-            "type": "chat",
-            "inputCost": 1.3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
+            "maxTokens": 8192,
             "name": "deepinfra/meta-llama/Meta-Llama-3-8B-Instruct",
             "type": "chat",
-            "inputCost": 8e-8,
+            "inputCost": 3e-8,
             "inputCostUnit": "token",
-            "outputCost": 8e-8,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8191,
-            "name": "deepinfra/meta-llama/Meta-Llama-3-70B-Instruct",
-            "type": "chat",
-            "inputCost": 5.9e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.9e-7,
+            "outputCost": 6e-8,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 32768,
-            "name": "deepinfra/meta-llama/Meta-Llama-3.1-405B-Instruct",
+            "name": "deepinfra/mistralai/Mistral-7B-Instruct-v0.2",
             "type": "chat",
-            "inputCost": 9e-7,
+            "inputCost": 5.5e-8,
             "inputCostUnit": "token",
-            "outputCost": 9e-7,
+            "outputCost": 5.5e-8,
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "deepinfra/01-ai/Yi-34B-200K",
-            "type": "completion",
-            "inputCost": 6e-7,
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo",
+            "type": "chat",
+            "inputCost": 3.8e-8,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 1.2e-7,
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 4096,
-            "name": "deepinfra/openchat/openchat_3.5",
+            "maxTokens": 128000,
+            "name": "deepinfra/mistralai/Devstral-Small-2505",
             "type": "chat",
-            "inputCost": 1.3e-7,
+            "inputCost": 6e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.3e-7,
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct",
+            "type": "chat",
+            "inputCost": 4.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.9e-8,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
             "outputCostUnit": "token"
         }
     ],
@@ -9119,6 +9929,15 @@ export const AICostModelList = {
             "name": "voyage/voyage-multimodal-3",
             "type": "embedding",
             "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 120000,
+            "name": "voyage/voyage-context-3",
+            "type": "embedding",
+            "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
