@@ -9993,15 +9993,6 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 32768,
-            "name": "databricks/databricks-dbrx-instruct",
-            "type": "chat",
-            "inputCost": 7.4998e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000224901,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 128000,
             "name": "databricks/databricks-meta-llama-3-70b-instruct",
             "type": "chat",
