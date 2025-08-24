@@ -1,5 +1,5 @@
-// Last updated: 2025-08-23T18:04:33.548Z
-// Next update: 2025-08-24T00:04:33.548Z
+// Last updated: 2025-08-24T00:19:24.766Z
+// Next update: 2025-08-24T06:19:24.766Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -9969,15 +9969,6 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00001500002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 128000,
-            "name": "databricks/databricks-meta-llama-3-1-70b-instruct",
-            "type": "chat",
-            "inputCost": 0.00000100002,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000299999,
             "outputCostUnit": "token"
         },
         {
