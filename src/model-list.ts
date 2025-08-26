@@ -1,5 +1,5 @@
-// Last updated: 2025-08-26T06:05:48.120Z
-// Next update: 2025-08-26T12:05:48.120Z
+// Last updated: 2025-08-26T12:07:06.308Z
+// Next update: 2025-08-26T18:07:06.308Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'oci'
 
@@ -4813,7 +4813,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 128000,
             "name": "openrouter/anthropic/claude-3.7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4822,7 +4822,7 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 128000,
             "name": "openrouter/anthropic/claude-3.7-sonnet:beta",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4846,6 +4846,24 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "openrouter/anthropic/claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "openrouter/anthropic/claude-opus-4.1",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
             "outputCostUnit": "token"
         },
         {
