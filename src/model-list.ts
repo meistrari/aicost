@@ -1,5 +1,5 @@
-// Last updated: 2025-09-02T00:17:10.146Z
-// Next update: 2025-09-02T06:17:10.146Z
+// Last updated: 2025-09-02T06:06:09.051Z
+// Next update: 2025-09-02T12:06:09.051Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'vercel_ai_gateway' | 'oci'
 
@@ -2703,15 +2703,6 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
-            "name": "groq/llama3-8b-8192",
-            "type": "chat",
-            "inputCost": 5e-8,
-            "inputCostUnit": "token",
-            "outputCost": 8e-8,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
             "name": "groq/llama-3.2-1b-preview",
             "type": "chat",
             "inputCost": 4e-8,
@@ -2762,15 +2753,6 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "groq/llama3-70b-8192",
-            "type": "chat",
-            "inputCost": 5.9e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.9e-7,
             "outputCostUnit": "token"
         },
         {
