@@ -2924,15 +2924,6 @@
         },
         {
             "maxTokens": 32768,
-            "name": "cerebras/openai/gpt-oss-20b",
-            "type": "chat",
-            "inputCost": 7e-8,
-            "inputCostUnit": "token",
-            "outputCost": 3e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 32768,
             "name": "cerebras/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2.5e-7,
