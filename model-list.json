@@ -4116,6 +4116,26 @@
             "outputCostUnit": "token"
         }
     ],
+    "vertex_ai-openai_models": [
+        {
+            "maxTokens": 32768,
+            "name": "vertex_ai/openai/gpt-oss-20b-maas",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "vertex_ai/openai/gpt-oss-120b-maas",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        }
+    ],
     "vertex_ai-qwen_models": [
         {
             "maxTokens": 32768,
