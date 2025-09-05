@@ -11931,5 +11931,52 @@
             "outputCost": 0.000004,
             "outputCostUnit": "token"
         }
+    ],
+    "volcengine": [
+        {
+            "maxTokens": 4096,
+            "name": "doubao-embedding-large",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "doubao-embedding-large-text-250515",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "doubao-embedding-large-text-240915",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "doubao-embedding",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "doubao-embedding-text-240715",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
     ]
 }
