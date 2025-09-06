@@ -3582,7 +3582,7 @@
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000025,
+            "outputCost": 0.00003,
             "outputCostUnit": "token"
         },
         {
