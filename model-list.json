@@ -11028,6 +11028,44 @@
             "outputCostUnit": "token"
         }
     ],
+    "heroku": [
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-4-sonnet",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-3-7-sonnet",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-3-5-sonnet-latest",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "heroku/claude-3-5-haiku",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
     "vercel_ai_gateway": [
         {
             "maxTokens": 262144,

@@ -1,7 +1,7 @@
-// Last updated: 2025-09-07T00:18:02.934Z
-// Next update: 2025-09-07T06:18:02.934Z
+// Last updated: 2025-09-07T06:05:11.941Z
+// Next update: 2025-09-07T12:05:11.941Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'vercel_ai_gateway' | 'oci' | 'volcengine'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'heroku' | 'vercel_ai_gateway' | 'oci' | 'volcengine'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -11032,6 +11032,44 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000019,
             "outputCostUnit": "token"
+        }
+    ],
+    "heroku": [
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-4-sonnet",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-3-7-sonnet",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "heroku/claude-3-5-sonnet-latest",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "heroku/claude-3-5-haiku",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
         }
     ],
     "vercel_ai_gateway": [
