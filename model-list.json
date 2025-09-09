@@ -7731,7 +7731,7 @@
         },
         {
             "maxTokens": null,
-            "name": "together_ai/OpenAI/gpt-oss-20B",
+            "name": "together_ai/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
