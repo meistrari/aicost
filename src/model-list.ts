@@ -1,5 +1,5 @@
-// Last updated: 2025-09-12T00:16:15.271Z
-// Next update: 2025-09-12T06:16:15.271Z
+// Last updated: 2025-09-12T06:05:48.542Z
+// Next update: 2025-09-12T12:05:48.542Z
 
 export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'heroku' | 'vercel_ai_gateway' | 'oci' | 'volcengine'
 
@@ -10277,13 +10277,13 @@ export const AICostModelList = {
             "maxTokens": 32768,
             "name": "dashscope/qwen-max",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 0.0000016,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000064,
+            "outputCostUnit": "token"
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 1000000,
             "name": "dashscope/qwen-plus-latest",
             "type": "chat",
             "inputCost": null,
@@ -10292,13 +10292,13 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 1000000,
             "name": "dashscope/qwen-turbo-latest",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
@@ -10308,6 +10308,168 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 262144,
+            "name": "dashscope/qwen3-max-preview",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-plus",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-flash",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-coder",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen3-coder-plus",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen3-coder-plus-2025-07-22",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen3-coder-flash",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen3-coder-flash-2025-07-28",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-plus-2025-09-11",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-plus-2025-07-28",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-plus-2025-07-14",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-plus-2025-04-28",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-plus-2025-01-25",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-flash-2025-07-28",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen-turbo",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-turbo-2025-04-28",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "dashscope/qwen-turbo-2024-11-01",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwq-plus",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token"
         }
     ],
     "moonshot": [
