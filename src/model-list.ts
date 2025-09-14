@@ -1,7 +1,7 @@
-// Last updated: 2025-09-14T06:04:49.766Z
-// Next update: 2025-09-14T12:04:49.766Z
+// Last updated: 2025-09-14T12:06:01.512Z
+// Next update: 2025-09-14T18:06:01.512Z
 
-export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'heroku' | 'vercel_ai_gateway' | 'oci' | 'volcengine'
+export type AICostModelProvider = 'openai' | 'watsonx' | 'azure' | 'text-completion-openai' | 'azure_text' | 'azure_ai' | 'mistral' | 'deepseek' | 'codestral' | 'text-completion-codestral' | 'xai' | 'groq' | 'cerebras' | 'friendliai' | 'anthropic' | 'vertex-ai' | 'vertex_ai-code-chat-models' | 'meta_llama' | 'vertex_ai-anthropic_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'vertex_ai-llama_models' | 'vertex_ai-mistral_models' | 'vertex_ai-ai21_models' | 'cohere_chat' | 'cohere' | 'replicate' | 'openrouter' | 'ai21' | 'nlp_cloud' | 'aleph_alpha' | 'bedrock' | 'bedrock_converse' | 'sagemaker' | 'together_ai' | 'ollama' | 'deepinfra' | 'perplexity' | 'fireworks_ai' | 'fireworks_ai-embedding-models' | 'anyscale' | 'cloudflare' | 'v0' | 'lambda_ai' | 'hyperbolic' | 'voyage' | 'databricks' | 'sambanova' | 'snowflake' | 'gradient_ai' | 'nscale' | 'featherless_ai' | 'dashscope' | 'moonshot' | 'morph' | 'heroku' | 'vercel_ai_gateway' | 'oci' | 'volcengine' | 'ovhcloud'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -11625,6 +11625,143 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "ovhcloud": [
+        {
+            "maxTokens": 32000,
+            "name": "ovhcloud/Qwen2.5-VL-72B-Instruct",
+            "type": "chat",
+            "inputCost": 9.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "ovhcloud/llava-v1.6-mistral-7b-hf",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/Meta-Llama-3_3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 6.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "ovhcloud/Qwen2.5-Coder-32B-Instruct",
+            "type": "chat",
+            "inputCost": 8.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "ovhcloud/Mixtral-8x7B-Instruct-v0.1",
+            "type": "chat",
+            "inputCost": 6.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/Meta-Llama-3_1-70B-Instruct",
+            "type": "chat",
+            "inputCost": 6.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "ovhcloud/Mistral-Small-3.2-24B-Instruct-2506",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/DeepSeek-R1-Distill-Llama-70B",
+            "type": "chat",
+            "inputCost": 6.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.7e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 127000,
+            "name": "ovhcloud/Mistral-7B-Instruct-v0.3",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131000,
+            "name": "ovhcloud/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 118000,
+            "name": "ovhcloud/Mistral-Nemo-Instruct-2407",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "ovhcloud/Qwen3-32B",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "ovhcloud/mamba-codestral-7B-v0.1",
+            "type": "chat",
+            "inputCost": 1.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.9e-7,
+            "outputCostUnit": "token"
         }
     ]
 } as const
