@@ -1,5 +1,5 @@
-// Last updated: 2025-09-18T18:05:31.450Z
-// Next update: 2025-09-19T00:05:31.450Z
+// Last updated: 2025-09-19T00:17:03.473Z
+// Next update: 2025-09-19T06:17:03.473Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'dashscope' | 'databricks' | 'deepinfra' | 'deepseek' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'watsonx' | 'xai'
 
@@ -74,6 +74,15 @@ export const AICostModelList = {
             "name": "amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 77,
+            "name": "twelvelabs.marengo-embed-2-7-v1:0",
+            "type": "embedding",
+            "inputCost": 0.00007,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null

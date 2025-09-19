@@ -73,6 +73,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 77,
+            "name": "twelvelabs.marengo-embed-2-7-v1:0",
+            "type": "embedding",
+            "inputCost": 0.00007,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 8000,
             "name": "amazon.titan-text-express-v1",
             "type": "chat",
