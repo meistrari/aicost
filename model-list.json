@@ -82,6 +82,51 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 77,
+            "name": "us.twelvelabs.marengo-embed-2-7-v1:0",
+            "type": "embedding",
+            "inputCost": 0.00007,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 77,
+            "name": "eu.twelvelabs.marengo-embed-2-7-v1:0",
+            "type": "embedding",
+            "inputCost": 0.00007,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "twelvelabs.pegasus-1-2-v1:0",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "us.twelvelabs.pegasus-1-2-v1:0",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "eu.twelvelabs.pegasus-1-2-v1:0",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8000,
             "name": "amazon.titan-text-express-v1",
             "type": "chat",
