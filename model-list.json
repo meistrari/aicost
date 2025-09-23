@@ -8917,6 +8917,15 @@
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "openrouter/x-ai/grok-4-fast:free",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ],
     "ovhcloud": [
