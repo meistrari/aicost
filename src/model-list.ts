@@ -1,7 +1,7 @@
-// Last updated: 2025-09-22T18:05:15.005Z
-// Next update: 2025-09-23T00:05:15.005Z
+// Last updated: 2025-09-23T00:17:12.100Z
+// Next update: 2025-09-23T06:17:12.100Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'dashscope' | 'databricks' | 'deepinfra' | 'deepseek' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'watsonx' | 'xai'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'dashscope' | 'databricks' | 'deepinfra' | 'deepseek' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -11569,6 +11569,134 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "wandb": [
+        {
+            "maxTokens": 131072,
+            "name": "wandb/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 0.015,
+            "inputCostUnit": "token",
+            "outputCost": 0.06,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "wandb/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 0.005,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "wandb/zai-org/GLM-4.5",
+            "type": "chat",
+            "inputCost": 0.055,
+            "inputCostUnit": "token",
+            "outputCost": 0.2,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-235B-A22B-Instruct-2507",
+            "type": "chat",
+            "inputCost": 0.01,
+            "inputCostUnit": "token",
+            "outputCost": 0.01,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+            "type": "chat",
+            "inputCost": 0.1,
+            "inputCostUnit": "token",
+            "outputCost": 0.15,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "type": "chat",
+            "inputCost": 0.01,
+            "inputCostUnit": "token",
+            "outputCost": 0.01,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 0.135,
+            "inputCostUnit": "token",
+            "outputCost": 0.4,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/meta-llama/Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 0.022,
+            "inputCostUnit": "token",
+            "outputCost": 0.022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/deepseek-ai/DeepSeek-V3.1",
+            "type": "chat",
+            "inputCost": 0.055,
+            "inputCostUnit": "token",
+            "outputCost": 0.165,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 161000,
+            "name": "wandb/deepseek-ai/DeepSeek-R1-0528",
+            "type": "chat",
+            "inputCost": 0.135,
+            "inputCostUnit": "token",
+            "outputCost": 0.54,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 161000,
+            "name": "wandb/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 0.114,
+            "inputCostUnit": "token",
+            "outputCost": 0.275,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 0.071,
+            "inputCostUnit": "token",
+            "outputCost": 0.071,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 0.017,
+            "inputCostUnit": "token",
+            "outputCost": 0.066,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/microsoft/Phi-4-mini-instruct",
+            "type": "chat",
+            "inputCost": 0.008,
+            "inputCostUnit": "token",
+            "outputCost": 0.035,
+            "outputCostUnit": "token"
         }
     ],
     "watsonx": [

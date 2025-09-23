@@ -11565,6 +11565,134 @@
             "outputCostUnit": null
         }
     ],
+    "wandb": [
+        {
+            "maxTokens": 131072,
+            "name": "wandb/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 0.015,
+            "inputCostUnit": "token",
+            "outputCost": 0.06,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "wandb/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 0.005,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "wandb/zai-org/GLM-4.5",
+            "type": "chat",
+            "inputCost": 0.055,
+            "inputCostUnit": "token",
+            "outputCost": 0.2,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-235B-A22B-Instruct-2507",
+            "type": "chat",
+            "inputCost": 0.01,
+            "inputCostUnit": "token",
+            "outputCost": 0.01,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+            "type": "chat",
+            "inputCost": 0.1,
+            "inputCostUnit": "token",
+            "outputCost": 0.15,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/Qwen/Qwen3-235B-A22B-Thinking-2507",
+            "type": "chat",
+            "inputCost": 0.01,
+            "inputCostUnit": "token",
+            "outputCost": 0.01,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/moonshotai/Kimi-K2-Instruct",
+            "type": "chat",
+            "inputCost": 0.135,
+            "inputCostUnit": "token",
+            "outputCost": 0.4,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/meta-llama/Llama-3.1-8B-Instruct",
+            "type": "chat",
+            "inputCost": 0.022,
+            "inputCostUnit": "token",
+            "outputCost": 0.022,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/deepseek-ai/DeepSeek-V3.1",
+            "type": "chat",
+            "inputCost": 0.055,
+            "inputCostUnit": "token",
+            "outputCost": 0.165,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 161000,
+            "name": "wandb/deepseek-ai/DeepSeek-R1-0528",
+            "type": "chat",
+            "inputCost": 0.135,
+            "inputCostUnit": "token",
+            "outputCost": 0.54,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 161000,
+            "name": "wandb/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 0.114,
+            "inputCostUnit": "token",
+            "outputCost": 0.275,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/meta-llama/Llama-3.3-70B-Instruct",
+            "type": "chat",
+            "inputCost": 0.071,
+            "inputCostUnit": "token",
+            "outputCost": 0.071,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "wandb/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+            "type": "chat",
+            "inputCost": 0.017,
+            "inputCostUnit": "token",
+            "outputCost": 0.066,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "wandb/microsoft/Phi-4-mini-instruct",
+            "type": "chat",
+            "inputCost": 0.008,
+            "inputCostUnit": "token",
+            "outputCost": 0.035,
+            "outputCostUnit": "token"
+        }
+    ],
     "watsonx": [
         {
             "maxTokens": 8192,
