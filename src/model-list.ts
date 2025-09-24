@@ -1,7 +1,7 @@
-// Last updated: 2025-09-24T12:07:13.945Z
-// Next update: 2025-09-24T18:07:13.945Z
+// Last updated: 2025-09-24T18:05:23.328Z
+// Next update: 2025-09-25T00:05:23.328Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'dashscope' | 'databricks' | 'deepinfra' | 'deepseek' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -1539,6 +1539,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 163840,
+            "name": "deepseek.v3-v1:0",
+            "type": "chat",
+            "inputCost": 5.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000168,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 10000,
             "name": "eu.amazon.nova-lite-v1:0",
             "type": "chat",
@@ -1644,6 +1653,42 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "qwen.qwen3-coder-480b-a35b-v1:0",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "qwen.qwen3-coder-30b-a3b-v1:0",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
@@ -5097,6 +5142,71 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         }
     ],
+    "deepseek": [
+        {
+            "maxTokens": 131072,
+            "name": "deepseek-chat",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000017,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepseek-reasoner",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000017,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-chat",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "deepseek/deepseek-coder",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-r1",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-reasoner",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-v3",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
+            "outputCostUnit": "token"
+        }
+    ],
     "dashscope": [
         {
             "maxTokens": 1000000,
@@ -5953,53 +6063,6 @@ export const AICostModelList = {
             "name": "deepinfra/zai-org/GLM-4.5-Air",
             "type": "chat",
             "inputCost": 2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000011,
-            "outputCostUnit": "token"
-        }
-    ],
-    "deepseek": [
-        {
-            "maxTokens": 8192,
-            "name": "deepseek/deepseek-chat",
-            "type": "chat",
-            "inputCost": 2.7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000011,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 4096,
-            "name": "deepseek/deepseek-coder",
-            "type": "chat",
-            "inputCost": 1.4e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "deepseek/deepseek-r1",
-            "type": "chat",
-            "inputCost": 5.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000219,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "deepseek/deepseek-reasoner",
-            "type": "chat",
-            "inputCost": 5.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000219,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 8192,
-            "name": "deepseek/deepseek-v3",
-            "type": "chat",
-            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
             "outputCostUnit": "token"
@@ -9599,6 +9662,24 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 8e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "sambanova/DeepSeek-V3.1",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "sambanova/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token"
         }
     ],
     "snowflake": [
@@ -11263,6 +11344,15 @@ export const AICostModelList = {
         }
     ],
     "vertex_ai-deepseek_models": [
+        {
+            "maxTokens": 163840,
+            "name": "vertex_ai/deepseek-ai/deepseek-v3.1-maas",
+            "type": "chat",
+            "inputCost": 0.00000135,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000054,
+            "outputCostUnit": "token"
+        },
         {
             "maxTokens": 8192,
             "name": "vertex_ai/deepseek-ai/deepseek-r1-0528-maas",
