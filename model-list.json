@@ -4056,9 +4056,9 @@
             "maxTokens": 4097,
             "name": "gpt-3.5-turbo",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
@@ -8813,6 +8813,24 @@
         {
             "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5-codex",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",

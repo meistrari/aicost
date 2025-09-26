@@ -1,5 +1,5 @@
-// Last updated: 2025-09-26T06:06:02.281Z
-// Next update: 2025-09-26T12:06:02.281Z
+// Last updated: 2025-09-26T12:06:56.914Z
+// Next update: 2025-09-26T18:06:56.914Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -4062,9 +4062,9 @@ export const AICostModelList = {
             "maxTokens": 4097,
             "name": "gpt-3.5-turbo",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token"
         },
         {
@@ -8819,6 +8819,24 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5-codex",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
