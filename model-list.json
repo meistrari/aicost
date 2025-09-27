@@ -1488,7 +1488,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -1524,7 +1524,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -1587,7 +1587,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -1749,7 +1749,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4910,7 +4910,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -8406,7 +8406,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "openrouter/anthropic/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11272,7 +11272,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11281,7 +11281,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4@20250514",
             "type": "chat",
             "inputCost": 0.000003,
