@@ -8116,6 +8116,33 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 163840,
+            "name": "ollama/deepseek-v3.1:671b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "ollama/gpt-oss:120b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "ollama/gpt-oss:20b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 32768,
             "name": "ollama/internlm2_5-20b-chat",
             "type": "chat",
@@ -8263,6 +8290,15 @@
             "maxTokens": 4096,
             "name": "ollama/orca-mini",
             "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 262144,
+            "name": "ollama/qwen3-coder:480b-cloud",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,

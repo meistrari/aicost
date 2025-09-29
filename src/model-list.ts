@@ -1,5 +1,5 @@
-// Last updated: 2025-09-29T00:17:17.836Z
-// Next update: 2025-09-29T06:17:17.836Z
+// Last updated: 2025-09-29T06:06:31.576Z
+// Next update: 2025-09-29T12:06:31.576Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -8122,6 +8122,33 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
+            "maxTokens": 163840,
+            "name": "ollama/deepseek-v3.1:671b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "ollama/gpt-oss:120b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "ollama/gpt-oss:20b-cloud",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 32768,
             "name": "ollama/internlm2_5-20b-chat",
             "type": "chat",
@@ -8269,6 +8296,15 @@ export const AICostModelList = {
             "maxTokens": 4096,
             "name": "ollama/orca-mini",
             "type": "completion",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 262144,
+            "name": "ollama/qwen3-coder:480b-cloud",
+            "type": "chat",
             "inputCost": 0,
             "inputCostUnit": null,
             "outputCost": 0,
