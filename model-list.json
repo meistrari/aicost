@@ -3654,24 +3654,6 @@
         },
         {
             "maxTokens": 65535,
-            "name": "gemini-flash-latest",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000025,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 65535,
-            "name": "gemini-flash-lite-latest",
-            "type": "chat",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4e-7,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 65535,
             "name": "gemini-2.5-flash-lite-preview-06-17",
             "type": "chat",
             "inputCost": 1e-7,
@@ -4893,7 +4875,7 @@
         },
         {
             "maxTokens": 200000,
-            "name": "anthropic/claude-sonnet-4-5",
+            "name": "claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
