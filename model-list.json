@@ -6587,6 +6587,17 @@
             "outputCostUnit": "token"
         }
     ],
+    "lemonade": [
+        {
+            "maxTokens": 32768,
+            "name": "lemonade/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "groq": [
         {
             "maxTokens": 128000,
@@ -6789,6 +6800,15 @@
         {
             "maxTokens": 131072,
             "name": "groq/moonshotai/kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 278528,
+            "name": "groq/moonshotai/kimi-k2-instruct-0905",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
