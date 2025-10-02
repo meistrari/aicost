@@ -2437,7 +2437,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "azure/gpt-5-chat-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -4557,7 +4557,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "gpt-5-chat-latest",
             "type": "chat",
             "inputCost": 0.00000125,
