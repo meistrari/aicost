@@ -3044,6 +3044,42 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-4",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-4-fast-non-reasoning",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.0025,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-4-fast-reasoning",
+            "type": "chat",
+            "inputCost": 0.0000058,
+            "inputCostUnit": "token",
+            "outputCost": 0.0029,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/grok-code-fast-1",
+            "type": "chat",
+            "inputCost": 0.0000035,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "azure_ai/jais-30b-chat",
             "type": "chat",
