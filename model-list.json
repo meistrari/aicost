@@ -1596,6 +1596,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 200000,
+            "name": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 128000,
             "name": "eu.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
