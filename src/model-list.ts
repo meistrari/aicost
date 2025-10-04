@@ -1,5 +1,5 @@
-// Last updated: 2025-10-04T00:15:29.968Z
-// Next update: 2025-10-04T06:15:29.968Z
+// Last updated: 2025-10-04T06:04:46.643Z
+// Next update: 2025-10-04T12:04:46.643Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -1617,6 +1617,15 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
             "outputCostUnit": "token"
         },
         {
@@ -5603,27 +5612,27 @@ export const AICostModelList = {
             "maxTokens": 4096,
             "name": "deepinfra/Gryphe/MythoMax-L2-13b",
             "type": "chat",
-            "inputCost": 7.2e-8,
+            "inputCost": 8e-8,
             "inputCostUnit": "token",
-            "outputCost": 7.2e-8,
+            "outputCost": 9e-8,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B",
             "type": "chat",
-            "inputCost": 7e-7,
+            "inputCost": 0.000001,
             "inputCostUnit": "token",
-            "outputCost": 8e-7,
+            "outputCost": 0.000001,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-70B",
             "type": "chat",
-            "inputCost": 1e-7,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.8e-7,
+            "outputCost": 3e-7,
             "outputCostUnit": "token"
         },
         {
@@ -5675,16 +5684,16 @@ export const AICostModelList = {
             "maxTokens": 40960,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B",
             "type": "chat",
-            "inputCost": 1.3e-7,
+            "inputCost": 1.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 5.4e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 262144,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507",
             "type": "chat",
-            "inputCost": 1.3e-7,
+            "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
             "outputCostUnit": "token"
@@ -5693,9 +5702,9 @@ export const AICostModelList = {
             "maxTokens": 262144,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507",
             "type": "chat",
-            "inputCost": 1.3e-7,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 0.0000029,
             "outputCostUnit": "token"
         },
         {
@@ -5713,7 +5722,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 2.8e-7,
             "outputCostUnit": "token"
         },
         {
@@ -5729,16 +5738,34 @@ export const AICostModelList = {
             "maxTokens": 262144,
             "name": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 2.9e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000014,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 262144,
+            "name": "deepinfra/Qwen/Qwen3-Next-80B-A3B-Thinking",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000014,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "deepinfra/Sao10K/L3-8B-Lunaris-v1-Turbo",
             "type": "chat",
-            "inputCost": 2e-8,
+            "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 5e-8,
             "outputCostUnit": "token"
@@ -5828,18 +5855,18 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
-            "inputCost": 1e-7,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 4e-7,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
             "type": "chat",
-            "inputCost": 7.5e-8,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 1.5e-7,
+            "outputCost": 2.7e-7,
             "outputCostUnit": "token"
         },
         {
@@ -5864,7 +5891,7 @@ export const AICostModelList = {
             "maxTokens": 163840,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
-            "inputCost": 2.8e-7,
+            "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
             "outputCostUnit": "token"
@@ -5872,6 +5899,15 @@ export const AICostModelList = {
         {
             "maxTokens": 163840,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3.1",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 163840,
+            "name": "deepinfra/deepseek-ai/DeepSeek-V3.1-Terminus",
             "type": "chat",
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
@@ -5891,18 +5927,18 @@ export const AICostModelList = {
             "maxTokens": 1000000,
             "name": "deepinfra/google/gemini-2.5-flash",
             "type": "chat",
-            "inputCost": 2.1e-7,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000175,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 1000000,
             "name": "deepinfra/google/gemini-2.5-pro",
             "type": "chat",
-            "inputCost": 8.75e-7,
+            "inputCost": 0.00000125,
             "inputCostUnit": "token",
-            "outputCost": 0.000007,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
@@ -5920,7 +5956,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 9e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.7e-7,
+            "outputCost": 1.6e-7,
             "outputCostUnit": "token"
         },
         {
@@ -5945,9 +5981,9 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "deepinfra/meta-llama/Llama-3.2-3B-Instruct",
             "type": "chat",
-            "inputCost": 1.2e-8,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 2.4e-8,
+            "outputCost": 2e-8,
             "outputCostUnit": "token"
         },
         {
@@ -5963,9 +5999,9 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo",
             "type": "chat",
-            "inputCost": 3.8e-8,
+            "inputCost": 1.3e-7,
             "inputCostUnit": "token",
-            "outputCost": 1.2e-7,
+            "outputCost": 3.9e-7,
             "outputCostUnit": "token"
         },
         {
@@ -6017,7 +6053,7 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
-            "inputCost": 2.3e-7,
+            "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
             "outputCostUnit": "token"
@@ -6044,9 +6080,9 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
             "type": "chat",
-            "inputCost": 1.5e-8,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 2e-8,
+            "outputCost": 3e-8,
             "outputCostUnit": "token"
         },
         {
@@ -6089,18 +6125,18 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
             "type": "chat",
-            "inputCost": 5e-8,
+            "inputCost": 7.5e-8,
             "inputCostUnit": "token",
-            "outputCost": 1e-7,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 32768,
             "name": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
-            "inputCost": 8e-8,
+            "inputCost": 4e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.4e-7,
+            "outputCost": 4e-7,
             "outputCostUnit": "token"
         },
         {
@@ -6113,19 +6149,46 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 262144,
+            "name": "deepinfra/moonshotai/Kimi-K2-Instruct-0905",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 131072,
             "name": "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct",
             "type": "chat",
-            "inputCost": 1.2e-7,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 131072,
+            "name": "deepinfra/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "deepinfra/openai/gpt-oss-120b",
             "type": "chat",
-            "inputCost": 9e-8,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4.5e-7,
             "outputCostUnit": "token"
@@ -6136,25 +6199,16 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.6e-7,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "deepinfra/zai-org/GLM-4.5",
             "type": "chat",
-            "inputCost": 5.5e-7,
+            "inputCost": 4e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token"
-        },
-        {
-            "maxTokens": 131072,
-            "name": "deepinfra/zai-org/GLM-4.5-Air",
-            "type": "chat",
-            "inputCost": 2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000011,
+            "outputCost": 0.0000016,
             "outputCostUnit": "token"
         }
     ],
