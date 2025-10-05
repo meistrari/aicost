@@ -3074,18 +3074,18 @@
             "maxTokens": 131072,
             "name": "azure_ai/grok-4-fast-non-reasoning",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 4.3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0025,
+            "outputCost": 0.00000173,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 131072,
             "name": "azure_ai/grok-4-fast-reasoning",
             "type": "chat",
-            "inputCost": 0.0000058,
+            "inputCost": 4.3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0029,
+            "outputCost": 0.00000173,
             "outputCostUnit": "token"
         },
         {
