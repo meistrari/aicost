@@ -1599,9 +1599,9 @@
             "maxTokens": 200000,
             "name": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.0000033,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.0000165,
             "outputCostUnit": "token"
         },
         {
@@ -1615,11 +1615,29 @@
         },
         {
             "maxTokens": 200000,
-            "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "name": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "global.anthropic.claude-sonnet-4-20250514-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
             "outputCostUnit": "token"
         },
         {
@@ -1761,9 +1779,9 @@
             "maxTokens": 200000,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000033,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.0000165,
             "outputCostUnit": "token"
         },
         {
@@ -4654,6 +4672,15 @@
             "inputCostUnit": "token",
             "outputCost": 4e-7,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "gpt-image-1-mini",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": null,
+            "outputCostUnit": null
         },
         {
             "maxTokens": 4096,
