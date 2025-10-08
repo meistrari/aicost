@@ -4693,6 +4693,15 @@
         },
         {
             "maxTokens": 4096,
+            "name": "gpt-realtime-mini",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
             "name": "gpt-realtime-2025-08-28",
             "type": "chat",
             "inputCost": 0.000004,
