@@ -10510,6 +10510,33 @@
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
             "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/moonshotai/Kimi-K2-Instruct-0905",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-Next-80B-A3B-Instruct",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen3-Next-80B-A3B-Thinking",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token"
         }
     ],
     "v0": [
