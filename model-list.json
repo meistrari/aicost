@@ -3017,6 +3017,33 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 4096,
+            "name": "azure_ai/Phi-4-mini-reasoning",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.2e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 4096,
+            "name": "azure_ai/Phi-4-reasoning",
+            "type": "chat",
+            "inputCost": 1.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "azure_ai/MAI-DS-R1",
+            "type": "chat",
+            "inputCost": 0.00000135,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000054,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 8192,
             "name": "azure_ai/deepseek-r1",
             "type": "chat",
