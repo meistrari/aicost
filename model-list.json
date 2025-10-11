@@ -1542,6 +1542,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 200000,
+            "name": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 163840,
             "name": "deepseek.v3-v1:0",
             "type": "chat",
@@ -8248,6 +8257,33 @@
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "oci/cohere.command-latest",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "oci/cohere.command-a-03-2025",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "oci/cohere.command-plus-latest",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
             "outputCostUnit": "token"
         }
     ],

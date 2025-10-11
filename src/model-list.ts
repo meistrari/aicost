@@ -1,5 +1,5 @@
-// Last updated: 2025-10-10T18:05:18.549Z
-// Next update: 2025-10-11T00:05:18.549Z
+// Last updated: 2025-10-11T00:15:49.136Z
+// Next update: 2025-10-11T06:15:49.136Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -1545,6 +1545,15 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
             "outputCostUnit": "token"
         },
         {
@@ -8254,6 +8263,33 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "oci/cohere.command-latest",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 256000,
+            "name": "oci/cohere.command-a-03-2025",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "oci/cohere.command-plus-latest",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
             "outputCostUnit": "token"
         }
     ],
