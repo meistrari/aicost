@@ -1,5 +1,5 @@
-// Last updated: 2025-10-11T12:06:09.362Z
-// Next update: 2025-10-11T18:06:09.362Z
+// Last updated: 2025-10-11T18:04:36.448Z
+// Next update: 2025-10-12T00:04:36.448Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -10304,6 +10304,24 @@ export const AICostModelList = {
         {
             "maxTokens": null,
             "name": "together-ai-embedding-up-to-150m",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/baai/bge-base-en-v1.5",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/BAAI/bge-base-en-v1.5",
             "type": "embedding",
             "inputCost": 8e-9,
             "inputCostUnit": "token",

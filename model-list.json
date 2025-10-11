@@ -10306,6 +10306,24 @@
         },
         {
             "maxTokens": null,
+            "name": "together_ai/baai/bge-base-en-v1.5",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/BAAI/bge-base-en-v1.5",
+            "type": "embedding",
+            "inputCost": 8e-9,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
             "name": "together-ai-up-to-4b",
             "type": "chat",
             "inputCost": 1e-7,
