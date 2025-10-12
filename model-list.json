@@ -1797,7 +1797,7 @@
             "maxTokens": 200000,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.000033,
+            "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
             "outputCostUnit": "token"
