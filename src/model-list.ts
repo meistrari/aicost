@@ -1,5 +1,5 @@
-// Last updated: 2025-10-16T00:17:24.912Z
-// Next update: 2025-10-16T06:17:24.912Z
+// Last updated: 2025-10-16T06:06:33.253Z
+// Next update: 2025-10-16T12:06:33.253Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -169,6 +169,24 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-haiku-4-5@20251001",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -265,6 +283,15 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "apac.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
@@ -1114,6 +1141,15 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -1336,6 +1372,15 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
@@ -4918,6 +4963,24 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "claude-3-5-haiku-latest",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-haiku-4-5-20251001",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
@@ -11462,6 +11525,15 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-haiku-4-5@20251001",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",

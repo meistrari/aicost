@@ -163,6 +163,24 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-haiku-4-5@20251001",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -259,6 +277,15 @@
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "apac.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
@@ -1108,6 +1135,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -1330,6 +1366,15 @@
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
             "outputCostUnit": "token"
         },
         {
@@ -4912,6 +4957,24 @@
         {
             "maxTokens": 8192,
             "name": "claude-3-5-haiku-latest",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-haiku-4-5-20251001",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
@@ -11456,6 +11519,15 @@
         {
             "maxTokens": 8192,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/claude-haiku-4-5@20251001",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
