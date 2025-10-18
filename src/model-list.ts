@@ -1,5 +1,5 @@
-// Last updated: 2025-10-17T18:04:53.939Z
-// Next update: 2025-10-18T00:04:53.939Z
+// Last updated: 2025-10-18T00:15:42.716Z
+// Next update: 2025-10-18T06:15:42.716Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -12336,9 +12336,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-3-8b-instruct",
             "type": "chat",
-            "inputCost": 0.0002,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0002,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
@@ -12372,207 +12372,216 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "watsonx/google/flan-t5-xl-3b",
             "type": "chat",
-            "inputCost": 0.0001,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00025,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-13b-chat-v2",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-13b-instruct-v2",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-3-3-8b-instruct",
             "type": "chat",
-            "inputCost": 0.00025,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.001,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 20480,
             "name": "watsonx/ibm/granite-4-h-small",
             "type": "chat",
-            "inputCost": 0.000625,
+            "inputCost": 6e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0025,
+            "outputCost": 2.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-guardian-3-2-2b",
             "type": "chat",
-            "inputCost": 0.00015,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0006,
+            "outputCost": 1e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-guardian-3-3-8b",
             "type": "chat",
-            "inputCost": 0.00025,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.001,
+            "outputCost": 2e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 512,
             "name": "watsonx/ibm/granite-ttm-1024-96-r2",
             "type": "chat",
-            "inputCost": 0.000625,
+            "inputCost": 3.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000625,
+            "outputCost": 3.8e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 512,
             "name": "watsonx/ibm/granite-ttm-1536-96-r2",
             "type": "chat",
-            "inputCost": 0.000625,
+            "inputCost": 3.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000625,
+            "outputCost": 3.8e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 512,
             "name": "watsonx/ibm/granite-ttm-512-96-r2",
             "type": "chat",
-            "inputCost": 0.000625,
+            "inputCost": 3.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000625,
+            "outputCost": 3.8e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/ibm/granite-vision-3-2-2b",
             "type": "chat",
-            "inputCost": 0.00015,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0006,
+            "outputCost": 1e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-3-2-11b-vision-instruct",
             "type": "chat",
-            "inputCost": 0.00025,
+            "inputCost": 3.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.001,
+            "outputCost": 3.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-3-2-1b-instruct",
             "type": "chat",
-            "inputCost": 0.0001,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0002,
+            "outputCost": 1e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-3-2-3b-instruct",
             "type": "chat",
-            "inputCost": 0.00015,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0006,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-3-2-90b-vision-instruct",
             "type": "chat",
-            "inputCost": 0.002,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.008,
+            "outputCost": 0.000002,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-3-3-70b-instruct",
             "type": "chat",
-            "inputCost": 0.002,
+            "inputCost": 7.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.006,
+            "outputCost": 7.1e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-4-maverick-17b",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 3.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 0.0000014,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/meta-llama/llama-guard-3-11b-vision",
             "type": "chat",
-            "inputCost": 0.00025,
+            "inputCost": 3.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.001,
+            "outputCost": 3.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/mistralai/mistral-medium-2505",
             "type": "chat",
-            "inputCost": 0.00225,
+            "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 0.00675,
+            "outputCost": 0.00001,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 32000,
             "name": "watsonx/mistralai/mistral-small-2503",
             "type": "chat",
-            "inputCost": 0.0002,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0006,
+            "outputCost": 3e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32000,
+            "name": "watsonx/mistralai/mistral-small-3-1-24b-instruct-2503",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 128000,
             "name": "watsonx/mistralai/pixtral-12b-2409",
             "type": "chat",
-            "inputCost": 0.00015,
+            "inputCost": 3.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00015,
+            "outputCost": 3.5e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/openai/gpt-oss-120b",
             "type": "chat",
-            "inputCost": 0.004,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.016,
+            "outputCost": 6e-7,
             "outputCostUnit": "token"
         },
         {
             "maxTokens": 8192,
             "name": "watsonx/sdaia/allam-1-13b-instruct",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 0.0000018,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 0.0000018,
             "outputCostUnit": "token"
         }
     ],
