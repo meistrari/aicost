@@ -1596,7 +1596,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -1668,7 +1668,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -1686,7 +1686,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -1713,7 +1713,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -1857,7 +1857,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -5099,7 +5099,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5108,7 +5108,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-5-20250929",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11733,7 +11733,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11742,7 +11742,7 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4-5@20250929",
             "type": "chat",
             "inputCost": 0.000003,
