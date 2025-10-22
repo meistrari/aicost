@@ -893,6 +893,15 @@
         },
         {
             "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-3-7-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000036,
+            "inputCostUnit": "token",
+            "outputCost": 0.000018,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "bedrock/us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
