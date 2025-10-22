@@ -199,6 +199,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 8192,
+            "name": "anthropic.claude-3-7-sonnet-20240620-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000036,
+            "inputCostUnit": "token",
+            "outputCost": 0.000018,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 4096,
             "name": "anthropic.claude-3-haiku-20240307-v1:0",
             "type": "chat",
