@@ -11799,6 +11799,42 @@
     "vertex_ai-mistral_models": [
         {
             "maxTokens": 128000,
+            "name": "vertex_ai/mistralai/codestral-2@001",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral-2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral-2@001",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/mistralai/codestral-2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "vertex_ai/codestral-2501",
             "type": "chat",
             "inputCost": 2e-7,
@@ -11822,6 +11858,42 @@
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-medium-3",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-medium-3@001",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistralai/mistral-medium-3",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistralai/mistral-medium-3@001",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
             "outputCostUnit": "token"
         },
         {

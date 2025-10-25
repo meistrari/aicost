@@ -1,5 +1,5 @@
-// Last updated: 2025-10-24T18:05:29.144Z
-// Next update: 2025-10-25T00:05:29.144Z
+// Last updated: 2025-10-25T00:17:11.943Z
+// Next update: 2025-10-25T06:17:11.943Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -11805,6 +11805,42 @@ export const AICostModelList = {
     "vertex_ai-mistral_models": [
         {
             "maxTokens": 128000,
+            "name": "vertex_ai/mistralai/codestral-2@001",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral-2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/codestral-2@001",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/mistralai/codestral-2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 128000,
             "name": "vertex_ai/codestral-2501",
             "type": "chat",
             "inputCost": 2e-7,
@@ -11828,6 +11864,42 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-medium-3",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistral-medium-3@001",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistralai/mistral-medium-3",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8191,
+            "name": "vertex_ai/mistralai/mistral-medium-3@001",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
             "outputCostUnit": "token"
         },
         {
