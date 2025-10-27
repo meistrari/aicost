@@ -23,16 +23,15 @@ export async function getAICostModelList() {
         return cachedList as typeof AICostModelList
     }
 
-    cachedList = await fetch('https://raw.githubusercontent.com/meistrari/aicost/main/model-list.json')
+    return await fetch('https://raw.githubusercontent.com/meistrari/aicost/main/model-list.json')
         .then(res => res.json() as any)
         .then(res => {
             console.log('Fetched list from github')
+            lastFetchTime = now
+            cachedList = res
             return res
         })
-        .catch(() => AICostModelList)
-
-    lastFetchTime = now
-    return cachedList as typeof AICostModelList
+        .catch(() => cachedList ?? AICostModelList)
 }
 
 export async function calculateCost<P extends AICostModelProvider>(options: {
