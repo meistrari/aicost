@@ -8840,6 +8840,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 200000,
+            "name": "openrouter/anthropic/claude-haiku-4.5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 2048,
             "name": "openrouter/bytedance/ui-tars-1.5-7b",
             "type": "chat",
