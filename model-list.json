@@ -10813,15 +10813,6 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 200000,
-            "name": "vercel_ai_gateway/glm-4.6",
-            "type": "chat",
-            "inputCost": 6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000022,
-            "outputCostUnit": "token"
-        },
-        {
             "maxTokens": 40960,
             "name": "vercel_ai_gateway/alibaba/qwen-3-235b",
             "type": "chat",
@@ -11620,6 +11611,15 @@
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 200000,
+            "name": "vercel_ai_gateway/zai/glm-4.6",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
             "outputCostUnit": "token"
         }
     ],
