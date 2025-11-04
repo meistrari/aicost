@@ -3861,6 +3861,15 @@
         },
         {
             "maxTokens": 65535,
+            "name": "gemini-live-2.5-flash-preview-native-audio-09-2025",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
             "name": "gemini-2.5-flash-lite-preview-06-17",
             "type": "chat",
             "inputCost": 1e-7,
