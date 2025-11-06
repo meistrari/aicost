@@ -2095,6 +2095,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": null,
+            "name": "azure/container",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 16384,
             "name": "azure/eu/gpt-4o-2024-08-06",
             "type": "chat",
@@ -4995,6 +5004,15 @@
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "openai/container",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
             "outputCostUnit": null
         }
     ],
