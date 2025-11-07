@@ -1725,9 +1725,9 @@
             "maxTokens": 8192,
             "name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 0.0000011,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 0.0000055,
             "outputCostUnit": "token"
         },
         {

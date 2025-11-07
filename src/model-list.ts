@@ -1,5 +1,5 @@
-// Last updated: 2025-11-07T00:18:27.959Z
-// Next update: 2025-11-07T06:18:27.959Z
+// Last updated: 2025-11-07T06:06:14.494Z
+// Next update: 2025-11-07T12:06:14.494Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -1731,9 +1731,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 0.0000011,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 0.0000055,
             "outputCostUnit": "token"
         },
         {
