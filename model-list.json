@@ -12191,6 +12191,17 @@
             "outputCostUnit": null
         }
     ],
+    "vertex_ai-minimax_models": [
+        {
+            "maxTokens": 196608,
+            "name": "vertex_ai/minimaxai/minimax-m2-maas",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token"
+        }
+    ],
     "vertex_ai-openai_models": [
         {
             "maxTokens": 32768,
