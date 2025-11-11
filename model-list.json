@@ -7839,6 +7839,15 @@
         },
         {
             "maxTokens": 40000,
+            "name": "mistral/magistral-medium-2509",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 40000,
             "name": "mistral/magistral-medium-latest",
             "type": "chat",
             "inputCost": 0.000002,
