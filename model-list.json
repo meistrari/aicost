@@ -8128,6 +8128,15 @@
             "outputCostUnit": "token"
         },
         {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token"
+        },
+        {
             "maxTokens": 131072,
             "name": "moonshot/moonshot-v1-128k",
             "type": "chat",
