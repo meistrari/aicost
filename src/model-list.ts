@@ -1,5 +1,5 @@
-// Last updated: 2025-11-12T00:17:56.331Z
-// Next update: 2025-11-12T06:17:56.331Z
+// Last updated: 2025-11-12T06:06:13.795Z
+// Next update: 2025-11-12T12:06:13.795Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -8991,6 +8991,15 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-v3.2-exp",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -9185,6 +9194,15 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/minimax/minimax-m2",
+            "type": "chat",
+            "inputCost": 2.55e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000102,
             "outputCostUnit": "token"
         },
         {
@@ -9512,12 +9530,12 @@ export const AICostModelList = {
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 262100,
             "name": "openrouter/qwen/qwen3-coder",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 9.5e-7,
             "outputCostUnit": "token"
         },
         {
@@ -9555,6 +9573,24 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 202800,
+            "name": "openrouter/z-ai/glm-4.6",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000175,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 202800,
+            "name": "openrouter/z-ai/glm-4.6:exacto",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000019,
+            "outputCostUnit": "token"
         }
     ],
     "ovhcloud": [

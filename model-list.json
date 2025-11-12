@@ -8985,6 +8985,15 @@
         },
         {
             "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-v3.2-exp",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 8192,
             "name": "openrouter/deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -9179,6 +9188,15 @@
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openrouter/minimax/minimax-m2",
+            "type": "chat",
+            "inputCost": 2.55e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000102,
             "outputCostUnit": "token"
         },
         {
@@ -9506,12 +9524,12 @@
             "outputCostUnit": "token"
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 262100,
             "name": "openrouter/qwen/qwen3-coder",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 9.5e-7,
             "outputCostUnit": "token"
         },
         {
@@ -9549,6 +9567,24 @@
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        },
+        {
+            "maxTokens": 202800,
+            "name": "openrouter/z-ai/glm-4.6",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000175,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 202800,
+            "name": "openrouter/z-ai/glm-4.6:exacto",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000019,
+            "outputCostUnit": "token"
         }
     ],
     "ovhcloud": [
