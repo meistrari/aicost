@@ -12388,6 +12388,24 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-3.5",
+            "type": "embedding",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32000,
+            "name": "voyage/voyage-3.5-lite",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 16000,
             "name": "voyage/voyage-code-2",
             "type": "embedding",
