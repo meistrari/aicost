@@ -12292,6 +12292,17 @@
             "outputCostUnit": "token"
         }
     ],
+    "vertex_ai-moonshot_models": [
+        {
+            "maxTokens": 256000,
+            "name": "vertex_ai/moonshotai/kimi-k2-thinking-maas",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token"
+        }
+    ],
     "vertex_ai-openai_models": [
         {
             "maxTokens": 32768,
