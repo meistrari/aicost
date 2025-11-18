@@ -4014,6 +4014,15 @@
         },
         {
             "maxTokens": 65535,
+            "name": "gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token"
+        },
+        {
+            "maxTokens": 65535,
             "name": "gemini-2.5-pro-exp-03-25",
             "type": "chat",
             "inputCost": 0.00000125,
