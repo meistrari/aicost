@@ -1,5 +1,5 @@
-// Last updated: 2025-11-18T12:07:06.704Z
-// Next update: 2025-11-18T18:07:06.704Z
+// Last updated: 2025-11-18T18:52:07.792Z
+// Next update: 2025-11-19T00:52:07.792Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -13,7 +13,8 @@ export const AICostModelList = {
             "inputCost": 0.0000125,
             "inputCostUnit": "token",
             "outputCost": 0.0000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8191,
@@ -22,7 +23,8 @@ export const AICostModelList = {
             "inputCost": 0.0000188,
             "inputCostUnit": "token",
             "outputCost": 0.0000188,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 256000,
@@ -31,7 +33,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -40,7 +43,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -49,7 +53,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128,
@@ -58,7 +63,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -67,7 +73,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -76,7 +83,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 77,
@@ -85,7 +93,8 @@ export const AICostModelList = {
             "inputCost": 0.00007,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 5
         },
         {
             "maxTokens": 77,
@@ -94,7 +103,8 @@ export const AICostModelList = {
             "inputCost": 0.00007,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 5
         },
         {
             "maxTokens": 77,
@@ -103,7 +113,8 @@ export const AICostModelList = {
             "inputCost": 0.00007,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 5
         },
         {
             "maxTokens": null,
@@ -112,7 +123,8 @@ export const AICostModelList = {
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": 0.0000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -121,7 +133,8 @@ export const AICostModelList = {
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": 0.0000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -130,7 +143,8 @@ export const AICostModelList = {
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": 0.0000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8000,
@@ -139,7 +153,8 @@ export const AICostModelList = {
             "inputCost": 0.0000013,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4000,
@@ -148,7 +163,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -157,7 +173,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -166,7 +183,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -175,7 +193,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -184,7 +203,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -193,7 +213,8 @@ export const AICostModelList = {
             "inputCost": 0.0000036,
             "inputCostUnit": "token",
             "outputCost": 0.000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -202,7 +223,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -211,7 +233,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -220,7 +243,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8191,
@@ -229,7 +253,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -238,7 +263,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -247,7 +273,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -256,7 +283,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -265,7 +293,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -274,7 +303,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -283,7 +313,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -382,7 +413,8 @@ export const AICostModelList = {
             "inputCost": 0.00000223,
             "inputCostUnit": "token",
             "outputCost": 0.00000755,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -391,7 +423,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -400,7 +433,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -409,7 +443,8 @@ export const AICostModelList = {
             "inputCost": 0.00000318,
             "inputCostUnit": "token",
             "outputCost": 0.0000042,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -418,7 +453,8 @@ export const AICostModelList = {
             "inputCost": 3.6e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -427,7 +463,8 @@ export const AICostModelList = {
             "inputCost": 0.00000305,
             "inputCostUnit": "token",
             "outputCost": 0.00000403,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -436,7 +473,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -499,7 +537,8 @@ export const AICostModelList = {
             "inputCost": 0.00000248,
             "inputCostUnit": "token",
             "outputCost": 0.00000838,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -508,7 +547,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -517,7 +557,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -526,7 +567,8 @@ export const AICostModelList = {
             "inputCost": 0.00000286,
             "inputCostUnit": "token",
             "outputCost": 0.00000378,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -535,7 +577,8 @@ export const AICostModelList = {
             "inputCost": 3.2e-7,
             "inputCostUnit": "token",
             "outputCost": 6.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -544,7 +587,8 @@ export const AICostModelList = {
             "inputCost": 0.00000345,
             "inputCostUnit": "token",
             "outputCost": 0.00000455,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -553,7 +597,8 @@ export const AICostModelList = {
             "inputCost": 3.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -562,7 +607,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -571,7 +617,8 @@ export const AICostModelList = {
             "inputCost": 0.0000104,
             "inputCostUnit": "token",
             "outputCost": 0.0000312,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -580,7 +627,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -589,7 +637,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -598,7 +647,8 @@ export const AICostModelList = {
             "inputCost": 0.00000445,
             "inputCostUnit": "token",
             "outputCost": 0.00000588,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -607,7 +657,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000101,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -670,7 +721,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -679,7 +731,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -688,7 +741,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -697,7 +751,8 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -706,7 +761,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -715,7 +771,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -724,7 +781,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -733,7 +791,8 @@ export const AICostModelList = {
             "inputCost": 4.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000,
@@ -742,7 +801,8 @@ export const AICostModelList = {
             "inputCost": 9.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000384,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -751,7 +811,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -760,7 +821,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8000,
@@ -769,7 +831,8 @@ export const AICostModelList = {
             "inputCost": 0.0000013,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4000,
@@ -778,7 +841,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -787,7 +851,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -796,7 +861,8 @@ export const AICostModelList = {
             "inputCost": 0.0000036,
             "inputCostUnit": "token",
             "outputCost": 0.000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -805,7 +871,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -814,7 +881,8 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -823,7 +891,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000265,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000,
@@ -832,7 +901,8 @@ export const AICostModelList = {
             "inputCost": 9.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000384,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -841,7 +911,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -850,7 +921,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8000,
@@ -859,7 +931,8 @@ export const AICostModelList = {
             "inputCost": 0.0000013,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4000,
@@ -868,7 +941,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -877,7 +951,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -886,7 +961,8 @@ export const AICostModelList = {
             "inputCost": 0.0000036,
             "inputCostUnit": "token",
             "outputCost": 0.000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -895,7 +971,8 @@ export const AICostModelList = {
             "inputCost": 0.0000036,
             "inputCostUnit": "token",
             "outputCost": 0.000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -904,7 +981,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -913,7 +991,8 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -922,7 +1001,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000265,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -931,7 +1011,8 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -940,7 +1021,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -1003,7 +1085,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -1012,7 +1095,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -1021,7 +1105,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -1030,7 +1115,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -1039,7 +1125,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -1048,7 +1135,8 @@ export const AICostModelList = {
             "inputCost": 4.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -1057,7 +1145,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -1066,7 +1155,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1075,7 +1165,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -1084,7 +1175,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1093,7 +1185,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 512,
@@ -1102,7 +1195,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -1111,7 +1205,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1120,7 +1215,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -1129,7 +1225,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1138,7 +1235,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -1147,7 +1245,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -1156,7 +1255,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -1165,7 +1265,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1174,7 +1275,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -1183,7 +1285,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -1192,7 +1295,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1201,7 +1305,8 @@ export const AICostModelList = {
             "inputCost": 1.9e-7,
             "inputCostUnit": "token",
             "outputCost": 1.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -1210,7 +1315,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1219,7 +1325,8 @@ export const AICostModelList = {
             "inputCost": 0.00000195,
             "inputCostUnit": "token",
             "outputCost": 0.00000256,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -1228,7 +1335,8 @@ export const AICostModelList = {
             "inputCost": 0.00000532,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -1237,7 +1345,8 @@ export const AICostModelList = {
             "inputCost": 9.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -1246,7 +1355,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 2.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1255,7 +1365,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1264,7 +1375,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1273,7 +1385,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1282,7 +1395,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -1291,7 +1405,8 @@ export const AICostModelList = {
             "inputCost": 0.00000265,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -1300,7 +1415,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -1309,7 +1425,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -1318,7 +1435,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8191,
@@ -1327,7 +1445,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000009,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -1336,7 +1455,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -1345,7 +1465,8 @@ export const AICostModelList = {
             "inputCost": 4.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -1354,7 +1475,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -1363,7 +1485,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -1372,7 +1495,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -1381,7 +1505,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1390,7 +1515,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -1399,7 +1525,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -1408,7 +1535,8 @@ export const AICostModelList = {
             "inputCost": 0.00000532,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -1417,7 +1545,8 @@ export const AICostModelList = {
             "inputCost": 9.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -1426,7 +1555,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 2.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1435,7 +1565,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1444,7 +1575,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1453,7 +1585,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1462,7 +1595,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "bedrock_converse": [
@@ -1473,7 +1607,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1482,7 +1617,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-8,
             "inputCostUnit": "token",
             "outputCost": 1.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1491,7 +1627,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1500,7 +1637,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1509,7 +1647,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -1518,7 +1657,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32000,
@@ -1527,7 +1667,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -1536,7 +1677,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -1545,7 +1687,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 10000,
@@ -1554,7 +1697,8 @@ export const AICostModelList = {
             "inputCost": 6.3e-8,
             "inputCostUnit": "token",
             "outputCost": 2.52e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1563,7 +1707,8 @@ export const AICostModelList = {
             "inputCost": 3.7e-8,
             "inputCostUnit": "token",
             "outputCost": 1.48e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1572,7 +1717,8 @@ export const AICostModelList = {
             "inputCost": 8.4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000336,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1581,7 +1727,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1590,7 +1737,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1599,7 +1747,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 163840,
@@ -1608,7 +1757,8 @@ export const AICostModelList = {
             "inputCost": 5.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000168,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000,
@@ -1617,7 +1767,8 @@ export const AICostModelList = {
             "inputCost": 7.8e-8,
             "inputCostUnit": "token",
             "outputCost": 3.12e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1626,7 +1777,8 @@ export const AICostModelList = {
             "inputCost": 4.6e-8,
             "inputCostUnit": "token",
             "outputCost": 1.84e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1635,7 +1787,8 @@ export const AICostModelList = {
             "inputCost": 0.00000105,
             "inputCostUnit": "token",
             "outputCost": 0.0000042,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1644,7 +1797,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32000,
@@ -1653,7 +1807,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -1662,7 +1817,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -1671,7 +1827,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1680,7 +1837,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -1689,7 +1847,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1698,7 +1857,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1707,7 +1867,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1716,7 +1877,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1725,7 +1887,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1734,7 +1897,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -1743,7 +1907,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1752,7 +1917,8 @@ export const AICostModelList = {
             "inputCost": 2.4e-7,
             "inputCostUnit": "token",
             "outputCost": 9.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1761,7 +1927,8 @@ export const AICostModelList = {
             "inputCost": 1.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1770,7 +1937,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1779,7 +1947,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
@@ -1788,7 +1957,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -1797,7 +1967,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -1806,7 +1977,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -1815,7 +1987,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1824,7 +1997,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1833,7 +2007,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-8,
             "inputCostUnit": "token",
             "outputCost": 1.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 10000,
@@ -1842,7 +2017,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.0000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 10000,
@@ -1851,7 +2027,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -1860,7 +2037,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -1869,7 +2047,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32000,
@@ -1878,7 +2057,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -1887,7 +2067,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1896,7 +2077,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000055,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32000,
@@ -1905,7 +2087,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -1914,7 +2097,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -1923,7 +2107,8 @@ export const AICostModelList = {
             "inputCost": 0.00000135,
             "inputCostUnit": "token",
             "outputCost": 0.0000054,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -1932,7 +2117,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1941,7 +2127,8 @@ export const AICostModelList = {
             "inputCost": 2.4e-7,
             "inputCostUnit": "token",
             "outputCost": 9.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1950,7 +2137,8 @@ export const AICostModelList = {
             "inputCost": 1.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -1959,7 +2147,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "anyscale": [
@@ -1970,7 +2159,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -1979,7 +2169,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -1988,7 +2179,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -1997,7 +2189,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -2006,7 +2199,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -2015,7 +2209,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2024,7 +2219,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -2033,7 +2229,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -2042,7 +2239,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2051,7 +2249,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
@@ -2060,7 +2259,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -2069,7 +2269,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "azure": [
@@ -2080,7 +2281,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -2089,7 +2291,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 1024,
@@ -2098,7 +2301,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -2116,7 +2320,8 @@ export const AICostModelList = {
             "inputCost": 0.00000275,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2125,7 +2330,8 @@ export const AICostModelList = {
             "inputCost": 0.00000275,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2134,7 +2340,8 @@ export const AICostModelList = {
             "inputCost": 1.65e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -2143,7 +2350,8 @@ export const AICostModelList = {
             "inputCost": 6.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000264,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2152,7 +2360,8 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2161,7 +2370,8 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -2170,7 +2380,8 @@ export const AICostModelList = {
             "inputCost": 0.000001375,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -2179,7 +2390,8 @@ export const AICostModelList = {
             "inputCost": 2.75e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -2188,7 +2400,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 100000,
@@ -2197,7 +2410,8 @@ export const AICostModelList = {
             "inputCost": 0.0000165,
             "inputCostUnit": "token",
             "outputCost": 0.000066,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -2206,7 +2420,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2215,7 +2430,8 @@ export const AICostModelList = {
             "inputCost": 0.0000165,
             "inputCostUnit": "token",
             "outputCost": 0.000066,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -2224,7 +2440,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2233,7 +2450,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2242,7 +2460,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2251,7 +2470,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2260,7 +2480,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2269,7 +2490,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -2278,7 +2500,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2287,7 +2510,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2296,7 +2520,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2305,7 +2530,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -2314,7 +2540,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -2323,7 +2550,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2332,7 +2560,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2341,7 +2570,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -2350,7 +2580,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -2359,7 +2590,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2368,7 +2600,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2377,7 +2610,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2386,7 +2620,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2395,7 +2630,8 @@ export const AICostModelList = {
             "inputCost": 0.00006,
             "inputCostUnit": "token",
             "outputCost": 0.00012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2404,7 +2640,8 @@ export const AICostModelList = {
             "inputCost": 0.00006,
             "inputCostUnit": "token",
             "outputCost": 0.00012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2413,7 +2650,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2422,7 +2660,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2431,7 +2670,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -2440,7 +2680,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2449,7 +2690,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2458,7 +2700,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -2467,7 +2710,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -2476,7 +2720,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -2485,7 +2730,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2494,7 +2740,8 @@ export const AICostModelList = {
             "inputCost": 0.000075,
             "inputCostUnit": "token",
             "outputCost": 0.00015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 16384,
@@ -2503,7 +2750,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -2512,7 +2760,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 16384,
@@ -2521,7 +2770,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2530,7 +2780,8 @@ export const AICostModelList = {
             "inputCost": 0.00000275,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2539,7 +2790,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2548,7 +2800,8 @@ export const AICostModelList = {
             "inputCost": 1.65e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2557,7 +2810,8 @@ export const AICostModelList = {
             "inputCost": 1.65e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2566,7 +2820,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -2575,7 +2830,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2584,7 +2840,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2593,7 +2850,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -2602,7 +2860,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -2611,7 +2870,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -2620,7 +2880,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2629,7 +2890,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -2638,7 +2900,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -2647,7 +2910,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -2656,7 +2920,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -2665,7 +2930,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -2674,7 +2940,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -2683,7 +2950,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -2692,7 +2960,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -2701,7 +2970,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -2710,7 +2980,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -2719,7 +2990,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2728,7 +3000,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -2737,7 +3010,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -2746,7 +3020,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2755,7 +3030,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2764,7 +3040,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2773,7 +3050,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2782,7 +3060,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2791,7 +3070,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -2800,7 +3080,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -2809,7 +3090,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -2818,7 +3100,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -2827,7 +3110,8 @@ export const AICostModelList = {
             "inputCost": 0.0000022,
             "inputCostUnit": "token",
             "outputCost": 0.0000088,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2836,7 +3120,8 @@ export const AICostModelList = {
             "inputCost": 4.4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000176,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -2845,7 +3130,8 @@ export const AICostModelList = {
             "inputCost": 1.1e-7,
             "inputCostUnit": "token",
             "outputCost": 4.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -2854,7 +3140,8 @@ export const AICostModelList = {
             "inputCost": 0.00000275,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2863,7 +3150,8 @@ export const AICostModelList = {
             "inputCost": 0.00000275,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -2872,7 +3160,8 @@ export const AICostModelList = {
             "inputCost": 1.65e-7,
             "inputCostUnit": "token",
             "outputCost": 6.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -2881,7 +3170,8 @@ export const AICostModelList = {
             "inputCost": 6.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000264,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -2890,7 +3180,8 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -2899,7 +3190,8 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -2908,7 +3200,8 @@ export const AICostModelList = {
             "inputCost": 0.000001375,
             "inputCostUnit": "token",
             "outputCost": 0.000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -2917,7 +3210,8 @@ export const AICostModelList = {
             "inputCost": 2.75e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -2926,7 +3220,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 100000,
@@ -2935,7 +3230,8 @@ export const AICostModelList = {
             "inputCost": 0.0000165,
             "inputCostUnit": "token",
             "outputCost": 0.000066,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -2944,7 +3240,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -2953,7 +3250,8 @@ export const AICostModelList = {
             "inputCost": 0.0000165,
             "inputCostUnit": "token",
             "outputCost": 0.000066,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -2962,7 +3260,8 @@ export const AICostModelList = {
             "inputCost": 0.0000022,
             "inputCostUnit": "token",
             "outputCost": 0.0000088,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2971,7 +3270,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -2980,7 +3280,8 @@ export const AICostModelList = {
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
             "outputCost": 0.00000484,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 1024,
@@ -2989,7 +3290,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "azure_text": [
@@ -3000,7 +3302,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -3009,7 +3312,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -3018,7 +3322,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "azure_ai": [
@@ -3029,7 +3334,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -3038,7 +3344,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -3047,7 +3354,8 @@ export const AICostModelList = {
             "inputCost": 3.7e-7,
             "inputCostUnit": "token",
             "outputCost": 3.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -3056,7 +3364,8 @@ export const AICostModelList = {
             "inputCost": 0.00000204,
             "inputCostUnit": "token",
             "outputCost": 0.00000204,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -3065,7 +3374,8 @@ export const AICostModelList = {
             "inputCost": 7.1e-7,
             "inputCostUnit": "token",
             "outputCost": 7.1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -3074,7 +3384,8 @@ export const AICostModelList = {
             "inputCost": 0.00000141,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -3083,7 +3394,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -3092,7 +3404,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 3.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -3101,7 +3414,8 @@ export const AICostModelList = {
             "inputCost": 0.00000533,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 2048,
@@ -3110,7 +3424,8 @@ export const AICostModelList = {
             "inputCost": 0.00000268,
             "inputCostUnit": "token",
             "outputCost": 0.00000354,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -3119,7 +3434,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6.1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3128,7 +3444,8 @@ export const AICostModelList = {
             "inputCost": 1.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3137,7 +3454,8 @@ export const AICostModelList = {
             "inputCost": 1.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3146,7 +3464,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 5.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3155,7 +3474,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 5.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3164,7 +3484,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3173,7 +3494,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3182,7 +3504,8 @@ export const AICostModelList = {
             "inputCost": 1.6e-7,
             "inputCostUnit": "token",
             "outputCost": 6.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3191,7 +3514,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 5.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3200,7 +3524,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 5.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -3209,7 +3534,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3218,7 +3544,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3227,7 +3554,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 3.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3236,7 +3564,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 3.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3245,7 +3574,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3254,7 +3584,8 @@ export const AICostModelList = {
             "inputCost": 0.00000135,
             "inputCostUnit": "token",
             "outputCost": 0.0000054,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3263,7 +3594,8 @@ export const AICostModelList = {
             "inputCost": 0.00000135,
             "inputCostUnit": "token",
             "outputCost": 0.0000054,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3272,7 +3604,8 @@ export const AICostModelList = {
             "inputCost": 0.00000114,
             "inputCostUnit": "token",
             "outputCost": 0.00000456,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3281,7 +3614,8 @@ export const AICostModelList = {
             "inputCost": 0.00000114,
             "inputCostUnit": "token",
             "outputCost": 0.00000456,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -3290,7 +3624,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -3299,7 +3634,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -3308,7 +3644,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000127,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -3317,7 +3654,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -3326,7 +3664,8 @@ export const AICostModelList = {
             "inputCost": 2.75e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000138,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -3335,7 +3674,8 @@ export const AICostModelList = {
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
             "outputCost": 0.0000275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -3344,7 +3684,8 @@ export const AICostModelList = {
             "inputCost": 4.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000173,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -3353,7 +3694,8 @@ export const AICostModelList = {
             "inputCost": 4.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000173,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -3362,7 +3704,8 @@ export const AICostModelList = {
             "inputCost": 0.0000035,
             "inputCostUnit": "token",
             "outputCost": 0.0000175,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -3371,7 +3714,8 @@ export const AICostModelList = {
             "inputCost": 0.0032,
             "inputCostUnit": "token",
             "outputCost": 0.00971,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -3380,7 +3724,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3389,7 +3734,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -3398,7 +3744,8 @@ export const AICostModelList = {
             "inputCost": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -3407,7 +3754,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -3416,7 +3764,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -3425,7 +3774,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3434,7 +3784,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -3443,7 +3794,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -3452,7 +3804,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "text-completion-openai": [
@@ -3463,7 +3816,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -3472,7 +3826,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -3481,7 +3836,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -3490,7 +3846,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -3499,7 +3856,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -3508,7 +3866,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "cerebras": [
@@ -3519,7 +3878,8 @@ export const AICostModelList = {
             "inputCost": 8.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -3528,7 +3888,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -3537,7 +3898,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -3546,7 +3908,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -3555,7 +3918,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "vertex-ai": [
@@ -3566,7 +3930,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3575,7 +3940,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3584,7 +3950,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3593,7 +3960,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -3602,7 +3970,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -3611,7 +3980,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -3620,7 +3990,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -3629,7 +4000,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -3638,7 +4010,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -3647,7 +4020,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 64,
@@ -3656,7 +4030,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 64,
@@ -3665,7 +4040,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 64,
@@ -3674,7 +4050,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 64,
@@ -3683,7 +4060,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3692,7 +4070,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3701,7 +4080,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3710,7 +4090,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -3719,7 +4100,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -3728,7 +4110,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3737,7 +4120,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3746,7 +4130,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3755,7 +4140,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3764,7 +4150,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3773,7 +4160,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3782,7 +4170,8 @@ export const AICostModelList = {
             "inputCost": 4.688e-9,
             "inputCostUnit": "token",
             "outputCost": 4.6875e-9,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3791,7 +4180,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4.6875e-9,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3800,7 +4190,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3809,7 +4200,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3818,7 +4210,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -3827,7 +4220,8 @@ export const AICostModelList = {
             "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
             "outputCost": 3.125e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3836,7 +4230,8 @@ export const AICostModelList = {
             "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
             "outputCost": 3.125e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3845,7 +4240,8 @@ export const AICostModelList = {
             "inputCost": 7.8125e-8,
             "inputCostUnit": "token",
             "outputCost": 3.125e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3854,7 +4250,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3863,7 +4260,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3872,7 +4270,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -3881,7 +4280,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -3890,7 +4290,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65535,
@@ -3899,7 +4300,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -3908,7 +4310,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -3935,7 +4338,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -3944,7 +4348,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 65535,
@@ -3953,7 +4358,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65535,
@@ -3962,7 +4368,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65535,
@@ -3971,7 +4378,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 65535,
@@ -3980,7 +4388,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 65535,
@@ -3989,7 +4398,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65535,
@@ -3998,7 +4408,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65535,
@@ -4007,7 +4418,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 65535,
@@ -4016,7 +4428,18 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65535,
+            "name": "gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -4025,7 +4448,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -4034,7 +4458,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -4043,7 +4468,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -4052,7 +4478,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65535,
@@ -4061,7 +4488,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -4070,7 +4498,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -4088,7 +4517,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -4106,7 +4536,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1024,
@@ -4133,7 +4564,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -4142,7 +4574,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -4160,7 +4593,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -4169,7 +4603,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -4196,7 +4631,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -4205,7 +4641,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -4214,7 +4651,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4223,7 +4661,8 @@ export const AICostModelList = {
             "inputCost": 6.25e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -4232,7 +4671,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4241,7 +4681,8 @@ export const AICostModelList = {
             "inputCost": 6.25e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -4250,7 +4691,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 1024,
@@ -4259,7 +4701,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 3072,
@@ -4268,7 +4711,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4277,7 +4721,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4286,7 +4731,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4295,7 +4741,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 3072,
@@ -4304,7 +4751,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "nlp_cloud": [
@@ -4315,7 +4763,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -4324,7 +4773,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "openai": [
@@ -4335,7 +4785,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -4344,7 +4795,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4353,7 +4805,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4362,7 +4815,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4371,7 +4825,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4380,7 +4835,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 16384,
@@ -4389,7 +4845,8 @@ export const AICostModelList = {
             "inputCost": 0.00000375,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 16384,
@@ -4398,7 +4855,8 @@ export const AICostModelList = {
             "inputCost": 0.00000375,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 16384,
@@ -4407,7 +4865,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -4416,7 +4875,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16385,
@@ -4425,7 +4885,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -4434,7 +4895,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4097,
@@ -4443,7 +4905,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16385,
@@ -4452,7 +4915,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16385,
@@ -4461,7 +4925,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16385,
@@ -4470,7 +4935,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4479,7 +4945,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4488,7 +4955,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4497,7 +4965,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4506,7 +4975,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4515,7 +4985,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4524,7 +4995,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4533,7 +5005,8 @@ export const AICostModelList = {
             "inputCost": 0.00006,
             "inputCostUnit": "token",
             "outputCost": 0.00012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4542,7 +5015,8 @@ export const AICostModelList = {
             "inputCost": 0.00006,
             "inputCostUnit": "token",
             "outputCost": 0.00012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4551,7 +5025,8 @@ export const AICostModelList = {
             "inputCost": 0.00006,
             "inputCostUnit": "token",
             "outputCost": 0.00012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4560,7 +5035,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4569,7 +5045,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4578,7 +5055,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4587,7 +5065,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -4596,7 +5075,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -4605,7 +5085,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -4614,7 +5095,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -4623,7 +5105,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -4632,7 +5115,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -4641,7 +5125,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -4650,7 +5135,8 @@ export const AICostModelList = {
             "inputCost": 0.000075,
             "inputCostUnit": "token",
             "outputCost": 0.00015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 16384,
@@ -4659,7 +5145,8 @@ export const AICostModelList = {
             "inputCost": 0.000075,
             "inputCostUnit": "token",
             "outputCost": 0.00015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 16384,
@@ -4668,7 +5155,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -4677,7 +5165,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 16384,
@@ -4686,7 +5175,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4695,7 +5185,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4704,7 +5195,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4713,7 +5205,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4722,7 +5215,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4731,7 +5225,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4740,7 +5235,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -4749,7 +5245,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -4758,7 +5255,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -4767,7 +5265,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -4776,7 +5275,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -4785,7 +5285,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -4794,7 +5295,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -4803,7 +5305,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -4812,7 +5315,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4821,7 +5325,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4830,7 +5335,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -4839,7 +5345,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 16384,
@@ -4848,7 +5355,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4857,7 +5365,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4866,7 +5375,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4875,7 +5385,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4884,7 +5395,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4893,7 +5405,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4902,7 +5415,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4911,7 +5425,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -4920,7 +5435,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -4929,7 +5445,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -4938,7 +5455,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -4947,7 +5465,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -4956,7 +5475,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -4965,7 +5485,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": null,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -4974,7 +5495,8 @@ export const AICostModelList = {
             "inputCost": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -4983,7 +5505,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -4992,7 +5515,8 @@ export const AICostModelList = {
             "inputCost": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 100000,
@@ -5001,7 +5525,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -5010,7 +5535,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -5019,7 +5545,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -5028,7 +5555,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -5037,7 +5565,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -5046,7 +5575,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -5055,7 +5585,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -5064,7 +5595,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -5073,7 +5605,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -5082,7 +5615,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -5091,7 +5625,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -5100,7 +5635,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -5109,7 +5645,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -5118,7 +5655,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -5127,7 +5665,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -5147,7 +5686,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -5156,7 +5696,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -5165,7 +5706,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 64000,
@@ -5174,7 +5716,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -5183,7 +5726,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -5192,7 +5736,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -5201,7 +5746,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -5210,7 +5756,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -5219,7 +5766,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -5228,7 +5776,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -5237,7 +5786,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -5246,7 +5796,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -5255,7 +5806,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 1000000,
@@ -5264,7 +5816,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -5273,7 +5826,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -5282,7 +5836,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32000,
@@ -5291,7 +5846,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -5300,7 +5856,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -5309,7 +5866,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -5318,7 +5876,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         }
     ],
     "cloudflare": [
@@ -5329,7 +5888,8 @@ export const AICostModelList = {
             "inputCost": 0.000001923,
             "inputCostUnit": "token",
             "outputCost": 0.000001923,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 2048,
@@ -5338,7 +5898,8 @@ export const AICostModelList = {
             "inputCost": 0.000001923,
             "inputCostUnit": "token",
             "outputCost": 0.000001923,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5347,7 +5908,8 @@ export const AICostModelList = {
             "inputCost": 0.000001923,
             "inputCostUnit": "token",
             "outputCost": 0.000001923,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -5356,7 +5918,8 @@ export const AICostModelList = {
             "inputCost": 0.000001923,
             "inputCostUnit": "token",
             "outputCost": 0.000001923,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "vertex_ai-code-chat-models": [
@@ -5367,7 +5930,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -5376,7 +5940,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -5385,7 +5950,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5394,7 +5960,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5403,7 +5970,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5412,7 +5980,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 1.25e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "codestral": [
@@ -5443,7 +6012,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -5452,7 +6022,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -5461,7 +6032,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1024,
@@ -5470,7 +6042,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5479,7 +6052,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -5488,7 +6062,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5497,7 +6072,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 768,
@@ -5506,7 +6082,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 1024,
@@ -5515,7 +6092,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "cohere_chat": [
@@ -5526,7 +6104,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -5535,7 +6114,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -5544,7 +6124,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -5553,7 +6134,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -5562,7 +6144,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -5571,7 +6154,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -5580,7 +6164,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.75e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "deepseek": [
@@ -5591,7 +6176,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -5600,7 +6186,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5609,7 +6196,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -5618,7 +6206,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -5627,7 +6216,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5636,7 +6226,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5645,7 +6236,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "dashscope": [
@@ -5656,7 +6248,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000000,
@@ -5683,7 +6276,8 @@ export const AICostModelList = {
             "inputCost": 0.0000016,
             "inputCostUnit": "token",
             "outputCost": 0.0000064,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -5692,7 +6286,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -5701,7 +6296,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -5710,7 +6306,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -5719,7 +6316,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000000,
@@ -5755,7 +6353,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1000000,
@@ -5764,7 +6363,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1000000,
@@ -5773,7 +6373,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1000000,
@@ -5782,7 +6383,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -5845,7 +6447,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "databricks": [
@@ -5856,7 +6459,8 @@ export const AICostModelList = {
             "inputCost": 1.0003e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 200000,
@@ -5865,7 +6469,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.000017857,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -5874,7 +6479,8 @@ export const AICostModelList = {
             "inputCost": 1.2999e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -5883,7 +6489,8 @@ export const AICostModelList = {
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -5892,7 +6499,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -5901,7 +6509,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00001500002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -5910,7 +6519,8 @@ export const AICostModelList = {
             "inputCost": 0.00000100002,
             "inputCostUnit": "token",
             "outputCost": 0.00000299999,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -5919,7 +6529,8 @@ export const AICostModelList = {
             "inputCost": 0.00000100002,
             "inputCostUnit": "token",
             "outputCost": 0.00000299999,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -5928,7 +6539,8 @@ export const AICostModelList = {
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9902e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5937,7 +6549,8 @@ export const AICostModelList = {
             "inputCost": 9.9902e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9902e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -5946,7 +6559,8 @@ export const AICostModelList = {
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "deepinfra": [
@@ -5957,7 +6571,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 9e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -5966,7 +6581,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -5975,7 +6591,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -5984,7 +6601,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -5993,7 +6611,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -6002,7 +6621,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -6011,7 +6631,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -6020,7 +6641,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -6029,7 +6651,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 5.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
@@ -6038,7 +6661,8 @@ export const AICostModelList = {
             "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
@@ -6047,7 +6671,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000029,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 40960,
@@ -6056,7 +6681,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 2.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -6065,7 +6691,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
@@ -6074,7 +6701,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -6083,7 +6711,8 @@ export const AICostModelList = {
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -6092,7 +6721,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000014,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -6101,7 +6731,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000014,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6110,7 +6741,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6119,7 +6751,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6128,7 +6761,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -6137,7 +6771,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 200000,
@@ -6146,7 +6781,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 200000,
@@ -6155,7 +6791,8 @@ export const AICostModelList = {
             "inputCost": 0.0000165,
             "inputCostUnit": "token",
             "outputCost": 0.0000825,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -6164,7 +6801,8 @@ export const AICostModelList = {
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 163840,
@@ -6173,7 +6811,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
@@ -6182,7 +6821,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000215,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -6191,7 +6831,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -6200,7 +6841,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6209,7 +6851,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 2.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -6218,7 +6861,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 163840,
@@ -6227,7 +6871,8 @@ export const AICostModelList = {
             "inputCost": 3.8e-7,
             "inputCostUnit": "token",
             "outputCost": 8.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
@@ -6236,7 +6881,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
@@ -6245,7 +6891,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
@@ -6254,7 +6901,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000000,
@@ -6263,7 +6911,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1000000,
@@ -6272,7 +6921,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000000,
@@ -6281,7 +6931,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -6290,7 +6941,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6299,7 +6951,8 @@ export const AICostModelList = {
             "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 1.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6308,7 +6961,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6317,7 +6971,8 @@ export const AICostModelList = {
             "inputCost": 4.9e-8,
             "inputCostUnit": "token",
             "outputCost": 4.9e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6326,7 +6981,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6335,7 +6991,8 @@ export const AICostModelList = {
             "inputCost": 2.3e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6344,7 +7001,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 3.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1048576,
@@ -6353,7 +7011,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 327680,
@@ -6362,7 +7021,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6371,7 +7031,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-8,
             "inputCostUnit": "token",
             "outputCost": 5.5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 163840,
@@ -6380,7 +7041,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -6389,7 +7051,8 @@ export const AICostModelList = {
             "inputCost": 3e-8,
             "inputCostUnit": "token",
             "outputCost": 6e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6398,7 +7061,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6407,7 +7071,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6416,7 +7081,8 @@ export const AICostModelList = {
             "inputCost": 3e-8,
             "inputCostUnit": "token",
             "outputCost": 5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6425,7 +7091,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
@@ -6434,7 +7101,8 @@ export const AICostModelList = {
             "inputCost": 4.8e-7,
             "inputCostUnit": "token",
             "outputCost": 4.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -6443,7 +7111,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 1.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6452,7 +7121,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -6461,7 +7131,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -6470,7 +7141,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -6479,7 +7151,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6488,7 +7161,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -6497,7 +7171,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6506,7 +7181,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6515,7 +7191,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6524,7 +7201,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 1.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6533,7 +7211,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6542,7 +7221,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6551,7 +7231,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "volcengine": [
@@ -6629,7 +7310,8 @@ export const AICostModelList = {
             "inputCost": 1.6e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -6638,7 +7320,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -6647,7 +7330,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -6656,7 +7340,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -6665,7 +7350,8 @@ export const AICostModelList = {
             "inputCost": 1.6e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "fireworks_ai": [
@@ -6676,7 +7362,8 @@ export const AICostModelList = {
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 20480,
@@ -6685,7 +7372,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 160000,
@@ -6694,7 +7382,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 20480,
@@ -6703,7 +7392,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6712,7 +7402,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
@@ -6721,7 +7412,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6730,7 +7422,8 @@ export const AICostModelList = {
             "inputCost": 5.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000168,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6739,7 +7432,8 @@ export const AICostModelList = {
             "inputCost": 5.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000168,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6748,7 +7442,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 96000,
@@ -6757,7 +7452,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 96000,
@@ -6766,7 +7462,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6775,7 +7472,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6784,7 +7482,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -6793,7 +7492,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -6802,7 +7502,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -6811,7 +7512,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -6820,7 +7522,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -6829,7 +7532,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -6838,7 +7542,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -6847,7 +7552,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -6856,7 +7562,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6865,7 +7572,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -6874,7 +7582,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
@@ -6883,7 +7592,8 @@ export const AICostModelList = {
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -6892,7 +7602,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -6901,7 +7612,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -6910,7 +7622,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "friendliai": [
@@ -6921,7 +7634,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6930,7 +7644,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "gradient_ai": [
@@ -6950,7 +7665,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 1024,
@@ -6959,7 +7675,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 1024,
@@ -6968,7 +7685,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 1024,
@@ -6977,7 +7695,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8000,
@@ -6986,7 +7705,8 @@ export const AICostModelList = {
             "inputCost": 9.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 512,
@@ -6995,7 +7715,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 2048,
@@ -7004,7 +7725,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 512,
@@ -7013,7 +7735,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -7040,7 +7763,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -7049,7 +7773,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "lemonade": [
@@ -7107,7 +7832,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7116,7 +7842,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 7e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7125,7 +7852,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7134,7 +7862,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7143,7 +7872,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7152,7 +7882,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7161,7 +7892,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7170,7 +7902,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7179,7 +7912,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7188,7 +7922,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 6e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7197,7 +7932,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7206,7 +7942,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7215,7 +7952,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -7224,7 +7962,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7233,7 +7972,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -7242,7 +7982,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7251,7 +7992,8 @@ export const AICostModelList = {
             "inputCost": 8.9e-7,
             "inputCostUnit": "token",
             "outputCost": 8.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -7260,7 +8002,8 @@ export const AICostModelList = {
             "inputCost": 1.9e-7,
             "inputCostUnit": "token",
             "outputCost": 1.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7269,7 +8012,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -7278,7 +8022,8 @@ export const AICostModelList = {
             "inputCost": 1.1e-7,
             "inputCostUnit": "token",
             "outputCost": 3.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -7287,7 +8032,8 @@ export const AICostModelList = {
             "inputCost": 7.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -7296,7 +8042,8 @@ export const AICostModelList = {
             "inputCost": 2.4e-7,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7305,7 +8052,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 278528,
@@ -7314,7 +8062,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32766,
@@ -7323,7 +8072,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -7332,7 +8082,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131000,
@@ -7341,7 +8092,8 @@ export const AICostModelList = {
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
             "outputCost": 5.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "heroku": [
@@ -7390,7 +8142,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7399,7 +8152,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7408,7 +8162,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7417,7 +8172,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7426,7 +8182,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -7435,7 +8192,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7444,7 +8202,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7453,7 +8212,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7462,7 +8222,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7471,7 +8232,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7480,7 +8242,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7489,7 +8252,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7498,7 +8262,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7507,7 +8272,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -7516,7 +8282,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7525,7 +8292,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "ai21": [
@@ -7536,7 +8304,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -7545,7 +8314,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -7554,7 +8324,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 256000,
@@ -7563,7 +8334,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -7572,7 +8344,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -7581,7 +8354,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -7590,7 +8364,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -7599,7 +8374,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -7608,7 +8384,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -7617,7 +8394,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -7626,7 +8404,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -7635,7 +8414,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "lambda_ai": [
@@ -7646,7 +8426,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7655,7 +8436,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7664,7 +8446,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -7673,7 +8456,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7682,7 +8466,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -7691,7 +8476,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7700,7 +8486,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7709,7 +8496,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7718,7 +8506,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7727,7 +8516,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -7736,7 +8526,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7745,7 +8536,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -7754,7 +8546,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7763,7 +8556,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7772,7 +8566,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7781,7 +8576,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7790,7 +8586,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7799,7 +8596,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7808,7 +8606,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -7817,7 +8616,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "aleph_alpha": [
@@ -7828,7 +8628,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.000033,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 2048,
@@ -7837,7 +8638,8 @@ export const AICostModelList = {
             "inputCost": 0.0000375,
             "inputCostUnit": "token",
             "outputCost": 0.00004125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 2048,
@@ -7846,7 +8648,8 @@ export const AICostModelList = {
             "inputCost": 0.000045,
             "inputCostUnit": "token",
             "outputCost": 0.0000495,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 2048,
@@ -7855,7 +8658,8 @@ export const AICostModelList = {
             "inputCost": 0.00005625,
             "inputCostUnit": "token",
             "outputCost": 0.000061875,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 2048,
@@ -7864,7 +8668,8 @@ export const AICostModelList = {
             "inputCost": 0.000175,
             "inputCostUnit": "token",
             "outputCost": 0.0001925,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 2048,
@@ -7873,7 +8678,8 @@ export const AICostModelList = {
             "inputCost": 0.00021875,
             "inputCostUnit": "token",
             "outputCost": 0.000240625,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "meta_llama": [
@@ -7922,7 +8728,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -7931,7 +8738,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -7940,7 +8748,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -7949,7 +8758,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -7958,7 +8768,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -7967,7 +8778,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40000,
@@ -7976,7 +8788,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 40000,
@@ -7985,7 +8798,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 40000,
@@ -7994,7 +8808,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 40000,
@@ -8003,7 +8818,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 40000,
@@ -8012,7 +8828,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -8021,7 +8838,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": null,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -8030,7 +8848,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": null,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -8039,7 +8858,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": null,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -8048,7 +8868,8 @@ export const AICostModelList = {
             "inputCost": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8057,7 +8878,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000009,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8066,7 +8888,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8075,7 +8898,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -8084,7 +8908,8 @@ export const AICostModelList = {
             "inputCost": 0.0000027,
             "inputCostUnit": "token",
             "outputCost": 0.0000081,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -8093,7 +8918,8 @@ export const AICostModelList = {
             "inputCost": 0.0000027,
             "inputCostUnit": "token",
             "outputCost": 0.0000081,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -8102,7 +8928,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -8111,7 +8938,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -8120,7 +8948,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -8129,7 +8958,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -8138,7 +8968,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -8147,7 +8978,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -8156,7 +8988,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -8165,7 +8998,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -8174,7 +9008,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -8183,7 +9018,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -8192,7 +9028,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -8201,7 +9038,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -8210,7 +9048,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8219,7 +9058,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "moonshot": [
@@ -8230,7 +9070,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8239,7 +9080,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -8248,7 +9090,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -8257,7 +9100,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -8266,7 +9110,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8275,7 +9120,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 262144,
@@ -8284,7 +9130,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8293,7 +9140,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -8302,7 +9150,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -8311,7 +9160,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -8320,7 +9170,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -8329,7 +9180,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -8338,7 +9190,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -8347,7 +9200,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -8356,7 +9210,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -8365,7 +9220,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8374,7 +9230,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "morph": [
@@ -8385,7 +9242,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16000,
@@ -8394,7 +9252,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000019,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "nscale": [
@@ -8405,7 +9264,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8414,7 +9274,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8423,7 +9284,8 @@ export const AICostModelList = {
             "inputCost": 1e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8432,7 +9294,8 @@ export const AICostModelList = {
             "inputCost": 1e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8441,7 +9304,8 @@ export const AICostModelList = {
             "inputCost": 3.75e-7,
             "inputCostUnit": "token",
             "outputCost": 3.75e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8450,7 +9314,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8459,7 +9324,8 @@ export const AICostModelList = {
             "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 9e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8468,7 +9334,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 7e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8477,7 +9344,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8486,7 +9354,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8495,7 +9364,8 @@ export const AICostModelList = {
             "inputCost": 3e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8504,7 +9374,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8513,7 +9384,8 @@ export const AICostModelList = {
             "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 2.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -8522,7 +9394,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "oci": [
@@ -8533,7 +9406,8 @@ export const AICostModelList = {
             "inputCost": 0.00001068,
             "inputCostUnit": "token",
             "outputCost": 0.00001068,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -8542,7 +9416,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8551,7 +9426,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 512000,
@@ -8560,7 +9436,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 192000,
@@ -8569,7 +9446,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8578,7 +9456,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -8587,7 +9466,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -8596,7 +9476,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -8605,7 +9486,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -8614,7 +9496,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -8623,7 +9506,8 @@ export const AICostModelList = {
             "inputCost": 0.00000156,
             "inputCostUnit": "token",
             "outputCost": 0.00000156,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 256000,
@@ -8632,7 +9516,8 @@ export const AICostModelList = {
             "inputCost": 0.00000156,
             "inputCostUnit": "token",
             "outputCost": 0.00000156,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -8641,7 +9526,8 @@ export const AICostModelList = {
             "inputCost": 0.00000156,
             "inputCostUnit": "token",
             "outputCost": 0.00000156,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "ollama": [
@@ -8915,7 +9801,8 @@ export const AICostModelList = {
             "inputCost": 0.00001102,
             "inputCostUnit": "token",
             "outputCost": 0.00003268,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -8924,7 +9811,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -8933,7 +9821,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 200000,
@@ -8942,7 +9831,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -8951,7 +9841,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -8960,7 +9851,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -8969,7 +9861,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -8978,7 +9871,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -8987,7 +9881,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -8996,7 +9891,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -9005,7 +9901,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 100000,
@@ -9014,7 +9911,8 @@ export const AICostModelList = {
             "inputCost": 0.00000163,
             "inputCostUnit": "token",
             "outputCost": 0.00000551,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32000,
@@ -9023,7 +9921,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -9032,7 +9931,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -9041,7 +9941,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 1000000,
@@ -9050,7 +9951,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 200000,
@@ -9059,7 +9961,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
@@ -9068,7 +9971,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32769,
@@ -9077,7 +9981,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -9086,7 +9991,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32768,
@@ -9095,7 +10001,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9104,7 +10011,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9113,7 +10021,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9122,7 +10031,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9131,7 +10041,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9140,7 +10051,8 @@ export const AICostModelList = {
             "inputCost": 1.4e-7,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9149,7 +10061,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9158,7 +10071,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000215,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -9167,7 +10081,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9176,7 +10091,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9185,7 +10101,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9194,7 +10111,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -9203,7 +10121,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.0000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 45875,
@@ -9212,7 +10131,8 @@ export const AICostModelList = {
             "inputCost": 1.25e-7,
             "inputCostUnit": "token",
             "outputCost": 3.75e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 25804,
@@ -9221,7 +10141,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 20070,
@@ -9230,7 +10151,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9239,7 +10161,8 @@ export const AICostModelList = {
             "inputCost": 0.000001875,
             "inputCostUnit": "token",
             "outputCost": 0.000001875,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -9248,7 +10171,8 @@ export const AICostModelList = {
             "inputCost": 0.000013875,
             "inputCostUnit": "token",
             "outputCost": 0.000013875,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8000,
@@ -9257,7 +10181,8 @@ export const AICostModelList = {
             "inputCost": 0.000005625,
             "inputCostUnit": "token",
             "outputCost": 0.000005625,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -9266,7 +10191,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -9275,7 +10201,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -9284,7 +10211,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9293,7 +10221,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9302,7 +10231,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -9311,7 +10241,8 @@ export const AICostModelList = {
             "inputCost": 2.25e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000225,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9329,7 +10260,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -9338,7 +10270,8 @@ export const AICostModelList = {
             "inputCost": 2.55e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000102,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9347,7 +10280,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9365,7 +10299,8 @@ export const AICostModelList = {
             "inputCost": 0.000008,
             "inputCostUnit": "token",
             "outputCost": 0.000024,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -9374,7 +10309,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -9383,7 +10319,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
@@ -9392,7 +10329,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -9401,7 +10339,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4095,
@@ -9410,7 +10349,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16383,
@@ -9419,7 +10359,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -9428,7 +10369,8 @@ export const AICostModelList = {
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 130000,
@@ -9437,7 +10379,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -9446,7 +10389,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -9455,7 +10399,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -9464,7 +10409,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -9473,7 +10419,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -9482,7 +10429,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -9491,7 +10439,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -9500,7 +10449,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -9509,7 +10459,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -9518,7 +10469,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -9527,7 +10479,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -9536,7 +10489,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -9545,7 +10499,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -9554,7 +10509,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -9563,7 +10519,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -9572,7 +10529,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 100000,
@@ -9581,7 +10539,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -9590,7 +10549,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -9599,7 +10559,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -9608,7 +10569,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
@@ -9617,7 +10579,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 65536,
@@ -9626,7 +10589,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -9635,7 +10599,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -9644,7 +10609,8 @@ export const AICostModelList = {
             "inputCost": 0.000001875,
             "inputCostUnit": "token",
             "outputCost": 0.000001875,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 33792,
@@ -9653,7 +10619,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -9662,7 +10629,8 @@ export const AICostModelList = {
             "inputCost": 2.1e-7,
             "inputCostUnit": "token",
             "outputCost": 6.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262100,
@@ -9671,7 +10639,8 @@ export const AICostModelList = {
             "inputCost": 2.2e-7,
             "inputCostUnit": "token",
             "outputCost": 9.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -9680,7 +10649,8 @@ export const AICostModelList = {
             "inputCost": 8.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000034,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 6144,
@@ -9689,7 +10659,8 @@ export const AICostModelList = {
             "inputCost": 0.000001875,
             "inputCostUnit": "token",
             "outputCost": 0.000001875,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 256000,
@@ -9698,7 +10669,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 2000000,
@@ -9716,7 +10688,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000175,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 202800,
@@ -9725,7 +10698,8 @@ export const AICostModelList = {
             "inputCost": 4.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000019,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "ovhcloud": [
@@ -9736,7 +10710,8 @@ export const AICostModelList = {
             "inputCost": 6.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131000,
@@ -9745,7 +10720,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131000,
@@ -9754,7 +10730,8 @@ export const AICostModelList = {
             "inputCost": 6.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131000,
@@ -9763,7 +10740,8 @@ export const AICostModelList = {
             "inputCost": 6.7e-7,
             "inputCostUnit": "token",
             "outputCost": 6.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 127000,
@@ -9772,7 +10750,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 118000,
@@ -9781,7 +10760,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 1.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -9790,7 +10770,8 @@ export const AICostModelList = {
             "inputCost": 9e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -9799,7 +10780,8 @@ export const AICostModelList = {
             "inputCost": 6.3e-7,
             "inputCostUnit": "token",
             "outputCost": 6.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
@@ -9808,7 +10790,8 @@ export const AICostModelList = {
             "inputCost": 8.7e-7,
             "inputCostUnit": "token",
             "outputCost": 8.7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
@@ -9817,7 +10800,8 @@ export const AICostModelList = {
             "inputCost": 9.1e-7,
             "inputCostUnit": "token",
             "outputCost": 9.1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
@@ -9826,7 +10810,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 2.3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131000,
@@ -9835,7 +10820,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131000,
@@ -9844,7 +10830,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -9853,7 +10840,8 @@ export const AICostModelList = {
             "inputCost": 2.9e-7,
             "inputCostUnit": "token",
             "outputCost": 2.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -9862,7 +10850,8 @@ export const AICostModelList = {
             "inputCost": 1.9e-7,
             "inputCostUnit": "token",
             "outputCost": 1.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "perplexity": [
@@ -9873,7 +10862,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000014,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -9882,7 +10872,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -9891,7 +10882,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -9900,7 +10892,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -9909,7 +10902,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 127072,
@@ -9918,7 +10912,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -9927,7 +10922,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 127072,
@@ -9936,7 +10932,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -9945,7 +10942,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 127072,
@@ -9954,7 +10952,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -9963,7 +10962,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -9972,7 +10972,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -9981,7 +10982,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -9990,7 +10992,8 @@ export const AICostModelList = {
             "inputCost": 0,
             "inputCostUnit": "request",
             "outputCost": 0.0000028,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -9999,7 +11002,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10008,7 +11012,8 @@ export const AICostModelList = {
             "inputCost": 0,
             "inputCostUnit": "request",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -10017,7 +11022,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -10026,7 +11032,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -10035,7 +11042,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 12000,
@@ -10044,7 +11052,8 @@ export const AICostModelList = {
             "inputCost": 0,
             "inputCostUnit": "request",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8000,
@@ -10053,7 +11062,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -10062,7 +11072,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -10071,7 +11082,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -10080,7 +11092,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 12000,
@@ -10089,7 +11102,8 @@ export const AICostModelList = {
             "inputCost": 0,
             "inputCostUnit": "request",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "replicate": [
@@ -10100,7 +11114,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10109,7 +11124,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10118,7 +11134,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -10127,7 +11144,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
@@ -10136,7 +11154,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10145,7 +11164,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -10154,7 +11174,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -10163,7 +11184,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8086,
@@ -10172,7 +11194,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8086,
@@ -10181,7 +11204,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10190,7 +11214,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10199,7 +11224,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10208,7 +11234,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "sagemaker": [
@@ -10275,7 +11302,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000007,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -10284,7 +11312,8 @@ export const AICostModelList = {
             "inputCost": 7e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000014,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -10293,7 +11322,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.0000045,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -10302,7 +11332,8 @@ export const AICostModelList = {
             "inputCost": 6.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -10311,7 +11342,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -10320,7 +11352,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
@@ -10329,7 +11362,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -10338,7 +11372,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -10347,7 +11382,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 1.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -10356,7 +11392,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -10365,7 +11402,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -10374,7 +11412,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -10383,7 +11422,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -10392,7 +11432,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -10401,7 +11442,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.0000045,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -10410,7 +11452,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.0000045,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "snowflake": [
@@ -10659,7 +11702,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10668,7 +11712,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10677,7 +11722,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000,
@@ -10686,7 +11732,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10695,7 +11742,8 @@ export const AICostModelList = {
             "inputCost": 0.0000018,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10704,7 +11752,8 @@ export const AICostModelList = {
             "inputCost": 1.6e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10713,7 +11762,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10722,7 +11772,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10731,7 +11782,8 @@ export const AICostModelList = {
             "inputCost": 8e-9,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10740,7 +11792,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10767,7 +11820,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10776,7 +11830,8 @@ export const AICostModelList = {
             "inputCost": 6.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10785,7 +11840,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10794,7 +11850,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 20480,
@@ -10803,7 +11860,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000007,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10812,7 +11870,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -10821,7 +11880,8 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -10830,7 +11890,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10848,7 +11909,8 @@ export const AICostModelList = {
             "inputCost": 8.8e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10866,7 +11928,8 @@ export const AICostModelList = {
             "inputCost": 2.7e-7,
             "inputCostUnit": "token",
             "outputCost": 8.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10875,7 +11938,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 5.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10884,7 +11948,8 @@ export const AICostModelList = {
             "inputCost": 0.0000035,
             "inputCostUnit": "token",
             "outputCost": 0.0000035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10893,7 +11958,8 @@ export const AICostModelList = {
             "inputCost": 8.8e-7,
             "inputCostUnit": "token",
             "outputCost": 8.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10902,7 +11968,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 1.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10929,7 +11996,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10938,7 +12006,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10947,7 +12016,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10956,7 +12026,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -10974,7 +12045,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -10983,7 +12055,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -10992,7 +12065,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -11001,7 +12075,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "v0": [
@@ -11012,7 +12087,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 512000,
@@ -11021,7 +12097,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -11030,7 +12107,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         }
     ],
     "vercel_ai_gateway": [
@@ -11041,7 +12119,8 @@ export const AICostModelList = {
             "inputCost": 8e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -11050,7 +12129,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -11059,7 +12139,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 40960,
@@ -11068,7 +12149,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
@@ -11077,7 +12159,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 300000,
@@ -11086,7 +12169,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11095,7 +12179,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-8,
             "inputCostUnit": "token",
             "outputCost": 1.4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 300000,
@@ -11104,7 +12189,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000032,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 0,
@@ -11113,7 +12199,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 200000,
@@ -11122,7 +12209,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 200000,
@@ -11131,7 +12219,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -11140,7 +12229,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 200000,
@@ -11149,7 +12239,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 200000,
@@ -11158,7 +12249,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 200000,
@@ -11167,7 +12259,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -11176,7 +12269,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 256000,
@@ -11185,7 +12279,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -11194,7 +12289,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11203,7 +12299,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 0,
@@ -11212,7 +12309,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11221,7 +12319,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000219,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -11230,7 +12329,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-7,
             "inputCostUnit": "token",
             "outputCost": 9.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11239,7 +12339,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1048576,
@@ -11248,7 +12349,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1048576,
@@ -11257,7 +12359,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 1000000,
@@ -11266,7 +12369,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1048576,
@@ -11275,7 +12379,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 0,
@@ -11284,7 +12389,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -11293,7 +12399,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 0,
@@ -11302,7 +12409,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 0,
@@ -11311,7 +12419,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -11320,7 +12429,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -11329,7 +12439,8 @@ export const AICostModelList = {
             "inputCost": 5.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -11338,7 +12449,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11347,7 +12459,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131000,
@@ -11356,7 +12469,8 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11365,7 +12479,8 @@ export const AICostModelList = {
             "inputCost": 1.6e-7,
             "inputCostUnit": "token",
             "outputCost": 1.6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11374,7 +12489,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11383,7 +12499,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11392,7 +12509,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11401,7 +12519,8 @@ export const AICostModelList = {
             "inputCost": 7.2e-7,
             "inputCostUnit": "token",
             "outputCost": 7.2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
@@ -11410,7 +12529,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -11419,7 +12539,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -11428,7 +12549,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 0,
@@ -11437,7 +12559,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11446,7 +12569,8 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 2.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11455,7 +12579,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -11464,7 +12589,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11473,7 +12599,8 @@ export const AICostModelList = {
             "inputCost": 4e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-8,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11482,7 +12609,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 0,
@@ -11491,7 +12619,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -11500,7 +12629,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -11509,7 +12639,8 @@ export const AICostModelList = {
             "inputCost": 7.9e-7,
             "inputCostUnit": "token",
             "outputCost": 7.9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
@@ -11518,7 +12649,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
@@ -11527,7 +12659,8 @@ export const AICostModelList = {
             "inputCost": 0.0000012,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11536,7 +12669,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11545,7 +12679,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -11554,7 +12689,8 @@ export const AICostModelList = {
             "inputCost": 5.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -11563,7 +12699,8 @@ export const AICostModelList = {
             "inputCost": 8e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -11572,7 +12709,8 @@ export const AICostModelList = {
             "inputCost": 9e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000019,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 16385,
@@ -11581,7 +12719,8 @@ export const AICostModelList = {
             "inputCost": 5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -11590,7 +12729,8 @@ export const AICostModelList = {
             "inputCost": 0.0000015,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11599,7 +12739,8 @@ export const AICostModelList = {
             "inputCost": 0.00001,
             "inputCostUnit": "token",
             "outputCost": 0.00003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 1047576,
@@ -11608,7 +12749,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 1047576,
@@ -11617,7 +12759,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1047576,
@@ -11626,7 +12769,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -11635,7 +12779,8 @@ export const AICostModelList = {
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -11644,7 +12789,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 200000,
@@ -11653,7 +12799,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 200000,
@@ -11662,7 +12809,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 200000,
@@ -11671,7 +12819,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 200000,
@@ -11680,7 +12829,8 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 0,
@@ -11689,7 +12839,8 @@ export const AICostModelList = {
             "inputCost": 1.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 0,
@@ -11698,7 +12849,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 0,
@@ -11707,7 +12859,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 127000,
@@ -11716,7 +12869,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 200000,
@@ -11725,7 +12879,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 127000,
@@ -11734,7 +12889,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 127000,
@@ -11743,7 +12899,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -11752,7 +12909,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -11761,7 +12919,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -11770,7 +12929,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -11779,7 +12939,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -11788,7 +12949,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -11797,7 +12959,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -11806,7 +12969,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -11815,7 +12979,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -11824,7 +12989,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -11833,7 +12999,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -11842,7 +13009,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000011,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 200000,
@@ -11851,7 +13019,8 @@ export const AICostModelList = {
             "inputCost": 4.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "vertex_ai-anthropic_models": [
@@ -11862,7 +13031,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -11871,7 +13041,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -11880,7 +13051,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000005,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -11889,7 +13061,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -11898,7 +13071,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -11907,7 +13081,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -11916,7 +13091,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 8192,
@@ -11925,7 +13101,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -11934,7 +13111,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -11943,7 +13121,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -11952,7 +13131,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -11961,7 +13141,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 4096,
@@ -11970,7 +13151,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -11979,7 +13161,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32000,
@@ -11988,7 +13171,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -11997,7 +13181,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -12006,7 +13191,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -12015,7 +13201,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -12024,7 +13211,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 32000,
@@ -12033,7 +13221,8 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -12042,7 +13231,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -12051,7 +13241,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         }
     ],
     "vertex_ai-mistral_models": [
@@ -12062,7 +13253,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12071,7 +13263,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12080,7 +13273,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12089,7 +13283,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12098,7 +13293,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12107,7 +13303,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12116,7 +13313,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8191,
@@ -12125,7 +13323,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -12134,7 +13333,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -12143,7 +13343,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -12152,7 +13353,8 @@ export const AICostModelList = {
             "inputCost": 4e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -12161,7 +13363,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -12170,7 +13373,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -12179,7 +13383,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -12188,7 +13393,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -12197,7 +13403,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -12206,7 +13413,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12215,7 +13423,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -12224,7 +13433,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "vertex_ai-deepseek_models": [
@@ -12235,7 +13445,8 @@ export const AICostModelList = {
             "inputCost": 0.00000135,
             "inputCostUnit": "token",
             "outputCost": 0.0000054,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -12244,7 +13455,8 @@ export const AICostModelList = {
             "inputCost": 0.00000135,
             "inputCostUnit": "token",
             "outputCost": 0.0000054,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "vertex_ai-ai21_models": [
@@ -12255,7 +13467,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -12264,7 +13477,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -12273,7 +13487,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 256000,
@@ -12282,7 +13497,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -12291,7 +13507,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "vertex_ai-llama_models": [
@@ -12302,7 +13519,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000016,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -12338,7 +13556,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000115,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 1000000,
@@ -12347,7 +13566,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000115,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000000,
@@ -12356,7 +13576,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000000,
@@ -12365,7 +13586,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 7e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
@@ -12403,7 +13625,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "vertex_ai-moonshot_models": [
@@ -12414,7 +13637,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "vertex_ai-openai_models": [
@@ -12425,7 +13649,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
@@ -12434,7 +13659,8 @@ export const AICostModelList = {
             "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "vertex_ai-qwen_models": [
@@ -12445,7 +13671,8 @@ export const AICostModelList = {
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -12454,7 +13681,8 @@ export const AICostModelList = {
             "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 262144,
@@ -12463,7 +13691,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -12472,7 +13701,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "voyage": [
@@ -12483,7 +13713,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12492,7 +13723,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12501,7 +13733,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12510,7 +13743,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12519,7 +13753,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12528,7 +13763,8 @@ export const AICostModelList = {
             "inputCost": 2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
@@ -12537,7 +13773,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12546,7 +13783,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 120000,
@@ -12555,7 +13793,8 @@ export const AICostModelList = {
             "inputCost": 1.8e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12564,7 +13803,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
@@ -12573,7 +13813,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
@@ -12582,7 +13823,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -12591,7 +13833,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4000,
@@ -12600,7 +13843,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12609,7 +13853,8 @@ export const AICostModelList = {
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "wandb": [
@@ -12620,7 +13865,8 @@ export const AICostModelList = {
             "inputCost": 0.015,
             "inputCostUnit": "token",
             "outputCost": 0.06,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -12629,7 +13875,8 @@ export const AICostModelList = {
             "inputCost": 0.005,
             "inputCostUnit": "token",
             "outputCost": 0.02,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -12638,7 +13885,8 @@ export const AICostModelList = {
             "inputCost": 0.055,
             "inputCostUnit": "token",
             "outputCost": 0.2,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 262144,
@@ -12647,7 +13895,8 @@ export const AICostModelList = {
             "inputCost": 0.01,
             "inputCostUnit": "token",
             "outputCost": 0.01,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 262144,
@@ -12656,7 +13905,8 @@ export const AICostModelList = {
             "inputCost": 0.1,
             "inputCostUnit": "token",
             "outputCost": 0.15,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 262144,
@@ -12665,7 +13915,8 @@ export const AICostModelList = {
             "inputCost": 0.01,
             "inputCostUnit": "token",
             "outputCost": 0.01,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -12674,7 +13925,8 @@ export const AICostModelList = {
             "inputCost": 0.135,
             "inputCostUnit": "token",
             "outputCost": 0.4,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -12683,7 +13935,8 @@ export const AICostModelList = {
             "inputCost": 0.022,
             "inputCostUnit": "token",
             "outputCost": 0.022,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -12692,7 +13945,8 @@ export const AICostModelList = {
             "inputCost": 0.055,
             "inputCostUnit": "token",
             "outputCost": 0.165,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 161000,
@@ -12701,7 +13955,8 @@ export const AICostModelList = {
             "inputCost": 0.135,
             "inputCostUnit": "token",
             "outputCost": 0.54,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 161000,
@@ -12710,7 +13965,8 @@ export const AICostModelList = {
             "inputCost": 0.114,
             "inputCostUnit": "token",
             "outputCost": 0.275,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -12719,7 +13975,8 @@ export const AICostModelList = {
             "inputCost": 0.071,
             "inputCostUnit": "token",
             "outputCost": 0.071,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 64000,
@@ -12728,7 +13985,8 @@ export const AICostModelList = {
             "inputCost": 0.017,
             "inputCostUnit": "token",
             "outputCost": 0.066,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -12737,7 +13995,8 @@ export const AICostModelList = {
             "inputCost": 0.008,
             "inputCostUnit": "token",
             "outputCost": 0.035,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "watsonx": [
@@ -12748,7 +14007,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -12757,7 +14017,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -12766,7 +14027,8 @@ export const AICostModelList = {
             "inputCost": 0.0005,
             "inputCostUnit": "token",
             "outputCost": 0.002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -12775,7 +14037,8 @@ export const AICostModelList = {
             "inputCost": 0.0005,
             "inputCostUnit": "token",
             "outputCost": 0.002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 8192,
@@ -12784,7 +14047,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -12793,7 +14057,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -12802,7 +14067,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -12811,7 +14077,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 20480,
@@ -12820,7 +14087,8 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -12829,7 +14097,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -12838,7 +14107,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -12847,7 +14117,8 @@ export const AICostModelList = {
             "inputCost": 3.8e-7,
             "inputCostUnit": "token",
             "outputCost": 3.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -12856,7 +14127,8 @@ export const AICostModelList = {
             "inputCost": 3.8e-7,
             "inputCostUnit": "token",
             "outputCost": 3.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -12865,7 +14137,8 @@ export const AICostModelList = {
             "inputCost": 3.8e-7,
             "inputCostUnit": "token",
             "outputCost": 3.8e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -12874,7 +14147,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12883,7 +14157,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12892,7 +14167,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12901,7 +14177,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 1.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12910,7 +14187,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -12919,7 +14197,8 @@ export const AICostModelList = {
             "inputCost": 7.1e-7,
             "inputCostUnit": "token",
             "outputCost": 7.1e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12928,7 +14207,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000014,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -12937,7 +14217,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12946,7 +14227,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32000,
@@ -12955,7 +14237,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
@@ -12964,7 +14247,8 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -12973,7 +14257,8 @@ export const AICostModelList = {
             "inputCost": 3.5e-7,
             "inputCostUnit": "token",
             "outputCost": 3.5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -12982,7 +14267,8 @@ export const AICostModelList = {
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -12991,7 +14277,8 @@ export const AICostModelList = {
             "inputCost": 0.0000018,
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "xai": [
@@ -13002,7 +14289,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13011,7 +14299,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13020,7 +14309,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -13029,7 +14319,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -13038,7 +14329,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
@@ -13047,7 +14339,8 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13056,7 +14349,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -13065,7 +14359,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -13074,7 +14369,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -13083,7 +14379,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000025,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 131072,
@@ -13092,7 +14389,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -13101,7 +14399,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -13110,7 +14409,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
@@ -13119,7 +14419,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13128,7 +14429,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13137,7 +14439,8 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000004,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -13146,7 +14449,8 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -13155,7 +14459,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 2000000,
@@ -13164,7 +14469,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 2000000,
@@ -13173,7 +14479,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 5e-7,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
@@ -13182,7 +14489,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 256000,
@@ -13191,7 +14499,8 @@ export const AICostModelList = {
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -13200,7 +14509,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 256000,
@@ -13209,7 +14519,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 256000,
@@ -13218,7 +14529,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 256000,
@@ -13227,7 +14539,8 @@ export const AICostModelList = {
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -13236,7 +14549,8 @@ export const AICostModelList = {
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
-            "outputCostUnit": "token"
+            "outputCostUnit": "token",
+            "priceTier": 4
         }
     ]
 } as const
