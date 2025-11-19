@@ -11,6 +11,7 @@ on:
             - main
         paths:
             - package.json
+            - .github/workflows/publish.yaml
 
 concurrency:
     group: publish-mise-en-place
