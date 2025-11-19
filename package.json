@@ -1,38 +1,38 @@
 {
-  "name": "aicost",
-  "version": "1.1.0",
-  "description": "An utility for calculating the cost of AI models",
-  "scripts": {
-    "release": "bunx bumpp && npm publish",
-    "build": "bunx unbuild",
-    "index": "bun run scripts/index-model-info.ts"
-  },
-  "keywords": [],
-  "author": "Henrique Cunha <henrique@meistrari.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
-    "@types/bun": "latest",
-    "bumpp": "^9.3.0",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
-    "unbuild": "^2.0.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.mjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+    "name": "aicost",
+    "version": "1.1.0",
+    "description": "An utility for calculating the cost of AI models",
+    "scripts": {
+        "release": "bunx bumpp && npm publish",
+        "build": "bunx unbuild",
+        "index": "bun run scripts/index-model-info.ts",
+        "postinstall": "mise-en-place postinstall"
+    },
+    "keywords": [],
+    "author": "Henrique Cunha <henrique@meistrari.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "@meistrari/mise-en-place": "1.1.1",
+        "@types/bun": "latest",
+        "bumpp": "^9.3.0",
+        "typescript": "^5.3.3",
+        "unbuild": "^2.0.0"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.mjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
     }
-  }
 }

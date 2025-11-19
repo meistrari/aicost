@@ -5,14 +5,14 @@ let cachedList: any = null
 let lastFetchTime: number | null = null
 
 /**
- * Fetches the list of available AI model providers 
+ * Fetches the list of available AI model providers
  * and their associated model information.
- * 
+ *
  * - It first fetches from the latest version of the
  * list from the github repository.
  * - If the list couldn't be fetched, it falls back to
- * the static list imported from the package itself. 
- * 
+ * the static list imported from the package itself.
+ *
  * @returns The list of available AI model providers and their associated model information.
  */
 export async function getAICostModelList() {
