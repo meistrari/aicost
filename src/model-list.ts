@@ -1,5 +1,5 @@
-// Last updated: 2025-11-19T18:06:16.256Z
-// Next update: 2025-11-20T00:06:16.256Z
+// Last updated: 2025-11-19T19:05:22.239Z
+// Next update: 2025-11-20T01:05:22.239Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -2285,6 +2285,16 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
+            "maxTokens": 100000,
+            "name": "azure/codex-mini",
+            "type": "responses",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 4096,
             "name": "azure/command-r-plus",
             "type": "chat",
@@ -2915,6 +2925,26 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-2025-11-13",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-mini-2025-11-13",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -2947,6 +2977,16 @@ export const AICostModelList = {
             "maxTokens": 16384,
             "name": "azure/gpt-5-chat-latest",
             "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5-codex",
+            "type": "responses",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -2992,6 +3032,16 @@ export const AICostModelList = {
             "outputCost": 4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 400000,
+            "name": "azure/gpt-5-pro",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00012,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32000,
@@ -3095,6 +3145,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 100000,
+            "name": "azure/o3-deep-research",
+            "type": "responses",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -3112,6 +3172,26 @@ export const AICostModelList = {
             "outputCost": 0.0000044,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3-pro",
+            "type": "responses",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/o3-pro-2025-06-10",
+            "type": "responses",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -4849,6 +4929,16 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
+            "maxTokens": 100000,
+            "name": "codex-mini-latest",
+            "type": "responses",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 4096,
             "name": "ft:gpt-3.5-turbo",
             "type": "chat",
@@ -5429,6 +5519,166 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
+            "maxTokens": 128000,
+            "name": "gpt-5",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1-2025-11-13",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-5.1-chat-latest",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 272000,
+            "name": "gpt-5-pro",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 272000,
+            "name": "gpt-5-pro-2025-10-06",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-2025-08-07",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-chat",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-5-chat-latest",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-mini-2025-08-07",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-nano",
+            "type": "responses",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5-nano-2025-08-07",
+            "type": "responses",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
             "maxTokens": null,
             "name": "gpt-image-1-mini",
             "type": "chat",
@@ -5480,6 +5730,76 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 100000,
+            "name": "o1-2024-12-17",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "o1-mini",
+            "type": "responses",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "o1-mini-2024-09-12",
+            "type": "responses",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32768,
+            "name": "o1-preview",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "o1-preview-2024-09-12",
+            "type": "responses",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o1-pro",
+            "type": "responses",
+            "inputCost": 0.00015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o1-pro-2025-03-19",
+            "type": "responses",
+            "inputCost": 0.00015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
             "name": "o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -5487,6 +5807,76 @@ export const AICostModelList = {
             "outputCost": 0.000008,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-2025-04-16",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-deep-research",
+            "type": "responses",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-deep-research-2025-06-26",
+            "type": "responses",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-mini",
+            "type": "responses",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-mini-2025-01-31",
+            "type": "responses",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-pro",
+            "type": "responses",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o3-pro-2025-06-10",
+            "type": "responses",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -5505,6 +5895,26 @@ export const AICostModelList = {
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o4-mini-deep-research",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "o4-mini-deep-research-2025-06-26",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
             "outputCostUnit": "token",
             "priceTier": 3
         },
