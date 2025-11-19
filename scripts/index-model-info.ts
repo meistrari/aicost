@@ -23,24 +23,29 @@ const blockList = ['palm', 'gemini']
  * $$$$$ - Very expensive (> $50 per 1M tokens)
  */
 function calculatePriceTier(inputCost: number | null, outputCost: number | null, inputUnit: string | null, outputUnit: string | null): number | undefined {
-    if (!inputCost && !outputCost) return undefined
+    if (!inputCost && !outputCost)
+        return undefined
 
     let normalizedInputCost = 0
     let normalizedOutputCost = 0
 
     if (inputCost && inputUnit === 'token') {
         normalizedInputCost = inputCost
-    } else if (inputCost && inputUnit === 'request') {
+    }
+    else if (inputCost && inputUnit === 'request') {
         normalizedInputCost = inputCost / 1000
-    } else if (inputCost && inputUnit === 'pixel') {
+    }
+    else if (inputCost && inputUnit === 'pixel') {
         normalizedInputCost = inputCost * 100
     }
 
     if (outputCost && outputUnit === 'token') {
         normalizedOutputCost = outputCost
-    } else if (outputCost && outputUnit === 'request') {
+    }
+    else if (outputCost && outputUnit === 'request') {
         normalizedOutputCost = outputCost / 1000
-    } else if (outputCost && outputUnit === 'image') {
+    }
+    else if (outputCost && outputUnit === 'image') {
         // Image generation is typically more expensive
         normalizedOutputCost = outputCost / 1000
     }
@@ -49,10 +54,14 @@ function calculatePriceTier(inputCost: number | null, outputCost: number | null,
 
     const costPerMillion = avgCost * 1_000_000
 
-    if (costPerMillion < 0.5) return 1
-    if (costPerMillion < 2) return 2
-    if (costPerMillion < 10) return 3
-    if (costPerMillion < 15) return 4
+    if (costPerMillion < 0.5)
+        return 1
+    if (costPerMillion < 2)
+        return 2
+    if (costPerMillion < 10)
+        return 3
+    if (costPerMillion < 15)
+        return 4
     return 5
 }
 
@@ -63,8 +72,9 @@ const modelPerProvider = modelList.reduce((acc, { model, name }) => {
 
     if (blockList.includes(litellm_provider)
         || !['chat', 'completion', 'embedding', 'responses'].includes(model.mode)
-    )
+    ) {
         return acc
+    }
 
     const provider = Object.keys(providerMapping).find(provider => providerMapping[provider].includes(litellm_provider)) ?? litellm_provider
 
@@ -97,7 +107,7 @@ const modelPerProvider = modelList.reduce((acc, { model, name }) => {
         inputCostUnit,
         outputCost,
         outputCostUnit,
-        ...(priceTier ? { priceTier } : {})
+        ...(priceTier ? { priceTier } : {}),
     }
 
     acc[provider].push(structured)
@@ -110,7 +120,6 @@ let modelListFileContent = [
     `// Next update: ${new Date(new Date().getTime() + (6 * 60 * 60 * 1000)).toISOString()}`,
     '\n',
 ].join('\n')
-
 
 const providerTypeUnion = Object.keys(modelPerProvider).map(provider => `'${provider}'`).join(' | ')
 
