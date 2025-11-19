@@ -62,7 +62,7 @@ const modelPerProvider = modelList.reduce((acc, { model, name }) => {
     } = model
 
     if (blockList.includes(litellm_provider)
-        || !['chat', 'completion', 'embedding'].includes(model.mode)
+        || !['chat', 'completion', 'embedding', 'responses'].includes(model.mode)
     )
         return acc
 
