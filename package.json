@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "description": "An utility for calculating the cost of AI models",
   "scripts": {
-    "prepublishOnly": "nr build",
     "release": "bunx bumpp && npm publish",
     "build": "bunx unbuild",
     "index": "bun run scripts/index-model-info.ts"

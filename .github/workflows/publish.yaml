@@ -14,7 +14,7 @@ on:
             - .github/workflows/publish.yaml
 
 concurrency:
-    group: publish-mise-en-place
+    group: publish-${{ github.repository }}
     cancel-in-progress: true
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
             -   name: Install dependencies
                 run: bun run build
 
-            -   name: Publish mise-en-place package
+            -   name: Publish ${{ github.repository }} package
                 run: bun publish --access public --no-git-checks
                 env:
                     NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
