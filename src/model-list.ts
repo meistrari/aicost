@@ -1,5 +1,5 @@
-// Last updated: 2025-11-19T19:05:22.239Z
-// Next update: 2025-11-20T01:05:22.239Z
+// Last updated: 2025-11-20T00:17:52.424Z
+// Next update: 2025-11-20T06:17:52.424Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -5521,7 +5521,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5531,7 +5531,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5.1",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5541,7 +5541,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5.1-2025-11-13",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5551,7 +5551,7 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "gpt-5.1-chat-latest",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5581,7 +5581,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5591,7 +5591,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-chat",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5601,7 +5601,7 @@ export const AICostModelList = {
         {
             "maxTokens": 16384,
             "name": "gpt-5-chat-latest",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5641,7 +5641,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
@@ -5651,7 +5651,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-mini-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
@@ -5661,7 +5661,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-nano",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
@@ -5671,7 +5671,7 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5-nano-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
@@ -5731,7 +5731,7 @@ export const AICostModelList = {
         {
             "maxTokens": 100000,
             "name": "o1-2024-12-17",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5741,7 +5741,7 @@ export const AICostModelList = {
         {
             "maxTokens": 65536,
             "name": "o1-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
@@ -5751,7 +5751,7 @@ export const AICostModelList = {
         {
             "maxTokens": 65536,
             "name": "o1-mini-2024-09-12",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
@@ -5761,7 +5761,7 @@ export const AICostModelList = {
         {
             "maxTokens": 32768,
             "name": "o1-preview",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5771,7 +5771,7 @@ export const AICostModelList = {
         {
             "maxTokens": 32768,
             "name": "o1-preview-2024-09-12",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5811,7 +5811,7 @@ export const AICostModelList = {
         {
             "maxTokens": 100000,
             "name": "o3-2025-04-16",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
@@ -5841,7 +5841,7 @@ export const AICostModelList = {
         {
             "maxTokens": 100000,
             "name": "o3-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
@@ -5851,7 +5851,7 @@ export const AICostModelList = {
         {
             "maxTokens": 100000,
             "name": "o3-mini-2025-01-31",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,

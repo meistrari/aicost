@@ -5515,7 +5515,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5525,7 +5525,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.1",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5535,7 +5535,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.1-2025-11-13",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5545,7 +5545,7 @@
         {
             "maxTokens": 16384,
             "name": "gpt-5.1-chat-latest",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5575,7 +5575,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5585,7 +5585,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-chat",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5595,7 +5595,7 @@
         {
             "maxTokens": 16384,
             "name": "gpt-5-chat-latest",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
@@ -5635,7 +5635,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
@@ -5645,7 +5645,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-mini-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
@@ -5655,7 +5655,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-nano",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
@@ -5665,7 +5665,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5-nano-2025-08-07",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
@@ -5725,7 +5725,7 @@
         {
             "maxTokens": 100000,
             "name": "o1-2024-12-17",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5735,7 +5735,7 @@
         {
             "maxTokens": 65536,
             "name": "o1-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
@@ -5745,7 +5745,7 @@
         {
             "maxTokens": 65536,
             "name": "o1-mini-2024-09-12",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
@@ -5755,7 +5755,7 @@
         {
             "maxTokens": 32768,
             "name": "o1-preview",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5765,7 +5765,7 @@
         {
             "maxTokens": 32768,
             "name": "o1-preview-2024-09-12",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.00006,
@@ -5805,7 +5805,7 @@
         {
             "maxTokens": 100000,
             "name": "o3-2025-04-16",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000008,
@@ -5835,7 +5835,7 @@
         {
             "maxTokens": 100000,
             "name": "o3-mini",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
@@ -5845,7 +5845,7 @@
         {
             "maxTokens": 100000,
             "name": "o3-mini-2025-01-31",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000011,
             "inputCostUnit": "token",
             "outputCost": 0.0000044,
