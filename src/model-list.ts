@@ -1,7 +1,7 @@
-// Last updated: 2025-11-20T00:17:52.424Z
-// Next update: 2025-11-20T06:17:52.424Z
+// Last updated: 2025-11-20T06:06:06.754Z
+// Next update: 2025-11-20T12:06:06.754Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -2405,6 +2405,46 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/eu/gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5.5e-8,
@@ -2502,6 +2542,46 @@ export const AICostModelList = {
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3044,6 +3124,46 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 32000,
             "name": "azure/mistral-large-2402",
             "type": "chat",
@@ -3362,6 +3482,46 @@ export const AICostModelList = {
             "outputCost": 4.4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 100000,
@@ -7926,6 +8086,18 @@ export const AICostModelList = {
             "outputCost": 1e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        }
+    ],
+    "vertex_ai": [
+        {
+            "maxTokens": 65535,
+            "name": "vertex_ai/gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "gradient_ai": [

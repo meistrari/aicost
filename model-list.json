@@ -2399,6 +2399,46 @@
         },
         {
             "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/eu/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/eu/gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5.5e-8,
@@ -2496,6 +2536,46 @@
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/global/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 4096,
@@ -3038,6 +3118,46 @@
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 32000,
             "name": "azure/mistral-large-2402",
             "type": "chat",
@@ -3356,6 +3476,46 @@
             "outputCost": 4.4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-chat",
+            "type": "chat",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000138,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/us/gpt-5.1-codex-mini",
+            "type": "responses",
+            "inputCost": 2.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 100000,
@@ -7920,6 +8080,18 @@
             "outputCost": 1e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        }
+    ],
+    "vertex_ai": [
+        {
+            "maxTokens": 65535,
+            "name": "vertex_ai/gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "gradient_ai": [
