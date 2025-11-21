@@ -10561,6 +10561,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 65535,
+            "name": "openrouter/google/gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 8192,
             "name": "openrouter/google/gemini-pro-1.5",
             "type": "chat",
