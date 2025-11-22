@@ -1705,6 +1705,16 @@
             "priceTier": 4
         },
         {
+            "maxTokens": 64000,
+            "name": "anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
             "maxTokens": 10000,
             "name": "apac.amazon.nova-lite-v1:0",
             "type": "chat",
@@ -6115,6 +6125,16 @@
         {
             "maxTokens": 8191,
             "name": "text-embedding-ada-002",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8191,
+            "name": "text-embedding-ada-002-v2",
             "type": "embedding",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
