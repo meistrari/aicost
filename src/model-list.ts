@@ -1,5 +1,5 @@
-// Last updated: 2025-11-21T18:06:14.406Z
-// Next update: 2025-11-22T00:06:14.406Z
+// Last updated: 2025-11-22T00:16:58.324Z
+// Next update: 2025-11-22T06:16:58.324Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -4203,7 +4203,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 32768,
-            "name": "cerebras/openai/gpt-oss-120b",
+            "name": "cerebras/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
@@ -12511,6 +12511,16 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 200000,
+            "name": "together_ai/zai-org/GLM-4.6",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K2-Instruct-0905",
             "type": "chat",
@@ -14963,6 +14973,56 @@ export const AICostModelList = {
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-reasoning",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-reasoning-latest",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-non-reasoning",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-non-reasoning-latest",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,

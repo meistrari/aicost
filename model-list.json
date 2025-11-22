@@ -4197,7 +4197,7 @@
         },
         {
             "maxTokens": 32768,
-            "name": "cerebras/openai/gpt-oss-120b",
+            "name": "cerebras/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
@@ -12505,6 +12505,16 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 200000,
+            "name": "together_ai/zai-org/GLM-4.6",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K2-Instruct-0905",
             "type": "chat",
@@ -14957,6 +14967,56 @@
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-reasoning",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-reasoning-latest",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-non-reasoning",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "xai/grok-4-1-fast-non-reasoning-latest",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
