@@ -1163,6 +1163,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 64000,
+            "name": "claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
             "maxTokens": 4096,
             "name": "cohere.command-light-text-v14",
             "type": "chat",
