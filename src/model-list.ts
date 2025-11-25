@@ -1,5 +1,5 @@
-// Last updated: 2025-11-24T18:05:56.994Z
-// Next update: 2025-11-25T00:05:56.994Z
+// Last updated: 2025-11-25T00:16:45.961Z
+// Next update: 2025-11-25T06:16:45.961Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_text' | 'azure_ai' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
 
@@ -1712,6 +1712,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "anthropic.claude-opus-4-5-20251101-v1:0",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2127,6 +2137,16 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us.anthropic.claude-opus-4-5-20251101-v1:0",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
             "outputCostUnit": "token",
             "priceTier": 5
         },
@@ -6356,6 +6376,16 @@ export const AICostModelList = {
             "inputCost": 0.000015,
             "inputCostUnit": "token",
             "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-opus-4-5-20251101",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
             "outputCostUnit": "token",
             "priceTier": 5
         },
