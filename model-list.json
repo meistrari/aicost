@@ -6640,6 +6640,16 @@
             "outputCost": 0,
             "outputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 1024,
+            "name": "embed-multilingual-light-v3.0",
+            "type": "embedding",
+            "inputCost": 0.0001,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 5
         }
     ],
     "cohere_chat": [
