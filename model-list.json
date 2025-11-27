@@ -8022,6 +8022,16 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 202800,
+            "name": "fireworks_ai/accounts/fireworks/models/glm-4p6",
+            "type": "chat",
+            "inputCost": 5.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000219,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 131072,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
             "type": "chat",
@@ -10511,6 +10521,16 @@
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 32000,
+            "name": "openrouter/anthropic/claude-opus-4.5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 1000000,
