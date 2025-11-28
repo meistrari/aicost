@@ -3648,7 +3648,7 @@
             "priceTier": 3
         }
     ],
-    "azure_anthropic": [
+    "azure_ai": [
         {
             "maxTokens": 64000,
             "name": "azure/claude-haiku-4-5",
@@ -3678,41 +3678,7 @@
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
-        }
-    ],
-    "azure_text": [
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-3.5-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token",
-            "priceTier": 2
         },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token",
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 4097,
-            "name": "azure/gpt-35-turbo-instruct-0914",
-            "type": "completion",
-            "inputCost": 0.0000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
-            "outputCostUnit": "token",
-            "priceTier": 2
-        }
-    ],
-    "azure_ai": [
         {
             "maxTokens": 512,
             "name": "azure_ai/Cohere-embed-v3-english",
@@ -4192,6 +4158,38 @@
             "outputCost": 0.000003,
             "outputCostUnit": "token",
             "priceTier": 3
+        }
+    ],
+    "azure_text": [
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-3.5-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 4097,
+            "name": "azure/gpt-35-turbo-instruct-0914",
+            "type": "completion",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "text-completion-openai": [
