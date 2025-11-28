@@ -11704,6 +11704,89 @@
             "priceTier": 1
         }
     ],
+    "publicai": [
+        {
+            "maxTokens": 8192,
+            "name": "publicai/swiss-ai/apertus-8b-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "publicai/swiss-ai/apertus-70b-instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "publicai/aisingapore/Gemma-SEA-LION-v4-27B-IT",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 16384,
+            "name": "publicai/BSC-LT/salamandra-7b-instruct-tools-16k",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "publicai/BSC-LT/ALIA-40b-instruct_Q8_0",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "publicai/allenai/Olmo-3-7B-Instruct",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "publicai/aisingapore/Qwen-SEA-LION-v4-32B-IT",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "publicai/allenai/Olmo-3-7B-Think",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "publicai/allenai/Olmo-3-32B-Think",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "replicate": [
         {
             "maxTokens": 4096,
