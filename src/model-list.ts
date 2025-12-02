@@ -1,7 +1,7 @@
-// Last updated: 2025-12-02T00:18:23.063Z
-// Next update: 2025-12-02T06:18:23.064Z
+// Last updated: 2025-12-02T06:06:38.054Z
+// Next update: 2025-12-02T12:06:38.054Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -6421,6 +6421,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "claude-opus-4-5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
             "name": "claude-sonnet-4-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7026,17 +7036,177 @@ export const AICostModelList = {
             "maxTokens": 200000,
             "name": "databricks/databricks-claude-3-7-sonnet",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 0.0000029999900000000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000017857,
+            "outputCost": 0.000015000020000000002,
             "outputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-haiku-4-5",
+            "type": "chat",
+            "inputCost": 0.00000100002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000500003,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015000020000000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00007500003000000001,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-opus-4-1",
+            "type": "chat",
+            "inputCost": 0.000015000020000000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00007500003000000001,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-opus-4-5",
+            "type": "chat",
+            "inputCost": 0.00000500003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025000010000000002,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-sonnet-4",
+            "type": "chat",
+            "inputCost": 0.0000029999900000000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015000020000000002,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-sonnet-4-1",
+            "type": "chat",
+            "inputCost": 0.0000029999900000000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015000020000000002,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-claude-sonnet-4-5",
+            "type": "chat",
+            "inputCost": 0.0000029999900000000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015000020000000002,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "databricks/databricks-gemini-2-5-flash",
+            "type": "chat",
+            "inputCost": 3.0001999999999996e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000249998,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "databricks/databricks-gemini-2-5-pro",
+            "type": "chat",
+            "inputCost": 0.00000124999,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009999990000000002,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "databricks/databricks-gemma-3-12b",
+            "type": "chat",
+            "inputCost": 1.5000999999999998e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.0001e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 400000,
+            "name": "databricks/databricks-gpt-5",
+            "type": "chat",
+            "inputCost": 0.00000124999,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009999990000000002,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 400000,
+            "name": "databricks/databricks-gpt-5-1",
+            "type": "chat",
+            "inputCost": 0.00000124999,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009999990000000002,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 400000,
+            "name": "databricks/databricks-gpt-5-mini",
+            "type": "chat",
+            "inputCost": 2.4997000000000006e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000019999700000000004,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 400000,
+            "name": "databricks/databricks-gpt-5-nano",
+            "type": "chat",
+            "inputCost": 4.998e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.9998000000000007e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "databricks/databricks-gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5000999999999998e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.9997e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "databricks/databricks-gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.0001999999999996e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "databricks/databricks-gte-large-en",
             "type": "embedding",
-            "inputCost": 1.2999e-7,
+            "inputCost": 1.2999000000000001e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null,
@@ -7048,7 +7218,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 0.0000015000300000000002,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -7056,31 +7226,41 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "databricks/databricks-llama-4-maverick",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.0000015000300000000002,
             "outputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
             "name": "databricks/databricks-meta-llama-3-1-405b-instruct",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.00000500003,
             "inputCostUnit": "token",
-            "outputCost": 0.00001500002,
+            "outputCost": 0.000015000020000000002,
             "outputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 200000,
+            "name": "databricks/databricks-meta-llama-3-1-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.5000999999999998e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5003000000000007e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
             "name": "databricks/databricks-meta-llama-3-3-70b-instruct",
             "type": "chat",
-            "inputCost": 0.00000100002,
+            "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000299999,
+            "outputCost": 0.0000015000300000000002,
             "outputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -7088,7 +7268,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 0.00000100002,
             "inputCostUnit": "token",
-            "outputCost": 0.00000299999,
+            "outputCost": 0.0000029999900000000002,
             "outputCostUnit": "token",
             "priceTier": 3
         },
@@ -7098,7 +7278,7 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.9902e-7,
+            "outputCost": 0.00000100002,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -7106,9 +7286,9 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "databricks/databricks-mpt-30b-instruct",
             "type": "chat",
-            "inputCost": 9.9902e-7,
+            "inputCost": 0.00000100002,
             "inputCostUnit": "token",
-            "outputCost": 9.9902e-7,
+            "outputCost": 0.00000100002,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -15326,6 +15506,87 @@ export const AICostModelList = {
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
+        }
+    ],
+    "zai": [
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.6",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5v",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5-x",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000089,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5-air",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000011,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5-airx",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4-32b-0414-128k",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.5-flash",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
         }
     ]
 } as const
