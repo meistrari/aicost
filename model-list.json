@@ -8061,6 +8061,16 @@
         },
         {
             "maxTokens": 262144,
+            "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct-0905",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
