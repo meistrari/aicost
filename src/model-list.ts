@@ -1,5 +1,5 @@
-// Last updated: 2025-12-03T00:18:18.203Z
-// Next update: 2025-12-03T06:18:18.203Z
+// Last updated: 2025-12-03T06:06:26.334Z
+// Next update: 2025-12-03T12:06:26.334Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -1639,6 +1639,46 @@ export const AICostModelList = {
             "outputCost": 2.4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 64000,
+            "name": "amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "apac.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000,
@@ -6808,6 +6848,16 @@ export const AICostModelList = {
             "outputCost": 0.0000011,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "deepseek/deepseek-v3.2",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         }
     ],
     "dashscope": [
@@ -8172,6 +8222,16 @@ export const AICostModelList = {
             "inputCost": 5.6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000168,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 163840,
+            "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p2",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -10815,6 +10875,16 @@ export const AICostModelList = {
             "outputCost": 8e-7,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openrouter/deepseek/deepseek-v3.2",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
