@@ -1,5 +1,5 @@
-// Last updated: 2025-12-03T06:06:26.334Z
-// Next update: 2025-12-03T12:06:26.334Z
+// Last updated: 2025-12-03T12:08:03.527Z
+// Next update: 2025-12-03T18:08:03.527Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -2192,6 +2192,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "global.anthropic.claude-opus-4-5-20251101-v1:0",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4263,21 +4273,21 @@ export const AICostModelList = {
             "maxTokens": 16384,
             "name": "ft:babbage-002",
             "type": "completion",
-            "inputCost": 4e-7,
+            "inputCost": 0.0000016,
             "inputCostUnit": "token",
-            "outputCost": 4e-7,
+            "outputCost": 0.0000016,
             "outputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
             "name": "ft:davinci-002",
             "type": "completion",
-            "inputCost": 0.000002,
+            "inputCost": 0.000012,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.000012,
             "outputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 4
         },
         {
             "maxTokens": 4096,
@@ -5307,6 +5317,46 @@ export const AICostModelList = {
             "outputCost": 0.0000012,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ft:gpt-4.1-2025-04-14",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ft:gpt-4.1-mini-2025-04-14",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32768,
+            "name": "ft:gpt-4.1-nano-2025-04-14",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 100000,
+            "name": "ft:o4-mini-2025-04-16",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 4097,
