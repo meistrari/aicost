@@ -9950,6 +9950,26 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-0905-preview",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-turbo-preview",
+            "type": "chat",
+            "inputCost": 0.00000115,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 131072,
             "name": "moonshot/kimi-latest",
             "type": "chat",
@@ -9993,11 +10013,11 @@
             "maxTokens": 131072,
             "name": "moonshot/kimi-thinking-preview",
             "type": "chat",
-            "inputCost": 0.00003,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -10008,6 +10028,16 @@
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-thinking-turbo",
+            "type": "chat",
+            "inputCost": 0.00000115,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -14941,11 +14971,11 @@
             "maxTokens": 128000,
             "name": "wandb/moonshotai/Kimi-K2-Instruct",
             "type": "chat",
-            "inputCost": 0.135,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.4,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,

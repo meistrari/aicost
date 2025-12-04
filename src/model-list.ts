@@ -1,5 +1,5 @@
-// Last updated: 2025-12-04T00:18:49.345Z
-// Next update: 2025-12-04T06:18:49.345Z
+// Last updated: 2025-12-04T06:06:27.416Z
+// Next update: 2025-12-04T12:06:27.416Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -9956,6 +9956,26 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-0905-preview",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-turbo-preview",
+            "type": "chat",
+            "inputCost": 0.00000115,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 131072,
             "name": "moonshot/kimi-latest",
             "type": "chat",
@@ -9999,11 +10019,11 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "moonshot/kimi-thinking-preview",
             "type": "chat",
-            "inputCost": 0.00003,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
@@ -10014,6 +10034,16 @@ export const AICostModelList = {
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2-thinking-turbo",
+            "type": "chat",
+            "inputCost": 0.00000115,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -14947,11 +14977,11 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "wandb/moonshotai/Kimi-K2-Instruct",
             "type": "chat",
-            "inputCost": 0.135,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.4,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
