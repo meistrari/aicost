@@ -3259,6 +3259,16 @@
         },
         {
             "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-max",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -4168,6 +4178,16 @@
             "outputCost": 0.000006,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 8191,
+            "name": "azure_ai/mistral-large-3",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -5955,6 +5975,16 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1-codex-max",
             "type": "responses",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
@@ -9776,6 +9806,16 @@
             "outputCost": 0.000006,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 8191,
+            "name": "mistral/mistral-large-3",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,

@@ -1,5 +1,5 @@
-// Last updated: 2025-12-05T18:05:03.760Z
-// Next update: 2025-12-06T00:05:03.760Z
+// Last updated: 2025-12-06T00:17:43.713Z
+// Next update: 2025-12-06T06:17:43.713Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -3265,6 +3265,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "azure/gpt-5.1-codex-max",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -4174,6 +4184,16 @@ export const AICostModelList = {
             "outputCost": 0.000006,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 8191,
+            "name": "azure_ai/mistral-large-3",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -5961,6 +5981,16 @@ export const AICostModelList = {
         {
             "maxTokens": 128000,
             "name": "gpt-5.1-codex",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.1-codex-max",
             "type": "responses",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
@@ -9782,6 +9812,16 @@ export const AICostModelList = {
             "outputCost": 0.000006,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 8191,
+            "name": "mistral/mistral-large-3",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8191,
