@@ -8730,6 +8730,48 @@
             "outputCostUnit": null
         }
     ],
+    "amazon_nova": [
+        {
+            "maxTokens": 10000,
+            "name": "amazon-nova/nova-micro-v1",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 10000,
+            "name": "amazon-nova/nova-lite-v1",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 10000,
+            "name": "amazon-nova/nova-premier-v1",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000125,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 10000,
+            "name": "amazon-nova/nova-pro-v1",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        }
+    ],
     "groq": [
         {
             "maxTokens": 128000,
