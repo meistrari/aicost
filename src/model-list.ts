@@ -1,5 +1,5 @@
-// Last updated: 2025-12-08T06:07:22.378Z
-// Next update: 2025-12-08T12:07:22.378Z
+// Last updated: 2025-12-08T12:07:39.497Z
+// Next update: 2025-12-08T18:07:39.497Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -1654,7 +1654,7 @@ export const AICostModelList = {
             "maxTokens": 64000,
             "name": "apac.amazon.nova-2-lite-v1:0",
             "type": "chat",
-            "inputCost": 6e-8,
+            "inputCost": 3.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
@@ -1664,7 +1664,7 @@ export const AICostModelList = {
             "maxTokens": 64000,
             "name": "eu.amazon.nova-2-lite-v1:0",
             "type": "chat",
-            "inputCost": 6e-8,
+            "inputCost": 3.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
@@ -1674,7 +1674,7 @@ export const AICostModelList = {
             "maxTokens": 64000,
             "name": "us.amazon.nova-2-lite-v1:0",
             "type": "chat",
-            "inputCost": 6e-8,
+            "inputCost": 3.3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
@@ -1941,6 +1941,36 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
+            "maxTokens": 8192,
+            "name": "google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
             "maxTokens": 64000,
             "name": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -1969,6 +1999,16 @@ export const AICostModelList = {
             "outputCost": 0.0000055,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 64000,
+            "name": "global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 64000,
@@ -2021,6 +2061,116 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
+            "maxTokens": 8192,
+            "name": "minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "moonshot.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
             "maxTokens": 128000,
             "name": "openai.gpt-oss-120b-1:0",
             "type": "chat",
@@ -2037,6 +2187,26 @@ export const AICostModelList = {
             "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
             "priceTier": 1
         },
@@ -2079,6 +2249,26 @@ export const AICostModelList = {
             "outputCost": 6e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "qwen.qwen3-next-80b-a3b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 5.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000266,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 10000,
@@ -6047,16 +6237,6 @@ export const AICostModelList = {
             "outputCost": 4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "gpt-image-1-mini",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": null,
-            "outputCostUnit": null,
-            "priceTier": 2
         },
         {
             "maxTokens": 4096,
