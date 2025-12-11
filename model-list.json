@@ -3941,7 +3941,7 @@
     "azure_ai": [
         {
             "maxTokens": 64000,
-            "name": "azure/claude-haiku-4-5",
+            "name": "azure_ai/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
@@ -3951,7 +3951,7 @@
         },
         {
             "maxTokens": 32000,
-            "name": "azure/claude-opus-4-1",
+            "name": "azure_ai/claude-opus-4-1",
             "type": "chat",
             "inputCost": 0.000015,
             "inputCostUnit": "token",
@@ -3961,7 +3961,7 @@
         },
         {
             "maxTokens": 64000,
-            "name": "azure/claude-sonnet-4-5",
+            "name": "azure_ai/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
