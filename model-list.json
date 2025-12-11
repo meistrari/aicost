@@ -12017,6 +12017,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 256000,
+            "name": "mistral/codestral-2508",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 8191,
             "name": "mistral/codestral-latest",
             "type": "chat",
@@ -12065,6 +12075,26 @@
             "outputCost": 3e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 256000,
+            "name": "mistral/labs-devstral-small-2512",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 256000,
+            "name": "mistral/devstral-2512",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 40000,
