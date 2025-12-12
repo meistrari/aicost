@@ -1,5 +1,5 @@
-// Last updated: 2025-12-11T18:05:26.623Z
-// Next update: 2025-12-12T00:05:26.623Z
+// Last updated: 2025-12-12T00:19:11.755Z
+// Next update: 2025-12-12T06:19:11.755Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
 
@@ -2034,9 +2034,9 @@ export const AICostModelList = {
             "maxTokens": 64000,
             "name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
-            "inputCost": 0.0000011,
+            "inputCost": 0.000001,
             "inputCostUnit": "token",
-            "outputCost": 0.0000055,
+            "outputCost": 0.000005,
             "outputCostUnit": "token",
             "priceTier": 3
         },
@@ -6157,6 +6157,56 @@ export const AICostModelList = {
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.2-2025-12-11",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gpt-5.2-chat-latest",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.2-pro",
+            "type": "responses",
+            "inputCost": 0.000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.000168,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.2-pro-2025-12-11",
+            "type": "responses",
+            "inputCost": 0.000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.000168,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 272000,
