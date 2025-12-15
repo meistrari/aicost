@@ -13769,6 +13769,65 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 262144,
+            "name": "openrouter/mistralai/devstral-2512:free",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/mistralai/devstral-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/mistralai/ministral-3b-2512",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/mistralai/ministral-8b-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/mistralai/ministral-14b-2512",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/mistralai/mistral-large-2512",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 8192,
             "name": "openrouter/mistralai/mistral-7b-instruct",
             "type": "chat",
@@ -14006,6 +14065,36 @@
             "outputCost": 4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 400000,
+            "name": "openrouter/openai/gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5.2-chat",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 400000,
+            "name": "openrouter/openai/gpt-5.2-pro",
+            "type": "chat",
+            "inputCost": 0.000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.000168,
+            "outputCostUnit": "token",
+            "priceTier": 5
         },
         {
             "maxTokens": 32768,
