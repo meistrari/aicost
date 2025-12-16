@@ -6744,7 +6744,7 @@
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "claude-3-7-sonnet-20250219",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6754,7 +6754,7 @@
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "claude-3-7-sonnet-latest",
             "type": "chat",
             "inputCost": 0.000003,
@@ -10729,12 +10729,13 @@
         },
         {
             "maxTokens": 40960,
-            "name": "fireworks_ai/accounts/fireworks/models/qwen3-embedding-8b",
+            "name": "fireworks_ai/accounts/fireworks/models/",
             "type": "embedding",
-            "inputCost": 0,
-            "inputCostUnit": null,
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
             "outputCost": 0,
-            "outputCostUnit": null
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
