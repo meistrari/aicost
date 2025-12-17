@@ -5314,6 +5314,16 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 65535,
+            "name": "gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 1024,
             "name": "medlm-large",
             "type": "chat",
