@@ -12249,6 +12249,38 @@
             "outputCostUnit": null
         }
     ],
+    "minimax": [
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M2.1-lightning",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        }
+    ],
     "mistral": [
         {
             "maxTokens": 8191,
