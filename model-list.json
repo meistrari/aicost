@@ -3539,6 +3539,16 @@
         },
         {
             "maxTokens": 16384,
+            "name": "azure/gpt-5.2-chat",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
             "name": "azure/gpt-5.2-chat-2025-12-11",
             "type": "chat",
             "inputCost": 0.00000175,
