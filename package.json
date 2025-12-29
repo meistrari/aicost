@@ -2,6 +2,7 @@
     "name": "aicost",
     "version": "1.2.2",
     "description": "An utility for calculating the cost of AI models",
+    "repository": "https://github.com/meistrari/aicost",
     "scripts": {
         "release": "bunx bumpp && npm publish",
         "build": "bunx unbuild",
