@@ -1,6 +1,7 @@
 name: Publish SDK Package
 
 permissions:
+  id-token: write
   contents: write
   issues: write
   pull-requests: write
