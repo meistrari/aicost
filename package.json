@@ -12,7 +12,7 @@
     "author": "Henrique Cunha <henrique@meistrari.com>",
     "license": "ISC",
     "devDependencies": {
-        "@meistrari/mise-en-place": "1.1.1",
+        "@meistrari/mise-en-place": "2.9.0",
         "@types/bun": "latest",
         "bumpp": "^9.3.0",
         "typescript": "^5.3.3",
