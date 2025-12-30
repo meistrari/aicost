@@ -1,6 +1,6 @@
 {
     "name": "aicost",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "An utility for calculating the cost of AI models",
     "repository": "https://github.com/meistrari/aicost",
     "scripts": {
