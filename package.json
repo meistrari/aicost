@@ -7,7 +7,7 @@
         "release": "bunx bumpp && npm publish",
         "build": "bunx unbuild",
         "index": "bun run scripts/index-model-info.ts",
-        "postinstall": "mise-en-place postinstall"
+        "prepare": "mise-en-place postinstall"
     },
     "keywords": [],
     "author": "Henrique Cunha <henrique@meistrari.com>",
