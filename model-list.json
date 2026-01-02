@@ -8693,9 +8693,9 @@
             "maxTokens": 163840,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p2",
             "type": "chat",
-            "inputCost": 0.0000012,
+            "inputCost": 5.6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 0.00000168,
             "outputCostUnit": "token",
             "priceTier": 2
         },
