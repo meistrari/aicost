@@ -11566,6 +11566,16 @@
         },
         {
             "maxTokens": 8192,
+            "name": "groq/gemma-7b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
             "name": "groq/meta-llama/llama-guard-4-12b",
             "type": "chat",
             "inputCost": 2e-7,
