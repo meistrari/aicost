@@ -18499,6 +18499,16 @@
     "zai": [
         {
             "maxTokens": null,
+            "name": "zai/glm-4.7",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
             "name": "zai/glm-4.6",
             "type": "chat",
             "inputCost": 6e-7,
