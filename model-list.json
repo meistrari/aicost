@@ -3539,16 +3539,6 @@
         },
         {
             "maxTokens": 16384,
-            "name": "azure/gpt-5.2-chat",
-            "type": "chat",
-            "inputCost": 0.00000175,
-            "inputCostUnit": "token",
-            "outputCost": 0.000014,
-            "outputCostUnit": "token",
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 16384,
             "name": "azure/gpt-5.2-chat-2025-12-11",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -4038,16 +4028,6 @@
             "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
-        },
-        {
-            "maxTokens": 131072,
-            "name": "azure_ai/gpt-oss-120b",
-            "type": "chat",
-            "inputCost": 1.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token",
-            "priceTier": 1
         },
         {
             "maxTokens": 512,
@@ -5332,16 +5312,6 @@
             "outputCost": 0.0000015,
             "outputCostUnit": "token",
             "priceTier": 2
-        },
-        {
-            "maxTokens": 65535,
-            "name": "gemini-3-flash-preview",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000003,
-            "outputCostUnit": "token",
-            "priceTier": 3
         },
         {
             "maxTokens": 1024,
@@ -8693,9 +8663,9 @@
             "maxTokens": 163840,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p2",
             "type": "chat",
-            "inputCost": 5.6e-7,
+            "inputCost": 0.0000012,
             "inputCostUnit": "token",
-            "outputCost": 0.00000168,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -11050,16 +11020,6 @@
             "outputCost": 0.000012,
             "outputCostUnit": "token",
             "priceTier": 3
-        },
-        {
-            "maxTokens": 65535,
-            "name": "vertex_ai/gemini-3-flash-preview",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000003,
-            "outputCostUnit": "token",
-            "priceTier": 3
         }
     ],
     "github_copilot": [
@@ -11325,6 +11285,62 @@
             "outputCostUnit": null
         }
     ],
+    "gigachat": [
+        {
+            "maxTokens": 8192,
+            "name": "gigachat/GigaChat-2-Lite",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gigachat/GigaChat-2-Max",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 8192,
+            "name": "gigachat/GigaChat-2-Pro",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "gigachat/Embeddings",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 512,
+            "name": "gigachat/Embeddings-2",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gigachat/EmbeddingsGigaR",
+            "type": "embedding",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
+    ],
     "gradient_ai": [
         {
             "maxTokens": 2048,
@@ -11545,6 +11561,56 @@
     ],
     "groq": [
         {
+            "maxTokens": 128000,
+            "name": "groq/deepseek-r1-distill-llama-70b",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/gemma-7b-it",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 7e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/gemma2-9b-it",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.1-405b-reasoning",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.1-70b-versatile",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 8192,
             "name": "groq/llama-3.1-8b-instant",
             "type": "chat",
@@ -11553,6 +11619,76 @@
             "outputCost": 8e-8,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-11b-text-preview",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-11b-vision-preview",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-1b-preview",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-3b-preview",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 6e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-90b-text-preview",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.2-90b-vision-preview",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama-3.3-70b-specdec",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -11566,21 +11702,41 @@
         },
         {
             "maxTokens": 8192,
-            "name": "groq/gemma-7b-it",
-            "type": "chat",
-            "inputCost": 5e-8,
-            "inputCostUnit": "token",
-            "outputCost": 8e-8,
-            "outputCostUnit": "token",
-            "priceTier": 1
-        },
-        {
-            "maxTokens": 8192,
-            "name": "groq/meta-llama/llama-guard-4-12b",
+            "name": "groq/llama-guard-3-8b",
             "type": "chat",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
             "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 4096,
+            "name": "groq/llama2-70b-4096",
+            "type": "chat",
+            "inputCost": 7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama3-groq-70b-8192-tool-use-preview",
+            "type": "chat",
+            "inputCost": 8.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "groq/llama3-groq-8b-8192-tool-use-preview",
+            "type": "chat",
+            "inputCost": 1.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.9e-7,
             "outputCostUnit": "token",
             "priceTier": 1
         },
@@ -11603,6 +11759,36 @@
             "outputCost": 3.4e-7,
             "outputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 32000,
+            "name": "groq/mistral-saba-24b",
+            "type": "chat",
+            "inputCost": 7.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "groq/mixtral-8x7b-32768",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "groq/moonshotai/kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 278528,
@@ -12267,38 +12453,6 @@
             "inputCostUnit": null,
             "outputCost": null,
             "outputCostUnit": null
-        }
-    ],
-    "minimax": [
-        {
-            "maxTokens": null,
-            "name": "minimax/MiniMax-M2.1",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token",
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "minimax/MiniMax-M2.1-lightning",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000024,
-            "outputCostUnit": "token",
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "minimax/MiniMax-M2",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token",
-            "priceTier": 2
         }
     ],
     "mistral": [
@@ -13792,16 +13946,6 @@
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
-            "outputCostUnit": "token",
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 65535,
-            "name": "openrouter/google/gemini-3-flash-preview",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000003,
             "outputCostUnit": "token",
             "priceTier": 3
         },
@@ -18507,16 +18651,6 @@
         }
     ],
     "zai": [
-        {
-            "maxTokens": null,
-            "name": "zai/glm-4.7",
-            "type": "chat",
-            "inputCost": 6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000022,
-            "outputCostUnit": "token",
-            "priceTier": 2
-        },
         {
             "maxTokens": null,
             "name": "zai/glm-4.6",
