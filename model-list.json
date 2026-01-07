@@ -51,6 +51,16 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 8172,
+            "name": "amazon.nova-2-multimodal-embeddings-v1:0",
+            "type": "embedding",
+            "inputCost": 1.35e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 128,
             "name": "amazon.titan-embed-image-v1",
             "type": "embedding",
@@ -18651,6 +18661,168 @@
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "llamagate": [
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/llama-3.1-8b",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/llama-3.2-3b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/mistral-7b-v0.3",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen3-8b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/dolphin3-8b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "llamagate/deepseek-r1-8b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "llamagate/deepseek-r1-7b-qwen",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/openthinker-7b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen2.5-coder-7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 4096,
+            "name": "llamagate/deepseek-coder-6.7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 4096,
+            "name": "llamagate/codellama-7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen3-vl-8b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2048,
+            "name": "llamagate/llava-7b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/gemma3-4b",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/nomic-embed-text",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 40960,
+            "name": "llamagate/qwen3-embedding-8b",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ]
 }

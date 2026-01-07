@@ -1,7 +1,7 @@
-// Last updated: 2026-01-06T18:06:32.022Z
-// Next update: 2026-01-07T00:06:32.022Z
+// Last updated: 2026-01-07T00:18:41.210Z
+// Next update: 2026-01-07T06:18:41.210Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'llamagate'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -55,6 +55,16 @@ export const AICostModelList = {
             "outputCost": 7e-7,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 8172,
+            "name": "amazon.nova-2-multimodal-embeddings-v1:0",
+            "type": "embedding",
+            "inputCost": 1.35e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 128,
@@ -18657,6 +18667,168 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "llamagate": [
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/llama-3.1-8b",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/llama-3.2-3b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/mistral-7b-v0.3",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen3-8b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/dolphin3-8b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "llamagate/deepseek-r1-8b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "llamagate/deepseek-r1-7b-qwen",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/openthinker-7b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen2.5-coder-7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 4096,
+            "name": "llamagate/deepseek-coder-6.7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 4096,
+            "name": "llamagate/codellama-7b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/qwen3-vl-8b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 2048,
+            "name": "llamagate/llava-7b",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/gemma3-4b",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "llamagate/nomic-embed-text",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 40960,
+            "name": "llamagate/qwen3-embedding-8b",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
         }
     ]
 } as const
