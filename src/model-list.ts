@@ -1,5 +1,5 @@
-// Last updated: 2026-01-08T18:06:00.307Z
-// Next update: 2026-01-09T00:06:00.307Z
+// Last updated: 2026-01-09T00:19:21.581Z
+// Next update: 2026-01-09T06:19:21.581Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'llamagate'
 
@@ -7260,7 +7260,7 @@ export const AICostModelList = {
     ],
     "deepseek": [
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "deepseek-chat",
             "type": "chat",
             "inputCost": 6e-7,
@@ -7352,7 +7352,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 32768,
             "name": "dashscope/qwen-flash",
             "type": "chat",
             "inputCost": null,
@@ -7663,7 +7663,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "databricks/databricks-gemma-3-12b",
             "type": "chat",
             "inputCost": 1.5000999999999998e-7,
