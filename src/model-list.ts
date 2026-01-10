@@ -1,7 +1,7 @@
-// Last updated: 2026-01-09T18:06:47.453Z
-// Next update: 2026-01-10T00:06:47.453Z
+// Last updated: 2026-01-10T00:19:11.882Z
+// Next update: 2026-01-10T06:19:11.882Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'llamagate'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -1329,7 +1329,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "eu.meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -1339,7 +1339,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "eu.meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -1369,7 +1369,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000532,
@@ -1379,7 +1379,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -1389,7 +1389,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -1399,7 +1399,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -1409,7 +1409,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1e-7,
@@ -1419,7 +1419,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1429,7 +1429,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -1569,7 +1569,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000532,
@@ -1579,7 +1579,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "us.meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -1589,7 +1589,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "us.meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -1599,7 +1599,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -1609,7 +1609,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1e-7,
@@ -1619,7 +1619,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1629,7 +1629,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -1891,7 +1891,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 81920,
             "name": "deepseek.v3-v1:0",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -1981,7 +1981,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "eu.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -2261,7 +2261,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 65536,
             "name": "qwen.qwen3-coder-480b-a35b-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -2271,7 +2271,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 131072,
             "name": "qwen.qwen3-235b-a22b-2507-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -2281,7 +2281,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 131072,
             "name": "qwen.qwen3-coder-30b-a3b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2291,7 +2291,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "qwen.qwen3-32b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2501,7 +2501,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "us.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -2984,7 +2984,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": 4096,
             "name": "azure/gpt-35-turbo-0301",
             "type": "chat",
             "inputCost": 2e-7,
@@ -2994,7 +2994,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": 4096,
             "name": "azure/gpt-35-turbo-0613",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -3474,7 +3474,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "azure/gpt-5-pro",
             "type": "responses",
             "inputCost": 0.000015,
@@ -4326,7 +4326,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "azure_ai/deepseek-v3.2",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -4336,7 +4336,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "azure_ai/deepseek-v3.2-speciale",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -4610,7 +4610,7 @@ export const AICostModelList = {
     ],
     "text-completion-openai": [
         {
-            "maxTokens": 16384,
+            "maxTokens": 4096,
             "name": "babbage-002",
             "type": "completion",
             "inputCost": 4e-7,
@@ -4620,7 +4620,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 4096,
             "name": "davinci-002",
             "type": "completion",
             "inputCost": 0.000002,
@@ -4630,7 +4630,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 4096,
             "name": "ft:babbage-002",
             "type": "completion",
             "inputCost": 0.0000016,
@@ -4640,7 +4640,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 4096,
             "name": "ft:davinci-002",
             "type": "completion",
             "inputCost": 0.000012,
@@ -4924,7 +4924,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 2048,
             "name": "gemini-1.0-ultra",
             "type": "chat",
             "inputCost": 5e-7,
@@ -4934,7 +4934,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 2048,
             "name": "gemini-1.0-ultra-001",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5739,7 +5739,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5749,7 +5749,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16385,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-0125",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5759,7 +5759,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-0301",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -5769,7 +5769,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-0613",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -5779,7 +5779,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16385,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-1106",
             "type": "chat",
             "inputCost": 0.000001,
@@ -5789,7 +5789,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16385,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-16k",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5799,7 +5799,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 16385,
+            "maxTokens": 4096,
             "name": "gpt-3.5-turbo-16k-0613",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6870,7 +6870,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 64000,
             "name": "claude-4-sonnet-20250514",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7270,7 +7270,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 65536,
             "name": "deepseek-reasoner",
             "type": "chat",
             "inputCost": 6e-7,
@@ -7330,7 +7330,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "deepseek/deepseek-v3.2",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -7342,7 +7342,7 @@ export const AICostModelList = {
     ],
     "dashscope": [
         {
-            "maxTokens": 1000000,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-coder",
             "type": "chat",
             "inputCost": 3e-7,
@@ -7361,7 +7361,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 32768,
             "name": "dashscope/qwen-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -7370,7 +7370,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "dashscope/qwen-max",
             "type": "chat",
             "inputCost": 0.0000016,
@@ -7380,7 +7380,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7390,7 +7390,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "dashscope/qwen-plus-2025-01-25",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7400,7 +7400,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-plus-2025-04-28",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7410,7 +7410,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-plus-2025-07-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7420,7 +7420,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 32768,
             "name": "dashscope/qwen-plus-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -7429,7 +7429,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 32768,
             "name": "dashscope/qwen-plus-2025-09-11",
             "type": "chat",
             "inputCost": null,
@@ -7438,7 +7438,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 32768,
             "name": "dashscope/qwen-plus-latest",
             "type": "chat",
             "inputCost": null,
@@ -7447,7 +7447,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-turbo",
             "type": "chat",
             "inputCost": 5e-8,
@@ -7457,7 +7457,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 8192,
             "name": "dashscope/qwen-turbo-2024-11-01",
             "type": "chat",
             "inputCost": 5e-8,
@@ -7467,7 +7467,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-turbo-2025-04-28",
             "type": "chat",
             "inputCost": 5e-8,
@@ -7477,7 +7477,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 16384,
             "name": "dashscope/qwen-turbo-latest",
             "type": "chat",
             "inputCost": 5e-8,
@@ -7487,7 +7487,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "dashscope/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": null,
@@ -7496,7 +7496,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 65536,
             "name": "dashscope/qwen3-coder-flash",
             "type": "chat",
             "inputCost": null,
@@ -7505,7 +7505,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 65536,
             "name": "dashscope/qwen3-coder-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -7514,7 +7514,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 65536,
             "name": "dashscope/qwen3-coder-plus",
             "type": "chat",
             "inputCost": null,
@@ -7523,7 +7523,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 65536,
             "name": "dashscope/qwen3-coder-plus-2025-07-22",
             "type": "chat",
             "inputCost": null,
@@ -7532,7 +7532,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 65536,
             "name": "dashscope/qwen3-max-preview",
             "type": "chat",
             "inputCost": null,
@@ -7541,7 +7541,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "dashscope/qwq-plus",
             "type": "chat",
             "inputCost": 8e-7,
@@ -7563,7 +7563,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-claude-3-7-sonnet",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -7573,7 +7573,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "databricks/databricks-claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.00000100002,
@@ -7583,7 +7583,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 32000,
             "name": "databricks/databricks-claude-opus-4",
             "type": "chat",
             "inputCost": 0.000015000020000000002,
@@ -7593,7 +7593,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 32000,
             "name": "databricks/databricks-claude-opus-4-1",
             "type": "chat",
             "inputCost": 0.000015000020000000002,
@@ -7603,7 +7603,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "databricks/databricks-claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -7613,7 +7613,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "databricks/databricks-claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -7623,7 +7623,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "databricks/databricks-claude-sonnet-4-1",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -7633,7 +7633,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "databricks/databricks-claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -7643,7 +7643,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 65535,
             "name": "databricks/databricks-gemini-2-5-flash",
             "type": "chat",
             "inputCost": 3.0001999999999996e-7,
@@ -7653,7 +7653,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 65536,
             "name": "databricks/databricks-gemini-2-5-pro",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -7673,7 +7673,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-gpt-5",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -7683,7 +7683,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-gpt-5-1",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -7693,7 +7693,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-gpt-5-mini",
             "type": "chat",
             "inputCost": 2.4997000000000006e-7,
@@ -7703,7 +7703,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-gpt-5-nano",
             "type": "chat",
             "inputCost": 4.998e-8,
@@ -7773,7 +7773,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 128000,
             "name": "databricks/databricks-meta-llama-3-1-8b-instruct",
             "type": "chat",
             "inputCost": 1.5000999999999998e-7,
@@ -8554,7 +8554,7 @@ export const AICostModelList = {
     ],
     "featherless_ai": [
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "featherless_ai/featherless-ai/Qwerky-72B",
             "type": "chat",
             "inputCost": null,
@@ -8563,7 +8563,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "featherless_ai/featherless-ai/Qwerky-QwQ-32B",
             "type": "chat",
             "inputCost": null,
@@ -8776,7 +8776,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct",
             "type": "chat",
             "inputCost": 6e-7,
@@ -8786,7 +8786,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct-0905",
             "type": "chat",
             "inputCost": 6e-7,
@@ -11528,7 +11528,7 @@ export const AICostModelList = {
     ],
     "lemonade": [
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "lemonade/Qwen3-Coder-30B-A3B-Instruct-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -11537,7 +11537,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 32768,
             "name": "lemonade/gpt-oss-20b-mxfp4-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -11546,7 +11546,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 32768,
             "name": "lemonade/gpt-oss-120b-mxfp-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -11555,7 +11555,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "lemonade/Gemma-3-4b-it-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -11564,7 +11564,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "lemonade/Qwen3-4B-Instruct-2507-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -11677,7 +11677,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 278528,
+            "maxTokens": 16384,
             "name": "groq/moonshotai/kimi-k2-instruct-0905",
             "type": "chat",
             "inputCost": 0.000001,
@@ -12131,7 +12131,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "lambda_ai/llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 5e-8,
@@ -12141,7 +12141,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 8192,
             "name": "lambda_ai/llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -12305,7 +12305,7 @@ export const AICostModelList = {
     ],
     "meta_llama": [
         {
-            "maxTokens": 128000,
+            "maxTokens": 4028,
             "name": "meta_llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": null,
@@ -12314,7 +12314,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4028,
             "name": "meta_llama/Llama-3.3-8B-Instruct",
             "type": "chat",
             "inputCost": null,
@@ -12323,7 +12323,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4028,
             "name": "meta_llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
             "type": "chat",
             "inputCost": null,
@@ -12332,7 +12332,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4028,
             "name": "meta_llama/Llama-4-Scout-17B-16E-Instruct-FP8",
             "type": "chat",
             "inputCost": null,
@@ -13123,7 +13123,7 @@ export const AICostModelList = {
     ],
     "oci": [
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "oci/meta.llama-3.1-405b-instruct",
             "type": "chat",
             "inputCost": 0.00001068,
@@ -13133,7 +13133,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "oci/meta.llama-3.2-90b-vision-instruct",
             "type": "chat",
             "inputCost": 0.000002,
@@ -13143,7 +13143,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "oci/meta.llama-3.3-70b-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -13153,7 +13153,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": 4000,
             "name": "oci/meta.llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -13163,7 +13163,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 192000,
+            "maxTokens": 4000,
             "name": "oci/meta.llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -13223,7 +13223,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "oci/cohere.command-latest",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -13233,7 +13233,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 4000,
             "name": "oci/cohere.command-a-03-2025",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -13243,7 +13243,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "oci/cohere.command-plus-latest",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -13255,7 +13255,7 @@ export const AICostModelList = {
     ],
     "ollama": [
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "ollama/codegeex4",
             "type": "chat",
             "inputCost": 0,
@@ -13291,7 +13291,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "ollama/deepseek-coder-v2-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -13309,7 +13309,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "ollama/deepseek-coder-v2-lite-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -13345,7 +13345,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "ollama/internlm2_5-20b-chat",
             "type": "chat",
             "inputCost": 0,
@@ -13408,7 +13408,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "ollama/llama3.1",
             "type": "chat",
             "inputCost": 0,
@@ -13462,7 +13462,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 8192,
             "name": "ollama/mistral-large-instruct-2407",
             "type": "chat",
             "inputCost": 0,
@@ -13518,7 +13518,7 @@ export const AICostModelList = {
     ],
     "openrouter": [
         {
-            "maxTokens": 100000,
+            "maxTokens": 8191,
             "name": "openrouter/anthropic/claude-2",
             "type": "chat",
             "inputCost": 0.00001102,
@@ -13628,7 +13628,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": 8191,
             "name": "openrouter/anthropic/claude-instant-v1",
             "type": "chat",
             "inputCost": 0.00000163,
@@ -13758,7 +13758,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "openrouter/deepseek/deepseek-chat-v3.1",
             "type": "chat",
             "inputCost": 2e-7,
@@ -13768,7 +13768,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "openrouter/deepseek/deepseek-v3.2",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -13778,7 +13778,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 163840,
             "name": "openrouter/deepseek/deepseek-v3.2-exp",
             "type": "chat",
             "inputCost": 2e-7,
@@ -13788,7 +13788,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "openrouter/deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -14027,7 +14027,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 204800,
             "name": "openrouter/minimax/minimax-m2",
             "type": "chat",
             "inputCost": 2.55e-7,
@@ -14046,7 +14046,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 65536,
             "name": "openrouter/mistralai/devstral-2512",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14335,7 +14335,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5.2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -14345,7 +14345,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "openrouter/openai/gpt-5.2-chat",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -14355,7 +14355,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 400000,
+            "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5.2-pro",
             "type": "chat",
             "inputCost": 0.000021,
@@ -14475,7 +14475,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 2048,
             "name": "openrouter/qwen/qwen-vl-plus",
             "type": "chat",
             "inputCost": 2.1e-7,
@@ -14525,7 +14525,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 2000000,
+            "maxTokens": 30000,
             "name": "openrouter/x-ai/grok-4-fast:free",
             "type": "chat",
             "inputCost": 0,
@@ -14534,7 +14534,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": 131000,
             "name": "openrouter/z-ai/glm-4.6",
             "type": "chat",
             "inputCost": 4e-7,
@@ -14544,7 +14544,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": 131000,
             "name": "openrouter/z-ai/glm-4.6:exacto",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -14960,7 +14960,7 @@ export const AICostModelList = {
     ],
     "publicai": [
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "publicai/swiss-ai/apertus-8b-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -14969,7 +14969,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "publicai/swiss-ai/apertus-70b-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -14978,7 +14978,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "publicai/aisingapore/Gemma-SEA-LION-v4-27B-IT",
             "type": "chat",
             "inputCost": 0,
@@ -14987,7 +14987,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 4096,
             "name": "publicai/BSC-LT/salamandra-7b-instruct-tools-16k",
             "type": "chat",
             "inputCost": 0,
@@ -14996,7 +14996,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "publicai/BSC-LT/ALIA-40b-instruct_Q8_0",
             "type": "chat",
             "inputCost": 0,
@@ -15005,7 +15005,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "publicai/allenai/Olmo-3-7B-Instruct",
             "type": "chat",
             "inputCost": 0,
@@ -15014,7 +15014,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "publicai/aisingapore/Qwen-SEA-LION-v4-32B-IT",
             "type": "chat",
             "inputCost": 0,
@@ -15023,7 +15023,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "publicai/allenai/Olmo-3-7B-Think",
             "type": "chat",
             "inputCost": 0,
@@ -15032,7 +15032,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 4096,
             "name": "publicai/allenai/Olmo-3-32B-Think",
             "type": "chat",
             "inputCost": 0,
@@ -15393,7 +15393,7 @@ export const AICostModelList = {
     ],
     "snowflake": [
         {
-            "maxTokens": 18000,
+            "maxTokens": 8192,
             "name": "snowflake/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": null,
@@ -15402,7 +15402,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 8192,
             "name": "snowflake/deepseek-r1",
             "type": "chat",
             "inputCost": null,
@@ -15411,7 +15411,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 8192,
             "name": "snowflake/gemma-7b",
             "type": "chat",
             "inputCost": null,
@@ -15420,7 +15420,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 8192,
             "name": "snowflake/jamba-1.5-large",
             "type": "chat",
             "inputCost": null,
@@ -15429,7 +15429,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 8192,
             "name": "snowflake/jamba-1.5-mini",
             "type": "chat",
             "inputCost": null,
@@ -15438,7 +15438,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 8192,
             "name": "snowflake/jamba-instruct",
             "type": "chat",
             "inputCost": null,
@@ -15447,7 +15447,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "snowflake/llama2-70b-chat",
             "type": "chat",
             "inputCost": null,
@@ -15456,7 +15456,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3-70b",
             "type": "chat",
             "inputCost": null,
@@ -15465,7 +15465,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3-8b",
             "type": "chat",
             "inputCost": null,
@@ -15474,7 +15474,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.1-405b",
             "type": "chat",
             "inputCost": null,
@@ -15483,7 +15483,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.1-70b",
             "type": "chat",
             "inputCost": null,
@@ -15492,7 +15492,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.1-8b",
             "type": "chat",
             "inputCost": null,
@@ -15501,7 +15501,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.2-1b",
             "type": "chat",
             "inputCost": null,
@@ -15510,7 +15510,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.2-3b",
             "type": "chat",
             "inputCost": null,
@@ -15519,7 +15519,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/llama3.3-70b",
             "type": "chat",
             "inputCost": null,
@@ -15528,7 +15528,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 8192,
             "name": "snowflake/mistral-7b",
             "type": "chat",
             "inputCost": null,
@@ -15537,7 +15537,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 8192,
             "name": "snowflake/mistral-large",
             "type": "chat",
             "inputCost": null,
@@ -15546,7 +15546,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "snowflake/mistral-large2",
             "type": "chat",
             "inputCost": null,
@@ -15555,7 +15555,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 8192,
             "name": "snowflake/mixtral-8x7b",
             "type": "chat",
             "inputCost": null,
@@ -15564,7 +15564,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 8192,
             "name": "snowflake/reka-core",
             "type": "chat",
             "inputCost": null,
@@ -15573,7 +15573,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": 8192,
             "name": "snowflake/reka-flash",
             "type": "chat",
             "inputCost": null,
@@ -15582,7 +15582,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "snowflake/snowflake-arctic",
             "type": "chat",
             "inputCost": null,
@@ -15591,7 +15591,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 8192,
             "name": "snowflake/snowflake-llama-3.1-405b",
             "type": "chat",
             "inputCost": null,
@@ -15600,7 +15600,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 8192,
             "name": "snowflake/snowflake-llama-3.3-70b",
             "type": "chat",
             "inputCost": null,
@@ -16058,7 +16058,7 @@ export const AICostModelList = {
     ],
     "vercel_ai_gateway": [
         {
-            "maxTokens": 40960,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/alibaba/qwen-3-14b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -16068,7 +16068,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/alibaba/qwen-3-235b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -16078,7 +16078,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/alibaba/qwen-3-30b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16088,7 +16088,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/alibaba/qwen-3-32b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16098,7 +16098,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 66536,
             "name": "vercel_ai_gateway/alibaba/qwen3-coder",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16108,7 +16108,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 300000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/amazon/nova-lite",
             "type": "chat",
             "inputCost": 6e-8,
@@ -16118,7 +16118,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/amazon/nova-micro",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -16128,7 +16128,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 300000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/amazon/nova-pro",
             "type": "chat",
             "inputCost": 8e-7,
@@ -16148,7 +16148,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/anthropic/claude-3-haiku",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -16158,7 +16158,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/anthropic/claude-3-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -16168,7 +16168,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/anthropic/claude-3.5-haiku",
             "type": "chat",
             "inputCost": 8e-7,
@@ -16178,7 +16178,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/anthropic/claude-3.5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16188,7 +16188,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "vercel_ai_gateway/anthropic/claude-3.7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16198,7 +16198,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 32000,
             "name": "vercel_ai_gateway/anthropic/claude-4-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -16208,7 +16208,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 64000,
             "name": "vercel_ai_gateway/anthropic/claude-4-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16218,7 +16218,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 8000,
             "name": "vercel_ai_gateway/cohere/command-a",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -16228,7 +16228,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/cohere/command-r",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16238,7 +16238,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/cohere/command-r-plus",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -16258,7 +16258,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/deepseek/deepseek-r1",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -16278,7 +16278,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/deepseek/deepseek-v3",
             "type": "chat",
             "inputCost": 9e-7,
@@ -16288,7 +16288,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/google/gemini-2.0-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16298,7 +16298,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/google/gemini-2.0-flash-lite",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -16308,7 +16308,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": 65536,
             "name": "vercel_ai_gateway/google/gemini-2.5-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -16318,7 +16318,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 65536,
             "name": "vercel_ai_gateway/google/gemini-2.5-pro",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -16368,7 +16368,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/inception/mercury-coder-small",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -16398,7 +16398,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.1-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -16408,7 +16408,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": 131072,
             "name": "vercel_ai_gateway/meta/llama-3.1-8b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16418,7 +16418,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.2-11b",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -16428,7 +16428,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.2-1b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16438,7 +16438,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.2-3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16448,7 +16448,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.2-90b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -16458,7 +16458,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-3.3-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -16468,7 +16468,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-4-maverick",
             "type": "chat",
             "inputCost": 2e-7,
@@ -16478,7 +16478,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "vercel_ai_gateway/meta/llama-4-scout",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16488,7 +16488,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/codestral",
             "type": "chat",
             "inputCost": 3e-7,
@@ -16518,7 +16518,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "vercel_ai_gateway/mistral/magistral-medium",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16528,7 +16528,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 64000,
             "name": "vercel_ai_gateway/mistral/magistral-small",
             "type": "chat",
             "inputCost": 5e-7,
@@ -16538,7 +16538,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/ministral-3b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -16548,7 +16548,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/ministral-8b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16568,7 +16568,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/mistral-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16588,7 +16588,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/mistral-small",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16598,7 +16598,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 2048,
             "name": "vercel_ai_gateway/mistral/mixtral-8x22b-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -16608,7 +16608,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/pixtral-12b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16618,7 +16618,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/mistral/pixtral-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16628,7 +16628,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/moonshotai/kimi-k2",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -16638,7 +16638,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/morph/morph-v3-fast",
             "type": "chat",
             "inputCost": 8e-7,
@@ -16648,7 +16648,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/morph/morph-v3-large",
             "type": "chat",
             "inputCost": 9e-7,
@@ -16658,7 +16658,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16385,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/openai/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -16668,7 +16668,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/openai/gpt-3.5-turbo-instruct",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -16678,7 +16678,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4096,
             "name": "vercel_ai_gateway/openai/gpt-4-turbo",
             "type": "chat",
             "inputCost": 0.00001,
@@ -16688,7 +16688,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 1047576,
+            "maxTokens": 32768,
             "name": "vercel_ai_gateway/openai/gpt-4.1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16698,7 +16698,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 1047576,
+            "maxTokens": 32768,
             "name": "vercel_ai_gateway/openai/gpt-4.1-mini",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16708,7 +16708,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 1047576,
+            "maxTokens": 32768,
             "name": "vercel_ai_gateway/openai/gpt-4.1-nano",
             "type": "chat",
             "inputCost": 1e-7,
@@ -16718,7 +16718,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/openai/gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -16728,7 +16728,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "vercel_ai_gateway/openai/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16738,7 +16738,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 100000,
             "name": "vercel_ai_gateway/openai/o1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -16748,7 +16748,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 100000,
             "name": "vercel_ai_gateway/openai/o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16758,7 +16758,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 100000,
             "name": "vercel_ai_gateway/openai/o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -16768,7 +16768,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 100000,
             "name": "vercel_ai_gateway/openai/o4-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -16808,7 +16808,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 127000,
+            "maxTokens": 8000,
             "name": "vercel_ai_gateway/perplexity/sonar",
             "type": "chat",
             "inputCost": 0.000001,
@@ -16818,7 +16818,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": 8000,
             "name": "vercel_ai_gateway/perplexity/sonar-pro",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16828,7 +16828,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 127000,
+            "maxTokens": 8000,
             "name": "vercel_ai_gateway/perplexity/sonar-reasoning",
             "type": "chat",
             "inputCost": 0.000001,
@@ -16838,7 +16838,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 127000,
+            "maxTokens": 8000,
             "name": "vercel_ai_gateway/perplexity/sonar-reasoning-pro",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16848,7 +16848,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32000,
             "name": "vercel_ai_gateway/vercel/v0-1.0-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16858,7 +16858,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 32768,
             "name": "vercel_ai_gateway/vercel/v0-1.5-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -16868,7 +16868,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 4000,
             "name": "vercel_ai_gateway/xai/grok-2",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16948,7 +16948,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 96000,
             "name": "vercel_ai_gateway/zai/glm-4.5-air",
             "type": "chat",
             "inputCost": 2e-7,
@@ -17404,7 +17404,7 @@ export const AICostModelList = {
     ],
     "vertex_ai-deepseek_models": [
         {
-            "maxTokens": 163840,
+            "maxTokens": 32768,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.1-maas",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -17414,7 +17414,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 32768,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.2-maas",
             "type": "chat",
             "inputCost": 5.6e-7,
@@ -17488,7 +17488,7 @@ export const AICostModelList = {
     ],
     "vertex_ai-llama_models": [
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
             "type": "chat",
             "inputCost": 0.000005,
@@ -17498,7 +17498,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "vertex_ai/meta/llama-3.1-70b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -17507,7 +17507,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "vertex_ai/meta/llama-3.1-8b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -17516,7 +17516,7 @@ export const AICostModelList = {
             "outputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 2048,
             "name": "vertex_ai/meta/llama-3.2-90b-vision-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -17988,7 +17988,7 @@ export const AICostModelList = {
     ],
     "watsonx": [
         {
-            "maxTokens": 8192,
+            "maxTokens": 1024,
             "name": "watsonx/ibm/granite-3-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -17998,7 +17998,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "watsonx/mistralai/mistral-large",
             "type": "chat",
             "inputCost": 0.000003,
@@ -18679,6 +18679,818 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "novita": [
+        {
+            "maxTokens": 65536,
+            "name": "novita/deepseek/deepseek-v3.2",
+            "type": "chat",
+            "inputCost": 0.00269,
+            "inputCostUnit": "token",
+            "outputCost": 0.004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/minimax/minimax-m2.1",
+            "type": "chat",
+            "inputCost": 0.003,
+            "inputCostUnit": "token",
+            "outputCost": 0.012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/zai-org/glm-4.7",
+            "type": "chat",
+            "inputCost": 0.006,
+            "inputCostUnit": "token",
+            "outputCost": 0.022,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/xiaomimimo/mimo-v2-flash",
+            "type": "chat",
+            "inputCost": 0.001,
+            "inputCostUnit": "token",
+            "outputCost": 0.003,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/zai-org/autoglm-phone-9b-multilingual",
+            "type": "chat",
+            "inputCost": 0.00035,
+            "inputCostUnit": "token",
+            "outputCost": 0.00138,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 262144,
+            "name": "novita/moonshotai/kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 0.0048,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/minimax/minimax-m2",
+            "type": "chat",
+            "inputCost": 0.0024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0096,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/paddlepaddle/paddleocr-vl",
+            "type": "chat",
+            "inputCost": 0.00016,
+            "inputCostUnit": "token",
+            "outputCost": 0.00016,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/deepseek/deepseek-v3.2-exp",
+            "type": "chat",
+            "inputCost": 0.00216,
+            "inputCostUnit": "token",
+            "outputCost": 0.00328,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-vl-235b-a22b-thinking",
+            "type": "chat",
+            "inputCost": 0.00784,
+            "inputCostUnit": "token",
+            "outputCost": 0.0316,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/zai-org/glm-4.6v",
+            "type": "chat",
+            "inputCost": 0.003,
+            "inputCostUnit": "token",
+            "outputCost": 0.009,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/zai-org/glm-4.6",
+            "type": "chat",
+            "inputCost": 0.0044,
+            "inputCostUnit": "token",
+            "outputCost": 0.0176,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 0.0012,
+            "inputCostUnit": "token",
+            "outputCost": 0.012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-next-80b-a3b-thinking",
+            "type": "chat",
+            "inputCost": 0.0012,
+            "inputCostUnit": "token",
+            "outputCost": 0.012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/deepseek/deepseek-ocr",
+            "type": "chat",
+            "inputCost": 0.00024,
+            "inputCostUnit": "token",
+            "outputCost": 0.00024,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/deepseek/deepseek-v3.1-terminus",
+            "type": "chat",
+            "inputCost": 0.00216,
+            "inputCostUnit": "token",
+            "outputCost": 0.008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 0.0024,
+            "inputCostUnit": "token",
+            "outputCost": 0.012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/qwen/qwen3-max",
+            "type": "chat",
+            "inputCost": 0.01688,
+            "inputCostUnit": "token",
+            "outputCost": 0.0676,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/skywork/r1v4-lite",
+            "type": "chat",
+            "inputCost": 0.002,
+            "inputCostUnit": "token",
+            "outputCost": 0.006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/deepseek/deepseek-v3.1",
+            "type": "chat",
+            "inputCost": 0.00216,
+            "inputCostUnit": "token",
+            "outputCost": 0.008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 262144,
+            "name": "novita/moonshotai/kimi-k2-0905",
+            "type": "chat",
+            "inputCost": 0.0048,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/qwen/qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 0.0024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0104,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 0.0007,
+            "inputCostUnit": "token",
+            "outputCost": 0.0027,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/openai/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 0.0004,
+            "inputCostUnit": "token",
+            "outputCost": 0.002,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/moonshotai/kimi-k2-instruct",
+            "type": "chat",
+            "inputCost": 0.00456,
+            "inputCostUnit": "token",
+            "outputCost": 0.0184,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 163840,
+            "name": "novita/deepseek/deepseek-v3-0324",
+            "type": "chat",
+            "inputCost": 0.00216,
+            "inputCostUnit": "token",
+            "outputCost": 0.00896,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 98304,
+            "name": "novita/zai-org/glm-4.5",
+            "type": "chat",
+            "inputCost": 0.0048,
+            "inputCostUnit": "token",
+            "outputCost": 0.0176,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-235b-a22b-thinking-2507",
+            "type": "chat",
+            "inputCost": 0.0024,
+            "inputCostUnit": "token",
+            "outputCost": 0.024,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/meta-llama/llama-3.1-8b-instruct",
+            "type": "chat",
+            "inputCost": 0.0002,
+            "inputCostUnit": "token",
+            "outputCost": 0.0005,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/google/gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 0.0004,
+            "inputCostUnit": "token",
+            "outputCost": 0.0008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/zai-org/glm-4.5v",
+            "type": "chat",
+            "inputCost": 0.0048,
+            "inputCostUnit": "token",
+            "outputCost": 0.0144,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 0.00032,
+            "inputCostUnit": "token",
+            "outputCost": 0.0012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/qwen/qwen3-235b-a22b-instruct-2507",
+            "type": "chat",
+            "inputCost": 0.00072,
+            "inputCostUnit": "token",
+            "outputCost": 0.00464,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/deepseek/deepseek-r1-distill-qwen-14b",
+            "type": "chat",
+            "inputCost": 0.0012,
+            "inputCostUnit": "token",
+            "outputCost": 0.0012,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 120000,
+            "name": "novita/meta-llama/llama-3.3-70b-instruct",
+            "type": "chat",
+            "inputCost": 0.00108,
+            "inputCostUnit": "token",
+            "outputCost": 0.0032,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/qwen/qwen-2.5-72b-instruct",
+            "type": "chat",
+            "inputCost": 0.00304,
+            "inputCostUnit": "token",
+            "outputCost": 0.0032,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16000,
+            "name": "novita/mistralai/mistral-nemo",
+            "type": "chat",
+            "inputCost": 0.00032,
+            "inputCostUnit": "token",
+            "outputCost": 0.00136,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 40000,
+            "name": "novita/minimaxai/minimax-m1-80k",
+            "type": "chat",
+            "inputCost": 0.0044,
+            "inputCostUnit": "token",
+            "outputCost": 0.0176,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/deepseek/deepseek-r1-0528",
+            "type": "chat",
+            "inputCost": 0.0056,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/deepseek/deepseek-r1-distill-qwen-32b",
+            "type": "chat",
+            "inputCost": 0.0024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0024,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/meta-llama/llama-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 0.00032,
+            "inputCostUnit": "token",
+            "outputCost": 0.00032,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8000,
+            "name": "novita/microsoft/wizardlm-2-8x22b",
+            "type": "chat",
+            "inputCost": 0.00496,
+            "inputCostUnit": "token",
+            "outputCost": 0.00496,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/deepseek/deepseek-r1-0528-qwen3-8b",
+            "type": "chat",
+            "inputCost": 0.00048,
+            "inputCostUnit": "token",
+            "outputCost": 0.00072,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/deepseek/deepseek-r1-distill-llama-70b",
+            "type": "chat",
+            "inputCost": 0.0064,
+            "inputCostUnit": "token",
+            "outputCost": 0.0064,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8000,
+            "name": "novita/meta-llama/llama-3-70b-instruct",
+            "type": "chat",
+            "inputCost": 0.0051,
+            "inputCostUnit": "token",
+            "outputCost": 0.0074,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 20000,
+            "name": "novita/qwen/qwen3-235b-a22b-fp8",
+            "type": "chat",
+            "inputCost": 0.0016,
+            "inputCostUnit": "token",
+            "outputCost": 0.0064,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+            "type": "chat",
+            "inputCost": 0.0016,
+            "inputCostUnit": "token",
+            "outputCost": 0.0072,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/meta-llama/llama-4-scout-17b-16e-instruct",
+            "type": "chat",
+            "inputCost": 0.0008,
+            "inputCostUnit": "token",
+            "outputCost": 0.004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/nousresearch/hermes-2-pro-llama-3-8b",
+            "type": "chat",
+            "inputCost": 0.0014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0014,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen2.5-vl-72b-instruct",
+            "type": "chat",
+            "inputCost": 0.0064,
+            "inputCostUnit": "token",
+            "outputCost": 0.0064,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/sao10k/l3-70b-euryale-v2.1",
+            "type": "chat",
+            "inputCost": 0.0148,
+            "inputCostUnit": "token",
+            "outputCost": 0.0148,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/baidu/ernie-4.5-21B-a3b-thinking",
+            "type": "chat",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0.00224,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/sao10k/l3-8b-lunaris",
+            "type": "chat",
+            "inputCost": 0.0005,
+            "inputCostUnit": "token",
+            "outputCost": 0.0005,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 131072,
+            "name": "novita/baichuan/baichuan-m2-32b",
+            "type": "chat",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0.00056,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8000,
+            "name": "novita/thudm/glm-4.1v-9b-thinking",
+            "type": "chat",
+            "inputCost": 0.00028,
+            "inputCostUnit": "token",
+            "outputCost": 0.001104,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16000,
+            "name": "novita/baidu/ernie-4.5-vl-424b-a47b",
+            "type": "chat",
+            "inputCost": 0.00336,
+            "inputCostUnit": "token",
+            "outputCost": 0.01,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 12000,
+            "name": "novita/baidu/ernie-4.5-300b-a47b-paddle",
+            "type": "chat",
+            "inputCost": 0.00224,
+            "inputCostUnit": "token",
+            "outputCost": 0.0088,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 160000,
+            "name": "novita/deepseek/deepseek-prover-v2-671b",
+            "type": "chat",
+            "inputCost": 0.0056,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 20000,
+            "name": "novita/qwen/qwen3-32b-fp8",
+            "type": "chat",
+            "inputCost": 0.0008,
+            "inputCostUnit": "token",
+            "outputCost": 0.0036,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 20000,
+            "name": "novita/qwen/qwen3-30b-a3b-fp8",
+            "type": "chat",
+            "inputCost": 0.00072,
+            "inputCostUnit": "token",
+            "outputCost": 0.0036,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/google/gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 0.000952,
+            "inputCostUnit": "token",
+            "outputCost": 0.0016,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16000,
+            "name": "novita/deepseek/deepseek-v3-turbo",
+            "type": "chat",
+            "inputCost": 0.0032,
+            "inputCostUnit": "token",
+            "outputCost": 0.0104,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16000,
+            "name": "novita/deepseek/deepseek-r1-turbo",
+            "type": "chat",
+            "inputCost": 0.0056,
+            "inputCostUnit": "token",
+            "outputCost": 0.02,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/Sao10K/L3-8B-Stheno-v3.2",
+            "type": "chat",
+            "inputCost": 0.0005,
+            "inputCostUnit": "token",
+            "outputCost": 0.0005,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 3200,
+            "name": "novita/gryphe/mythomax-l2-13b",
+            "type": "chat",
+            "inputCost": 0.00072,
+            "inputCostUnit": "token",
+            "outputCost": 0.00072,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 65536,
+            "name": "novita/baidu/ernie-4.5-vl-28b-a3b-thinking",
+            "type": "chat",
+            "inputCost": 0.0039,
+            "inputCostUnit": "token",
+            "outputCost": 0.0039,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-vl-8b-instruct",
+            "type": "chat",
+            "inputCost": 0.00064,
+            "inputCostUnit": "token",
+            "outputCost": 0.004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 98304,
+            "name": "novita/zai-org/glm-4.5-air",
+            "type": "chat",
+            "inputCost": 0.00104,
+            "inputCostUnit": "token",
+            "outputCost": 0.0068,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-vl-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 0.0016,
+            "inputCostUnit": "token",
+            "outputCost": 0.0056,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-vl-30b-a3b-thinking",
+            "type": "chat",
+            "inputCost": 0.0016,
+            "inputCostUnit": "token",
+            "outputCost": 0.008,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/qwen/qwen-mt-plus",
+            "type": "chat",
+            "inputCost": 0.002,
+            "inputCostUnit": "token",
+            "outputCost": 0.006,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8000,
+            "name": "novita/baidu/ernie-4.5-vl-28b-a3b",
+            "type": "chat",
+            "inputCost": 0.00112,
+            "inputCostUnit": "token",
+            "outputCost": 0.00448,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8000,
+            "name": "novita/baidu/ernie-4.5-21B-a3b",
+            "type": "chat",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0.00224,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 20000,
+            "name": "novita/qwen/qwen3-8b-fp8",
+            "type": "chat",
+            "inputCost": 0.00028,
+            "inputCostUnit": "token",
+            "outputCost": 0.001104,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 20000,
+            "name": "novita/qwen/qwen3-4b-fp8",
+            "type": "chat",
+            "inputCost": 0.00024,
+            "inputCostUnit": "token",
+            "outputCost": 0.00024,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/qwen/qwen2.5-7b-instruct",
+            "type": "chat",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0.00056,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "novita/meta-llama/llama-3.2-3b-instruct",
+            "type": "chat",
+            "inputCost": 0.00024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0004,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 8192,
+            "name": "novita/sao10k/l31-70b-euryale-v2.2",
+            "type": "chat",
+            "inputCost": 0.0148,
+            "inputCostUnit": "token",
+            "outputCost": 0.0148,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32768,
+            "name": "novita/qwen/qwen3-embedding-0.6b",
+            "type": "embedding",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 4096,
+            "name": "novita/qwen/qwen3-embedding-8b",
+            "type": "embedding",
+            "inputCost": 0.00056,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 96000,
+            "name": "novita/baai/bge-m3",
+            "type": "embedding",
+            "inputCost": 0.0001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0001,
+            "outputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "llamagate": [
