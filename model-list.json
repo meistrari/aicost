@@ -14372,11 +14372,11 @@
             "maxTokens": 32768,
             "name": "openrouter/openai/gpt-oss-20b",
             "type": "chat",
-            "inputCost": 1.8e-7,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 8e-7,
+            "outputCost": 1e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 100000,
