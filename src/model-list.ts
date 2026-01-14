@@ -1,5 +1,5 @@
-// Last updated: 2026-01-13T18:06:50.944Z
-// Next update: 2026-01-14T00:06:50.944Z
+// Last updated: 2026-01-14T00:20:05.504Z
+// Next update: 2026-01-14T06:20:05.504Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate'
 
@@ -3404,7 +3404,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "azure/gpt-5-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -6369,7 +6369,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "gpt-5-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -7273,31 +7273,31 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "deepseek-chat",
             "type": "chat",
-            "inputCost": 6e-7,
+            "inputCost": 2.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000017,
+            "outputCost": 4.2e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
             "name": "deepseek-reasoner",
             "type": "chat",
-            "inputCost": 6e-7,
+            "inputCost": 2.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000017,
+            "outputCost": 4.2e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "deepseek/deepseek-chat",
             "type": "chat",
-            "inputCost": 2.7e-7,
+            "inputCost": 2.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000011,
+            "outputCost": 4.2e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
@@ -7323,11 +7323,11 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "deepseek/deepseek-reasoner",
             "type": "chat",
-            "inputCost": 5.5e-7,
+            "inputCost": 2.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000219,
+            "outputCost": 4.2e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -14295,7 +14295,7 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "openrouter/openai/gpt-5-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -18966,811 +18966,831 @@ export const AICostModelList = {
             "maxTokens": 65536,
             "name": "novita/deepseek/deepseek-v3.2",
             "type": "chat",
-            "inputCost": 0.00269,
+            "inputCost": 2.69e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.004,
+            "outputCost": 4e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
             "name": "novita/minimax/minimax-m2.1",
             "type": "chat",
-            "inputCost": 0.003,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.012,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
             "name": "novita/zai-org/glm-4.7",
             "type": "chat",
-            "inputCost": 0.006,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.022,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
             "name": "novita/xiaomimimo/mimo-v2-flash",
             "type": "chat",
-            "inputCost": 0.001,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.003,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
             "name": "novita/zai-org/autoglm-phone-9b-multilingual",
             "type": "chat",
-            "inputCost": 0.00035,
+            "inputCost": 3.5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00138,
+            "outputCost": 1.38e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 262144,
             "name": "novita/moonshotai/kimi-k2-thinking",
             "type": "chat",
-            "inputCost": 0.0048,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.02,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
             "name": "novita/minimax/minimax-m2",
             "type": "chat",
-            "inputCost": 0.0024,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0096,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
             "name": "novita/paddlepaddle/paddleocr-vl",
             "type": "chat",
-            "inputCost": 0.00016,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00016,
+            "outputCost": 2e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
             "name": "novita/deepseek/deepseek-v3.2-exp",
             "type": "chat",
-            "inputCost": 0.00216,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00328,
+            "outputCost": 4.1e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
-            "inputCost": 0.00784,
+            "inputCost": 9.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0316,
+            "outputCost": 0.00000395,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 32768,
             "name": "novita/zai-org/glm-4.6v",
             "type": "chat",
-            "inputCost": 0.003,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.009,
+            "outputCost": 9e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
             "name": "novita/zai-org/glm-4.6",
             "type": "chat",
-            "inputCost": 0.0044,
+            "inputCost": 5.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0176,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "novita/kwaipilot/kat-coder-pro",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-next-80b-a3b-instruct",
             "type": "chat",
-            "inputCost": 0.0012,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.012,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-next-80b-a3b-thinking",
             "type": "chat",
-            "inputCost": 0.0012,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.012,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
             "name": "novita/deepseek/deepseek-ocr",
             "type": "chat",
-            "inputCost": 0.00024,
+            "inputCost": 3e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00024,
+            "outputCost": 3e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/deepseek/deepseek-v3.1-terminus",
             "type": "chat",
-            "inputCost": 0.00216,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.008,
+            "outputCost": 0.000001,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
-            "inputCost": 0.0024,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.012,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 65536,
             "name": "novita/qwen/qwen3-max",
             "type": "chat",
-            "inputCost": 0.01688,
+            "inputCost": 0.00000211,
             "inputCostUnit": "token",
-            "outputCost": 0.0676,
+            "outputCost": 0.00000845,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 65536,
             "name": "novita/skywork/r1v4-lite",
             "type": "chat",
-            "inputCost": 0.002,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.006,
+            "outputCost": 6e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/deepseek/deepseek-v3.1",
             "type": "chat",
-            "inputCost": 0.00216,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.008,
+            "outputCost": 0.000001,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
             "name": "novita/moonshotai/kimi-k2-0905",
             "type": "chat",
-            "inputCost": 0.0048,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.02,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 65536,
             "name": "novita/qwen/qwen3-coder-480b-a35b-instruct",
             "type": "chat",
-            "inputCost": 0.0024,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0104,
+            "outputCost": 0.0000013,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-coder-30b-a3b-instruct",
             "type": "chat",
-            "inputCost": 0.0007,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0027,
+            "outputCost": 2.7e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/openai/gpt-oss-120b",
             "type": "chat",
-            "inputCost": 0.0004,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 2.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
             "name": "novita/moonshotai/kimi-k2-instruct",
             "type": "chat",
-            "inputCost": 0.00456,
+            "inputCost": 5.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0184,
+            "outputCost": 0.0000023,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 163840,
             "name": "novita/deepseek/deepseek-v3-0324",
             "type": "chat",
-            "inputCost": 0.00216,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00896,
+            "outputCost": 0.00000112,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 98304,
             "name": "novita/zai-org/glm-4.5",
             "type": "chat",
-            "inputCost": 0.0048,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0176,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-235b-a22b-thinking-2507",
             "type": "chat",
-            "inputCost": 0.0024,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.024,
+            "outputCost": 0.000003,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 16384,
             "name": "novita/meta-llama/llama-3.1-8b-instruct",
             "type": "chat",
-            "inputCost": 0.0002,
+            "inputCost": 2e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0005,
+            "outputCost": 5e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/google/gemma-3-12b-it",
             "type": "chat",
-            "inputCost": 0.0004,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0008,
+            "outputCost": 1e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
             "name": "novita/zai-org/glm-4.5v",
             "type": "chat",
-            "inputCost": 0.0048,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0144,
+            "outputCost": 0.0000018,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/openai/gpt-oss-20b",
             "type": "chat",
-            "inputCost": 0.00032,
+            "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0012,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
             "name": "novita/qwen/qwen3-235b-a22b-instruct-2507",
             "type": "chat",
-            "inputCost": 0.00072,
+            "inputCost": 9e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00464,
+            "outputCost": 5.8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
             "name": "novita/deepseek/deepseek-r1-distill-qwen-14b",
             "type": "chat",
-            "inputCost": 0.0012,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0012,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 120000,
             "name": "novita/meta-llama/llama-3.3-70b-instruct",
             "type": "chat",
-            "inputCost": 0.00108,
+            "inputCost": 1.35e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0032,
+            "outputCost": 4e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/qwen/qwen-2.5-72b-instruct",
             "type": "chat",
-            "inputCost": 0.00304,
+            "inputCost": 3.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0032,
+            "outputCost": 4e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
             "name": "novita/mistralai/mistral-nemo",
             "type": "chat",
-            "inputCost": 0.00032,
+            "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00136,
+            "outputCost": 1.7e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 40000,
             "name": "novita/minimaxai/minimax-m1-80k",
             "type": "chat",
-            "inputCost": 0.0044,
+            "inputCost": 5.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0176,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/deepseek/deepseek-r1-0528",
             "type": "chat",
-            "inputCost": 0.0056,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.02,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
             "name": "novita/deepseek/deepseek-r1-distill-qwen-32b",
             "type": "chat",
-            "inputCost": 0.0024,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0024,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/meta-llama/llama-3-8b-instruct",
             "type": "chat",
-            "inputCost": 0.00032,
+            "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00032,
+            "outputCost": 4e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8000,
             "name": "novita/microsoft/wizardlm-2-8x22b",
             "type": "chat",
-            "inputCost": 0.00496,
+            "inputCost": 6.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00496,
+            "outputCost": 6.2e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
             "name": "novita/deepseek/deepseek-r1-0528-qwen3-8b",
             "type": "chat",
-            "inputCost": 0.00048,
+            "inputCost": 6e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00072,
+            "outputCost": 9e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/deepseek/deepseek-r1-distill-llama-70b",
             "type": "chat",
-            "inputCost": 0.0064,
+            "inputCost": 8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0064,
+            "outputCost": 8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 8000,
             "name": "novita/meta-llama/llama-3-70b-instruct",
             "type": "chat",
-            "inputCost": 0.0051,
+            "inputCost": 5.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0074,
+            "outputCost": 7.4e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 20000,
             "name": "novita/qwen/qwen3-235b-a22b-fp8",
             "type": "chat",
-            "inputCost": 0.0016,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0064,
+            "outputCost": 8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
             "name": "novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
-            "inputCost": 0.0016,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0072,
+            "outputCost": 8.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 131072,
             "name": "novita/meta-llama/llama-4-scout-17b-16e-instruct",
             "type": "chat",
-            "inputCost": 0.0008,
+            "inputCost": 1.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.004,
+            "outputCost": 5.9e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/nousresearch/hermes-2-pro-llama-3-8b",
             "type": "chat",
-            "inputCost": 0.0014,
+            "inputCost": 1.4e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0014,
+            "outputCost": 1.4e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen2.5-vl-72b-instruct",
             "type": "chat",
-            "inputCost": 0.0064,
+            "inputCost": 8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0064,
+            "outputCost": 8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
             "name": "novita/sao10k/l3-70b-euryale-v2.1",
             "type": "chat",
-            "inputCost": 0.0148,
+            "inputCost": 0.00000148,
             "inputCostUnit": "token",
-            "outputCost": 0.0148,
+            "outputCost": 0.00000148,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 65536,
             "name": "novita/baidu/ernie-4.5-21B-a3b-thinking",
             "type": "chat",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00224,
+            "outputCost": 2.8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/sao10k/l3-8b-lunaris",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0005,
+            "outputCost": 5e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
             "name": "novita/baichuan/baichuan-m2-32b",
             "type": "chat",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00056,
+            "outputCost": 7e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 8000,
-            "name": "novita/thudm/glm-4.1v-9b-thinking",
-            "type": "chat",
-            "inputCost": 0.00028,
-            "inputCostUnit": "token",
-            "outputCost": 0.001104,
-            "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
             "name": "novita/baidu/ernie-4.5-vl-424b-a47b",
             "type": "chat",
-            "inputCost": 0.00336,
+            "inputCost": 4.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.01,
+            "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 12000,
             "name": "novita/baidu/ernie-4.5-300b-a47b-paddle",
             "type": "chat",
-            "inputCost": 0.00224,
+            "inputCost": 2.8e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0088,
+            "outputCost": 0.0000011,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 160000,
             "name": "novita/deepseek/deepseek-prover-v2-671b",
             "type": "chat",
-            "inputCost": 0.0056,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.02,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 20000,
             "name": "novita/qwen/qwen3-32b-fp8",
             "type": "chat",
-            "inputCost": 0.0008,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0036,
+            "outputCost": 4.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 20000,
             "name": "novita/qwen/qwen3-30b-a3b-fp8",
             "type": "chat",
-            "inputCost": 0.00072,
+            "inputCost": 9e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0036,
+            "outputCost": 4.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
             "name": "novita/google/gemma-3-27b-it",
             "type": "chat",
-            "inputCost": 0.000952,
+            "inputCost": 1.19e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0016,
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 16000,
             "name": "novita/deepseek/deepseek-v3-turbo",
             "type": "chat",
-            "inputCost": 0.0032,
+            "inputCost": 4e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0104,
+            "outputCost": 0.0000013,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 16000,
             "name": "novita/deepseek/deepseek-r1-turbo",
             "type": "chat",
-            "inputCost": 0.0056,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.02,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32000,
             "name": "novita/Sao10K/L3-8B-Stheno-v3.2",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0005,
+            "outputCost": 5e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 3200,
             "name": "novita/gryphe/mythomax-l2-13b",
             "type": "chat",
-            "inputCost": 0.00072,
+            "inputCost": 9e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00072,
+            "outputCost": 9e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 65536,
             "name": "novita/baidu/ernie-4.5-vl-28b-a3b-thinking",
             "type": "chat",
-            "inputCost": 0.0039,
+            "inputCost": 3.9e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0039,
+            "outputCost": 3.9e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-vl-8b-instruct",
             "type": "chat",
-            "inputCost": 0.00064,
+            "inputCost": 8e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.004,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 98304,
             "name": "novita/zai-org/glm-4.5-air",
             "type": "chat",
-            "inputCost": 0.00104,
+            "inputCost": 1.3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0068,
+            "outputCost": 8.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-vl-30b-a3b-instruct",
             "type": "chat",
-            "inputCost": 0.0016,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0056,
+            "outputCost": 7e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-vl-30b-a3b-thinking",
             "type": "chat",
-            "inputCost": 0.0016,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.008,
+            "outputCost": 0.000001,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/qwen/qwen3-omni-30b-a3b-thinking",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.7e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "novita/qwen/qwen3-omni-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.7e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
             "name": "novita/qwen/qwen-mt-plus",
             "type": "chat",
-            "inputCost": 0.002,
+            "inputCost": 2.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.006,
+            "outputCost": 7.5e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 8000,
             "name": "novita/baidu/ernie-4.5-vl-28b-a3b",
             "type": "chat",
-            "inputCost": 0.00112,
+            "inputCost": 1.4e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00448,
+            "outputCost": 5.6e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8000,
             "name": "novita/baidu/ernie-4.5-21B-a3b",
             "type": "chat",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00224,
+            "outputCost": 2.8e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 20000,
             "name": "novita/qwen/qwen3-8b-fp8",
             "type": "chat",
-            "inputCost": 0.00028,
+            "inputCost": 3.5e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.001104,
+            "outputCost": 1.38e-7,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 20000,
             "name": "novita/qwen/qwen3-4b-fp8",
             "type": "chat",
-            "inputCost": 0.00024,
+            "inputCost": 3e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00024,
+            "outputCost": 3e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
             "name": "novita/qwen/qwen2.5-7b-instruct",
             "type": "chat",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.00056,
+            "outputCost": 7e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 32000,
             "name": "novita/meta-llama/llama-3.2-3b-instruct",
             "type": "chat",
-            "inputCost": 0.00024,
+            "inputCost": 3e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0004,
+            "outputCost": 5e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
             "name": "novita/sao10k/l31-70b-euryale-v2.2",
             "type": "chat",
-            "inputCost": 0.0148,
+            "inputCost": 0.00000148,
             "inputCostUnit": "token",
-            "outputCost": 0.0148,
+            "outputCost": 0.00000148,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
             "name": "novita/qwen/qwen3-embedding-0.6b",
             "type": "embedding",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
             "name": "novita/qwen/qwen3-embedding-8b",
             "type": "embedding",
-            "inputCost": 0.00056,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 1
         },
         {
             "maxTokens": 96000,
             "name": "novita/baai/bge-m3",
             "type": "embedding",
-            "inputCost": 0.0001,
+            "inputCost": 1e-8,
             "inputCostUnit": "token",
-            "outputCost": 0.0001,
+            "outputCost": 1e-8,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 1
         }
     ],
     "llamagate": [
