@@ -4734,6 +4734,16 @@
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "cerebras/zai-glm-4.7",
+            "type": "chat",
+            "inputCost": 0.00000225,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "vertex-ai": [
