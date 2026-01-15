@@ -1,5 +1,5 @@
-// Last updated: 2026-01-14T18:06:51.062Z
-// Next update: 2026-01-15T00:06:51.062Z
+// Last updated: 2026-01-15T00:18:57.586Z
+// Next update: 2026-01-15T06:18:57.586Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate'
 
@@ -4419,9 +4419,9 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "azure_ai/grok-3",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000015,
             "outputCostUnit": "token",
             "priceTier": 4
         },
@@ -4429,9 +4429,9 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "azure_ai/grok-3-mini",
             "type": "chat",
-            "inputCost": 2.75e-7,
+            "inputCost": 2.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000138,
+            "outputCost": 0.00000127,
             "outputCostUnit": "token",
             "priceTier": 2
         },
@@ -4439,41 +4439,41 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "azure_ai/grok-4",
             "type": "chat",
-            "inputCost": 0.0000055,
+            "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 0.0000275,
+            "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
             "name": "azure_ai/grok-4-fast-non-reasoning",
             "type": "chat",
-            "inputCost": 4.3e-7,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000173,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
             "name": "azure_ai/grok-4-fast-reasoning",
             "type": "chat",
-            "inputCost": 4.3e-7,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000173,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,
             "name": "azure_ai/grok-code-fast-1",
             "type": "chat",
-            "inputCost": 0.0000035,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000175,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -6437,6 +6437,16 @@ export const AICostModelList = {
             "outputCost": 0.000002,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.2-codex",
+            "type": "responses",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
@@ -14321,6 +14331,16 @@ export const AICostModelList = {
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5.2-codex",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
             "outputCostUnit": "token",
             "priceTier": 3
         },
