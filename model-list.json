@@ -17925,9 +17925,9 @@
             "maxTokens": 128000,
             "name": "vertex_ai/zai-org/glm-4.7-maas",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
             "priceTier": 2
         }
