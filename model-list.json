@@ -5326,6 +5326,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 64000,
+            "name": "gemini-2.5-computer-use-preview-10-2025",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 2048,
             "name": "gemini-embedding-001",
             "type": "embedding",
@@ -11369,6 +11379,44 @@
             "maxTokens": 8191,
             "name": "github_copilot/text-embedding-ada-002",
             "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        }
+    ],
+    "chatgpt": [
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-5.2-codex",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 64000,
+            "name": "chatgpt/gpt-5.2",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-5.1-codex-max",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 64000,
+            "name": "chatgpt/gpt-5.1-codex-mini",
+            "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
             "outputCost": null,
