@@ -11726,17 +11726,17 @@
             "type": "chat",
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 7.5e-7,
+            "outputCost": 6e-7,
             "outputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 32768,
             "name": "groq/openai/gpt-oss-20b",
             "type": "chat",
-            "inputCost": 1e-7,
+            "inputCost": 7.5e-8,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
             "priceTier": 1
         },
