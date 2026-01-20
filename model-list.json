@@ -2418,9 +2418,9 @@
             "maxTokens": 64000,
             "name": "us.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000055,
             "inputCostUnit": "token",
-            "outputCost": 0.000025,
+            "outputCost": 0.0000275,
             "outputCostUnit": "token",
             "priceTier": 5
         },
