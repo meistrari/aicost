@@ -20036,5 +20036,16 @@
             "outputCostUnit": null,
             "priceTier": 1
         }
+    ],
+    "sarvam": [
+        {
+            "maxTokens": 32000,
+            "name": "sarvam/sarvam-m",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        }
     ]
 }
