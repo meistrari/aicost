@@ -1,7 +1,7 @@
-// Last updated: 2026-01-22T12:08:33.167Z
-// Next update: 2026-01-22T18:08:33.167Z
+// Last updated: 2026-01-22T18:06:31.073Z
+// Next update: 2026-01-23T00:06:31.073Z
 
-export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'chatgpt' | 'gigachat' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate' | 'sarvam'
+export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'chatgpt' | 'gigachat' | 'gmi' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate' | 'sarvam'
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -11533,6 +11533,178 @@ export const AICostModelList = {
             "inputCostUnit": null,
             "outputCost": 0,
             "outputCostUnit": null
+        }
+    ],
+    "gmi": [
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-opus-4.5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-sonnet-4.5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-sonnet-4",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/openai/gpt-4o",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/openai/gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/deepseek-ai/DeepSeek-V3.2",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gmi/google/gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gmi/google/gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/moonshotai/Kimi-K2-Thinking",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/MiniMaxAI/MiniMax-M2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000014,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/zai-org/GLM-4.7-FP8",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "gradient_ai": [

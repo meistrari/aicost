@@ -11529,6 +11529,178 @@
             "outputCostUnit": null
         }
     ],
+    "gmi": [
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-opus-4.5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-sonnet-4.5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-sonnet-4",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/anthropic/claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32000,
+            "name": "gmi/openai/gpt-5",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/openai/gpt-4o",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/openai/gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/deepseek-ai/DeepSeek-V3.2",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/deepseek-ai/DeepSeek-V3-0324",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.8e-7,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gmi/google/gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "gmi/google/gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/moonshotai/Kimi-K2-Thinking",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/MiniMaxAI/MiniMax-M2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000014,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "gmi/zai-org/GLM-4.7-FP8",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        }
+    ],
     "gradient_ai": [
         {
             "maxTokens": 2048,
