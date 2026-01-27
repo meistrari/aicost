@@ -8601,6 +8601,33 @@
     ],
     "volcengine": [
         {
+            "maxTokens": 32768,
+            "name": "deepseek-v3-2-251201",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "glm-4-7-251222",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
+            "maxTokens": 32768,
+            "name": "kimi-k2-thinking-251104",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": null,
+            "outputCost": 0,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 4096,
             "name": "doubao-embedding",
             "type": "embedding",
