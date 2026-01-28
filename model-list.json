@@ -3570,7 +3570,7 @@
         {
             "maxTokens": 16384,
             "name": "azure/gpt-5.2-codex",
-            "type": "chat",
+            "type": "responses",
             "inputCost": 0.00000175,
             "inputCostUnit": "token",
             "outputCost": 0.000014,
@@ -14638,7 +14638,7 @@
         {
             "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5.2-codex",
-            "type": "chat",
+            "type": "responses",
             "inputCost": 0.00000175,
             "inputCostUnit": "token",
             "outputCost": 0.000014,
