@@ -14893,6 +14893,46 @@
             "outputCost": 0.0000019,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "openrouter/xiaomi/mimo-v2-flash",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 64000,
+            "name": "openrouter/z-ai/glm-4.7",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32000,
+            "name": "openrouter/z-ai/glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 64000,
+            "name": "openrouter/minimax/minimax-m2.1",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "priceTier": 2
         }
     ],
     "ovhcloud": [
