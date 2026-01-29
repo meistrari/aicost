@@ -5326,6 +5326,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 65535,
+            "name": "gemini-robotics-er-1.5-preview",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 64000,
             "name": "gemini-2.5-computer-use-preview-10-2025",
             "type": "chat",
