@@ -1,5 +1,5 @@
-// Last updated: 2026-01-30T00:22:41.075Z
-// Next update: 2026-01-30T06:22:41.075Z
+// Last updated: 2026-01-30T06:16:15.132Z
+// Next update: 2026-01-30T12:16:15.132Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'chatgpt' | 'gigachat' | 'gmi' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate' | 'sarvam'
 
@@ -1702,6 +1702,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "apac.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -1709,6 +1719,16 @@ export const AICostModelList = {
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "apac.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1722,6 +1742,16 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "eu.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "us.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -1729,6 +1759,16 @@ export const AICostModelList = {
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 10000,

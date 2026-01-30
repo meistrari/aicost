@@ -1696,6 +1696,16 @@
         },
         {
             "maxTokens": 64000,
+            "name": "amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "apac.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -1703,6 +1713,16 @@
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "apac.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 64000,
@@ -1716,6 +1736,16 @@
         },
         {
             "maxTokens": 64000,
+            "name": "eu.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "us.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -1723,6 +1753,16 @@
             "outputCost": 0.00000275,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us.amazon.nova-2-pro-preview-20251202-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000021875,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000175,
+            "outputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": 10000,
