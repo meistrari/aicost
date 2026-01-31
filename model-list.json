@@ -4120,6 +4120,16 @@
             "priceTier": 1
         },
         {
+            "maxTokens": null,
+            "name": "azure_ai/model_router",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 512,
             "name": "azure_ai/Cohere-embed-v3-english",
             "type": "embedding",
