@@ -4769,9 +4769,9 @@
             "maxTokens": 32768,
             "name": "cerebras/gpt-oss-120b",
             "type": "chat",
-            "inputCost": 2.5e-7,
+            "inputCost": 3.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 6.9e-7,
+            "outputCost": 7.5e-7,
             "outputCostUnit": "token",
             "priceTier": 2
         },
