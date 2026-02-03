@@ -13178,6 +13178,16 @@
             "priceTier": 3
         },
         {
+            "maxTokens": 262144,
+            "name": "moonshot/kimi-k2.5",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 131072,
             "name": "moonshot/kimi-latest",
             "type": "chat",
