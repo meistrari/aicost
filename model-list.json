@@ -16725,6 +16725,26 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 200000,
+            "name": "together_ai/zai-org/GLM-4.7",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 256000,
+            "name": "together_ai/moonshotai/Kimi-K2.5",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000028,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K2-Instruct-0905",
             "type": "chat",

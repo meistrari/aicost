@@ -1,5 +1,5 @@
-// Last updated: 2026-02-03T12:11:49.383Z
-// Next update: 2026-02-03T18:11:49.383Z
+// Last updated: 2026-02-03T18:19:14.239Z
+// Next update: 2026-02-04T00:19:14.239Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'chatgpt' | 'gigachat' | 'gmi' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate' | 'sarvam'
 
@@ -16729,6 +16729,26 @@ export const AICostModelList = {
             "outputCost": 0.0000022,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 200000,
+            "name": "together_ai/zai-org/GLM-4.7",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 256000,
+            "name": "together_ai/moonshotai/Kimi-K2.5",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000028,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
