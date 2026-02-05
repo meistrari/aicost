@@ -1,5 +1,5 @@
-// Last updated: 2026-02-05T00:24:33.843Z
-// Next update: 2026-02-05T06:24:33.843Z
+// Last updated: 2026-02-05T06:21:24.850Z
+// Next update: 2026-02-05T12:21:24.850Z
 
 export type AICostModelProvider = 'bedrock' | 'bedrock_converse' | 'anyscale' | 'azure' | 'azure_ai' | 'azure_text' | 'text-completion-openai' | 'cerebras' | 'vertex-ai' | 'nlp_cloud' | 'openai' | 'anthropic' | 'cloudflare' | 'vertex_ai-code-chat-models' | 'codestral' | 'cohere' | 'cohere_chat' | 'deepseek' | 'dashscope' | 'databricks' | 'deepinfra' | 'volcengine' | 'featherless_ai' | 'fireworks_ai-embedding-models' | 'fireworks_ai' | 'friendliai' | 'vertex_ai' | 'github_copilot' | 'chatgpt' | 'gigachat' | 'gmi' | 'gradient_ai' | 'lemonade' | 'amazon_nova' | 'groq' | 'heroku' | 'hyperbolic' | 'ai21' | 'lambda_ai' | 'aleph_alpha' | 'meta_llama' | 'minimax' | 'mistral' | 'moonshot' | 'morph' | 'nscale' | 'oci' | 'ollama' | 'openrouter' | 'ovhcloud' | 'perplexity' | 'publicai' | 'replicate' | 'sagemaker' | 'sambanova' | 'snowflake' | 'text-completion-codestral' | 'together_ai' | 'v0' | 'vercel_ai_gateway' | 'vertex_ai-anthropic_models' | 'vertex_ai-mistral_models' | 'vertex_ai-deepseek_models' | 'vertex_ai-ai21_models' | 'vertex_ai-llama_models' | 'vertex_ai-minimax_models' | 'vertex_ai-moonshot_models' | 'vertex_ai-zai_models' | 'vertex_ai-openai_models' | 'vertex_ai-qwen_models' | 'voyage' | 'wandb' | 'watsonx' | 'xai' | 'zai' | 'novita' | 'llamagate' | 'sarvam'
 
@@ -14920,6 +14920,26 @@ export const AICostModelList = {
             "outputCost": 9.5e-7,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/qwen/qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/qwen/qwen3-235b-a22b-thinking-2507",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": 131072,

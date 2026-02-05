@@ -14916,6 +14916,26 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 262144,
+            "name": "openrouter/qwen/qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "openrouter/qwen/qwen3-235b-a22b-thinking-2507",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
             "maxTokens": 131072,
             "name": "openrouter/switchpoint/router",
             "type": "chat",
