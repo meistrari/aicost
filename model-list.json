@@ -7175,6 +7175,16 @@
         },
         {
             "maxTokens": 128000,
+            "name": "fast/claude-opus-4-6",
+            "type": "chat",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
             "name": "us/claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -7185,11 +7195,31 @@
         },
         {
             "maxTokens": 128000,
+            "name": "fast/us/claude-opus-4-6",
+            "type": "chat",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
             "name": "claude-opus-4-6-20260205",
             "type": "chat",
             "inputCost": 0.000005,
             "inputCostUnit": "token",
             "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "fast/claude-opus-4-6-20260205",
+            "type": "chat",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00015,
             "outputCostUnit": "token",
             "priceTier": 5
         },
@@ -17081,6 +17111,106 @@
         {
             "maxTokens": 64000,
             "name": "vercel_ai_gateway/anthropic/claude-4-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vercel_ai_gateway/anthropic/claude-3-5-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vercel_ai_gateway/anthropic/claude-3-5-sonnet-20241022",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-3-7-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-haiku-4.5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vercel_ai_gateway/anthropic/claude-opus-4",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 32000,
+            "name": "vercel_ai_gateway/anthropic/claude-opus-4.1",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-opus-4.5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-opus-4.6",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-sonnet-4",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vercel_ai_gateway/anthropic/claude-sonnet-4.5",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
