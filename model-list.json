@@ -7915,6 +7915,15 @@
             "outputCostUnit": null
         },
         {
+            "maxTokens": 65536,
+            "name": "dashscope/qwen3-max",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null
+        },
+        {
             "maxTokens": 8192,
             "name": "dashscope/qwq-plus",
             "type": "chat",
