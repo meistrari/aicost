@@ -452,6 +452,16 @@
         },
         {
             "maxTokens": 262144,
+            "name": "bedrock/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000303,
+            "outputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
             "name": "bedrock/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -4678,6 +4688,16 @@
             "outputCost": 7e-7,
             "outputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/kimi-k2.5",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 4096,
