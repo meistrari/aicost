@@ -1,5 +1,5 @@
-// Last updated: 2026-02-12T12:46:22.476Z
-// Next update: 2026-02-12T18:46:22.477Z
+// Last updated: 2026-02-12T18:20:15.668Z
+// Next update: 2026-02-13T00:20:15.668Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -18212,6 +18212,34 @@ export const AICostModelList = {
         {
             "maxTokens": null,
             "name": "minimax/MiniMax-M2.1-lightning",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M2.5",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M2.5-lightning",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
