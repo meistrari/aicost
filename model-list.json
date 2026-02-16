@@ -13636,6 +13636,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 262144,
+            "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p5",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 16384,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct",
             "type": "chat",
