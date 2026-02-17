@@ -3308,7 +3308,7 @@
         },
         {
             "maxTokens": 128000,
-            "name": "apac.anthropic.claude-opus-4-6-v1",
+            "name": "au.anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.0000055,
             "inputCostUnit": "token",
@@ -20123,13 +20123,13 @@
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 1.5e-7,
+            "outputCost": 0.000015,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 4
         },
         {
             "maxTokens": 131072,
@@ -20179,13 +20179,13 @@
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 1.5e-7,
+            "outputCost": 0.000015,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 4
         },
         {
             "maxTokens": 4000,
