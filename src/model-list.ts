@@ -1,5 +1,5 @@
-// Last updated: 2026-02-17T18:20:07.539Z
-// Next update: 2026-02-18T00:20:07.539Z
+// Last updated: 2026-02-18T00:25:36.506Z
+// Next update: 2026-02-18T06:25:36.506Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -3328,6 +3328,76 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "global.anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us.anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "eu.anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "apac.anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6610,6 +6680,20 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "azure_ai/claude-sonnet-4-5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "azure_ai/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -10804,6 +10888,20 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "claude-sonnet-4-5-20250929",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -26060,8 +26158,36 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "vertex_ai/claude-opus-4-6@default",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
             "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4-5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vertex_ai/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
@@ -26118,6 +26244,20 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "vertex_ai/claude-sonnet-4@20250514",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vertex_ai/claude-sonnet-4-6@default",
             "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
