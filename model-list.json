@@ -10908,6 +10908,20 @@
             "priceTier": 4
         },
         {
+            "maxTokens": 64000,
+            "name": "us/claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
             "maxTokens": 32000,
             "name": "claude-opus-4-1",
             "type": "chat",
