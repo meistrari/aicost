@@ -1,5 +1,5 @@
-// Last updated: 2026-02-23T12:14:03.558Z
-// Next update: 2026-02-23T18:14:03.558Z
+// Last updated: 2026-02-23T18:21:40.209Z
+// Next update: 2026-02-24T00:21:40.209Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -10942,20 +10942,6 @@ export const AICostModelList = {
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
-            "name": "us/claude-sonnet-4-6",
-            "type": "chat",
-            "inputCost": 0.0000033,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000165,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
-        },
-        {
             "maxTokens": 32000,
             "name": "claude-opus-4-1",
             "type": "chat",
@@ -11041,48 +11027,6 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
-            "name": "fast/claude-opus-4-6",
-            "type": "chat",
-            "inputCost": 0.00003,
-            "inputCostUnit": "token",
-            "outputCost": 0.00015,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
-            "name": "us/claude-opus-4-6",
-            "type": "chat",
-            "inputCost": 0.0000055,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000275,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000006875,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
-            "name": "fast/us/claude-opus-4-6",
-            "type": "chat",
-            "inputCost": 0.00003,
-            "inputCostUnit": "token",
-            "outputCost": 0.00015,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000006875,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
             "name": "claude-opus-4-6-20260205",
             "type": "chat",
             "inputCost": 0.000005,
@@ -11092,34 +11036,6 @@ export const AICostModelList = {
             "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
-            "name": "fast/claude-opus-4-6-20260205",
-            "type": "chat",
-            "inputCost": 0.00003,
-            "inputCostUnit": "token",
-            "outputCost": 0.00015,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
-            "name": "us/claude-opus-4-6-20260205",
-            "type": "chat",
-            "inputCost": 0.0000055,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000275,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
