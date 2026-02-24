@@ -1,5 +1,5 @@
-// Last updated: 2026-02-24T12:15:09.951Z
-// Next update: 2026-02-24T18:15:09.951Z
+// Last updated: 2026-02-24T18:21:09.377Z
+// Next update: 2026-02-25T00:21:09.377Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -22483,6 +22483,19 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
+            "name": "perplexity/preset/fast-search",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
             "name": "perplexity/preset/pro-search",
             "type": "responses",
             "inputCost": null,
@@ -22496,7 +22509,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/openai/gpt-4o",
+            "name": "perplexity/preset/deep-research",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22509,7 +22522,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/openai/gpt-4o-mini",
+            "name": "perplexity/preset/advanced-deep-research",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22535,7 +22548,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/anthropic/claude-3-5-sonnet-20241022",
+            "name": "perplexity/openai/gpt-5.1",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22548,7 +22561,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/anthropic/claude-3-5-haiku-20241022",
+            "name": "perplexity/openai/gpt-5-mini",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22561,7 +22574,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/google/gemini-2.0-flash-exp",
+            "name": "perplexity/anthropic/claude-opus-4-6",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22574,7 +22587,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/google/gemini-2.0-flash-thinking-exp",
+            "name": "perplexity/anthropic/claude-opus-4-5",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22587,7 +22600,7 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/xai/grok-2-1212",
+            "name": "perplexity/anthropic/claude-sonnet-4-5",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
@@ -22600,7 +22613,85 @@ export const AICostModelList = {
         },
         {
             "maxTokens": null,
-            "name": "perplexity/xai/grok-2-vision-1212",
+            "name": "perplexity/anthropic/claude-haiku-4-5",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/google/gemini-3-pro-preview",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/google/gemini-3-flash-preview",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/google/gemini-2.5-pro",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/google/gemini-2.5-flash",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/xai/grok-4-1-fast-non-reasoning",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/perplexity/sonar",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
