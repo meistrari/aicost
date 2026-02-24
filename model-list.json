@@ -18210,6 +18210,20 @@
             "priceTier": 1
         },
         {
+            "maxTokens": 65536,
+            "name": "groq/openai/gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.7e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 131000,
             "name": "groq/qwen/qwen3-32b",
             "type": "chat",
