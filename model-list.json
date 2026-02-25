@@ -10194,6 +10194,20 @@
         },
         {
             "maxTokens": 128000,
+            "name": "gpt-5.3-codex",
+            "type": "responses",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "gpt-5-mini",
             "type": "chat",
             "inputCost": 2.5e-7,
