@@ -9718,6 +9718,20 @@
         },
         {
             "maxTokens": 16384,
+            "name": "gpt-audio-1.5",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
             "name": "gpt-audio-2025-08-28",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -10307,6 +10321,20 @@
         {
             "maxTokens": 4096,
             "name": "gpt-realtime",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 4096,
+            "name": "gpt-realtime-1.5",
             "type": "chat",
             "inputCost": 0.000004,
             "inputCostUnit": "token",
@@ -21030,6 +21058,20 @@
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "openrouter/anthropic/claude-opus-4.6",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
             "maxTokens": 1000000,
             "name": "openrouter/anthropic/claude-sonnet-4.5",
             "type": "chat",
@@ -21966,6 +22008,48 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 2000000,
+            "name": "openrouter/openrouter/auto",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 200000,
+            "name": "openrouter/openrouter/free",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/openrouter/bodybuilder",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "ovhcloud": [
