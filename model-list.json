@@ -8332,6 +8332,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 65536,
+            "name": "gemini-3.1-flash-lite-preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 65535,
             "name": "gemini-2.5-flash-lite",
             "type": "chat",
@@ -8969,6 +8983,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "vertex_ai/gemini-3.1-flash-lite-preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "nlp_cloud": [
@@ -11958,6 +11986,103 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "dashscope/qwen3-max-2026-01-23",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "dashscope/qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
+            "name": "dashscope/qwen3-next-80b-a3b-thinking",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen3-vl-235b-a22b-thinking",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen3-vl-32b-instruct",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen3-vl-32b-thinking",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000287,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -21604,6 +21729,20 @@
             "priceTier": 4
         },
         {
+            "maxTokens": 128000,
+            "name": "openrouter/anthropic/claude-sonnet-4.6",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
             "maxTokens": 32000,
             "name": "openrouter/anthropic/claude-opus-4.5",
             "type": "chat",
@@ -21836,6 +21975,20 @@
             "outputCost": 0.000003,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "openrouter/google/gemini-3.1-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -22249,6 +22402,20 @@
         },
         {
             "maxTokens": 128000,
+            "name": "openrouter/openai/gpt-5.1-codex-max",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "openrouter/openai/gpt-5.2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -22402,6 +22569,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 65536,
+            "name": "openrouter/qwen/qwen3-coder-plus",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 262144,
             "name": "openrouter/qwen/qwen3-235b-a22b-2507",
             "type": "chat",
@@ -22540,6 +22721,20 @@
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/z-ai/glm-5",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000256,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 64000,
@@ -29154,6 +29349,34 @@
         }
     ],
     "zai": [
+        {
+            "maxTokens": null,
+            "name": "zai/glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-5-code",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
         {
             "maxTokens": null,
             "name": "zai/glm-4.7",
