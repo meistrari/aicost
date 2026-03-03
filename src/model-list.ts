@@ -1,5 +1,5 @@
-// Last updated: 2026-03-02T18:14:19.469Z
-// Next update: 2026-03-03T00:14:19.469Z
+// Last updated: 2026-03-03T00:24:48.300Z
+// Next update: 2026-03-03T06:24:48.300Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -322,10 +322,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.125e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -336,10 +336,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000075,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
         {
@@ -350,10 +350,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -406,10 +406,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -434,10 +434,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.125e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -448,10 +448,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -1286,10 +1286,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -1812,10 +1812,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -1826,10 +1826,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.75e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -1840,10 +1840,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -1980,10 +1980,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -1994,10 +1994,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.75e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -2008,10 +2008,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000165,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2436,10 +2436,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.125e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -2450,10 +2450,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2464,10 +2464,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2478,10 +2478,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2492,10 +2492,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.125e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -2506,10 +2506,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000075,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
         {
@@ -2520,10 +2520,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2800,10 +2800,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -2828,10 +2828,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.00000125,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.125e-7,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
         {
@@ -2842,10 +2842,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000075,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
         {
@@ -2856,10 +2856,10 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
         {
@@ -11966,6 +11966,32 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
+            "maxTokens": 32768,
+            "name": "dashscope/qwen3-vl-plus",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 65536,
+            "name": "dashscope/qwen3.5-plus",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
             "maxTokens": 8192,
             "name": "dashscope/qwq-plus",
             "type": "chat",
@@ -19471,6 +19497,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 40000,
+            "name": "mistral/magistral-medium-1-2-2509",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 40000,
             "name": "mistral/magistral-medium-latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -19500,6 +19540,20 @@ export const AICostModelList = {
         {
             "maxTokens": 40000,
             "name": "mistral/magistral-small-latest",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 40000,
+            "name": "mistral/magistral-small-1-2-2509",
             "type": "chat",
             "inputCost": 5e-7,
             "inputCostUnit": "token",
@@ -19596,22 +19650,36 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 262144,
             "name": "mistral/mistral-large-latest",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000006,
+            "outputCost": 0.0000015,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 262144,
             "name": "mistral/mistral-large-3",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/mistral-large-2512",
             "type": "chat",
             "inputCost": 5e-7,
             "inputCostUnit": "token",
@@ -19666,8 +19734,22 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 131072,
             "name": "mistral/mistral-medium-latest",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 131072,
+            "name": "mistral/mistral-medium-3-1-2508",
             "type": "chat",
             "inputCost": 4e-7,
             "inputCostUnit": "token",
@@ -19694,12 +19776,68 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 131072,
             "name": "mistral/mistral-small-latest",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "mistral/mistral-small-3-2-2506",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "mistral/ministral-3-3b-2512",
             "type": "chat",
             "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/ministral-3-8b-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/ministral-3-14b-2512",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
