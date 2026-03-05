@@ -10165,6 +10165,34 @@
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "gpt-5.4",
+            "type": "responses",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.4-2026-03-05",
+            "type": "responses",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
             "maxTokens": 272000,
             "name": "gpt-5-pro",
             "type": "responses",
@@ -30949,6 +30977,64 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        }
+    ],
+    "bedrock_mantle": [
+        {
+            "maxTokens": 32768,
+            "name": "bedrock_mantle/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 32768,
+            "name": "bedrock_mantle/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "bedrock_mantle/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "bedrock_mantle/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 1
         }
     ]

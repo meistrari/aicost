@@ -1,7 +1,7 @@
-// Last updated: 2026-03-05T12:12:44.386Z
-// Next update: 2026-03-05T18:12:44.387Z
+// Last updated: 2026-03-05T18:37:18.247Z
+// Next update: 2026-03-06T00:37:18.247Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -10169,6 +10169,34 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.4",
+            "type": "responses",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.4-2026-03-05",
+            "type": "responses",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         },
         {
             "maxTokens": 272000,
@@ -30955,6 +30983,64 @@ export const AICostModelList = {
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        }
+    ],
+    "bedrock_mantle": [
+        {
+            "maxTokens": 32768,
+            "name": "bedrock_mantle/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 32768,
+            "name": "bedrock_mantle/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "bedrock_mantle/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "bedrock_mantle/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 1
         }
     ]
