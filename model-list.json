@@ -3854,6 +3854,20 @@
         },
         {
             "maxTokens": 8192,
+            "name": "mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
             "name": "mistral.magistral-small-2509",
             "type": "chat",
             "inputCost": 5e-7,
@@ -4481,6 +4495,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "anyscale": [
@@ -8380,20 +8408,6 @@
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 7.5e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 65535,
-            "name": "gemini-live-2.5-flash-preview-native-audio-09-2025",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 7.5e-8,
             "cacheReadInputCostUnit": "token",

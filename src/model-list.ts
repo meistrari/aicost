@@ -1,5 +1,5 @@
-// Last updated: 2026-03-04T18:14:30.964Z
-// Next update: 2026-03-05T00:14:30.964Z
+// Last updated: 2026-03-05T00:24:28.721Z
+// Next update: 2026-03-05T06:24:28.721Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "vertex-ai" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "vertex_ai-code-chat-models" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam"
 
@@ -3860,6 +3860,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
             "name": "mistral.magistral-small-2509",
             "type": "chat",
             "inputCost": 5e-7,
@@ -4487,6 +4501,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "anyscale": [
@@ -8386,20 +8414,6 @@ export const AICostModelList = {
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 7.5e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 65535,
-            "name": "gemini-live-2.5-flash-preview-native-audio-09-2025",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 7.5e-8,
             "cacheReadInputCostUnit": "token",
