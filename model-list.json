@@ -10167,7 +10167,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.4",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
@@ -10181,7 +10181,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.4-2026-03-05",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.000015,
@@ -10195,7 +10195,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.4-pro",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00018,
@@ -10209,7 +10209,7 @@
         {
             "maxTokens": 128000,
             "name": "gpt-5.4-pro-2026-03-05",
-            "type": "responses",
+            "type": "chat",
             "inputCost": 0.00003,
             "inputCostUnit": "token",
             "outputCost": 0.00018,
