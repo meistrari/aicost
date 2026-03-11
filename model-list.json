@@ -8725,6 +8725,20 @@
         },
         {
             "maxTokens": 8192,
+            "name": "gemini-embedding-2-preview",
+            "type": "embedding",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
             "name": "gemini-flash-experimental",
             "type": "chat",
             "inputCost": 0,
@@ -17401,6 +17415,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/gemini-embedding-2-preview",
+            "type": "embedding",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "github_copilot": [
