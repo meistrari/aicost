@@ -1,5 +1,5 @@
-// Last updated: 2026-04-03T00:28:04.301Z
-// Next update: 2026-04-03T06:28:04.301Z
+// Last updated: 2026-04-03T06:27:27.375Z
+// Next update: 2026-04-03T12:27:27.375Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -655,6 +655,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-northeast-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 262144,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -781,6 +795,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-south-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 262144,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -823,6 +851,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-southeast-2/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.09e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001236,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 163840,
             "name": "bedrock/ap-southeast-3/deepseek.v3.2",
             "type": "chat",
@@ -839,6 +881,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/ap-southeast-3/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/ap-southeast-3/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
             "inputCostUnit": "token",
@@ -923,6 +979,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/eu-north-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-north-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
             "inputCostUnit": "token",
@@ -1084,6 +1154,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "bedrock/eu-central-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
             "name": "bedrock/eu-central-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1140,6 +1224,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "bedrock/eu-west-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
             "name": "bedrock/eu-west-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1183,6 +1281,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/eu-west-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-west-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 4.7e-7,
             "inputCostUnit": "token",
@@ -1253,6 +1365,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/eu-south-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/eu-south-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
             "inputCostUnit": "token",
@@ -1337,6 +1463,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/sa-east-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/sa-east-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
             "inputCostUnit": "token",
@@ -1609,6 +1749,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 8192,
+            "name": "bedrock/us-east-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 262144,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -1667,6 +1821,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/us-east-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-east-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
@@ -2249,6 +2417,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "bedrock/us-west-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-west-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
@@ -3888,6 +4070,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
             "name": "mistral.devstral-2-123b",
             "type": "chat",
             "inputCost": 4e-7,
@@ -4061,6 +4257,20 @@ export const AICostModelList = {
             "inputCost": 6e-8,
             "inputCostUnit": "token",
             "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 32768,
+            "name": "nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -4543,6 +4753,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "anyscale": [
