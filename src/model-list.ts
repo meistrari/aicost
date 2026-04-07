@@ -1,5 +1,5 @@
-// Last updated: 2026-04-07T12:20:39.650Z
-// Next update: 2026-04-07T18:20:39.650Z
+// Last updated: 2026-04-07T18:19:51.851Z
+// Next update: 2026-04-08T00:19:51.851Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -2001,7 +2001,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2011,6 +2011,20 @@ export const AICostModelList = {
             "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -2169,7 +2183,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2179,6 +2193,20 @@ export const AICostModelList = {
             "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -4533,6 +4561,20 @@ export const AICostModelList = {
         {
             "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
             "inputCostUnit": "token",

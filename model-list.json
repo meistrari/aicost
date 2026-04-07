@@ -1995,7 +1995,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2005,6 +2005,20 @@
             "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -2163,7 +2177,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2173,6 +2187,20 @@
             "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 8192,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -4527,6 +4555,20 @@
         {
             "maxTokens": 64000,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
+            "name": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
             "inputCostUnit": "token",
