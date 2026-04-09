@@ -1,26 +1,13 @@
-import type { AICostModelProvider } from './model-list'
+import type { AICostModelProvider, AICostProviderModel } from './model-list'
 import { AICostModelList } from './model-list'
 
 type LooseString<T extends string> = T | (string & {})
 
-type InputCostUnit = 'token' | 'request' | 'pixel' | null
-type OutputCostUnit = 'token' | 'request' | 'image' | null
-type CacheInputCostUnit = 'token' | null
+type InputCostUnit = AICostProviderModel['inputCostUnit']
+type OutputCostUnit = AICostProviderModel['outputCostUnit']
+type CacheInputCostUnit = AICostProviderModel['cacheReadInputCostUnit']
 
-type ProviderModel = {
-    maxTokens: number | null
-    name: string
-    type: string
-    inputCost: number | null
-    inputCostUnit: InputCostUnit
-    outputCost: number | null
-    outputCostUnit: OutputCostUnit
-    cacheReadInputCost: number | null
-    cacheReadInputCostUnit: CacheInputCostUnit
-    cacheCreationInputCost: number | null
-    cacheCreationInputCostUnit: CacheInputCostUnit
-    priceTier?: number
-}
+type ProviderModel = AICostProviderModel
 
 type ProviderModelList = ProviderModel[]
 
@@ -113,18 +100,33 @@ export async function getAICostModelList(): Promise<AICostModelListGeneric> {
     return await inFlightFetch
 }
 
+function nonNegativeAmount(value: number | undefined): number {
+    return typeof value === 'number' && Number.isFinite(value) && value > 0 ? value : 0
+}
+
 export async function calculateCost<P extends LooseString<AICostModelProvider>>(options: {
     provider: P
-    model: P extends AICostModelProvider ? typeof AICostModelList[P][number]['name'] : string
+    model: string
     inputAmount: number
     outputAmount?: number
     cacheReadInputTokens?: number
     cacheCreationInputTokens?: number
+    inputAudioTokens?: number
+    outputAudioTokens?: number
+    inputImageTokens?: number
+    outputImageTokens?: number
+    outputSeconds?: number
 }): Promise<{
     inputCost: number
     outputCost: number
     cacheReadInputCost: number
     cacheCreationInputCost: number
+    inputAudioTokenCost: number
+    outputAudioTokenCost: number
+    inputImageTokenCost: number
+    outputImageTokenCost: number
+    outputSecondCost: number
+    totalCost: number
     inputCostUnit: InputCostUnit
     outputCostUnit: OutputCostUnit
     cacheReadInputCostUnit: CacheInputCostUnit
@@ -146,14 +148,20 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         outputCost,
         cacheReadInputCost,
         cacheCreationInputCost,
+        inputAudioTokenCost,
+        outputAudioTokenCost,
+        inputImageTokenCost,
+        outputImageTokenCost,
+        outputSecondCost,
     } = modelInfo
 
-    const cacheReadInputTokens = typeof options.cacheReadInputTokens === 'number' && Number.isFinite(options.cacheReadInputTokens) && options.cacheReadInputTokens > 0
-        ? options.cacheReadInputTokens
-        : 0
-    const cacheCreationInputTokens = typeof options.cacheCreationInputTokens === 'number' && Number.isFinite(options.cacheCreationInputTokens) && options.cacheCreationInputTokens > 0
-        ? options.cacheCreationInputTokens
-        : 0
+    const cacheReadInputTokens = nonNegativeAmount(options.cacheReadInputTokens)
+    const cacheCreationInputTokens = nonNegativeAmount(options.cacheCreationInputTokens)
+    const inputAudioTokens = nonNegativeAmount(options.inputAudioTokens)
+    const outputAudioTokens = nonNegativeAmount(options.outputAudioTokens)
+    const inputImageTokens = nonNegativeAmount(options.inputImageTokens)
+    const outputImageTokens = nonNegativeAmount(options.outputImageTokens)
+    const outputSeconds = nonNegativeAmount(options.outputSeconds)
 
     const pricedCacheReadInputTokens = cacheReadInputCost != null ? cacheReadInputTokens : 0
     const pricedCacheCreationInputTokens = cacheCreationInputCost != null ? cacheCreationInputTokens : 0
@@ -165,12 +173,35 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const resolvedOutputCost = calculateResolvedCost(outputCost, options.outputAmount ?? 0)
     const resolvedCacheReadInputCost = calculateResolvedCost(cacheReadInputCost, pricedCacheReadInputTokens)
     const resolvedCacheCreationInputCost = calculateResolvedCost(cacheCreationInputCost, pricedCacheCreationInputTokens)
+    const resolvedInputAudioTokenCost = calculateResolvedCost(inputAudioTokenCost ?? null, inputAudioTokens)
+    const resolvedOutputAudioTokenCost = calculateResolvedCost(outputAudioTokenCost ?? null, outputAudioTokens)
+    const resolvedInputImageTokenCost = calculateResolvedCost(inputImageTokenCost ?? null, inputImageTokens)
+    const resolvedOutputImageTokenCost = calculateResolvedCost(outputImageTokenCost ?? null, outputImageTokens)
+    const resolvedOutputSecondCost = calculateResolvedCost(outputSecondCost ?? null, outputSeconds)
+
+    const totalCost = Number((
+        resolvedInputCost
+        + resolvedOutputCost
+        + resolvedCacheReadInputCost
+        + resolvedCacheCreationInputCost
+        + resolvedInputAudioTokenCost
+        + resolvedOutputAudioTokenCost
+        + resolvedInputImageTokenCost
+        + resolvedOutputImageTokenCost
+        + resolvedOutputSecondCost
+    ).toFixed(10))
 
     return {
         inputCost: resolvedInputCost,
         outputCost: resolvedOutputCost,
         cacheReadInputCost: resolvedCacheReadInputCost,
         cacheCreationInputCost: resolvedCacheCreationInputCost,
+        inputAudioTokenCost: resolvedInputAudioTokenCost,
+        outputAudioTokenCost: resolvedOutputAudioTokenCost,
+        inputImageTokenCost: resolvedInputImageTokenCost,
+        outputImageTokenCost: resolvedOutputImageTokenCost,
+        outputSecondCost: resolvedOutputSecondCost,
+        totalCost,
         inputCostUnit: modelInfo.inputCostUnit,
         outputCostUnit: modelInfo.outputCostUnit,
         cacheReadInputCostUnit: modelInfo.cacheReadInputCostUnit,

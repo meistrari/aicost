@@ -138,3 +138,108 @@ describe('calculateCost cache pricing', () => {
         expect(cost.cacheCreationInputCost).toBe(round((model.cacheCreationInputCost ?? 0) * cacheCreationInputTokens))
     })
 })
+
+describe('calculateCost media pricing', () => {
+    beforeAll(() => {
+        globalThis.fetch = (() => Promise.reject(new Error('force local model list'))) as typeof fetch
+    })
+
+    afterAll(() => {
+        globalThis.fetch = originalFetch
+    })
+
+    it('prices DALL-E per generated image', async () => {
+        const cost = await calculateCost({
+            provider: 'openai',
+            model: 'dall-e-3',
+            inputAmount: 2,
+        })
+
+        expect(cost.inputCostUnit).toBe('image')
+        expect(cost.inputCost).toBe(round(0.04 * 2))
+        expect(cost.totalCost).toBe(round(0.04 * 2))
+    })
+
+    it('prices gpt-4o-audio-preview separately for text and audio tokens', async () => {
+        const cost = await calculateCost({
+            provider: 'openai',
+            model: 'gpt-4o-audio-preview',
+            inputAmount: 1000,
+            outputAmount: 200,
+            inputAudioTokens: 500,
+            outputAudioTokens: 100,
+        })
+
+        const expectedTextInput = round(2.5e-6 * 1000)
+        const expectedTextOutput = round(1e-5 * 200)
+        const expectedAudioInput = round(4e-5 * 500)
+        const expectedAudioOutput = round(8e-5 * 100)
+
+        expect(cost.inputCost).toBe(expectedTextInput)
+        expect(cost.outputCost).toBe(expectedTextOutput)
+        expect(cost.inputAudioTokenCost).toBe(expectedAudioInput)
+        expect(cost.outputAudioTokenCost).toBe(expectedAudioOutput)
+        expect(cost.totalCost).toBe(round(
+            expectedTextInput + expectedTextOutput + expectedAudioInput + expectedAudioOutput,
+        ))
+    })
+
+    it('prices gpt-4o-mini-tts by output seconds', async () => {
+        const cost = await calculateCost({
+            provider: 'openai',
+            model: 'gpt-4o-mini-tts',
+            inputAmount: 50,
+            outputSeconds: 12,
+        })
+
+        const expectedInput = round(2.5e-6 * 50)
+        const expectedSecondCost = round(0.00025 * 12)
+
+        expect(cost.inputCost).toBe(expectedInput)
+        expect(cost.outputSecondCost).toBe(expectedSecondCost)
+        expect(cost.totalCost).toBeGreaterThanOrEqual(expectedInput + expectedSecondCost - 1e-12)
+    })
+
+    it('prices tts-1 per character', async () => {
+        const cost = await calculateCost({
+            provider: 'openai',
+            model: 'tts-1',
+            inputAmount: 200,
+        })
+
+        expect(cost.inputCostUnit).toBe('character')
+        expect(cost.inputCost).toBe(round(1.5e-5 * 200))
+    })
+
+    it('prices gpt-image-1 with separate image-token costs', async () => {
+        const cost = await calculateCost({
+            provider: 'openai',
+            model: 'gpt-image-1',
+            inputAmount: 100,
+            outputAmount: 0,
+            inputImageTokens: 50,
+            outputImageTokens: 200,
+        })
+
+        const expectedInput = round(5e-6 * 100)
+        const expectedInputImg = round(1e-5 * 50)
+        const expectedOutputImg = round(4e-5 * 200)
+
+        expect(cost.inputCost).toBe(expectedInput)
+        expect(cost.inputImageTokenCost).toBe(expectedInputImg)
+        expect(cost.outputImageTokenCost).toBe(expectedOutputImg)
+        expect(cost.totalCost).toBe(round(expectedInput + expectedInputImg + expectedOutputImg))
+    })
+
+    it('prices gemini-2.5-flash-preview-tts (was previously blocked by gemini provider filter)', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-flash-preview-tts',
+            inputAmount: 1000,
+            outputAmount: 500,
+        })
+
+        expect(cost.inputCost).toBe(round(3e-7 * 1000))
+        expect(cost.outputCost).toBe(round(2.5e-6 * 500))
+    })
+})

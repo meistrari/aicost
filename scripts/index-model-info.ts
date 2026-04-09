@@ -1,8 +1,15 @@
 import { join } from 'node:path'
 
-type ModelMode = 'chat' | 'completion' | 'embedding' | 'responses'
-type InputCostUnit = 'token' | 'request' | 'pixel' | null
-type OutputCostUnit = 'token' | 'request' | 'image' | null
+type ModelMode =
+    | 'chat'
+    | 'completion'
+    | 'embedding'
+    | 'responses'
+    | 'image_generation'
+    | 'audio_speech'
+    | 'audio_transcription'
+type InputCostUnit = 'token' | 'request' | 'pixel' | 'image' | 'character' | null
+type OutputCostUnit = 'token' | 'request' | 'image' | 'second' | 'character' | null
 type CacheInputCostUnit = 'token' | null
 
 type RawModel = {
@@ -12,9 +19,17 @@ type RawModel = {
     input_cost_per_token?: number | null
     input_cost_per_request?: number | null
     input_cost_per_pixel?: number | null
+    input_cost_per_image?: number | null
+    input_cost_per_image_token?: number | null
+    input_cost_per_audio_token?: number | null
+    input_cost_per_character?: number | null
     output_cost_per_token?: number | null
     output_cost_per_request?: number | null
     output_cost_per_image?: number | null
+    output_cost_per_image_token?: number | null
+    output_cost_per_audio_token?: number | null
+    output_cost_per_character?: number | null
+    output_cost_per_second?: number | null
     cache_read_input_token_cost?: number | null
     cache_creation_input_token_cost?: number | null
 }
@@ -29,6 +44,11 @@ type IndexedModel = {
     inputCostUnit: InputCostUnit
     outputCost: number | null
     outputCostUnit: OutputCostUnit
+    inputAudioTokenCost: number | null
+    outputAudioTokenCost: number | null
+    inputImageTokenCost: number | null
+    outputImageTokenCost: number | null
+    outputSecondCost: number | null
     cacheReadInputCost: number | null
     cacheReadInputCostUnit: CacheInputCostUnit
     cacheCreationInputCost: number | null
@@ -41,7 +61,16 @@ const MODEL_LIST_TS_PATH = join(ROOT_DIR, 'src', 'model-list.ts')
 const MODEL_LIST_JSON_PATH = join(ROOT_DIR, 'model-list.json')
 
 const providerMapping: Record<string, string[]> = {
-    'vertex-ai': ['vertex_ai-text-models', 'vertex_ai-chat-models', 'vertex_ai-code-text-models', 'vertex_ai-language-models', 'vertex_ai-vision-models', 'vertex_ai-embedding-models'],
+    'vertex-ai': [
+        'vertex_ai-text-models',
+        'vertex_ai-chat-models',
+        'vertex_ai-code-text-models',
+        'vertex_ai-language-models',
+        'vertex_ai-vision-models',
+        'vertex_ai-embedding-models',
+        'vertex_ai-image-models',
+        'gemini',
+    ],
 }
 
 const providerAliasMapping = Object.entries(providerMapping).reduce<Record<string, string>>((acc, [provider, aliases]) => {
@@ -53,8 +82,16 @@ const providerAliasMapping = Object.entries(providerMapping).reduce<Record<strin
 }, {})
 
 // These provider keys are intentionally excluded from publishing.
-const blockList = new Set(['palm', 'gemini'])
-const allowedModes = new Set<ModelMode>(['chat', 'completion', 'embedding', 'responses'])
+const blockList = new Set(['palm'])
+const allowedModes = new Set<ModelMode>([
+    'chat',
+    'completion',
+    'embedding',
+    'responses',
+    'image_generation',
+    'audio_speech',
+    'audio_transcription',
+])
 
 function isModelMode(mode: string): mode is ModelMode {
     return allowedModes.has(mode as ModelMode)
@@ -82,9 +119,17 @@ function normalizeRawModel(value: unknown): RawModel | null {
         input_cost_per_token: toNullableNumber(model.input_cost_per_token),
         input_cost_per_request: toNullableNumber(model.input_cost_per_request),
         input_cost_per_pixel: toNullableNumber(model.input_cost_per_pixel),
+        input_cost_per_image: toNullableNumber(model.input_cost_per_image),
+        input_cost_per_image_token: toNullableNumber(model.input_cost_per_image_token),
+        input_cost_per_audio_token: toNullableNumber(model.input_cost_per_audio_token),
+        input_cost_per_character: toNullableNumber(model.input_cost_per_character),
         output_cost_per_token: toNullableNumber(model.output_cost_per_token),
         output_cost_per_request: toNullableNumber(model.output_cost_per_request),
         output_cost_per_image: toNullableNumber(model.output_cost_per_image),
+        output_cost_per_image_token: toNullableNumber(model.output_cost_per_image_token),
+        output_cost_per_audio_token: toNullableNumber(model.output_cost_per_audio_token),
+        output_cost_per_character: toNullableNumber(model.output_cost_per_character),
+        output_cost_per_second: toNullableNumber(model.output_cost_per_second),
         cache_read_input_token_cost: toNullableNumber(model.cache_read_input_token_cost),
         cache_creation_input_token_cost: toNullableNumber(model.cache_creation_input_token_cost),
     }
@@ -163,6 +208,14 @@ function calculatePriceTier(inputCost: number | null, outputCost: number | null,
         // Heuristic normalization for vision models to fit token-like pricing buckets.
         normalizedInputCost = inputCost * 100
     }
+    else if (inputCost != null && inputUnit === 'image') {
+        // Treat per-image input cost as 1k token-equivalent for tiering purposes.
+        normalizedInputCost = inputCost / 1000
+    }
+    else if (inputCost != null && inputUnit === 'character') {
+        // ~4 characters per token, so per-character cost is roughly 4x token cost.
+        normalizedInputCost = inputCost * 4
+    }
 
     if (outputCost != null && outputUnit === 'token') {
         normalizedOutputCost = outputCost
@@ -174,6 +227,13 @@ function calculatePriceTier(inputCost: number | null, outputCost: number | null,
     else if (outputCost != null && outputUnit === 'image') {
         // Heuristic normalization for image outputs to fit token-like pricing buckets.
         normalizedOutputCost = outputCost / 1000
+    }
+    else if (outputCost != null && outputUnit === 'second') {
+        // ~150 spoken words per minute → ~200 tokens per minute → ~3 tokens per second.
+        normalizedOutputCost = outputCost / 3
+    }
+    else if (outputCost != null && outputUnit === 'character') {
+        normalizedOutputCost = outputCost * 4
     }
 
     // Weight output 2x because generation pricing generally dominates total cost.
@@ -209,31 +269,49 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
         const inputCostPerToken = toNullableNumber(model.input_cost_per_token)
         const inputCostPerRequest = toNullableNumber(model.input_cost_per_request)
         const inputCostPerPixel = toNullableNumber(model.input_cost_per_pixel)
+        const inputCostPerImage = toNullableNumber(model.input_cost_per_image)
+        const inputCostPerCharacter = toNullableNumber(model.input_cost_per_character)
+        const inputCostPerImageToken = toNullableNumber(model.input_cost_per_image_token)
+        const inputCostPerAudioToken = toNullableNumber(model.input_cost_per_audio_token)
         const outputCostPerToken = toNullableNumber(model.output_cost_per_token)
         const outputCostPerRequest = toNullableNumber(model.output_cost_per_request)
         const outputCostPerImage = toNullableNumber(model.output_cost_per_image)
+        const outputCostPerCharacter = toNullableNumber(model.output_cost_per_character)
+        const outputCostPerSecond = toNullableNumber(model.output_cost_per_second)
+        const outputCostPerImageToken = toNullableNumber(model.output_cost_per_image_token)
+        const outputCostPerAudioToken = toNullableNumber(model.output_cost_per_audio_token)
         const cacheReadInputTokenCost = toNullableNumber(model.cache_read_input_token_cost)
         const cacheCreationInputTokenCost = toNullableNumber(model.cache_creation_input_token_cost)
 
-        // Priority order is intentional: token > request > pixel.
-        const inputCost = inputCostPerToken ?? inputCostPerRequest ?? inputCostPerPixel ?? null
+        // Priority order: token > request > image > character > pixel.
+        // We pick whichever primary unit the upstream catalog defines so consumers
+        // can compute a baseline cost without knowing the specialized cost dimensions.
+        const inputCost = inputCostPerToken ?? inputCostPerRequest ?? inputCostPerImage ?? inputCostPerCharacter ?? inputCostPerPixel ?? null
         const inputCostUnit: InputCostUnit = inputCostPerToken != null
             ? 'token'
             : inputCostPerRequest != null
                 ? 'request'
-                : inputCostPerPixel != null
-                    ? 'pixel'
-                    : null
+                : inputCostPerImage != null
+                    ? 'image'
+                    : inputCostPerCharacter != null
+                        ? 'character'
+                        : inputCostPerPixel != null
+                            ? 'pixel'
+                            : null
 
-        // Priority order is intentional: token > request > image.
-        const outputCost = outputCostPerToken ?? outputCostPerRequest ?? outputCostPerImage ?? null
+        // Priority order: token > request > image > second > character.
+        const outputCost = outputCostPerToken ?? outputCostPerRequest ?? outputCostPerImage ?? outputCostPerSecond ?? outputCostPerCharacter ?? null
         const outputCostUnit: OutputCostUnit = outputCostPerToken != null
             ? 'token'
             : outputCostPerRequest != null
                 ? 'request'
                 : outputCostPerImage != null
                     ? 'image'
-                    : null
+                    : outputCostPerSecond != null
+                        ? 'second'
+                        : outputCostPerCharacter != null
+                            ? 'character'
+                            : null
 
         const cacheReadInputCost = cacheReadInputTokenCost
         const cacheCreationInputCost = cacheCreationInputTokenCost
@@ -249,6 +327,11 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
             inputCostUnit,
             outputCost,
             outputCostUnit,
+            inputAudioTokenCost: inputCostPerAudioToken,
+            outputAudioTokenCost: outputCostPerAudioToken,
+            inputImageTokenCost: inputCostPerImageToken,
+            outputImageTokenCost: outputCostPerImageToken,
+            outputSecondCost: outputCostPerSecond,
             cacheReadInputCost,
             cacheReadInputCostUnit,
             cacheCreationInputCost,
@@ -276,8 +359,33 @@ function createModelListFileContent(modelPerProvider: Record<string, IndexedMode
     }
 
     const providerTypeUnion = providerNames.map(provider => JSON.stringify(provider)).join(' | ')
+
+    const providerModelTypeDeclaration = `export type AICostProviderModel = {
+    maxTokens: number | null
+    name: string
+    type: 'chat' | 'completion' | 'embedding' | 'responses' | 'image_generation' | 'audio_speech' | 'audio_transcription'
+    inputCost: number | null
+    inputCostUnit: 'token' | 'request' | 'pixel' | 'image' | 'character' | null
+    outputCost: number | null
+    outputCostUnit: 'token' | 'request' | 'image' | 'second' | 'character' | null
+    inputAudioTokenCost: number | null
+    outputAudioTokenCost: number | null
+    inputImageTokenCost: number | null
+    outputImageTokenCost: number | null
+    outputSecondCost: number | null
+    cacheReadInputCost: number | null
+    cacheReadInputCostUnit: 'token' | null
+    cacheCreationInputCost: number | null
+    cacheCreationInputCostUnit: 'token' | null
+    priceTier?: number
+}`
+
     modelListFileContent += `export type AICostModelProvider = ${providerTypeUnion}\n\n`
-    modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as const\n\n`
+    modelListFileContent += `${providerModelTypeDeclaration}\n\n`
+    // The annotation is required because the inferred literal type from `as const`
+    // exceeds TypeScript's declaration-emit serialization limit once every provider
+    // and model is included.
+    modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList: Record<AICostModelProvider, AICostProviderModel[]> = ${modelPerProviderContent}\n\n`
 
     return modelListFileContent
 }
