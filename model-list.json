@@ -25362,7 +25362,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": null,
+            "maxTokens": 131072,
             "name": "together_ai/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
