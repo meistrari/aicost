@@ -22031,6 +22031,20 @@
         },
         {
             "maxTokens": 65536,
+            "name": "openrouter/google/gemini-3.1-flash-lite-preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
             "name": "openrouter/google/gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
