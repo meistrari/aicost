@@ -29453,6 +29453,20 @@
         },
         {
             "maxTokens": 2000000,
+            "name": "xai/grok-4.20-0309-reasoning",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 2000000,
             "name": "xai/grok-4.20-beta-0309-non-reasoning",
             "type": "chat",
             "inputCost": 0.000002,
