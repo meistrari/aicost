@@ -365,6 +365,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 128000,
+            "name": "anthropic.claude-mythos-preview",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 8191,
             "name": "anthropic.claude-v1",
             "type": "chat",
