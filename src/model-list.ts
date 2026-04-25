@@ -1,5 +1,5 @@
-// Last updated: 2026-04-24T18:16:07.902Z
-// Next update: 2026-04-25T00:16:07.902Z
+// Last updated: 2026-04-25T00:31:28.455Z
+// Next update: 2026-04-25T06:31:28.455Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -9244,6 +9244,48 @@ export const AICostModelList = {
             "outputCost": 0.00003,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.5-2026-04-23",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.5-pro",
+            "type": "responses",
+            "inputCost": 0.00006,
+            "inputCostUnit": "token",
+            "outputCost": 0.00036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000006,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.5-pro-2026-04-23",
+            "type": "responses",
+            "inputCost": 0.00006,
+            "inputCostUnit": "token",
+            "outputCost": 0.00036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000006,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
