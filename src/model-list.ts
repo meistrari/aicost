@@ -1,7 +1,7 @@
-// Last updated: 2026-04-26T00:34:46.973Z
-// Next update: 2026-04-26T06:34:46.973Z
+// Last updated: 2026-04-26T06:39:34.849Z
+// Next update: 2026-04-26T12:39:34.849Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "aleph_alpha" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -3177,6 +3177,34 @@ export const AICostModelList = {
             "inputCost": 0.000002,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-east-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-west-2/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -6579,7 +6607,35 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "azure/gpt-5.4-mini-2026-03-17",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "azure/gpt-5.4-nano",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure/gpt-5.4-nano-2026-03-17",
             "type": "chat",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
@@ -9419,7 +9475,35 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 128000,
+            "name": "gpt-5.4-mini-2026-03-17",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "gpt-5.4-nano",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-5.4-nano-2026-03-17",
             "type": "chat",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
@@ -16567,6 +16651,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 8192,
+            "name": "gemini-embedding-2",
+            "type": "embedding",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
             "name": "gemini-flash-experimental",
             "type": "embedding",
             "inputCost": 0,
@@ -16820,6 +16918,20 @@ export const AICostModelList = {
         {
             "maxTokens": 8192,
             "name": "vertex_ai/gemini-embedding-2-preview",
+            "type": "embedding",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "vertex_ai/gemini-embedding-2",
             "type": "embedding",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
@@ -17853,7 +17965,7 @@ export const AICostModelList = {
     ],
     "gradient_ai": [
         {
-            "maxTokens": 2048,
+            "maxTokens": 40960,
             "name": "gradient_ai/alibaba-qwen3-32b",
             "type": "chat",
             "inputCost": null,
@@ -18320,7 +18432,7 @@ export const AICostModelList = {
     ],
     "heroku": [
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "heroku/claude-3-5-haiku",
             "type": "chat",
             "inputCost": null,
@@ -19048,92 +19160,6 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
-        }
-    ],
-    "aleph_alpha": [
-        {
-            "maxTokens": 2048,
-            "name": "luminous-base",
-            "type": "completion",
-            "inputCost": 0.00003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000033,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 2048,
-            "name": "luminous-base-control",
-            "type": "chat",
-            "inputCost": 0.0000375,
-            "inputCostUnit": "token",
-            "outputCost": 0.00004125,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 2048,
-            "name": "luminous-extended",
-            "type": "completion",
-            "inputCost": 0.000045,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000495,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 2048,
-            "name": "luminous-extended-control",
-            "type": "chat",
-            "inputCost": 0.00005625,
-            "inputCostUnit": "token",
-            "outputCost": 0.000061875,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 2048,
-            "name": "luminous-supreme",
-            "type": "completion",
-            "inputCost": 0.000175,
-            "inputCostUnit": "token",
-            "outputCost": 0.0001925,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 2048,
-            "name": "luminous-supreme-control",
-            "type": "chat",
-            "inputCost": 0.00021875,
-            "inputCostUnit": "token",
-            "outputCost": 0.000240625,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
         }
     ],
     "meta_llama": [
@@ -21840,7 +21866,7 @@ export const AICostModelList = {
     ],
     "openrouter": [
         {
-            "maxTokens": 200000,
+            "maxTokens": 4096,
             "name": "openrouter/anthropic/claude-3-haiku",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -22232,7 +22258,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": 2000,
             "name": "openrouter/mancer/weaver",
             "type": "chat",
             "inputCost": 0.000005625,
@@ -22246,7 +22272,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "openrouter/meta-llama/llama-3-70b-instruct",
             "type": "chat",
             "inputCost": 5.9e-7,
@@ -22344,7 +22370,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8191,
             "name": "openrouter/mistralai/mistral-7b-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -22358,7 +22384,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 8191,
             "name": "openrouter/mistralai/mistral-large",
             "type": "chat",
             "inputCost": 0.000008,
@@ -22372,7 +22398,7 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 131072,
             "name": "openrouter/mistralai/mistral-small-3.1-24b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22386,7 +22412,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": 128000,
             "name": "openrouter/mistralai/mistral-small-3.2-24b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22428,7 +22454,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 4095,
+            "maxTokens": 4096,
             "name": "openrouter/openai/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -22442,7 +22468,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 16383,
+            "maxTokens": 4096,
             "name": "openrouter/openai/gpt-3.5-turbo-16k",
             "type": "chat",
             "inputCost": 0.000003,
@@ -22456,7 +22482,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 4096,
             "name": "openrouter/openai/gpt-4",
             "type": "chat",
             "inputCost": 0.00003,
@@ -22932,7 +22958,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 6144,
+            "maxTokens": 4096,
             "name": "openrouter/undi95/remm-slerp-l2-13b",
             "type": "chat",
             "inputCost": 0.000001875,
@@ -25482,7 +25508,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "together_ai/deepseek-ai/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 6e-7,
