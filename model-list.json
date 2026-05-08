@@ -24824,6 +24824,20 @@
     ],
     "sambanova": [
         {
+            "maxTokens": 131072,
+            "name": "sambanova/MiniMax-M2.7",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 32768,
             "name": "sambanova/DeepSeek-R1",
             "type": "chat",
