@@ -1,5 +1,5 @@
-// Last updated: 2026-05-17T00:42:09.309Z
-// Next update: 2026-05-17T06:42:09.309Z
+// Last updated: 2026-05-17T06:59:15.194Z
+// Next update: 2026-05-17T12:59:15.194Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -3748,6 +3748,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 64000,
+            "name": "jp.anthropic.claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7362,6 +7376,118 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-2026-03-05",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-pro",
+            "type": "responses",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000003,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-pro-2026-03-05",
+            "type": "responses",
+            "inputCost": 0.00003,
+            "inputCostUnit": "token",
+            "outputCost": 0.00018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000003,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-mini",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-mini-2026-03-17",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-nano",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/gpt-5.4-nano-2026-03-17",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": null,
