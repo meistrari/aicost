@@ -13224,6 +13224,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 202800,
+            "name": "fireworks_ai/accounts/fireworks/models/glm-5p1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 131072,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
             "type": "chat",
@@ -13502,6 +13516,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 202800,
+            "name": "fireworks_ai/glm-5p1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 262144,
@@ -16602,6 +16630,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 65536,
+            "name": "gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 65535,
             "name": "gemini-2.5-flash-lite",
             "type": "chat",
@@ -16994,6 +17036,20 @@
         {
             "maxTokens": 65536,
             "name": "vertex_ai/gemini-3.1-flash-lite-preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
+            "name": "vertex_ai/gemini-3.1-flash-lite",
             "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
@@ -20154,6 +20210,20 @@
             "priceTier": 1
         },
         {
+            "maxTokens": 262144,
+            "name": "mistral/ministral-8b-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 8191,
             "name": "mistral/mistral-tiny",
             "type": "chat",
@@ -22549,6 +22619,20 @@
         },
         {
             "maxTokens": 65536,
+            "name": "openrouter/google/gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
             "name": "openrouter/google/gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -23349,15 +23433,43 @@
             "maxTokens": 16384,
             "name": "openrouter/xiaomi/mimo-v2-flash",
             "type": "chat",
-            "inputCost": 9e-8,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.9e-7,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0,
+            "cacheReadInputCost": 1e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "openrouter/xiaomi/mimo-v2.5-pro",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/xiaomi/mimo-v2.5",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 64000,

@@ -1,5 +1,5 @@
-// Last updated: 2026-05-23T00:43:05.103Z
-// Next update: 2026-05-23T06:43:05.103Z
+// Last updated: 2026-05-23T06:56:27.894Z
+// Next update: 2026-05-23T12:56:27.894Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -13230,6 +13230,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 202800,
+            "name": "fireworks_ai/accounts/fireworks/models/glm-5p1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 131072,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
             "type": "chat",
@@ -13508,6 +13522,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 202800,
+            "name": "fireworks_ai/glm-5p1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 262144,
@@ -16608,6 +16636,20 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 65536,
+            "name": "gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 65535,
             "name": "gemini-2.5-flash-lite",
             "type": "chat",
@@ -17000,6 +17042,20 @@ export const AICostModelList = {
         {
             "maxTokens": 65536,
             "name": "vertex_ai/gemini-3.1-flash-lite-preview",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
+            "name": "vertex_ai/gemini-3.1-flash-lite",
             "type": "chat",
             "inputCost": 2.5e-7,
             "inputCostUnit": "token",
@@ -20160,6 +20216,20 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
+            "maxTokens": 262144,
+            "name": "mistral/ministral-8b-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 8191,
             "name": "mistral/mistral-tiny",
             "type": "chat",
@@ -22555,6 +22625,20 @@ export const AICostModelList = {
         },
         {
             "maxTokens": 65536,
+            "name": "openrouter/google/gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 65536,
             "name": "openrouter/google/gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -23355,15 +23439,43 @@ export const AICostModelList = {
             "maxTokens": 16384,
             "name": "openrouter/xiaomi/mimo-v2-flash",
             "type": "chat",
-            "inputCost": 9e-8,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.9e-7,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0,
+            "cacheReadInputCost": 1e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "openrouter/xiaomi/mimo-v2.5-pro",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/xiaomi/mimo-v2.5",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "maxTokens": 64000,
