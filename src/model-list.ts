@@ -1,5 +1,5 @@
-// Last updated: 2026-05-23T18:22:00.135Z
-// Next update: 2026-05-24T00:22:00.135Z
+// Last updated: 2026-05-24T00:44:24.930Z
+// Next update: 2026-05-24T06:44:24.930Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
@@ -21333,6 +21333,34 @@ export const AICostModelList = {
     "oci": [
         {
             "maxTokens": 4000,
+            "name": "oci/meta.llama-3.1-8b-instruct",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 4000,
+            "name": "oci/meta.llama-3.1-70b-instruct",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 4000,
             "name": "oci/meta.llama-3.1-405b-instruct",
             "type": "chat",
             "inputCost": 0.00001068,
@@ -21374,7 +21402,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": 8192,
             "name": "oci/meta.llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -21388,7 +21416,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": 8192,
             "name": "oci/meta.llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -21514,6 +21542,90 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
+            "maxTokens": 65536,
+            "name": "oci/google.gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 65536,
+            "name": "oci/google.gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "oci/google.gemini-2.5-flash-lite",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "oci/cohere.command-a-vision",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "oci/cohere.command-a-reasoning",
+            "type": "chat",
+            "inputCost": 0.00000156,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "oci/cohere.embed-multilingual-image-v3.0",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 4000,
             "name": "oci/cohere.command-a-reasoning-08-2025",
             "type": "chat",
@@ -21596,20 +21708,6 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
-        },
-        {
-            "maxTokens": 4000,
-            "name": "oci/meta.llama-3.1-70b-instruct",
-            "type": "chat",
-            "inputCost": 7.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.2e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
         },
         {
             "maxTokens": 4000,
@@ -21696,8 +21794,8 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
-            "maxTokens": 65536,
-            "name": "oci/google.gemini-2.5-pro",
+            "maxTokens": 128000,
+            "name": "oci/openai.gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
             "inputCostUnit": "token",
@@ -21710,26 +21808,26 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
-            "name": "oci/google.gemini-2.5-flash",
+            "maxTokens": 128000,
+            "name": "oci/openai.gpt-5-mini",
             "type": "chat",
-            "inputCost": 1.5e-7,
+            "inputCost": 2.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 0.000002,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 2
         },
         {
-            "maxTokens": 65536,
-            "name": "oci/google.gemini-2.5-flash-lite",
+            "maxTokens": 128000,
+            "name": "oci/openai.gpt-5-nano",
             "type": "chat",
-            "inputCost": 7.5e-8,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 4e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
