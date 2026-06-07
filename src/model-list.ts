@@ -1,7 +1,7 @@
-// Last updated: 2026-06-06T18:28:39.742Z
-// Next update: 2026-06-07T00:28:39.742Z
+// Last updated: 2026-06-07T00:49:21.914Z
+// Next update: 2026-06-07T06:49:21.914Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "novita" | "llamagate" | "sarvam" | "bedrock_mantle"
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -2018,13 +2018,13 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.0000036,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -2032,13 +2032,13 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.0000036,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -2200,13 +2200,13 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.0000036,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -2214,13 +2214,13 @@ export const AICostModelList = {
             "maxTokens": 8192,
             "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.0000036,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -3747,6 +3747,20 @@ export const AICostModelList = {
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "jp.anthropic.claude-opus-4-7",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
             "maxTokens": 64000,
             "name": "anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -4772,13 +4786,13 @@ export const AICostModelList = {
             "maxTokens": 64000,
             "name": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.0000036,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.6e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -8210,6 +8224,20 @@ export const AICostModelList = {
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/kimi-k2.6",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -19358,6 +19386,38 @@ export const AICostModelList = {
             "priceTier": 3
         }
     ],
+    "inception": [
+        {
+            "maxTokens": 50000,
+            "name": "inception/mercury-2",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ],
+    "text-completion-inception": [
+        {
+            "maxTokens": 8192,
+            "name": "text-completion-inception/mercury-edit-2",
+            "type": "completion",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ],
     "lambda_ai": [
         {
             "maxTokens": 131072,
@@ -19763,6 +19823,20 @@ export const AICostModelList = {
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 3.75e-7,
             "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M3",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 2
         }
     ],
@@ -20316,6 +20390,20 @@ export const AICostModelList = {
         {
             "maxTokens": 262144,
             "name": "mistral/ministral-8b-2512",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/ministral-8b-latest",
             "type": "chat",
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
@@ -25560,30 +25648,32 @@ export const AICostModelList = {
     ],
     "snowflake": [
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/claude-3-5-sonnet",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/deepseek-r1",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0.00000135,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000054,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -25677,43 +25767,46 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/llama3.1-405b",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/llama3.1-70b",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/llama3.1-8b",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -25742,17 +25835,18 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/llama3.3-70b",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -25781,17 +25875,18 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/mistral-large2",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -25859,17 +25954,200 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "snowflake/snowflake-llama-3.3-70b",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-sonnet-4-5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-4-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-4-opus",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-haiku-4-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/claude-3-7-sonnet",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/openai-gpt-4.1",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000008,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/openai-gpt-5",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/openai-gpt-5-mini",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/openai-gpt-5-nano",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "snowflake/llama4-maverick",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 8192,
+            "name": "snowflake/snowflake-arctic-embed-l-v2.0",
+            "type": "embedding",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
+            "name": "snowflake/snowflake-arctic-embed-m-v2.0",
+            "type": "embedding",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "text-completion-codestral": [
@@ -29000,6 +29278,20 @@ export const AICostModelList = {
     ],
     "vertex_ai-openai_models": [
         {
+            "maxTokens": 128000,
+            "name": "vertex_ai/google/gemma-4-26b-a4b-it-maas",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 32768,
             "name": "vertex_ai/openai/gpt-oss-120b-maas",
             "type": "chat",
@@ -32070,6 +32362,34 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/openai.gpt-5.5",
+            "type": "responses",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/openai.gpt-5.4",
+            "type": "responses",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ]
 } as const
