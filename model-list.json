@@ -114,6 +114,20 @@
         },
         {
             "maxTokens": 8192,
+            "name": "amazon.titan-embed-g1-text-02",
+            "type": "embedding",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 8192,
             "name": "amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -9888,7 +9902,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 272000,
+            "maxTokens": 128000,
             "name": "gpt-5-pro",
             "type": "responses",
             "inputCost": 0.000015,
@@ -9902,7 +9916,7 @@
             "priceTier": 5
         },
         {
-            "maxTokens": 272000,
+            "maxTokens": 128000,
             "name": "gpt-5-pro-2025-10-06",
             "type": "responses",
             "inputCost": 0.000015,
@@ -21209,7 +21223,7 @@
         },
         {
             "maxTokens": 131072,
-            "name": "mistral/mistral-medium-latest",
+            "name": "mistral/mistral-medium-2508",
             "type": "chat",
             "inputCost": 4e-7,
             "inputCostUnit": "token",
@@ -21220,6 +21234,34 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/mistral-medium-2604",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "mistral/mistral-medium-latest",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -24750,6 +24792,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 65535,
+            "name": "openrouter/z-ai/glm-5.1",
+            "type": "chat",
+            "inputCost": 0.00000105,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 64000,
             "name": "openrouter/minimax/minimax-m2.1",
             "type": "chat",
@@ -26357,9 +26413,9 @@
             "maxTokens": 131072,
             "name": "sambanova/MiniMax-M2.7",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 6e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 0.0000024,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -26564,7 +26620,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 131072,
             "name": "sambanova/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 0.000003,
@@ -26581,6 +26637,20 @@
             "maxTokens": 131072,
             "name": "sambanova/gpt-oss-120b",
             "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 32768,
+            "name": "sambanova/DeepSeek-V3.2",
+            "type": "chat",
             "inputCost": 0.000003,
             "inputCostUnit": "token",
             "outputCost": 0.0000045,
@@ -26590,6 +26660,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "sambanova/gemma-4-31B-it",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000115,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "snowflake": [
@@ -31735,6 +31819,20 @@
         },
         {
             "maxTokens": null,
+            "name": "zai/glm-5.1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "zai/glm-5-code",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -31760,6 +31858,20 @@
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         },
         {
             "maxTokens": null,
