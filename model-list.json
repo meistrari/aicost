@@ -18409,6 +18409,20 @@
         },
         {
             "maxTokens": 65535,
+            "name": "gemini-omni-flash-preview",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65535,
             "name": "gemini-3.5-flash",
             "type": "chat",
             "inputCost": 0.0000015,
