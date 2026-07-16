@@ -1,5 +1,5 @@
-// Last updated: 2026-07-15T18:25:17.110Z
-// Next update: 2026-07-16T00:25:17.110Z
+// Last updated: 2026-07-16T00:30:53.685Z
+// Next update: 2026-07-16T06:30:53.685Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "pinstripes" | "darkbloom"
 
@@ -34426,6 +34426,48 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/openai.gpt-5.6-sol",
+            "type": "responses",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/openai.gpt-5.6-terra",
+            "type": "responses",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000034375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/openai.gpt-5.6-luna",
+            "type": "responses",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
