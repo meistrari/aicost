@@ -10,7 +10,7 @@ const originalFetch = globalThis.fetch
 type TestModel = (typeof AICostModelList)[keyof typeof AICostModelList][number]
 
 function findModel(predicate: (model: TestModel) => boolean): { provider: keyof typeof AICostModelList, model: TestModel } {
-    for (const [provider, models] of Object.entries(AICostModelList) as Array<[keyof typeof AICostModelList, TestModel[]]>) {
+    for (const [provider, models] of Object.entries(AICostModelList) as unknown as Array<[keyof typeof AICostModelList, readonly TestModel[]]>) {
         const model = models.find(predicate)
         if (model) {
             return { provider, model }
@@ -22,14 +22,16 @@ function findModel(predicate: (model: TestModel) => boolean): { provider: keyof 
 
 describe('calculateCost cache pricing', () => {
     beforeAll(() => {
-        globalThis.fetch = (() => Promise.reject(new Error('force local model list'))) as typeof fetch
+        globalThis.fetch = (async () => {
+            throw new Error('force local model list')
+        }) as unknown as typeof fetch
     })
 
     afterAll(() => {
         globalThis.fetch = originalFetch
     })
 
-    it('calculates cache read and cache creation costs when provided', async () => {
+    it('calculates input and cache costs independently when cache tokens are provided', async () => {
         const { provider, model } = findModel(model =>
             model.inputCostUnit === 'token'
             && model.cacheReadInputCost != null
@@ -50,9 +52,7 @@ describe('calculateCost cache pricing', () => {
             cacheCreationInputTokens,
         })
 
-        const adjustedInputAmount = Math.max(inputAmount - cacheReadInputTokens - cacheCreationInputTokens, 0)
-
-        expect(cost.inputCost).toBe(round((model.inputCost ?? 0) * adjustedInputAmount))
+        expect(cost.inputCost).toBe(round((model.inputCost ?? 0) * inputAmount))
         expect(cost.outputCost).toBe(round((model.outputCost ?? 0) * outputAmount))
         expect(cost.cacheReadInputCost).toBe(round((model.cacheReadInputCost ?? 0) * cacheReadInputTokens))
         expect(cost.cacheCreationInputCost).toBe(round((model.cacheCreationInputCost ?? 0) * cacheCreationInputTokens))

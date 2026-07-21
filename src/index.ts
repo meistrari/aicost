@@ -157,11 +157,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
 
     const pricedCacheReadInputTokens = cacheReadInputCost != null ? cacheReadInputTokens : 0
     const pricedCacheCreationInputTokens = cacheCreationInputCost != null ? cacheCreationInputTokens : 0
-    const adjustedInputAmount = modelInfo.inputCostUnit === 'token'
-        ? Math.max(options.inputAmount - pricedCacheReadInputTokens - pricedCacheCreationInputTokens, 0)
-        : options.inputAmount
-
-    const resolvedInputCost = calculateResolvedCost(inputCost, adjustedInputAmount)
+    const resolvedInputCost = calculateResolvedCost(inputCost, options.inputAmount)
     const resolvedOutputCost = calculateResolvedCost(outputCost, options.outputAmount ?? 0)
     const resolvedCacheReadInputCost = calculateResolvedCost(cacheReadInputCost, pricedCacheReadInputTokens)
     const resolvedCacheCreationInputCost = calculateResolvedCost(cacheCreationInputCost, pricedCacheCreationInputTokens)
