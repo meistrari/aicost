@@ -7,17 +7,42 @@ type InputCostUnit = 'token' | 'request' | 'pixel' | null
 type OutputCostUnit = 'token' | 'request' | 'image' | null
 type CacheInputCostUnit = 'token' | null
 
+export type GoogleModalityTokenCount = {
+    modality?: string
+    tokenCount?: number | string
+    [key: string]: unknown
+}
+
+export type GoogleUsageMetadata = {
+    promptTokenCount?: number | string
+    cachedContentTokenCount?: number | string
+    candidatesTokenCount?: number | string
+    toolUsePromptTokenCount?: number | string
+    thoughtsTokenCount?: number | string
+    totalTokenCount?: number | string
+    promptTokensDetails?: GoogleModalityTokenCount[]
+    cacheTokensDetails?: GoogleModalityTokenCount[]
+    candidatesTokensDetails?: GoogleModalityTokenCount[]
+    toolUsePromptTokensDetails?: GoogleModalityTokenCount[]
+    serviceTier?: string
+    [key: string]: unknown
+}
+
 type ProviderModel = {
     maxTokens: number | null
     name: string
     type: string
     inputCost: number | null
+    inputCostAbove200kTokens?: number
     inputCostUnit: InputCostUnit
     outputCost: number | null
+    outputCostAbove200kTokens?: number
     outputCostUnit: OutputCostUnit
     cacheReadInputCost: number | null
+    cacheReadInputCostAbove200kTokens?: number
     cacheReadInputCostUnit: CacheInputCostUnit
     cacheCreationInputCost: number | null
+    cacheCreationInputCostAbove200kTokens?: number
     cacheCreationInputCostUnit: CacheInputCostUnit
     priceTier?: number
 }
@@ -55,6 +80,16 @@ function isAICostModelList(value: unknown): value is AICostModelListGeneric {
 
 function calculateResolvedCost(unitCost: number | null, amount: number): number {
     return Number(((unitCost ?? 0) * amount).toFixed(10))
+}
+
+function toNonNegativeAmount(value: unknown, fallback = 0): number {
+    const amount = typeof value === 'string' && value.trim() !== ''
+        ? Number(value)
+        : value
+
+    return typeof amount === 'number' && Number.isFinite(amount) && amount >= 0
+        ? amount
+        : fallback
 }
 
 /**
@@ -120,6 +155,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     outputAmount?: number
     cacheReadInputTokens?: number
     cacheCreationInputTokens?: number
+    usageMetadata?: GoogleUsageMetadata
 }): Promise<{
     inputCost: number
     outputCost: number
@@ -141,24 +177,39 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     if (!modelInfo)
         throw new Error(`Model ${options.model} not found for provider ${options.provider}`)
 
-    const {
-        inputCost,
-        outputCost,
-        cacheReadInputCost,
-        cacheCreationInputCost,
-    } = modelInfo
+    const metadata = options.usageMetadata
+    const promptTokens = toNonNegativeAmount(metadata?.promptTokenCount, options.inputAmount)
+    const cacheReadInputTokens = Math.min(
+        promptTokens,
+        toNonNegativeAmount(metadata?.cachedContentTokenCount, toNonNegativeAmount(options.cacheReadInputTokens)),
+    )
+    const cacheCreationInputTokens = toNonNegativeAmount(options.cacheCreationInputTokens)
+    const inputAmount = metadata ? promptTokens - cacheReadInputTokens : options.inputAmount
+    const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, toNonNegativeAmount(options.outputAmount))
+    const thinkingTokens = toNonNegativeAmount(metadata?.thoughtsTokenCount)
+    const outputAmount = metadata ? candidateTokens + thinkingTokens : toNonNegativeAmount(options.outputAmount)
+    const contextAmount = metadata
+        ? promptTokens
+        : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
+    const useLongContextPricing = contextAmount > 200_000
 
-    const cacheReadInputTokens = typeof options.cacheReadInputTokens === 'number' && Number.isFinite(options.cacheReadInputTokens) && options.cacheReadInputTokens > 0
-        ? options.cacheReadInputTokens
-        : 0
-    const cacheCreationInputTokens = typeof options.cacheCreationInputTokens === 'number' && Number.isFinite(options.cacheCreationInputTokens) && options.cacheCreationInputTokens > 0
-        ? options.cacheCreationInputTokens
-        : 0
+    const inputCost = useLongContextPricing
+        ? modelInfo.inputCostAbove200kTokens ?? modelInfo.inputCost
+        : modelInfo.inputCost
+    const outputCost = useLongContextPricing
+        ? modelInfo.outputCostAbove200kTokens ?? modelInfo.outputCost
+        : modelInfo.outputCost
+    const cacheReadInputCost = useLongContextPricing
+        ? modelInfo.cacheReadInputCostAbove200kTokens ?? modelInfo.cacheReadInputCost
+        : modelInfo.cacheReadInputCost
+    const cacheCreationInputCost = useLongContextPricing
+        ? modelInfo.cacheCreationInputCostAbove200kTokens ?? modelInfo.cacheCreationInputCost
+        : modelInfo.cacheCreationInputCost
 
     const pricedCacheReadInputTokens = cacheReadInputCost != null ? cacheReadInputTokens : 0
     const pricedCacheCreationInputTokens = cacheCreationInputCost != null ? cacheCreationInputTokens : 0
-    const resolvedInputCost = calculateResolvedCost(inputCost, options.inputAmount)
-    const resolvedOutputCost = calculateResolvedCost(outputCost, options.outputAmount ?? 0)
+    const resolvedInputCost = calculateResolvedCost(inputCost, inputAmount)
+    const resolvedOutputCost = calculateResolvedCost(outputCost, outputAmount)
     const resolvedCacheReadInputCost = calculateResolvedCost(cacheReadInputCost, pricedCacheReadInputTokens)
     const resolvedCacheCreationInputCost = calculateResolvedCost(cacheCreationInputCost, pricedCacheCreationInputTokens)
 

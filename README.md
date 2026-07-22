@@ -31,6 +31,20 @@ console.log(cost)
 }
 ```
 
+For Google generation responses, pass the complete `usageMetadata` object. This lets aicost include thinking tokens, cached input, and model-specific long-context rates:
+
+```ts
+const cost = await calculateCost({
+    provider: 'vertex-ai',
+    model: 'gemini-2.5-pro',
+    inputAmount: response.usageMetadata.promptTokenCount,
+    outputAmount: response.usageMetadata.candidatesTokenCount,
+    usageMetadata: response.usageMetadata,
+})
+```
+
+When `usageMetadata` is present, its prompt, cached-content, candidate, and thinking counts are authoritative. The prompt size selects the applicable context tier; Google charges all input and output tokens at the long-context rate when the prompt exceeds 200,000 tokens.
+
 ### Get information for a model
 Retrieve detailed information about a specific AI model.
 
