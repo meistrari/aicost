@@ -156,6 +156,24 @@ describe('calculateCost cache pricing', () => {
         expect(cost.outputCost).toBe(0.001)
     })
 
+    it('includes Gemini tool-use prompt tokens in input cost and context tier', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 199_990,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 199_990,
+                toolUsePromptTokenCount: 20,
+                candidatesTokenCount: 100,
+                totalTokenCount: 200_110,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.500025)
+        expect(cost.outputCost).toBe(0.0015)
+    })
+
     it('uses Gemini long-context rates for all tokens above a 200K prompt', async () => {
         const cost = await calculateCost({
             provider: 'vertex-ai',
@@ -210,5 +228,17 @@ describe('calculateCost cache pricing', () => {
         expect(cost.inputCost).toBe(0.275)
         expect(cost.cacheReadInputCost).toBe(0.025)
         expect(cost.outputCost).toBe(0.003)
+    })
+
+    it('returns a token unit for tier-only cache-creation pricing', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 200_001,
+            cacheCreationInputTokens: 400,
+        })
+
+        expect(cost.cacheCreationInputCost).toBe(0.0001)
+        expect(cost.cacheCreationInputCostUnit).toBe('token')
     })
 })

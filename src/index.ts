@@ -184,12 +184,15 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         toNonNegativeAmount(metadata?.cachedContentTokenCount, toNonNegativeAmount(options.cacheReadInputTokens)),
     )
     const cacheCreationInputTokens = toNonNegativeAmount(options.cacheCreationInputTokens)
-    const inputAmount = metadata ? promptTokens - cacheReadInputTokens : options.inputAmount
+    const toolUsePromptTokens = toNonNegativeAmount(metadata?.toolUsePromptTokenCount)
+    const inputAmount = metadata
+        ? promptTokens - cacheReadInputTokens + toolUsePromptTokens
+        : options.inputAmount
     const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, toNonNegativeAmount(options.outputAmount))
     const thinkingTokens = toNonNegativeAmount(metadata?.thoughtsTokenCount)
     const outputAmount = metadata ? candidateTokens + thinkingTokens : toNonNegativeAmount(options.outputAmount)
     const contextAmount = metadata
-        ? promptTokens
+        ? promptTokens + toolUsePromptTokens
         : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
     const useLongContextPricing = contextAmount > 200_000
 

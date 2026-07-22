@@ -253,8 +253,10 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
 
         const cacheReadInputCost = cacheReadInputTokenCost
         const cacheCreationInputCost = cacheCreationInputTokenCost
-        const cacheReadInputCostUnit: CacheInputCostUnit = cacheReadInputTokenCost != null ? 'token' : null
-        const cacheCreationInputCostUnit: CacheInputCostUnit = cacheCreationInputTokenCost != null ? 'token' : null
+        const cacheReadInputCostUnit: CacheInputCostUnit
+            = cacheReadInputTokenCost != null || cacheReadInputTokenCostAbove200kTokens != null ? 'token' : null
+        const cacheCreationInputCostUnit: CacheInputCostUnit
+            = cacheCreationInputTokenCost != null || cacheCreationInputTokenCostAbove200kTokens != null ? 'token' : null
         const priceTier = calculatePriceTier(inputCost, outputCost, inputCostUnit, outputCostUnit)
 
         const structured: IndexedModel = {
