@@ -43,7 +43,7 @@ const cost = await calculateCost({
 })
 ```
 
-When `usageMetadata` is present, its prompt, tool-use prompt, cached-content, candidate, and thinking counts are authoritative. The effective prompt size selects the applicable context tier; Google charges all input and output tokens at the long-context rate when the prompt exceeds 200,000 tokens.
+When `usageMetadata` is present, its prompt, tool-use prompt, cached-content, candidate, thinking, and total counts are authoritative. The reported total prevents tool-use breakdowns from being counted twice across Google API variants. The effective prompt size selects the applicable context tier; Google charges all input and output tokens at the long-context rate when the prompt exceeds 200,000 tokens.
 
 ### Get information for a model
 Retrieve detailed information about a specific AI model.

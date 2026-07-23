@@ -179,20 +179,28 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
 
     const metadata = options.usageMetadata
     const promptTokens = toNonNegativeAmount(metadata?.promptTokenCount, options.inputAmount)
-    const cacheReadInputTokens = Math.min(
-        promptTokens,
-        toNonNegativeAmount(metadata?.cachedContentTokenCount, toNonNegativeAmount(options.cacheReadInputTokens)),
+    const rawCacheReadInputTokens = toNonNegativeAmount(
+        metadata?.cachedContentTokenCount,
+        toNonNegativeAmount(options.cacheReadInputTokens),
     )
+    const cacheReadInputTokens = metadata
+        ? Math.min(promptTokens, rawCacheReadInputTokens)
+        : rawCacheReadInputTokens
     const cacheCreationInputTokens = toNonNegativeAmount(options.cacheCreationInputTokens)
-    const toolUsePromptTokens = toNonNegativeAmount(metadata?.toolUsePromptTokenCount)
-    const inputAmount = metadata
-        ? promptTokens - cacheReadInputTokens + toolUsePromptTokens
-        : options.inputAmount
     const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, toNonNegativeAmount(options.outputAmount))
     const thinkingTokens = toNonNegativeAmount(metadata?.thoughtsTokenCount)
+    const toolUsePromptTokens = toNonNegativeAmount(metadata?.toolUsePromptTokenCount)
+    const accountedMetadataTokens = promptTokens + candidateTokens + thinkingTokens
+    const reportedTotalTokens = toNonNegativeAmount(metadata?.totalTokenCount, accountedMetadataTokens)
+    const separatelyReportedToolUseTokens = metadata
+        ? Math.min(toolUsePromptTokens, Math.max(0, reportedTotalTokens - accountedMetadataTokens))
+        : 0
+    const inputAmount = metadata
+        ? promptTokens - cacheReadInputTokens + separatelyReportedToolUseTokens
+        : options.inputAmount
     const outputAmount = metadata ? candidateTokens + thinkingTokens : toNonNegativeAmount(options.outputAmount)
     const contextAmount = metadata
-        ? promptTokens + toolUsePromptTokens
+        ? promptTokens + separatelyReportedToolUseTokens
         : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
     const useLongContextPricing = contextAmount > 200_000
 

@@ -60,6 +60,25 @@ describe('calculateCost cache pricing', () => {
         expect(cost.cacheCreationInputCostUnit).toBe('token')
     })
 
+    it('does not clamp legacy cache-read tokens to the input amount', async () => {
+        const { provider, model } = findModel(model =>
+            model.inputCostUnit === 'token'
+            && model.cacheReadInputCost != null,
+        )
+
+        const inputAmount = 50
+        const cacheReadInputTokens = 5000
+        const cost = await calculateCost({
+            provider,
+            model: model.name,
+            inputAmount,
+            cacheReadInputTokens,
+        })
+
+        expect(cost.inputCost).toBe(round((model.inputCost ?? 0) * inputAmount))
+        expect(cost.cacheReadInputCost).toBe(round((model.cacheReadInputCost ?? 0) * cacheReadInputTokens))
+    })
+
     it('does not adjust input cost for models without cache pricing fields', async () => {
         const { provider, model } = findModel(model =>
             model.inputCostUnit === 'token'
@@ -156,7 +175,25 @@ describe('calculateCost cache pricing', () => {
         expect(cost.outputCost).toBe(0.001)
     })
 
-    it('includes Gemini tool-use prompt tokens in input cost and context tier', async () => {
+    it('does not double-count Gemini tool-use tokens already included in the prompt', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 199_990,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 199_990,
+                toolUsePromptTokenCount: 20,
+                candidatesTokenCount: 100,
+                totalTokenCount: 200_090,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.2499875)
+        expect(cost.outputCost).toBe(0.001)
+    })
+
+    it('includes Gemini tool-use tokens when the reported total counts them separately', async () => {
         const cost = await calculateCost({
             provider: 'vertex-ai',
             model: 'gemini-2.5-pro',
