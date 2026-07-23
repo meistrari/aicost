@@ -60,6 +60,25 @@ describe('calculateCost cache pricing', () => {
         expect(cost.cacheCreationInputCostUnit).toBe('token')
     })
 
+    it('does not clamp legacy cache-read tokens to the input amount', async () => {
+        const { provider, model } = findModel(model =>
+            model.inputCostUnit === 'token'
+            && model.cacheReadInputCost != null,
+        )
+
+        const inputAmount = 50
+        const cacheReadInputTokens = 5000
+        const cost = await calculateCost({
+            provider,
+            model: model.name,
+            inputAmount,
+            cacheReadInputTokens,
+        })
+
+        expect(cost.inputCost).toBe(round((model.inputCost ?? 0) * inputAmount))
+        expect(cost.cacheReadInputCost).toBe(round((model.cacheReadInputCost ?? 0) * cacheReadInputTokens))
+    })
+
     it('does not adjust input cost for models without cache pricing fields', async () => {
         const { provider, model } = findModel(model =>
             model.inputCostUnit === 'token'
@@ -136,5 +155,127 @@ describe('calculateCost cache pricing', () => {
         expect(cost.cacheCreationInputCostUnit).toBe('token')
         expect(cost.cacheReadInputCost).toBe(round((model.cacheReadInputCost ?? 0) * cacheReadInputTokens))
         expect(cost.cacheCreationInputCost).toBe(round((model.cacheCreationInputCost ?? 0) * cacheCreationInputTokens))
+    })
+
+    it('includes Gemini thinking tokens in output cost', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 100,
+            outputAmount: 20,
+            usageMetadata: {
+                promptTokenCount: 100,
+                candidatesTokenCount: 20,
+                thoughtsTokenCount: 80,
+                totalTokenCount: 200,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.000125)
+        expect(cost.outputCost).toBe(0.001)
+    })
+
+    it('does not double-count Gemini tool-use tokens already included in the prompt', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 199_990,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 199_990,
+                toolUsePromptTokenCount: 20,
+                candidatesTokenCount: 100,
+                totalTokenCount: 200_090,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.2499875)
+        expect(cost.outputCost).toBe(0.001)
+    })
+
+    it('includes Gemini tool-use tokens when the reported total counts them separately', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 199_990,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 199_990,
+                toolUsePromptTokenCount: 20,
+                candidatesTokenCount: 100,
+                totalTokenCount: 200_110,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.500025)
+        expect(cost.outputCost).toBe(0.0015)
+    })
+
+    it('uses Gemini long-context rates for all tokens above a 200K prompt', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 200_001,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 200_001,
+                candidatesTokenCount: 100,
+                thoughtsTokenCount: 10_000,
+                totalTokenCount: 210_101,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.5000025)
+        expect(cost.outputCost).toBe(0.1515)
+    })
+
+    it('keeps Gemini base rates at the 200K boundary', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 200_000,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 200_000,
+                candidatesTokenCount: 100,
+                thoughtsTokenCount: 10_000,
+                totalTokenCount: 210_100,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.25)
+        expect(cost.outputCost).toBe(0.101)
+    })
+
+    it('prices cached Gemini input separately using the long-context tier', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 210_000,
+            outputAmount: 100,
+            usageMetadata: {
+                promptTokenCount: 210_000,
+                cachedContentTokenCount: 100_000,
+                candidatesTokenCount: 100,
+                thoughtsTokenCount: 100,
+                totalTokenCount: 210_200,
+            },
+        })
+
+        expect(cost.inputCost).toBe(0.275)
+        expect(cost.cacheReadInputCost).toBe(0.025)
+        expect(cost.outputCost).toBe(0.003)
+    })
+
+    it('returns a token unit for tier-only cache-creation pricing', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-pro',
+            inputAmount: 200_001,
+            cacheCreationInputTokens: 400,
+        })
+
+        expect(cost.cacheCreationInputCost).toBe(0.0001)
+        expect(cost.cacheCreationInputCostUnit).toBe('token')
     })
 })

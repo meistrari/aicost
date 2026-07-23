@@ -10,13 +10,17 @@ type RawModel = {
     mode?: string
     max_tokens?: number | null
     input_cost_per_token?: number | null
+    input_cost_per_token_above_200k_tokens?: number | null
     input_cost_per_request?: number | null
     input_cost_per_pixel?: number | null
     output_cost_per_token?: number | null
+    output_cost_per_token_above_200k_tokens?: number | null
     output_cost_per_request?: number | null
     output_cost_per_image?: number | null
     cache_read_input_token_cost?: number | null
+    cache_read_input_token_cost_above_200k_tokens?: number | null
     cache_creation_input_token_cost?: number | null
+    cache_creation_input_token_cost_above_200k_tokens?: number | null
 }
 
 type RawModelIndex = Record<string, RawModel>
@@ -26,12 +30,16 @@ type IndexedModel = {
     name: string
     type: ModelMode
     inputCost: number | null
+    inputCostAbove200kTokens?: number
     inputCostUnit: InputCostUnit
     outputCost: number | null
+    outputCostAbove200kTokens?: number
     outputCostUnit: OutputCostUnit
     cacheReadInputCost: number | null
+    cacheReadInputCostAbove200kTokens?: number
     cacheReadInputCostUnit: CacheInputCostUnit
     cacheCreationInputCost: number | null
+    cacheCreationInputCostAbove200kTokens?: number
     cacheCreationInputCostUnit: CacheInputCostUnit
     priceTier?: number
 }
@@ -80,18 +88,22 @@ function normalizeRawModel(value: unknown): RawModel | null {
         mode: toOptionalString(model.mode),
         max_tokens: toNullableNumber(model.max_tokens),
         input_cost_per_token: toNullableNumber(model.input_cost_per_token),
+        input_cost_per_token_above_200k_tokens: toNullableNumber(model.input_cost_per_token_above_200k_tokens),
         input_cost_per_request: toNullableNumber(model.input_cost_per_request),
         input_cost_per_pixel: toNullableNumber(model.input_cost_per_pixel),
         output_cost_per_token: toNullableNumber(model.output_cost_per_token),
+        output_cost_per_token_above_200k_tokens: toNullableNumber(model.output_cost_per_token_above_200k_tokens),
         output_cost_per_request: toNullableNumber(model.output_cost_per_request),
         output_cost_per_image: toNullableNumber(model.output_cost_per_image),
         cache_read_input_token_cost: toNullableNumber(model.cache_read_input_token_cost),
+        cache_read_input_token_cost_above_200k_tokens: toNullableNumber(model.cache_read_input_token_cost_above_200k_tokens),
         cache_creation_input_token_cost: toNullableNumber(model.cache_creation_input_token_cost),
+        cache_creation_input_token_cost_above_200k_tokens: toNullableNumber(model.cache_creation_input_token_cost_above_200k_tokens),
     }
 }
 
 function isProviderNameSafe(provider: string): boolean {
-    return /^[a-zA-Z0-9._-]+$/.test(provider)
+    return /^[\w.-]+$/.test(provider)
 }
 
 async function writeIfChanged(filePath: string, content: string): Promise<void> {
@@ -117,7 +129,7 @@ async function fetchModelIndex(): Promise<RawModelIndex> {
             throw new Error(`HTTP ${response.status}`)
         }
 
-        const json = await response.json() as unknown
+        const json = await response.json()
         if (!json || typeof json !== 'object' || Array.isArray(json)) {
             throw new Error('Unexpected JSON format: expected root object')
         }
@@ -207,13 +219,17 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
             acc[provider] = []
 
         const inputCostPerToken = toNullableNumber(model.input_cost_per_token)
+        const inputCostPerTokenAbove200kTokens = toNullableNumber(model.input_cost_per_token_above_200k_tokens)
         const inputCostPerRequest = toNullableNumber(model.input_cost_per_request)
         const inputCostPerPixel = toNullableNumber(model.input_cost_per_pixel)
         const outputCostPerToken = toNullableNumber(model.output_cost_per_token)
+        const outputCostPerTokenAbove200kTokens = toNullableNumber(model.output_cost_per_token_above_200k_tokens)
         const outputCostPerRequest = toNullableNumber(model.output_cost_per_request)
         const outputCostPerImage = toNullableNumber(model.output_cost_per_image)
         const cacheReadInputTokenCost = toNullableNumber(model.cache_read_input_token_cost)
+        const cacheReadInputTokenCostAbove200kTokens = toNullableNumber(model.cache_read_input_token_cost_above_200k_tokens)
         const cacheCreationInputTokenCost = toNullableNumber(model.cache_creation_input_token_cost)
+        const cacheCreationInputTokenCostAbove200kTokens = toNullableNumber(model.cache_creation_input_token_cost_above_200k_tokens)
 
         // Priority order is intentional: token > request > pixel.
         const inputCost = inputCostPerToken ?? inputCostPerRequest ?? inputCostPerPixel ?? null
@@ -237,8 +253,10 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
 
         const cacheReadInputCost = cacheReadInputTokenCost
         const cacheCreationInputCost = cacheCreationInputTokenCost
-        const cacheReadInputCostUnit: CacheInputCostUnit = cacheReadInputTokenCost != null ? 'token' : null
-        const cacheCreationInputCostUnit: CacheInputCostUnit = cacheCreationInputTokenCost != null ? 'token' : null
+        const cacheReadInputCostUnit: CacheInputCostUnit
+            = cacheReadInputTokenCost != null || cacheReadInputTokenCostAbove200kTokens != null ? 'token' : null
+        const cacheCreationInputCostUnit: CacheInputCostUnit
+            = cacheCreationInputTokenCost != null || cacheCreationInputTokenCostAbove200kTokens != null ? 'token' : null
         const priceTier = calculatePriceTier(inputCost, outputCost, inputCostUnit, outputCostUnit)
 
         const structured: IndexedModel = {
@@ -246,12 +264,16 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
             name,
             type: mode,
             inputCost,
+            ...(inputCostPerTokenAbove200kTokens != null ? { inputCostAbove200kTokens: inputCostPerTokenAbove200kTokens } : {}),
             inputCostUnit,
             outputCost,
+            ...(outputCostPerTokenAbove200kTokens != null ? { outputCostAbove200kTokens: outputCostPerTokenAbove200kTokens } : {}),
             outputCostUnit,
             cacheReadInputCost,
+            ...(cacheReadInputTokenCostAbove200kTokens != null ? { cacheReadInputCostAbove200kTokens: cacheReadInputTokenCostAbove200kTokens } : {}),
             cacheReadInputCostUnit,
             cacheCreationInputCost,
+            ...(cacheCreationInputTokenCostAbove200kTokens != null ? { cacheCreationInputCostAbove200kTokens: cacheCreationInputTokenCostAbove200kTokens } : {}),
             cacheCreationInputCostUnit,
             ...(priceTier ? { priceTier } : {}),
         }
