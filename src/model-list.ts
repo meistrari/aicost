@@ -1,5 +1,5 @@
-// Last updated: 2026-07-31T00:34:17.987Z
-// Next update: 2026-07-31T06:34:17.987Z
+// Last updated: 2026-07-31T07:00:15.836Z
+// Next update: 2026-07-31T13:00:15.836Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "pinstripes" | "darkbloom"
 
@@ -10083,29 +10083,29 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "gpt-5.6-terra",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.000012,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCost": 2e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000003125,
+            "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
             "name": "gpt-5.6-luna",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000006,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCost": 2e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -14411,7 +14411,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -14425,7 +14425,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -14439,7 +14439,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -14775,7 +14775,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/kimi-k2p5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -14789,7 +14789,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/kimi-k2p6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -14803,7 +14803,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/kimi-k2p6-fast",
             "type": "chat",
             "inputCost": 0.000002,
@@ -14817,7 +14817,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/kimi-k2p7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -14831,7 +14831,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/kimi-k2p7-code-fast",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -17883,7 +17883,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast",
             "type": "chat",
             "inputCost": 0.000002,
@@ -17897,7 +17897,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 32768,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k2p7-code-fast",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -34461,29 +34461,29 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "bedrock_mantle/openai.gpt-5.6-terra",
             "type": "responses",
-            "inputCost": 0.00000275,
+            "inputCost": 0.0000022,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.0000132,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCost": 2.2e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000034375,
+            "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
             "name": "bedrock_mantle/openai.gpt-5.6-luna",
             "type": "responses",
-            "inputCost": 0.0000011,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000066,
+            "outputCost": 0.00000132,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCost": 2.2e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
