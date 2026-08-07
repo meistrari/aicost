@@ -26439,7 +26439,7 @@
         },
         {
             "maxTokens": null,
-            "name": "replicateopenai/gpt-oss-20b",
+            "name": "replicate/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 9e-8,
             "inputCostUnit": "token",
