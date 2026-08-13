@@ -1,5 +1,5 @@
-// Last updated: 2026-08-13T12:17:39.527Z
-// Next update: 2026-08-13T18:17:39.527Z
+// Last updated: 2026-08-13T18:18:19.539Z
+// Next update: 2026-08-14T00:18:19.539Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "pinstripes" | "darkbloom"
 
@@ -12055,6 +12055,90 @@ export const AICostModelList = {
     ],
     "dashscope": [
         {
+            "maxTokens": 393216,
+            "name": "dashscope/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 393216,
+            "name": "dashscope/deepseek-v4-flash-0731",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 393216,
+            "name": "dashscope/deepseek-v4-pro",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/glm-5.1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/glm-5.2",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "dashscope/kimi-k2.7-code",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 16384,
             "name": "dashscope/qwen-coder",
             "type": "chat",
@@ -12499,6 +12583,20 @@ export const AICostModelList = {
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen3.8-max",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -13785,6 +13883,20 @@ export const AICostModelList = {
             "inputCost": 1e-7,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -18370,6 +18482,20 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
+            "maxTokens": 65536,
+            "name": "gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 1024,
             "name": "medlm-large",
             "type": "chat",
@@ -18620,6 +18746,20 @@ export const AICostModelList = {
             "outputCost": 0.0000075,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 65536,
+            "name": "vertex_ai/gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -20106,7 +20246,7 @@ export const AICostModelList = {
     ],
     "groq": [
         {
-            "maxTokens": 8192,
+            "maxTokens": 131072,
             "name": "groq/llama-3.1-8b-instant",
             "type": "chat",
             "inputCost": 5e-8,
@@ -20140,6 +20280,34 @@ export const AICostModelList = {
             "inputCost": 5e-8,
             "inputCostUnit": "token",
             "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 512,
+            "name": "groq/meta-llama/llama-prompt-guard-2-22m",
+            "type": "chat",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 512,
+            "name": "groq/meta-llama/llama-prompt-guard-2-86m",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -20204,7 +20372,7 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 32766,
+            "maxTokens": 65536,
             "name": "groq/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -20218,7 +20386,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 65536,
             "name": "groq/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -20244,6 +20412,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 16384,
+            "name": "groq/qwen/qwen3.6-27b",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 131000,
@@ -24674,6 +24856,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "openrouter/nvidia/nemotron-3.5-lightning",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 4096,
