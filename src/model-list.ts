@@ -1,5 +1,5 @@
-// Last updated: 2026-08-16T00:11:48.132Z
-// Next update: 2026-08-16T06:11:48.132Z
+// Last updated: 2026-08-16T06:07:46.608Z
+// Next update: 2026-08-16T12:07:46.608Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "pinstripes" | "darkbloom"
 
@@ -8124,6 +8124,202 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
+            "maxTokens": 163840,
+            "name": "azure_ai/FW-DeepSeek-V3.2",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000185,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 384000,
+            "name": "azure_ai/FW-DeepSeek-V4-Pro",
+            "type": "chat",
+            "inputCost": 0.000001925,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003828,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.65e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/FW-GLM-5",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000352,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/FW-GLM-5.1",
+            "type": "chat",
+            "inputCost": 0.00000154,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.86e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/FW-GLM-5.2",
+            "type": "chat",
+            "inputCost": 0.00000154,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/FW-GLM-5.2-Fast",
+            "type": "chat",
+            "inputCost": 0.0000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "azure_ai/FW-Inkling",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000405,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.7e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/FW-Kimi-K2.5",
+            "type": "chat",
+            "inputCost": 6.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/FW-Kimi-K2.6",
+            "type": "chat",
+            "inputCost": 0.000001045,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.76e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/FW-Kimi-K2.7-Code",
+            "type": "chat",
+            "inputCost": 0.00000105,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "azure_ai/FW-Kimi-K3",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "azure_ai/FW-MiniMax-M2.5",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 512000,
+            "name": "azure_ai/FW-MiniMax-M3",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/FW-Nemotron-3-Ultra-NVFP4",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.19e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": 2048,
             "name": "azure_ai/Llama-3.2-11B-Vision-Instruct",
             "type": "chat",
@@ -8654,6 +8850,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "maxTokens": 200000,
+            "name": "azure_ai/grok-4.3",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -11997,7 +12207,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 393216,
             "name": "deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -12011,7 +12221,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 393216,
             "name": "deepseek-v4-pro",
             "type": "chat",
             "inputCost": 4.35e-7,
@@ -12025,7 +12235,7 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 393216,
             "name": "deepseek/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -12039,7 +12249,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 393216,
             "name": "deepseek/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 4.35e-7,
@@ -21320,6 +21530,34 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "meta/muse-spark-1.2",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000425,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "meta/muse-spark-1.2-contributor",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "meta_llama": [
@@ -32588,6 +32826,23 @@ export const AICostModelList = {
             "outputCostUnit": "token",
             "cacheReadInputCost": 3e-7,
             "cacheReadInputCostAbove200kTokens": 6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 500000,
+            "name": "xai/grok-4.6",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
