@@ -1,7 +1,7 @@
-// Last updated: 2026-08-22T18:04:31.462Z
-// Next update: 2026-08-23T00:04:31.462Z
+// Last updated: 2026-08-23T00:12:20.836Z
+// Next update: 2026-08-23T06:12:20.836Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom"
 
 // Generated from LiteLLM
 export const AICostModelList = {
@@ -5333,6 +5333,90 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 500000,
             "name": "us.xai.grok-4.6",
             "type": "chat",
@@ -6328,6 +6412,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/gpt-audio-mini",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -10293,29 +10391,29 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "gpt-5.6",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
             "name": "gpt-5.6-sol",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -10377,15 +10475,15 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "daybreak-blue-latest",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -28380,6 +28478,36 @@ export const AICostModelList = {
             "priceTier": 2
         }
     ],
+    "scx-ai": [
+        {
+            "maxTokens": 131072,
+            "name": "scx-ai/GLM-5.2",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000198,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 131072,
+            "name": "scx-ai/Qwen3.8-Max",
+            "type": "chat",
+            "inputCost": 0.00000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000499,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        }
+    ],
     "snowflake": [
         {
             "maxTokens": 16384,
@@ -36165,6 +36293,20 @@ export const AICostModelList = {
         {
             "maxTokens": null,
             "name": "cognition/swe-1.7",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "cognition/swe-1.7-lightning",
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",

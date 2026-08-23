@@ -5327,6 +5327,90 @@
             "priceTier": 1
         },
         {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
             "maxTokens": 500000,
             "name": "us.xai.grok-4.6",
             "type": "chat",
@@ -6322,6 +6406,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/gpt-audio-mini",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -10287,29 +10385,29 @@
             "maxTokens": 128000,
             "name": "gpt-5.6",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
             "name": "gpt-5.6-sol",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -10371,15 +10469,15 @@
             "maxTokens": 128000,
             "name": "daybreak-blue-latest",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.00002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 128000,
@@ -28374,6 +28472,36 @@
             "priceTier": 2
         }
     ],
+    "scx-ai": [
+        {
+            "maxTokens": 131072,
+            "name": "scx-ai/GLM-5.2",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000198,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 131072,
+            "name": "scx-ai/Qwen3.8-Max",
+            "type": "chat",
+            "inputCost": 0.00000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000499,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        }
+    ],
     "snowflake": [
         {
             "maxTokens": 16384,
@@ -36159,6 +36287,20 @@
         {
             "maxTokens": null,
             "name": "cognition/swe-1.7",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "cognition/swe-1.7-lightning",
             "type": "chat",
             "inputCost": 0.0000025,
             "inputCostUnit": "token",
