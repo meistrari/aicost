@@ -32391,6 +32391,20 @@
             "priceTier": 1
         },
         {
+            "maxTokens": 131072,
+            "name": "openrouter/stealth/union-alpha",
+            "type": "chat",
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 128000,
             "name": "openrouter/anthropic/claude-fable-5",
             "type": "chat",
