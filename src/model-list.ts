@@ -1,5 +1,5 @@
-// Last updated: 2026-09-17T18:11:37.348Z
-// Next update: 2026-09-18T00:11:37.348Z
+// Last updated: 2026-09-18T00:25:39.873Z
+// Next update: 2026-09-18T06:25:39.873Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix"
 
@@ -10171,11 +10171,11 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "azure_ai/FW-Kimi-K3",
             "type": "chat",
-            "inputCost": 0.0000033,
+            "inputCost": 0.000003,
             "inputCostUnit": "token",
-            "outputCost": 0.0000165,
+            "outputCost": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -42474,11 +42474,11 @@ export const AICostModelList = {
             "maxTokens": 262144,
             "name": "wandb/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
             "type": "chat",
-            "inputCost": 1e-7,
+            "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 2.5e-7,
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCost": 4e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -42488,15 +42488,15 @@ export const AICostModelList = {
             "maxTokens": 262144,
             "name": "wandb/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
             "type": "chat",
-            "inputCost": 7.5e-7,
+            "inputCost": 5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000275,
+            "outputCost": 0.00000215,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 32768,
@@ -42623,6 +42623,20 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "wandb/zai-org/GLM-5.3-Flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "watsonx": [
