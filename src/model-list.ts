@@ -1,5 +1,5 @@
-// Last updated: 2026-09-18T18:10:54.834Z
-// Next update: 2026-09-19T00:10:54.834Z
+// Last updated: 2026-09-19T00:25:47.460Z
+// Next update: 2026-09-19T06:25:47.460Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix"
 
@@ -14127,7 +14127,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": 512,
             "name": "embed-english-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -14155,7 +14155,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": 512,
             "name": "embed-english-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -14183,7 +14183,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": 512,
             "name": "embed-multilingual-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -14197,7 +14197,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": 512,
             "name": "embed-multilingual-light-v3.0",
             "type": "embedding",
             "inputCost": 0.0001,
@@ -15095,6 +15095,34 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen3.8-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "dashscope/qwen3.8-omni-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -16215,6 +16243,34 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "qwen_ai_platform/qwen3.8-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "qwen_ai_platform/qwen3.8-omni-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 8192,
@@ -32939,11 +32995,11 @@ export const AICostModelList = {
             "maxTokens": 943717,
             "name": "openrouter/z-ai/glm-5.3",
             "type": "chat",
-            "inputCost": 0.0000014,
+            "inputCost": 9.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000044,
+            "outputCost": 0.00000286,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCost": 1.69e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -34810,11 +34866,11 @@ export const AICostModelList = {
             "maxTokens": 393216,
             "name": "openrouter/~deepseek/deepseek-flash-latest",
             "type": "chat",
-            "inputCost": 1.5e-7,
+            "inputCost": 1.4e-7,
             "inputCostUnit": "token",
-            "outputCost": 6e-7,
+            "outputCost": 4.2e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCost": 4.2e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -35000,9 +35056,9 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 9e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000003,
+            "outputCost": 0.000002805,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCost": 1.46625e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -37177,11 +37233,11 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "openrouter/tencent/hy3",
             "type": "chat",
-            "inputCost": 1.32e-7,
+            "inputCost": 8.25e-8,
             "inputCostUnit": "token",
-            "outputCost": 5.28e-7,
+            "outputCost": 3.3e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-8,
+            "cacheReadInputCost": 2.0625e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -49341,13 +49397,13 @@ export const AICostModelList = {
             "maxTokens": 128000,
             "name": "bedrock_mantle/openai.gpt-5.6-sol",
             "type": "responses",
-            "inputCost": 0.0000055,
+            "inputCost": 0.0000044,
             "inputCostUnit": "token",
-            "outputCost": 0.000033,
+            "outputCost": 0.000022,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCost": 4.4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
