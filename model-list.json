@@ -24823,32 +24823,6 @@
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
-            "name": "github_copilot/gemini-2.5-pro",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
-        },
-        {
-            "maxTokens": 64000,
-            "name": "github_copilot/gemini-3-pro-preview",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
-        },
-        {
             "maxTokens": 4096,
             "name": "github_copilot/gpt-3.5-turbo",
             "type": "chat",
@@ -25614,20 +25588,6 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
-        },
-        {
-            "maxTokens": 65536,
-            "name": "gmi/google/gemini-3-pro-preview",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000012,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -39292,8 +39252,10 @@
             "name": "replicate/google/gemini-3-pro",
             "type": "chat",
             "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
+            "outputCostAbove200kTokens": 0.000018,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -39389,7 +39351,7 @@
             "maxTokens": null,
             "name": "replicate/google/gemini-2.5-flash",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
@@ -39397,7 +39359,7 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -42373,8 +42335,8 @@
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -42383,12 +42345,15 @@
             "maxTokens": 65536,
             "name": "vercel_ai_gateway/google/gemini-2.5-pro",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 0.00000125,
+            "inputCostAbove200kTokens": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostAbove200kTokens": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostAbove200kTokens": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3

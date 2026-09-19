@@ -1,5 +1,5 @@
-// Last updated: 2026-09-19T00:25:47.460Z
-// Next update: 2026-09-19T06:25:47.460Z
+// Last updated: 2026-09-19T06:14:48.716Z
+// Next update: 2026-09-19T12:14:48.716Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix"
 
@@ -24829,32 +24829,6 @@ export const AICostModelList = {
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
-            "name": "github_copilot/gemini-2.5-pro",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
-        },
-        {
-            "maxTokens": 64000,
-            "name": "github_copilot/gemini-3-pro-preview",
-            "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
-        },
-        {
             "maxTokens": 4096,
             "name": "github_copilot/gpt-3.5-turbo",
             "type": "chat",
@@ -25620,20 +25594,6 @@ export const AICostModelList = {
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
-        },
-        {
-            "maxTokens": 65536,
-            "name": "gmi/google/gemini-3-pro-preview",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000012,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
         },
         {
             "maxTokens": 65536,
@@ -39298,8 +39258,10 @@ export const AICostModelList = {
             "name": "replicate/google/gemini-3-pro",
             "type": "chat",
             "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000012,
+            "outputCostAbove200kTokens": 0.000018,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -39395,7 +39357,7 @@ export const AICostModelList = {
             "maxTokens": null,
             "name": "replicate/google/gemini-2.5-flash",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
@@ -39403,7 +39365,7 @@ export const AICostModelList = {
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -42379,8 +42341,8 @@ export const AICostModelList = {
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -42389,12 +42351,15 @@ export const AICostModelList = {
             "maxTokens": 65536,
             "name": "vercel_ai_gateway/google/gemini-2.5-pro",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 0.00000125,
+            "inputCostAbove200kTokens": 0.0000025,
             "inputCostUnit": "token",
             "outputCost": 0.00001,
+            "outputCostAbove200kTokens": 0.000015,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostAbove200kTokens": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
