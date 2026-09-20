@@ -1,5 +1,5 @@
-// Last updated: 2026-09-20T00:28:48.381Z
-// Next update: 2026-09-20T06:28:48.381Z
+// Last updated: 2026-09-20T06:14:36.844Z
+// Next update: 2026-09-20T12:14:36.844Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix"
 
@@ -31285,18 +31285,18 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-pro-0813",
             "type": "chat",
-            "inputCost": 5.7816e-7,
+            "inputCost": 0.00000132,
             "inputCostUnit": "token",
-            "outputCost": 0.00000173448,
+            "outputCost": 0.00000396,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8396e-8,
+            "cacheReadInputCost": 4.4e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": 8192,
@@ -32094,12 +32094,12 @@ export const AICostModelList = {
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 16384,
             "name": "openrouter/qwen/qwen3.5-35b-a3b",
             "type": "chat",
-            "inputCost": 1.625e-7,
+            "inputCost": 3.125e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000013,
+            "outputCost": 0.00000125,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.5625e-7,
             "cacheReadInputCostUnit": "token",
@@ -32955,11 +32955,11 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "openrouter/z-ai/glm-5.3",
             "type": "chat",
-            "inputCost": 9.1e-7,
+            "inputCost": 8.96e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000286,
+            "outputCost": 0.000002816,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.69e-7,
+            "cacheReadInputCost": 1.664e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -32969,15 +32969,15 @@ export const AICostModelList = {
             "maxTokens": 131072,
             "name": "openrouter/qwen/qwen3.8-27b",
             "type": "chat",
-            "inputCost": 2.14e-7,
+            "inputCost": 4.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000255,
+            "outputCost": 0.000003,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCost": 8.5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": 131072,
@@ -33431,11 +33431,11 @@ export const AICostModelList = {
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-flash",
             "type": "chat",
-            "inputCost": 3.78e-8,
+            "inputCost": 3.668e-8,
             "inputCostUnit": "token",
-            "outputCost": 7.56e-8,
+            "outputCost": 7.336e-8,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 7.56e-9,
+            "cacheReadInputCost": 7.336e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -33610,7 +33610,7 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 235929,
+            "maxTokens": 32768,
             "name": "openrouter/qwen/qwen3.5-9b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -34837,14 +34837,14 @@ export const AICostModelList = {
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": 384000,
             "name": "openrouter/~deepseek/deepseek-pro-latest",
             "type": "chat",
-            "inputCost": 5.7816e-7,
+            "inputCost": 5.7684e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000173448,
+            "outputCost": 0.00000173052,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8396e-8,
+            "cacheReadInputCost": 1.9228e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
