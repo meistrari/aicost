@@ -1,5 +1,5 @@
-// Last updated: 2026-09-21T00:28:21.904Z
-// Next update: 2026-09-21T06:28:21.905Z
+// Last updated: 2026-09-21T06:21:51.210Z
+// Next update: 2026-09-21T12:21:51.210Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix"
 
@@ -31260,11 +31260,11 @@ export const AICostModelList = {
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-pro",
             "type": "chat",
-            "inputCost": 9.483e-7,
+            "inputCost": 9.5526e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000018966,
+            "outputCost": 0.00000191052,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 7.9025e-8,
+            "cacheReadInputCost": 7.9605e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -32971,9 +32971,9 @@ export const AICostModelList = {
             "type": "chat",
             "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000255,
+            "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 8.5e-8,
+            "cacheReadInputCost": 5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -33431,11 +33431,11 @@ export const AICostModelList = {
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-flash",
             "type": "chat",
-            "inputCost": 8.9866e-8,
+            "inputCost": 8.8606e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.79732e-7,
+            "outputCost": 1.77212e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.79732e-8,
+            "cacheReadInputCost": 1.77212e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -34378,15 +34378,15 @@ export const AICostModelList = {
             "maxTokens": 16384,
             "name": "openrouter/meta-llama/llama-4-maverick",
             "type": "chat",
-            "inputCost": 1.875e-7,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 6.525e-7,
+            "outputCost": 8e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 2
         },
         {
             "maxTokens": 16384,
@@ -34655,18 +34655,18 @@ export const AICostModelList = {
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 8192,
             "name": "openrouter/meta-llama/llama-3.1-70b-instruct",
             "type": "chat",
-            "inputCost": 4e-7,
+            "inputCost": 7.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 4e-7,
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 2
         },
         {
             "maxTokens": 117964,
@@ -35779,11 +35779,11 @@ export const AICostModelList = {
             "maxTokens": 117964,
             "name": "openrouter/ibm-granite/granite-4.2-8b",
             "type": "chat",
-            "inputCost": 6e-8,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 2.5e-7,
+            "outputCost": 1.5e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCost": 5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
