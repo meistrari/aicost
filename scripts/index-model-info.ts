@@ -1,11 +1,12 @@
 import { join } from 'node:path'
+import { additionalModels } from './additional-models'
 
 type ModelMode = 'chat' | 'completion' | 'embedding' | 'responses'
 type InputCostUnit = 'token' | 'request' | 'pixel' | null
 type OutputCostUnit = 'token' | 'request' | 'image' | null
 type CacheInputCostUnit = 'token' | null
 
-type RawModel = {
+export type RawModel = {
     litellm_provider?: string
     mode?: string
     max_tokens?: number | null
@@ -203,7 +204,7 @@ function calculatePriceTier(inputCost: number | null, outputCost: number | null,
     return 5
 }
 
-function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, IndexedModel[]> {
+export function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, IndexedModel[]> {
     const modelList = Object.entries(modelIndex).map(([name, model]) => ({ name, model }))
 
     return modelList.reduce<Record<string, IndexedModel[]>>((acc, { model, name }) => {
@@ -283,7 +284,18 @@ function buildModelPerProvider(modelIndex: RawModelIndex): Record<string, Indexe
     }, {})
 }
 
-function createModelListFileContent(modelPerProvider: Record<string, IndexedModel[]>, modelPerProviderContent: string): string {
+export function mergeAdditionalModels(models: Record<string, IndexedModel[]>): Record<string, IndexedModel[]> {
+    const result = { ...models }
+    for (const [provider, additions] of Object.entries(buildModelPerProvider(additionalModels))) {
+        const byName = new Map((result[provider] ?? []).map(model => [model.name, model]))
+        for (const model of additions)
+            byName.set(model.name, model)
+        result[provider] = [...byName.values()]
+    }
+    return result
+}
+
+export function createModelListFileContent(modelPerProvider: Record<string, IndexedModel[]>): string {
     let modelListFileContent = [
         `// Last updated: ${new Date().toISOString()}`,
         `// Next update: ${new Date(new Date().getTime() + (6 * 60 * 60 * 1000)).toISOString()}`,
@@ -299,16 +311,29 @@ function createModelListFileContent(modelPerProvider: Record<string, IndexedMode
 
     const providerTypeUnion = providerNames.map(provider => JSON.stringify(provider)).join(' | ')
     modelListFileContent += `export type AICostModelProvider = ${providerTypeUnion}\n\n`
-    modelListFileContent += `// Generated from LiteLLM\nexport const AICostModelList = ${modelPerProviderContent} as const\n\n`
+    modelListFileContent += '// Generated from LiteLLM and manually maintained additions\n'
+    // Provider-sized declarations avoid TypeScript's serialization limit for the full catalog.
+    for (const [index, provider] of providerNames.entries()) {
+        modelListFileContent += `const provider${index} = ${JSON.stringify(modelPerProvider[provider], null, 4).replaceAll('\n', '\n    ')} as const\n\n`
+    }
+    modelListFileContent += 'export const AICostModelList: {\n'
+    for (const [index, provider] of providerNames.entries()) {
+        modelListFileContent += `    readonly ${JSON.stringify(provider)}: typeof provider${index}\n`
+    }
+    modelListFileContent += '} = {\n'
+    for (const [index, provider] of providerNames.entries()) {
+        modelListFileContent += `    ${JSON.stringify(provider)}: provider${index},\n`
+    }
+    modelListFileContent += '}\n'
 
     return modelListFileContent
 }
 
 async function main(): Promise<void> {
     const modelIndex = await fetchModelIndex()
-    const modelPerProvider = buildModelPerProvider(modelIndex)
+    const modelPerProvider = mergeAdditionalModels(buildModelPerProvider(modelIndex))
     const modelPerProviderContent = JSON.stringify(modelPerProvider, null, 4)
-    const modelListFileContent = createModelListFileContent(modelPerProvider, modelPerProviderContent)
+    const modelListFileContent = createModelListFileContent(modelPerProvider)
 
     try {
         await writeIfChanged(MODEL_LIST_TS_PATH, modelListFileContent)
@@ -319,7 +344,9 @@ async function main(): Promise<void> {
     }
 }
 
-await main().catch((error) => {
-    console.error(error)
-    process.exit(1)
-})
+if (import.meta.main) {
+    await main().catch((error) => {
+        console.error(error)
+        process.exit(1)
+    })
+}

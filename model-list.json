@@ -51114,5 +51114,21 @@
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
         }
+    ],
+    "typesafe": [
+        {
+            "maxTokens": null,
+            "name": "jev-1.13.0",
+            "type": "completion",
+            "inputCost": 4.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
     ]
 }
