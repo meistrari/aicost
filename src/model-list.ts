@@ -1,7 +1,7 @@
-// Last updated: 2026-09-21T18:11:26.011Z
-// Next update: 2026-09-22T00:11:26.011Z
+// Last updated: 2026-09-22T00:25:52.745Z
+// Next update: 2026-09-22T06:25:52.745Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "typesafe"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -4973,7 +4973,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "google.gemma-3-27b-it",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -5139,7 +5139,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "minimax.minimax-m2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5153,7 +5153,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5167,7 +5167,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5223,7 +5223,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "mistral.ministral-3-3b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -5293,7 +5293,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16000,
             "name": "moonshot.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -5321,7 +5321,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "nvidia.nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -5405,7 +5405,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16000,
             "name": "openai.gpt-oss-safeguard-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5419,7 +5419,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16000,
             "name": "openai.gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -5489,7 +5489,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5503,7 +5503,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 8000,
             "name": "qwen.qwen3-vl-235b-a22b",
             "type": "chat",
             "inputCost": 5.3e-7,
@@ -5517,7 +5517,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16000,
             "name": "qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -6019,7 +6019,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "zai.glm-4.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -6047,7 +6047,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 4000,
             "name": "zai.glm-4.7-flash",
             "type": "chat",
             "inputCost": 7e-8,
@@ -6201,7 +6201,21 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": null,
+            "maxTokens": 131072,
+            "name": "moonshotai.kimi-k3",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 131072,
             "name": "global.moonshotai.kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6211,6 +6225,20 @@ const provider1 = [
             "cacheReadInputCost": 3e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 131072,
+            "name": "us.moonshotai.kimi-k3",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         }
@@ -31453,11 +31481,11 @@ const provider54 = [
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-pro",
             "type": "chat",
-            "inputCost": 9.27768e-7,
+            "inputCost": 9.5526e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000001855536,
+            "outputCost": 0.00000191052,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 7.7314e-8,
+            "cacheReadInputCost": 7.9605e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -31481,11 +31509,11 @@ const provider54 = [
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-pro-0813",
             "type": "chat",
-            "inputCost": 5.7024e-7,
+            "inputCost": 5.58624e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000171072,
+            "outputCost": 0.000001675872,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.9008e-8,
+            "cacheReadInputCost": 1.86208e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -33117,14 +33145,14 @@ const provider54 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 943718,
             "name": "openrouter/z-ai/glm-5.3-flash",
             "type": "chat",
-            "inputCost": 9e-8,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCost": 5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -33234,7 +33262,7 @@ const provider54 = [
             "type": "chat",
             "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.6e-7,
+            "outputCost": 6.4e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.6e-8,
             "cacheReadInputCostUnit": "token",
@@ -33624,11 +33652,11 @@ const provider54 = [
             "maxTokens": 384000,
             "name": "openrouter/deepseek/deepseek-v4-flash",
             "type": "chat",
-            "inputCost": 5.544e-8,
+            "inputCost": 8.8606e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.1088e-7,
+            "outputCost": 1.77212e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.1088e-8,
+            "cacheReadInputCost": 1.77212e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -33935,9 +33963,9 @@ const provider54 = [
             "maxTokens": 235929,
             "name": "openrouter/nvidia/nemotron-3-nano-30b-a3b",
             "type": "chat",
-            "inputCost": 6e-8,
+            "inputCost": 5e-8,
             "inputCostUnit": "token",
-            "outputCost": 2.4e-7,
+            "outputCost": 2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 3e-8,
             "cacheReadInputCostUnit": "token",
@@ -34571,15 +34599,15 @@ const provider54 = [
             "maxTokens": 16384,
             "name": "openrouter/meta-llama/llama-4-maverick",
             "type": "chat",
-            "inputCost": 2e-7,
+            "inputCost": 1.875e-7,
             "inputCostUnit": "token",
-            "outputCost": 8e-7,
+            "outputCost": 6.525e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -35033,11 +35061,11 @@ const provider54 = [
             "maxTokens": 384000,
             "name": "openrouter/~deepseek/deepseek-pro-latest",
             "type": "chat",
-            "inputCost": 5.7024e-7,
+            "inputCost": 5.58624e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000171072,
+            "outputCost": 0.000001675872,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.9008e-8,
+            "cacheReadInputCost": 1.86208e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -35049,7 +35077,7 @@ const provider54 = [
             "type": "chat",
             "inputCost": 4e-8,
             "inputCostUnit": "token",
-            "outputCost": 1.6e-7,
+            "outputCost": 6.4e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.6e-8,
             "cacheReadInputCostUnit": "token",
@@ -35190,14 +35218,14 @@ const provider54 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 943718,
             "name": "openrouter/~z-ai/glm-flash-latest",
             "type": "chat",
-            "inputCost": 9e-8,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 3e-7,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCost": 5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -37691,6 +37719,48 @@ const provider54 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": 4e-7,
             "cacheReadInputCostAbove200kTokens": 8e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/xiaomi/mimo-v2.6-flash",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/xiaomi/mimo-v2.6-pro",
+            "type": "chat",
+            "inputCost": 4.35e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 131072,
+            "name": "openrouter/xiaomi/mimo-v2.6-pro-ultraspeed",
+            "type": "chat",
+            "inputCost": 0.00000435,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000087,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -46588,6 +46658,23 @@ const provider80 = [
             "priceTier": 3
         },
         {
+            "maxTokens": 500000,
+            "name": "xai/grok-4.7",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": 256000,
             "name": "xai/grok-code-fast",
             "type": "chat",
@@ -49812,6 +49899,20 @@ const provider87 = [
             "priceTier": 3
         },
         {
+            "maxTokens": 64000,
+            "name": "bedrock_mantle/anthropic.claude-haiku-4-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
             "maxTokens": 128000,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra",
             "type": "responses",
@@ -51373,6 +51474,37 @@ const provider93 = [
 
 const provider94 = [
         {
+            "maxTokens": 131072,
+            "name": "xiaomi_mimo/mimo-v2.6-pro",
+            "type": "chat",
+            "inputCost": 4.35e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 131072,
+            "name": "xiaomi_mimo/mimo-v2.6-flash",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
+const provider95 = [
+        {
             "maxTokens": null,
             "name": "jev-1.13.0",
             "type": "completion",
@@ -51483,7 +51615,8 @@ export const AICostModelList: {
     readonly "pinstripes": typeof provider91
     readonly "darkbloom": typeof provider92
     readonly "aihubmix": typeof provider93
-    readonly "typesafe": typeof provider94
+    readonly "xiaomi_mimo": typeof provider94
+    readonly "typesafe": typeof provider95
 } = {
     "bedrock": provider0,
     "bedrock_converse": provider1,
@@ -51579,5 +51712,6 @@ export const AICostModelList: {
     "pinstripes": provider91,
     "darkbloom": provider92,
     "aihubmix": provider93,
-    "typesafe": provider94,
+    "xiaomi_mimo": provider94,
+    "typesafe": provider95,
 }
