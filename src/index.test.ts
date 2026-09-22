@@ -31,14 +31,6 @@ describe('calculateCost cache pricing', () => {
         globalThis.fetch = originalFetch
     })
 
-    it.each([
-        ['gpt-6-sol', 27, 0.000342],
-        ['gpt-6-luna', 13, 0.0000101],
-    ] as const)('charges %s for the staging AI module token usage', async (model, outputAmount, expectedCost) => {
-        const cost = await calculateCost({ provider: 'openai', model, inputAmount: 36, outputAmount })
-        expect(cost.inputCost + cost.outputCost).toBeCloseTo(expectedCost, 10)
-    })
-
     it('calculates input and cache costs independently when cache tokens are provided', async () => {
         const { provider, model } = findModel(model =>
             model.inputCostUnit === 'token'

@@ -1,5 +1,5 @@
-// Last updated: 2026-09-22T19:07:05.873Z
-// Next update: 2026-09-23T01:07:05.874Z
+// Last updated: 2026-09-22T19:12:56.478Z
+// Next update: 2026-09-23T01:12:56.478Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "openai" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
 
@@ -2684,34 +2684,6 @@ const provider0 = [
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 6e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 4096,
-            "name": "cohere.command-r-plus-v1:0",
-            "type": "chat",
-            "inputCost": 0.000003,
-            "inputCostUnit": "token",
-            "outputCost": 0.000015,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 4
-        },
-        {
-            "maxTokens": 4096,
-            "name": "cohere.command-r-v1:0",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000015,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -5560,20 +5532,6 @@ const provider1 = [
         },
         {
             "maxTokens": 10000,
-            "name": "us.amazon.nova-premier-v1:0",
-            "type": "chat",
-            "inputCost": 0.0000025,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000125,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 6.25e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 10000,
             "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -6652,20 +6610,6 @@ const provider3 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
-        },
-        {
-            "maxTokens": 32768,
-            "name": "azure/eu/o1-preview-2024-09-12",
-            "type": "chat",
-            "inputCost": 0.0000165,
-            "inputCostUnit": "token",
-            "outputCost": 0.000066,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.00000825,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -8390,34 +8334,6 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
-            "name": "azure/o1-preview",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.00006,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.0000075,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 32768,
-            "name": "azure/o1-preview-2024-09-12",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.00006,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.0000075,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
             "maxTokens": 100000,
             "name": "azure/o3",
             "type": "chat",
@@ -8794,20 +8710,6 @@ const provider3 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
-        },
-        {
-            "maxTokens": 32768,
-            "name": "azure/us/o1-preview-2024-09-12",
-            "type": "chat",
-            "inputCost": 0.0000165,
-            "inputCostUnit": "token",
-            "outputCost": 0.000066,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.00000825,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
         },
         {
             "maxTokens": 100000,
@@ -9231,20 +9133,6 @@ const provider3 = [
         },
         {
             "maxTokens": null,
-            "name": "azure/eu/o1-preview",
-            "type": "chat",
-            "inputCost": 0.0000165,
-            "inputCostUnit": "token",
-            "outputCost": 0.000066,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.00000825,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
-        },
-        {
-            "maxTokens": null,
             "name": "azure/eu/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9634,20 +9522,6 @@ const provider3 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
-        },
-        {
-            "maxTokens": null,
-            "name": "azure/us/o1-preview",
-            "type": "chat",
-            "inputCost": 0.0000165,
-            "inputCostUnit": "token",
-            "outputCost": 0.000066,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.00000825,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 5
         },
         {
             "maxTokens": null,
@@ -12475,6 +12349,34 @@ const provider9 = [
         },
         {
             "maxTokens": 128000,
+            "name": "gpt-6-sol",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-6-luna",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
             "name": "gpt-5.6",
             "type": "chat",
             "inputCost": 0.000004,
@@ -13339,34 +13241,6 @@ const provider9 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 5
-        },
-        {
-            "maxTokens": 128000,
-            "name": "gpt-6-sol",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.00001,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000025,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 128000,
-            "name": "gpt-6-luna",
-            "type": "chat",
-            "inputCost": 1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 5e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 1.25e-7,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
         }
     ] as const
 
@@ -24975,20 +24849,6 @@ const provider28 = [
         },
         {
             "maxTokens": null,
-            "name": "vertex_ai/gemini-robotics-er-2",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.000005,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
-            "maxTokens": null,
             "name": "vertex_ai/gemma-4-26b-a4b-it",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -31274,20 +31134,6 @@ const provider55 = [
         },
         {
             "maxTokens": 32000,
-            "name": "openrouter/anthropic/claude-opus-4",
-            "type": "chat",
-            "inputCost": 0.000015,
-            "inputCostUnit": "token",
-            "outputCost": 0.000075,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 0.0000015,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00001875,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
-        },
-        {
-            "maxTokens": 32000,
             "name": "openrouter/anthropic/claude-opus-4.1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -31812,20 +31658,6 @@ const provider55 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
-        },
-        {
-            "maxTokens": 209715,
-            "name": "openrouter/mistralai/mistral-large-2512",
-            "type": "chat",
-            "inputCost": 5.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000165,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
         },
         {
             "maxTokens": 8191,
@@ -35799,62 +35631,6 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 943718,
-            "name": "openrouter/deepseek/deepseek-v4-flash-0731:batch",
-            "type": "chat",
-            "inputCost": 1.1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 3.3e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.5e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": 393216,
-            "name": "openrouter/deepseek/deepseek-v4-flash-0731:free",
-            "type": "chat",
-            "inputCost": 0,
-            "inputCostUnit": "token",
-            "outputCost": 0,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": 943718,
-            "name": "openrouter/deepseek/deepseek-v4-flash-vision-exp:batch",
-            "type": "chat",
-            "inputCost": 1.1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 3.3e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.5e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": 943718,
-            "name": "openrouter/deepseek/deepseek-v4-pro-0813:batch",
-            "type": "chat",
-            "inputCost": 6.6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000198,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.2e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
             "maxTokens": 460800,
             "name": "openrouter/dots-studio/dots-3-note-preview:free",
             "type": "chat",
@@ -36196,20 +35972,6 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 144000,
-            "name": "openrouter/kwaipilot/kat-coder-pro-v2",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 6e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
             "maxTokens": 235929,
             "name": "openrouter/kwaipilot/kat-coder-pro-v2.5",
             "type": "chat",
@@ -36260,20 +36022,6 @@ const provider55 = [
             "outputCost": 0.0000012,
             "outputCostUnit": "token",
             "cacheReadInputCost": 4e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 117964,
-            "name": "openrouter/meta/muse-glimmer-30b:batch",
-            "type": "chat",
-            "inputCost": 1.75e-7,
-            "inputCostUnit": "token",
-            "outputCost": 7.5e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -36373,20 +36121,6 @@ const provider55 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 471859,
-            "name": "openrouter/minimax/minimax-m3:batch",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 6e-8,
-            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -37036,20 +36770,6 @@ const provider55 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 117964,
-            "name": "openrouter/openai/gpt-oss-120b:batch",
-            "type": "chat",
-            "inputCost": 1.5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
             "maxTokens": 100000,
             "name": "openrouter/openai/o3-mini:batch",
             "type": "chat",
@@ -37171,34 +36891,6 @@ const provider55 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 235929,
-            "name": "openrouter/qwen/qwen3.5-9b:batch",
-            "type": "chat",
-            "inputCost": 1.7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.5e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": 909000,
-            "name": "openrouter/qwen/qwen3.8-2.4t-a95b:batch",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000006,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.5e-7,
-            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
@@ -37582,20 +37274,6 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 471859,
-            "name": "openrouter/thinkingmachines/inkling:batch",
-            "type": "chat",
-            "inputCost": 0.000001,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000405,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.7e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
             "maxTokens": 262144,
             "name": "openrouter/thinkingmachines/inkling:free",
             "type": "chat",
@@ -37677,20 +37355,6 @@ const provider55 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.6e-7,
             "cacheReadInputCostAbove200kTokens": 3.2e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": 943718,
-            "name": "openrouter/z-ai/glm-5.2:batch",
-            "type": "chat",
-            "inputCost": 7e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000022,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 7e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
