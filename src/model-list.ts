@@ -1,5 +1,5 @@
-// Last updated: 2026-09-23T00:25:01.695Z
-// Next update: 2026-09-23T06:25:01.695Z
+// Last updated: 2026-09-23T06:16:58.877Z
+// Next update: 2026-09-23T12:16:58.877Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
 
@@ -1359,15 +1359,15 @@ const provider0 = [
             "maxTokens": 8191,
             "name": "bedrock/eu-west-3/mistral.mistral-large-2402-v1:0",
             "type": "chat",
-            "inputCost": 0.0000104,
+            "inputCost": 0.0000052,
             "inputCostUnit": "token",
-            "outputCost": 0.0000312,
+            "outputCost": 0.0000156,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 4
         },
         {
             "maxTokens": 8191,
@@ -1717,15 +1717,15 @@ const provider0 = [
             "maxTokens": 8191,
             "name": "bedrock/us-east-1/mistral.mistral-large-2402-v1:0",
             "type": "chat",
-            "inputCost": 0.000008,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.000024,
+            "outputCost": 0.000012,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -2397,15 +2397,15 @@ const provider0 = [
             "maxTokens": 8191,
             "name": "bedrock/us-west-2/mistral.mistral-large-2402-v1:0",
             "type": "chat",
-            "inputCost": 0.000008,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.000024,
+            "outputCost": 0.000012,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -2555,7 +2555,7 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "cohere.command-text-v14",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 0.000001,
             "inputCostUnit": "token",
             "outputCost": 0.000002,
             "outputCostUnit": "token",
@@ -2905,15 +2905,15 @@ const provider0 = [
             "maxTokens": 8191,
             "name": "mistral.mistral-large-2402-v1:0",
             "type": "chat",
-            "inputCost": 0.000008,
+            "inputCost": 0.000004,
             "inputCostUnit": "token",
-            "outputCost": 0.000024,
+            "outputCost": 0.000012,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": 8191,
@@ -5766,13 +5766,13 @@ const provider1 = [
             "maxTokens": 64000,
             "name": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
-            "inputCost": 0.000005,
+            "inputCost": 0.0000055,
             "inputCostUnit": "token",
-            "outputCost": 0.000025,
+            "outputCost": 0.0000275,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 5.5e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -23450,6 +23450,20 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "maxTokens": 57920,
+            "name": "vertex_ai/gemini-omni-1.1-flash-preview",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": null,
             "name": "vertex_ai/gemma-4-26b-a4b-it",
             "type": "chat",
@@ -23459,6 +23473,34 @@ const provider28 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.5e-8,
             "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-2.0-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-2.0-flash-lite",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
@@ -41301,8 +41343,8 @@ const provider70 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000017,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -41315,8 +41357,8 @@ const provider70 = [
             "inputCostUnit": "token",
             "outputCost": 0.00000168,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 5.6e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -41576,8 +41618,8 @@ const provider73 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -41593,8 +41635,8 @@ const provider74 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000025,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -41610,8 +41652,8 @@ const provider75 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000022,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -41625,6 +41667,20 @@ const provider75 = [
             "outputCost": 0.0000032,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 64000,
+            "name": "vertex_ai/zai-org/glm-5.2-maas",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -41700,8 +41756,8 @@ const provider77 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000018,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
@@ -46408,13 +46464,13 @@ const provider88 = [
             "maxTokens": 128000,
             "name": "bedrock_mantle/openai.gpt-daybreak-blue-5.6-sol",
             "type": "responses",
-            "inputCost": 0.0000055,
+            "inputCost": 0.0000044,
             "inputCostUnit": "token",
-            "outputCost": 0.000033,
+            "outputCost": 0.000022,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCost": 4.4e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
