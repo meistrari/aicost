@@ -1,5 +1,5 @@
-// Last updated: 2026-09-24T06:16:56.677Z
-// Next update: 2026-09-24T12:16:56.677Z
+// Last updated: 2026-09-24T12:14:26.231Z
+// Next update: 2026-09-24T18:14:26.231Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
 
@@ -6003,6 +6003,62 @@ const provider1 = [
             "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.4",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.4",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-5.5",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-5.5",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
         },
         {
             "maxTokens": 128000,
@@ -30474,6 +30530,20 @@ const provider55 = [
             "priceTier": 2
         },
         {
+            "maxTokens": 943718,
+            "name": "openrouter/fireworks/ember-1",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
             "maxTokens": 65535,
             "name": "openrouter/google/gemini-2.5-flash",
             "type": "chat",
@@ -32200,7 +32270,7 @@ const provider55 = [
             "maxTokens": 943718,
             "name": "openrouter/deepseek/deepseek-v4-flash-0731",
             "type": "chat",
-            "inputCost": 4e-8,
+            "inputCost": 3e-8,
             "inputCostUnit": "token",
             "outputCost": 3.2e-7,
             "outputCostUnit": "token",
@@ -32368,7 +32438,7 @@ const provider55 = [
             "maxTokens": 235929,
             "name": "openrouter/moonshotai/kimi-k2.7-code",
             "type": "chat",
-            "inputCost": 7.062e-7,
+            "inputCost": 6.562e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000033,
             "outputCostUnit": "token",
@@ -33309,9 +33379,9 @@ const provider55 = [
             "maxTokens": 32000,
             "name": "openrouter/qwen/qwen3-30b-a3b-instruct-2507",
             "type": "chat",
-            "inputCost": 4.815e-8,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 1.9305e-7,
+            "outputCost": 3e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -43362,8 +43432,8 @@ const provider76 = [
             "inputCostUnit": "token",
             "outputCost": 6e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
@@ -44146,6 +44216,34 @@ const provider79 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "wandb/deepseek-ai/DeepSeek-V4.1-Flash",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 262144,
+            "name": "wandb/google/gemma-4-26B-A4B-it",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
