@@ -1,5 +1,5 @@
-// Last updated: 2026-09-26T12:12:39.364Z
-// Next update: 2026-09-26T18:12:39.364Z
+// Last updated: 2026-09-26T18:10:35.900Z
+// Next update: 2026-09-27T00:10:35.900Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
 
@@ -16523,6 +16523,20 @@ const provider19 = [
             "priceTier": 5
         },
         {
+            "maxTokens": 128000,
+            "name": "databricks/databricks-claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.00000400001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001999998,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9999e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000500003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
             "maxTokens": 64000,
             "name": "databricks/databricks-claude-sonnet-4",
             "type": "chat",
@@ -23226,11 +23240,11 @@ const provider25 = [
             "maxTokens": 393216,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 6.6e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCost": 7e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -23296,11 +23310,11 @@ const provider25 = [
             "maxTokens": 393216,
             "name": "fireworks_ai/deepseek-v4p1-flash",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 2.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 6.6e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCost": 7e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
