@@ -11064,7 +11064,7 @@
             "maxTokens": 128000,
             "name": "azure_ai/grok-4.6",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 0.00000125,
             "inputCostAbove200kTokens": 0.000004,
             "inputCostUnit": "token",
             "outputCost": 0.000006,
@@ -11566,6 +11566,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 64000,
+            "name": "azure_ai/MAI-Cyber-1-Flash",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000035,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "azure_text": [
