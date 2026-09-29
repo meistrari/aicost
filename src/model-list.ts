@@ -1,5 +1,5 @@
-// Last updated: 2026-09-29T00:27:43.224Z
-// Next update: 2026-09-29T06:27:43.224Z
+// Last updated: 2026-09-29T06:17:27.890Z
+// Next update: 2026-09-29T12:17:27.890Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
@@ -24038,6 +24038,45 @@ const provider26 = [
             "priceTier": 3
         },
         {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/auto",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/auto-instant",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/firerouter",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
             "maxTokens": 1048576,
             "name": "fireworks_ai/glm-5p3-fast",
             "type": "chat",
@@ -29504,7 +29543,7 @@ const provider53 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": 384000,
             "name": "nebius/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -49278,6 +49317,34 @@ const provider89 = [
         },
         {
             "maxTokens": 128000,
+            "name": "bedrock_mantle/anthropic.claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.0000044,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000055,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra",
             "type": "responses",
             "inputCost": 0.00000264,
@@ -49415,6 +49482,34 @@ const provider89 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.0000048,
+            "inputCostUnit": "token",
+            "outputCost": 0.000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": 128000,
