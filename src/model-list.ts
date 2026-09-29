@@ -1,7 +1,7 @@
-// Last updated: 2026-09-28T18:13:09.826Z
-// Next update: 2026-09-29T00:13:09.826Z
+// Last updated: 2026-09-29T00:27:43.224Z
+// Next update: 2026-09-29T06:27:43.224Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "typesafe"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -861,9 +861,9 @@ const provider0 = [
             "maxTokens": 8192,
             "name": "bedrock/ap-southeast-2/minimax.minimax-m2.5",
             "type": "chat",
-            "inputCost": 3.09e-7,
+            "inputCost": 3.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000001236,
+            "outputCost": 0.00000124,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -2765,23 +2765,23 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 0.00000532,
+            "inputCost": 0.0000024,
             "inputCostUnit": "token",
-            "outputCost": 0.000016,
+            "outputCost": 0.0000024,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 9.9e-7,
+            "inputCost": 7.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.9e-7,
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -2807,9 +2807,9 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 3.5e-7,
+            "inputCost": 1.6e-7,
             "inputCostUnit": "token",
-            "outputCost": 3.5e-7,
+            "outputCost": 1.6e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -2849,15 +2849,15 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 7.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 8192,
@@ -2919,9 +2919,9 @@ const provider0 = [
             "maxTokens": 8191,
             "name": "mistral.mistral-large-2407-v1:0",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000009,
+            "outputCost": 0.000006,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -3101,23 +3101,23 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "us.meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 0.00000532,
+            "inputCost": 0.0000024,
             "inputCostUnit": "token",
-            "outputCost": 0.000016,
+            "outputCost": 0.0000024,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "maxTokens": 2048,
             "name": "us.meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 9.9e-7,
+            "inputCost": 7.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 9.9e-7,
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -3143,9 +3143,9 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "us.meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 3.5e-7,
+            "inputCost": 1.6e-7,
             "inputCostUnit": "token",
-            "outputCost": 3.5e-7,
+            "outputCost": 1.6e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -3185,15 +3185,15 @@ const provider0 = [
             "maxTokens": 4096,
             "name": "us.meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 7.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 7.2e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": 128000,
@@ -3558,6 +3558,34 @@ const provider0 = [
             "cacheCreationInputCost": 0.000015,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -6490,6 +6518,160 @@ const provider1 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "apac.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "au.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "eu.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "jp.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us-gov.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 500000,
+            "name": "global.xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 500000,
+            "name": "us.xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 500000,
+            "name": "xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
@@ -10955,7 +11137,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 128000,
             "name": "azure_ai/deepseek-v3.2-speciale",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -11011,7 +11193,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 384000,
             "name": "azure_ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -11575,6 +11757,20 @@ const provider4 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -11910,6 +12106,20 @@ const provider9 = [
         {
             "maxTokens": 128000,
             "name": "claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
             "inputCostUnit": "token",
@@ -37478,6 +37688,20 @@ const provider56 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/anthropic/claude-sonnet-5.5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -38753,6 +38977,20 @@ const provider58 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/anthropic/claude-sonnet-5-5",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
@@ -43388,6 +43626,34 @@ const provider69 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/claude-sonnet-5-5@default",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -50715,6 +50981,37 @@ const provider96 = [
 
 const provider97 = [
         {
+            "maxTokens": 384000,
+            "name": "prism/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 384000,
+            "name": "prism/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
+const provider98 = [
+        {
             "maxTokens": null,
             "name": "jev-1.13.0",
             "type": "completion",
@@ -50828,7 +51125,8 @@ export const AICostModelList: {
     readonly "darkbloom": typeof provider94
     readonly "aihubmix": typeof provider95
     readonly "xiaomi_mimo": typeof provider96
-    readonly "typesafe": typeof provider97
+    readonly "prism": typeof provider97
+    readonly "typesafe": typeof provider98
 } = {
     "bedrock": provider0,
     "bedrock_converse": provider1,
@@ -50927,5 +51225,6 @@ export const AICostModelList: {
     "darkbloom": provider94,
     "aihubmix": provider95,
     "xiaomi_mimo": provider96,
-    "typesafe": provider97,
+    "prism": provider97,
+    "typesafe": provider98,
 }
