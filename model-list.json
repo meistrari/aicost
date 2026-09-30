@@ -6671,7 +6671,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 131072,
             "name": "global.openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6685,7 +6685,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 131072,
             "name": "openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6699,7 +6699,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 131072,
             "name": "us.openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -49772,7 +49772,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 131072,
             "name": "bedrock_mantle/openai.gpt-6.1-sol",
             "type": "responses",
             "inputCost": 0.0000022,
