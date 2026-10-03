@@ -11846,6 +11846,20 @@
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 262144,
+            "name": "azure_ai/kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "azure_text": [
