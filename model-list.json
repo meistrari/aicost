@@ -6711,6 +6711,34 @@
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.zai.glm-5.3",
+            "type": "chat",
+            "inputCost": 0.00000168,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000528,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.12e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000021,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.zai.glm-5.3",
+            "type": "chat",
+            "inputCost": 0.000001848,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005808,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.432e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000231,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "anyscale": [
@@ -25734,6 +25762,58 @@
         }
     ],
     "chatgpt": [
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-6-sol",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-6-luna",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-6-astra",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-6.1-sol",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
         {
             "maxTokens": 128000,
             "name": "chatgpt/gpt-5.5",
