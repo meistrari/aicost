@@ -1,5 +1,5 @@
-// Last updated: 2026-10-07T00:29:10.751Z
-// Next update: 2026-10-07T06:29:10.751Z
+// Last updated: 2026-10-07T06:16:02.574Z
+// Next update: 2026-10-07T12:16:02.574Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
@@ -6745,6 +6745,20 @@ const provider1 = [
             "cacheCreationInputCost": 0.00000231,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 131072,
+            "name": "in.moonshotai.kimi-k3",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000165,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
         }
     ] as const
 
@@ -7735,15 +7749,15 @@ const provider3 = [
             "maxTokens": 16384,
             "name": "azure/gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00001,
+            "outputCost": 6e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -28681,6 +28695,34 @@ const provider49 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 524288,
+            "name": "mistral/mistral-large-4",
+            "type": "chat",
+            "inputCost": 6.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000209,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 524288,
+            "name": "mistral/mistral-large-4-0",
+            "type": "chat",
+            "inputCost": 6.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000209,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": 262144,
