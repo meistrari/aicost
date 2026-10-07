@@ -9796,7 +9796,7 @@
             "priceTier": 5
         },
         {
-            "maxTokens": null,
+            "maxTokens": 128000,
             "name": "azure/eu/gpt-6-astra",
             "type": "chat",
             "inputCost": 0.000012,
