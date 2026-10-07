@@ -1,5 +1,5 @@
-// Last updated: 2026-10-07T12:15:57.536Z
-// Next update: 2026-10-07T18:15:57.536Z
+// Last updated: 2026-10-07T18:12:42.669Z
+// Next update: 2026-10-08T00:12:42.669Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
@@ -704,7 +704,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/ap-northeast-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -844,7 +844,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/ap-south-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -928,7 +928,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/ap-southeast-3/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1174,7 +1174,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/eu-central-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1244,7 +1244,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/eu-west-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1328,7 +1328,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/eu-west-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 7.8e-7,
@@ -1412,7 +1412,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/eu-south-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1538,7 +1538,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/sa-east-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1812,7 +1812,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/us-east-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -1896,7 +1896,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/us-east-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -2492,7 +2492,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": 16384,
             "name": "bedrock/us-west-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5349,7 +5349,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 16384,
             "name": "qwen.qwen3-coder-480b-a35b-v1:0",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -5363,7 +5363,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 8192,
             "name": "qwen.qwen3-235b-a22b-2507-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -5377,7 +5377,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": 16384,
             "name": "qwen.qwen3-coder-30b-a3b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5391,7 +5391,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": 8192,
             "name": "qwen.qwen3-32b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5823,7 +5823,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "us.deepseek.r1-v1:0",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -49986,13 +49986,13 @@ const provider89 = [
             "maxTokens": 128000,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra",
             "type": "responses",
-            "inputCost": 0.00000264,
+            "inputCost": 0.0000027,
             "inputCostUnit": "token",
-            "outputCost": 0.00001584,
+            "outputCost": 0.0000162,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.64e-7,
+            "cacheReadInputCost": 2.7e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000033,
+            "cacheCreationInputCost": 0.000003375,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
         },
@@ -50000,13 +50000,13 @@ const provider89 = [
             "maxTokens": 128000,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna",
             "type": "responses",
-            "inputCost": 2.64e-7,
+            "inputCost": 2.7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000001584,
+            "outputCost": 0.00000162,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.64e-8,
+            "cacheReadInputCost": 2.7e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 3.3e-7,
+            "cacheCreationInputCost": 3.375e-7,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 2
         },
@@ -50014,11 +50014,11 @@ const provider89 = [
             "maxTokens": 128000,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.4",
             "type": "responses",
-            "inputCost": 0.0000033,
+            "inputCost": 0.000003375,
             "inputCostUnit": "token",
-            "outputCost": 0.0000198,
+            "outputCost": 0.00002025,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.3e-7,
+            "cacheReadInputCost": 3.375e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
