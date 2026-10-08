@@ -1,5 +1,5 @@
-// Last updated: 2026-10-07T18:12:42.669Z
-// Next update: 2026-10-08T00:12:42.669Z
+// Last updated: 2026-10-08T00:27:50.953Z
+// Next update: 2026-10-08T06:27:50.953Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
@@ -3586,6 +3586,34 @@ const provider0 = [
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
@@ -6759,6 +6787,118 @@ const provider1 = [
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": 128000,
+            "name": "anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "apac.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "au.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "eu.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "jp.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us-gov.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
@@ -11984,6 +12124,20 @@ const provider4 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "azure_ai/claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
@@ -12338,7 +12492,7 @@ const provider9 = [
             "inputCostUnit": "token",
             "outputCost": 0.00001,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
@@ -12553,6 +12707,20 @@ const provider9 = [
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
@@ -31516,6 +31684,20 @@ const provider56 = [
             "priceTier": 4
         },
         {
+            "maxTokens": 128000,
+            "name": "openrouter/anthropic/claude-haiku-5.5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
             "maxTokens": 64000,
             "name": "openrouter/anthropic/claude-haiku-4.5",
             "type": "chat",
@@ -39669,6 +39851,20 @@ const provider58 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/anthropic/claude-haiku-5-5",
+            "type": "responses",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ] as const
 
@@ -44318,6 +44514,34 @@ const provider69 = [
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "vertex_ai/claude-haiku-5-5@default",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
@@ -50331,6 +50555,34 @@ const provider89 = [
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
         }
     ] as const
 
