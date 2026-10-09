@@ -3637,6 +3637,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 98304,
+            "name": "twelvelabs.pegasus-1-5-v1:0",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "bedrock_converse": [
@@ -41586,11 +41600,11 @@
             "maxTokens": 1000000,
             "name": "together_ai/Qwen/Qwen3.7-Max",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.0000045,
+            "outputCost": 0.0000075,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
