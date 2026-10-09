@@ -1,5 +1,5 @@
-// Last updated: 2026-10-08T18:12:10.122Z
-// Next update: 2026-10-09T00:12:10.122Z
+// Last updated: 2026-10-09T00:29:46.429Z
+// Next update: 2026-10-09T06:29:46.429Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "openrouter" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "typesafe"
 
@@ -634,7 +634,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/ap-northeast-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -676,7 +676,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -690,7 +690,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -718,7 +718,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -732,7 +732,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -774,7 +774,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/ap-south-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -816,7 +816,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.1e-7,
@@ -830,7 +830,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -872,7 +872,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/ap-southeast-3/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -914,7 +914,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/ap-southeast-3/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -970,7 +970,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/eu-north-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -1012,7 +1012,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/eu-north-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -1468,7 +1468,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/sa-east-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -1510,7 +1510,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -1524,7 +1524,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -1742,7 +1742,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/us-east-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -1784,7 +1784,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1798,7 +1798,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1826,7 +1826,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/us-east-2/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -1868,7 +1868,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1882,7 +1882,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -2422,7 +2422,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": 8000,
             "name": "bedrock/us-west-2/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -2464,7 +2464,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -2478,7 +2478,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": 16000,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -3308,7 +3308,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -3322,7 +3322,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3462,7 +3462,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -3476,7 +3476,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -4741,7 +4741,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 81920,
+            "maxTokens": 8000,
             "name": "deepseek.v3-v1:0",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -5321,7 +5321,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5335,7 +5335,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 7e-8,
@@ -5721,7 +5721,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "us-gov.openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -5735,7 +5735,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": 16384,
             "name": "us-gov.openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -6685,20 +6685,6 @@ const provider1 = [
             "outputCost": 0.0000066,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
-            "maxTokens": 500000,
-            "name": "xai.grok-4.7",
-            "type": "chat",
-            "inputCost": 0.000002,
-            "inputCostUnit": "token",
-            "outputCost": 0.000006,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -26997,14 +26983,14 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 131072,
             "name": "baseten/deepseek-ai/DeepSeek-V4.1-Flash-Fast",
             "type": "chat",
             "inputCost": 6e-7,
             "inputCostUnit": "token",
             "outputCost": 0.0000024,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.4e-7,
+            "cacheReadInputCost": 1.4e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -28865,7 +28851,7 @@ const provider49 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": 1048576,
             "name": "mistral/mistral-large-4",
             "type": "chat",
             "inputCost": 6.8e-7,
@@ -28879,7 +28865,7 @@ const provider49 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": 1048576,
             "name": "mistral/mistral-large-4-0",
             "type": "chat",
             "inputCost": 6.8e-7,
@@ -31694,6 +31680,20 @@ const provider56 = [
             "cacheReadInputCost": 1e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "openrouter/anthropic/claude-haiku-5.5:batch",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 6.25e-8,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
         },
@@ -35404,18 +35404,18 @@ const provider56 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": 128000,
             "name": "openrouter/~anthropic/claude-haiku-latest",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 1e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCost": 1e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 1
         },
         {
             "maxTokens": 128000,
@@ -35439,7 +35439,7 @@ const provider56 = [
             "inputCostUnit": "token",
             "outputCost": 0.00001,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
@@ -35582,7 +35582,7 @@ const provider56 = [
             "inputCostUnit": "token",
             "outputCost": 0.00001,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
@@ -38414,7 +38414,7 @@ const provider56 = [
             "inputCostUnit": "token",
             "outputCost": 0.000005,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCost": 5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
@@ -49899,7 +49899,7 @@ const provider88 = [
 
 const provider89 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -49913,7 +49913,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -49927,7 +49927,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 16000,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -49941,7 +49941,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": 16000,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -50319,7 +50319,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -50333,7 +50333,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -50403,7 +50403,7 @@ const provider89 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -50417,7 +50417,7 @@ const provider89 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": 16384,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
