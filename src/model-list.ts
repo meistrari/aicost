@@ -1,5 +1,5 @@
-// Last updated: 2026-10-11T18:11:55.199Z
-// Next update: 2026-10-12T00:11:55.199Z
+// Last updated: 2026-10-12T00:32:25.924Z
+// Next update: 2026-10-12T06:32:25.924Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "typesafe"
 
@@ -34,7 +34,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 4096,
             "name": "ai21.jamba-1-5-large-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -48,7 +48,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": 4096,
             "name": "ai21.jamba-1-5-mini-v1:0",
             "type": "chat",
             "inputCost": 2e-7,
@@ -1342,7 +1342,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/eu-west-3/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -1356,7 +1356,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/eu-west-3/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.0000052,
@@ -1370,7 +1370,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/eu-west-3/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 5.9e-7,
@@ -1700,7 +1700,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-east-1/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1714,7 +1714,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-east-1/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -1728,7 +1728,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-east-1/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -2380,7 +2380,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-west-2/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2394,7 +2394,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-west-2/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -2408,7 +2408,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -2776,7 +2776,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": 4096,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -2790,7 +2790,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": 4096,
             "name": "meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -2888,7 +2888,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2902,7 +2902,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -2930,7 +2930,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "mistral.mistral-small-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -2944,7 +2944,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": 4096,
             "name": "mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -3112,7 +3112,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -3126,7 +3126,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": 4096,
             "name": "us.meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -4945,7 +4945,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "eu.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -5111,7 +5111,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -5125,7 +5125,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -5963,7 +5963,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "us.meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -5977,7 +5977,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 8192,
             "name": "us.meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -5991,7 +5991,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": 16384,
             "name": "us.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6005,7 +6005,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": 128000,
             "name": "zai.glm-4.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -6033,7 +6033,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": 128000,
             "name": "zai.glm-4.7-flash",
             "type": "chat",
             "inputCost": 7e-8,
