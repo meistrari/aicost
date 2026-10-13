@@ -1,5 +1,5 @@
-// Last updated: 2026-10-13T06:19:45.931Z
-// Next update: 2026-10-13T12:19:45.931Z
+// Last updated: 2026-10-13T12:16:19.439Z
+// Next update: 2026-10-13T18:16:19.439Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "typesafe"
 
@@ -7106,7 +7106,7 @@ const provider3 = [
             "maxTokens": 8191,
             "name": "azure/ada",
             "type": "embedding",
-            "inputCost": 1e-7,
+            "inputCost": 1.1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": "token",
@@ -7595,9 +7595,9 @@ const provider3 = [
             "maxTokens": 4096,
             "name": "azure/gpt-4-turbo",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000011,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.000033,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -7609,9 +7609,9 @@ const provider3 = [
             "maxTokens": 4096,
             "name": "azure/gpt-4-turbo-2024-04-09",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000011,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.000033,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -7623,9 +7623,9 @@ const provider3 = [
             "maxTokens": 4096,
             "name": "azure/gpt-4-turbo-vision-preview",
             "type": "chat",
-            "inputCost": 0.00001,
+            "inputCost": 0.000011,
             "inputCostUnit": "token",
-            "outputCost": 0.00003,
+            "outputCost": 0.000033,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
@@ -9373,7 +9373,7 @@ const provider3 = [
             "maxTokens": 8192,
             "name": "azure/text-embedding-3-large",
             "type": "embedding",
-            "inputCost": 1.3e-7,
+            "inputCost": 1.43e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": "token",
@@ -9387,7 +9387,7 @@ const provider3 = [
             "maxTokens": 8192,
             "name": "azure/text-embedding-3-small",
             "type": "embedding",
-            "inputCost": 2e-8,
+            "inputCost": 2.2e-8,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": "token",
@@ -9401,7 +9401,7 @@ const provider3 = [
             "maxTokens": 8192,
             "name": "azure/text-embedding-ada-002",
             "type": "embedding",
-            "inputCost": 1e-7,
+            "inputCost": 1.1e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": "token",
@@ -12202,43 +12202,43 @@ const provider5 = [
             "maxTokens": 4097,
             "name": "azure/gpt-3.5-turbo-instruct-0914",
             "type": "completion",
-            "inputCost": 0.0000015,
+            "inputCost": 0.00000165,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": 4097,
             "name": "azure/gpt-35-turbo-instruct",
             "type": "completion",
-            "inputCost": 0.0000015,
+            "inputCost": 0.00000165,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": 4097,
             "name": "azure/gpt-35-turbo-instruct-0914",
             "type": "completion",
-            "inputCost": 0.0000015,
+            "inputCost": 0.00000165,
             "inputCostUnit": "token",
-            "outputCost": 0.000002,
+            "outputCost": 0.0000022,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         }
     ] as const
 
