@@ -34310,6 +34310,48 @@
     ],
     "scx-ai": [
         {
+            "maxTokens": 375000,
+            "name": "scx-ai/DeepSeek-V4.1-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 128000,
+            "name": "scx-ai/GLM-5.3",
+            "type": "chat",
+            "inputCost": 9.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000308,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 1000000,
+            "name": "scx-ai/Kimi-K3",
+            "type": "chat",
+            "inputCost": 0.00000283,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001413,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
             "maxTokens": 131072,
             "name": "scx-ai/GLM-5.2",
             "type": "chat",
