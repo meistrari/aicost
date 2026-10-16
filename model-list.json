@@ -27487,6 +27487,34 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "baseten/meta-models/muse-spark-open",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000425,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "baseten/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "gradient_ai": [
@@ -39125,15 +39153,15 @@
             "maxTokens": 1048576,
             "name": "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas",
             "type": "chat",
-            "inputCost": 0,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 0,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0,
+            "cacheReadInputCost": 3e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 2
         }
     ],
     "vertex_ai-ai21_models": [
@@ -40300,6 +40328,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 943718,
+            "name": "wandb/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "watsonx": [
