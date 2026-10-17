@@ -27515,6 +27515,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
+            "name": "baseten/reflection/Beam-1.0",
+            "type": "chat",
+            "inputCost": 0.0000013,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000043,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "gradient_ai": [
@@ -31520,6 +31534,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "nebius/reflection/beam",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "oci": [
@@ -36859,6 +36887,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "together_ai/reflection/Beam-1.0-501B-A23B",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "v0": [
