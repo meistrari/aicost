@@ -1,7 +1,7 @@
-// Last updated: 2026-10-17T18:09:16.469Z
-// Next update: 2026-10-18T00:09:16.469Z
+// Last updated: 2026-10-18T00:27:04.537Z
+// Next update: 2026-10-18T06:27:04.537Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "typesafe"
+export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -17521,6 +17521,19 @@ const provider20 = [
             "priceTier": 1
         },
         {
+            "maxTokens": null,
+            "name": "databricks/system.ai.deepseek-v4-flash-0731",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
             "maxTokens": 393216,
             "name": "databricks/databricks-deepseek-v4-pro-0813",
             "type": "chat",
@@ -18047,6 +18060,19 @@ const provider20 = [
             "cacheCreationInputCost": 0.00000299999,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.kimi-k3",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
         },
         {
             "maxTokens": 128000,
@@ -46734,6 +46760,51 @@ const provider100 = [
 
 const provider101 = [
         {
+            "maxTokens": 393216,
+            "name": "openinfer/@oi/GLM-5.3-Flash",
+            "type": "chat",
+            "inputCost": 1.95e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openinfer/@oi/Qwen3.5-27B",
+            "type": "chat",
+            "inputCost": 1.95e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 100000,
+            "name": "openinfer/@oi/Qwen3.5-9B",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ] as const
+
+const provider102 = [
+        {
             "maxTokens": null,
             "name": "jev-1.13.0",
             "type": "completion",
@@ -46851,7 +46922,8 @@ export const AICostModelList: {
     readonly "prism": typeof provider98
     readonly "microsoft_365_copilot": typeof provider99
     readonly "scaledown": typeof provider100
-    readonly "typesafe": typeof provider101
+    readonly "openinfer": typeof provider101
+    readonly "typesafe": typeof provider102
 } = {
     "bedrock": provider0,
     "bedrock_converse": provider1,
@@ -46954,5 +47026,6 @@ export const AICostModelList: {
     "prism": provider98,
     "microsoft_365_copilot": provider99,
     "scaledown": provider100,
-    "typesafe": provider101,
+    "openinfer": provider101,
+    "typesafe": provider102,
 }

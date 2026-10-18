@@ -17496,6 +17496,19 @@
             "priceTier": 1
         },
         {
+            "maxTokens": null,
+            "name": "databricks/system.ai.deepseek-v4-flash-0731",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
             "maxTokens": 393216,
             "name": "databricks/databricks-deepseek-v4-pro-0813",
             "type": "chat",
@@ -18022,6 +18035,19 @@
             "cacheCreationInputCost": 0.00000299999,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.kimi-k3",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
         },
         {
             "maxTokens": 128000,
@@ -46624,6 +46650,50 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        }
+    ],
+    "openinfer": [
+        {
+            "maxTokens": 393216,
+            "name": "openinfer/@oi/GLM-5.3-Flash",
+            "type": "chat",
+            "inputCost": 1.95e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 32768,
+            "name": "openinfer/@oi/Qwen3.5-27B",
+            "type": "chat",
+            "inputCost": 1.95e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 100000,
+            "name": "openinfer/@oi/Qwen3.5-9B",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "typesafe": [
