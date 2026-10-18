@@ -6705,7 +6705,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": 524288,
             "name": "global.xai.grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6719,7 +6719,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": 524288,
             "name": "us.xai.grok-4.7",
             "type": "chat",
             "inputCost": 0.0000022,
