@@ -24945,14 +24945,15 @@
             "maxTokens": 1048576,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "friendliai": [
@@ -29624,6 +29625,19 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "meta/sam-3.1",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
         }
     ],
     "meta_llama": [
