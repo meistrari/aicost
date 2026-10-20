@@ -1,5 +1,5 @@
-// Last updated: 2026-10-20T12:13:51.785Z
-// Next update: 2026-10-20T18:13:51.785Z
+// Last updated: 2026-10-20T18:11:34.777Z
+// Next update: 2026-10-21T00:11:34.777Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "typesafe"
 
@@ -7193,6 +7193,20 @@ const provider3 = [
         },
         {
             "maxTokens": 16384,
+            "name": "azure/eu/gpt-4o",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001375,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000138,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
             "name": "azure/eu/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -7204,6 +7218,20 @@ const provider3 = [
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/eu/gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 1.65e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -7305,6 +7333,20 @@ const provider3 = [
         },
         {
             "maxTokens": 100000,
+            "name": "azure/eu/o1",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.00000825,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/eu/o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -7320,6 +7362,20 @@ const provider3 = [
         {
             "maxTokens": 65536,
             "name": "azure/eu/o1-mini-2024-09-12",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.05e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/eu/o3-mini",
             "type": "chat",
             "inputCost": 0.00000121,
             "inputCostUnit": "token",
@@ -9475,6 +9531,20 @@ const provider3 = [
         },
         {
             "maxTokens": 16384,
+            "name": "azure/us/gpt-4o",
+            "type": "chat",
+            "inputCost": 0.00000275,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001375,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000138,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
             "name": "azure/us/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -9486,6 +9556,20 @@ const provider3 = [
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": 16384,
+            "name": "azure/us/gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 1.65e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 16384,
@@ -9587,6 +9671,20 @@ const provider3 = [
         },
         {
             "maxTokens": 100000,
+            "name": "azure/us/o1",
+            "type": "chat",
+            "inputCost": 0.0000165,
+            "inputCostUnit": "token",
+            "outputCost": 0.000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.00000825,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/us/o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -9615,6 +9713,20 @@ const provider3 = [
         },
         {
             "maxTokens": 100000,
+            "name": "azure/us/o3",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000088,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/us/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9629,6 +9741,20 @@ const provider3 = [
         },
         {
             "maxTokens": 100000,
+            "name": "azure/us/o3-mini",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.05e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/us/o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -9636,6 +9762,20 @@ const provider3 = [
             "outputCost": 0.00000484,
             "outputCostUnit": "token",
             "cacheReadInputCost": 6.05e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/us/o4-mini",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.03e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -10035,6 +10175,20 @@ const provider3 = [
         },
         {
             "maxTokens": 100000,
+            "name": "azure/eu/o3",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000088,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 100000,
             "name": "azure/eu/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -10060,6 +10214,20 @@ const provider3 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 5
+        },
+        {
+            "maxTokens": 100000,
+            "name": "azure/eu/o4-mini",
+            "type": "chat",
+            "inputCost": 0.00000121,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000484,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.03e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": 100000,
@@ -20206,6 +20374,34 @@ const provider22 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 256000,
+            "name": "volcengine/doubao-seed-2-1-pro-260915",
+            "type": "chat",
+            "inputCost": 8.625e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000043125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.725e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 256000,
+            "name": "volcengine/doubao-seed-2-1-lite-260915",
+            "type": "chat",
+            "inputCost": 1.15e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.88126e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": 256000,
