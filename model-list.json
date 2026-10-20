@@ -16020,8 +16020,8 @@
             "outputCostUnit": "token",
             "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheCreationInputCost": 0.000003125,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
@@ -16608,8 +16608,8 @@
             "outputCostUnit": "token",
             "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheCreationInputCost": 0.000003125,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
@@ -17168,8 +17168,8 @@
             "outputCostUnit": "token",
             "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
+            "cacheCreationInputCost": 0.000003125,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
