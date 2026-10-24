@@ -36319,6 +36319,20 @@
             "priceTier": 2
         },
         {
+            "maxTokens": 1048576,
+            "name": "together_ai/MiniMaxAI/MiniMax-M3.1-Flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
             "maxTokens": 262144,
             "name": "together_ai/Prism-ML/Ternary-Bonsai-27B",
             "type": "chat",
