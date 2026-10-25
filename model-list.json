@@ -30455,6 +30455,20 @@
         },
         {
             "maxTokens": 131072,
+            "name": "mistral/zai-glm-5-3-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": 131072,
             "name": "mistral/zai-glm-5",
             "type": "chat",
             "inputCost": 0.0000014,
