@@ -7123,6 +7123,34 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "global.openai.gpt-6.1-terra",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "us.openai.gpt-6.1-terra",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "anyscale": [
@@ -15684,6 +15712,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 5
+        },
+        {
+            "maxTokens": 128000,
+            "name": "gpt-6.1-terra",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "deepseek": [
@@ -26090,6 +26132,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": 1048576,
+            "name": "gemini-4-argon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "vertex_ai": [
@@ -27407,6 +27463,19 @@
         {
             "maxTokens": null,
             "name": "chatgpt/gpt-rosalind-discovery",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": 128000,
+            "name": "chatgpt/gpt-6.1-terra",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
