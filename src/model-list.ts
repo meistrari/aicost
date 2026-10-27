@@ -1,10 +1,69 @@
-// Last updated: 2026-10-27T00:24:26.712Z
-// Next update: 2026-10-27T06:24:26.712Z
+// Last updated: 2026-10-27T06:16:22.925Z
+// Next update: 2026-10-27T12:16:22.925Z
 
-export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
+        {
+            "maxTokens": null,
+            "name": "abliteration/abliterated-model",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "abliteration/abliterated-model-large",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "abliteration/abliterated-model-large-v2",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "abliteration/abliterated-model-large-flash",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ] as const
+
+const provider1 = [
         {
             "maxTokens": null,
             "name": "ai21.j2-mid-v1",
@@ -3847,7 +3906,7 @@ const provider0 = [
         }
     ] as const
 
-const provider1 = [
+const provider2 = [
         {
             "maxTokens": null,
             "name": "us.writer.palmyra-x4-v1:0",
@@ -7160,7 +7219,7 @@ const provider1 = [
         }
     ] as const
 
-const provider2 = [
+const provider3 = [
         {
             "maxTokens": null,
             "name": "anyscale/HuggingFaceH4/zephyr-7b-beta",
@@ -7331,7 +7390,7 @@ const provider2 = [
         }
     ] as const
 
-const provider3 = [
+const provider4 = [
         {
             "maxTokens": null,
             "name": "azure/ada",
@@ -10861,7 +10920,7 @@ const provider3 = [
         }
     ] as const
 
-const provider4 = [
+const provider5 = [
         {
             "maxTokens": null,
             "name": "azure_ai/claude-haiku-4-5",
@@ -12623,7 +12682,7 @@ const provider4 = [
         }
     ] as const
 
-const provider5 = [
+const provider6 = [
         {
             "maxTokens": null,
             "name": "azure/gpt-3.5-turbo-instruct-0914",
@@ -12668,7 +12727,7 @@ const provider5 = [
         }
     ] as const
 
-const provider6 = [
+const provider7 = [
         {
             "maxTokens": null,
             "name": "babbage-002",
@@ -12755,7 +12814,7 @@ const provider6 = [
         }
     ] as const
 
-const provider7 = [
+const provider8 = [
         {
             "maxTokens": null,
             "name": "cerebras/llama-3.1-70b",
@@ -12884,7 +12943,7 @@ const provider7 = [
         }
     ] as const
 
-const provider8 = [
+const provider9 = [
         {
             "maxTokens": null,
             "name": "chatdolphin",
@@ -12915,7 +12974,7 @@ const provider8 = [
         }
     ] as const
 
-const provider9 = [
+const provider10 = [
         {
             "maxTokens": null,
             "name": "claude-haiku-4-5-20251001",
@@ -13226,7 +13285,7 @@ const provider9 = [
         }
     ] as const
 
-const provider10 = [
+const provider11 = [
         {
             "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-2-7b-chat-fp16",
@@ -13649,7 +13708,7 @@ const provider10 = [
         }
     ] as const
 
-const provider11 = [
+const provider12 = [
         {
             "maxTokens": null,
             "name": "codestral/codestral-2405",
@@ -13680,7 +13739,7 @@ const provider11 = [
         }
     ] as const
 
-const provider12 = [
+const provider13 = [
         {
             "maxTokens": null,
             "name": "cohere/embed-v4.0",
@@ -13795,7 +13854,7 @@ const provider12 = [
         }
     ] as const
 
-const provider13 = [
+const provider14 = [
         {
             "maxTokens": null,
             "name": "command-a-03-2025",
@@ -13882,7 +13941,7 @@ const provider13 = [
         }
     ] as const
 
-const provider14 = [
+const provider15 = [
         {
             "maxTokens": null,
             "name": "coralbricks/glm-5.3-fast",
@@ -13969,7 +14028,7 @@ const provider14 = [
         }
     ] as const
 
-const provider15 = [
+const provider16 = [
         {
             "maxTokens": null,
             "name": "computer-use-preview",
@@ -15749,7 +15808,7 @@ const provider15 = [
         }
     ] as const
 
-const provider16 = [
+const provider17 = [
         {
             "maxTokens": null,
             "name": "deepseek-chat",
@@ -15976,7 +16035,7 @@ const provider16 = [
         }
     ] as const
 
-const provider17 = [
+const provider18 = [
         {
             "maxTokens": null,
             "name": "dashscope/deepseek-v4-flash",
@@ -16565,7 +16624,7 @@ const provider17 = [
         }
     ] as const
 
-const provider18 = [
+const provider19 = [
         {
             "maxTokens": null,
             "name": "qwencloud/deepseek-v4-flash",
@@ -17126,7 +17185,7 @@ const provider18 = [
         }
     ] as const
 
-const provider19 = [
+const provider20 = [
         {
             "maxTokens": null,
             "name": "qwen_ai_platform/deepseek-v4-flash",
@@ -17715,7 +17774,7 @@ const provider19 = [
         }
     ] as const
 
-const provider20 = [
+const provider21 = [
         {
             "maxTokens": null,
             "name": "databricks/databricks-bge-large-en",
@@ -18608,7 +18667,7 @@ const provider20 = [
         }
     ] as const
 
-const provider21 = [
+const provider22 = [
         {
             "maxTokens": null,
             "name": "deepinfra/Gryphe/MythoMax-L2-13b",
@@ -20515,7 +20574,7 @@ const provider21 = [
         }
     ] as const
 
-const provider22 = [
+const provider23 = [
         {
             "maxTokens": null,
             "name": "deepseek-v3-2-251201",
@@ -20738,7 +20797,7 @@ const provider22 = [
         }
     ] as const
 
-const provider23 = [
+const provider24 = [
         {
             "maxTokens": null,
             "name": "sail/moonshotai/Kimi-K3",
@@ -20909,7 +20968,7 @@ const provider23 = [
         }
     ] as const
 
-const provider24 = [
+const provider25 = [
         {
             "maxTokens": null,
             "name": "fal_ai/fal-ai/moondream3-preview/query",
@@ -20926,7 +20985,7 @@ const provider24 = [
         }
     ] as const
 
-const provider25 = [
+const provider26 = [
         {
             "maxTokens": null,
             "name": "featherless_ai/featherless-ai/Qwerky-72B",
@@ -20955,7 +21014,7 @@ const provider25 = [
         }
     ] as const
 
-const provider26 = [
+const provider27 = [
         {
             "maxTokens": null,
             "name": "fireworks_ai/WhereIsAI/UAE-Large-V1",
@@ -21028,7 +21087,7 @@ const provider26 = [
         }
     ] as const
 
-const provider27 = [
+const provider28 = [
         {
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-v2-instruct",
@@ -25479,7 +25538,7 @@ const provider27 = [
         }
     ] as const
 
-const provider28 = [
+const provider29 = [
         {
             "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.3-Flash",
@@ -25580,7 +25639,7 @@ const provider28 = [
         }
     ] as const
 
-const provider29 = [
+const provider30 = [
         {
             "maxTokens": null,
             "name": "gemini-2.5-flash",
@@ -26183,7 +26242,7 @@ const provider29 = [
         }
     ] as const
 
-const provider30 = [
+const provider31 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/gemini-3-pro-preview",
@@ -26577,7 +26636,7 @@ const provider30 = [
         }
     ] as const
 
-const provider31 = [
+const provider32 = [
         {
             "maxTokens": null,
             "name": "github_copilot/claude-fable-5",
@@ -27276,7 +27335,7 @@ const provider31 = [
         }
     ] as const
 
-const provider32 = [
+const provider33 = [
         {
             "maxTokens": null,
             "name": "chatgpt/gpt-6-sol",
@@ -27539,7 +27598,7 @@ const provider32 = [
         }
     ] as const
 
-const provider33 = [
+const provider34 = [
         {
             "maxTokens": null,
             "name": "gigachat/GigaChat-2",
@@ -27640,7 +27699,7 @@ const provider33 = [
         }
     ] as const
 
-const provider34 = [
+const provider35 = [
         {
             "maxTokens": null,
             "name": "gmi/anthropic/claude-opus-4.5",
@@ -27867,7 +27926,7 @@ const provider34 = [
         }
     ] as const
 
-const provider35 = [
+const provider36 = [
         {
             "maxTokens": null,
             "name": "baseten/MiniMaxAI/MiniMax-M2.5",
@@ -28318,7 +28377,7 @@ const provider35 = [
         }
     ] as const
 
-const provider36 = [
+const provider37 = [
         {
             "maxTokens": null,
             "name": "gradient_ai/alibaba-qwen3-32b",
@@ -28500,7 +28559,7 @@ const provider36 = [
         }
     ] as const
 
-const provider37 = [
+const provider38 = [
         {
             "maxTokens": null,
             "name": "lemonade/Qwen3-Coder-30B-A3B-Instruct-GGUF",
@@ -28573,7 +28632,7 @@ const provider37 = [
         }
     ] as const
 
-const provider38 = [
+const provider39 = [
         {
             "maxTokens": null,
             "name": "amazon-nova/nova-micro-v1",
@@ -28632,7 +28691,7 @@ const provider38 = [
         }
     ] as const
 
-const provider39 = [
+const provider40 = [
         {
             "maxTokens": null,
             "name": "groq/llama-guard-3-8b",
@@ -28733,7 +28792,7 @@ const provider39 = [
         }
     ] as const
 
-const provider40 = [
+const provider41 = [
         {
             "maxTokens": null,
             "name": "heroku/claude-3-5-haiku",
@@ -28788,7 +28847,7 @@ const provider40 = [
         }
     ] as const
 
-const provider41 = [
+const provider42 = [
         {
             "maxTokens": null,
             "name": "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B",
@@ -29015,7 +29074,7 @@ const provider41 = [
         }
     ] as const
 
-const provider42 = [
+const provider43 = [
         {
             "maxTokens": null,
             "name": "j2-light",
@@ -29186,7 +29245,7 @@ const provider42 = [
         }
     ] as const
 
-const provider43 = [
+const provider44 = [
         {
             "maxTokens": null,
             "name": "crusoe/deepseek-ai/DeepSeek-R1-0528",
@@ -29287,7 +29346,7 @@ const provider43 = [
         }
     ] as const
 
-const provider44 = [
+const provider45 = [
         {
             "maxTokens": null,
             "name": "inception/mercury-2",
@@ -29318,7 +29377,7 @@ const provider44 = [
         }
     ] as const
 
-const provider45 = [
+const provider46 = [
         {
             "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V3",
@@ -29825,7 +29884,7 @@ const provider45 = [
         }
     ] as const
 
-const provider46 = [
+const provider47 = [
         {
             "maxTokens": null,
             "name": "text-completion-inception/mercury-edit-2",
@@ -29842,7 +29901,7 @@ const provider46 = [
         }
     ] as const
 
-const provider47 = [
+const provider48 = [
         {
             "maxTokens": null,
             "name": "lambda_ai/deepseek-llama3.3-70b",
@@ -30125,7 +30184,7 @@ const provider47 = [
         }
     ] as const
 
-const provider48 = [
+const provider49 = [
         {
             "maxTokens": null,
             "name": "meta/muse-spark-1.1",
@@ -30225,7 +30284,7 @@ const provider48 = [
         }
     ] as const
 
-const provider49 = [
+const provider50 = [
         {
             "maxTokens": null,
             "name": "meta_llama/Llama-3.3-70B-Instruct",
@@ -30280,7 +30339,7 @@ const provider49 = [
         }
     ] as const
 
-const provider50 = [
+const provider51 = [
         {
             "maxTokens": null,
             "name": "minimax/MiniMax-M2.1",
@@ -30367,7 +30426,7 @@ const provider50 = [
         }
     ] as const
 
-const provider51 = [
+const provider52 = [
         {
             "maxTokens": null,
             "name": "mistral/codestral-2508",
@@ -31126,7 +31185,7 @@ const provider51 = [
         }
     ] as const
 
-const provider52 = [
+const provider53 = [
         {
             "maxTokens": null,
             "name": "moonshot/kimi-k2.7-code",
@@ -31283,7 +31342,7 @@ const provider52 = [
         }
     ] as const
 
-const provider53 = [
+const provider54 = [
         {
             "maxTokens": null,
             "name": "morph/morph-v3-fast",
@@ -31314,7 +31373,7 @@ const provider53 = [
         }
     ] as const
 
-const provider54 = [
+const provider55 = [
         {
             "maxTokens": null,
             "name": "nscale/Qwen/QwQ-32B",
@@ -31513,7 +31572,7 @@ const provider54 = [
         }
     ] as const
 
-const provider55 = [
+const provider56 = [
         {
             "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-R1",
@@ -32384,7 +32443,7 @@ const provider55 = [
         }
     ] as const
 
-const provider56 = [
+const provider57 = [
         {
             "maxTokens": null,
             "name": "oci/meta.llama-3.1-8b-instruct",
@@ -33099,7 +33158,7 @@ const provider56 = [
         }
     ] as const
 
-const provider57 = [
+const provider58 = [
         {
             "maxTokens": null,
             "name": "ollama/codegeex4",
@@ -33508,7 +33567,7 @@ const provider57 = [
         }
     ] as const
 
-const provider58 = [
+const provider59 = [
         {
             "maxTokens": null,
             "name": "ovhcloud/DeepSeek-R1-Distill-Llama-70B",
@@ -33721,7 +33780,7 @@ const provider58 = [
         }
     ] as const
 
-const provider59 = [
+const provider60 = [
         {
             "maxTokens": null,
             "name": "perplexity/codellama-34b-instruct",
@@ -34968,7 +35027,7 @@ const provider59 = [
         }
     ] as const
 
-const provider60 = [
+const provider61 = [
         {
             "maxTokens": null,
             "name": "publicai/swiss-ai/apertus-8b-instruct",
@@ -35097,7 +35156,7 @@ const provider60 = [
         }
     ] as const
 
-const provider61 = [
+const provider62 = [
         {
             "maxTokens": null,
             "name": "replicate/meta/llama-2-13b",
@@ -35662,7 +35721,7 @@ const provider61 = [
         }
     ] as const
 
-const provider62 = [
+const provider63 = [
         {
             "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-13b",
@@ -35749,7 +35808,7 @@ const provider62 = [
         }
     ] as const
 
-const provider63 = [
+const provider64 = [
         {
             "maxTokens": null,
             "name": "sambanova/MiniMax-M2.7",
@@ -35864,7 +35923,7 @@ const provider63 = [
         }
     ] as const
 
-const provider64 = [
+const provider65 = [
         {
             "maxTokens": null,
             "name": "scx-ai/DeepSeek-V4.1-flash",
@@ -35937,7 +35996,7 @@ const provider64 = [
         }
     ] as const
 
-const provider65 = [
+const provider66 = [
         {
             "maxTokens": null,
             "name": "snowflake/claude-3-5-sonnet",
@@ -36442,7 +36501,7 @@ const provider65 = [
         }
     ] as const
 
-const provider66 = [
+const provider67 = [
         {
             "maxTokens": null,
             "name": "text-completion-codestral/codestral-2405",
@@ -36473,7 +36532,7 @@ const provider66 = [
         }
     ] as const
 
-const provider67 = [
+const provider68 = [
         {
             "maxTokens": null,
             "name": "together-ai-21.1b-41b",
@@ -37777,7 +37836,7 @@ const provider67 = [
         }
     ] as const
 
-const provider68 = [
+const provider69 = [
         {
             "maxTokens": null,
             "name": "v0/v0-1.0-md",
@@ -37822,7 +37881,7 @@ const provider68 = [
         }
     ] as const
 
-const provider69 = [
+const provider70 = [
         {
             "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-14b",
@@ -39214,7 +39273,7 @@ const provider69 = [
         }
     ] as const
 
-const provider70 = [
+const provider71 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/claude-3-5-haiku",
@@ -39757,7 +39816,7 @@ const provider70 = [
         }
     ] as const
 
-const provider71 = [
+const provider72 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/mistralai/codestral-2@001",
@@ -40026,7 +40085,7 @@ const provider71 = [
         }
     ] as const
 
-const provider72 = [
+const provider73 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.1-maas",
@@ -40085,7 +40144,7 @@ const provider72 = [
         }
     ] as const
 
-const provider73 = [
+const provider74 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/jamba-1.5",
@@ -40158,7 +40217,7 @@ const provider73 = [
         }
     ] as const
 
-const provider74 = [
+const provider75 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
@@ -40329,7 +40388,7 @@ const provider74 = [
         }
     ] as const
 
-const provider75 = [
+const provider76 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/minimaxai/minimax-m2-maas",
@@ -40346,7 +40405,7 @@ const provider75 = [
         }
     ] as const
 
-const provider76 = [
+const provider77 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/moonshotai/kimi-k2-thinking-maas",
@@ -40363,7 +40422,7 @@ const provider76 = [
         }
     ] as const
 
-const provider77 = [
+const provider78 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-4.7-maas",
@@ -40408,7 +40467,7 @@ const provider77 = [
         }
     ] as const
 
-const provider78 = [
+const provider79 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/google/gemma-4-26b-a4b-it-maas",
@@ -40453,7 +40512,7 @@ const provider78 = [
         }
     ] as const
 
-const provider79 = [
+const provider80 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas",
@@ -40512,7 +40571,7 @@ const provider79 = [
         }
     ] as const
 
-const provider80 = [
+const provider81 = [
         {
             "maxTokens": null,
             "name": "voyage/voyage-2",
@@ -40837,7 +40896,7 @@ const provider80 = [
         }
     ] as const
 
-const provider81 = [
+const provider82 = [
         {
             "maxTokens": null,
             "name": "wandb/openai/gpt-oss-120b",
@@ -41302,7 +41361,7 @@ const provider81 = [
         }
     ] as const
 
-const provider82 = [
+const provider83 = [
         {
             "maxTokens": null,
             "name": "watsonx/ibm/granite-3-8b-instruct",
@@ -41725,7 +41784,7 @@ const provider82 = [
         }
     ] as const
 
-const provider83 = [
+const provider84 = [
         {
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-beta-0309",
@@ -42459,7 +42518,7 @@ const provider83 = [
         }
     ] as const
 
-const provider84 = [
+const provider85 = [
         {
             "maxTokens": null,
             "name": "zai/glm-5",
@@ -42686,7 +42745,7 @@ const provider84 = [
         }
     ] as const
 
-const provider85 = [
+const provider86 = [
         {
             "maxTokens": null,
             "name": "scaleway/qwen/qwen3.5-397b-a17b",
@@ -42885,7 +42944,7 @@ const provider85 = [
         }
     ] as const
 
-const provider86 = [
+const provider87 = [
         {
             "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.2",
@@ -44750,7 +44809,7 @@ const provider86 = [
         }
     ] as const
 
-const provider87 = [
+const provider88 = [
         {
             "maxTokens": null,
             "name": "llamagate/llama-3.1-8b",
@@ -44977,7 +45036,7 @@ const provider87 = [
         }
     ] as const
 
-const provider88 = [
+const provider89 = [
         {
             "maxTokens": null,
             "name": "libertai/hermes-3-8b-tee",
@@ -45148,7 +45207,7 @@ const provider88 = [
         }
     ] as const
 
-const provider89 = [
+const provider90 = [
         {
             "maxTokens": null,
             "name": "sarvam/sarvam-m",
@@ -45165,7 +45224,7 @@ const provider89 = [
         }
     ] as const
 
-const provider90 = [
+const provider91 = [
         {
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-120b",
@@ -45854,7 +45913,7 @@ const provider90 = [
         }
     ] as const
 
-const provider91 = [
+const provider92 = [
         {
             "maxTokens": null,
             "name": "tensormesh/Qwen/Qwen3.5-397B-A17B-FP8",
@@ -45997,7 +46056,7 @@ const provider91 = [
         }
     ] as const
 
-const provider92 = [
+const provider93 = [
         {
             "maxTokens": null,
             "name": "tencent/deepseek-v4-pro",
@@ -46182,7 +46241,7 @@ const provider92 = [
         }
     ] as const
 
-const provider93 = [
+const provider94 = [
         {
             "maxTokens": null,
             "name": "cognition/swe-1.6",
@@ -46227,7 +46286,7 @@ const provider93 = [
         }
     ] as const
 
-const provider94 = [
+const provider95 = [
         {
             "maxTokens": null,
             "name": "pinstripes/ps/glm-4.5-air",
@@ -46314,7 +46373,7 @@ const provider94 = [
         }
     ] as const
 
-const provider95 = [
+const provider96 = [
         {
             "maxTokens": null,
             "name": "darkbloom/gemma-4-26b",
@@ -46345,7 +46404,7 @@ const provider95 = [
         }
     ] as const
 
-const provider96 = [
+const provider97 = [
         {
             "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
@@ -47356,7 +47415,7 @@ const provider96 = [
         }
     ] as const
 
-const provider97 = [
+const provider98 = [
         {
             "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
@@ -47387,7 +47446,7 @@ const provider97 = [
         }
     ] as const
 
-const provider98 = [
+const provider99 = [
         {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
@@ -47418,7 +47477,7 @@ const provider98 = [
         }
     ] as const
 
-const provider99 = [
+const provider100 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -47435,7 +47494,7 @@ const provider99 = [
         }
     ] as const
 
-const provider100 = [
+const provider101 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -47508,7 +47567,7 @@ const provider100 = [
         }
     ] as const
 
-const provider101 = [
+const provider102 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -47553,7 +47612,7 @@ const provider101 = [
         }
     ] as const
 
-const provider102 = [
+const provider103 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -47976,7 +48035,80 @@ const provider102 = [
         }
     ] as const
 
-const provider103 = [
+const provider104 = [
+        {
+            "maxTokens": null,
+            "name": "refuseless/glm-5.3-abliterated",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000225,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "refuseless/glm-5.3-flash-abliterated",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "refuseless/deepseek-v4.1-flash-abliterated",
+            "type": "chat",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "refuseless/deepseek-v4.1-flash-fast",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "refuseless/minimax-m3.1-flash",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
+const provider105 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -47994,213 +48126,217 @@ const provider103 = [
     ] as const
 
 export const AICostModelList: {
-    readonly "bedrock": typeof provider0
-    readonly "bedrock_converse": typeof provider1
-    readonly "anyscale": typeof provider2
-    readonly "azure": typeof provider3
-    readonly "azure_ai": typeof provider4
-    readonly "azure_text": typeof provider5
-    readonly "text-completion-openai": typeof provider6
-    readonly "cerebras": typeof provider7
-    readonly "nlp_cloud": typeof provider8
-    readonly "anthropic": typeof provider9
-    readonly "cloudflare": typeof provider10
-    readonly "codestral": typeof provider11
-    readonly "cohere": typeof provider12
-    readonly "cohere_chat": typeof provider13
-    readonly "coralbricks": typeof provider14
-    readonly "openai": typeof provider15
-    readonly "deepseek": typeof provider16
-    readonly "dashscope": typeof provider17
-    readonly "qwencloud": typeof provider18
-    readonly "qwen_ai_platform": typeof provider19
-    readonly "databricks": typeof provider20
-    readonly "deepinfra": typeof provider21
-    readonly "volcengine": typeof provider22
-    readonly "sail": typeof provider23
-    readonly "fal_ai": typeof provider24
-    readonly "featherless_ai": typeof provider25
-    readonly "fireworks_ai-embedding-models": typeof provider26
-    readonly "fireworks_ai": typeof provider27
-    readonly "friendliai": typeof provider28
-    readonly "vertex-ai": typeof provider29
-    readonly "vertex_ai": typeof provider30
-    readonly "github_copilot": typeof provider31
-    readonly "chatgpt": typeof provider32
-    readonly "gigachat": typeof provider33
-    readonly "gmi": typeof provider34
-    readonly "baseten": typeof provider35
-    readonly "gradient_ai": typeof provider36
-    readonly "lemonade": typeof provider37
-    readonly "amazon_nova": typeof provider38
-    readonly "groq": typeof provider39
-    readonly "heroku": typeof provider40
-    readonly "hyperbolic": typeof provider41
-    readonly "ai21": typeof provider42
-    readonly "crusoe": typeof provider43
-    readonly "inception": typeof provider44
-    readonly "inferenceapis": typeof provider45
-    readonly "text-completion-inception": typeof provider46
-    readonly "lambda_ai": typeof provider47
-    readonly "meta": typeof provider48
-    readonly "meta_llama": typeof provider49
-    readonly "minimax": typeof provider50
-    readonly "mistral": typeof provider51
-    readonly "moonshot": typeof provider52
-    readonly "morph": typeof provider53
-    readonly "nscale": typeof provider54
-    readonly "nebius": typeof provider55
-    readonly "oci": typeof provider56
-    readonly "ollama": typeof provider57
-    readonly "ovhcloud": typeof provider58
-    readonly "perplexity": typeof provider59
-    readonly "publicai": typeof provider60
-    readonly "replicate": typeof provider61
-    readonly "sagemaker": typeof provider62
-    readonly "sambanova": typeof provider63
-    readonly "scx-ai": typeof provider64
-    readonly "snowflake": typeof provider65
-    readonly "text-completion-codestral": typeof provider66
-    readonly "together_ai": typeof provider67
-    readonly "v0": typeof provider68
-    readonly "vercel_ai_gateway": typeof provider69
-    readonly "vertex_ai-anthropic_models": typeof provider70
-    readonly "vertex_ai-mistral_models": typeof provider71
-    readonly "vertex_ai-deepseek_models": typeof provider72
-    readonly "vertex_ai-ai21_models": typeof provider73
-    readonly "vertex_ai-llama_models": typeof provider74
-    readonly "vertex_ai-minimax_models": typeof provider75
-    readonly "vertex_ai-moonshot_models": typeof provider76
-    readonly "vertex_ai-zai_models": typeof provider77
-    readonly "vertex_ai-openai_models": typeof provider78
-    readonly "vertex_ai-qwen_models": typeof provider79
-    readonly "voyage": typeof provider80
-    readonly "wandb": typeof provider81
-    readonly "watsonx": typeof provider82
-    readonly "xai": typeof provider83
-    readonly "zai": typeof provider84
-    readonly "scaleway": typeof provider85
-    readonly "novita": typeof provider86
-    readonly "llamagate": typeof provider87
-    readonly "libertai": typeof provider88
-    readonly "sarvam": typeof provider89
-    readonly "bedrock_mantle": typeof provider90
-    readonly "tensormesh": typeof provider91
-    readonly "tencent": typeof provider92
-    readonly "cognition": typeof provider93
-    readonly "pinstripes": typeof provider94
-    readonly "darkbloom": typeof provider95
-    readonly "aihubmix": typeof provider96
-    readonly "xiaomi_mimo": typeof provider97
-    readonly "prism": typeof provider98
-    readonly "microsoft_365_copilot": typeof provider99
-    readonly "scaledown": typeof provider100
-    readonly "openinfer": typeof provider101
-    readonly "opencode_go": typeof provider102
-    readonly "typesafe": typeof provider103
+    readonly "abliteration": typeof provider0
+    readonly "bedrock": typeof provider1
+    readonly "bedrock_converse": typeof provider2
+    readonly "anyscale": typeof provider3
+    readonly "azure": typeof provider4
+    readonly "azure_ai": typeof provider5
+    readonly "azure_text": typeof provider6
+    readonly "text-completion-openai": typeof provider7
+    readonly "cerebras": typeof provider8
+    readonly "nlp_cloud": typeof provider9
+    readonly "anthropic": typeof provider10
+    readonly "cloudflare": typeof provider11
+    readonly "codestral": typeof provider12
+    readonly "cohere": typeof provider13
+    readonly "cohere_chat": typeof provider14
+    readonly "coralbricks": typeof provider15
+    readonly "openai": typeof provider16
+    readonly "deepseek": typeof provider17
+    readonly "dashscope": typeof provider18
+    readonly "qwencloud": typeof provider19
+    readonly "qwen_ai_platform": typeof provider20
+    readonly "databricks": typeof provider21
+    readonly "deepinfra": typeof provider22
+    readonly "volcengine": typeof provider23
+    readonly "sail": typeof provider24
+    readonly "fal_ai": typeof provider25
+    readonly "featherless_ai": typeof provider26
+    readonly "fireworks_ai-embedding-models": typeof provider27
+    readonly "fireworks_ai": typeof provider28
+    readonly "friendliai": typeof provider29
+    readonly "vertex-ai": typeof provider30
+    readonly "vertex_ai": typeof provider31
+    readonly "github_copilot": typeof provider32
+    readonly "chatgpt": typeof provider33
+    readonly "gigachat": typeof provider34
+    readonly "gmi": typeof provider35
+    readonly "baseten": typeof provider36
+    readonly "gradient_ai": typeof provider37
+    readonly "lemonade": typeof provider38
+    readonly "amazon_nova": typeof provider39
+    readonly "groq": typeof provider40
+    readonly "heroku": typeof provider41
+    readonly "hyperbolic": typeof provider42
+    readonly "ai21": typeof provider43
+    readonly "crusoe": typeof provider44
+    readonly "inception": typeof provider45
+    readonly "inferenceapis": typeof provider46
+    readonly "text-completion-inception": typeof provider47
+    readonly "lambda_ai": typeof provider48
+    readonly "meta": typeof provider49
+    readonly "meta_llama": typeof provider50
+    readonly "minimax": typeof provider51
+    readonly "mistral": typeof provider52
+    readonly "moonshot": typeof provider53
+    readonly "morph": typeof provider54
+    readonly "nscale": typeof provider55
+    readonly "nebius": typeof provider56
+    readonly "oci": typeof provider57
+    readonly "ollama": typeof provider58
+    readonly "ovhcloud": typeof provider59
+    readonly "perplexity": typeof provider60
+    readonly "publicai": typeof provider61
+    readonly "replicate": typeof provider62
+    readonly "sagemaker": typeof provider63
+    readonly "sambanova": typeof provider64
+    readonly "scx-ai": typeof provider65
+    readonly "snowflake": typeof provider66
+    readonly "text-completion-codestral": typeof provider67
+    readonly "together_ai": typeof provider68
+    readonly "v0": typeof provider69
+    readonly "vercel_ai_gateway": typeof provider70
+    readonly "vertex_ai-anthropic_models": typeof provider71
+    readonly "vertex_ai-mistral_models": typeof provider72
+    readonly "vertex_ai-deepseek_models": typeof provider73
+    readonly "vertex_ai-ai21_models": typeof provider74
+    readonly "vertex_ai-llama_models": typeof provider75
+    readonly "vertex_ai-minimax_models": typeof provider76
+    readonly "vertex_ai-moonshot_models": typeof provider77
+    readonly "vertex_ai-zai_models": typeof provider78
+    readonly "vertex_ai-openai_models": typeof provider79
+    readonly "vertex_ai-qwen_models": typeof provider80
+    readonly "voyage": typeof provider81
+    readonly "wandb": typeof provider82
+    readonly "watsonx": typeof provider83
+    readonly "xai": typeof provider84
+    readonly "zai": typeof provider85
+    readonly "scaleway": typeof provider86
+    readonly "novita": typeof provider87
+    readonly "llamagate": typeof provider88
+    readonly "libertai": typeof provider89
+    readonly "sarvam": typeof provider90
+    readonly "bedrock_mantle": typeof provider91
+    readonly "tensormesh": typeof provider92
+    readonly "tencent": typeof provider93
+    readonly "cognition": typeof provider94
+    readonly "pinstripes": typeof provider95
+    readonly "darkbloom": typeof provider96
+    readonly "aihubmix": typeof provider97
+    readonly "xiaomi_mimo": typeof provider98
+    readonly "prism": typeof provider99
+    readonly "microsoft_365_copilot": typeof provider100
+    readonly "scaledown": typeof provider101
+    readonly "openinfer": typeof provider102
+    readonly "opencode_go": typeof provider103
+    readonly "refuseless": typeof provider104
+    readonly "typesafe": typeof provider105
 } = {
-    "bedrock": provider0,
-    "bedrock_converse": provider1,
-    "anyscale": provider2,
-    "azure": provider3,
-    "azure_ai": provider4,
-    "azure_text": provider5,
-    "text-completion-openai": provider6,
-    "cerebras": provider7,
-    "nlp_cloud": provider8,
-    "anthropic": provider9,
-    "cloudflare": provider10,
-    "codestral": provider11,
-    "cohere": provider12,
-    "cohere_chat": provider13,
-    "coralbricks": provider14,
-    "openai": provider15,
-    "deepseek": provider16,
-    "dashscope": provider17,
-    "qwencloud": provider18,
-    "qwen_ai_platform": provider19,
-    "databricks": provider20,
-    "deepinfra": provider21,
-    "volcengine": provider22,
-    "sail": provider23,
-    "fal_ai": provider24,
-    "featherless_ai": provider25,
-    "fireworks_ai-embedding-models": provider26,
-    "fireworks_ai": provider27,
-    "friendliai": provider28,
-    "vertex-ai": provider29,
-    "vertex_ai": provider30,
-    "github_copilot": provider31,
-    "chatgpt": provider32,
-    "gigachat": provider33,
-    "gmi": provider34,
-    "baseten": provider35,
-    "gradient_ai": provider36,
-    "lemonade": provider37,
-    "amazon_nova": provider38,
-    "groq": provider39,
-    "heroku": provider40,
-    "hyperbolic": provider41,
-    "ai21": provider42,
-    "crusoe": provider43,
-    "inception": provider44,
-    "inferenceapis": provider45,
-    "text-completion-inception": provider46,
-    "lambda_ai": provider47,
-    "meta": provider48,
-    "meta_llama": provider49,
-    "minimax": provider50,
-    "mistral": provider51,
-    "moonshot": provider52,
-    "morph": provider53,
-    "nscale": provider54,
-    "nebius": provider55,
-    "oci": provider56,
-    "ollama": provider57,
-    "ovhcloud": provider58,
-    "perplexity": provider59,
-    "publicai": provider60,
-    "replicate": provider61,
-    "sagemaker": provider62,
-    "sambanova": provider63,
-    "scx-ai": provider64,
-    "snowflake": provider65,
-    "text-completion-codestral": provider66,
-    "together_ai": provider67,
-    "v0": provider68,
-    "vercel_ai_gateway": provider69,
-    "vertex_ai-anthropic_models": provider70,
-    "vertex_ai-mistral_models": provider71,
-    "vertex_ai-deepseek_models": provider72,
-    "vertex_ai-ai21_models": provider73,
-    "vertex_ai-llama_models": provider74,
-    "vertex_ai-minimax_models": provider75,
-    "vertex_ai-moonshot_models": provider76,
-    "vertex_ai-zai_models": provider77,
-    "vertex_ai-openai_models": provider78,
-    "vertex_ai-qwen_models": provider79,
-    "voyage": provider80,
-    "wandb": provider81,
-    "watsonx": provider82,
-    "xai": provider83,
-    "zai": provider84,
-    "scaleway": provider85,
-    "novita": provider86,
-    "llamagate": provider87,
-    "libertai": provider88,
-    "sarvam": provider89,
-    "bedrock_mantle": provider90,
-    "tensormesh": provider91,
-    "tencent": provider92,
-    "cognition": provider93,
-    "pinstripes": provider94,
-    "darkbloom": provider95,
-    "aihubmix": provider96,
-    "xiaomi_mimo": provider97,
-    "prism": provider98,
-    "microsoft_365_copilot": provider99,
-    "scaledown": provider100,
-    "openinfer": provider101,
-    "opencode_go": provider102,
-    "typesafe": provider103,
+    "abliteration": provider0,
+    "bedrock": provider1,
+    "bedrock_converse": provider2,
+    "anyscale": provider3,
+    "azure": provider4,
+    "azure_ai": provider5,
+    "azure_text": provider6,
+    "text-completion-openai": provider7,
+    "cerebras": provider8,
+    "nlp_cloud": provider9,
+    "anthropic": provider10,
+    "cloudflare": provider11,
+    "codestral": provider12,
+    "cohere": provider13,
+    "cohere_chat": provider14,
+    "coralbricks": provider15,
+    "openai": provider16,
+    "deepseek": provider17,
+    "dashscope": provider18,
+    "qwencloud": provider19,
+    "qwen_ai_platform": provider20,
+    "databricks": provider21,
+    "deepinfra": provider22,
+    "volcengine": provider23,
+    "sail": provider24,
+    "fal_ai": provider25,
+    "featherless_ai": provider26,
+    "fireworks_ai-embedding-models": provider27,
+    "fireworks_ai": provider28,
+    "friendliai": provider29,
+    "vertex-ai": provider30,
+    "vertex_ai": provider31,
+    "github_copilot": provider32,
+    "chatgpt": provider33,
+    "gigachat": provider34,
+    "gmi": provider35,
+    "baseten": provider36,
+    "gradient_ai": provider37,
+    "lemonade": provider38,
+    "amazon_nova": provider39,
+    "groq": provider40,
+    "heroku": provider41,
+    "hyperbolic": provider42,
+    "ai21": provider43,
+    "crusoe": provider44,
+    "inception": provider45,
+    "inferenceapis": provider46,
+    "text-completion-inception": provider47,
+    "lambda_ai": provider48,
+    "meta": provider49,
+    "meta_llama": provider50,
+    "minimax": provider51,
+    "mistral": provider52,
+    "moonshot": provider53,
+    "morph": provider54,
+    "nscale": provider55,
+    "nebius": provider56,
+    "oci": provider57,
+    "ollama": provider58,
+    "ovhcloud": provider59,
+    "perplexity": provider60,
+    "publicai": provider61,
+    "replicate": provider62,
+    "sagemaker": provider63,
+    "sambanova": provider64,
+    "scx-ai": provider65,
+    "snowflake": provider66,
+    "text-completion-codestral": provider67,
+    "together_ai": provider68,
+    "v0": provider69,
+    "vercel_ai_gateway": provider70,
+    "vertex_ai-anthropic_models": provider71,
+    "vertex_ai-mistral_models": provider72,
+    "vertex_ai-deepseek_models": provider73,
+    "vertex_ai-ai21_models": provider74,
+    "vertex_ai-llama_models": provider75,
+    "vertex_ai-minimax_models": provider76,
+    "vertex_ai-moonshot_models": provider77,
+    "vertex_ai-zai_models": provider78,
+    "vertex_ai-openai_models": provider79,
+    "vertex_ai-qwen_models": provider80,
+    "voyage": provider81,
+    "wandb": provider82,
+    "watsonx": provider83,
+    "xai": provider84,
+    "zai": provider85,
+    "scaleway": provider86,
+    "novita": provider87,
+    "llamagate": provider88,
+    "libertai": provider89,
+    "sarvam": provider90,
+    "bedrock_mantle": provider91,
+    "tensormesh": provider92,
+    "tencent": provider93,
+    "cognition": provider94,
+    "pinstripes": provider95,
+    "darkbloom": provider96,
+    "aihubmix": provider97,
+    "xiaomi_mimo": provider98,
+    "prism": provider99,
+    "microsoft_365_copilot": provider100,
+    "scaledown": provider101,
+    "openinfer": provider102,
+    "opencode_go": provider103,
+    "refuseless": provider104,
+    "typesafe": provider105,
 }
