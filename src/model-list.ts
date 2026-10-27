@@ -1,12 +1,12 @@
-// Last updated: 2026-10-26T19:51:07.414Z
-// Next update: 2026-10-27T01:51:07.414Z
+// Last updated: 2026-10-27T00:24:26.712Z
+// Next update: 2026-10-27T06:24:26.712Z
 
 export type AICostModelProvider = "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "ai21.j2-mid-v1",
             "type": "chat",
             "inputCost": 0.0000125,
@@ -20,7 +20,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "ai21.j2-ultra-v1",
             "type": "chat",
             "inputCost": 0.0000188,
@@ -34,7 +34,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ai21.jamba-1-5-large-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -48,7 +48,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ai21.jamba-1-5-mini-v1:0",
             "type": "chat",
             "inputCost": 2e-7,
@@ -62,7 +62,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ai21.jamba-instruct-v1:0",
             "type": "chat",
             "inputCost": 5e-7,
@@ -76,7 +76,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8172,
+            "maxTokens": null,
             "name": "amazon.nova-2-multimodal-embeddings-v1:0",
             "type": "embedding",
             "inputCost": 1.35e-7,
@@ -90,7 +90,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128,
+            "maxTokens": null,
             "name": "amazon.titan-embed-image-v1",
             "type": "embedding",
             "inputCost": 8e-7,
@@ -104,7 +104,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "amazon.titan-embed-text-v1",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -118,7 +118,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "amazon.titan-embed-g1-text-02",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -132,7 +132,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -146,7 +146,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 77,
+            "maxTokens": null,
             "name": "twelvelabs.marengo-embed-2-7-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -160,7 +160,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 77,
+            "maxTokens": null,
             "name": "us.twelvelabs.marengo-embed-2-7-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -174,7 +174,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 77,
+            "maxTokens": null,
             "name": "eu.twelvelabs.marengo-embed-2-7-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -188,7 +188,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 500,
+            "maxTokens": null,
             "name": "twelvelabs.marengo-embed-3-0-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -202,7 +202,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 500,
+            "maxTokens": null,
             "name": "us.twelvelabs.marengo-embed-3-0-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -216,7 +216,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 500,
+            "maxTokens": null,
             "name": "eu.twelvelabs.marengo-embed-3-0-v1:0",
             "type": "embedding",
             "inputCost": null,
@@ -286,7 +286,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "amazon.titan-text-express-v1",
             "type": "chat",
             "inputCost": 2e-7,
@@ -300,7 +300,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "amazon.titan-text-lite-v1",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -314,7 +314,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "amazon.titan-text-premier-v1:0",
             "type": "chat",
             "inputCost": 5e-7,
@@ -328,7 +328,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -342,7 +342,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -356,7 +356,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -370,7 +370,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anthropic.claude-3-7-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -384,7 +384,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anthropic.claude-3-opus-20240229-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -398,7 +398,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -412,7 +412,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-mythos-preview",
             "type": "chat",
             "inputCost": 0.0000275,
@@ -426,7 +426,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "anthropic.claude-v1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -440,7 +440,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -454,7 +454,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/*/1-month-commitment/cohere.command-light-text-v14",
             "type": "chat",
             "inputCost": null,
@@ -467,7 +467,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/*/1-month-commitment/cohere.command-text-v14",
             "type": "chat",
             "inputCost": null,
@@ -480,7 +480,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/*/6-month-commitment/cohere.command-light-text-v14",
             "type": "chat",
             "inputCost": null,
@@ -493,7 +493,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/*/6-month-commitment/cohere.command-text-v14",
             "type": "chat",
             "inputCost": null,
@@ -506,7 +506,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -519,7 +519,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -532,7 +532,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/1-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -545,7 +545,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -558,7 +558,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -571,7 +571,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/6-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -584,7 +584,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": 0.00000223,
@@ -598,7 +598,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/anthropic.claude-v1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -612,7 +612,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -626,7 +626,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -640,7 +640,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -654,7 +654,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -668,7 +668,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -682,7 +682,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -696,7 +696,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -710,7 +710,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -724,7 +724,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -738,7 +738,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000318,
@@ -752,7 +752,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -766,7 +766,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -780,7 +780,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -794,7 +794,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -808,7 +808,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.1e-7,
@@ -822,7 +822,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -836,7 +836,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -850,7 +850,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.1e-7,
@@ -864,7 +864,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-3/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -878,7 +878,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-3/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -892,7 +892,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-3/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -906,7 +906,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-3/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -920,7 +920,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-3/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -934,7 +934,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ca-central-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000305,
@@ -948,7 +948,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ca-central-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -962,7 +962,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/eu-north-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -976,7 +976,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-north-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -990,7 +990,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-north-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1004,7 +1004,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/eu-north-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -1018,7 +1018,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/1-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -1031,7 +1031,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/1-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -1044,7 +1044,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/1-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -1057,7 +1057,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/6-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -1070,7 +1070,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/6-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -1083,7 +1083,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/6-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -1096,7 +1096,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": 0.00000248,
@@ -1110,7 +1110,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/anthropic.claude-v1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -1124,7 +1124,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -1138,7 +1138,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1152,7 +1152,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1166,7 +1166,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/eu-central-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1180,7 +1180,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000286,
@@ -1194,7 +1194,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.2e-7,
@@ -1208,7 +1208,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1222,7 +1222,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1236,7 +1236,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1250,7 +1250,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000345,
@@ -1264,7 +1264,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3.9e-7,
@@ -1278,7 +1278,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 4.7e-7,
@@ -1292,7 +1292,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 4.7e-7,
@@ -1306,7 +1306,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/nvidia.nemotron-super-3-120b",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -1320,7 +1320,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 7.8e-7,
@@ -1334,7 +1334,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/eu-west-3/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -1348,7 +1348,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/eu-west-3/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.0000052,
@@ -1362,7 +1362,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/eu-west-3/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 5.9e-7,
@@ -1376,7 +1376,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-south-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1390,7 +1390,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-south-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1404,7 +1404,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/eu-south-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1418,7 +1418,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/invoke/anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -1432,7 +1432,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000445,
@@ -1446,7 +1446,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 5e-7,
@@ -1460,7 +1460,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -1474,7 +1474,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1488,7 +1488,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -1502,7 +1502,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 7.3e-7,
@@ -1516,7 +1516,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -1530,7 +1530,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1544,7 +1544,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/1-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -1557,7 +1557,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/1-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -1570,7 +1570,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/1-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -1583,7 +1583,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/6-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -1596,7 +1596,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/6-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -1609,7 +1609,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/6-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -1622,7 +1622,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -1636,7 +1636,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/anthropic.claude-v1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -1650,7 +1650,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -1664,7 +1664,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000265,
@@ -1678,7 +1678,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1692,7 +1692,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -1706,7 +1706,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -1720,7 +1720,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -1734,7 +1734,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -1748,7 +1748,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1762,7 +1762,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1776,7 +1776,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1790,7 +1790,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1804,7 +1804,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -1818,7 +1818,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -1832,7 +1832,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1846,7 +1846,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1860,7 +1860,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1874,7 +1874,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -1888,7 +1888,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-east-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -1902,7 +1902,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 9.6e-7,
@@ -1916,7 +1916,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.titan-embed-text-v1",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -1930,7 +1930,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 2e-7,
@@ -1944,7 +1944,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.titan-text-express-v1",
             "type": "chat",
             "inputCost": 0.0000013,
@@ -1958,7 +1958,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.titan-text-lite-v1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -1972,7 +1972,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/amazon.titan-text-premier-v1:0",
             "type": "chat",
             "inputCost": 5e-7,
@@ -1986,7 +1986,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2000,7 +2000,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2014,7 +2014,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000265,
@@ -2028,7 +2028,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2042,7 +2042,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8172,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-2-multimodal-embeddings-v1:0",
             "type": "embedding",
             "inputCost": 1.62e-7,
@@ -2056,7 +2056,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -2070,7 +2070,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 4.2e-8,
@@ -2084,7 +2084,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 9.6e-7,
@@ -2098,7 +2098,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.titan-embed-text-v1",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2112,7 +2112,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.titan-embed-text-v2:0",
             "type": "embedding",
             "inputCost": 1.1e-7,
@@ -2126,7 +2126,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.titan-text-express-v1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -2140,7 +2140,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.titan-text-lite-v1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2154,7 +2154,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.titan-text-premier-v1:0",
             "type": "chat",
             "inputCost": 5e-7,
@@ -2168,7 +2168,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2182,7 +2182,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -2196,7 +2196,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000265,
@@ -2210,7 +2210,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2224,7 +2224,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-west-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000265,
@@ -2238,7 +2238,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-west-1/meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2252,7 +2252,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/1-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -2265,7 +2265,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/1-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -2278,7 +2278,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/1-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -2291,7 +2291,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/6-month-commitment/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": null,
@@ -2304,7 +2304,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/6-month-commitment/anthropic.claude-v1",
             "type": "chat",
             "inputCost": null,
@@ -2317,7 +2317,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/6-month-commitment/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": null,
@@ -2330,7 +2330,7 @@ const provider0 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/anthropic.claude-instant-v1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -2344,7 +2344,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/anthropic.claude-v1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -2358,7 +2358,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/anthropic.claude-v2:1",
             "type": "chat",
             "inputCost": 0.000008,
@@ -2372,7 +2372,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2386,7 +2386,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -2400,7 +2400,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -2414,7 +2414,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -2428,7 +2428,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2442,7 +2442,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2456,7 +2456,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -2470,7 +2470,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -2484,7 +2484,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -2498,7 +2498,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -2512,7 +2512,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2530,7 +2530,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "cohere.command-light-text-v14",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2544,7 +2544,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "cohere.command-text-v14",
             "type": "chat",
             "inputCost": 0.000001,
@@ -2558,7 +2558,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "cohere.embed-english-v3",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2572,7 +2572,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "cohere.embed-multilingual-v3",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -2586,7 +2586,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cohere.embed-v4:0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -2600,7 +2600,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.cohere.embed-v4:0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -2614,7 +2614,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.cohere.embed-v4:0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -2628,7 +2628,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -2642,7 +2642,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2656,7 +2656,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2670,7 +2670,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-3-7-sonnet-20250219-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -2684,7 +2684,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-3-opus-20240229-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -2698,7 +2698,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "eu.meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -2712,7 +2712,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "eu.meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -2726,7 +2726,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama2-13b-chat-v1",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -2740,7 +2740,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama2-70b-chat-v1",
             "type": "chat",
             "inputCost": 0.00000195,
@@ -2754,7 +2754,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -2768,7 +2768,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -2782,7 +2782,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -2796,7 +2796,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -2810,7 +2810,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1e-7,
@@ -2824,7 +2824,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2838,7 +2838,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -2852,7 +2852,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "meta.llama3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.00000265,
@@ -2866,7 +2866,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "meta.llama3-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -2880,7 +2880,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "mistral.mistral-7b-instruct-v0:2",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -2894,7 +2894,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "mistral.mistral-large-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -2908,7 +2908,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "mistral.mistral-large-2407-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -2922,7 +2922,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "mistral.mistral-small-2402-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -2936,7 +2936,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "mistral.mixtral-8x7b-instruct-v0:1",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -2950,7 +2950,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-northeast-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -2964,7 +2964,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-south-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -2978,7 +2978,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/ap-southeast-2/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.545e-7,
@@ -2992,7 +2992,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3006,7 +3006,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/eu-west-2/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -3020,7 +3020,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/sa-east-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3034,7 +3034,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -3048,7 +3048,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3062,7 +3062,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3076,7 +3076,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.anthropic.claude-3-opus-20240229-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -3090,7 +3090,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-1-405b-instruct-v1:0",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -3104,7 +3104,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -3118,7 +3118,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -3132,7 +3132,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-2-11b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -3146,7 +3146,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1e-7,
@@ -3160,7 +3160,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-2-3b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -3174,7 +3174,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-2-90b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -3188,7 +3188,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-east-1/zai.glm-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3202,7 +3202,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-west-2/zai.glm-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3216,7 +3216,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -3230,7 +3230,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -3244,7 +3244,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -3258,7 +3258,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -3272,7 +3272,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -3286,7 +3286,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3300,7 +3300,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -3314,7 +3314,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3328,7 +3328,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -3342,7 +3342,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000006,
@@ -3356,7 +3356,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.000006,
@@ -3370,7 +3370,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000048,
@@ -3384,7 +3384,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.000012,
@@ -3398,7 +3398,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -3412,7 +3412,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -3426,7 +3426,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -3440,7 +3440,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3454,7 +3454,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -3468,7 +3468,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -3482,7 +3482,7 @@ const provider0 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -3496,7 +3496,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000006,
@@ -3510,7 +3510,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.000006,
@@ -3524,7 +3524,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000048,
@@ -3538,7 +3538,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.000012,
@@ -3552,7 +3552,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -3566,7 +3566,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -3580,7 +3580,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -3594,7 +3594,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -3608,7 +3608,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 98304,
+            "maxTokens": null,
             "name": "us.twelvelabs.pegasus-1-5-v1:0",
             "type": "chat",
             "inputCost": null,
@@ -3622,7 +3622,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 98304,
+            "maxTokens": null,
             "name": "global.twelvelabs.pegasus-1-5-v1:0",
             "type": "chat",
             "inputCost": null,
@@ -3636,7 +3636,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 98304,
+            "maxTokens": null,
             "name": "twelvelabs.pegasus-1-5-v1:0",
             "type": "chat",
             "inputCost": null,
@@ -3650,7 +3650,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -3664,7 +3664,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -3678,7 +3678,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -3692,7 +3692,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -3706,7 +3706,7 @@ const provider0 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -3720,7 +3720,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.000005,
@@ -3734,7 +3734,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -3748,7 +3748,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -3762,7 +3762,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -3776,7 +3776,7 @@ const provider0 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -3790,7 +3790,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3804,7 +3804,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -3818,7 +3818,7 @@ const provider0 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -3832,7 +3832,7 @@ const provider0 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -3849,7 +3849,7 @@ const provider0 = [
 
 const provider1 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.writer.palmyra-x4-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -3863,7 +3863,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.writer.palmyra-x5-v1:0",
             "type": "chat",
             "inputCost": 6e-7,
@@ -3877,7 +3877,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "writer.palmyra-x4-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -3891,7 +3891,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "writer.palmyra-x5-v1:0",
             "type": "chat",
             "inputCost": 6e-7,
@@ -3905,7 +3905,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "writer.palmyra-vision-7b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -3919,7 +3919,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -3933,7 +3933,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -3947,7 +3947,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -3961,7 +3961,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "apac.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.96e-7,
@@ -3975,7 +3975,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "apac.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -3989,7 +3989,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 4.29e-7,
@@ -4003,7 +4003,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -4017,7 +4017,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -4031,7 +4031,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -4045,7 +4045,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -4059,7 +4059,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon.nova-premier-v1:0",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -4073,7 +4073,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -4087,7 +4087,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -4101,7 +4101,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-haiku-4-5@20251001",
             "type": "chat",
             "inputCost": 0.000001,
@@ -4115,7 +4115,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anthropic.claude-3-7-sonnet-20250219-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4129,7 +4129,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-1-20250805-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -4143,7 +4143,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -4157,7 +4157,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4171,7 +4171,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4185,7 +4185,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4199,7 +4199,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4213,7 +4213,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4227,7 +4227,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-6-v1",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4241,7 +4241,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4255,7 +4255,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4269,7 +4269,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4283,7 +4283,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4297,7 +4297,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4311,7 +4311,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -4325,7 +4325,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -4339,7 +4339,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -4353,7 +4353,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -4367,7 +4367,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -4381,7 +4381,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.000011,
@@ -4395,7 +4395,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -4409,7 +4409,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.000011,
@@ -4423,7 +4423,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4437,7 +4437,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -4451,7 +4451,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4465,7 +4465,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -4479,7 +4479,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4493,7 +4493,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -4507,7 +4507,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4521,7 +4521,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -4535,7 +4535,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4549,7 +4549,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -4563,7 +4563,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4577,7 +4577,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -4591,7 +4591,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4605,7 +4605,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -4619,7 +4619,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4633,7 +4633,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4647,7 +4647,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4661,7 +4661,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4675,7 +4675,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -4689,7 +4689,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -4703,7 +4703,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -4717,7 +4717,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -4731,7 +4731,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -4745,7 +4745,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -4759,7 +4759,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -4773,7 +4773,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4787,7 +4787,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4801,7 +4801,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -4815,7 +4815,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -4829,7 +4829,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -4843,7 +4843,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -4857,7 +4857,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4875,7 +4875,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4893,7 +4893,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "apac.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6.3e-8,
@@ -4907,7 +4907,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "apac.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.7e-8,
@@ -4921,7 +4921,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "apac.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8.4e-7,
@@ -4935,7 +4935,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -4949,7 +4949,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -4967,7 +4967,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -4985,7 +4985,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "deepseek.v3-v1:0",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -4999,7 +4999,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -5013,7 +5013,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "eu.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 7.8e-8,
@@ -5027,7 +5027,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "eu.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 4.6e-8,
@@ -5041,7 +5041,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "eu.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 0.00000105,
@@ -5055,7 +5055,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -5069,7 +5069,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-1-20250805-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -5083,7 +5083,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -5097,7 +5097,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5115,7 +5115,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -5133,7 +5133,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "eu.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -5147,7 +5147,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "google.gemma-3-12b-it",
             "type": "chat",
             "inputCost": 9e-8,
@@ -5161,7 +5161,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "google.gemma-3-27b-it",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -5175,7 +5175,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "google.gemma-3-4b-it",
             "type": "chat",
             "inputCost": 4e-8,
@@ -5189,7 +5189,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5207,7 +5207,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5225,7 +5225,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.000001,
@@ -5239,7 +5239,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5253,7 +5253,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -5271,7 +5271,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -5285,7 +5285,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "meta.llama3-3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -5299,7 +5299,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -5313,7 +5313,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -5327,7 +5327,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "minimax.minimax-m2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5341,7 +5341,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "minimax.minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5355,7 +5355,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "minimax.minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -5369,7 +5369,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "mistral.devstral-2-123b",
             "type": "chat",
             "inputCost": 4e-7,
@@ -5383,7 +5383,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 40000,
+            "maxTokens": null,
             "name": "mistral.magistral-small-2509",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5397,7 +5397,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "mistral.ministral-3-14b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -5411,7 +5411,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "mistral.ministral-3-3b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -5425,7 +5425,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "mistral.ministral-3-8b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5439,7 +5439,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "mistral.mistral-large-3-675b-instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5453,7 +5453,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral.voxtral-mini-3b-2507",
             "type": "chat",
             "inputCost": 4e-8,
@@ -5467,7 +5467,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral.voxtral-small-24b-2507",
             "type": "chat",
             "inputCost": 1e-7,
@@ -5481,7 +5481,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "moonshot.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -5495,7 +5495,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "moonshotai.kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -5509,7 +5509,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "nvidia.nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -5523,7 +5523,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "nvidia.nemotron-nano-9b-v2",
             "type": "chat",
             "inputCost": 6e-8,
@@ -5537,7 +5537,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "nvidia.nemotron-nano-3-30b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -5551,7 +5551,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "nvidia.nemotron-super-3-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5565,7 +5565,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5579,7 +5579,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 7e-8,
@@ -5593,7 +5593,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "openai.gpt-oss-safeguard-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5607,7 +5607,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "openai.gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -5621,7 +5621,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen.qwen3-coder-480b-a35b-v1:0",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -5635,7 +5635,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen.qwen3-235b-a22b-2507-v1:0",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -5649,7 +5649,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen.qwen3-coder-30b-a3b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5663,7 +5663,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen.qwen3-32b-v1:0",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5677,7 +5677,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "qwen.qwen3-next-80b-a3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -5691,7 +5691,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "qwen.qwen3-vl-235b-a22b",
             "type": "chat",
             "inputCost": 5.3e-7,
@@ -5705,7 +5705,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "qwen.qwen3-coder-next",
             "type": "chat",
             "inputCost": 5e-7,
@@ -5719,7 +5719,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "us.amazon.nova-lite-v1:0",
             "type": "chat",
             "inputCost": 6e-8,
@@ -5733,7 +5733,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "us.amazon.nova-micro-v1:0",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -5747,7 +5747,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
             "inputCost": 8e-7,
@@ -5761,7 +5761,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -5775,7 +5775,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -5789,7 +5789,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-1-20250805-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -5803,7 +5803,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -5821,7 +5821,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
@@ -5839,7 +5839,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -5853,7 +5853,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000006,
@@ -5867,7 +5867,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.000006,
@@ -5881,7 +5881,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000048,
@@ -5895,7 +5895,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.000012,
@@ -5909,7 +5909,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us-gov.nvidia.nemotron-nano-3-30b",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -5923,7 +5923,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us-gov.nvidia.nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -5937,7 +5937,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us-gov.nvidia.nemotron-nano-9b-v2",
             "type": "chat",
             "inputCost": 7.2e-8,
@@ -5951,7 +5951,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "us-gov.nvidia.nemotron-super-3-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -5965,7 +5965,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "us-gov.openai.gpt-oss-20b-1:0",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -5979,7 +5979,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "us-gov.openai.gpt-oss-120b-1:0",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -5993,7 +5993,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "us-gov.xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.00000264,
@@ -6007,7 +6007,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -6021,7 +6021,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000015,
@@ -6035,7 +6035,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6049,7 +6049,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
             "inputCost": 0.000005,
@@ -6063,7 +6063,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6077,7 +6077,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6095,7 +6095,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.deepseek.r1-v1:0",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -6109,7 +6109,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "us.deepseek.v3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -6123,7 +6123,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "eu.deepseek.v3.2",
             "type": "chat",
             "inputCost": 7.4e-7,
@@ -6137,7 +6137,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "us.meta.llama3-3-70b-instruct-v1:0",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -6151,7 +6151,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -6165,7 +6165,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "us.meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -6179,7 +6179,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "us.mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6193,7 +6193,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "zai.glm-4.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -6207,7 +6207,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "zai.glm-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -6221,7 +6221,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "zai.glm-4.7-flash",
             "type": "chat",
             "inputCost": 7e-8,
@@ -6235,7 +6235,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -6249,7 +6249,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.000004,
@@ -6263,7 +6263,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6277,7 +6277,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6291,7 +6291,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -6305,7 +6305,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-5.4",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -6319,7 +6319,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-5.4",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -6333,7 +6333,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-5.5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6347,7 +6347,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-5.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -6361,7 +6361,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2e-7,
@@ -6375,7 +6375,7 @@ const provider1 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-6-astra",
             "type": "chat",
             "inputCost": 0.000011,
@@ -6389,7 +6389,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-6-sol",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6403,7 +6403,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-6-luna",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -6417,7 +6417,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-6-astra",
             "type": "chat",
             "inputCost": 0.00001,
@@ -6431,7 +6431,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "openai.gpt-6-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6445,7 +6445,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-6-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6459,7 +6459,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "openai.gpt-6-luna",
             "type": "chat",
             "inputCost": 1e-7,
@@ -6473,7 +6473,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-6-luna",
             "type": "chat",
             "inputCost": 1e-7,
@@ -6487,7 +6487,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "us.xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6501,7 +6501,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "global.xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6515,7 +6515,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "moonshotai.kimi-k3",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -6529,7 +6529,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "global.moonshotai.kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -6543,7 +6543,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "us.moonshotai.kimi-k3",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -6557,7 +6557,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-mythos-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -6571,7 +6571,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-mythos-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -6585,7 +6585,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-mythos-5-1",
             "type": "chat",
             "inputCost": 0.000011,
@@ -6599,7 +6599,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-mythos-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -6613,7 +6613,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -6627,7 +6627,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-fable-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -6641,7 +6641,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6655,7 +6655,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6669,7 +6669,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-opus-5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -6683,7 +6683,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -6697,7 +6697,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -6711,7 +6711,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6725,7 +6725,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-mythos-preview",
             "type": "chat",
             "inputCost": 0.0000275,
@@ -6739,7 +6739,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-mythos-preview",
             "type": "chat",
             "inputCost": 0.0000275,
@@ -6753,7 +6753,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-mythos-preview",
             "type": "chat",
             "inputCost": 0.0000275,
@@ -6767,7 +6767,7 @@ const provider1 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepseek.r1-v1:0",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -6781,7 +6781,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "mistral.pixtral-large-2502-v1:0",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6795,7 +6795,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6809,7 +6809,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6823,7 +6823,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6837,7 +6837,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6851,7 +6851,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6865,7 +6865,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6879,7 +6879,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -6893,7 +6893,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6907,7 +6907,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "global.xai.grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6921,7 +6921,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "us.xai.grok-4.7",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6935,7 +6935,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "global.openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -6949,7 +6949,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "us.openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -6963,7 +6963,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.zai.glm-5.3",
             "type": "chat",
             "inputCost": 0.00000168,
@@ -6977,7 +6977,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.zai.glm-5.3",
             "type": "chat",
             "inputCost": 0.000001848,
@@ -6991,7 +6991,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "in.moonshotai.kimi-k3",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -7005,7 +7005,7 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -7019,7 +7019,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "apac.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -7033,7 +7033,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "au.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -7047,7 +7047,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "eu.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -7061,7 +7061,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -7075,7 +7075,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "jp.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -7089,7 +7089,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us-gov.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -7103,7 +7103,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -7117,7 +7117,7 @@ const provider1 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "jp.amazon.nova-2-lite-v1:0",
             "type": "chat",
             "inputCost": 3.96e-7,
@@ -7131,7 +7131,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "global.openai.gpt-6.1-terra",
             "type": "chat",
             "inputCost": 0.000001,
@@ -7145,7 +7145,7 @@ const provider1 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "us.openai.gpt-6.1-terra",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -7162,7 +7162,7 @@ const provider1 = [
 
 const provider2 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "anyscale/HuggingFaceH4/zephyr-7b-beta",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7176,7 +7176,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anyscale/codellama/CodeLlama-34b-Instruct-hf",
             "type": "chat",
             "inputCost": 0.000001,
@@ -7190,7 +7190,7 @@ const provider2 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anyscale/codellama/CodeLlama-70b-Instruct-hf",
             "type": "chat",
             "inputCost": 0.000001,
@@ -7204,7 +7204,7 @@ const provider2 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anyscale/google/gemma-7b-it",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7218,7 +7218,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anyscale/meta-llama/Llama-2-13b-chat-hf",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -7232,7 +7232,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anyscale/meta-llama/Llama-2-70b-chat-hf",
             "type": "chat",
             "inputCost": 0.000001,
@@ -7246,7 +7246,7 @@ const provider2 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "anyscale/meta-llama/Llama-2-7b-chat-hf",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7260,7 +7260,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anyscale/meta-llama/Meta-Llama-3-70B-Instruct",
             "type": "chat",
             "inputCost": 0.000001,
@@ -7274,7 +7274,7 @@ const provider2 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "anyscale/meta-llama/Meta-Llama-3-8B-Instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7288,7 +7288,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "anyscale/mistralai/Mistral-7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7302,7 +7302,7 @@ const provider2 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "anyscale/mistralai/Mixtral-8x22B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 9e-7,
@@ -7316,7 +7316,7 @@ const provider2 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "anyscale/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7333,7 +7333,7 @@ const provider2 = [
 
 const provider3 = [
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure/ada",
             "type": "embedding",
             "inputCost": 1.1e-7,
@@ -7347,7 +7347,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/codex-mini",
             "type": "responses",
             "inputCost": 0.0000015,
@@ -7361,7 +7361,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/command-r-plus",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7375,7 +7375,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "azure/computer-use-preview",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7402,7 +7402,7 @@ const provider3 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -7416,7 +7416,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -7430,7 +7430,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -7444,7 +7444,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.65e-7,
@@ -7458,7 +7458,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.65e-7,
@@ -7472,7 +7472,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5-2025-08-07",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -7486,7 +7486,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5-mini-2025-08-07",
             "type": "chat",
             "inputCost": 2.75e-7,
@@ -7500,7 +7500,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.1",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -7514,7 +7514,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.1-codex",
             "type": "responses",
             "inputCost": 0.000001375,
@@ -7528,7 +7528,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.75e-7,
@@ -7542,7 +7542,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5.5e-8,
@@ -7556,7 +7556,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o1",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -7570,7 +7570,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -7584,7 +7584,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "azure/eu/o1-mini-2024-09-12",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -7598,7 +7598,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o3-mini",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -7612,7 +7612,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -7626,7 +7626,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/global-standard/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -7640,7 +7640,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/global-standard/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -7654,7 +7654,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/global-standard/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -7668,7 +7668,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/global/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -7682,7 +7682,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/global/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -7696,7 +7696,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/global/gpt-5.1",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -7710,7 +7710,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/global/gpt-5.1-codex",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -7724,7 +7724,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/global/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -7738,7 +7738,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -7752,7 +7752,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-35-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -7766,7 +7766,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-35-turbo-16k",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7780,7 +7780,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-35-turbo-16k-0613",
             "type": "chat",
             "inputCost": 0.000003,
@@ -7794,7 +7794,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4",
             "type": "chat",
             "inputCost": 0.00003,
@@ -7808,7 +7808,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-0125-preview",
             "type": "chat",
             "inputCost": 0.00001,
@@ -7822,7 +7822,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-0613",
             "type": "chat",
             "inputCost": 0.00003,
@@ -7836,7 +7836,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-1106-preview",
             "type": "chat",
             "inputCost": 0.00001,
@@ -7850,7 +7850,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-32k",
             "type": "chat",
             "inputCost": 0.00006,
@@ -7864,7 +7864,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-32k-0613",
             "type": "chat",
             "inputCost": 0.00006,
@@ -7878,7 +7878,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-turbo",
             "type": "chat",
             "inputCost": 0.000011,
@@ -7892,7 +7892,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-turbo-2024-04-09",
             "type": "chat",
             "inputCost": 0.000011,
@@ -7906,7 +7906,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4-turbo-vision-preview",
             "type": "chat",
             "inputCost": 0.000011,
@@ -7920,7 +7920,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -7934,7 +7934,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1-2025-04-14",
             "type": "chat",
             "inputCost": 0.000002,
@@ -7948,7 +7948,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1-mini",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7962,7 +7962,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1-mini-2025-04-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -7976,7 +7976,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1-nano",
             "type": "chat",
             "inputCost": 1e-7,
@@ -7990,7 +7990,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/gpt-4.1-nano-2025-04-14",
             "type": "chat",
             "inputCost": 1e-7,
@@ -8004,7 +8004,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4.5-preview",
             "type": "chat",
             "inputCost": 0.000075,
@@ -8018,7 +8018,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8032,7 +8032,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.000005,
@@ -8046,7 +8046,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8060,7 +8060,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8074,7 +8074,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8088,7 +8088,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio-2025-08-28",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8102,7 +8102,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio-1.5",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8116,7 +8116,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio-1.5-2026-02-23",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8130,7 +8130,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio-mini",
             "type": "chat",
             "inputCost": 6e-7,
@@ -8144,7 +8144,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-audio-mini-2025-10-06",
             "type": "chat",
             "inputCost": 6e-7,
@@ -8158,7 +8158,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8172,7 +8172,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -8186,7 +8186,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -8200,7 +8200,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -8214,7 +8214,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-2025-11-13",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8228,7 +8228,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-codex-2025-11-13",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -8242,7 +8242,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-codex-mini-2025-11-13",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -8256,7 +8256,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8270,7 +8270,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-2025-08-07",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8284,7 +8284,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-codex",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -8298,7 +8298,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-mini",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -8312,7 +8312,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-mini-2025-08-07",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -8326,7 +8326,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-nano",
             "type": "chat",
             "inputCost": 5e-8,
@@ -8340,7 +8340,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5e-8,
@@ -8354,7 +8354,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5-pro",
             "type": "responses",
             "inputCost": 0.000015,
@@ -8368,7 +8368,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8382,7 +8382,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-5-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8396,7 +8396,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -8410,7 +8410,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-5.2-chat",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -8424,7 +8424,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/gpt-5.3-chat",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -8438,7 +8438,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.1-chat",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -8452,7 +8452,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.2-chat",
             "type": "chat",
             "inputCost": 0.000001925,
@@ -8466,7 +8466,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.3-chat",
             "type": "chat",
             "inputCost": 0.000001925,
@@ -8480,7 +8480,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.1-chat",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -8494,7 +8494,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.2-chat",
             "type": "chat",
             "inputCost": 0.000001925,
@@ -8508,7 +8508,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.3-chat",
             "type": "chat",
             "inputCost": 0.000001925,
@@ -8522,7 +8522,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/us/o1-preview",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -8536,7 +8536,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/eu/o1-preview",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -8550,7 +8550,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-codex",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -8564,7 +8564,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-codex-max",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -8578,7 +8578,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -8592,7 +8592,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -8606,7 +8606,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.2-2025-12-11",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -8620,7 +8620,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.2-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -8634,7 +8634,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.3-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -8648,7 +8648,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.2-pro",
             "type": "responses",
             "inputCost": 0.000021,
@@ -8662,7 +8662,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.2-pro-2025-12-11",
             "type": "responses",
             "inputCost": 0.000021,
@@ -8676,7 +8676,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8690,7 +8690,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.4",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -8704,7 +8704,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.4",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -8718,7 +8718,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-2026-03-05",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -8732,7 +8732,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.4-2026-03-05",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -8746,7 +8746,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.4-2026-03-05",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -8760,7 +8760,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-pro",
             "type": "responses",
             "inputCost": 0.00003,
@@ -8774,7 +8774,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-pro-2026-03-05",
             "type": "responses",
             "inputCost": 0.00003,
@@ -8788,7 +8788,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6",
             "type": "chat",
             "inputCost": 0.000004,
@@ -8802,7 +8802,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.000004,
@@ -8816,7 +8816,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-sol-2026-07-09",
             "type": "chat",
             "inputCost": 0.000004,
@@ -8830,7 +8830,7 @@ const provider3 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8844,7 +8844,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-terra-2026-07-09",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8858,7 +8858,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2e-7,
@@ -8872,7 +8872,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.6-luna-2026-07-09",
             "type": "chat",
             "inputCost": 2e-7,
@@ -8886,7 +8886,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-astra",
             "type": "chat",
             "inputCost": 0.00001,
@@ -8900,7 +8900,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-astra-2026-09-03",
             "type": "chat",
             "inputCost": 0.00001,
@@ -8914,7 +8914,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-luna",
             "type": "chat",
             "inputCost": 1e-7,
@@ -8928,7 +8928,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-luna-2026-09-22",
             "type": "chat",
             "inputCost": 1e-7,
@@ -8942,7 +8942,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8956,7 +8956,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6-sol-2026-09-22",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8970,7 +8970,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8984,7 +8984,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-6.1-sol-2026-09-29",
             "type": "chat",
             "inputCost": 0.000002,
@@ -8998,7 +8998,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9012,7 +9012,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -9026,7 +9026,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/apac/gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -9040,7 +9040,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-chat-latest",
             "type": "chat",
             "inputCost": 0.000005,
@@ -9054,7 +9054,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/chat-latest",
             "type": "chat",
             "inputCost": 0.000005,
@@ -9068,7 +9068,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.6",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -9082,7 +9082,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -9096,7 +9096,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9110,7 +9110,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -9124,7 +9124,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-6-astra",
             "type": "chat",
             "inputCost": 0.000011,
@@ -9138,7 +9138,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-6-luna",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -9152,7 +9152,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-6-sol",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9166,7 +9166,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-chat-latest",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9180,7 +9180,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.6",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -9194,7 +9194,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -9208,7 +9208,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9222,7 +9222,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -9236,7 +9236,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -9250,7 +9250,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9264,7 +9264,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.5",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9278,7 +9278,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.5-2026-04-23",
             "type": "chat",
             "inputCost": 0.000005,
@@ -9292,7 +9292,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.5-2026-04-24",
             "type": "chat",
             "inputCost": 0.000005,
@@ -9306,7 +9306,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.5-2026-04-23",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9320,7 +9320,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.5-2026-04-24",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9334,7 +9334,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.5-2026-04-23",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9348,7 +9348,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-5.5-2026-04-24",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -9362,7 +9362,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.5-pro",
             "type": "responses",
             "inputCost": 0.00003,
@@ -9376,7 +9376,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.5-pro-2026-04-23",
             "type": "responses",
             "inputCost": 0.00003,
@@ -9390,7 +9390,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-mini",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -9404,7 +9404,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-mini-2026-03-17",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -9418,7 +9418,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-nano",
             "type": "chat",
             "inputCost": 2e-7,
@@ -9432,7 +9432,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/gpt-5.4-nano-2026-03-17",
             "type": "chat",
             "inputCost": 2e-7,
@@ -9446,7 +9446,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "azure/mistral-large-2402",
             "type": "chat",
             "inputCost": 0.000008,
@@ -9460,7 +9460,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "azure/mistral-large-latest",
             "type": "chat",
             "inputCost": 0.000008,
@@ -9474,7 +9474,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -9488,7 +9488,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.000015,
@@ -9502,7 +9502,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "azure/o1-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9516,7 +9516,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "azure/o1-mini-2024-09-12",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9530,7 +9530,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -9544,7 +9544,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.000002,
@@ -9558,7 +9558,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-deep-research",
             "type": "responses",
             "inputCost": 0.00001,
@@ -9572,7 +9572,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9586,7 +9586,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9600,7 +9600,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-pro",
             "type": "responses",
             "inputCost": 0.00002,
@@ -9614,7 +9614,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o3-pro-2025-06-10",
             "type": "responses",
             "inputCost": 0.00002,
@@ -9628,7 +9628,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o4-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9642,7 +9642,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -9656,7 +9656,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure/text-embedding-3-large",
             "type": "embedding",
             "inputCost": 1.43e-7,
@@ -9670,7 +9670,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure/text-embedding-3-small",
             "type": "embedding",
             "inputCost": 2.2e-8,
@@ -9684,7 +9684,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure/text-embedding-ada-002",
             "type": "embedding",
             "inputCost": 1.1e-7,
@@ -9698,7 +9698,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/us/gpt-4.1-2025-04-14",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9712,7 +9712,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/us/gpt-4.1-mini-2025-04-14",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -9726,7 +9726,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/us/gpt-4.1-nano-2025-04-14",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -9740,7 +9740,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -9754,7 +9754,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -9768,7 +9768,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.00000275,
@@ -9782,7 +9782,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.65e-7,
@@ -9796,7 +9796,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.65e-7,
@@ -9810,7 +9810,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5-2025-08-07",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -9824,7 +9824,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5-mini-2025-08-07",
             "type": "chat",
             "inputCost": 2.75e-7,
@@ -9838,7 +9838,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5.5e-8,
@@ -9852,7 +9852,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.1",
             "type": "chat",
             "inputCost": 0.000001375,
@@ -9866,7 +9866,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.1-codex",
             "type": "responses",
             "inputCost": 0.000001375,
@@ -9880,7 +9880,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.75e-7,
@@ -9894,7 +9894,7 @@ const provider3 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o1",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -9908,7 +9908,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -9922,7 +9922,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "azure/us/o1-mini-2024-09-12",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -9936,7 +9936,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o3",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9950,7 +9950,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -9964,7 +9964,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o3-mini",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -9978,7 +9978,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -9992,7 +9992,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o4-mini",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -10006,7 +10006,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us/o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -10020,7 +10020,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/us-gov/gpt-5.1",
             "type": "chat",
             "inputCost": 0.00000171875,
@@ -10034,7 +10034,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/us-gov/o3-mini",
             "type": "chat",
             "inputCost": 0.000001513,
@@ -10048,7 +10048,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure/us-gov/text-embedding-3-large",
             "type": "embedding",
             "inputCost": 1.63e-7,
@@ -10062,7 +10062,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure/us-gov/text-embedding-3-small",
             "type": "embedding",
             "inputCost": 2.5e-8,
@@ -10146,7 +10146,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -10342,7 +10342,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-6-astra",
             "type": "chat",
             "inputCost": 0.000012,
@@ -10356,7 +10356,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-6-luna",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -10370,7 +10370,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure/eu/gpt-6-sol",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -10398,7 +10398,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o3",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -10412,7 +10412,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -10440,7 +10440,7 @@ const provider3 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o4-mini",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -10454,7 +10454,7 @@ const provider3 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure/eu/o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.00000121,
@@ -10580,7 +10580,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.0000055,
@@ -10846,7 +10846,7 @@ const provider3 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure/model-router",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -10863,7 +10863,7 @@ const provider3 = [
 
 const provider4 = [
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -10877,7 +10877,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -10891,7 +10891,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.000005,
@@ -10905,7 +10905,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -10919,7 +10919,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -10933,7 +10933,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -10947,7 +10947,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -10961,7 +10961,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -10975,7 +10975,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -10989,7 +10989,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11003,7 +11003,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -11017,7 +11017,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11031,7 +11031,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -11045,7 +11045,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-6-astra",
             "type": "chat",
             "inputCost": 0.00001,
@@ -11059,7 +11059,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-6-luna",
             "type": "chat",
             "inputCost": 1e-7,
@@ -11073,7 +11073,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-6-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -11087,7 +11087,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -11101,7 +11101,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -11115,7 +11115,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-chat-latest",
             "type": "chat",
             "inputCost": 0.000005,
@@ -11129,7 +11129,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "azure_ai/codex-mini",
             "type": "responses",
             "inputCost": 0.0000015,
@@ -11143,7 +11143,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.5-2026-04-23",
             "type": "chat",
             "inputCost": 0.000005,
@@ -11157,7 +11157,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.5-2026-04-24",
             "type": "chat",
             "inputCost": 0.000005,
@@ -11171,7 +11171,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -11185,7 +11185,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-2026-03-05",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -11199,7 +11199,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-pro",
             "type": "responses",
             "inputCost": 0.00003,
@@ -11213,7 +11213,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-pro-2026-03-05",
             "type": "responses",
             "inputCost": 0.00003,
@@ -11227,7 +11227,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-mini",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -11241,7 +11241,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-mini-2026-03-17",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -11255,7 +11255,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-nano",
             "type": "chat",
             "inputCost": 2e-7,
@@ -11269,7 +11269,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/gpt-5.4-nano-2026-03-17",
             "type": "chat",
             "inputCost": 2e-7,
@@ -11283,7 +11283,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure_ai/model_router",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -11297,7 +11297,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "azure_ai/model-router",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -11311,7 +11311,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "azure_ai/Cohere-embed-v3-english",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -11325,7 +11325,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "azure_ai/Cohere-embed-v3-multilingual",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -11339,7 +11339,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Codestral-2501",
             "type": "chat",
             "inputCost": 3e-7,
@@ -11353,7 +11353,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "azure_ai/FW-DeepSeek-V3.2",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -11367,7 +11367,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/FW-DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.000001925,
@@ -11381,7 +11381,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -11395,7 +11395,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5.1",
             "type": "chat",
             "inputCost": 0.00000154,
@@ -11409,7 +11409,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5.2",
             "type": "chat",
             "inputCost": 0.00000154,
@@ -11423,7 +11423,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5.2-Fast",
             "type": "chat",
             "inputCost": 0.00000231,
@@ -11437,7 +11437,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "azure_ai/FW-Inkling",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -11451,7 +11451,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/FW-Kimi-K2.5",
             "type": "chat",
             "inputCost": 6.6e-7,
@@ -11465,7 +11465,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/FW-Kimi-K2.6",
             "type": "chat",
             "inputCost": 0.000001045,
@@ -11479,7 +11479,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/FW-Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 0.00000105,
@@ -11493,7 +11493,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-Kimi-K3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11507,7 +11507,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "azure_ai/FW-MiniMax-M2.5",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -11521,7 +11521,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": null,
             "name": "azure_ai/FW-MiniMax-M3",
             "type": "chat",
             "inputCost": 3.3e-7,
@@ -11549,7 +11549,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/FW-Nemotron-3-Ultra-NVFP4",
             "type": "chat",
             "inputCost": 6.6e-7,
@@ -11563,7 +11563,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/MAI-Thinking-1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -11577,7 +11577,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 7.1e-7,
@@ -11591,7 +11591,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "azure_ai/Llama-4-Maverick-17B-128E-Instruct-FP8",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -11605,7 +11605,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure_ai/Llama-4-Scout-17B-16E-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -11619,7 +11619,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "azure_ai/Meta-Llama-3-70B-Instruct",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -11633,7 +11633,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "azure_ai/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 0.00000268,
@@ -11647,7 +11647,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-medium-128k-instruct",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -11661,7 +11661,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-medium-4k-instruct",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -11675,7 +11675,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-mini-128k-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -11689,7 +11689,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-mini-4k-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -11703,7 +11703,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-small-128k-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -11717,7 +11717,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3-small-8k-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -11731,7 +11731,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3.5-MoE-instruct",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -11745,7 +11745,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3.5-mini-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -11759,7 +11759,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-3.5-vision-instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -11773,7 +11773,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "azure_ai/Phi-4",
             "type": "chat",
             "inputCost": 1.25e-7,
@@ -11787,7 +11787,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-4-mini-instruct",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -11801,7 +11801,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-4-multimodal-instruct",
             "type": "chat",
             "inputCost": 8e-8,
@@ -11815,7 +11815,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-4-mini-reasoning",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -11829,7 +11829,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/Phi-4-reasoning",
             "type": "chat",
             "inputCost": 1.25e-7,
@@ -11843,7 +11843,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8182,
+            "maxTokens": null,
             "name": "azure_ai/cohere-command-a",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -11857,7 +11857,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/MAI-DS-R1",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -11871,7 +11871,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v3.2",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -11885,7 +11885,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v3.2-speciale",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -11899,7 +11899,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v3",
             "type": "chat",
             "inputCost": 0.00000114,
@@ -11913,7 +11913,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000174,
@@ -11927,7 +11927,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -11941,7 +11941,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -11955,7 +11955,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/embed-v-4-0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -11969,7 +11969,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/grok-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -11983,7 +11983,7 @@ const provider4 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/grok-4.3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -12000,7 +12000,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12017,7 +12017,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/grok-4-20-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -12031,7 +12031,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/grok-4-20-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -12045,7 +12045,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/grok-4-1-fast-non-reasoning",
             "type": "chat",
             "inputCost": 2e-7,
@@ -12059,7 +12059,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/grok-4-1-fast-reasoning",
             "type": "chat",
             "inputCost": 2e-7,
@@ -12073,7 +12073,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/grok-code-fast-1",
             "type": "chat",
             "inputCost": 2e-7,
@@ -12087,7 +12087,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "azure_ai/jais-30b-chat",
             "type": "chat",
             "inputCost": 0.0032,
@@ -12101,7 +12101,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/jamba-instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -12115,7 +12115,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -12129,7 +12129,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/kimi-k2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -12143,7 +12143,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/ministral-3b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -12157,7 +12157,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure_ai/mistral-large",
             "type": "chat",
             "inputCost": 0.000004,
@@ -12171,7 +12171,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/mistral-large-2407",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12185,7 +12185,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/mistral-large-latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12199,7 +12199,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure_ai/mistral-large-3",
             "type": "chat",
             "inputCost": 5e-7,
@@ -12213,7 +12213,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure_ai/mistral-medium-2505",
             "type": "chat",
             "inputCost": 4e-7,
@@ -12227,7 +12227,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "azure_ai/mistral-nemo",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -12241,7 +12241,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "azure_ai/mistral-small",
             "type": "chat",
             "inputCost": 0.000001,
@@ -12255,7 +12255,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/mistral-small-2503",
             "type": "chat",
             "inputCost": 1e-7,
@@ -12269,7 +12269,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -12283,7 +12283,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -12297,7 +12297,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/FW-DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 3.75e-7,
@@ -12311,7 +12311,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "azure_ai/FW-DeepSeek-V4-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -12325,7 +12325,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5.3",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -12339,7 +12339,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.88e-7,
@@ -12353,7 +12353,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "azure_ai/FW-GPT-OSS-120B",
             "type": "chat",
             "inputCost": 1.65e-7,
@@ -12367,7 +12367,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/Cohere-command-a-plus-05-2026",
             "type": "chat",
             "inputCost": 8e-7,
@@ -12381,7 +12381,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/mistral-medium-3-5",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -12493,7 +12493,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/MAI-Cyber-1-Flash",
             "type": "chat",
             "inputCost": 6e-7,
@@ -12507,7 +12507,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12521,7 +12521,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "azure_ai/kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -12535,7 +12535,7 @@ const provider4 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "azure_ai/grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12552,7 +12552,7 @@ const provider4 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -12566,7 +12566,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/Cohere-Embed-V5-Fast",
             "type": "embedding",
             "inputCost": 8e-8,
@@ -12580,7 +12580,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/Cohere-Embed-V5-Pro",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -12594,7 +12594,7 @@ const provider4 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "azure_ai/claude-opus-5-5-fast",
             "type": "chat",
             "inputCost": 0.000008,
@@ -12608,7 +12608,7 @@ const provider4 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "azure_ai/MAI-Code-1.1-Flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -12625,7 +12625,7 @@ const provider4 = [
 
 const provider5 = [
         {
-            "maxTokens": 4097,
+            "maxTokens": null,
             "name": "azure/gpt-3.5-turbo-instruct-0914",
             "type": "completion",
             "inputCost": 0.00000165,
@@ -12639,7 +12639,7 @@ const provider5 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": null,
             "name": "azure/gpt-35-turbo-instruct",
             "type": "completion",
             "inputCost": 0.00000165,
@@ -12653,7 +12653,7 @@ const provider5 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": null,
             "name": "azure/gpt-35-turbo-instruct-0914",
             "type": "completion",
             "inputCost": 0.00000165,
@@ -12670,7 +12670,7 @@ const provider5 = [
 
 const provider6 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "babbage-002",
             "type": "completion",
             "inputCost": 4e-7,
@@ -12684,7 +12684,7 @@ const provider6 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "davinci-002",
             "type": "completion",
             "inputCost": 0.000002,
@@ -12698,7 +12698,7 @@ const provider6 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:babbage-002",
             "type": "completion",
             "inputCost": 0.0000016,
@@ -12712,7 +12712,7 @@ const provider6 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:davinci-002",
             "type": "completion",
             "inputCost": 0.000012,
@@ -12726,7 +12726,7 @@ const provider6 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo-instruct",
             "type": "completion",
             "inputCost": 0.0000015,
@@ -12740,7 +12740,7 @@ const provider6 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4097,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo-instruct-0914",
             "type": "completion",
             "inputCost": 0.0000015,
@@ -12757,7 +12757,7 @@ const provider6 = [
 
 const provider7 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/llama-3.1-70b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -12771,7 +12771,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/llama-3.1-8b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -12785,7 +12785,7 @@ const provider7 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/llama-3.3-70b",
             "type": "chat",
             "inputCost": 8.5e-7,
@@ -12799,7 +12799,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/llama3.1-70b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -12813,7 +12813,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/llama3.1-8b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -12827,7 +12827,7 @@ const provider7 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "cerebras/gpt-oss-120b",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -12841,7 +12841,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cerebras/qwen-3-32b",
             "type": "chat",
             "inputCost": 4e-7,
@@ -12855,7 +12855,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "cerebras/qwen-3.8-27b",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -12869,7 +12869,7 @@ const provider7 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "cerebras/gemma-4-31b",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -12886,7 +12886,7 @@ const provider7 = [
 
 const provider8 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "chatdolphin",
             "type": "chat",
             "inputCost": 5e-7,
@@ -12900,7 +12900,7 @@ const provider8 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dolphin",
             "type": "completion",
             "inputCost": 5e-7,
@@ -12917,7 +12917,7 @@ const provider8 = [
 
 const provider9 = [
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-haiku-4-5-20251001",
             "type": "chat",
             "inputCost": 0.000001,
@@ -12931,7 +12931,7 @@ const provider9 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -12945,7 +12945,7 @@ const provider9 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -12959,7 +12959,7 @@ const provider9 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-sonnet-4-5-20250929",
             "type": "chat",
             "inputCost": 0.000003,
@@ -12973,7 +12973,7 @@ const provider9 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -12987,7 +12987,7 @@ const provider9 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -13001,7 +13001,7 @@ const provider9 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -13015,7 +13015,7 @@ const provider9 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-opus-4-5-20251101",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13029,7 +13029,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13043,7 +13043,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13057,7 +13057,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-4-6-20260205",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13071,7 +13071,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13085,7 +13085,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-4-7-20260416",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13099,7 +13099,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -13113,7 +13113,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -13127,7 +13127,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -13141,7 +13141,7 @@ const provider9 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13155,7 +13155,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -13169,7 +13169,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-mythos-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -13183,7 +13183,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-mythos-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -13197,7 +13197,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-mythos-preview",
             "type": "chat",
             "inputCost": 0.00001,
@@ -13211,7 +13211,7 @@ const provider9 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -13228,7 +13228,7 @@ const provider9 = [
 
 const provider10 = [
         {
-            "maxTokens": 3072,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-2-7b-chat-fp16",
             "type": "chat",
             "inputCost": 0.000001923,
@@ -13242,7 +13242,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-2-7b-chat-int8",
             "type": "chat",
             "inputCost": 0.000001923,
@@ -13256,7 +13256,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "cloudflare/@cf/mistral/mistral-7b-instruct-v0.1",
             "type": "chat",
             "inputCost": 0.000001923,
@@ -13270,7 +13270,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "cloudflare/@hf/thebloke/codellama-7b-instruct-awq",
             "type": "chat",
             "inputCost": 0.000001923,
@@ -13284,7 +13284,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -13298,7 +13298,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "cloudflare/@cf/google/gemma-2b-it-lora",
             "type": "chat",
             "inputCost": 0,
@@ -13312,7 +13312,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 80000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-3.2-3b-instruct",
             "type": "chat",
             "inputCost": 5.09e-8,
@@ -13326,7 +13326,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-guard-3-8b",
             "type": "chat",
             "inputCost": 4.84e-7,
@@ -13340,7 +13340,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 15000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/mistral/mistral-7b-instruct-v0.2-lora",
             "type": "chat",
             "inputCost": 0,
@@ -13354,7 +13354,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "cloudflare/@cf/moonshotai/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -13368,7 +13368,7 @@ const provider10 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 80000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
             "type": "chat",
             "inputCost": 4.97e-7,
@@ -13382,7 +13382,7 @@ const provider10 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-3.1-8b-instruct-fp8",
             "type": "chat",
             "inputCost": 1.52e-7,
@@ -13396,7 +13396,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 60000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-3.2-1b-instruct",
             "type": "chat",
             "inputCost": 2.7e-8,
@@ -13410,7 +13410,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "cloudflare/@cf/moonshotai/kimi-k2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -13424,7 +13424,7 @@ const provider10 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "cloudflare/@cf/zai-org/glm-4.7-flash",
             "type": "chat",
             "inputCost": 6.05e-8,
@@ -13438,7 +13438,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta-llama/llama-2-7b-chat-hf-lora",
             "type": "chat",
             "inputCost": 0,
@@ -13452,7 +13452,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 24000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-3.3-70b-instruct-fp8-fast",
             "type": "chat",
             "inputCost": 2.93e-7,
@@ -13466,7 +13466,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/ibm-granite/granite-4.0-h-micro",
             "type": "chat",
             "inputCost": 1.7e-8,
@@ -13480,7 +13480,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "cloudflare/@cf/qwen/qwen2.5-coder-32b-instruct",
             "type": "chat",
             "inputCost": 6.6e-7,
@@ -13494,7 +13494,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "cloudflare/@cf/zai-org/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -13508,7 +13508,7 @@ const provider10 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/nvidia/nemotron-3-120b-a12b",
             "type": "chat",
             "inputCost": 5e-7,
@@ -13522,7 +13522,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/aisingapore/gemma-sea-lion-v4-27b-it",
             "type": "chat",
             "inputCost": 3.51e-7,
@@ -13536,7 +13536,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "cloudflare/@cf/qwen/qwen3-30b-a3b-fp8",
             "type": "chat",
             "inputCost": 5.09e-8,
@@ -13550,7 +13550,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 3500,
+            "maxTokens": null,
             "name": "cloudflare/@cf/google/gemma-7b-it-lora",
             "type": "chat",
             "inputCost": 0,
@@ -13564,7 +13564,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/google/gemma-4-26b-a4b-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -13578,7 +13578,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/mistralai/mistral-small-3.1-24b-instruct",
             "type": "chat",
             "inputCost": 3.51e-7,
@@ -13592,7 +13592,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-3.2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 4.85e-8,
@@ -13606,7 +13606,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -13620,7 +13620,7 @@ const provider10 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/meta/llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -13634,7 +13634,7 @@ const provider10 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 24000,
+            "maxTokens": null,
             "name": "cloudflare/@cf/qwen/qwq-32b",
             "type": "chat",
             "inputCost": 6.6e-7,
@@ -13651,7 +13651,7 @@ const provider10 = [
 
 const provider11 = [
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "codestral/codestral-2405",
             "type": "chat",
             "inputCost": 0,
@@ -13665,7 +13665,7 @@ const provider11 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "codestral/codestral-latest",
             "type": "chat",
             "inputCost": 0,
@@ -13682,7 +13682,7 @@ const provider11 = [
 
 const provider12 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cohere/embed-v4.0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -13696,7 +13696,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cohere/embed-v5.0-pro",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -13710,7 +13710,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "cohere/embed-v5.0-fast",
             "type": "embedding",
             "inputCost": 8e-8,
@@ -13724,7 +13724,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "command-nightly",
             "type": "completion",
             "inputCost": 0.000001,
@@ -13738,7 +13738,7 @@ const provider12 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "embed-english-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -13752,7 +13752,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "embed-english-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -13766,7 +13766,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "embed-multilingual-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -13780,7 +13780,7 @@ const provider12 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "embed-multilingual-light-v3.0",
             "type": "embedding",
             "inputCost": 0.0001,
@@ -13797,7 +13797,7 @@ const provider12 = [
 
 const provider13 = [
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "command-a-03-2025",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -13811,7 +13811,7 @@ const provider13 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "c4ai-aya-expanse-32b",
             "type": "chat",
             "inputCost": 5e-7,
@@ -13825,7 +13825,7 @@ const provider13 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "command-a-plus-05-2026",
             "type": "chat",
             "inputCost": 0,
@@ -13839,7 +13839,7 @@ const provider13 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "command-r-08-2024",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -13853,7 +13853,7 @@ const provider13 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "command-r-plus-08-2024",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -13867,7 +13867,7 @@ const provider13 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "command-r7b-12-2024",
             "type": "chat",
             "inputCost": 3.75e-8,
@@ -13884,7 +13884,7 @@ const provider13 = [
 
 const provider14 = [
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/glm-5.3-fast",
             "type": "chat",
             "inputCost": 0.00000112,
@@ -13898,7 +13898,7 @@ const provider14 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/glm-5.3-fp4",
             "type": "chat",
             "inputCost": 0.00000112,
@@ -13912,7 +13912,7 @@ const provider14 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/glm-5.3",
             "type": "chat",
             "inputCost": 0.00000112,
@@ -13926,7 +13926,7 @@ const provider14 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/deepseek-v4.1-flash-fast",
             "type": "chat",
             "inputCost": 1e-8,
@@ -13940,7 +13940,7 @@ const provider14 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/deepseek-v4.1-flash-fast-fp4",
             "type": "chat",
             "inputCost": 1e-8,
@@ -13954,7 +13954,7 @@ const provider14 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "coralbricks/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 1e-8,
@@ -13971,7 +13971,7 @@ const provider14 = [
 
 const provider15 = [
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "computer-use-preview",
             "type": "chat",
             "inputCost": 0.000003,
@@ -13985,7 +13985,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "computer-use-preview-2025-03-11",
             "type": "chat",
             "inputCost": 0.000003,
@@ -13999,7 +13999,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14013,7 +14013,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:gpt-3.5-turbo-0125",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14027,7 +14027,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:gpt-3.5-turbo-0613",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14041,7 +14041,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:gpt-3.5-turbo-1106",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14055,7 +14055,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ft:gpt-4-0613",
             "type": "chat",
             "inputCost": 0.00003,
@@ -14069,7 +14069,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "ft:gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.00000375,
@@ -14083,7 +14083,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "ft:gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.00000375,
@@ -14097,7 +14097,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "ft:gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 3e-7,
@@ -14111,7 +14111,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "ft:gpt-4.1-2025-04-14",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14125,7 +14125,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "ft:gpt-4.1-mini-2025-04-14",
             "type": "chat",
             "inputCost": 8e-7,
@@ -14139,7 +14139,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "ft:gpt-4.1-nano-2025-04-14",
             "type": "chat",
             "inputCost": 2e-7,
@@ -14153,7 +14153,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "ft:o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.000004,
@@ -14167,7 +14167,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -14181,7 +14181,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo-0125",
             "type": "chat",
             "inputCost": 5e-7,
@@ -14195,7 +14195,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo-1106",
             "type": "chat",
             "inputCost": 0.000001,
@@ -14209,7 +14209,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-3.5-turbo-16k",
             "type": "chat",
             "inputCost": 0.000003,
@@ -14223,7 +14223,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4",
             "type": "chat",
             "inputCost": 0.00003,
@@ -14237,7 +14237,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4-0613",
             "type": "chat",
             "inputCost": 0.00003,
@@ -14251,7 +14251,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4-1106-preview",
             "type": "chat",
             "inputCost": 0.00001,
@@ -14265,7 +14265,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4-turbo",
             "type": "chat",
             "inputCost": 0.00001,
@@ -14279,7 +14279,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4-turbo-2024-04-09",
             "type": "chat",
             "inputCost": 0.00001,
@@ -14293,7 +14293,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -14307,7 +14307,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1-2025-04-14",
             "type": "chat",
             "inputCost": 0.000002,
@@ -14321,7 +14321,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1-mini",
             "type": "chat",
             "inputCost": 4e-7,
@@ -14335,7 +14335,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1-mini-2025-04-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -14349,7 +14349,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1-nano",
             "type": "chat",
             "inputCost": 1e-7,
@@ -14363,7 +14363,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "gpt-4.1-nano-2025-04-14",
             "type": "chat",
             "inputCost": 1e-7,
@@ -14377,7 +14377,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14391,7 +14391,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": 0.000005,
@@ -14405,7 +14405,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14419,7 +14419,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14433,7 +14433,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14447,7 +14447,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-audio-preview-2025-06-03",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14461,7 +14461,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14475,7 +14475,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio-1.5",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14489,7 +14489,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio-2025-08-28",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14503,7 +14503,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio-mini",
             "type": "chat",
             "inputCost": 6e-7,
@@ -14517,7 +14517,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio-mini-2025-10-06",
             "type": "chat",
             "inputCost": 6e-7,
@@ -14531,7 +14531,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-audio-mini-2025-12-15",
             "type": "chat",
             "inputCost": 6e-7,
@@ -14545,7 +14545,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14559,7 +14559,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14573,7 +14573,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14587,7 +14587,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-mini-search-preview",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14601,7 +14601,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-mini-search-preview-2025-03-11",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -14615,7 +14615,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-search-preview",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14629,7 +14629,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-4o-search-preview-2025-03-11",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -14643,7 +14643,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -14657,7 +14657,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-codex",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -14671,7 +14671,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.1",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -14685,7 +14685,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": 2.5e-7,
@@ -14699,7 +14699,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.1-codex-max",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -14713,7 +14713,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.1-codex",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -14727,7 +14727,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-5.1-chat-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -14741,7 +14741,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.1-2025-11-13",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -14755,7 +14755,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -14769,7 +14769,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.2-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -14783,7 +14783,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-5.2-chat-latest",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -14797,7 +14797,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.2-2025-12-11",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -14811,7 +14811,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.2-pro",
             "type": "responses",
             "inputCost": 0.000021,
@@ -14825,7 +14825,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.2-pro-2025-12-11",
             "type": "responses",
             "inputCost": 0.000021,
@@ -14839,7 +14839,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-6-astra",
             "type": "chat",
             "inputCost": 0.00001,
@@ -14853,7 +14853,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-6-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -14867,7 +14867,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-6-luna",
             "type": "chat",
             "inputCost": 1e-7,
@@ -14881,7 +14881,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.6",
             "type": "chat",
             "inputCost": 0.000004,
@@ -14895,7 +14895,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.6-sol",
             "type": "chat",
             "inputCost": 0.000004,
@@ -14909,7 +14909,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.000002,
@@ -14923,7 +14923,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2e-7,
@@ -14937,7 +14937,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.6-cyber",
             "type": "chat",
             "inputCost": 0.0000125,
@@ -14951,7 +14951,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "daybreak-red-latest",
             "type": "chat",
             "inputCost": 0.0000125,
@@ -14965,7 +14965,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-daybreak-red-latest",
             "type": "responses",
             "inputCost": 0.0000125,
@@ -14979,7 +14979,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "daybreak-blue-latest",
             "type": "chat",
             "inputCost": 0.000004,
@@ -14993,7 +14993,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-daybreak-blue-latest",
             "type": "responses",
             "inputCost": 0.000004,
@@ -15007,7 +15007,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chat-latest",
             "type": "chat",
             "inputCost": 0.000005,
@@ -15021,7 +15021,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -15035,7 +15035,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.5-2026-04-23",
             "type": "chat",
             "inputCost": 0.000005,
@@ -15049,7 +15049,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.5-pro",
             "type": "responses",
             "inputCost": 0.00003,
@@ -15063,7 +15063,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.5-pro-2026-04-23",
             "type": "responses",
             "inputCost": 0.00003,
@@ -15077,7 +15077,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -15091,7 +15091,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-2026-03-05",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -15105,7 +15105,7 @@ const provider15 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-pro",
             "type": "responses",
             "inputCost": 0.00003,
@@ -15119,7 +15119,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-pro-2026-03-05",
             "type": "responses",
             "inputCost": 0.00003,
@@ -15133,7 +15133,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-mini",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -15147,7 +15147,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-mini-2026-03-17",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -15161,7 +15161,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-nano",
             "type": "chat",
             "inputCost": 2e-7,
@@ -15175,7 +15175,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.4-nano-2026-03-17",
             "type": "chat",
             "inputCost": 2e-7,
@@ -15189,7 +15189,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 272000,
+            "maxTokens": null,
             "name": "gpt-5-pro",
             "type": "responses",
             "inputCost": 0.000015,
@@ -15203,7 +15203,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 272000,
+            "maxTokens": null,
             "name": "gpt-5-pro-2025-10-06",
             "type": "responses",
             "inputCost": 0.000015,
@@ -15217,7 +15217,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-2025-08-07",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -15231,7 +15231,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-5-chat",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -15245,7 +15245,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-5-chat-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -15259,7 +15259,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5.3-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -15273,7 +15273,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gpt-5.3-chat-latest",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -15287,7 +15287,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-mini",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -15301,7 +15301,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-mini-2025-08-07",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -15315,7 +15315,7 @@ const provider15 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-nano",
             "type": "chat",
             "inputCost": 5e-8,
@@ -15329,7 +15329,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-nano-2025-08-07",
             "type": "chat",
             "inputCost": 5e-8,
@@ -15343,7 +15343,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -15357,7 +15357,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o1-2024-12-17",
             "type": "chat",
             "inputCost": 0.000015,
@@ -15371,7 +15371,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o1-pro",
             "type": "responses",
             "inputCost": 0.00015,
@@ -15385,7 +15385,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o1-pro-2025-03-19",
             "type": "responses",
             "inputCost": 0.00015,
@@ -15399,7 +15399,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -15413,7 +15413,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-deep-research",
             "type": "responses",
             "inputCost": 0.00001,
@@ -15427,7 +15427,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-deep-research-2025-06-26",
             "type": "responses",
             "inputCost": 0.00001,
@@ -15441,7 +15441,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-2025-04-16",
             "type": "chat",
             "inputCost": 0.000002,
@@ -15455,7 +15455,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -15469,7 +15469,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-mini-2025-01-31",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -15483,7 +15483,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-pro",
             "type": "responses",
             "inputCost": 0.00002,
@@ -15497,7 +15497,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o3-pro-2025-06-10",
             "type": "responses",
             "inputCost": 0.00002,
@@ -15511,7 +15511,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o4-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -15525,7 +15525,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o4-mini-deep-research",
             "type": "responses",
             "inputCost": 0.000002,
@@ -15539,7 +15539,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o4-mini-deep-research-2025-06-26",
             "type": "responses",
             "inputCost": 0.000002,
@@ -15553,7 +15553,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "o4-mini-2025-04-16",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -15567,7 +15567,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-embedding-3-large",
             "type": "embedding",
             "inputCost": 1.3e-7,
@@ -15581,7 +15581,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-embedding-3-small",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -15595,7 +15595,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-embedding-ada-002",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -15609,7 +15609,7 @@ const provider15 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-embedding-ada-002-v2",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -15636,7 +15636,7 @@ const provider15 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-search-api",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -15650,7 +15650,7 @@ const provider15 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-5-search-api-2025-10-14",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -15706,7 +15706,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -15734,7 +15734,7 @@ const provider15 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "gpt-6.1-terra",
             "type": "chat",
             "inputCost": 0.000001,
@@ -15751,7 +15751,7 @@ const provider15 = [
 
 const provider16 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepseek-chat",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -15765,7 +15765,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "deepseek-reasoner",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -15779,7 +15779,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepseek/deepseek-chat",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -15793,7 +15793,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "deepseek/deepseek-coder",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -15807,7 +15807,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepseek/deepseek-r1",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -15821,7 +15821,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "deepseek/deepseek-reasoner",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -15835,7 +15835,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepseek/deepseek-v3",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -15849,7 +15849,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepseek/deepseek-v3.2",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -15863,7 +15863,7 @@ const provider16 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15877,7 +15877,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek-v4-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15891,7 +15891,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15905,7 +15905,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -15919,7 +15919,7 @@ const provider16 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek/deepseek-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15933,7 +15933,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15947,7 +15947,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek/deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 3e-7,
@@ -15961,7 +15961,7 @@ const provider16 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "deepseek/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -15978,7 +15978,7 @@ const provider16 = [
 
 const provider17 = [
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "dashscope/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -15992,7 +15992,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "dashscope/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 2e-7,
@@ -16006,7 +16006,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "dashscope/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -16020,7 +16020,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "dashscope/glm-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -16034,7 +16034,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "dashscope/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -16048,7 +16048,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -16062,7 +16062,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-coder",
             "type": "chat",
             "inputCost": 3e-7,
@@ -16076,7 +16076,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen-flash",
             "type": "chat",
             "inputCost": null,
@@ -16089,7 +16089,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16102,7 +16102,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "dashscope/qwen-max",
             "type": "chat",
             "inputCost": 0.0000016,
@@ -16116,7 +16116,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16130,7 +16130,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-2025-01-25",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16144,7 +16144,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-2025-04-28",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16158,7 +16158,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-2025-07-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16172,7 +16172,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16185,7 +16185,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-2025-09-11",
             "type": "chat",
             "inputCost": null,
@@ -16198,7 +16198,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen-plus-latest",
             "type": "chat",
             "inputCost": null,
@@ -16211,7 +16211,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-turbo",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16225,7 +16225,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "dashscope/qwen-turbo-2024-11-01",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16239,7 +16239,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-turbo-2025-04-28",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16253,7 +16253,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen-turbo-latest",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16267,7 +16267,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "dashscope/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": null,
@@ -16280,7 +16280,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-coder-flash",
             "type": "chat",
             "inputCost": null,
@@ -16293,7 +16293,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-coder-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16306,7 +16306,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-coder-plus",
             "type": "chat",
             "inputCost": null,
@@ -16319,7 +16319,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-coder-plus-2025-07-22",
             "type": "chat",
             "inputCost": null,
@@ -16332,7 +16332,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-max-preview",
             "type": "chat",
             "inputCost": null,
@@ -16345,7 +16345,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-max",
             "type": "chat",
             "inputCost": null,
@@ -16358,7 +16358,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-max-2026-01-23",
             "type": "chat",
             "inputCost": null,
@@ -16371,7 +16371,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16385,7 +16385,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3-next-80b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16399,7 +16399,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16413,7 +16413,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16427,7 +16427,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen3-vl-32b-instruct",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -16441,7 +16441,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen3-vl-32b-thinking",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -16455,7 +16455,7 @@ const provider17 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "dashscope/qwen3-vl-plus",
             "type": "chat",
             "inputCost": null,
@@ -16468,7 +16468,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3.5-plus",
             "type": "chat",
             "inputCost": null,
@@ -16481,7 +16481,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3.7-max",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -16495,7 +16495,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "dashscope/qwen3.7-plus",
             "type": "chat",
             "inputCost": null,
@@ -16508,7 +16508,7 @@ const provider17 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "dashscope/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.000002,
@@ -16522,7 +16522,7 @@ const provider17 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "dashscope/qwen3.8-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16536,7 +16536,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "dashscope/qwen3.8-omni-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16550,7 +16550,7 @@ const provider17 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "dashscope/qwq-plus",
             "type": "chat",
             "inputCost": 8e-7,
@@ -16567,7 +16567,7 @@ const provider17 = [
 
 const provider18 = [
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwencloud/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -16581,7 +16581,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwencloud/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 2e-7,
@@ -16595,7 +16595,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwencloud/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -16609,7 +16609,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwencloud/glm-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -16623,7 +16623,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwencloud/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -16637,7 +16637,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -16651,7 +16651,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-coder",
             "type": "chat",
             "inputCost": 3e-7,
@@ -16665,7 +16665,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen-flash",
             "type": "chat",
             "inputCost": null,
@@ -16678,7 +16678,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16691,7 +16691,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwencloud/qwen-max",
             "type": "chat",
             "inputCost": 0.0000016,
@@ -16705,7 +16705,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16719,7 +16719,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-2025-01-25",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16733,7 +16733,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-2025-04-28",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16747,7 +16747,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-2025-07-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -16761,7 +16761,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16774,7 +16774,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-2025-09-11",
             "type": "chat",
             "inputCost": null,
@@ -16787,7 +16787,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen-plus-latest",
             "type": "chat",
             "inputCost": null,
@@ -16800,7 +16800,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-turbo",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16814,7 +16814,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwencloud/qwen-turbo-2024-11-01",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16828,7 +16828,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-turbo-2025-04-28",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16842,7 +16842,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen-turbo-latest",
             "type": "chat",
             "inputCost": 5e-8,
@@ -16856,7 +16856,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": null,
@@ -16869,7 +16869,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-coder-flash",
             "type": "chat",
             "inputCost": null,
@@ -16882,7 +16882,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-coder-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -16895,7 +16895,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-coder-plus",
             "type": "chat",
             "inputCost": null,
@@ -16908,7 +16908,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-coder-plus-2025-07-22",
             "type": "chat",
             "inputCost": null,
@@ -16921,7 +16921,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-max-preview",
             "type": "chat",
             "inputCost": null,
@@ -16934,7 +16934,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-max",
             "type": "chat",
             "inputCost": null,
@@ -16947,7 +16947,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-max-2026-01-23",
             "type": "chat",
             "inputCost": null,
@@ -16960,7 +16960,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16974,7 +16974,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-next-80b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -16988,7 +16988,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17002,7 +17002,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17016,7 +17016,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-vl-32b-instruct",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -17030,7 +17030,7 @@ const provider18 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-vl-32b-thinking",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -17044,7 +17044,7 @@ const provider18 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwencloud/qwen3-vl-plus",
             "type": "chat",
             "inputCost": null,
@@ -17057,7 +17057,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3.5-plus",
             "type": "chat",
             "inputCost": null,
@@ -17070,7 +17070,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3.7-max",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -17084,7 +17084,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwencloud/qwen3.7-plus",
             "type": "chat",
             "inputCost": null,
@@ -17097,7 +17097,7 @@ const provider18 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwencloud/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.000002,
@@ -17111,7 +17111,7 @@ const provider18 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwencloud/qwq-plus",
             "type": "chat",
             "inputCost": 8e-7,
@@ -17128,7 +17128,7 @@ const provider18 = [
 
 const provider19 = [
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwen_ai_platform/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -17142,7 +17142,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwen_ai_platform/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 2e-7,
@@ -17156,7 +17156,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "qwen_ai_platform/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -17170,7 +17170,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwen_ai_platform/glm-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -17184,7 +17184,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwen_ai_platform/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -17198,7 +17198,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -17212,7 +17212,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-coder",
             "type": "chat",
             "inputCost": 3e-7,
@@ -17226,7 +17226,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-flash",
             "type": "chat",
             "inputCost": null,
@@ -17239,7 +17239,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -17252,7 +17252,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-max",
             "type": "chat",
             "inputCost": 0.0000016,
@@ -17266,7 +17266,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17280,7 +17280,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-2025-01-25",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17294,7 +17294,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-2025-04-28",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17308,7 +17308,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-2025-07-14",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17322,7 +17322,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -17335,7 +17335,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-2025-09-11",
             "type": "chat",
             "inputCost": null,
@@ -17348,7 +17348,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-plus-latest",
             "type": "chat",
             "inputCost": null,
@@ -17361,7 +17361,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-turbo",
             "type": "chat",
             "inputCost": 5e-8,
@@ -17375,7 +17375,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-turbo-2024-11-01",
             "type": "chat",
             "inputCost": 5e-8,
@@ -17389,7 +17389,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-turbo-2025-04-28",
             "type": "chat",
             "inputCost": 5e-8,
@@ -17403,7 +17403,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen-turbo-latest",
             "type": "chat",
             "inputCost": 5e-8,
@@ -17417,7 +17417,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": null,
@@ -17430,7 +17430,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-coder-flash",
             "type": "chat",
             "inputCost": null,
@@ -17443,7 +17443,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-coder-flash-2025-07-28",
             "type": "chat",
             "inputCost": null,
@@ -17456,7 +17456,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-coder-plus",
             "type": "chat",
             "inputCost": null,
@@ -17469,7 +17469,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-coder-plus-2025-07-22",
             "type": "chat",
             "inputCost": null,
@@ -17482,7 +17482,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-max-preview",
             "type": "chat",
             "inputCost": null,
@@ -17495,7 +17495,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-max",
             "type": "chat",
             "inputCost": null,
@@ -17508,7 +17508,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-max-2026-01-23",
             "type": "chat",
             "inputCost": null,
@@ -17521,7 +17521,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -17535,7 +17535,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-next-80b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -17549,7 +17549,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17563,7 +17563,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
             "inputCost": 4e-7,
@@ -17577,7 +17577,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-vl-32b-instruct",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -17591,7 +17591,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-vl-32b-thinking",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -17605,7 +17605,7 @@ const provider19 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3-vl-plus",
             "type": "chat",
             "inputCost": null,
@@ -17618,7 +17618,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.5-plus",
             "type": "chat",
             "inputCost": null,
@@ -17631,7 +17631,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.7-max",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -17645,7 +17645,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.7-plus",
             "type": "chat",
             "inputCost": null,
@@ -17658,7 +17658,7 @@ const provider19 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.000002,
@@ -17672,7 +17672,7 @@ const provider19 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.8-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -17686,7 +17686,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwen3.8-omni-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -17700,7 +17700,7 @@ const provider19 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "qwen_ai_platform/qwq-plus",
             "type": "chat",
             "inputCost": 8e-7,
@@ -17717,7 +17717,7 @@ const provider19 = [
 
 const provider20 = [
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "databricks/databricks-bge-large-en",
             "type": "embedding",
             "inputCost": 1.0003e-7,
@@ -17731,7 +17731,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001000006,
@@ -17745,7 +17745,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001000006,
@@ -17759,7 +17759,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.00000100002,
@@ -17773,7 +17773,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4",
             "type": "chat",
             "inputCost": 0.000015000020000000002,
@@ -17787,7 +17787,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-1",
             "type": "chat",
             "inputCost": 0.000015000020000000002,
@@ -17801,7 +17801,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -17815,7 +17815,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -17829,7 +17829,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -17843,7 +17843,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -17857,7 +17857,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-5",
             "type": "chat",
             "inputCost": 0.00000500003,
@@ -17871,7 +17871,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.00000400001,
@@ -17885,7 +17885,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -17899,7 +17899,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-1",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -17913,7 +17913,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -17927,7 +17927,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.0000029999900000000002,
@@ -17941,7 +17941,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.00000299999,
@@ -17955,7 +17955,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "databricks/databricks-deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -17982,7 +17982,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "databricks/databricks-deepseek-v4-pro-0813",
             "type": "chat",
             "inputCost": 0.00000131999,
@@ -17996,7 +17996,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-2-5-flash",
             "type": "chat",
             "inputCost": 3.0001999999999996e-7,
@@ -18010,7 +18010,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-2-5-pro",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -18024,7 +18024,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-flash-lite",
             "type": "chat",
             "inputCost": 3.1248e-7,
@@ -18038,7 +18038,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-flash-image",
             "type": "chat",
             "inputCost": null,
@@ -18051,7 +18051,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-pro-image",
             "type": "chat",
             "inputCost": null,
@@ -18064,7 +18064,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-pro",
             "type": "chat",
             "inputCost": 0.00000249998,
@@ -18078,7 +18078,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-flash",
             "type": "chat",
             "inputCost": 6.2503e-7,
@@ -18092,7 +18092,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-pro",
             "type": "chat",
             "inputCost": 0.00000249998,
@@ -18106,7 +18106,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-8-flash",
             "type": "chat",
             "inputCost": null,
@@ -18119,7 +18119,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-7-flash",
             "type": "chat",
             "inputCost": null,
@@ -18132,7 +18132,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-6-flash",
             "type": "chat",
             "inputCost": 0.00000187502,
@@ -18146,7 +18146,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-5-flash",
             "type": "chat",
             "inputCost": 0.00000187502,
@@ -18160,7 +18160,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-gemini-3-5-flash-lite",
             "type": "chat",
             "inputCost": 3.7499e-7,
@@ -18174,7 +18174,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "databricks/databricks-gemma-3-12b",
             "type": "chat",
             "inputCost": 1.5000999999999998e-7,
@@ -18188,7 +18188,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "databricks/databricks-glm-5-2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -18202,7 +18202,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "databricks/databricks-glm-5-3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -18216,7 +18216,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "databricks/databricks-glm-5-3-flash",
             "type": "chat",
             "inputCost": 1.5001e-7,
@@ -18230,7 +18230,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -18244,7 +18244,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-1",
             "type": "chat",
             "inputCost": 0.00000124999,
@@ -18258,7 +18258,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -18272,7 +18272,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-3-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -18286,7 +18286,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4",
             "type": "chat",
             "inputCost": 0.00000249998,
@@ -18300,7 +18300,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4-mini",
             "type": "chat",
             "inputCost": 7.4998e-7,
@@ -18314,7 +18314,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4-nano",
             "type": "chat",
             "inputCost": 1.9999e-7,
@@ -18328,7 +18328,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-sol",
             "type": "chat",
             "inputCost": 0.00000400001,
@@ -18342,7 +18342,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-terra",
             "type": "chat",
             "inputCost": 0.00000249998,
@@ -18356,7 +18356,7 @@ const provider20 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-luna",
             "type": "chat",
             "inputCost": 0.00000100002,
@@ -18370,7 +18370,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-5",
             "type": "responses",
             "inputCost": 0.00000500003,
@@ -18384,7 +18384,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-5-pro",
             "type": "responses",
             "inputCost": 0.00002999997,
@@ -18398,7 +18398,7 @@ const provider20 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-mini",
             "type": "chat",
             "inputCost": 2.4997000000000006e-7,
@@ -18412,7 +18412,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-5-nano",
             "type": "chat",
             "inputCost": 4.998e-8,
@@ -18426,7 +18426,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5000999999999998e-7,
@@ -18440,7 +18440,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "databricks/databricks-gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -18468,7 +18468,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "databricks/databricks-gte-large-en",
             "type": "embedding",
             "inputCost": 1.2999000000000001e-7,
@@ -18496,7 +18496,7 @@ const provider20 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "databricks/databricks-kimi-k3",
             "type": "chat",
             "inputCost": 0.00000299999,
@@ -18523,7 +18523,7 @@ const provider20 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-llama-4-maverick",
             "type": "chat",
             "inputCost": 5.0001e-7,
@@ -18537,7 +18537,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-meta-llama-3-1-8b-instruct",
             "type": "chat",
             "inputCost": 1.5000999999999998e-7,
@@ -18551,7 +18551,7 @@ const provider20 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "databricks/databricks-meta-llama-3-3-70b-instruct",
             "type": "chat",
             "inputCost": 5.0001e-7,
@@ -18565,7 +18565,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 25000,
+            "maxTokens": null,
             "name": "databricks/databricks-qwen35-122b-a10b",
             "type": "chat",
             "inputCost": 2.2001e-7,
@@ -18593,7 +18593,7 @@ const provider20 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "databricks/databricks-qwen3-embedding-0-6b",
             "type": "embedding",
             "inputCost": 2.002e-8,
@@ -18610,7 +18610,7 @@ const provider20 = [
 
 const provider21 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "deepinfra/Gryphe/MythoMax-L2-13b",
             "type": "chat",
             "inputCost": 4e-7,
@@ -18624,7 +18624,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-405B",
             "type": "chat",
             "inputCost": 0.000001,
@@ -18638,7 +18638,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/NousResearch/Hermes-3-Llama-3.1-70B",
             "type": "chat",
             "inputCost": 7e-7,
@@ -18652,7 +18652,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/QwQ-32B",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -18666,7 +18666,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen2.5-72B-Instruct",
             "type": "chat",
             "inputCost": 3.6e-7,
@@ -18680,7 +18680,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen2.5-7B-Instruct",
             "type": "chat",
             "inputCost": 4e-8,
@@ -18694,7 +18694,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen2.5-VL-32B-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -18708,7 +18708,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-14B",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -18722,7 +18722,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -18736,7 +18736,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B-Instruct-2507",
             "type": "chat",
             "inputCost": 9e-8,
@@ -18750,7 +18750,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-235B-A22B-Thinking-2507",
             "type": "chat",
             "inputCost": 3e-7,
@@ -18764,7 +18764,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-30B-A3B",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -18778,7 +18778,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-32B",
             "type": "chat",
             "inputCost": 8e-8,
@@ -18792,7 +18792,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct",
             "type": "chat",
             "inputCost": 4e-7,
@@ -18806,7 +18806,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Coder-480B-A35B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 3e-7,
@@ -18820,7 +18820,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Next-80B-A3B-Instruct",
             "type": "chat",
             "inputCost": 9e-8,
@@ -18834,7 +18834,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Next-80B-A3B-Thinking",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -18848,7 +18848,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepinfra/Sao10K/L3-8B-Lunaris-v1-Turbo",
             "type": "chat",
             "inputCost": 4e-8,
@@ -18862,7 +18862,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/Sao10K/L3.1-70B-Euryale-v2.2",
             "type": "chat",
             "inputCost": 8.5e-7,
@@ -18876,7 +18876,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/Sao10K/L3.3-70B-Euryale-v2.3",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -18890,7 +18890,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "deepinfra/allenai/olmOCR-7B-0725-FP8",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -18904,7 +18904,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-3-7-sonnet-latest",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -18918,7 +18918,7 @@ const provider21 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-4-opus",
             "type": "chat",
             "inputCost": 0.0000165,
@@ -18932,7 +18932,7 @@ const provider21 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-4-sonnet",
             "type": "chat",
             "inputCost": 0.0000033,
@@ -18946,7 +18946,7 @@ const provider21 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1",
             "type": "chat",
             "inputCost": 7e-7,
@@ -18960,7 +18960,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-0528",
             "type": "chat",
             "inputCost": 5e-7,
@@ -18974,7 +18974,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-0528-Turbo",
             "type": "chat",
             "inputCost": 0.000001,
@@ -18988,7 +18988,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
             "inputCost": 2e-7,
@@ -19002,7 +19002,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -19016,7 +19016,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-R1-Turbo",
             "type": "chat",
             "inputCost": 0.000001,
@@ -19030,7 +19030,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 3.2e-7,
@@ -19044,7 +19044,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -19058,7 +19058,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -19072,7 +19072,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3.1-Terminus",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -19086,7 +19086,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-2.5-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -19100,7 +19100,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-2.5-pro",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -19114,7 +19114,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-3-12b-it",
             "type": "chat",
             "inputCost": 5e-8,
@@ -19128,7 +19128,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-3-27b-it",
             "type": "chat",
             "inputCost": 8e-8,
@@ -19142,7 +19142,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-3-4b-it",
             "type": "chat",
             "inputCost": 5e-8,
@@ -19156,7 +19156,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-3.2-11B-Vision-Instruct",
             "type": "chat",
             "inputCost": 4.9e-8,
@@ -19170,7 +19170,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-3.2-3B-Instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -19184,7 +19184,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -19198,7 +19198,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-3.3-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 1e-7,
@@ -19212,7 +19212,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
             "type": "chat",
             "inputCost": 2e-7,
@@ -19226,7 +19226,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 327680,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-4-Scout-17B-16E-Instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -19240,7 +19240,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-Guard-3-8B",
             "type": "chat",
             "inputCost": 5.5e-8,
@@ -19254,7 +19254,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Llama-Guard-4-12B",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -19268,7 +19268,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Meta-Llama-3-8B-Instruct",
             "type": "chat",
             "inputCost": 3e-8,
@@ -19282,7 +19282,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19296,7 +19296,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19310,7 +19310,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 3e-8,
@@ -19324,7 +19324,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 2e-8,
@@ -19338,7 +19338,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "deepinfra/microsoft/WizardLM-2-8x22B",
             "type": "chat",
             "inputCost": 4.8e-7,
@@ -19352,7 +19352,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "deepinfra/microsoft/phi-4",
             "type": "chat",
             "inputCost": 7e-8,
@@ -19366,7 +19366,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/mistralai/Mistral-Nemo-Instruct-2407",
             "type": "chat",
             "inputCost": 1.9e-8,
@@ -19380,7 +19380,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepinfra/mistralai/Mistral-Small-24B-Instruct-2501",
             "type": "chat",
             "inputCost": 5e-8,
@@ -19394,7 +19394,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "deepinfra/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -19408,7 +19408,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepinfra/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19422,7 +19422,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K2-Instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -19436,7 +19436,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K2-Instruct-0905",
             "type": "chat",
             "inputCost": 5e-7,
@@ -19450,7 +19450,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/Llama-3.1-Nemotron-70B-Instruct",
             "type": "chat",
             "inputCost": 6e-7,
@@ -19464,7 +19464,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/Llama-3.3-Nemotron-Super-49B-v1.5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -19492,7 +19492,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
             "type": "chat",
             "inputCost": 4e-8,
@@ -19506,7 +19506,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 3.7e-8,
@@ -19520,7 +19520,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -19534,7 +19534,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-4.5",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19548,7 +19548,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/openai/gpt-oss-120b-Turbo",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -19562,7 +19562,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "deepinfra/MiniMaxAI/MiniMax-M2.7",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -19576,7 +19576,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.8-27B",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19590,7 +19590,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-4-31B-it-Ultra",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -19604,7 +19604,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K2.5",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -19618,7 +19618,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-4.7-Flash",
             "type": "chat",
             "inputCost": 6e-8,
@@ -19632,7 +19632,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-4.6",
             "type": "chat",
             "inputCost": 5e-7,
@@ -19646,7 +19646,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -19660,7 +19660,7 @@ const provider21 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -19674,7 +19674,7 @@ const provider21 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-3.5-flash",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -19688,7 +19688,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/XiaomiMiMo/MiMo-V2.5",
             "type": "chat",
             "inputCost": 4e-7,
@@ -19702,7 +19702,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Max",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -19716,7 +19716,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-4-31B-it-turbo",
             "type": "chat",
             "inputCost": 9e-8,
@@ -19730,7 +19730,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "deepinfra/thinkingmachines/Inkling-Small",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -19744,7 +19744,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/meta-models/Muse-Glimmer-30B",
             "type": "chat",
             "inputCost": 3e-7,
@@ -19758,7 +19758,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-Max-Thinking",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -19772,7 +19772,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-VL-235B-A22B-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -19786,7 +19786,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3-VL-30B-A3B-Instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -19800,7 +19800,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.5-27B",
             "type": "chat",
             "inputCost": 2.6e-7,
@@ -19814,7 +19814,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.6-35B-A3B",
             "type": "chat",
             "inputCost": 1e-7,
@@ -19828,7 +19828,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/Nemotron-Content-Safety-3.5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -19842,7 +19842,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -19856,7 +19856,7 @@ const provider21 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "deepinfra/thinkingmachines/Inkling",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -19870,7 +19870,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -19884,7 +19884,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
             "inputCost": 0.0000013,
@@ -19898,7 +19898,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.7-Max",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -19912,7 +19912,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/ByteDance/Seed-2.0-mini",
             "type": "chat",
             "inputCost": 1e-7,
@@ -19926,7 +19926,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.8-2.4T-A95B",
             "type": "chat",
             "inputCost": 0.000002,
@@ -19940,7 +19940,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "deepinfra/MiniMaxAI/MiniMax-M3",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -19954,7 +19954,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-3.1-flash-lite",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -19968,7 +19968,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-3.7-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -19982,7 +19982,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/inclusionAI/Ling-3.0-flash",
             "type": "chat",
             "inputCost": 6e-8,
@@ -19996,7 +19996,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/stepfun-ai/Step-3.7-Flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -20010,7 +20010,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.5-35B-A3B",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -20024,7 +20024,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/ByteDance/Seed-1.8",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -20038,7 +20038,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/tencent/Hy3",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -20052,7 +20052,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/ByteDance/Seed-2.0-code",
             "type": "chat",
             "inputCost": 5e-7,
@@ -20066,7 +20066,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/ByteDance/Seed-2.0-pro",
             "type": "chat",
             "inputCost": 5e-7,
@@ -20080,7 +20080,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -20094,7 +20094,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/Nemotron-3-Nano-30B-A3B",
             "type": "chat",
             "inputCost": 5e-8,
@@ -20108,7 +20108,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 6.8e-7,
@@ -20122,7 +20122,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -20136,7 +20136,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.5-397B-A17B",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -20150,7 +20150,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 8e-8,
@@ -20164,7 +20164,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-4-E4B-it",
             "type": "chat",
             "inputCost": 2e-8,
@@ -20178,7 +20178,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V3.2",
             "type": "chat",
             "inputCost": 2.6e-7,
@@ -20192,7 +20192,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.8-Max",
             "type": "chat",
             "inputCost": 0.00000165,
@@ -20206,7 +20206,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -20220,7 +20220,7 @@ const provider21 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
             "type": "chat",
             "inputCost": 5e-7,
@@ -20234,7 +20234,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.5-122B-A10B",
             "type": "chat",
             "inputCost": 2.9e-7,
@@ -20248,7 +20248,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-5.1",
             "type": "chat",
             "inputCost": 0.00000105,
@@ -20262,7 +20262,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.0000013,
@@ -20276,7 +20276,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
             "type": "chat",
             "inputCost": 8.5e-8,
@@ -20290,7 +20290,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -20304,7 +20304,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/moonshotai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.00000285,
@@ -20318,7 +20318,7 @@ const provider21 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -20332,7 +20332,7 @@ const provider21 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.6-27B",
             "type": "chat",
             "inputCost": 3.2e-7,
@@ -20346,7 +20346,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-4-26B-A4B-it",
             "type": "chat",
             "inputCost": 7e-8,
@@ -20360,7 +20360,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "deepinfra/google/gemini-3.1-pro",
             "type": "chat",
             "inputCost": 0.000002,
@@ -20374,7 +20374,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/XiaomiMiMo/MiMo-V2.5-Pro",
             "type": "chat",
             "inputCost": 0.000001,
@@ -20388,7 +20388,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "deepinfra/anthropic/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -20402,7 +20402,7 @@ const provider21 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4-Flash",
             "type": "chat",
             "inputCost": 9e-8,
@@ -20416,7 +20416,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -20430,7 +20430,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash-1017",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -20444,7 +20444,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "deepinfra/openai/gpt-oss-120b-Ultra",
             "type": "chat",
             "inputCost": 2e-7,
@@ -20458,7 +20458,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/Qwen/Qwen3.5-9B",
             "type": "chat",
             "inputCost": 1e-7,
@@ -20472,7 +20472,7 @@ const provider21 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "deepinfra/MiniMaxAI/MiniMax-M2.7-Turbo",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -20486,7 +20486,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "deepinfra/zai-org/GLM-4.7",
             "type": "chat",
             "inputCost": 4e-7,
@@ -20500,7 +20500,7 @@ const provider21 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "deepinfra/google/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -20517,7 +20517,7 @@ const provider21 = [
 
 const provider22 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deepseek-v3-2-251201",
             "type": "chat",
             "inputCost": 0,
@@ -20531,7 +20531,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "glm-4-7-251222",
             "type": "chat",
             "inputCost": 0,
@@ -20545,7 +20545,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "kimi-k2-thinking-251104",
             "type": "chat",
             "inputCost": 0,
@@ -20559,7 +20559,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "doubao-embedding",
             "type": "embedding",
             "inputCost": 0,
@@ -20573,7 +20573,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "doubao-embedding-large",
             "type": "embedding",
             "inputCost": 0,
@@ -20587,7 +20587,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "doubao-embedding-large-text-240915",
             "type": "embedding",
             "inputCost": 0,
@@ -20601,7 +20601,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "doubao-embedding-large-text-250515",
             "type": "embedding",
             "inputCost": 0,
@@ -20615,7 +20615,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "doubao-embedding-text-240715",
             "type": "embedding",
             "inputCost": 0,
@@ -20629,7 +20629,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-0-pro-260215",
             "type": "chat",
             "inputCost": null,
@@ -20642,7 +20642,7 @@ const provider22 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-1-pro-260628",
             "type": "chat",
             "inputCost": 8.625e-7,
@@ -20656,7 +20656,7 @@ const provider22 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-1-pro-260915",
             "type": "chat",
             "inputCost": 8.625e-7,
@@ -20670,7 +20670,7 @@ const provider22 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-1-lite-260915",
             "type": "chat",
             "inputCost": 1.15e-7,
@@ -20684,7 +20684,7 @@ const provider22 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-1-turbo-260628",
             "type": "chat",
             "inputCost": 4.3125e-7,
@@ -20698,7 +20698,7 @@ const provider22 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-0-lite-260215",
             "type": "chat",
             "inputCost": null,
@@ -20711,7 +20711,7 @@ const provider22 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-0-mini-260215",
             "type": "chat",
             "inputCost": null,
@@ -20724,7 +20724,7 @@ const provider22 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "volcengine/doubao-seed-2-0-code-preview-260215",
             "type": "chat",
             "inputCost": null,
@@ -20740,7 +20740,7 @@ const provider22 = [
 
 const provider23 = [
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/moonshotai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -20754,7 +20754,7 @@ const provider23 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 9.8e-7,
@@ -20768,7 +20768,7 @@ const provider23 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -20782,7 +20782,7 @@ const provider23 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
             "inputCost": 9.2e-7,
@@ -20796,7 +20796,7 @@ const provider23 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 9e-8,
@@ -20810,7 +20810,7 @@ const provider23 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 9e-8,
@@ -20824,7 +20824,7 @@ const provider23 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "sail/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 0.000001,
@@ -20838,7 +20838,7 @@ const provider23 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "sail/google/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 4e-7,
@@ -20852,7 +20852,7 @@ const provider23 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "sail/nvidia/Gemma-4-31B-IT-NVFP4",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -20866,7 +20866,7 @@ const provider23 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "sail/google/gemma-4-12B-it",
             "type": "chat",
             "inputCost": 3e-7,
@@ -20880,7 +20880,7 @@ const provider23 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sail/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -20894,7 +20894,7 @@ const provider23 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "sail/Qwen/Qwen3.6-35B-A3B",
             "type": "chat",
             "inputCost": 5e-8,
@@ -20928,7 +20928,7 @@ const provider24 = [
 
 const provider25 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "featherless_ai/featherless-ai/Qwerky-72B",
             "type": "chat",
             "inputCost": null,
@@ -20941,7 +20941,7 @@ const provider25 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "featherless_ai/featherless-ai/Qwerky-QwQ-32B",
             "type": "chat",
             "inputCost": null,
@@ -20957,7 +20957,7 @@ const provider25 = [
 
 const provider26 = [
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "fireworks_ai/WhereIsAI/UAE-Large-V1",
             "type": "embedding",
             "inputCost": 1.6e-8,
@@ -20971,7 +20971,7 @@ const provider26 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/nomic-ai/nomic-embed-text-v1",
             "type": "embedding",
             "inputCost": 8e-9,
@@ -20985,7 +20985,7 @@ const provider26 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/nomic-ai/nomic-embed-text-v1.5",
             "type": "embedding",
             "inputCost": 8e-9,
@@ -20999,7 +20999,7 @@ const provider26 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "fireworks_ai/thenlper/gte-base",
             "type": "embedding",
             "inputCost": 8e-9,
@@ -21013,7 +21013,7 @@ const provider26 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "fireworks_ai/thenlper/gte-large",
             "type": "embedding",
             "inputCost": 1.6e-8,
@@ -21030,7 +21030,7 @@ const provider26 = [
 
 const provider27 = [
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-v2-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -21044,7 +21044,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 20480,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1",
             "type": "chat",
             "inputCost": 0.000003,
@@ -21058,7 +21058,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 160000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-0528",
             "type": "chat",
             "inputCost": 0.000003,
@@ -21072,7 +21072,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 20480,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-basic",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -21086,7 +21086,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21100,7 +21100,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3-0324",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21114,7 +21114,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p1",
             "type": "chat",
             "inputCost": 5.6e-7,
@@ -21128,7 +21128,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p1-terminus",
             "type": "chat",
             "inputCost": 5.6e-7,
@@ -21142,7 +21142,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v3p2",
             "type": "chat",
             "inputCost": 5.6e-7,
@@ -21156,7 +21156,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -21170,7 +21170,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -21184,7 +21184,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -21198,7 +21198,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/firefunction-v2",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21212,7 +21212,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 96000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -21226,7 +21226,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 96000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5-air",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -21240,7 +21240,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p6",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -21254,7 +21254,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21268,7 +21268,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -21282,7 +21282,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -21296,7 +21296,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -21310,7 +21310,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -21324,7 +21324,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21338,7 +21338,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-instruct-0905",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21352,7 +21352,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21366,7 +21366,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21380,7 +21380,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -21394,7 +21394,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -21408,7 +21408,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct",
             "type": "chat",
             "inputCost": 0.000003,
@@ -21422,7 +21422,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-8b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -21436,7 +21436,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21450,7 +21450,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-1b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -21464,7 +21464,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-3b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -21478,7 +21478,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-90b-vision-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21492,7 +21492,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama4-maverick-instruct-basic",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -21506,7 +21506,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama4-scout-instruct-basic",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -21520,7 +21520,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 204800,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m2p1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -21534,7 +21534,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -21548,7 +21548,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct-hf",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -21562,7 +21562,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21576,7 +21576,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21590,7 +21590,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/yi-large",
             "type": "chat",
             "inputCost": 0.000003,
@@ -21604,7 +21604,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -21618,7 +21618,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-4p7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21632,7 +21632,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -21646,7 +21646,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p1-fast",
             "type": "chat",
             "inputCost": 0.0000028,
@@ -21660,7 +21660,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -21674,7 +21674,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -21688,7 +21688,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -21702,7 +21702,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -21716,7 +21716,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -21730,7 +21730,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p6-fast",
             "type": "chat",
             "inputCost": 0.000002,
@@ -21744,7 +21744,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -21758,7 +21758,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p7-code-fast",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -21772,7 +21772,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 204800,
+            "maxTokens": null,
             "name": "fireworks_ai/minimax-m2p1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -21786,7 +21786,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": null,
             "name": "fireworks_ai/minimax-m3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -21800,7 +21800,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/qwen3p7-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -21814,7 +21814,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-coder-480b-a35b-instruct",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -21828,7 +21828,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/chronos-hermes-13b-v2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21842,7 +21842,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-13b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21856,7 +21856,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-13b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21870,7 +21870,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-13b-python",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21884,7 +21884,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-34b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21898,7 +21898,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-34b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21912,7 +21912,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-34b-python",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21926,7 +21926,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-70b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21940,7 +21940,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21954,7 +21954,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-70b-python",
             "type": "chat",
             "inputCost": 9e-7,
@@ -21968,7 +21968,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21982,7 +21982,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -21996,7 +21996,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-llama-7b-python",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22010,7 +22010,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/code-qwen-1p5-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22024,7 +22024,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/codegemma-2b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22038,7 +22038,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/codegemma-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22052,7 +22052,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-671b-v2-p1",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22066,7 +22066,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-v1-preview-llama-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22080,7 +22080,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-v1-preview-llama-70b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22094,7 +22094,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-v1-preview-llama-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22108,7 +22108,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-v1-preview-qwen-14b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22122,7 +22122,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/cogito-v1-preview-qwen-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22136,7 +22136,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/dbrx-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22150,7 +22150,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-1b-base",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22164,7 +22164,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-33b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22178,7 +22178,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-7b-base",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22192,7 +22192,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-7b-base-v1p5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22206,7 +22206,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-7b-instruct-v1p5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22220,7 +22220,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-v2-lite-base",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22234,7 +22234,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-coder-v2-lite-instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22248,7 +22248,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-prover-v2",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22262,7 +22262,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-0528-distill-qwen3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22276,7 +22276,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-llama-70b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22290,7 +22290,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-llama-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22304,7 +22304,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-qwen-14b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22318,7 +22318,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-qwen-1p5b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22332,7 +22332,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-qwen-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22346,7 +22346,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-r1-distill-qwen-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22360,7 +22360,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v2-lite-chat",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22374,7 +22374,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v2p5",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22388,7 +22388,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/devstral-small-2505",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22402,7 +22402,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/dobby-mini-unhinged-plus-llama-3-1-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22416,7 +22416,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/dobby-unhinged-llama-3-3-70b-new",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22430,7 +22430,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/dolphin-2-9-2-qwen2-72b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22444,7 +22444,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/dolphin-2p6-mixtral-8x7b",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22458,7 +22458,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ernie-4p5-21b-a3b-pt",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22472,7 +22472,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ernie-4p5-300b-a47b-pt",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22486,7 +22486,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/fare-20b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22500,7 +22500,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/firefunction-v1",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22514,7 +22514,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/firellava-13b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22528,7 +22528,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/firesearch-ocr-v6",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22542,7 +22542,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/flux-1-dev",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22556,7 +22556,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/flux-1-dev-controlnet-union",
             "type": "chat",
             "inputCost": 1e-9,
@@ -22570,7 +22570,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/flux-1-schnell",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22584,7 +22584,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gemma-2b-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22598,7 +22598,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gemma-3-27b-it",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22612,7 +22612,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gemma-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22626,7 +22626,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gemma-7b-it",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22640,7 +22640,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gemma2-9b-it",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22654,7 +22654,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-4p5v",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22668,7 +22668,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-safeguard-120b",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -22682,7 +22682,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 5e-7,
@@ -22696,7 +22696,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/hermes-2-pro-mistral-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22710,7 +22710,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/internvl3-38b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22724,7 +22724,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/internvl3-78b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22738,7 +22738,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/internvl3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22752,7 +22752,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kat-coder",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22766,7 +22766,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kat-dev-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22780,7 +22780,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kat-dev-72b-exp",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22794,7 +22794,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-guard-2-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22808,7 +22808,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-guard-3-1b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22822,7 +22822,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-guard-3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22836,7 +22836,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-13b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22850,7 +22850,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-13b-chat",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22864,7 +22864,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-70b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22878,7 +22878,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-70b-chat",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22892,7 +22892,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22906,7 +22906,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v2-7b-chat",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22920,7 +22920,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22934,7 +22934,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3-70b-instruct-hf",
             "type": "chat",
             "inputCost": 9e-7,
@@ -22948,7 +22948,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22962,7 +22962,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3-8b-instruct-hf",
             "type": "chat",
             "inputCost": 2e-7,
@@ -22976,7 +22976,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-405b-instruct-long",
             "type": "chat",
             "inputCost": 1e-7,
@@ -22990,7 +22990,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23004,7 +23004,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-70b-instruct-1b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23018,7 +23018,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p1-nemotron-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23032,7 +23032,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-1b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23046,7 +23046,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p2-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23060,7 +23060,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llama-v3p3-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23074,7 +23074,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llamaguard-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23088,7 +23088,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/llava-yi-34b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23102,7 +23102,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m1-80k",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23116,7 +23116,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -23130,7 +23130,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ministral-3-14b-instruct-2512",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23144,7 +23144,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ministral-3-3b-instruct-2512",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23158,7 +23158,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ministral-3-8b-instruct-2512",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23172,7 +23172,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23186,7 +23186,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-7b-instruct-4k",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23200,7 +23200,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-7b-instruct-v0p2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23214,7 +23214,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-7b-instruct-v3",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23228,7 +23228,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-7b-v0p2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23242,7 +23242,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-large-3-fp8",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -23256,7 +23256,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-nemo-base-2407",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23270,7 +23270,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-nemo-instruct-2407",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23284,7 +23284,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mistral-small-24b-instruct-2501",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23298,7 +23298,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -23312,7 +23312,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -23326,7 +23326,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b",
             "type": "chat",
             "inputCost": 5e-7,
@@ -23340,7 +23340,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b-instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -23354,7 +23354,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x7b-instruct-hf",
             "type": "chat",
             "inputCost": 5e-7,
@@ -23368,7 +23368,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mythomax-l2-13b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23382,7 +23382,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nemotron-nano-v2-12b-vl",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23396,7 +23396,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-capybara-7b-v1p9",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23410,7 +23410,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-hermes-2-mixtral-8x7b-dpo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -23424,7 +23424,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-hermes-2-yi-34b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23438,7 +23438,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-13b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23452,7 +23452,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-70b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23466,7 +23466,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nous-hermes-llama2-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23480,7 +23480,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nvidia-nemotron-nano-12b-v2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23494,7 +23494,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nvidia-nemotron-nano-9b-v2",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23508,7 +23508,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/openchat-3p5-0106-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23522,7 +23522,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/openhermes-2-mistral-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23536,7 +23536,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/openhermes-2p5-mistral-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23550,7 +23550,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/openorca-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23564,7 +23564,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phi-2-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23578,7 +23578,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phi-3-mini-128k-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23592,7 +23592,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32064,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phi-3-vision-128k-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23606,7 +23606,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phind-code-llama-34b-python-v1",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23620,7 +23620,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phind-code-llama-34b-v1",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23634,7 +23634,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/phind-code-llama-34b-v2",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23648,7 +23648,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/pythia-12b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23662,7 +23662,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen-qwq-32b-preview",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23676,7 +23676,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen-v2p5-14b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23690,7 +23690,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen-v2p5-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23704,7 +23704,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen1p5-72b-chat",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23718,7 +23718,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23732,7 +23732,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-vl-2b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23746,7 +23746,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-vl-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23760,7 +23760,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2-vl-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23774,7 +23774,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-0p5b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23788,7 +23788,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-14b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23802,7 +23802,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-1p5b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23816,7 +23816,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23830,7 +23830,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23844,7 +23844,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-72b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23858,7 +23858,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23872,7 +23872,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23886,7 +23886,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-0p5b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23900,7 +23900,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-0p5b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23914,7 +23914,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-14b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23928,7 +23928,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-14b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -23942,7 +23942,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-1p5b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23956,7 +23956,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-1p5b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -23970,7 +23970,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23984,7 +23984,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct-128k",
             "type": "chat",
             "inputCost": 9e-7,
@@ -23998,7 +23998,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct-32k-rope",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24012,7 +24012,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-32b-instruct-64k",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24026,7 +24026,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24040,7 +24040,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-3b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24054,7 +24054,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24068,7 +24068,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-coder-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24082,7 +24082,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-math-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24096,7 +24096,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-vl-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24110,7 +24110,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-vl-3b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24124,7 +24124,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-vl-72b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24138,7 +24138,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen2p5-vl-7b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24152,7 +24152,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-0p6b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24166,7 +24166,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-14b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24180,7 +24180,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-1p7b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24194,7 +24194,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-1p7b-fp8-draft",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24208,7 +24208,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-1p7b-fp8-draft-131072",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24222,7 +24222,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-1p7b-fp8-draft-40960",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24236,7 +24236,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-235b-a22b",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24250,7 +24250,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-235b-a22b-instruct-2507",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24264,7 +24264,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-235b-a22b-thinking-2507",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24278,7 +24278,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -24292,7 +24292,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-30b-a3b-instruct-2507",
             "type": "chat",
             "inputCost": 5e-7,
@@ -24306,7 +24306,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-30b-a3b-thinking-2507",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24320,7 +24320,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24334,7 +24334,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-4b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24348,7 +24348,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-4b-instruct-2507",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24362,7 +24362,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24376,7 +24376,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-coder-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -24390,7 +24390,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-coder-480b-instruct-bf16",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24404,7 +24404,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-embedding-0p6b",
             "type": "embedding",
             "inputCost": 0,
@@ -24418,7 +24418,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-embedding-4b",
             "type": "embedding",
             "inputCost": 0,
@@ -24432,7 +24432,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24446,7 +24446,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-next-80b-a3b-thinking",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24460,7 +24460,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24474,7 +24474,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24488,7 +24488,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -24502,7 +24502,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-30b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -24516,7 +24516,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-32b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24530,7 +24530,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-vl-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24544,7 +24544,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3p7-plus",
             "type": "chat",
             "inputCost": 4e-7,
@@ -24558,7 +24558,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwq-32b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24572,7 +24572,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/rolm-ocr",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24586,7 +24586,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/snorkel-mistral-7b-pairrm-dpo",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24600,7 +24600,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/stablecode-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24614,7 +24614,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/starcoder-16b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24628,7 +24628,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/starcoder-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24642,7 +24642,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/starcoder2-15b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24656,7 +24656,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/starcoder2-3b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -24670,7 +24670,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/starcoder2-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24684,7 +24684,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/toppy-m-7b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24698,7 +24698,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/yi-34b",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24712,7 +24712,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/yi-34b-200k-capybara",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24726,7 +24726,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/yi-34b-chat",
             "type": "chat",
             "inputCost": 9e-7,
@@ -24740,7 +24740,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/yi-6b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24754,7 +24754,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/zephyr-7b-beta",
             "type": "chat",
             "inputCost": 2e-7,
@@ -24768,7 +24768,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p1-fast",
             "type": "chat",
             "inputCost": 0.0000028,
@@ -24782,7 +24782,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k2p6-fast",
             "type": "chat",
             "inputCost": 0.000002,
@@ -24796,7 +24796,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k2p7-code-fast",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -24810,7 +24810,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24824,7 +24824,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -24838,7 +24838,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-us",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -24852,7 +24852,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24866,7 +24866,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -24880,7 +24880,7 @@ const provider27 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24894,7 +24894,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4p1-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -24908,7 +24908,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4p1-flash-us",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -24922,7 +24922,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -24936,7 +24936,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p2-fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -24950,7 +24950,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p2-fast-us",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -24964,7 +24964,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -24978,7 +24978,7 @@ const provider27 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k3-fast",
             "type": "chat",
             "inputCost": 0.0000045,
@@ -24992,7 +24992,7 @@ const provider27 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/kimi-k3-us",
             "type": "chat",
             "inputCost": 0.0000045,
@@ -25020,7 +25020,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/muse-glimmer-30b",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -25034,7 +25034,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/nemotron-lightning-3p5-30b-a3b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -25048,7 +25048,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/nemotron-3-ultra-nvfp4",
             "type": "chat",
             "inputCost": 6e-7,
@@ -25062,7 +25062,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -25090,7 +25090,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -25104,7 +25104,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4",
             "type": "chat",
             "inputCost": 6e-7,
@@ -25132,7 +25132,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p2-fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25146,7 +25146,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p2-fast-us",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25160,7 +25160,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-fast",
             "type": "chat",
             "inputCost": 0.0000045,
@@ -25174,7 +25174,7 @@ const provider27 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-us",
             "type": "chat",
             "inputCost": 0.0000045,
@@ -25188,7 +25188,7 @@ const provider27 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -25202,7 +25202,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-us",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25216,7 +25216,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -25230,7 +25230,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-us",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25244,7 +25244,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25297,7 +25297,7 @@ const provider27 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25311,7 +25311,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -25325,7 +25325,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-flash-us",
             "type": "chat",
             "inputCost": 2.25e-7,
@@ -25339,7 +25339,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -25353,7 +25353,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-flash-us",
             "type": "chat",
             "inputCost": 2.25e-7,
@@ -25367,7 +25367,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/inkling",
             "type": "chat",
             "inputCost": 0.000001,
@@ -25381,7 +25381,7 @@ const provider27 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3-embedding-8b",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -25395,7 +25395,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -25409,7 +25409,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m2p7",
             "type": "chat",
             "inputCost": null,
@@ -25436,7 +25436,7 @@ const provider27 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25450,7 +25450,7 @@ const provider27 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -25464,7 +25464,7 @@ const provider27 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017-us",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -25481,7 +25481,7 @@ const provider27 = [
 
 const provider28 = [
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -25495,7 +25495,7 @@ const provider28 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 0.00000126,
@@ -25509,7 +25509,7 @@ const provider28 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "friendliai/google/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -25523,7 +25523,7 @@ const provider28 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -25537,7 +25537,7 @@ const provider28 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "friendliai/deepseek-ai/DeepSeek-V3.2",
             "type": "chat",
             "inputCost": 5e-7,
@@ -25551,7 +25551,7 @@ const provider28 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "friendliai/MiniMaxAI/MiniMax-M2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25565,7 +25565,7 @@ const provider28 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -25582,7 +25582,7 @@ const provider28 = [
 
 const provider29 = [
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25596,7 +25596,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.1-flash-lite-preview",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -25610,7 +25610,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.1-flash-lite",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -25624,7 +25624,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.5-flash-lite",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25638,7 +25638,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "deep-research-pro-preview-12-2025",
             "type": "chat",
             "inputCost": 0.000002,
@@ -25652,7 +25652,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-flash-lite",
             "type": "chat",
             "inputCost": 1e-7,
@@ -25666,7 +25666,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-flash-lite-preview-09-2025",
             "type": "chat",
             "inputCost": 1e-7,
@@ -25680,7 +25680,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-flash-preview-09-2025",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25694,7 +25694,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-pro",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -25712,7 +25712,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -25730,7 +25730,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.1-pro-preview-customtools",
             "type": "chat",
             "inputCost": 0.000002,
@@ -25748,7 +25748,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-2.5-pro-preview-tts",
             "type": "chat",
             "inputCost": 0.000001,
@@ -25762,7 +25762,7 @@ const provider29 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-robotics-er-1.5-preview",
             "type": "chat",
             "inputCost": 3e-7,
@@ -25776,7 +25776,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "gemini-2.5-computer-use-preview-10-2025",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -25792,7 +25792,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "gemini-embedding-001",
             "type": "embedding",
             "inputCost": 1.5e-7,
@@ -25806,7 +25806,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gemini-embedding-2-preview",
             "type": "embedding",
             "inputCost": 2e-7,
@@ -25820,7 +25820,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gemini-embedding-2",
             "type": "embedding",
             "inputCost": 2e-7,
@@ -25834,7 +25834,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gemini-flash-experimental",
             "type": "embedding",
             "inputCost": 0,
@@ -25848,7 +25848,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-3-flash-preview",
             "type": "chat",
             "inputCost": 5e-7,
@@ -25862,7 +25862,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-omni-flash-preview",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -25876,7 +25876,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "gemini-3.5-flash",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -25890,7 +25890,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.6-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -25904,7 +25904,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.7-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -25918,7 +25918,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.8-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -25932,7 +25932,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-3.8-flash-cyber",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -25946,7 +25946,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "medlm-large",
             "type": "chat",
             "inputCost": null,
@@ -25959,7 +25959,7 @@ const provider29 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "medlm-medium",
             "type": "chat",
             "inputCost": null,
@@ -25972,7 +25972,7 @@ const provider29 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "multimodalembedding",
             "type": "embedding",
             "inputCost": 8e-7,
@@ -25986,7 +25986,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "multimodalembedding@001",
             "type": "embedding",
             "inputCost": 8e-7,
@@ -26000,7 +26000,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "text-embedding-004",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -26014,7 +26014,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "text-embedding-005",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -26028,7 +26028,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "text-embedding-large-exp-03-07",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -26042,7 +26042,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 3072,
+            "maxTokens": null,
             "name": "text-embedding-preview-0409",
             "type": "embedding",
             "inputCost": 6.25e-9,
@@ -26056,7 +26056,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "text-multilingual-embedding-002",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -26070,7 +26070,7 @@ const provider29 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "text-unicorn",
             "type": "completion",
             "inputCost": 0.00001,
@@ -26084,7 +26084,7 @@ const provider29 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "text-unicorn@001",
             "type": "completion",
             "inputCost": 0.00001,
@@ -26098,7 +26098,7 @@ const provider29 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-flash-lite-preview",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -26112,7 +26112,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-flash-lite",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -26126,7 +26126,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.5-flash-lite",
             "type": "chat",
             "inputCost": 3e-7,
@@ -26140,7 +26140,7 @@ const provider29 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/deep-research-pro-preview-12-2025",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26154,7 +26154,7 @@ const provider29 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gemini-robotics-er-2-preview",
             "type": "chat",
             "inputCost": 0.000001,
@@ -26185,7 +26185,7 @@ const provider29 = [
 
 const provider30 = [
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26203,7 +26203,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3-flash-preview",
             "type": "chat",
             "inputCost": 5e-7,
@@ -26217,7 +26217,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65535,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.5-flash",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -26231,7 +26231,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.6-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -26245,7 +26245,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.7-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -26259,7 +26259,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.8-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -26273,7 +26273,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.8-flash-cyber",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -26287,7 +26287,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26305,7 +26305,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-pro-preview-customtools",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26323,7 +26323,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-embedding-2-preview",
             "type": "embedding",
             "inputCost": 2e-7,
@@ -26337,7 +26337,7 @@ const provider30 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-embedding-2",
             "type": "embedding",
             "inputCost": 2e-7,
@@ -26351,7 +26351,7 @@ const provider30 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.1-fast-non-reasoning",
             "type": "chat",
             "inputCost": 2e-7,
@@ -26365,7 +26365,7 @@ const provider30 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.1-fast-reasoning",
             "type": "chat",
             "inputCost": 2e-7,
@@ -26379,7 +26379,7 @@ const provider30 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2000000,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.20-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -26396,7 +26396,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 2000000,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.20-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -26413,7 +26413,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -26430,7 +26430,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26461,7 +26461,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 57920,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-omni-1.1-flash-preview",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -26517,7 +26517,7 @@ const provider30 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26534,7 +26534,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-robotics-er-2-preview",
             "type": "chat",
             "inputCost": 0.000001,
@@ -26548,7 +26548,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-4-argon",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26562,7 +26562,7 @@ const provider30 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "vertex_ai/gemini-4-argon-cyber-permissive",
             "type": "chat",
             "inputCost": 0.000004,
@@ -26579,7 +26579,7 @@ const provider30 = [
 
 const provider31 = [
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -26593,7 +26593,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-fable-5.1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -26607,7 +26607,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "github_copilot/claude-haiku-4.5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -26621,7 +26621,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "github_copilot/claude-haiku-5.5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -26635,7 +26635,7 @@ const provider31 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-opus-4.8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -26649,7 +26649,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-opus-4.8-fast",
             "type": "chat",
             "inputCost": 0.00001,
@@ -26663,7 +26663,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -26677,7 +26677,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/claude-opus-5.5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -26691,7 +26691,7 @@ const provider31 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26705,7 +26705,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/claude-sonnet-5.5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -26719,7 +26719,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/gemini-3.7-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -26733,7 +26733,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "github_copilot/gemini-3.8-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -26747,7 +26747,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": null,
@@ -26760,7 +26760,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-3.5-turbo-0613",
             "type": "chat",
             "inputCost": null,
@@ -26773,7 +26773,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4",
             "type": "chat",
             "inputCost": null,
@@ -26786,7 +26786,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4-0613",
             "type": "chat",
             "inputCost": null,
@@ -26799,7 +26799,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4-o-preview",
             "type": "chat",
             "inputCost": null,
@@ -26812,7 +26812,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4.1",
             "type": "chat",
             "inputCost": null,
@@ -26825,7 +26825,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4.1-2025-04-14",
             "type": "chat",
             "inputCost": null,
@@ -26851,7 +26851,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o",
             "type": "chat",
             "inputCost": null,
@@ -26864,7 +26864,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o-2024-05-13",
             "type": "chat",
             "inputCost": null,
@@ -26877,7 +26877,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o-2024-08-06",
             "type": "chat",
             "inputCost": null,
@@ -26890,7 +26890,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o-2024-11-20",
             "type": "chat",
             "inputCost": null,
@@ -26903,7 +26903,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o-mini",
             "type": "chat",
             "inputCost": null,
@@ -26916,7 +26916,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "github_copilot/gpt-4o-mini-2024-07-18",
             "type": "chat",
             "inputCost": null,
@@ -26929,7 +26929,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5-mini",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -26943,7 +26943,7 @@ const provider31 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.3-codex",
             "type": "responses",
             "inputCost": 0.00000175,
@@ -26957,7 +26957,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.4",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -26971,7 +26971,7 @@ const provider31 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.4-mini",
             "type": "responses",
             "inputCost": 7.5e-7,
@@ -26985,7 +26985,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.5",
             "type": "responses",
             "inputCost": 0.000005,
@@ -26999,7 +26999,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.6-luna",
             "type": "responses",
             "inputCost": 2e-7,
@@ -27017,7 +27017,7 @@ const provider31 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.6-sol",
             "type": "responses",
             "inputCost": 0.000004,
@@ -27031,7 +27031,7 @@ const provider31 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.6-terra",
             "type": "responses",
             "inputCost": 0.000002,
@@ -27045,7 +27045,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-6-astra",
             "type": "responses",
             "inputCost": 0.00001,
@@ -27059,7 +27059,7 @@ const provider31 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-6-luna",
             "type": "responses",
             "inputCost": 1e-7,
@@ -27073,7 +27073,7 @@ const provider31 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-6-sol",
             "type": "responses",
             "inputCost": 0.000002,
@@ -27087,7 +27087,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-6.1-sol",
             "type": "responses",
             "inputCost": 0.000002,
@@ -27101,7 +27101,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "github_copilot/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -27115,7 +27115,7 @@ const provider31 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/mai-code-1.1-flash",
             "type": "responses",
             "inputCost": 2e-7,
@@ -27129,7 +27129,7 @@ const provider31 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "github_copilot/text-embedding-3-small",
             "type": "embedding",
             "inputCost": null,
@@ -27142,7 +27142,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "github_copilot/text-embedding-3-small-inference",
             "type": "embedding",
             "inputCost": null,
@@ -27155,7 +27155,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "github_copilot/text-embedding-ada-002",
             "type": "embedding",
             "inputCost": null,
@@ -27168,7 +27168,7 @@ const provider31 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "github_copilot/gemini-4-argon",
             "type": "chat",
             "inputCost": 0.000002,
@@ -27182,7 +27182,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "github_copilot/claude-sonnet-4.6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -27196,7 +27196,7 @@ const provider31 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "github_copilot/gpt-5.4-nano",
             "type": "responses",
             "inputCost": 2e-7,
@@ -27210,7 +27210,7 @@ const provider31 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "github_copilot/grok-4.5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -27227,7 +27227,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "github_copilot/grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -27244,7 +27244,7 @@ const provider31 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "github_copilot/grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -27259,12 +27259,26 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "github_copilot/gpt-6.1-terra",
+            "type": "responses",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
 const provider32 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-6-sol",
             "type": "responses",
             "inputCost": null,
@@ -27277,7 +27291,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-6-luna",
             "type": "responses",
             "inputCost": null,
@@ -27290,7 +27304,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-6-astra",
             "type": "responses",
             "inputCost": null,
@@ -27303,7 +27317,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-6.1-sol",
             "type": "responses",
             "inputCost": null,
@@ -27316,7 +27330,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.5",
             "type": "responses",
             "inputCost": null,
@@ -27329,7 +27343,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.6-luna",
             "type": "responses",
             "inputCost": null,
@@ -27342,7 +27356,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.6-sol",
             "type": "responses",
             "inputCost": null,
@@ -27355,7 +27369,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.6-terra",
             "type": "responses",
             "inputCost": null,
@@ -27368,7 +27382,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.4",
             "type": "responses",
             "inputCost": null,
@@ -27381,7 +27395,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.4-pro",
             "type": "responses",
             "inputCost": null,
@@ -27394,7 +27408,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.3-codex",
             "type": "responses",
             "inputCost": null,
@@ -27407,7 +27421,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.3-codex-spark",
             "type": "responses",
             "inputCost": null,
@@ -27420,7 +27434,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.3-instant",
             "type": "responses",
             "inputCost": null,
@@ -27433,7 +27447,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.3-chat-latest",
             "type": "responses",
             "inputCost": null,
@@ -27446,7 +27460,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.2-codex",
             "type": "responses",
             "inputCost": null,
@@ -27459,7 +27473,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.2",
             "type": "responses",
             "inputCost": null,
@@ -27472,7 +27486,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.1-codex-max",
             "type": "responses",
             "inputCost": null,
@@ -27485,7 +27499,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-5.1-codex-mini",
             "type": "responses",
             "inputCost": null,
@@ -27511,7 +27525,7 @@ const provider32 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "chatgpt/gpt-6.1-terra",
             "type": "responses",
             "inputCost": null,
@@ -27527,7 +27541,7 @@ const provider32 = [
 
 const provider33 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gigachat/GigaChat-2",
             "type": "chat",
             "inputCost": 0,
@@ -27541,7 +27555,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gigachat/GigaChat-2-Max",
             "type": "chat",
             "inputCost": 0,
@@ -27555,7 +27569,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "gigachat/GigaChat-2-Pro",
             "type": "chat",
             "inputCost": 0,
@@ -27569,7 +27583,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "gigachat/Embeddings",
             "type": "embedding",
             "inputCost": 0,
@@ -27583,7 +27597,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "gigachat/Embeddings-2",
             "type": "embedding",
             "inputCost": 0,
@@ -27597,7 +27611,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gigachat/EmbeddingsGigaR",
             "type": "embedding",
             "inputCost": 0,
@@ -27611,7 +27625,7 @@ const provider33 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "gigachat/GigaEmbeddings-3B-2025-09",
             "type": "embedding",
             "inputCost": 0,
@@ -27628,7 +27642,7 @@ const provider33 = [
 
 const provider34 = [
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/anthropic/claude-opus-4.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -27642,7 +27656,7 @@ const provider34 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/anthropic/claude-sonnet-4.5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -27656,7 +27670,7 @@ const provider34 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/anthropic/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -27670,7 +27684,7 @@ const provider34 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/anthropic/claude-opus-4",
             "type": "chat",
             "inputCost": 0.000015,
@@ -27684,7 +27698,7 @@ const provider34 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/openai/gpt-5.2",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -27698,7 +27712,7 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/openai/gpt-5.1",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -27712,7 +27726,7 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "gmi/openai/gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -27726,7 +27740,7 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/openai/gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -27740,7 +27754,7 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/openai/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -27754,7 +27768,7 @@ const provider34 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/deepseek-ai/DeepSeek-V3.2",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -27768,7 +27782,7 @@ const provider34 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -27782,7 +27796,7 @@ const provider34 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "gmi/google/gemini-3-flash-preview",
             "type": "chat",
             "inputCost": 5e-7,
@@ -27796,7 +27810,7 @@ const provider34 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/moonshotai/Kimi-K2-Thinking",
             "type": "chat",
             "inputCost": 8e-7,
@@ -27810,7 +27824,7 @@ const provider34 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/MiniMaxAI/MiniMax-M2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -27824,7 +27838,7 @@ const provider34 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/Qwen/Qwen3-VL-235B-A22B-Instruct-FP8",
             "type": "chat",
             "inputCost": 3e-7,
@@ -27838,7 +27852,7 @@ const provider34 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gmi/zai-org/GLM-4.7-FP8",
             "type": "chat",
             "inputCost": 4e-7,
@@ -27897,7 +27911,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-4.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -27967,7 +27981,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128072,
+            "maxTokens": null,
             "name": "baseten/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -28009,7 +28023,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -28023,7 +28037,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-5.3-Fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -28037,7 +28051,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -28051,7 +28065,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262000,
+            "maxTokens": null,
             "name": "baseten/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -28065,7 +28079,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262000,
+            "maxTokens": null,
             "name": "baseten/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -28079,7 +28093,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/moonshotai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -28093,7 +28107,7 @@ const provider35 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 202800,
+            "maxTokens": null,
             "name": "baseten/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
             "type": "chat",
             "inputCost": 6e-7,
@@ -28107,7 +28121,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "baseten/thinkingmachines/inkling",
             "type": "chat",
             "inputCost": 0.000001,
@@ -28121,7 +28135,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "baseten/thinkingmachines/inkling-small",
             "type": "chat",
             "inputCost": 5e-7,
@@ -28135,7 +28149,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -28149,7 +28163,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -28163,7 +28177,7 @@ const provider35 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -28177,7 +28191,7 @@ const provider35 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.00000174,
@@ -28191,7 +28205,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -28205,7 +28219,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/zai-org/GLM-5.2-Fast",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -28219,7 +28233,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4.1-Flash-Fast",
             "type": "chat",
             "inputCost": 6e-7,
@@ -28233,7 +28247,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "baseten/meta-models/muse-spark-open",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -28247,7 +28261,7 @@ const provider35 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "baseten/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
             "type": "chat",
             "inputCost": 2e-7,
@@ -28261,7 +28275,7 @@ const provider35 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "baseten/reflection/Beam-1.0",
             "type": "chat",
             "inputCost": 4e-7,
@@ -28275,7 +28289,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017",
             "type": "chat",
             "inputCost": 3e-7,
@@ -28289,7 +28303,7 @@ const provider35 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017-Fast",
             "type": "chat",
             "inputCost": 6e-7,
@@ -28306,7 +28320,7 @@ const provider35 = [
 
 const provider36 = [
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "gradient_ai/alibaba-qwen3-32b",
             "type": "chat",
             "inputCost": null,
@@ -28319,7 +28333,7 @@ const provider36 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "gradient_ai/anthropic-claude-3-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -28333,7 +28347,7 @@ const provider36 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "gradient_ai/anthropic-claude-3.5-haiku",
             "type": "chat",
             "inputCost": 8e-7,
@@ -28347,7 +28361,7 @@ const provider36 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "gradient_ai/anthropic-claude-3.5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -28361,7 +28375,7 @@ const provider36 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "gradient_ai/anthropic-claude-3.7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -28375,7 +28389,7 @@ const provider36 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "gradient_ai/deepseek-r1-distill-llama-70b",
             "type": "chat",
             "inputCost": 9.9e-7,
@@ -28389,7 +28403,7 @@ const provider36 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "gradient_ai/llama3-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -28403,7 +28417,7 @@ const provider36 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "gradient_ai/llama3.3-70b-instruct",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -28417,7 +28431,7 @@ const provider36 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "gradient_ai/mistral-nemo-instruct-2407",
             "type": "chat",
             "inputCost": 3e-7,
@@ -28431,7 +28445,7 @@ const provider36 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gradient_ai/openai-gpt-4o",
             "type": "chat",
             "inputCost": null,
@@ -28444,7 +28458,7 @@ const provider36 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "gradient_ai/openai-gpt-4o-mini",
             "type": "chat",
             "inputCost": null,
@@ -28457,7 +28471,7 @@ const provider36 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "gradient_ai/openai-o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -28471,7 +28485,7 @@ const provider36 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "gradient_ai/openai-o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -28488,7 +28502,7 @@ const provider36 = [
 
 const provider37 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "lemonade/Qwen3-Coder-30B-A3B-Instruct-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -28502,7 +28516,7 @@ const provider37 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "lemonade/gpt-oss-20b-mxfp4-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -28516,7 +28530,7 @@ const provider37 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "lemonade/gpt-oss-120b-mxfp-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -28530,7 +28544,7 @@ const provider37 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "lemonade/Gemma-3-4b-it-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -28544,7 +28558,7 @@ const provider37 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "lemonade/Qwen3-4B-Instruct-2507-GGUF",
             "type": "chat",
             "inputCost": 0,
@@ -28561,7 +28575,7 @@ const provider37 = [
 
 const provider38 = [
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon-nova/nova-micro-v1",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -28575,7 +28589,7 @@ const provider38 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon-nova/nova-lite-v1",
             "type": "chat",
             "inputCost": 6e-8,
@@ -28589,7 +28603,7 @@ const provider38 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon-nova/nova-premier-v1",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -28603,7 +28617,7 @@ const provider38 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 10000,
+            "maxTokens": null,
             "name": "amazon-nova/nova-pro-v1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -28620,7 +28634,7 @@ const provider38 = [
 
 const provider39 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "groq/llama-guard-3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -28634,7 +28648,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "groq/meta-llama/llama-prompt-guard-2-22m",
             "type": "chat",
             "inputCost": 3e-8,
@@ -28648,7 +28662,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "groq/meta-llama/llama-prompt-guard-2-86m",
             "type": "chat",
             "inputCost": 4e-8,
@@ -28662,7 +28676,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "groq/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -28676,7 +28690,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "groq/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -28690,7 +28704,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "groq/openai/gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -28704,7 +28718,7 @@ const provider39 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "groq/qwen/qwen3.8-27b",
             "type": "chat",
             "inputCost": 8e-7,
@@ -28721,7 +28735,7 @@ const provider39 = [
 
 const provider40 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "heroku/claude-3-5-haiku",
             "type": "chat",
             "inputCost": null,
@@ -28734,7 +28748,7 @@ const provider40 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "heroku/claude-3-5-sonnet-latest",
             "type": "chat",
             "inputCost": null,
@@ -28747,7 +28761,7 @@ const provider40 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "heroku/claude-3-7-sonnet",
             "type": "chat",
             "inputCost": null,
@@ -28760,7 +28774,7 @@ const provider40 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "heroku/claude-4-sonnet",
             "type": "chat",
             "inputCost": null,
@@ -28776,7 +28790,7 @@ const provider40 = [
 
 const provider41 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28790,7 +28804,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/Qwen/QwQ-32B",
             "type": "chat",
             "inputCost": 2e-7,
@@ -28804,7 +28818,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/Qwen/Qwen2.5-72B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28818,7 +28832,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/Qwen/Qwen2.5-Coder-32B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28832,7 +28846,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/Qwen/Qwen3-235B-A22B",
             "type": "chat",
             "inputCost": 0.000002,
@@ -28846,7 +28860,7 @@ const provider41 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/deepseek-ai/DeepSeek-R1",
             "type": "chat",
             "inputCost": 4e-7,
@@ -28860,7 +28874,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/deepseek-ai/DeepSeek-R1-0528",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -28874,7 +28888,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 2e-7,
@@ -28888,7 +28902,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
             "inputCost": 4e-7,
@@ -28902,7 +28916,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Llama-3.2-3B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28916,7 +28930,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28930,7 +28944,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Meta-Llama-3-70B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28944,7 +28958,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28958,7 +28972,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28972,7 +28986,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "hyperbolic/meta-llama/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -28986,7 +29000,7 @@ const provider41 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "hyperbolic/moonshotai/Kimi-K2-Instruct",
             "type": "chat",
             "inputCost": 0.000002,
@@ -29003,7 +29017,7 @@ const provider41 = [
 
 const provider42 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "j2-light",
             "type": "completion",
             "inputCost": 0.000003,
@@ -29017,7 +29031,7 @@ const provider42 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "j2-mid",
             "type": "completion",
             "inputCost": 0.00001,
@@ -29031,7 +29045,7 @@ const provider42 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "j2-ultra",
             "type": "completion",
             "inputCost": 0.000015,
@@ -29045,7 +29059,7 @@ const provider42 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-1.5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29059,7 +29073,7 @@ const provider42 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-1.5-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -29073,7 +29087,7 @@ const provider42 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-1.5-large@001",
             "type": "chat",
             "inputCost": 0.000002,
@@ -29087,7 +29101,7 @@ const provider42 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-1.5-mini",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29101,7 +29115,7 @@ const provider42 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-1.5-mini@001",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29115,7 +29129,7 @@ const provider42 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-large-1.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -29129,7 +29143,7 @@ const provider42 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-large-1.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -29143,7 +29157,7 @@ const provider42 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-mini-1.6",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29157,7 +29171,7 @@ const provider42 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "jamba-mini-1.7",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29174,7 +29188,7 @@ const provider42 = [
 
 const provider43 = [
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "crusoe/deepseek-ai/DeepSeek-R1-0528",
             "type": "chat",
             "inputCost": 0.000003,
@@ -29188,7 +29202,7 @@ const provider43 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "crusoe/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -29202,7 +29216,7 @@ const provider43 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "crusoe/google/gemma-3-12b-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -29216,7 +29230,7 @@ const provider43 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "crusoe/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29230,7 +29244,7 @@ const provider43 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "crusoe/moonshotai/Kimi-K2-Thinking",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -29244,7 +29258,7 @@ const provider43 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "crusoe/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 8e-7,
@@ -29258,7 +29272,7 @@ const provider43 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "crusoe/Qwen/Qwen3-235B-A22B-Instruct-2507",
             "type": "chat",
             "inputCost": 0.000003,
@@ -29275,7 +29289,7 @@ const provider43 = [
 
 const provider44 = [
         {
-            "maxTokens": 50000,
+            "maxTokens": null,
             "name": "inception/mercury-2",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -29289,7 +29303,7 @@ const provider44 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "inception/mercury-2.5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29306,7 +29320,7 @@ const provider44 = [
 
 const provider45 = [
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29320,7 +29334,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V4-Flash",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29334,7 +29348,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29348,7 +29362,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.00000172,
@@ -29362,7 +29376,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
             "inputCost": 0.00000172,
@@ -29376,7 +29390,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 4e-7,
@@ -29390,7 +29404,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-chat",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29404,7 +29418,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-flash",
             "type": "chat",
             "inputCost": 4e-7,
@@ -29418,7 +29432,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-reasoner",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29432,7 +29446,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-v3",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29446,7 +29460,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -29460,7 +29474,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000172,
@@ -29474,7 +29488,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "inferenceapis/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 4e-7,
@@ -29488,7 +29502,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048575,
+            "maxTokens": null,
             "name": "inferenceapis/glm-5.3",
             "type": "chat",
             "inputCost": 0.00000182,
@@ -29502,7 +29516,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048575,
+            "maxTokens": null,
             "name": "inferenceapis/glm-5.3-flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29516,7 +29530,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29530,7 +29544,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/gpt-oss-20b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -29544,7 +29558,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "inferenceapis/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 8.9e-7,
@@ -29558,7 +29572,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/llama-3.1-8b-instant",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29572,7 +29586,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/llama-3.3-70b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29586,7 +29600,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/llama-3.3-70b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29600,7 +29614,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/llama-3.3-70b-versatile",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29614,7 +29628,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29628,7 +29642,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/meta-llama/Llama-3.3-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29642,7 +29656,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "inferenceapis/minimax-m3",
             "type": "chat",
             "inputCost": 3.9e-7,
@@ -29656,7 +29670,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "inferenceapis/MiniMaxAI/MiniMax-M3",
             "type": "chat",
             "inputCost": 3.9e-7,
@@ -29670,7 +29684,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "inferenceapis/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 8.9e-7,
@@ -29684,7 +29698,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29698,7 +29712,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "inferenceapis/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -29712,7 +29726,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "inferenceapis/Qwen/Qwen3-VL-235B-A22B-Instruct",
             "type": "chat",
             "inputCost": 2.6e-7,
@@ -29726,7 +29740,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "inferenceapis/Qwen/Qwen3.8-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -29740,7 +29754,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "inferenceapis/qwen3-vl",
             "type": "chat",
             "inputCost": 2.6e-7,
@@ -29754,7 +29768,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "inferenceapis/qwen3-vl-235b",
             "type": "chat",
             "inputCost": 2.6e-7,
@@ -29768,7 +29782,7 @@ const provider45 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "inferenceapis/qwen3.8-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -29782,7 +29796,7 @@ const provider45 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048575,
+            "maxTokens": null,
             "name": "inferenceapis/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 0.00000182,
@@ -29796,7 +29810,7 @@ const provider45 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048575,
+            "maxTokens": null,
             "name": "inferenceapis/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29813,7 +29827,7 @@ const provider45 = [
 
 const provider46 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "text-completion-inception/mercury-edit-2",
             "type": "completion",
             "inputCost": 2.5e-7,
@@ -29830,7 +29844,7 @@ const provider46 = [
 
 const provider47 = [
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/deepseek-llama3.3-70b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29844,7 +29858,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/deepseek-r1-0528",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29858,7 +29872,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/deepseek-r1-671b",
             "type": "chat",
             "inputCost": 8e-7,
@@ -29872,7 +29886,7 @@ const provider47 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/deepseek-v3-0324",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29886,7 +29900,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/hermes3-405b",
             "type": "chat",
             "inputCost": 8e-7,
@@ -29900,7 +29914,7 @@ const provider47 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/hermes3-70b",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -29914,7 +29928,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/hermes3-8b",
             "type": "chat",
             "inputCost": 2.5e-8,
@@ -29928,7 +29942,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/lfm-40b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -29942,7 +29956,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/lfm-7b",
             "type": "chat",
             "inputCost": 2.5e-8,
@@ -29956,7 +29970,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "lambda_ai/llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 5e-8,
@@ -29970,7 +29984,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "lambda_ai/llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -29984,7 +29998,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.1-405b-instruct-fp8",
             "type": "chat",
             "inputCost": 8e-7,
@@ -29998,7 +30012,7 @@ const provider47 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.1-70b-instruct-fp8",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -30012,7 +30026,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.1-8b-instruct",
             "type": "chat",
             "inputCost": 2.5e-8,
@@ -30026,7 +30040,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.1-nemotron-70b-instruct-fp8",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -30040,7 +30054,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 1.5e-8,
@@ -30054,7 +30068,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.2-3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-8,
@@ -30068,7 +30082,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/llama3.3-70b-instruct-fp8",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -30082,7 +30096,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/qwen25-coder-32b-instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -30096,7 +30110,7 @@ const provider47 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "lambda_ai/qwen3-32b-fp8",
             "type": "chat",
             "inputCost": 5e-8,
@@ -30113,7 +30127,7 @@ const provider47 = [
 
 const provider48 = [
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-spark-1.1",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -30127,7 +30141,7 @@ const provider48 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-spark-1.2",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -30141,7 +30155,7 @@ const provider48 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-spark-1.2-contributor",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30155,7 +30169,7 @@ const provider48 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-spark-1.3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -30169,7 +30183,7 @@ const provider48 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-spark-1.3-contributor",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30183,7 +30197,7 @@ const provider48 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "meta/muse-wonder-1.0",
             "type": "chat",
             "inputCost": 0.000004,
@@ -30213,7 +30227,7 @@ const provider48 = [
 
 const provider49 = [
         {
-            "maxTokens": 4028,
+            "maxTokens": null,
             "name": "meta_llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": null,
@@ -30226,7 +30240,7 @@ const provider49 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4028,
+            "maxTokens": null,
             "name": "meta_llama/Llama-3.3-8B-Instruct",
             "type": "chat",
             "inputCost": null,
@@ -30239,7 +30253,7 @@ const provider49 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4028,
+            "maxTokens": null,
             "name": "meta_llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
             "type": "chat",
             "inputCost": null,
@@ -30252,7 +30266,7 @@ const provider49 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 4028,
+            "maxTokens": null,
             "name": "meta_llama/Llama-4-Scout-17B-16E-Instruct-FP8",
             "type": "chat",
             "inputCost": null,
@@ -30355,7 +30369,7 @@ const provider50 = [
 
 const provider51 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/codestral-2508",
             "type": "chat",
             "inputCost": 3e-7,
@@ -30369,7 +30383,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/codestral-latest",
             "type": "chat",
             "inputCost": 3e-7,
@@ -30383,7 +30397,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "mistral/codestral-mamba-latest",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -30397,7 +30411,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "mistral/devstral-small-latest",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30411,7 +30425,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "mistral/devstral-latest",
             "type": "chat",
             "inputCost": 4e-7,
@@ -30425,7 +30439,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "mistral/devstral-medium-latest",
             "type": "chat",
             "inputCost": 4e-7,
@@ -30439,7 +30453,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-14b-2512",
             "type": "chat",
             "inputCost": 2e-7,
@@ -30453,7 +30467,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-14b-latest",
             "type": "chat",
             "inputCost": 2e-7,
@@ -30467,7 +30481,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/ministral-3b-2512",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30481,7 +30495,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/ministral-3b-latest",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30495,7 +30509,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral/mistral-embed-2312",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -30509,7 +30523,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium-3",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30523,7 +30537,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "mistral/voxtral-small-2507",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30537,7 +30551,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "mistral/voxtral-small-latest",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30551,7 +30565,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/zai-glm-5-2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30565,7 +30579,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/zai-glm-5-3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30579,7 +30593,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/zai-glm-5-3-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30593,7 +30607,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/zai-glm-5",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30607,7 +30621,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/zai-glm-latest",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30621,7 +30635,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/glm-5-2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30635,7 +30649,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/magistral-medium-latest",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30649,7 +30663,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/magistral-small-latest",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30663,7 +30677,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral/mistral-embed",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -30677,7 +30691,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral/codestral-embed",
             "type": "embedding",
             "inputCost": 1.5e-7,
@@ -30691,7 +30705,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "mistral/codestral-embed-2505",
             "type": "embedding",
             "inputCost": 1.5e-7,
@@ -30705,7 +30719,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "mistral/mistral-large-4",
             "type": "chat",
             "inputCost": 6.8e-7,
@@ -30719,7 +30733,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "mistral/mistral-large-4-0",
             "type": "chat",
             "inputCost": 6.8e-7,
@@ -30733,7 +30747,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-large-latest",
             "type": "chat",
             "inputCost": 5e-7,
@@ -30747,7 +30761,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-large-3",
             "type": "chat",
             "inputCost": 5e-7,
@@ -30761,7 +30775,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-large-2512",
             "type": "chat",
             "inputCost": 5e-7,
@@ -30775,7 +30789,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30789,7 +30803,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium-2604",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30803,7 +30817,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium-latest",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30817,7 +30831,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium-3-5",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -30831,7 +30845,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "mistral/mistral-small",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30845,7 +30859,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-small-latest",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30859,7 +30873,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/ministral-3-3b-2512",
             "type": "chat",
             "inputCost": 1e-7,
@@ -30873,7 +30887,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-3-8b-2512",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30887,7 +30901,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-3-14b-2512",
             "type": "chat",
             "inputCost": 2e-7,
@@ -30901,7 +30915,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-8b-2512",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30915,7 +30929,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/ministral-8b-latest",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30929,7 +30943,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "mistral/mistral-tiny",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -30943,7 +30957,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/open-mistral-nemo",
             "type": "chat",
             "inputCost": 3e-7,
@@ -30957,7 +30971,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/pixtral-large-latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -30971,7 +30985,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-small-2603",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -30985,7 +30999,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/labs-leanstral-1-5",
             "type": "chat",
             "inputCost": 0,
@@ -30999,7 +31013,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-medium-3.5",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -31013,7 +31027,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-vibe-cli-latest",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -31027,7 +31041,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-vibe-cli-with-tools",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -31041,7 +31055,7 @@ const provider51 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "mistral/mistral-vibe-cli-fast",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -31055,7 +31069,7 @@ const provider51 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/mistral-code-latest",
             "type": "chat",
             "inputCost": 3e-7,
@@ -31069,7 +31083,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "mistral/mistral-code-fim-latest",
             "type": "chat",
             "inputCost": 3e-7,
@@ -31083,7 +31097,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "mistral/mistral-code-agent-latest",
             "type": "chat",
             "inputCost": 4e-7,
@@ -31097,7 +31111,7 @@ const provider51 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "mistral/labs-leanstral-1-5-1",
             "type": "chat",
             "inputCost": 0,
@@ -31114,7 +31128,7 @@ const provider51 = [
 
 const provider52 = [
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "moonshot/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -31128,7 +31142,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "moonshot/kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -31142,7 +31156,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "moonshot/kimi-k2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -31156,7 +31170,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "moonshot/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -31170,7 +31184,7 @@ const provider52 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-128k",
             "type": "chat",
             "inputCost": 0.000002,
@@ -31184,7 +31198,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-128k-vision-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -31198,7 +31212,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-32k",
             "type": "chat",
             "inputCost": 0.000001,
@@ -31212,7 +31226,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-32k-vision-preview",
             "type": "chat",
             "inputCost": 0.000001,
@@ -31226,7 +31240,7 @@ const provider52 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-8k",
             "type": "chat",
             "inputCost": 2e-7,
@@ -31240,7 +31254,7 @@ const provider52 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-8k-vision-preview",
             "type": "chat",
             "inputCost": 2e-7,
@@ -31254,7 +31268,7 @@ const provider52 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "moonshot/moonshot-v1-auto",
             "type": "chat",
             "inputCost": 0.000002,
@@ -31271,7 +31285,7 @@ const provider52 = [
 
 const provider53 = [
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "morph/morph-v3-fast",
             "type": "chat",
             "inputCost": 8e-7,
@@ -31285,7 +31299,7 @@ const provider53 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "morph/morph-v3-large",
             "type": "chat",
             "inputCost": 9e-7,
@@ -31501,7 +31515,7 @@ const provider54 = [
 
 const provider55 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-R1",
             "type": "chat",
             "inputCost": 8e-7,
@@ -31515,7 +31529,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 164000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-R1-0528",
             "type": "chat",
             "inputCost": 8e-7,
@@ -31529,7 +31543,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -31543,7 +31557,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 5e-7,
@@ -31557,7 +31571,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V3-0324",
             "type": "chat",
             "inputCost": 5e-7,
@@ -31571,7 +31585,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 110000,
+            "maxTokens": null,
             "name": "nebius/google/gemma-3-27b-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -31585,7 +31599,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -31599,7 +31613,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/meta-llama/Llama-Guard-3-8B",
             "type": "chat",
             "inputCost": 2e-8,
@@ -31613,7 +31627,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/meta-llama/Meta-Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -31627,7 +31641,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/meta-llama/Meta-Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -31641,7 +31655,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/meta-llama/Meta-Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.000001,
@@ -31655,7 +31669,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/mistralai/Mistral-Nemo-Instruct-2407",
             "type": "chat",
             "inputCost": 4e-8,
@@ -31669,7 +31683,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/NousResearch/Hermes-3-Llama-3.1-405B",
             "type": "chat",
             "inputCost": 0.000001,
@@ -31683,7 +31697,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/nvidia/Llama-3.1-Nemotron-Ultra-253B-v1",
             "type": "chat",
             "inputCost": 6e-7,
@@ -31697,7 +31711,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/nvidia/Llama-3.3-Nemotron-Super-49B-v1",
             "type": "chat",
             "inputCost": 1e-7,
@@ -31711,7 +31725,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-235B-A22B",
             "type": "chat",
             "inputCost": 2e-7,
@@ -31725,7 +31739,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-32B",
             "type": "chat",
             "inputCost": 1e-7,
@@ -31739,7 +31753,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-30B-A3B",
             "type": "chat",
             "inputCost": 1e-7,
@@ -31753,7 +31767,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-14B",
             "type": "chat",
             "inputCost": 8e-8,
@@ -31767,7 +31781,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-4B",
             "type": "chat",
             "inputCost": 8e-8,
@@ -31781,7 +31795,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/Qwen/QwQ-32B",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -31795,7 +31809,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2.5-72B-Instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -31809,7 +31823,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2.5-32B-Instruct",
             "type": "chat",
             "inputCost": 6e-8,
@@ -31823,7 +31837,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2.5-Coder-7B",
             "type": "chat",
             "inputCost": 1e-8,
@@ -31837,7 +31851,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2.5-VL-72B-Instruct",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -31851,7 +31865,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2-VL-72B-Instruct",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -31865,7 +31879,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen2-VL-7B-Instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -31879,7 +31893,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V4-Flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -31893,7 +31907,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1024000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -31907,7 +31921,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -31935,7 +31949,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "nebius/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -31949,7 +31963,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "nebius/MiniMaxAI/MiniMax-M2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -31963,7 +31977,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/MiniMaxAI/MiniMax-M3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -31977,7 +31991,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -31991,7 +32005,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -32005,7 +32019,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024000,
+            "maxTokens": null,
             "name": "nebius/moonshotai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -32019,7 +32033,7 @@ const provider55 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/NousResearch/Hermes-4-405B",
             "type": "chat",
             "inputCost": 0.000001,
@@ -32033,7 +32047,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/NousResearch/Hermes-4-70B",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -32047,7 +32061,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/nvidia/Cosmos3-Super-Reasoner",
             "type": "chat",
             "inputCost": 1e-7,
@@ -32061,7 +32075,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
             "type": "chat",
             "inputCost": 6e-7,
@@ -32075,7 +32089,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
             "type": "chat",
             "inputCost": 6e-8,
@@ -32089,7 +32103,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/nvidia/Nemotron-3-Nano-Omni",
             "type": "chat",
             "inputCost": 6e-8,
@@ -32103,7 +32117,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/nvidia/nemotron-3-super-120b-a12b",
             "type": "chat",
             "inputCost": 3e-7,
@@ -32117,7 +32131,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/nvidia/Nemotron-3-Ultra-550b-a55b",
             "type": "chat",
             "inputCost": 0.000001,
@@ -32131,7 +32145,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/nvidia/Nemotron-3_5-Lightning",
             "type": "chat",
             "inputCost": 6e-8,
@@ -32145,7 +32159,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "nebius/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32159,7 +32173,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "nebius/openbmb/MiniCPM-V-4_5",
             "type": "chat",
             "inputCost": 6.58e-7,
@@ -32173,7 +32187,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-235B-A22B-Instruct-2507",
             "type": "chat",
             "inputCost": 2e-7,
@@ -32187,7 +32201,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-30B-A3B-Instruct-2507",
             "type": "chat",
             "inputCost": 1e-7,
@@ -32201,7 +32215,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-Next-80B-A3B-Thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32215,7 +32229,7 @@ const provider55 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3.5-397B-A17B",
             "type": "chat",
             "inputCost": 6e-7,
@@ -32243,7 +32257,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "nebius/zai-org/GLM-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -32257,7 +32271,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -32271,7 +32285,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024000,
+            "maxTokens": null,
             "name": "nebius/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -32285,7 +32299,7 @@ const provider55 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1024000,
+            "maxTokens": null,
             "name": "nebius/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32299,7 +32313,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/BAAI/bge-en-icl",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -32313,7 +32327,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "nebius/BAAI/bge-multilingual-gemma2",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -32327,7 +32341,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "nebius/intfloat/e5-mistral-7b-instruct",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -32341,7 +32355,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "nebius/Qwen/Qwen3-Embedding-8B",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -32355,7 +32369,7 @@ const provider55 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "nebius/reflection/beam",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -32372,7 +32386,7 @@ const provider55 = [
 
 const provider56 = [
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.1-8b-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32386,7 +32400,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.1-70b-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32400,7 +32414,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.1-405b-instruct",
             "type": "chat",
             "inputCost": 0.00001068,
@@ -32414,7 +32428,7 @@ const provider56 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.2-90b-vision-instruct",
             "type": "chat",
             "inputCost": 0.000002,
@@ -32428,7 +32442,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.3-70b-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32442,7 +32456,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "oci/meta.llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32456,7 +32470,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "oci/meta.llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32470,7 +32484,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -32484,7 +32498,7 @@ const provider56 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-3-fast",
             "type": "chat",
             "inputCost": 0.000005,
@@ -32498,7 +32512,7 @@ const provider56 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-3-mini",
             "type": "chat",
             "inputCost": 3e-7,
@@ -32512,7 +32526,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-3-mini-fast",
             "type": "chat",
             "inputCost": 6e-7,
@@ -32526,7 +32540,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/xai.grok-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -32540,7 +32554,7 @@ const provider56 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-latest",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32554,7 +32568,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-03-2025",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32568,7 +32582,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-plus-latest",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32582,7 +32596,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "oci/google.gemini-2.5-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32596,7 +32610,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "oci/google.gemini-2.5-pro",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32610,7 +32624,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "oci/google.gemini-2.5-flash-lite",
             "type": "chat",
             "inputCost": 7.5e-8,
@@ -32624,7 +32638,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-vision",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32638,7 +32652,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-reasoning",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32666,7 +32680,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-reasoning-08-2025",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32680,7 +32694,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-vision-07-2025",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32694,7 +32708,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-a-translate-08-2025",
             "type": "chat",
             "inputCost": 9e-8,
@@ -32708,7 +32722,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-r-08-2024",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32722,7 +32736,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/cohere.command-r-plus-08-2024",
             "type": "chat",
             "inputCost": 0.00000156,
@@ -32736,7 +32750,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 0.000002,
@@ -32750,7 +32764,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "oci/meta.llama-3.3-70b-instruct-fp8-dynamic",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -32764,7 +32778,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-4-fast",
             "type": "chat",
             "inputCost": 0.000005,
@@ -32778,7 +32792,7 @@ const provider56 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.1-fast",
             "type": "chat",
             "inputCost": 0.000005,
@@ -32792,7 +32806,7 @@ const provider56 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20",
             "type": "chat",
             "inputCost": 0.000003,
@@ -32806,7 +32820,7 @@ const provider56 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20-multi-agent",
             "type": "chat",
             "inputCost": 0.000003,
@@ -32820,7 +32834,7 @@ const provider56 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20-0309-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32837,7 +32851,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20-0309-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32854,7 +32868,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32871,7 +32885,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "oci/xai.grok-4.20-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32888,7 +32902,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "oci/xai.grok-code-fast-1",
             "type": "chat",
             "inputCost": 0.000005,
@@ -32902,7 +32916,7 @@ const provider56 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/openai.gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -32916,7 +32930,7 @@ const provider56 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/openai.gpt-5-mini",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -32930,7 +32944,7 @@ const provider56 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/openai.gpt-5-nano",
             "type": "chat",
             "inputCost": 5e-8,
@@ -32944,7 +32958,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -32958,7 +32972,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -32972,7 +32986,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-english-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -32986,7 +33000,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-english-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33000,7 +33014,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-multilingual-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33014,7 +33028,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-multilingual-light-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33028,7 +33042,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-english-image-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33042,7 +33056,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-english-light-image-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33056,7 +33070,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "oci/cohere.embed-multilingual-light-image-v3.0",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -33070,7 +33084,7 @@ const provider56 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "oci/cohere.embed-v4.0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -33087,7 +33101,7 @@ const provider56 = [
 
 const provider57 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/codegeex4",
             "type": "chat",
             "inputCost": 0,
@@ -33101,7 +33115,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/codegemma",
             "type": "completion",
             "inputCost": 0,
@@ -33115,7 +33129,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/codellama",
             "type": "completion",
             "inputCost": 0,
@@ -33129,7 +33143,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/deepseek-coder-v2-base",
             "type": "completion",
             "inputCost": 0,
@@ -33143,7 +33157,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/deepseek-coder-v2-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -33157,7 +33171,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/deepseek-coder-v2-lite-base",
             "type": "completion",
             "inputCost": 0,
@@ -33171,7 +33185,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/deepseek-coder-v2-lite-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -33185,7 +33199,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "ollama/deepseek-v3.1:671b-cloud",
             "type": "chat",
             "inputCost": 0,
@@ -33199,7 +33213,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "ollama/gpt-oss:120b-cloud",
             "type": "chat",
             "inputCost": 0,
@@ -33213,7 +33227,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "ollama/gpt-oss:20b-cloud",
             "type": "chat",
             "inputCost": 0,
@@ -33227,7 +33241,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/internlm2_5-20b-chat",
             "type": "chat",
             "inputCost": 0,
@@ -33241,7 +33255,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/llama2",
             "type": "chat",
             "inputCost": 0,
@@ -33255,7 +33269,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/llama2-uncensored",
             "type": "completion",
             "inputCost": 0,
@@ -33269,7 +33283,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/llama2:13b",
             "type": "chat",
             "inputCost": 0,
@@ -33283,7 +33297,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/llama2:70b",
             "type": "chat",
             "inputCost": 0,
@@ -33297,7 +33311,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/llama2:7b",
             "type": "chat",
             "inputCost": 0,
@@ -33311,7 +33325,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/llama3",
             "type": "chat",
             "inputCost": 0,
@@ -33325,7 +33339,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/llama3.1",
             "type": "chat",
             "inputCost": 0,
@@ -33339,7 +33353,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/llama3:70b",
             "type": "chat",
             "inputCost": 0,
@@ -33353,7 +33367,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/llama3:8b",
             "type": "chat",
             "inputCost": 0,
@@ -33367,7 +33381,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/mistral",
             "type": "completion",
             "inputCost": 0,
@@ -33381,7 +33395,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/mistral-7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 0,
@@ -33395,7 +33409,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "ollama/mistral-7B-Instruct-v0.2",
             "type": "chat",
             "inputCost": 0,
@@ -33409,7 +33423,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "ollama/mistral-large-instruct-2407",
             "type": "chat",
             "inputCost": 0,
@@ -33423,7 +33437,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "ollama/mixtral-8x22B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 0,
@@ -33437,7 +33451,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "ollama/mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 0,
@@ -33451,7 +33465,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "ollama/orca-mini",
             "type": "completion",
             "inputCost": 0,
@@ -33465,7 +33479,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "ollama/qwen3-coder:480b-cloud",
             "type": "chat",
             "inputCost": 0,
@@ -33479,7 +33493,7 @@ const provider57 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "ollama/vicuna",
             "type": "completion",
             "inputCost": 0,
@@ -33496,7 +33510,7 @@ const provider57 = [
 
 const provider58 = [
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
             "inputCost": 6.7e-7,
@@ -33510,7 +33524,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -33524,7 +33538,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/Meta-Llama-3_1-70B-Instruct",
             "type": "chat",
             "inputCost": 6.7e-7,
@@ -33538,7 +33552,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/Meta-Llama-3_3-70B-Instruct",
             "type": "chat",
             "inputCost": 6.7e-7,
@@ -33552,7 +33566,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 127000,
+            "maxTokens": null,
             "name": "ovhcloud/Mistral-7B-Instruct-v0.3",
             "type": "chat",
             "inputCost": 1e-7,
@@ -33566,7 +33580,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 118000,
+            "maxTokens": null,
             "name": "ovhcloud/Mistral-Nemo-Instruct-2407",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -33580,7 +33594,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "ovhcloud/Mistral-Small-3.2-24B-Instruct-2506",
             "type": "chat",
             "inputCost": 9e-8,
@@ -33594,7 +33608,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "ovhcloud/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 6.3e-7,
@@ -33608,7 +33622,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "ovhcloud/Qwen2.5-Coder-32B-Instruct",
             "type": "chat",
             "inputCost": 8.7e-7,
@@ -33622,7 +33636,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "ovhcloud/Qwen2.5-VL-72B-Instruct",
             "type": "chat",
             "inputCost": 9.1e-7,
@@ -33636,7 +33650,7 @@ const provider58 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "ovhcloud/Qwen3-32B",
             "type": "chat",
             "inputCost": 8e-8,
@@ -33650,7 +33664,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/gpt-oss-120b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -33664,7 +33678,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131000,
+            "maxTokens": null,
             "name": "ovhcloud/gpt-oss-20b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -33678,7 +33692,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "ovhcloud/llava-v1.6-mistral-7b-hf",
             "type": "chat",
             "inputCost": 2.9e-7,
@@ -33692,7 +33706,7 @@ const provider58 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "ovhcloud/mamba-codestral-7B-v0.1",
             "type": "chat",
             "inputCost": 1.9e-7,
@@ -33709,7 +33723,7 @@ const provider58 = [
 
 const provider59 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "perplexity/codellama-34b-instruct",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -33723,7 +33737,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "perplexity/codellama-70b-instruct",
             "type": "chat",
             "inputCost": 7e-7,
@@ -33737,7 +33751,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/llama-2-70b-chat",
             "type": "chat",
             "inputCost": 7e-7,
@@ -33751,7 +33765,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "perplexity/llama-3.1-70b-instruct",
             "type": "chat",
             "inputCost": 0.000001,
@@ -33765,7 +33779,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "perplexity/llama-3.1-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -33779,7 +33793,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/mistral-7b-instruct",
             "type": "chat",
             "inputCost": 7e-8,
@@ -33793,7 +33807,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/mixtral-8x7b-instruct",
             "type": "chat",
             "inputCost": 7e-8,
@@ -33807,7 +33821,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/pplx-70b-chat",
             "type": "chat",
             "inputCost": 7e-7,
@@ -33821,7 +33835,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/pplx-70b-online",
             "type": "chat",
             "inputCost": 0,
@@ -33835,7 +33849,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "perplexity/pplx-7b-chat",
             "type": "chat",
             "inputCost": 7e-8,
@@ -33849,7 +33863,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "perplexity/pplx-7b-online",
             "type": "chat",
             "inputCost": 0,
@@ -33863,7 +33877,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "perplexity/sonar",
             "type": "chat",
             "inputCost": 0.000001,
@@ -33877,7 +33891,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "perplexity/sonar-deep-research",
             "type": "chat",
             "inputCost": 0.000002,
@@ -33891,7 +33905,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "perplexity/sonar-medium-chat",
             "type": "chat",
             "inputCost": 6e-7,
@@ -33905,7 +33919,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 12000,
+            "maxTokens": null,
             "name": "perplexity/sonar-medium-online",
             "type": "chat",
             "inputCost": 0,
@@ -33919,7 +33933,7 @@ const provider59 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "perplexity/sonar-pro",
             "type": "chat",
             "inputCost": 0.000003,
@@ -33933,7 +33947,7 @@ const provider59 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "perplexity/sonar-reasoning",
             "type": "chat",
             "inputCost": 0.000001,
@@ -33947,7 +33961,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "perplexity/sonar-reasoning-pro",
             "type": "chat",
             "inputCost": 0.000002,
@@ -33961,7 +33975,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "perplexity/sonar-small-chat",
             "type": "chat",
             "inputCost": 7e-8,
@@ -33975,7 +33989,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 12000,
+            "maxTokens": null,
             "name": "perplexity/sonar-small-online",
             "type": "chat",
             "inputCost": 0,
@@ -34303,7 +34317,7 @@ const provider59 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "perplexity/pplx-embed-v1-0.6b",
             "type": "embedding",
             "inputCost": 4e-9,
@@ -34317,7 +34331,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "perplexity/pplx-embed-v1-4b",
             "type": "embedding",
             "inputCost": 3e-8,
@@ -34331,7 +34345,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "perplexity/pplx-embed-context-v1-0.6b",
             "type": "embedding",
             "inputCost": 8e-9,
@@ -34345,7 +34359,7 @@ const provider59 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "perplexity/pplx-embed-context-v1-4b",
             "type": "embedding",
             "inputCost": 5e-8,
@@ -34956,7 +34970,7 @@ const provider59 = [
 
 const provider60 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/swiss-ai/apertus-8b-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -34970,7 +34984,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/swiss-ai/apertus-70b-instruct",
             "type": "chat",
             "inputCost": 0,
@@ -34984,7 +34998,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/aisingapore/Gemma-SEA-LION-v4-27B-IT",
             "type": "chat",
             "inputCost": 0,
@@ -34998,7 +35012,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/BSC-LT/salamandra-7b-instruct-tools-16k",
             "type": "chat",
             "inputCost": 0,
@@ -35012,7 +35026,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/BSC-LT/ALIA-40b-instruct_Q8_0",
             "type": "chat",
             "inputCost": 0,
@@ -35026,7 +35040,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/allenai/Olmo-3-7B-Instruct",
             "type": "chat",
             "inputCost": 0,
@@ -35040,7 +35054,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/aisingapore/Qwen-SEA-LION-v4-32B-IT",
             "type": "chat",
             "inputCost": 0,
@@ -35054,7 +35068,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/allenai/Olmo-3-7B-Think",
             "type": "chat",
             "inputCost": 0,
@@ -35068,7 +35082,7 @@ const provider60 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "publicai/allenai/Olmo-3-32B-Think",
             "type": "chat",
             "inputCost": 0,
@@ -35085,7 +35099,7 @@ const provider60 = [
 
 const provider61 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-13b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -35099,7 +35113,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-13b-chat",
             "type": "chat",
             "inputCost": 1e-7,
@@ -35113,7 +35127,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-70b",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -35127,7 +35141,7 @@ const provider61 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-70b-chat",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -35141,7 +35155,7 @@ const provider61 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-7b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35155,7 +35169,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/meta/llama-2-7b-chat",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35169,7 +35183,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "replicate/meta/llama-3-70b",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -35183,7 +35197,7 @@ const provider61 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "replicate/meta/llama-3-70b-instruct",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -35197,7 +35211,7 @@ const provider61 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8086,
+            "maxTokens": null,
             "name": "replicate/meta/llama-3-8b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35211,7 +35225,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8086,
+            "maxTokens": null,
             "name": "replicate/meta/llama-3-8b-instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35225,7 +35239,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/mistralai/mistral-7b-instruct-v0.2",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35239,7 +35253,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/mistralai/mistral-7b-v0.1",
             "type": "chat",
             "inputCost": 5e-8,
@@ -35253,7 +35267,7 @@ const provider61 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "replicate/mistralai/mixtral-8x7b-instruct-v0.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -35421,7 +35435,7 @@ const provider61 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "replicate/deepseek-ai/deepseek-v3",
             "type": "chat",
             "inputCost": 0.00000145,
@@ -35605,7 +35619,7 @@ const provider61 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "replicate/deepseek-ai/deepseek-v3.1",
             "type": "chat",
             "inputCost": 6.72e-7,
@@ -35633,7 +35647,7 @@ const provider61 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "replicate/deepseek-ai/deepseek-r1",
             "type": "chat",
             "inputCost": 0.00000375,
@@ -35650,7 +35664,7 @@ const provider61 = [
 
 const provider62 = [
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-13b",
             "type": "completion",
             "inputCost": 0,
@@ -35664,7 +35678,7 @@ const provider62 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-13b-f",
             "type": "chat",
             "inputCost": 0,
@@ -35678,7 +35692,7 @@ const provider62 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-70b",
             "type": "completion",
             "inputCost": 0,
@@ -35692,7 +35706,7 @@ const provider62 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-70b-b-f",
             "type": "chat",
             "inputCost": 0,
@@ -35706,7 +35720,7 @@ const provider62 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-7b",
             "type": "completion",
             "inputCost": 0,
@@ -35720,7 +35734,7 @@ const provider62 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-7b-f",
             "type": "chat",
             "inputCost": 0,
@@ -35737,7 +35751,7 @@ const provider62 = [
 
 const provider63 = [
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/MiniMax-M2.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -35751,7 +35765,7 @@ const provider63 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "sambanova/DeepSeek-R1",
             "type": "chat",
             "inputCost": 0.000005,
@@ -35765,7 +35779,7 @@ const provider63 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/Llama-4-Maverick-17B-128E-Instruct",
             "type": "chat",
             "inputCost": 6.3e-7,
@@ -35779,7 +35793,7 @@ const provider63 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/Meta-Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 6e-7,
@@ -35793,7 +35807,7 @@ const provider63 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 0.000003,
@@ -35807,7 +35821,7 @@ const provider63 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/gpt-oss-120b",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -35821,7 +35835,7 @@ const provider63 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "sambanova/DeepSeek-V3.2",
             "type": "chat",
             "inputCost": 0.000003,
@@ -35835,7 +35849,7 @@ const provider63 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "sambanova/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -35852,7 +35866,7 @@ const provider63 = [
 
 const provider64 = [
         {
-            "maxTokens": 375000,
+            "maxTokens": null,
             "name": "scx-ai/DeepSeek-V4.1-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -35866,7 +35880,7 @@ const provider64 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "scx-ai/GLM-5.3",
             "type": "chat",
             "inputCost": 9.8e-7,
@@ -35880,7 +35894,7 @@ const provider64 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "scx-ai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.00000283,
@@ -35894,7 +35908,7 @@ const provider64 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "scx-ai/GLM-5.2",
             "type": "chat",
             "inputCost": 6.1e-7,
@@ -35908,7 +35922,7 @@ const provider64 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "scx-ai/Qwen3.8-Max",
             "type": "chat",
             "inputCost": 0.00000165,
@@ -35925,7 +35939,7 @@ const provider64 = [
 
 const provider65 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -35939,7 +35953,7 @@ const provider65 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/deepseek-r1",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -35953,7 +35967,7 @@ const provider65 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/gemma-7b",
             "type": "chat",
             "inputCost": null,
@@ -35966,7 +35980,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/jamba-1.5-large",
             "type": "chat",
             "inputCost": null,
@@ -35979,7 +35993,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/jamba-1.5-mini",
             "type": "chat",
             "inputCost": null,
@@ -35992,7 +36006,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/jamba-instruct",
             "type": "chat",
             "inputCost": null,
@@ -36005,7 +36019,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/llama2-70b-chat",
             "type": "chat",
             "inputCost": null,
@@ -36018,7 +36032,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/llama3-70b",
             "type": "chat",
             "inputCost": null,
@@ -36031,7 +36045,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/llama3-8b",
             "type": "chat",
             "inputCost": null,
@@ -36044,7 +36058,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/llama3.1-405b",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -36058,7 +36072,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/llama3.1-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -36072,7 +36086,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/llama3.1-8b",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -36086,7 +36100,7 @@ const provider65 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/llama3.2-1b",
             "type": "chat",
             "inputCost": null,
@@ -36099,7 +36113,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/llama3.2-3b",
             "type": "chat",
             "inputCost": null,
@@ -36112,7 +36126,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/llama3.3-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -36126,7 +36140,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/mistral-7b",
             "type": "chat",
             "inputCost": null,
@@ -36139,7 +36153,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/mistral-large",
             "type": "chat",
             "inputCost": null,
@@ -36152,7 +36166,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/mistral-large2",
             "type": "chat",
             "inputCost": 0.000002,
@@ -36166,7 +36180,7 @@ const provider65 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/mixtral-8x7b",
             "type": "chat",
             "inputCost": null,
@@ -36179,7 +36193,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/reka-core",
             "type": "chat",
             "inputCost": null,
@@ -36192,7 +36206,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/reka-flash",
             "type": "chat",
             "inputCost": null,
@@ -36205,7 +36219,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/snowflake-arctic",
             "type": "chat",
             "inputCost": null,
@@ -36218,7 +36232,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/snowflake-llama-3.1-405b",
             "type": "chat",
             "inputCost": null,
@@ -36231,7 +36245,7 @@ const provider65 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/snowflake-llama-3.3-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -36245,7 +36259,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -36259,7 +36273,7 @@ const provider65 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -36273,7 +36287,7 @@ const provider65 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-4-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -36287,7 +36301,7 @@ const provider65 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-4-opus",
             "type": "chat",
             "inputCost": 0.000005,
@@ -36301,7 +36315,7 @@ const provider65 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -36315,7 +36329,7 @@ const provider65 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/claude-3-7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -36329,7 +36343,7 @@ const provider65 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/openai-gpt-4.1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -36343,7 +36357,7 @@ const provider65 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/openai-gpt-5",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -36357,7 +36371,7 @@ const provider65 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/openai-gpt-5-mini",
             "type": "chat",
             "inputCost": 3e-7,
@@ -36371,7 +36385,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/openai-gpt-5-nano",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -36385,7 +36399,7 @@ const provider65 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "snowflake/llama4-maverick",
             "type": "chat",
             "inputCost": 2.4e-7,
@@ -36399,7 +36413,7 @@ const provider65 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/snowflake-arctic-embed-l-v2.0",
             "type": "embedding",
             "inputCost": 7e-8,
@@ -36413,7 +36427,7 @@ const provider65 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "snowflake/snowflake-arctic-embed-m-v2.0",
             "type": "embedding",
             "inputCost": 7e-8,
@@ -36430,7 +36444,7 @@ const provider65 = [
 
 const provider66 = [
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-completion-codestral/codestral-2405",
             "type": "completion",
             "inputCost": 0,
@@ -36444,7 +36458,7 @@ const provider66 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "text-completion-codestral/codestral-latest",
             "type": "completion",
             "inputCost": 0,
@@ -36503,7 +36517,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000,
+            "maxTokens": null,
             "name": "together-ai-8.1b-21b",
             "type": "chat",
             "inputCost": 3e-7,
@@ -36601,7 +36615,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -36615,7 +36629,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-3.3-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 0.00000104,
@@ -36643,7 +36657,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -36670,7 +36684,7 @@ const provider67 = [
             "cacheCreationInputCostUnit": null
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-4.6",
             "type": "chat",
             "inputCost": 6e-7,
@@ -36684,7 +36698,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "together_ai/MiniMaxAI/MiniMax-M3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -36698,7 +36712,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/MiniMaxAI/MiniMax-M3.1-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -36712,7 +36726,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Prism-ML/Ternary-Bonsai-27B",
             "type": "chat",
             "inputCost": 0,
@@ -36726,7 +36740,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.5-9B",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -36740,7 +36754,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.6-Plus",
             "type": "chat",
             "inputCost": 5e-7,
@@ -36754,7 +36768,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.7-Max",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -36768,7 +36782,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.7-Plus",
             "type": "chat",
             "inputCost": 3.2e-7,
@@ -36782,7 +36796,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1010000,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.8-2.4T-A95B",
             "type": "chat",
             "inputCost": 0.000002,
@@ -36796,7 +36810,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/arize-ai/qwen-2-1.5b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -36810,7 +36824,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -36824,7 +36838,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -36838,7 +36852,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -36852,7 +36866,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-models/Muse-Glimmer-30B",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -36866,7 +36880,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/meta-models/Muse-Spark-Open-816B-A42B",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -36880,7 +36894,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -36894,7 +36908,7 @@ const provider67 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "together_ai/thinkingmachines/Inkling",
             "type": "chat",
             "inputCost": 0.000001,
@@ -36908,7 +36922,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -36922,7 +36936,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -36936,7 +36950,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -36950,7 +36964,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.8-Flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -37048,7 +37062,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "together_ai/arcee-ai/trinity-mini",
             "type": "chat",
             "inputCost": 4.5e-8,
@@ -37062,7 +37076,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-3.1-405B-Instruct",
             "type": "chat",
             "inputCost": 0.0000035,
@@ -37076,7 +37090,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-3.2-1B-Instruct",
             "type": "chat",
             "inputCost": 6e-8,
@@ -37090,7 +37104,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-3.2-3B-Instruct",
             "type": "chat",
             "inputCost": 6e-8,
@@ -37104,7 +37118,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2-1.5B-Instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -37118,7 +37132,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2.5-14B-Instruct",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37132,7 +37146,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2.5-72B-Instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -37146,7 +37160,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Meta-Llama-3.1-8B",
             "type": "completion",
             "inputCost": 2e-7,
@@ -37174,7 +37188,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
             "type": "chat",
             "inputCost": 6e-7,
@@ -37188,7 +37202,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/Qwen/QwQ-32B",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -37202,7 +37216,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2-72B-Instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -37216,7 +37230,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2-VL-72B-Instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -37230,7 +37244,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2.5-72B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -37244,7 +37258,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2.5-Coder-32B-Instruct",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37258,7 +37272,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen2.5-VL-72B-Instruct",
             "type": "chat",
             "inputCost": 0.00000195,
@@ -37272,7 +37286,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8",
             "type": "chat",
             "inputCost": 0.000002,
@@ -37286,7 +37300,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-Coder-Next-FP8",
             "type": "chat",
             "inputCost": 5e-7,
@@ -37300,7 +37314,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-Next-80B-A3B-Instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -37314,7 +37328,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-Next-80B-A3B-Thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -37328,7 +37342,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-VL-32B-Instruct",
             "type": "chat",
             "inputCost": 5e-7,
@@ -37342,7 +37356,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3-VL-8B-Instruct",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -37356,7 +37370,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.5-397B-A17B",
             "type": "chat",
             "inputCost": 6e-7,
@@ -37370,7 +37384,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
             "type": "chat",
             "inputCost": 0.000002,
@@ -37384,7 +37398,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -37398,7 +37412,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
             "type": "chat",
             "inputCost": 0.0000016,
@@ -37412,7 +37426,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 6e-7,
@@ -37426,7 +37440,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/deepseek-coder-33b-instruct",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37440,7 +37454,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "together_ai/google/gemma-2-27b-it",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37454,7 +37468,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/google/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 3.9e-7,
@@ -37468,7 +37482,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-3-8b-chat-hf",
             "type": "chat",
             "inputCost": 2e-7,
@@ -37482,7 +37496,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Llama-4-Scout-17B-16E-Instruct",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -37496,7 +37510,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Meta-Llama-3-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 8.8e-7,
@@ -37510,7 +37524,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Meta-Llama-3-8B-Instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -37524,7 +37538,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 8.8e-7,
@@ -37538,7 +37552,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -37552,7 +37566,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mistral-7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 2e-7,
@@ -37566,7 +37580,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mistral-Small-24B-Instruct-2501",
             "type": "chat",
             "inputCost": 1e-7,
@@ -37580,7 +37594,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/mistralai/Mixtral-8x7B-Instruct-v0.1",
             "type": "chat",
             "inputCost": 6e-7,
@@ -37594,7 +37608,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -37608,7 +37622,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -37622,7 +37636,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "together_ai/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
             "type": "chat",
             "inputCost": 8.8e-7,
@@ -37636,7 +37650,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512288,
+            "maxTokens": null,
             "name": "together_ai/nvidia/nemotron-3-ultra-550b-a55b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -37650,7 +37664,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -37664,7 +37678,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-4.5-Air-FP8",
             "type": "chat",
             "inputCost": 2e-7,
@@ -37678,7 +37692,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-4.7",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -37692,7 +37706,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -37706,7 +37720,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 202752,
+            "maxTokens": null,
             "name": "together_ai/zai-org/GLM-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -37720,7 +37734,7 @@ const provider67 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "together_ai/nvidia/NVIDIA-Nemotron-3.5-Super-VL",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -37734,7 +37748,7 @@ const provider67 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/reflection/Beam-1.0-501B-A23B",
             "type": "chat",
             "inputCost": 4e-7,
@@ -37748,7 +37762,7 @@ const provider67 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017",
             "type": "chat",
             "inputCost": 3e-7,
@@ -37765,7 +37779,7 @@ const provider67 = [
 
 const provider68 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "v0/v0-1.0-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -37779,7 +37793,7 @@ const provider68 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": null,
             "name": "v0/v0-1.5-lg",
             "type": "chat",
             "inputCost": 0.000015,
@@ -37793,7 +37807,7 @@ const provider68 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "v0/v0-1.5-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -37810,7 +37824,7 @@ const provider68 = [
 
 const provider69 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-14b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -37824,7 +37838,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-235b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -37838,7 +37852,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-30b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -37852,7 +37866,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-32b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -37866,7 +37880,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 66536,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen3-coder",
             "type": "chat",
             "inputCost": 4e-7,
@@ -37880,7 +37894,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/amazon/nova-lite",
             "type": "chat",
             "inputCost": 6e-8,
@@ -37894,7 +37908,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/amazon/nova-micro",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -37908,7 +37922,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/amazon/nova-pro",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37922,7 +37936,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/amazon/titan-embed-text-v2",
             "type": "chat",
             "inputCost": 2e-8,
@@ -37936,7 +37950,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3-haiku",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -37950,7 +37964,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -37964,7 +37978,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3.5-haiku",
             "type": "chat",
             "inputCost": 8e-7,
@@ -37978,7 +37992,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3.5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -37992,7 +38006,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3.7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38006,7 +38020,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-4-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -38020,7 +38034,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-4-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38034,7 +38048,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38048,7 +38062,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3-5-sonnet-20241022",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38062,7 +38076,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-3-7-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38076,7 +38090,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-haiku-4.5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -38090,7 +38104,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-opus-4",
             "type": "chat",
             "inputCost": 0.000015,
@@ -38104,7 +38118,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-opus-4.1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -38118,7 +38132,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-opus-4.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -38132,7 +38146,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-opus-4.6",
             "type": "chat",
             "inputCost": 0.000005,
@@ -38146,7 +38160,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-sonnet-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38160,7 +38174,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/anthropic/claude-sonnet-4.5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38174,7 +38188,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/cohere/command-a",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -38188,7 +38202,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/cohere/command-r",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -38202,7 +38216,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/cohere/command-r-plus",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -38216,7 +38230,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/cohere/embed-v4.0",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -38230,7 +38244,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/deepseek/deepseek-r1",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -38244,7 +38258,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/deepseek/deepseek-r1-distill-llama-70b",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -38258,7 +38272,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/deepseek/deepseek-v3",
             "type": "chat",
             "inputCost": 9e-7,
@@ -38272,7 +38286,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/gemini-2.5-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -38286,7 +38300,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/gemini-2.5-pro",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -38303,7 +38317,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/gemini-embedding-001",
             "type": "embedding",
             "inputCost": 1.5e-7,
@@ -38317,7 +38331,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/gemma-2-9b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -38331,7 +38345,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/text-embedding-005",
             "type": "embedding",
             "inputCost": 2.5e-8,
@@ -38345,7 +38359,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/google/text-multilingual-embedding-002",
             "type": "embedding",
             "inputCost": 2.5e-8,
@@ -38359,7 +38373,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/inception/mercury-coder-small",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -38373,7 +38387,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3-70b",
             "type": "chat",
             "inputCost": 5.9e-7,
@@ -38387,7 +38401,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3-8b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -38401,7 +38415,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.1-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -38415,7 +38429,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.1-8b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -38429,7 +38443,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.2-11b",
             "type": "chat",
             "inputCost": 1.6e-7,
@@ -38443,7 +38457,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.2-1b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38457,7 +38471,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.2-3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -38471,7 +38485,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.2-90b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -38485,7 +38499,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-3.3-70b",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -38499,7 +38513,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-4-maverick",
             "type": "chat",
             "inputCost": 2e-7,
@@ -38513,7 +38527,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/meta/llama-4-scout",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38527,7 +38541,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/codestral",
             "type": "chat",
             "inputCost": 3e-7,
@@ -38541,7 +38555,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/codestral-embed",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -38555,7 +38569,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/devstral-small",
             "type": "chat",
             "inputCost": 7e-8,
@@ -38569,7 +38583,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/magistral-medium",
             "type": "chat",
             "inputCost": 0.000002,
@@ -38583,7 +38597,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/magistral-small",
             "type": "chat",
             "inputCost": 5e-7,
@@ -38597,7 +38611,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/ministral-3b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -38611,7 +38625,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/ministral-8b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38625,7 +38639,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/mistral-embed",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38639,7 +38653,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/mistral-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -38653,7 +38667,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/mistral-saba-24b",
             "type": "chat",
             "inputCost": 7.9e-7,
@@ -38667,7 +38681,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/mistral-small",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38681,7 +38695,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/mixtral-8x22b-instruct",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -38695,7 +38709,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/pixtral-12b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -38709,7 +38723,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/mistral/pixtral-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -38723,7 +38737,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/moonshotai/kimi-k2",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -38737,7 +38751,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/morph/morph-v3-fast",
             "type": "chat",
             "inputCost": 8e-7,
@@ -38751,7 +38765,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/morph/morph-v3-large",
             "type": "chat",
             "inputCost": 9e-7,
@@ -38765,7 +38779,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-3.5-turbo",
             "type": "chat",
             "inputCost": 5e-7,
@@ -38779,7 +38793,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-3.5-turbo-instruct",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -38793,7 +38807,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4-turbo",
             "type": "chat",
             "inputCost": 0.00001,
@@ -38807,7 +38821,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4.1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -38821,7 +38835,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4.1-mini",
             "type": "chat",
             "inputCost": 4e-7,
@@ -38835,7 +38849,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4.1-nano",
             "type": "chat",
             "inputCost": 1e-7,
@@ -38849,7 +38863,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4o",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -38863,7 +38877,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/gpt-4o-mini",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -38877,7 +38891,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/o1",
             "type": "chat",
             "inputCost": 0.000015,
@@ -38891,7 +38905,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/o3",
             "type": "chat",
             "inputCost": 0.000002,
@@ -38905,7 +38919,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/o3-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -38919,7 +38933,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/o4-mini",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -38933,7 +38947,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/text-embedding-3-large",
             "type": "embedding",
             "inputCost": 1.3e-7,
@@ -38947,7 +38961,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/text-embedding-3-small",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -38961,7 +38975,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 0,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/openai/text-embedding-ada-002",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -38975,7 +38989,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/perplexity/sonar",
             "type": "chat",
             "inputCost": 0.000001,
@@ -38989,7 +39003,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/perplexity/sonar-pro",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39003,7 +39017,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/perplexity/sonar-reasoning",
             "type": "chat",
             "inputCost": 0.000001,
@@ -39017,7 +39031,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/perplexity/sonar-reasoning-pro",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39031,7 +39045,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/vercel/v0-1.0-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39045,7 +39059,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/vercel/v0-1.5-md",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39059,7 +39073,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-2",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39073,7 +39087,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-2-vision",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39087,7 +39101,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39101,7 +39115,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-3-fast",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39115,7 +39129,7 @@ const provider69 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-3-mini",
             "type": "chat",
             "inputCost": 3e-7,
@@ -39129,7 +39143,7 @@ const provider69 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-3-mini-fast",
             "type": "chat",
             "inputCost": 6e-7,
@@ -39143,7 +39157,7 @@ const provider69 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/xai/grok-4",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39157,7 +39171,7 @@ const provider69 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/zai/glm-4.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -39171,7 +39185,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 96000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/zai/glm-4.5-air",
             "type": "chat",
             "inputCost": 2e-7,
@@ -39185,7 +39199,7 @@ const provider69 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "vercel_ai_gateway/zai/glm-4.6",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -39202,7 +39216,7 @@ const provider69 = [
 
 const provider70 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-5-haiku",
             "type": "chat",
             "inputCost": 0.000001,
@@ -39216,7 +39230,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-5-haiku@20241022",
             "type": "chat",
             "inputCost": 0.000001,
@@ -39230,7 +39244,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -39244,7 +39258,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-haiku-4-5@20251001",
             "type": "chat",
             "inputCost": 0.000001,
@@ -39258,7 +39272,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39272,7 +39286,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-5-sonnet@20240620",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39286,7 +39300,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-haiku",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -39300,7 +39314,7 @@ const provider70 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-haiku@20240307",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -39314,7 +39328,7 @@ const provider70 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-opus",
             "type": "chat",
             "inputCost": 0.000015,
@@ -39328,7 +39342,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-opus@20240229",
             "type": "chat",
             "inputCost": 0.000015,
@@ -39342,7 +39356,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39356,7 +39370,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "vertex_ai/claude-3-sonnet@20240229",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39370,7 +39384,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39384,7 +39398,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-5@20251101",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39398,7 +39412,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-6",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39412,7 +39426,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-6@default",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39426,7 +39440,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-7",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39440,7 +39454,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-7@default",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39454,7 +39468,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-fable-5",
             "type": "chat",
             "inputCost": 0.00001,
@@ -39468,7 +39482,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-fable-5-1",
             "type": "chat",
             "inputCost": 0.00001,
@@ -39482,7 +39496,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-fable-5@default",
             "type": "chat",
             "inputCost": 0.00001,
@@ -39496,7 +39510,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-fable-5-1@default",
             "type": "chat",
             "inputCost": 0.00001,
@@ -39510,7 +39524,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39524,7 +39538,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-5@default",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39538,7 +39552,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.000004,
@@ -39552,7 +39566,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-5-5@default",
             "type": "chat",
             "inputCost": 0.000004,
@@ -39566,7 +39580,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-8",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39580,7 +39594,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-8@default",
             "type": "chat",
             "inputCost": 0.000005,
@@ -39594,7 +39608,7 @@ const provider70 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-5",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39612,7 +39626,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39626,7 +39640,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-6",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39640,7 +39654,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-5@20250929",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39658,7 +39672,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5@default",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39672,7 +39686,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-6@default",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39686,7 +39700,7 @@ const provider70 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39700,7 +39714,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5-5@default",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39714,7 +39728,7 @@ const provider70 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1e-7,
@@ -39728,7 +39742,7 @@ const provider70 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/claude-haiku-5-5@default",
             "type": "chat",
             "inputCost": 1e-7,
@@ -39745,7 +39759,7 @@ const provider70 = [
 
 const provider71 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/mistralai/codestral-2@001",
             "type": "chat",
             "inputCost": 3e-7,
@@ -39759,7 +39773,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/codestral-2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -39773,7 +39787,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/codestral-2@001",
             "type": "chat",
             "inputCost": 3e-7,
@@ -39787,7 +39801,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/mistralai/codestral-2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -39801,7 +39815,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/codestral-2501",
             "type": "chat",
             "inputCost": 2e-7,
@@ -39815,7 +39829,7 @@ const provider71 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/codestral@2405",
             "type": "chat",
             "inputCost": 2e-7,
@@ -39829,7 +39843,7 @@ const provider71 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/codestral@latest",
             "type": "chat",
             "inputCost": 2e-7,
@@ -39843,7 +39857,7 @@ const provider71 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-medium-3",
             "type": "chat",
             "inputCost": 4e-7,
@@ -39857,7 +39871,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-medium-3@001",
             "type": "chat",
             "inputCost": 4e-7,
@@ -39871,7 +39885,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistralai/mistral-medium-3",
             "type": "chat",
             "inputCost": 4e-7,
@@ -39885,7 +39899,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistralai/mistral-medium-3@001",
             "type": "chat",
             "inputCost": 4e-7,
@@ -39899,7 +39913,7 @@ const provider71 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-large-2411",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39913,7 +39927,7 @@ const provider71 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-large@2407",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39927,7 +39941,7 @@ const provider71 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-large@2411-001",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39941,7 +39955,7 @@ const provider71 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-large@latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -39955,7 +39969,7 @@ const provider71 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-nemo@2407",
             "type": "chat",
             "inputCost": 0.000003,
@@ -39969,7 +39983,7 @@ const provider71 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-nemo@latest",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -39983,7 +39997,7 @@ const provider71 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-small-2503",
             "type": "chat",
             "inputCost": 1e-7,
@@ -39997,7 +40011,7 @@ const provider71 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8191,
+            "maxTokens": null,
             "name": "vertex_ai/mistral-small-2503@001",
             "type": "chat",
             "inputCost": 1e-7,
@@ -40014,7 +40028,7 @@ const provider71 = [
 
 const provider72 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.1-maas",
             "type": "chat",
             "inputCost": 6e-7,
@@ -40028,7 +40042,7 @@ const provider72 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.2-maas",
             "type": "chat",
             "inputCost": 5.6e-7,
@@ -40042,7 +40056,7 @@ const provider72 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-r1-0528-maas",
             "type": "chat",
             "inputCost": 0.00000135,
@@ -40056,7 +40070,7 @@ const provider72 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas",
             "type": "chat",
             "inputCost": 3e-7,
@@ -40073,7 +40087,7 @@ const provider72 = [
 
 const provider73 = [
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/jamba-1.5",
             "type": "chat",
             "inputCost": 2e-7,
@@ -40087,7 +40101,7 @@ const provider73 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/jamba-1.5-large",
             "type": "chat",
             "inputCost": 0.000002,
@@ -40101,7 +40115,7 @@ const provider73 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/jamba-1.5-large@001",
             "type": "chat",
             "inputCost": 0.000002,
@@ -40115,7 +40129,7 @@ const provider73 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/jamba-1.5-mini",
             "type": "chat",
             "inputCost": 2e-7,
@@ -40129,7 +40143,7 @@ const provider73 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/jamba-1.5-mini@001",
             "type": "chat",
             "inputCost": 2e-7,
@@ -40146,7 +40160,7 @@ const provider73 = [
 
 const provider74 = [
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
             "type": "chat",
             "inputCost": 0.000005,
@@ -40160,7 +40174,7 @@ const provider74 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-70b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40174,7 +40188,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-8b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40188,7 +40202,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.2-90b-vision-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40202,7 +40216,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-maverick-17b-128e-instruct-maas",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -40216,7 +40230,7 @@ const provider74 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-maverick-17b-16e-instruct-maas",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -40230,7 +40244,7 @@ const provider74 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 10000000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-scout-17b-128e-instruct-maas",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -40244,7 +40258,7 @@ const provider74 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 10000000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-scout-17b-16e-instruct-maas",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -40258,7 +40272,7 @@ const provider74 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama3-405b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40272,7 +40286,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama3-70b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40286,7 +40300,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama3-8b-instruct-maas",
             "type": "chat",
             "inputCost": 0,
@@ -40300,7 +40314,7 @@ const provider74 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.3-70b-instruct-maas",
             "type": "chat",
             "inputCost": 7.2e-7,
@@ -40317,7 +40331,7 @@ const provider74 = [
 
 const provider75 = [
         {
-            "maxTokens": 196608,
+            "maxTokens": null,
             "name": "vertex_ai/minimaxai/minimax-m2-maas",
             "type": "chat",
             "inputCost": 3e-7,
@@ -40334,7 +40348,7 @@ const provider75 = [
 
 const provider76 = [
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "vertex_ai/moonshotai/kimi-k2-thinking-maas",
             "type": "chat",
             "inputCost": 6e-7,
@@ -40351,7 +40365,7 @@ const provider76 = [
 
 const provider77 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-4.7-maas",
             "type": "chat",
             "inputCost": 6e-7,
@@ -40365,7 +40379,7 @@ const provider77 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-5-maas",
             "type": "chat",
             "inputCost": 0.000001,
@@ -40379,7 +40393,7 @@ const provider77 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-5.2-maas",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -40396,7 +40410,7 @@ const provider77 = [
 
 const provider78 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "vertex_ai/google/gemma-4-26b-a4b-it-maas",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -40410,7 +40424,7 @@ const provider78 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/openai/gpt-oss-120b-maas",
             "type": "chat",
             "inputCost": 9e-8,
@@ -40424,7 +40438,7 @@ const provider78 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/openai/gpt-oss-20b-maas",
             "type": "chat",
             "inputCost": 7e-8,
@@ -40441,7 +40455,7 @@ const provider78 = [
 
 const provider79 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -40455,7 +40469,7 @@ const provider79 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -40469,7 +40483,7 @@ const provider79 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-next-80b-a3b-instruct-maas",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -40483,7 +40497,7 @@ const provider79 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-next-80b-a3b-thinking-maas",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -40500,7 +40514,7 @@ const provider79 = [
 
 const provider80 = [
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "voyage/voyage-2",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -40514,7 +40528,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-3",
             "type": "embedding",
             "inputCost": 6e-8,
@@ -40528,7 +40542,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-multilingual-2",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40542,7 +40556,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-3-large",
             "type": "embedding",
             "inputCost": 1.8e-7,
@@ -40556,7 +40570,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-3-lite",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -40570,7 +40584,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-3.5",
             "type": "embedding",
             "inputCost": 6e-8,
@@ -40584,7 +40598,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-3.5-lite",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -40598,7 +40612,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "voyage/voyage-code-2",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40612,7 +40626,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-code-3",
             "type": "embedding",
             "inputCost": 1.8e-7,
@@ -40626,7 +40640,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 120000,
+            "maxTokens": null,
             "name": "voyage/voyage-context-3",
             "type": "embedding",
             "inputCost": 1.8e-7,
@@ -40640,7 +40654,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-finance-2",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40654,7 +40668,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "voyage/voyage-large-2",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40668,7 +40682,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "voyage/voyage-large-2-instruct",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40682,7 +40696,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "voyage/voyage-law-2",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40696,7 +40710,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "voyage/voyage-lite-01",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -40710,7 +40724,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4000,
+            "maxTokens": null,
             "name": "voyage/voyage-lite-02-instruct",
             "type": "embedding",
             "inputCost": 1e-7,
@@ -40724,7 +40738,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-multimodal-3",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40738,7 +40752,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-4-large",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40752,7 +40766,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-4",
             "type": "embedding",
             "inputCost": 6e-8,
@@ -40766,7 +40780,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-4-lite",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -40780,7 +40794,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-code-4",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40794,7 +40808,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 120000,
+            "maxTokens": null,
             "name": "voyage/voyage-context-4",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40808,7 +40822,7 @@ const provider80 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "voyage/voyage-multimodal-3.5",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -40825,7 +40839,7 @@ const provider80 = [
 
 const provider81 = [
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "wandb/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -40839,7 +40853,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "wandb/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -40853,7 +40867,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/moonshotai/Kimi-K2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -40867,7 +40881,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "wandb/meta-llama/Llama-3.1-8B-Instruct",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -40881,7 +40895,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V3.1",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -40895,7 +40909,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "wandb/meta-llama/Llama-3.3-70B-Instruct",
             "type": "chat",
             "inputCost": 7.1e-7,
@@ -40909,7 +40923,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V4-Flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -40923,7 +40937,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -40937,7 +40951,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V4-Pro",
             "type": "chat",
             "inputCost": 0.00000115,
@@ -40951,7 +40965,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/google/gemma-4-31B-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -40965,7 +40979,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "wandb/ibm-granite/granite-4.1-8b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -40979,7 +40993,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "wandb/JetBrains/Mellum2-12B-A2.5B-Instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -40993,7 +41007,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "wandb/meta-llama/Llama-3.1-70B-Instruct",
             "type": "chat",
             "inputCost": 8e-7,
@@ -41007,7 +41021,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/MiniMaxAI/MiniMax-M3",
             "type": "chat",
             "inputCost": 2.3e-7,
@@ -41021,7 +41035,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 7.1e-7,
@@ -41035,7 +41049,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/moonshotai/Kimi-K2.6",
             "type": "chat",
             "inputCost": 6.5e-7,
@@ -41049,7 +41063,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
             "type": "chat",
             "inputCost": 7e-8,
@@ -41063,7 +41077,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
             "type": "chat",
             "inputCost": 5e-7,
@@ -41077,7 +41091,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "wandb/OpenPipe/Qwen3-14B-Instruct",
             "type": "chat",
             "inputCost": 5e-8,
@@ -41091,7 +41105,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/Qwen/Qwen3.8-27B",
             "type": "chat",
             "inputCost": 4e-7,
@@ -41105,7 +41119,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/Qwen/Qwen3.6-35B-A3B",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -41119,7 +41133,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/Qwen/Qwen3.6-27B",
             "type": "chat",
             "inputCost": 6e-7,
@@ -41133,7 +41147,7 @@ const provider81 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/Qwen/Qwen3.5-35B-A3B",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -41147,7 +41161,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/Qwen/Qwen3-30B-A3B-Instruct-2507",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41189,7 +41203,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/zai-org/GLM-5.2",
             "type": "chat",
             "inputCost": 7.6e-7,
@@ -41203,7 +41217,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -41217,7 +41231,7 @@ const provider81 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "wandb/google/gemma-4-26B-A4B-it",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41245,7 +41259,7 @@ const provider81 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 943718,
+            "maxTokens": null,
             "name": "wandb/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -41290,7 +41304,7 @@ const provider81 = [
 
 const provider82 = [
         {
-            "maxTokens": 1024,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-3-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -41304,7 +41318,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "watsonx/mistralai/mistral-large",
             "type": "chat",
             "inputCost": 0.000003,
@@ -41318,7 +41332,7 @@ const provider82 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "watsonx/bigscience/mt0-xxl-13b",
             "type": "chat",
             "inputCost": 0.000001908,
@@ -41332,7 +41346,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "watsonx/bigscience/mt0-xxl",
             "type": "chat",
             "inputCost": 0.000001908,
@@ -41346,7 +41360,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/core42/jais-13b-chat",
             "type": "chat",
             "inputCost": 0.0005,
@@ -41360,7 +41374,7 @@ const provider82 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/google/flan-t5-xl-3b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -41374,7 +41388,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-13b-chat-v2",
             "type": "chat",
             "inputCost": 6e-7,
@@ -41388,7 +41402,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-13b-instruct-v2",
             "type": "chat",
             "inputCost": 6e-7,
@@ -41402,7 +41416,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-3-3-8b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -41416,7 +41430,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-4-h-small",
             "type": "chat",
             "inputCost": 6.36e-8,
@@ -41430,7 +41444,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-guardian-3-2-2b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41444,7 +41458,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-guardian-3-3-8b",
             "type": "chat",
             "inputCost": 2e-7,
@@ -41458,7 +41472,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-ttm-1024-96-r2",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -41472,7 +41486,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-ttm-1536-96-r2",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -41486,7 +41500,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 512,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-ttm-512-96-r2",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -41500,7 +41514,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/ibm/granite-vision-3-2-2b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41514,7 +41528,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-3-2-11b-vision-instruct",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -41528,7 +41542,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-3-2-1b-instruct",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41542,7 +41556,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-3-2-3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -41556,7 +41570,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-3-2-90b-vision-instruct",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41570,7 +41584,7 @@ const provider82 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-3-3-70b-instruct",
             "type": "chat",
             "inputCost": 7.526e-7,
@@ -41584,7 +41598,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-4-maverick-17b",
             "type": "chat",
             "inputCost": 3.71e-7,
@@ -41598,7 +41612,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 3.71e-7,
@@ -41612,7 +41626,7 @@ const provider82 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/meta-llama/llama-guard-3-11b-vision",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -41626,7 +41640,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/mistralai/mistral-medium-2505",
             "type": "chat",
             "inputCost": 0.000003,
@@ -41640,7 +41654,7 @@ const provider82 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "watsonx/mistralai/mistral-small-2503",
             "type": "chat",
             "inputCost": 1e-7,
@@ -41654,7 +41668,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "watsonx/mistralai/mistral-small-3-1-24b-instruct-2503",
             "type": "chat",
             "inputCost": 1.06e-7,
@@ -41668,7 +41682,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "watsonx/mistralai/pixtral-12b-2409",
             "type": "chat",
             "inputCost": 3.5e-7,
@@ -41682,7 +41696,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "watsonx/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.59e-7,
@@ -41696,7 +41710,7 @@ const provider82 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "watsonx/sdaia/allam-1-13b-instruct",
             "type": "chat",
             "inputCost": 0.0000018,
@@ -41713,7 +41727,7 @@ const provider82 = [
 
 const provider83 = [
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-beta-0309",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -41730,7 +41744,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41747,7 +41761,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-0309-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41764,7 +41778,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41781,7 +41795,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41798,7 +41812,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.3-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41815,7 +41829,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "xai/grok-4.5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41832,7 +41846,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "xai/grok-4.5-latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41849,7 +41863,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "xai/grok-build-latest",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41866,7 +41880,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "xai/grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41883,7 +41897,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "xai/grok-4.7",
             "type": "chat",
             "inputCost": 0.000002,
@@ -41900,7 +41914,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-0309-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41917,7 +41931,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-0309",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -41934,7 +41948,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "xai/grok-build-0.1",
             "type": "chat",
             "inputCost": 0.000001,
@@ -41951,7 +41965,7 @@ const provider83 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41968,7 +41982,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -41985,7 +41999,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-reasoning-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42002,7 +42016,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42019,7 +42033,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42036,7 +42050,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -42053,7 +42067,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-latest",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -42070,7 +42084,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-0309",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42087,7 +42101,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42104,7 +42118,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42121,7 +42135,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42138,7 +42152,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42155,7 +42169,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42172,7 +42186,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42189,7 +42203,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-beta-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42206,7 +42220,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42223,7 +42237,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304-non-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42240,7 +42254,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304-reasoning",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42257,7 +42271,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42274,7 +42288,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-non-reasoning-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42291,7 +42305,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-reasoning-latest",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42308,7 +42322,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-beta-latest",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -42325,7 +42339,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-experimental-beta-0304",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -42342,7 +42356,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-experimental-beta-latest",
             "type": "responses",
             "inputCost": 0.00000125,
@@ -42359,7 +42373,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning-gv2",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42376,7 +42390,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "xai/grok-4.20-reasoning-gv2",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -42393,7 +42407,7 @@ const provider83 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "xai/grok-code-fast",
             "type": "chat",
             "inputCost": 0.000001,
@@ -42410,7 +42424,7 @@ const provider83 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "xai/grok-code-fast-1",
             "type": "chat",
             "inputCost": 0.000001,
@@ -42427,7 +42441,7 @@ const provider83 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "xai/grok-code-fast-1-0825",
             "type": "chat",
             "inputCost": 0.000001,
@@ -42674,7 +42688,7 @@ const provider84 = [
 
 const provider85 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/qwen/qwen3.5-397b-a17b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -42688,7 +42702,7 @@ const provider85 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/qwen/qwen3.6-35b-a3b",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -42702,7 +42716,7 @@ const provider85 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/qwen/qwen3-235b-a22b-instruct-2507",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -42730,7 +42744,7 @@ const provider85 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "scaleway/qwen/qwen3-coder-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -42744,7 +42758,7 @@ const provider85 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "scaleway/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -42758,7 +42772,7 @@ const provider85 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "scaleway/google/gemma-4-26b-a4b-it",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -42772,7 +42786,7 @@ const provider85 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/mistralai/mistral-medium-3.5-128b",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -42786,7 +42800,7 @@ const provider85 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "scaleway/mistralai/mistral-small-3.2-24b-instruct-2506",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -42800,7 +42814,7 @@ const provider85 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "scaleway/mistralai/pixtral-12b-2409",
             "type": "chat",
             "inputCost": 2e-7,
@@ -42828,7 +42842,7 @@ const provider85 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/meta/llama-3.3-70b-instruct",
             "type": "chat",
             "inputCost": 9e-7,
@@ -42842,7 +42856,7 @@ const provider85 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "scaleway/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000018,
@@ -42856,7 +42870,7 @@ const provider85 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "scaleway/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 4e-7,
@@ -42873,7 +42887,7 @@ const provider85 = [
 
 const provider86 = [
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.2",
             "type": "chat",
             "inputCost": 2.69e-7,
@@ -42887,7 +42901,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2.1",
             "type": "chat",
             "inputCost": 3e-7,
@@ -42901,7 +42915,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.7",
             "type": "chat",
             "inputCost": 6e-7,
@@ -42915,7 +42929,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/xiaomimimo/mimo-v2-flash",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -42929,7 +42943,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/zai-org/autoglm-phone-9b-multilingual",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -42943,7 +42957,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100352,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -42957,7 +42971,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2",
             "type": "chat",
             "inputCost": 3e-7,
@@ -42971,7 +42985,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/paddlepaddle/paddleocr-vl",
             "type": "chat",
             "inputCost": 2e-8,
@@ -42985,7 +42999,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.2-exp",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -42999,7 +43013,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-vl-235b-a22b-thinking",
             "type": "chat",
             "inputCost": 9.8e-7,
@@ -43013,7 +43027,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.6v",
             "type": "chat",
             "inputCost": 3e-7,
@@ -43027,7 +43041,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.6",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -43041,7 +43055,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "novita/kwaipilot/kat-coder-pro",
             "type": "chat",
             "inputCost": 3e-7,
@@ -43055,7 +43069,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -43069,7 +43083,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-next-80b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -43083,7 +43097,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-ocr",
             "type": "chat",
             "inputCost": 3e-8,
@@ -43097,7 +43111,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.1-terminus",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -43111,7 +43125,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 3e-7,
@@ -43125,7 +43139,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-max",
             "type": "chat",
             "inputCost": 0.00000211,
@@ -43139,7 +43153,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/skywork/r1v4-lite",
             "type": "chat",
             "inputCost": 2e-7,
@@ -43153,7 +43167,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.1",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -43167,7 +43181,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 100352,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2-0905",
             "type": "chat",
             "inputCost": 6e-7,
@@ -43181,7 +43195,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-coder-480b-a35b-instruct",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -43195,7 +43209,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-coder-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 7e-8,
@@ -43209,7 +43223,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/openai/gpt-oss-120b",
             "type": "chat",
             "inputCost": 5e-8,
@@ -43223,7 +43237,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 100352,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2-instruct",
             "type": "chat",
             "inputCost": 5.7e-7,
@@ -43237,7 +43251,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3-0324",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -43251,7 +43265,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 98304,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -43265,7 +43279,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-235b-a22b-thinking-2507",
             "type": "chat",
             "inputCost": 3e-7,
@@ -43279,7 +43293,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3.1-8b-instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -43293,7 +43307,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/google/gemma-3-12b-it",
             "type": "chat",
             "inputCost": 5e-8,
@@ -43307,7 +43321,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.5v",
             "type": "chat",
             "inputCost": 6e-7,
@@ -43321,7 +43335,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/openai/gpt-oss-20b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -43335,7 +43349,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-235b-a22b-instruct-2507",
             "type": "chat",
             "inputCost": 9e-8,
@@ -43349,7 +43363,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-distill-qwen-14b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -43363,7 +43377,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 12288,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3.3-70b-instruct",
             "type": "chat",
             "inputCost": 1.35e-7,
@@ -43377,7 +43391,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/qwen/qwen-2.5-72b-instruct",
             "type": "chat",
             "inputCost": 3.8e-7,
@@ -43391,7 +43405,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/mistralai/mistral-nemo",
             "type": "chat",
             "inputCost": 4e-8,
@@ -43405,7 +43419,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40000,
+            "maxTokens": null,
             "name": "novita/minimaxai/minimax-m1-80k",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -43419,7 +43433,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-0528",
             "type": "chat",
             "inputCost": 7e-7,
@@ -43433,7 +43447,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-distill-qwen-32b",
             "type": "chat",
             "inputCost": 3e-7,
@@ -43447,7 +43461,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3-8b-instruct",
             "type": "chat",
             "inputCost": 4e-8,
@@ -43461,7 +43475,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/microsoft/wizardlm-2-8x22b",
             "type": "chat",
             "inputCost": 6.2e-7,
@@ -43475,7 +43489,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-0528-qwen3-8b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -43489,7 +43503,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-distill-llama-70b",
             "type": "chat",
             "inputCost": 8e-7,
@@ -43503,7 +43517,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3-70b-instruct",
             "type": "chat",
             "inputCost": 5.1e-7,
@@ -43517,7 +43531,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 20000,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-235b-a22b-fp8",
             "type": "chat",
             "inputCost": 2e-7,
@@ -43531,7 +43545,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
             "type": "chat",
             "inputCost": 2.7e-7,
@@ -43545,7 +43559,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-4-scout-17b-16e-instruct",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -43559,7 +43573,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/nousresearch/hermes-2-pro-llama-3-8b",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -43573,7 +43587,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen2.5-vl-72b-instruct",
             "type": "chat",
             "inputCost": 8e-7,
@@ -43587,7 +43601,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/sao10k/l3-70b-euryale-v2.1",
             "type": "chat",
             "inputCost": 0.00000148,
@@ -43601,7 +43615,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-21B-a3b-thinking",
             "type": "chat",
             "inputCost": 7e-8,
@@ -43615,7 +43629,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/sao10k/l3-8b-lunaris",
             "type": "chat",
             "inputCost": 5e-8,
@@ -43629,7 +43643,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/baichuan/baichuan-m2-32b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -43643,7 +43657,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-vl-424b-a47b",
             "type": "chat",
             "inputCost": 4.2e-7,
@@ -43657,7 +43671,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 12000,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-300b-a47b-paddle",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -43671,7 +43685,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 160000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-prover-v2-671b",
             "type": "chat",
             "inputCost": 7e-7,
@@ -43685,7 +43699,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 20000,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-32b-fp8",
             "type": "chat",
             "inputCost": 1e-7,
@@ -43699,7 +43713,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 20000,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-30b-a3b-fp8",
             "type": "chat",
             "inputCost": 9e-8,
@@ -43713,7 +43727,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/google/gemma-3-27b-it",
             "type": "chat",
             "inputCost": 1.19e-7,
@@ -43727,7 +43741,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3-turbo",
             "type": "chat",
             "inputCost": 4e-7,
@@ -43741,7 +43755,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1-turbo",
             "type": "chat",
             "inputCost": 7e-7,
@@ -43755,7 +43769,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/Sao10K/L3-8B-Stheno-v3.2",
             "type": "chat",
             "inputCost": 5e-8,
@@ -43769,7 +43783,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 3200,
+            "maxTokens": null,
             "name": "novita/gryphe/mythomax-l2-13b",
             "type": "chat",
             "inputCost": 9e-8,
@@ -43783,7 +43797,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-vl-28b-a3b-thinking",
             "type": "chat",
             "inputCost": 3.9e-7,
@@ -43797,7 +43811,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-vl-8b-instruct",
             "type": "chat",
             "inputCost": 8e-8,
@@ -43811,7 +43825,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 98304,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.5-air",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -43825,7 +43839,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-vl-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 2e-7,
@@ -43839,7 +43853,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-vl-30b-a3b-thinking",
             "type": "chat",
             "inputCost": 2e-7,
@@ -43853,7 +43867,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-omni-30b-a3b-thinking",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -43867,7 +43881,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-omni-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -43881,7 +43895,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/qwen/qwen-mt-plus",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -43895,7 +43909,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-vl-28b-a3b",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -43909,7 +43923,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/baidu/ernie-4.5-21B-a3b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -43923,7 +43937,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 20000,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-8b-fp8",
             "type": "chat",
             "inputCost": 3.5e-8,
@@ -43937,7 +43951,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-4b-fp8",
             "type": "chat",
             "inputCost": 3e-8,
@@ -43951,7 +43965,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/qwen/qwen2.5-7b-instruct",
             "type": "chat",
             "inputCost": 7e-8,
@@ -43965,7 +43979,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3.2-3b-instruct",
             "type": "chat",
             "inputCost": 3e-8,
@@ -43979,7 +43993,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/sao10k/l31-70b-euryale-v2.2",
             "type": "chat",
             "inputCost": 0.00000148,
@@ -43993,7 +44007,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-embedding-0.6b",
             "type": "embedding",
             "inputCost": 7e-8,
@@ -44007,7 +44021,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-embedding-8b",
             "type": "embedding",
             "inputCost": 7e-8,
@@ -44021,7 +44035,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 96000,
+            "maxTokens": null,
             "name": "novita/baai/bge-m3",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -44035,7 +44049,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -44049,7 +44063,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v4-pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -44063,7 +44077,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -44077,7 +44091,7 @@ const provider86 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "novita/tencent/hy3",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -44091,7 +44105,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -44105,7 +44119,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.499999999999999e-7,
@@ -44119,7 +44133,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -44133,7 +44147,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v4-flash-0731",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -44147,7 +44161,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/mindai/macaron-v1-venti",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -44161,7 +44175,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -44175,7 +44189,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -44189,7 +44203,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.0000016000000000000001,
@@ -44203,7 +44217,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/inclusionai/ling-3.0-flash-fast",
             "type": "chat",
             "inputCost": 6e-8,
@@ -44217,7 +44231,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.000002,
@@ -44231,7 +44245,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/inclusionai/ling-3.0-flash",
             "type": "chat",
             "inputCost": 6e-8,
@@ -44245,7 +44259,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/mindai/macaron-v1-tall",
             "type": "chat",
             "inputCost": 4.5000000000000003e-7,
@@ -44259,7 +44273,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "novita/stepfun/step-3.7-flash",
             "type": "chat",
             "inputCost": 2.0000000000000002e-7,
@@ -44273,7 +44287,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "novita/nvidia/nemotron-3-nano-30b-a3b",
             "type": "chat",
             "inputCost": 5.0000000000000004e-8,
@@ -44287,7 +44301,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/baidu/cobuddy",
             "type": "chat",
             "inputCost": 2.8e-7,
@@ -44301,7 +44315,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/xiaomimimo/mimo-v2.5",
             "type": "chat",
             "inputCost": 1.6800000000000002e-7,
@@ -44315,7 +44329,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.7-max",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -44329,7 +44343,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/xiaomimimo/mimo-v2.5-pro",
             "type": "chat",
             "inputCost": 5.22e-7,
@@ -44343,7 +44357,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.6-27b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44357,7 +44371,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2.6",
             "type": "chat",
             "inputCost": 8.000000000000001e-7,
@@ -44371,7 +44385,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5.1",
             "type": "chat",
             "inputCost": 0.00000138,
@@ -44385,7 +44399,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2.7-highspeed",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44399,7 +44413,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5v-turbo",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -44413,7 +44427,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/google/gemma-4-26b-a4b-it",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -44427,7 +44441,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/google/gemma-4-31b-it",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -44441,7 +44455,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5-turbo",
             "type": "chat",
             "inputCost": 0.0000012,
@@ -44455,7 +44469,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2.7",
             "type": "chat",
             "inputCost": 3e-7,
@@ -44469,7 +44483,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131100,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2.5-highspeed",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44483,7 +44497,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.5-27b",
             "type": "chat",
             "inputCost": 3e-7,
@@ -44497,7 +44511,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.5-122b-a10b",
             "type": "chat",
             "inputCost": 4.0000000000000003e-7,
@@ -44511,7 +44525,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.5-35b-a3b",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -44525,7 +44539,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.5-397b-a17b",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44539,7 +44553,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131100,
+            "maxTokens": null,
             "name": "novita/minimax/minimax-m2.5",
             "type": "chat",
             "inputCost": 3e-7,
@@ -44553,7 +44567,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -44567,7 +44581,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3-coder-next",
             "type": "chat",
             "inputCost": 2.0000000000000002e-7,
@@ -44581,7 +44595,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-ocr-2",
             "type": "chat",
             "inputCost": 3e-8,
@@ -44595,7 +44609,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "novita/moonshotai/kimi-k2.5",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44609,7 +44623,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.7-h",
             "type": "chat",
             "inputCost": 6e-7,
@@ -44623,7 +44637,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "novita/zai-org/glm-4.7-flash",
             "type": "chat",
             "inputCost": 7e-8,
@@ -44637,7 +44651,7 @@ const provider86 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "novita/qwen/qwen3.6-35b-a3b",
             "type": "chat",
             "inputCost": 2.48e-7,
@@ -44651,7 +44665,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek_v3",
             "type": "chat",
             "inputCost": 8.900000000000001e-7,
@@ -44665,7 +44679,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1",
             "type": "chat",
             "inputCost": 0.000004,
@@ -44679,7 +44693,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3/community",
             "type": "chat",
             "inputCost": 8.900000000000001e-7,
@@ -44693,7 +44707,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "novita/deepseek/deepseek-r1/community",
             "type": "chat",
             "inputCost": 0.000004,
@@ -44707,7 +44721,7 @@ const provider86 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/thudm/glm-4-32b-0414",
             "type": "chat",
             "inputCost": 5.5e-7,
@@ -44721,7 +44735,7 @@ const provider86 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "novita/meta-llama/llama-3.2-1b-instruct",
             "type": "chat",
             "inputCost": 2e-8,
@@ -44738,7 +44752,7 @@ const provider86 = [
 
 const provider87 = [
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/llama-3.1-8b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -44752,7 +44766,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/llama-3.2-3b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -44766,7 +44780,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/mistral-7b-v0.3",
             "type": "chat",
             "inputCost": 1e-7,
@@ -44780,7 +44794,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/qwen3-8b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -44794,7 +44808,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/dolphin3-8b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -44808,7 +44822,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "llamagate/deepseek-r1-8b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -44822,7 +44836,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "llamagate/deepseek-r1-7b-qwen",
             "type": "chat",
             "inputCost": 8e-8,
@@ -44836,7 +44850,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/openthinker-7b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -44850,7 +44864,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/qwen2.5-coder-7b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -44864,7 +44878,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "llamagate/deepseek-coder-6.7b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -44878,7 +44892,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 4096,
+            "maxTokens": null,
             "name": "llamagate/codellama-7b",
             "type": "chat",
             "inputCost": 6e-8,
@@ -44892,7 +44906,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/qwen3-vl-8b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -44906,7 +44920,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 2048,
+            "maxTokens": null,
             "name": "llamagate/llava-7b",
             "type": "chat",
             "inputCost": 1e-7,
@@ -44920,7 +44934,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/gemma3-4b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -44934,7 +44948,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "llamagate/nomic-embed-text",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -44948,7 +44962,7 @@ const provider87 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 40960,
+            "maxTokens": null,
             "name": "llamagate/qwen3-embedding-8b",
             "type": "embedding",
             "inputCost": 2e-8,
@@ -44965,7 +44979,7 @@ const provider87 = [
 
 const provider88 = [
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "libertai/hermes-3-8b-tee",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -44979,7 +44993,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/gemma-4-31b-it",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -44993,7 +45007,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/gemma-4-31b-it-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45007,7 +45021,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.6-27b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45021,7 +45035,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.6-27b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45035,7 +45049,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.6-35b-a3b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45049,7 +45063,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.6-35b-a3b-thinking",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45063,7 +45077,7 @@ const provider88 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.5-122b-a10b",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -45077,7 +45091,7 @@ const provider88 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "libertai/qwen3.5-122b-a10b-thinking",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -45091,7 +45105,7 @@ const provider88 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "libertai/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -45105,7 +45119,7 @@ const provider88 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 200000,
+            "maxTokens": null,
             "name": "libertai/deepseek-v4-flash-thinking",
             "type": "chat",
             "inputCost": 2.5e-7,
@@ -45119,7 +45133,7 @@ const provider88 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8192,
+            "maxTokens": null,
             "name": "libertai/bge-m3",
             "type": "embedding",
             "inputCost": 1e-8,
@@ -45136,7 +45150,7 @@ const provider88 = [
 
 const provider89 = [
         {
-            "maxTokens": 32000,
+            "maxTokens": null,
             "name": "sarvam/sarvam-m",
             "type": "chat",
             "inputCost": 0,
@@ -45153,7 +45167,7 @@ const provider89 = [
 
 const provider90 = [
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45167,7 +45181,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -45181,7 +45195,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-120b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45195,7 +45209,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-20b",
             "type": "chat",
             "inputCost": 7e-8,
@@ -45209,7 +45223,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-sol",
             "type": "responses",
             "inputCost": 0.0000044,
@@ -45223,7 +45237,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-terra",
             "type": "responses",
             "inputCost": 0.0000022,
@@ -45237,7 +45251,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-cyber",
             "type": "responses",
             "inputCost": 0.00001375,
@@ -45251,7 +45265,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-daybreak-blue-5.6-sol",
             "type": "responses",
             "inputCost": 0.0000044,
@@ -45265,7 +45279,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-luna",
             "type": "responses",
             "inputCost": 2.2e-7,
@@ -45279,7 +45293,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-astra",
             "type": "responses",
             "inputCost": 0.000011,
@@ -45293,7 +45307,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-sol",
             "type": "responses",
             "inputCost": 0.0000022,
@@ -45307,7 +45321,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-luna",
             "type": "responses",
             "inputCost": 1.1e-7,
@@ -45321,7 +45335,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.5",
             "type": "responses",
             "inputCost": 0.0000055,
@@ -45335,7 +45349,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.4",
             "type": "responses",
             "inputCost": 0.00000275,
@@ -45349,7 +45363,7 @@ const provider90 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-31b",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -45363,7 +45377,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-26b-a4b",
             "type": "chat",
             "inputCost": 1.3e-7,
@@ -45377,7 +45391,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-e2b",
             "type": "chat",
             "inputCost": 4e-8,
@@ -45391,7 +45405,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/xai.grok-4.3",
             "type": "chat",
             "inputCost": 0.00000125,
@@ -45405,7 +45419,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "bedrock_mantle/xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -45419,7 +45433,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.000001,
@@ -45433,7 +45447,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000044,
@@ -45447,7 +45461,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000022,
@@ -45461,7 +45475,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra",
             "type": "responses",
             "inputCost": 0.0000027,
@@ -45475,7 +45489,7 @@ const provider90 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna",
             "type": "responses",
             "inputCost": 2.7e-7,
@@ -45489,7 +45503,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.4",
             "type": "responses",
             "inputCost": 0.000003375,
@@ -45503,7 +45517,7 @@ const provider90 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.3",
             "type": "chat",
             "inputCost": 0.0000015,
@@ -45517,7 +45531,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.00000264,
@@ -45531,7 +45545,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-e2b",
             "type": "chat",
             "inputCost": 4.8e-8,
@@ -45545,7 +45559,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-26b-a4b",
             "type": "chat",
             "inputCost": 1.56e-7,
@@ -45559,7 +45573,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-31b",
             "type": "chat",
             "inputCost": 1.68e-7,
@@ -45573,7 +45587,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -45587,7 +45601,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -45601,7 +45615,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5",
             "type": "chat",
             "inputCost": 0.0000048,
@@ -45615,7 +45629,7 @@ const provider90 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
             "inputCost": 0.0000024,
@@ -45629,7 +45643,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-5.4",
             "type": "responses",
             "inputCost": 0.0000033,
@@ -45643,7 +45657,7 @@ const provider90 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/xai.grok-4.6",
             "type": "chat",
             "inputCost": 0.00000264,
@@ -45657,7 +45671,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-20b",
             "type": "chat",
             "inputCost": 8.4e-8,
@@ -45671,7 +45685,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16384,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-120b",
             "type": "chat",
             "inputCost": 1.8e-7,
@@ -45685,7 +45699,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock_mantle/deepseek.v3.1",
             "type": "chat",
             "inputCost": 5.8e-7,
@@ -45699,7 +45713,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock_mantle/moonshotai.kimi-k2-thinking",
             "type": "chat",
             "inputCost": 6e-7,
@@ -45713,7 +45727,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-235b-a22b-2507",
             "type": "chat",
             "inputCost": 2.2e-7,
@@ -45727,7 +45741,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-32b",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45741,7 +45755,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -45755,7 +45769,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 16000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -45769,7 +45783,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -45783,7 +45797,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 8000,
+            "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct",
             "type": "chat",
             "inputCost": 5.3e-7,
@@ -45797,7 +45811,7 @@ const provider90 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6.1-sol",
             "type": "responses",
             "inputCost": 0.0000022,
@@ -45811,7 +45825,7 @@ const provider90 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.1e-7,
@@ -45825,7 +45839,7 @@ const provider90 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.2e-7,
@@ -45985,7 +45999,7 @@ const provider91 = [
 
 const provider92 = [
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "tencent/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000174,
@@ -45999,7 +46013,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "tencent/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -46013,7 +46027,7 @@ const provider92 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "tencent/deepseek-v4-pro-0813",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -46027,7 +46041,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "tencent/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -46041,7 +46055,7 @@ const provider92 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "tencent/glm-5.3-flashx",
             "type": "chat",
             "inputCost": 3.7e-7,
@@ -46055,7 +46069,7 @@ const provider92 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "tencent/glm-5.3-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -46069,7 +46083,7 @@ const provider92 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "tencent/glm-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -46083,7 +46097,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "tencent/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -46097,7 +46111,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "tencent/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -46111,7 +46125,7 @@ const provider92 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 1000000,
+            "maxTokens": null,
             "name": "tencent/kimi-k2.8-preview",
             "type": "chat",
             "inputCost": 0.000001,
@@ -46125,7 +46139,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "tencent/kimi-k2.7-code-highspeed",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -46139,7 +46153,7 @@ const provider92 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "tencent/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -46215,7 +46229,7 @@ const provider93 = [
 
 const provider94 = [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "pinstripes/ps/glm-4.5-air",
             "type": "chat",
             "inputCost": 1.25e-7,
@@ -46229,7 +46243,7 @@ const provider94 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "pinstripes/ps/qwen3.6-35b-a3b",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -46243,7 +46257,7 @@ const provider94 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "pinstripes/ps/qwen3-30b-a3b",
             "type": "chat",
             "inputCost": 9e-8,
@@ -46257,7 +46271,7 @@ const provider94 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "pinstripes/ps/qwen3-coder-30b-a3b",
             "type": "chat",
             "inputCost": 3e-7,
@@ -46271,7 +46285,7 @@ const provider94 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 163840,
+            "maxTokens": null,
             "name": "pinstripes/ps/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1e-7,
@@ -46285,7 +46299,7 @@ const provider94 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1000192,
+            "maxTokens": null,
             "name": "pinstripes/ps/minimax-m2.7",
             "type": "chat",
             "inputCost": 2.55e-7,
@@ -46302,7 +46316,7 @@ const provider94 = [
 
 const provider95 = [
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "darkbloom/gemma-4-26b",
             "type": "chat",
             "inputCost": 3e-8,
@@ -46316,7 +46330,7 @@ const provider95 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "darkbloom/gpt-oss-20b",
             "type": "chat",
             "inputCost": 1.45e-8,
@@ -46333,7 +46347,7 @@ const provider95 = [
 
 const provider96 = [
         {
-            "maxTokens": 65500,
+            "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
             "type": "chat",
             "inputCost": 3e-8,
@@ -46347,7 +46361,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/agnes-2.5-pro",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -46361,7 +46375,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/cc-glm-5.1",
             "type": "chat",
             "inputCost": 6e-8,
@@ -46375,7 +46389,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/claude-fable-5",
             "type": "chat",
             "inputCost": 0.000011,
@@ -46389,7 +46403,7 @@ const provider96 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "aihubmix/claude-haiku-4-5",
             "type": "chat",
             "inputCost": 0.0000011,
@@ -46403,7 +46417,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/claude-opus-4-8-think",
             "type": "chat",
             "inputCost": 0.000005,
@@ -46417,7 +46431,7 @@ const provider96 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/claude-opus-5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -46431,7 +46445,7 @@ const provider96 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/claude-sonnet-5",
             "type": "chat",
             "inputCost": 0.000002,
@@ -46445,7 +46459,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/coding-glm-5.3",
             "type": "chat",
             "inputCost": 6e-8,
@@ -46459,7 +46473,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "aihubmix/coding-kimi-k3",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -46487,7 +46501,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/coding-xiaomi-mimo-v2.5",
             "type": "chat",
             "inputCost": 8e-8,
@@ -46501,7 +46515,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/coding-xiaomi-mimo-v2.5-pro",
             "type": "chat",
             "inputCost": 2e-7,
@@ -46515,7 +46529,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "aihubmix/command-a-plus-05-2026",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -46529,7 +46543,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "aihubmix/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.42e-7,
@@ -46543,7 +46557,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "aihubmix/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000169,
@@ -46557,7 +46571,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/doubao-seed-2-0-code-preview",
             "type": "chat",
             "inputCost": 4.822e-7,
@@ -46571,7 +46585,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/doubao-seed-2-0-lite-260428",
             "type": "chat",
             "inputCost": 9.041e-8,
@@ -46585,7 +46599,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/doubao-seed-2-0-mini",
             "type": "chat",
             "inputCost": 3.0136e-8,
@@ -46599,7 +46613,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/doubao-seed-2-0-pro",
             "type": "chat",
             "inputCost": 4.822e-7,
@@ -46613,7 +46627,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "aihubmix/doubao-seed-2-1-turbo",
             "type": "chat",
             "inputCost": 4.6475e-7,
@@ -46627,7 +46641,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/ernie-5.1",
             "type": "chat",
             "inputCost": 5.634e-7,
@@ -46641,7 +46655,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3-flash-preview",
             "type": "chat",
             "inputCost": 5e-7,
@@ -46655,7 +46669,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3-flash-preview-search",
             "type": "chat",
             "inputCost": 5e-7,
@@ -46669,7 +46683,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3.1-pro-preview",
             "type": "chat",
             "inputCost": 0.000002,
@@ -46683,7 +46697,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3.1-pro-preview-customtools",
             "type": "chat",
             "inputCost": 0.000002,
@@ -46697,7 +46711,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3.5-flash-lite",
             "type": "chat",
             "inputCost": 3e-7,
@@ -46711,7 +46725,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/gemini-3.7-flash",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -46725,7 +46739,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131100,
+            "maxTokens": null,
             "name": "aihubmix/gemma-4-26b-a4b-it",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -46739,7 +46753,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131100,
+            "maxTokens": null,
             "name": "aihubmix/gemma-4-31b-it",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -46753,7 +46767,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/glm-5.2-fast-preview",
             "type": "chat",
             "inputCost": 0.000002254,
@@ -46767,7 +46781,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/glm-5.3",
             "type": "chat",
             "inputCost": 0.0000011268,
@@ -46781,7 +46795,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/glm-5.3-flash",
             "type": "chat",
             "inputCost": 1.1268e-7,
@@ -46795,7 +46809,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/glm-5v-turbo",
             "type": "chat",
             "inputCost": 7.042e-7,
@@ -46809,7 +46823,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.3-codex",
             "type": "chat",
             "inputCost": 0.00000175,
@@ -46823,7 +46837,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.4-high",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -46837,7 +46851,7 @@ const provider96 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.4-low",
             "type": "chat",
             "inputCost": 0.0000025,
@@ -46851,7 +46865,7 @@ const provider96 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.4-mini",
             "type": "chat",
             "inputCost": 7.5e-7,
@@ -46865,7 +46879,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.4-nano",
             "type": "chat",
             "inputCost": 2e-7,
@@ -46879,7 +46893,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.5",
             "type": "chat",
             "inputCost": 0.000005,
@@ -46893,7 +46907,7 @@ const provider96 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.5-pro",
             "type": "chat",
             "inputCost": 0.00003,
@@ -46907,7 +46921,7 @@ const provider96 = [
             "priceTier": 5
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.6-luna",
             "type": "chat",
             "inputCost": 2e-7,
@@ -46921,7 +46935,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.6-sol-disc",
             "type": "chat",
             "inputCost": 0.000004,
@@ -46935,7 +46949,7 @@ const provider96 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-5.6-terra",
             "type": "chat",
             "inputCost": 0.000002,
@@ -46949,7 +46963,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/gpt-chat-latest",
             "type": "chat",
             "inputCost": 0.000005,
@@ -46991,7 +47005,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "aihubmix/grok-4.6",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47005,7 +47019,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 256000,
+            "maxTokens": null,
             "name": "aihubmix/grok-build-0.1",
             "type": "chat",
             "inputCost": 0.000001,
@@ -47019,7 +47033,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "aihubmix/hy3",
             "type": "chat",
             "inputCost": 1.562e-7,
@@ -47033,7 +47047,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "aihubmix/hy4-preview",
             "type": "chat",
             "inputCost": 8.45e-7,
@@ -47047,7 +47061,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "aihubmix/kimi-k2.6",
             "type": "chat",
             "inputCost": 9.5e-7,
@@ -47061,7 +47075,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "aihubmix/kimi-k2.7-code-highspeed",
             "type": "chat",
             "inputCost": 0.0000019,
@@ -47075,7 +47089,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 1048576,
+            "maxTokens": null,
             "name": "aihubmix/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -47089,7 +47103,7 @@ const provider96 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/longcat-2.0",
             "type": "chat",
             "inputCost": 7.746e-7,
@@ -47103,7 +47117,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "aihubmix/mai-thinking-1",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47145,7 +47159,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 204800,
+            "maxTokens": null,
             "name": "aihubmix/minimax-m2.7",
             "type": "chat",
             "inputCost": 2.958e-7,
@@ -47159,7 +47173,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 524288,
+            "maxTokens": null,
             "name": "aihubmix/minimax-m3",
             "type": "chat",
             "inputCost": 2.88e-7,
@@ -47187,7 +47201,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3-coder-next",
             "type": "chat",
             "inputCost": 1.37e-7,
@@ -47201,7 +47215,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.5-122b-a10b",
             "type": "chat",
             "inputCost": 1.126e-7,
@@ -47215,7 +47229,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.5-397b-a17b",
             "type": "chat",
             "inputCost": 1.644e-7,
@@ -47229,7 +47243,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.6-27b",
             "type": "chat",
             "inputCost": 4.22e-7,
@@ -47243,7 +47257,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.6-35b-a3b",
             "type": "chat",
             "inputCost": 2.54e-7,
@@ -47257,7 +47271,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.6-max-preview",
             "type": "chat",
             "inputCost": 0.000001268,
@@ -47271,7 +47285,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.7-plus",
             "type": "chat",
             "inputCost": 2.82e-7,
@@ -47285,7 +47299,7 @@ const provider96 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.8-2.4t-a95b",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47299,7 +47313,7 @@ const provider96 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.8-flash",
             "type": "chat",
             "inputCost": 1.126e-7,
@@ -47313,7 +47327,7 @@ const provider96 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "aihubmix/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.00000169,
@@ -47344,7 +47358,7 @@ const provider96 = [
 
 const provider97 = [
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
             "type": "chat",
             "inputCost": 4.35e-7,
@@ -47358,7 +47372,7 @@ const provider97 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -47375,7 +47389,7 @@ const provider97 = [
 
 const provider98 = [
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -47389,7 +47403,7 @@ const provider98 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "prism/deepseek-v4-flash",
             "type": "chat",
             "inputCost": 1.7e-7,
@@ -47496,7 +47510,7 @@ const provider100 = [
 
 const provider101 = [
         {
-            "maxTokens": 393216,
+            "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
             "type": "chat",
             "inputCost": 1.95e-7,
@@ -47510,7 +47524,7 @@ const provider101 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 32768,
+            "maxTokens": null,
             "name": "openinfer/@oi/Qwen3.5-27B",
             "type": "chat",
             "inputCost": 1.95e-7,
@@ -47524,7 +47538,7 @@ const provider101 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 100000,
+            "maxTokens": null,
             "name": "openinfer/@oi/Qwen3.5-9B",
             "type": "chat",
             "inputCost": 0.000005,
@@ -47541,7 +47555,7 @@ const provider101 = [
 
 const provider102 = [
         {
-            "maxTokens": 500000,
+            "maxTokens": null,
             "name": "opencode_go/grok-4.7",
             "type": "responses",
             "inputCost": 0.000002,
@@ -47555,7 +47569,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/gpt-6-luna",
             "type": "responses",
             "inputCost": 1.0000000000000001e-7,
@@ -47569,7 +47583,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/gpt-5.6-luna",
             "type": "responses",
             "inputCost": 2.0000000000000002e-7,
@@ -47583,7 +47597,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/claude-haiku-5-5",
             "type": "chat",
             "inputCost": 1.0000000000000001e-7,
@@ -47597,7 +47611,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "opencode_go/gemini-4-argon",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47611,7 +47625,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/glm-5.3-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -47625,7 +47639,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/glm-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -47639,7 +47653,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -47653,7 +47667,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/kimi-k3.1-pro",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47667,7 +47681,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -47681,7 +47695,7 @@ const provider102 = [
             "priceTier": 4
         },
         {
-            "maxTokens": 262144,
+            "maxTokens": null,
             "name": "opencode_go/kimi-k2.7-code",
             "type": "chat",
             "inputCost": 9.499999999999999e-7,
@@ -47695,7 +47709,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/longcat-2.0",
             "type": "chat",
             "inputCost": 3e-7,
@@ -47709,7 +47723,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "opencode_go/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 3e-7,
@@ -47723,7 +47737,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "opencode_go/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000132,
@@ -47737,7 +47751,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/mimo-v2.6-flash",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -47751,7 +47765,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/mimo-v2.6-pro",
             "type": "chat",
             "inputCost": 4.35e-7,
@@ -47765,7 +47779,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/mimo-v2.5",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -47779,7 +47793,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/mimo-v2.5-pro",
             "type": "chat",
             "inputCost": 4.35e-7,
@@ -47793,7 +47807,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 512000,
+            "maxTokens": null,
             "name": "opencode_go/minimax-m3.1-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -47807,7 +47821,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/minimax-m3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -47821,7 +47835,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/muse-spark-1.3-contributor",
             "type": "responses",
             "inputCost": 1.0000000000000001e-7,
@@ -47835,7 +47849,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/muse-spark-1.2-contributor",
             "type": "responses",
             "inputCost": 1.0000000000000001e-7,
@@ -47849,7 +47863,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/qwen3.8-max",
             "type": "chat",
             "inputCost": 0.000002,
@@ -47863,7 +47877,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/qwen3.8-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -47877,7 +47891,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "opencode_go/qwen3.7-plus",
             "type": "chat",
             "inputCost": 4.0000000000000003e-7,
@@ -47891,7 +47905,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 64000,
+            "maxTokens": null,
             "name": "opencode_go/hy4-preview",
             "type": "chat",
             "inputCost": 8.34e-7,
@@ -47905,7 +47919,7 @@ const provider102 = [
             "priceTier": 2
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "opencode_go/hy3",
             "type": "chat",
             "inputCost": 1.4e-7,
@@ -47919,7 +47933,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/longcat-2.5-preview-free",
             "type": "chat",
             "inputCost": 0,
@@ -47933,7 +47947,7 @@ const provider102 = [
             "priceTier": 1
         },
         {
-            "maxTokens": 65536,
+            "maxTokens": null,
             "name": "opencode_go/step-5-preview",
             "type": "chat",
             "inputCost": 0.000001,
@@ -47947,7 +47961,7 @@ const provider102 = [
             "priceTier": 3
         },
         {
-            "maxTokens": 131072,
+            "maxTokens": null,
             "name": "opencode_go/beam-free",
             "type": "chat",
             "inputCost": 0,
