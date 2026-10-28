@@ -45814,6 +45814,20 @@
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock_mantle/openai.gpt-6.1-terra",
+            "type": "responses",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "tensormesh": [
