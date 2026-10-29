@@ -49327,6 +49327,50 @@
             "priceTier": 1
         }
     ],
+    "bigmodel": [
+        {
+            "maxTokens": null,
+            "name": "bigmodel/glm-5.3",
+            "type": "chat",
+            "inputCost": 0.0000011428571428571428,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.857142857142857e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bigmodel/glm-5.3-flash",
+            "type": "chat",
+            "inputCost": 1.142857142857143e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.2857142857142855e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bigmodel/glm-5.3-flashx",
+            "type": "chat",
+            "inputCost": 2.857142857142857e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.142857142857142e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ],
     "typesafe": [
         {
             "maxTokens": null,
