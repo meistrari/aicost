@@ -1,7 +1,7 @@
-// Last updated: 2026-10-29T00:18:58.387Z
-// Next update: 2026-10-29T06:18:58.387Z
+// Last updated: 2026-10-29T06:11:51.639Z
+// Next update: 2026-10-29T12:11:51.639Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -3007,6 +3007,90 @@ const provider1 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4.12e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.12e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.03e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.09e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -46570,6 +46654,373 @@ const provider92 = [
 const provider93 = [
         {
             "maxTokens": null,
+            "name": "streamlake/deepseek-v4-flash-0731",
+            "type": "chat",
+            "inputCost": 4.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/DeepSeek-V4-Pro-0813",
+            "type": "chat",
+            "inputCost": 0.00000132,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000396,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/DeepSeek-V3",
+            "type": "chat",
+            "inputCost": 2.86e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001143,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.14e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/GLM-5.3",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/GLM-5.3-Flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/Kimi-K2-Instruct-0905",
+            "type": "chat",
+            "inputCost": 5.71e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002286,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.43e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-r1",
+            "type": "chat",
+            "inputCost": 5.71e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002286,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.29e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-v3.1",
+            "type": "chat",
+            "inputCost": 5.71e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001714,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.29e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-v4-pro",
+            "type": "chat",
+            "inputCost": 0.00000174,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000348,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.45e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/deepseek-v4.1-flash-260910",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/glm-5.1",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/glm-5.2",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/kimi-k2.6",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/kimi-k2.7-code",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/mimo-v2.6-flash",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/mimo-v2.6-pro",
+            "type": "chat",
+            "inputCost": 4.35e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/minimax-m3",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/qwen3.5-397b-a17b",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/qwen3.6-27b",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/qwen3.6-35b-a3b",
+            "type": "chat",
+            "inputCost": 3.75e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000225,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/qwen3.8-2.4t-a95b",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "streamlake/qwen3.8-27b",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 6.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        }
+    ] as const
+
+const provider94 = [
+        {
+            "maxTokens": null,
             "name": "tencent/deepseek-v4-pro",
             "type": "chat",
             "inputCost": 0.00000174,
@@ -46752,7 +47203,7 @@ const provider93 = [
         }
     ] as const
 
-const provider94 = [
+const provider95 = [
         {
             "maxTokens": null,
             "name": "cognition/swe-1.6",
@@ -46797,7 +47248,7 @@ const provider94 = [
         }
     ] as const
 
-const provider95 = [
+const provider96 = [
         {
             "maxTokens": null,
             "name": "pinstripes/ps/glm-4.5-air",
@@ -46884,7 +47335,7 @@ const provider95 = [
         }
     ] as const
 
-const provider96 = [
+const provider97 = [
         {
             "maxTokens": null,
             "name": "darkbloom/gemma-4-26b",
@@ -46915,7 +47366,7 @@ const provider96 = [
         }
     ] as const
 
-const provider97 = [
+const provider98 = [
         {
             "maxTokens": null,
             "name": "zerogpu/deepseek-v4.1-flash",
@@ -47100,7 +47551,7 @@ const provider97 = [
         }
     ] as const
 
-const provider98 = [
+const provider99 = [
         {
             "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
@@ -48111,7 +48562,7 @@ const provider98 = [
         }
     ] as const
 
-const provider99 = [
+const provider100 = [
         {
             "maxTokens": null,
             "name": "aiand/deepseek-ai/deepseek-v4-flash",
@@ -48296,7 +48747,7 @@ const provider99 = [
         }
     ] as const
 
-const provider100 = [
+const provider101 = [
         {
             "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
@@ -48327,7 +48778,7 @@ const provider100 = [
         }
     ] as const
 
-const provider101 = [
+const provider102 = [
         {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
@@ -48358,7 +48809,7 @@ const provider101 = [
         }
     ] as const
 
-const provider102 = [
+const provider103 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -48375,7 +48826,7 @@ const provider102 = [
         }
     ] as const
 
-const provider103 = [
+const provider104 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -48448,7 +48899,7 @@ const provider103 = [
         }
     ] as const
 
-const provider104 = [
+const provider105 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -48493,7 +48944,7 @@ const provider104 = [
         }
     ] as const
 
-const provider105 = [
+const provider106 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -48916,7 +49367,7 @@ const provider105 = [
         }
     ] as const
 
-const provider106 = [
+const provider107 = [
         {
             "maxTokens": null,
             "name": "refuseless/glm-5.3-abliterated",
@@ -48989,7 +49440,7 @@ const provider106 = [
         }
     ] as const
 
-const provider107 = [
+const provider108 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -49100,21 +49551,22 @@ export const AICostModelList: {
     readonly "sarvam": typeof provider90
     readonly "bedrock_mantle": typeof provider91
     readonly "tensormesh": typeof provider92
-    readonly "tencent": typeof provider93
-    readonly "cognition": typeof provider94
-    readonly "pinstripes": typeof provider95
-    readonly "darkbloom": typeof provider96
-    readonly "zerogpu": typeof provider97
-    readonly "aihubmix": typeof provider98
-    readonly "aiand": typeof provider99
-    readonly "xiaomi_mimo": typeof provider100
-    readonly "prism": typeof provider101
-    readonly "microsoft_365_copilot": typeof provider102
-    readonly "scaledown": typeof provider103
-    readonly "openinfer": typeof provider104
-    readonly "opencode_go": typeof provider105
-    readonly "refuseless": typeof provider106
-    readonly "typesafe": typeof provider107
+    readonly "streamlake": typeof provider93
+    readonly "tencent": typeof provider94
+    readonly "cognition": typeof provider95
+    readonly "pinstripes": typeof provider96
+    readonly "darkbloom": typeof provider97
+    readonly "zerogpu": typeof provider98
+    readonly "aihubmix": typeof provider99
+    readonly "aiand": typeof provider100
+    readonly "xiaomi_mimo": typeof provider101
+    readonly "prism": typeof provider102
+    readonly "microsoft_365_copilot": typeof provider103
+    readonly "scaledown": typeof provider104
+    readonly "openinfer": typeof provider105
+    readonly "opencode_go": typeof provider106
+    readonly "refuseless": typeof provider107
+    readonly "typesafe": typeof provider108
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -49209,19 +49661,20 @@ export const AICostModelList: {
     "sarvam": provider90,
     "bedrock_mantle": provider91,
     "tensormesh": provider92,
-    "tencent": provider93,
-    "cognition": provider94,
-    "pinstripes": provider95,
-    "darkbloom": provider96,
-    "zerogpu": provider97,
-    "aihubmix": provider98,
-    "aiand": provider99,
-    "xiaomi_mimo": provider100,
-    "prism": provider101,
-    "microsoft_365_copilot": provider102,
-    "scaledown": provider103,
-    "openinfer": provider104,
-    "opencode_go": provider105,
-    "refuseless": provider106,
-    "typesafe": provider107,
+    "streamlake": provider93,
+    "tencent": provider94,
+    "cognition": provider95,
+    "pinstripes": provider96,
+    "darkbloom": provider97,
+    "zerogpu": provider98,
+    "aihubmix": provider99,
+    "aiand": provider100,
+    "xiaomi_mimo": provider101,
+    "prism": provider102,
+    "microsoft_365_copilot": provider103,
+    "scaledown": provider104,
+    "openinfer": provider105,
+    "opencode_go": provider106,
+    "refuseless": provider107,
+    "typesafe": provider108,
 }
