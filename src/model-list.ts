@@ -1,7 +1,7 @@
-// Last updated: 2026-10-28T18:08:23.100Z
-// Next update: 2026-10-29T00:08:23.100Z
+// Last updated: 2026-10-29T00:18:58.387Z
+// Next update: 2026-10-29T06:18:58.387Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "typesafe"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -17863,13 +17863,13 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5",
             "type": "chat",
-            "inputCost": 0.00001000006,
+            "inputCost": 0.00000999999,
             "inputCostUnit": "token",
             "outputCost": 0.00005000002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.00000100002,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00001250004,
+            "cacheCreationInputCost": 0.00001249997,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -17877,13 +17877,13 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5-1",
             "type": "chat",
-            "inputCost": 0.00001000006,
+            "inputCost": 0.00000999999,
             "inputCostUnit": "token",
             "outputCost": 0.00005000002,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2.5004e-7,
+            "cacheReadInputCost": 2.4997e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00001250004,
+            "cacheCreationInputCost": 0.00001249997,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -17905,9 +17905,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4",
             "type": "chat",
-            "inputCost": 0.000015000020000000002,
+            "inputCost": 0.00001500002,
             "inputCostUnit": "token",
-            "outputCost": 0.00007500003000000001,
+            "outputCost": 0.0000750001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.00000150003,
             "cacheReadInputCostUnit": "token",
@@ -17919,9 +17919,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-1",
             "type": "chat",
-            "inputCost": 0.000015000020000000002,
+            "inputCost": 0.00001500002,
             "inputCostUnit": "token",
-            "outputCost": 0.00007500003000000001,
+            "outputCost": 0.0000750001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.00000150003,
             "cacheReadInputCostUnit": "token",
@@ -17935,7 +17935,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 0.00000500003,
             "inputCostUnit": "token",
-            "outputCost": 0.000025000010000000002,
+            "outputCost": 0.00002500001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5.0001e-7,
             "cacheReadInputCostUnit": "token",
@@ -17949,7 +17949,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 0.00000500003,
             "inputCostUnit": "token",
-            "outputCost": 0.000025000010000000002,
+            "outputCost": 0.00002500001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5.0001e-7,
             "cacheReadInputCostUnit": "token",
@@ -18045,9 +18045,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-5",
             "type": "chat",
-            "inputCost": 0.0000029999900000000002,
+            "inputCost": 0.00000299999,
             "inputCostUnit": "token",
-            "outputCost": 0.000015000020000000002,
+            "outputCost": 0.00001500002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 3.0002e-7,
             "cacheReadInputCostUnit": "token",
@@ -18059,9 +18059,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-6",
             "type": "chat",
-            "inputCost": 0.0000029999900000000002,
+            "inputCost": 0.00000299999,
             "inputCostUnit": "token",
-            "outputCost": 0.000015000020000000002,
+            "outputCost": 0.00001500002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 3.0002e-7,
             "cacheReadInputCostUnit": "token",
@@ -18073,15 +18073,15 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-5",
             "type": "chat",
-            "inputCost": 0.00000299999,
+            "inputCost": 0.00000199997,
             "inputCostUnit": "token",
-            "outputCost": 0.00001500002,
+            "outputCost": 0.00000999999,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.0002e-7,
+            "cacheReadInputCost": 1.9999e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000374997,
+            "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -18170,37 +18170,42 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-flash-image",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "inputCost": 6.2503e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000374997,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.2503e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 6.2503e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-pro-image",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "inputCost": 0.00000249998,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001500002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.00000249998,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
         },
         {
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-pro",
             "type": "chat",
             "inputCost": 0.00000249998,
+            "inputCostAbove200kTokens": 0.00000500003,
             "inputCostUnit": "token",
             "outputCost": 0.000015000020000000002,
+            "outputCostAbove200kTokens": 0.0000225,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.4997e-7,
+            "cacheReadInputCostAbove200kTokens": 5.0001e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
@@ -18238,39 +18243,41 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-8-flash",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "inputCost": 7.4998e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000374997,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.497e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 7.4998e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-7-flash",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "inputCost": 7.4998e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000374997,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.497e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 7.4998e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-6-flash",
             "type": "chat",
-            "inputCost": 0.00000187502,
+            "inputCost": 7.4998e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000937503,
+            "outputCost": 0.00000374997,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8753e-7,
+            "cacheReadInputCost": 7.497e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000187502,
+            "cacheCreationInputCost": 7.4998e-7,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
@@ -18518,7 +18525,7 @@ const provider21 = [
             "type": "responses",
             "inputCost": 0.00002999997,
             "inputCostUnit": "token",
-            "outputCost": 0.00018000003,
+            "outputCost": 0.0001800001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.00002999997,
             "cacheReadInputCostUnit": "token",
@@ -18734,6 +18741,216 @@ const provider21 = [
             "cacheCreationInputCost": 2.002e-8,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.0003e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.0001e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.001e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.2502e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0003e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-deepseek-v4-1-flash",
+            "type": "chat",
+            "inputCost": 3.0002e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000120001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.003e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.0002e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-deepseek-v4-1-flash-1017",
+            "type": "chat",
+            "inputCost": 3.0002e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000120001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.0002e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-2-5-flash-lite",
+            "type": "chat",
+            "inputCost": 1.2502e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.0001e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.253e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.2502e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-3-1-flash-lite-image",
+            "type": "chat",
+            "inputCost": 3.1248e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000187502,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.1248e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.1248e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-4-argon",
+            "type": "chat",
+            "inputCost": 0.00000249998,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001249997,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2502e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-5-4-pro",
+            "type": "responses",
+            "inputCost": 0.00002999997,
+            "inputCostUnit": "token",
+            "outputCost": 0.0001800001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.00002999997,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00002999997,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-6-1-sol",
+            "type": "responses",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0003e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-6-1-terra",
+            "type": "chat",
+            "inputCost": 0.00000100002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000500003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.998e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000124999,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-6-astra",
+            "type": "chat",
+            "inputCost": 0.00000999999,
+            "inputCostUnit": "token",
+            "outputCost": 0.00005000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.00000100002,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001249997,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-6-luna",
+            "type": "responses",
+            "inputCost": 1.0003e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.0001e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.001e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.2502e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-gpt-6-sol",
+            "type": "responses",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9999e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-grok-4-7",
+            "type": "chat",
+            "inputCost": 0.00000249998,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000750001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.2503e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-kimi-k2-7",
+            "type": "chat",
+            "inputCost": 9.4997e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000400001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8998e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 9.4997e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -21293,20 +21510,6 @@ const provider28 = [
             "outputCost": 2.8e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.8e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash",
-            "type": "chat",
-            "inputCost": 1.05e-7,
-            "inputCostUnit": "token",
-            "outputCost": 2.1e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.1e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -24982,20 +25185,6 @@ const provider28 = [
         },
         {
             "maxTokens": null,
-            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot",
-            "type": "chat",
-            "inputCost": 2.1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 8.4e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 4.2e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-us",
             "type": "chat",
             "inputCost": 4.5e-7,
@@ -25035,20 +25224,6 @@ const provider28 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
-        },
-        {
-            "maxTokens": null,
-            "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-spot",
-            "type": "chat",
-            "inputCost": 0.0000021,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000105,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.1e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -25374,20 +25549,6 @@ const provider28 = [
         },
         {
             "maxTokens": null,
-            "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot",
-            "type": "chat",
-            "inputCost": 9.8e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000308,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.82e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
-        },
-        {
-            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-us",
             "type": "chat",
             "inputCost": 0.0000021,
@@ -25636,20 +25797,6 @@ const provider28 = [
         },
         {
             "maxTokens": null,
-            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
-            "type": "chat",
-            "inputCost": 2.1e-7,
-            "inputCostUnit": "token",
-            "outputCost": 8.4e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 4.2e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash",
             "type": "chat",
             "inputCost": 1.5e-7,
@@ -25671,6 +25818,76 @@ const provider28 = [
             "outputCost": 0.0000018,
             "outputCostUnit": "token",
             "cacheReadInputCost": 9e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 1.05e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-spot",
+            "type": "chat",
+            "inputCost": 0.0000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000105,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-spot",
+            "type": "chat",
+            "inputCost": 9.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000308,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.82e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-spot",
+            "type": "chat",
+            "inputCost": 2.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
+            "type": "chat",
+            "inputCost": 2.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -30779,6 +30996,20 @@ const provider52 = [
         },
         {
             "maxTokens": null,
+            "name": "mistral/deepseek-v4-1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
             "name": "mistral/zai-glm-5-3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -30921,29 +31152,29 @@ const provider52 = [
             "maxTokens": null,
             "name": "mistral/mistral-large-4",
             "type": "chat",
-            "inputCost": 6.8e-7,
+            "inputCost": 0.00000136,
             "inputCostUnit": "token",
-            "outputCost": 0.00000209,
+            "outputCost": 0.00000418,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 6.8e-8,
+            "cacheReadInputCost": 1.4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": null,
             "name": "mistral/mistral-large-4-0",
             "type": "chat",
-            "inputCost": 6.8e-7,
+            "inputCost": 0.00000136,
             "inputCostUnit": "token",
-            "outputCost": 0.00000209,
+            "outputCost": 0.00000418,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 6.8e-8,
+            "cacheReadInputCost": 1.4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -46687,6 +46918,191 @@ const provider96 = [
 const provider97 = [
         {
             "maxTokens": null,
+            "name": "zerogpu/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/glm-5.3-flash",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/gpt-4.1-mini",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/gpt-5.4-nano",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/gpt-6-luna",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/LFM2.5-1.2B-Instruct",
+            "type": "chat",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/LFM2.5-1.2B-Thinking",
+            "type": "chat",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/llama-3.1-8b-instruct-fast",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/llama-3.2-3b-instruct-fast",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/qwen3-30b-a3b-fp8",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "zerogpu/qwen3.6-35b-a3b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ] as const
+
+const provider98 = [
+        {
+            "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
             "type": "chat",
             "inputCost": 3e-8,
@@ -47695,7 +48111,7 @@ const provider97 = [
         }
     ] as const
 
-const provider98 = [
+const provider99 = [
         {
             "maxTokens": null,
             "name": "aiand/deepseek-ai/deepseek-v4-flash",
@@ -47880,7 +48296,7 @@ const provider98 = [
         }
     ] as const
 
-const provider99 = [
+const provider100 = [
         {
             "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
@@ -47911,7 +48327,7 @@ const provider99 = [
         }
     ] as const
 
-const provider100 = [
+const provider101 = [
         {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
@@ -47942,7 +48358,7 @@ const provider100 = [
         }
     ] as const
 
-const provider101 = [
+const provider102 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -47959,7 +48375,7 @@ const provider101 = [
         }
     ] as const
 
-const provider102 = [
+const provider103 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -48032,7 +48448,7 @@ const provider102 = [
         }
     ] as const
 
-const provider103 = [
+const provider104 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -48077,7 +48493,7 @@ const provider103 = [
         }
     ] as const
 
-const provider104 = [
+const provider105 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -48500,7 +48916,7 @@ const provider104 = [
         }
     ] as const
 
-const provider105 = [
+const provider106 = [
         {
             "maxTokens": null,
             "name": "refuseless/glm-5.3-abliterated",
@@ -48573,7 +48989,7 @@ const provider105 = [
         }
     ] as const
 
-const provider106 = [
+const provider107 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -48688,16 +49104,17 @@ export const AICostModelList: {
     readonly "cognition": typeof provider94
     readonly "pinstripes": typeof provider95
     readonly "darkbloom": typeof provider96
-    readonly "aihubmix": typeof provider97
-    readonly "aiand": typeof provider98
-    readonly "xiaomi_mimo": typeof provider99
-    readonly "prism": typeof provider100
-    readonly "microsoft_365_copilot": typeof provider101
-    readonly "scaledown": typeof provider102
-    readonly "openinfer": typeof provider103
-    readonly "opencode_go": typeof provider104
-    readonly "refuseless": typeof provider105
-    readonly "typesafe": typeof provider106
+    readonly "zerogpu": typeof provider97
+    readonly "aihubmix": typeof provider98
+    readonly "aiand": typeof provider99
+    readonly "xiaomi_mimo": typeof provider100
+    readonly "prism": typeof provider101
+    readonly "microsoft_365_copilot": typeof provider102
+    readonly "scaledown": typeof provider103
+    readonly "openinfer": typeof provider104
+    readonly "opencode_go": typeof provider105
+    readonly "refuseless": typeof provider106
+    readonly "typesafe": typeof provider107
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -48796,14 +49213,15 @@ export const AICostModelList: {
     "cognition": provider94,
     "pinstripes": provider95,
     "darkbloom": provider96,
-    "aihubmix": provider97,
-    "aiand": provider98,
-    "xiaomi_mimo": provider99,
-    "prism": provider100,
-    "microsoft_365_copilot": provider101,
-    "scaledown": provider102,
-    "openinfer": provider103,
-    "opencode_go": provider104,
-    "refuseless": provider105,
-    "typesafe": provider106,
+    "zerogpu": provider97,
+    "aihubmix": provider98,
+    "aiand": provider99,
+    "xiaomi_mimo": provider100,
+    "prism": provider101,
+    "microsoft_365_copilot": provider102,
+    "scaledown": provider103,
+    "openinfer": provider104,
+    "opencode_go": provider105,
+    "refuseless": provider106,
+    "typesafe": provider107,
 }
