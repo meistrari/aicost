@@ -198,8 +198,9 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         ? Math.min(promptTokens, rawCacheReadInputTokens)
         : rawCacheReadInputTokens
     const cacheCreationInputTokens = toNonNegativeAmount(options.cacheCreationInputTokens)
-    const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, toNonNegativeAmount(options.outputAmount))
     const thinkingTokens = toNonNegativeAmount(metadata?.thoughtsTokenCount)
+    // Callers pass inclusive output totals; a thinking-only response may omit candidates.
+    const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, Math.max(0, toNonNegativeAmount(options.outputAmount) - thinkingTokens))
     const toolUsePromptTokens = toNonNegativeAmount(metadata?.toolUsePromptTokenCount)
     const accountedMetadataTokens = promptTokens + candidateTokens + thinkingTokens
     const reportedTotalTokens = toNonNegativeAmount(metadata?.totalTokenCount, accountedMetadataTokens)
@@ -224,6 +225,9 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         outputCost: serviceTier === 'standard' ? modelInfo.outputCost : null,
         cacheReadInputCost: serviceTier === 'standard' ? modelInfo.cacheReadInputCost : null,
         cacheCreationInputCost: serviceTier === 'standard' ? modelInfo.cacheCreationInputCost : null,
+        inputAudioCost: undefined as number | undefined,
+        outputAudioCost: undefined as number | undefined,
+        cacheReadAudioCost: undefined as number | undefined,
         cacheCreationInputCost1h: undefined as number | undefined,
         cacheCreationInputCost12h: undefined as number | undefined,
     }
@@ -257,9 +261,36 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     if ((writes1h > 0 && rates.cacheCreationInputCost1h == null) || (writes12h > 0 && rates.cacheCreationInputCost12h == null))
         throw new Error(`Missing cache TTL rate for ${options.provider}/${options.model}`)
     const multiplier = options.provider === 'anthropic' && options.inferenceGeo === 'us' ? 1.1 : 1
-    const resolvedInputCost = price(rates.inputCost, inputAmount, 'input') * multiplier
-    const resolvedOutputCost = price(rates.outputCost, outputAmount, 'output') * multiplier
-    const resolvedCacheReadInputCost = price(rates.cacheReadInputCost, cacheReadInputTokens, 'cache read') * multiplier
+    const audioTokens = (details?: GoogleModalityTokenCount[]) => (details ?? []).reduce((total, item) =>
+        item.modality?.toUpperCase() === 'AUDIO' ? total + toNonNegativeAmount(item.tokenCount) : total, 0)
+    const promptAudioTokens = audioTokens(metadata?.promptTokensDetails)
+    const outputAudioTokens = audioTokens(metadata?.candidatesTokensDetails)
+    let cachedAudioTokens = audioTokens(metadata?.cacheTokensDetails)
+    if (promptAudioTokens > 0 && cacheReadInputTokens > 0 && !metadata?.cacheTokensDetails?.length) {
+        if (promptAudioTokens === promptTokens) {
+            cachedAudioTokens = cacheReadInputTokens
+        }
+        else if ((rates.inputAudioCost !== undefined && rates.inputAudioCost !== rates.inputCost)
+            || (rates.cacheReadAudioCost !== undefined && rates.cacheReadAudioCost !== rates.cacheReadInputCost)) {
+            throw new Error('Missing cache modality breakdown for mixed audio input')
+        }
+    }
+    if (promptAudioTokens > promptTokens || cachedAudioTokens > promptAudioTokens || cachedAudioTokens > cacheReadInputTokens || outputAudioTokens > outputAmount)
+        throw new Error('Modality token counts exceed their totals')
+    // With identical audio/text rates an unknown cache modality split cannot affect cost.
+    const inputAudioTokens = Math.min(inputAmount, promptAudioTokens - cachedAudioTokens)
+    const resolvedInputCost = (
+        price(rates.inputCost, inputAmount - inputAudioTokens, 'input')
+        + price(rates.inputAudioCost ?? rates.inputCost, inputAudioTokens, 'audio input')
+    ) * multiplier
+    const resolvedOutputCost = (
+        price(rates.outputCost, outputAmount - outputAudioTokens, 'output')
+        + price(rates.outputAudioCost ?? rates.outputCost, outputAudioTokens, 'audio output')
+    ) * multiplier
+    const resolvedCacheReadInputCost = (
+        price(rates.cacheReadInputCost, cacheReadInputTokens - cachedAudioTokens, 'cache read')
+        + price(rates.cacheReadAudioCost ?? rates.cacheReadInputCost, cachedAudioTokens, 'audio cache read')
+    ) * multiplier
     const resolvedCacheCreationInputCost = (
         price(rates.cacheCreationInputCost, defaultWrites, 'cache write')
         + price(rates.cacheCreationInputCost1h, writes1h, 'one-hour cache write')

@@ -5212,6 +5212,11 @@
                     "aboveInputTokens": 0,
                     "inputCost": 0.0000021875,
                     "outputCost": 0.0000175
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000125
                 }
             ]
         },
@@ -5241,7 +5246,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5269,7 +5281,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5332,6 +5351,11 @@
                     "aboveInputTokens": 0,
                     "inputCost": 0.00000240625,
                     "outputCost": 0.00001925
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
                 }
             ]
         },
@@ -11963,7 +11987,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11977,7 +12009,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11991,7 +12031,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12005,7 +12053,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12019,7 +12075,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12033,7 +12097,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12047,7 +12119,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12097,7 +12177,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18408,7 +18496,14 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21700,7 +21795,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21714,7 +21817,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21728,7 +21839,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21742,7 +21861,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21756,7 +21883,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21770,7 +21905,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21784,7 +21927,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21798,7 +21949,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21870,7 +22029,15 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26992,7 +27159,15 @@
                     "inputCost": 5.6252e-7,
                     "outputCost": 0.00000337498,
                     "cacheReadInputCost": 5.628e-8,
-                    "cacheCreationInputCost": 5.6252e-7
+                    "cacheCreationInputCost": 5.6252e-7,
+                    "inputAudioCost": 0.00000112497,
+                    "cacheReadAudioCost": 1.1249e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 6.251e-8,
+                    "inputAudioCost": 6.2503e-7
                 }
             ]
         },
@@ -27085,7 +27260,15 @@
                     "inputCost": 0.00000112497,
                     "outputCost": 0.00000675003,
                     "cacheReadInputCost": 1.1249e-7,
-                    "cacheCreationInputCost": 0.00000112497
+                    "cacheCreationInputCost": 0.00000112497,
+                    "inputAudioCost": 0.00000225001,
+                    "cacheReadAudioCost": 2.2498e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.2502e-7,
+                    "inputAudioCost": 0.00000124999
                 }
             ]
         },
@@ -28001,7 +28184,15 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.2502e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.752e-8,
+                    "inputAudioCost": 3.7499e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -30364,7 +30555,15 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.45e-7,
+                    "inputAudioCost": 0.000001725
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35875,6 +36074,7 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
                     "inputCost": 1.5e-7,
                     "outputCost": 0.00000125
                 },
@@ -35890,7 +36090,14 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 5.4e-8,
                     "inputCost": 5.4e-7,
+                    "inputAudioCost": 0.0000018,
                     "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -35906,7 +36113,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35927,7 +36141,8 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.25e-8,
                     "inputCost": 1.25e-7,
-                    "outputCost": 7.5e-7
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7
                 },
                 {
                     "serviceTier": "flex",
@@ -35941,7 +36156,14 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 4.5e-8,
                     "inputCost": 4.5e-7,
+                    "inputAudioCost": 9e-7,
                     "outputCost": 0.0000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
                 }
             ]
         },
@@ -36022,6 +36244,7 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-8,
                     "inputCost": 5e-8,
                     "outputCost": 2e-7
                 },
@@ -36037,7 +36260,14 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.8e-8,
                     "inputCost": 1.8e-7,
+                    "inputAudioCost": 5.4e-7,
                     "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3e-8,
+                    "inputAudioCost": 3e-7
                 }
             ]
         },
@@ -36053,7 +36283,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36067,7 +36304,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36242,6 +36486,12 @@
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
                     "inputCost": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7e-7,
+                    "outputAudioCost": 0.00002
                 }
             ]
         },
@@ -36257,7 +36507,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36321,7 +36578,13 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
                     "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
                 }
             ]
         },
@@ -36342,7 +36605,13 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
                     "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
                 }
             ]
         },
@@ -36377,6 +36646,7 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
                     "inputCost": 2.5e-7,
                     "outputCost": 0.0000015
                 },
@@ -36390,8 +36660,15 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
                     "inputCost": 9e-7,
                     "outputCost": 0.0000054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -36407,7 +36684,14 @@
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36441,8 +36725,14 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
                     "outputCost": 0.0000162,
                     "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
                 }
             ]
         },
@@ -36758,7 +37048,14 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36779,7 +37076,8 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.25e-8,
                     "inputCost": 1.25e-7,
-                    "outputCost": 7.5e-7
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7
                 },
                 {
                     "serviceTier": "flex",
@@ -36793,7 +37091,14 @@
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 4.5e-8,
                     "inputCost": 4.5e-7,
+                    "inputAudioCost": 9e-7,
                     "outputCost": 0.0000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
                 }
             ]
         },
@@ -36877,6 +37182,11 @@
                     "cacheReadInputCost": 5e-8,
                     "inputCost": 5e-7,
                     "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -36961,6 +37271,7 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
                     "inputCost": 2.5e-7,
                     "outputCost": 0.0000015
                 },
@@ -36974,8 +37285,15 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
                     "inputCost": 9e-7,
                     "outputCost": 0.0000054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -37011,8 +37329,14 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
                     "outputCost": 0.0000162,
                     "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
                 }
             ]
         },
@@ -37289,7 +37613,13 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
                     "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
                 }
             ]
         },
@@ -37310,7 +37640,13 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
                     "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
                 }
             ]
         },
@@ -37505,8 +37841,14 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
                     "inputCost": 7.5e-8,
                     "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -37527,8 +37869,14 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "inputAudioCost": 3.75e-8,
                     "inputCost": 3.75e-8,
                     "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7.5e-8
                 }
             ]
         },
@@ -37578,6 +37926,11 @@
                     "cacheReadInputCost": 5e-8,
                     "inputCost": 5e-7,
                     "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
                 }
             ]
         },
@@ -37599,6 +37952,7 @@
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 5e-8,
+                    "inputAudioCost": 0.000001,
                     "inputCost": 0.000001,
                     "outputCost": 0.000005
                 },
@@ -37613,8 +37967,14 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.8e-7,
+                    "inputAudioCost": 0.0000036,
                     "inputCost": 0.0000036,
                     "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000002
                 }
             ]
         },
@@ -37636,6 +37996,7 @@
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
                     "inputCost": 0.000002,
                     "outputCost": 0.00001
                 },
@@ -37650,8 +38011,14 @@
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
                     "inputCost": 0.0000072,
                     "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
                 }
             ]
         }

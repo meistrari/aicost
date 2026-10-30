@@ -13,6 +13,55 @@ afterAll(() => {
 })
 
 describe('provider billing dimensions', () => {
+    it('counts thinking-only Google output once when candidate usage is omitted', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-flash',
+            inputAmount: 10,
+            outputAmount: 50,
+            usageMetadata: { promptTokenCount: 10, thoughtsTokenCount: 50, totalTokenCount: 60 },
+        })
+        expect(cost.outputCost).toBeCloseTo(50 * 2.5e-6, 12)
+    })
+
+    it('prices Gemini audio and cached audio at their own rates', async () => {
+        const cost = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-flash',
+            inputAmount: 0,
+            strict: true,
+            usageMetadata: {
+                promptTokenCount: 1000,
+                cachedContentTokenCount: 400,
+                candidatesTokenCount: 20,
+                thoughtsTokenCount: 10,
+                totalTokenCount: 1030,
+                promptTokensDetails: [{ modality: 'TEXT', tokenCount: 200 }, { modality: 'AUDIO', tokenCount: 800 }],
+                cacheTokensDetails: [{ modality: 'TEXT', tokenCount: 100 }, { modality: 'AUDIO', tokenCount: 300 }],
+            },
+        })
+        expect(cost.inputCost).toBeCloseTo(100 * 0.3e-6 + 500 * 1e-6, 12)
+        expect(cost.cacheReadInputCost).toBeCloseTo(100 * 0.03e-6 + 300 * 0.1e-6, 12)
+        expect(cost.outputCost).toBeCloseTo(30 * 2.5e-6, 12)
+    })
+
+    it('rejects ambiguous mixed-audio cache usage when modality rates differ', async () => {
+        const error = await calculateCost({
+            provider: 'vertex-ai',
+            model: 'gemini-2.5-flash',
+            inputAmount: 0,
+            usageMetadata: { promptTokenCount: 1000, cachedContentTokenCount: 400, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 800 }] },
+        }).then(() => null, (error: Error) => error.message)
+        expect(error).toContain('Missing cache modality breakdown')
+    })
+
+    it('extracts audio rates including service and context tiers', () => {
+        expect(extractTokenPricing({ input_cost_per_audio_token: 1e-6, cache_read_input_audio_token_cost: 0.1e-6, input_cost_per_audio_token_above_200k_tokens_priority: 2e-6 })).toEqual([
+            { serviceTier: 'priority', aboveInputTokens: 200000, inputAudioCost: 2e-6 },
+            { serviceTier: 'standard', aboveInputTokens: 0, inputAudioCost: 1e-6, cacheReadAudioCost: 0.1e-6 },
+        ])
+    })
+
     it('charges Haiku 5.5 at its 100k boundary including cached context', async () => {
         const base = { provider: 'anthropic', model: 'claude-haiku-5-5', inputAmount: 1, outputAmount: 10, cacheReadInputTokens: 99_999, strict: true }
         const short = await calculateCost(base)

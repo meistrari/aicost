@@ -2,6 +2,9 @@
 export interface TokenPricingTier {
     aboveInputTokens: number
     serviceTier: string
+    inputAudioCost?: number
+    outputAudioCost?: number
+    cacheReadAudioCost?: number
     inputCost?: number
     outputCost?: number
     cacheReadInputCost?: number
@@ -11,6 +14,9 @@ export interface TokenPricingTier {
 }
 
 const RATE_FIELDS = {
+    input_cost_per_audio_token: 'inputAudioCost',
+    output_cost_per_audio_token: 'outputAudioCost',
+    cache_read_input_audio_token_cost: 'cacheReadAudioCost',
     input_cost_per_token: 'inputCost',
     output_cost_per_token: 'outputCost',
     cache_read_input_token_cost: 'cacheReadInputCost',
@@ -23,8 +29,8 @@ export function extractTokenPricing(model: Record<string, unknown>): TokenPricin
     for (const [key, value] of Object.entries(model)) {
         if (typeof value !== 'number' || !Number.isFinite(value) || value < 0)
             continue
-        const match = /^(input_cost_per_token|output_cost_per_token|cache_read_input_token_cost|cache_creation_input_token_cost)(?:_above_(1|12)hr)?(?:_above_(\d+)k_tokens)?(?:_(batches|flex|priority|ultrafast|decisions))?$/.exec(key)
-        if (!match || (!match[2] && !match[3] && !match[4]))
+        const match = /^(input_cost_per_audio_token|output_cost_per_audio_token|cache_read_input_audio_token_cost|input_cost_per_token|output_cost_per_token|cache_read_input_token_cost|cache_creation_input_token_cost)(?:_above_(1|12)hr)?(?:_above_(\d+)k_tokens)?(?:_(batches|flex|priority|ultrafast|decisions))?$/.exec(key)
+        if (!match || (!key.includes('audio') && !match[2] && !match[3] && !match[4]))
             continue
         const serviceTier = match[4] === 'batches' ? 'batch' : match[4] ?? 'standard'
         const aboveInputTokens = Number(match[3] ?? 0) * 1000
