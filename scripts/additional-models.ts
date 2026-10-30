@@ -20,5 +20,9 @@ export const additionalModels: Record<string, RawModel> = {
         input_cost_per_token: 0.000002,
         output_cost_per_token: 0.00001,
         cache_read_input_token_cost: 0.0000001,
+        tokenPricing: [
+            { serviceTier: 'batch', aboveInputTokens: 0, inputCost: 0.000001, outputCost: 0.000005, cacheReadInputCost: 0.00000005 },
+            { serviceTier: 'priority', aboveInputTokens: 0, inputCost: 0.0000036, outputCost: 0.000018, cacheReadInputCost: 0.00000018 },
+        ],
     },
 }

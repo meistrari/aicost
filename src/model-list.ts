@@ -1,7 +1,7 @@
-// Last updated: 2026-10-30T00:37:05.752Z
-// Next update: 2026-10-30T06:37:05.752Z
+// Last updated: 2026-10-30T09:51:35.081Z
+// Next update: 2026-10-30T15:51:35.081Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -36134,7 +36134,8 @@ const provider30 = [
                     "cacheReadAudioCost": 1e-7,
                     "inputAudioCost": 0.000001
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -36200,7 +36201,8 @@ const provider30 = [
                     "cacheReadAudioCost": 5e-8,
                     "inputAudioCost": 5e-7
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -36237,7 +36239,8 @@ const provider30 = [
                     "inputCost": 5.4e-7,
                     "outputCost": 0.0000045
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -36304,7 +36307,8 @@ const provider30 = [
                     "cacheReadAudioCost": 3e-8,
                     "inputAudioCost": 3e-7
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -36407,7 +36411,8 @@ const provider30 = [
                     "inputCost": 0.0000025,
                     "outputCost": 0.000015
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -36769,7 +36774,8 @@ const provider30 = [
                     "aboveInputTokens": 0,
                     "inputAudioCost": 0.0000015
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -36806,7 +36812,9 @@ const provider30 = [
                     "outputCost": 0.00000675,
                     "cacheReadInputCost": 1.35e-7
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -36843,7 +36851,9 @@ const provider30 = [
                     "outputCost": 0.00000675,
                     "cacheReadInputCost": 1.35e-7
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -36880,7 +36890,9 @@ const provider30 = [
                     "inputCost": 0.00000135,
                     "outputCost": 0.00000675
                 }
-            ]
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -37226,6 +37238,22 @@ const provider30 = [
             ]
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
             "maxTokens": 1048576,
             "name": "gemini-4-argon",
             "type": "chat",
@@ -37237,7 +37265,9 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2026-12-01T00:00:00Z"
         }
     ] as const
 
@@ -63792,6 +63822,540 @@ const provider110 = [
         }
     ] as const
 
+const provider111 = [
+        {
+            "pricingValidUntil": "2026-12-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-argon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0000000000000001e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.8-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.6-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash-lite",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 2.5000000000000002e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5000000000000003e-7,
+                    "outputCost": 0.0000027,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputAudioCost": 9.000000000000001e-7,
+                    "cacheReadAudioCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5000000000000002e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000003,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.000000000000001e-7,
+                    "outputCost": 0.0000054,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.0000000000000004e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072000000000000005,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.0000000000000002e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000225,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 2.2500000000000002e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000045,
+                    "outputCost": 0.000027,
+                    "cacheReadInputCost": 4.5000000000000003e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.0000000000000001e-7,
+                    "outputCost": 4.0000000000000003e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 3e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 1.5e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 1.5e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputAudioCost": 5.4e-7,
+                    "cacheReadAudioCost": 5.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash-lite",
+            "type": "chat",
+            "inputCost": 1.0000000000000001e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.0000000000000003e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
 export const AICostModelList: {
     readonly "abliteration": typeof provider0
     readonly "bedrock": typeof provider1
@@ -63904,6 +64468,7 @@ export const AICostModelList: {
     readonly "kyma": typeof provider108
     readonly "bigmodel": typeof provider109
     readonly "typesafe": typeof provider110
+    readonly "gemini-api": typeof provider111
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -64016,4 +64581,5 @@ export const AICostModelList: {
     "kyma": provider108,
     "bigmodel": provider109,
     "typesafe": provider110,
+    "gemini-api": provider111,
 }

@@ -26,10 +26,13 @@ export type GoogleUsageMetadata = {
     candidatesTokensDetails?: GoogleModalityTokenCount[]
     toolUsePromptTokensDetails?: GoogleModalityTokenCount[]
     serviceTier?: string
+    trafficType?: string
     [key: string]: unknown
 }
 
 type ProviderModel = {
+    nonGlobalCostMultiplier?: number
+    pricingValidUntil?: string
     tokenPricing?: TokenPricingTier[]
     maxTokens: number | null
     name: string
@@ -69,6 +72,8 @@ function isProviderModel(model: unknown): model is ProviderModel {
 
     const candidate = model as Partial<ProviderModel>
     return typeof candidate.name === 'string' && typeof candidate.type === 'string'
+        && (candidate.nonGlobalCostMultiplier === undefined || (typeof candidate.nonGlobalCostMultiplier === 'number' && Number.isFinite(candidate.nonGlobalCostMultiplier) && candidate.nonGlobalCostMultiplier > 0))
+        && (candidate.pricingValidUntil === undefined || (typeof candidate.pricingValidUntil === 'string' && Number.isFinite(Date.parse(candidate.pricingValidUntil))))
 }
 
 function isAICostModelList(value: unknown): value is AICostModelListGeneric {
@@ -82,6 +87,16 @@ function isAICostModelList(value: unknown): value is AICostModelListGeneric {
 
 function hasTokenPricingDimensions(list: AICostModelListGeneric): boolean {
     return Object.values(list).some(models => models.some(model => Array.isArray(model.tokenPricing) && model.tokenPricing.length > 0))
+}
+
+function preservesGooglePricingDimensions(list: AICostModelListGeneric): boolean {
+    const bundled = AICostModelList as unknown as AICostModelListGeneric
+    return ['gemini-api', 'vertex-ai'].every(provider => (bundled[provider] ?? []).every((model) => {
+        const remote = list[provider]?.find(candidate => candidate.name === model.name)
+        return (provider !== 'gemini-api' || remote?.tokenPricing?.length)
+            && (model.nonGlobalCostMultiplier === undefined || remote?.nonGlobalCostMultiplier !== undefined)
+            && (model.pricingValidUntil === undefined || remote?.pricingValidUntil !== undefined)
+    }))
 }
 
 function calculateResolvedCost(unitCost: number | null, amount: number): number {
@@ -135,6 +150,8 @@ export async function getAICostModelList(): Promise<AICostModelListGeneric> {
                 if (hasTokenPricingDimensions(AICostModelList as unknown as AICostModelListGeneric) && !hasTokenPricingDimensions(json)) {
                     throw new Error('Remote model list predates billing dimensions')
                 }
+                if (!preservesGooglePricingDimensions(json))
+                    throw new Error('Remote model list predates Google backend and regional pricing')
 
                 lastFetchTime = Date.now()
                 cachedList = json
@@ -176,6 +193,10 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     serviceTier?: string
     /** Direct Anthropic US-only inference adds 10% to all token categories. */
     inferenceGeo?: string
+    /** Actual Vertex endpoint location. Omitted preserves legacy global pricing. */
+    region?: string
+    /** ISO timestamp of the original provider request; defaults to the current time. */
+    pricingDate?: string
     /** Reject missing rates for consumed categories instead of treating them as free. */
     strict?: boolean
 }): Promise<{
@@ -198,6 +219,18 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
 
     if (!modelInfo)
         throw new Error(`Model ${options.model} not found for provider ${options.provider}`)
+
+    const pricingTime = options.pricingDate === undefined ? Date.now() : Date.parse(options.pricingDate)
+    if (!Number.isFinite(pricingTime))
+        throw new Error('Invalid pricing date')
+    if (modelInfo.pricingValidUntil && pricingTime >= Date.parse(modelInfo.pricingValidUntil))
+        throw new Error(`Expired pricing for ${options.provider}/${options.model}; refresh rates before pricing this request`)
+    let regionalMultiplier = 1
+    if (options.provider === 'vertex-ai' && options.region !== undefined && options.region !== 'global') {
+        if (!options.region || modelInfo.nonGlobalCostMultiplier === undefined)
+            throw new Error(`No regional pricing for ${options.provider}/${options.model} in ${options.region}`)
+        regionalMultiplier = modelInfo.nonGlobalCostMultiplier
+    }
 
     const metadata = options.usageMetadata
     const promptTokens = toNonNegativeAmount(metadata?.promptTokenCount, options.inputAmount)
@@ -226,9 +259,23 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const contextAmount = metadata
         ? promptTokens + separatelyReportedToolUseTokens
         : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
-    const serviceTier = options.serviceTier === 'default' || options.serviceTier === 'auto'
+    const google = options.provider === 'vertex-ai' || options.provider === 'gemini-api'
+    const metadataTier = google ? metadata?.serviceTier?.toLowerCase() : undefined
+    const trafficTier = google && metadata?.trafficType
+        ? ({ ON_DEMAND: 'standard', ON_DEMAND_PRIORITY: 'priority', ON_DEMAND_FLEX: 'flex' } as Record<string, string>)[metadata.trafficType]
+        : undefined
+    if (google && metadata?.trafficType && !trafficTier)
+        throw new Error(`Unsupported Google traffic type: ${metadata.trafficType}`)
+    const requestedTier = google ? options.serviceTier?.toLowerCase() : options.serviceTier
+    const actualTier = metadataTier ?? trafficTier
+    if ((metadataTier && trafficTier && metadataTier !== trafficTier)
+        || (actualTier && requestedTier && requestedTier !== 'auto' && requestedTier !== 'default' && requestedTier !== actualTier)) {
+        throw new Error('Conflicting Google service tiers')
+    }
+    const resolvedTier = actualTier ?? requestedTier
+    const serviceTier = resolvedTier === 'default' || resolvedTier === 'auto'
         ? 'standard'
-        : options.serviceTier ?? 'standard'
+        : resolvedTier ?? 'standard'
     const tiers = modelInfo.tokenPricing?.filter(tier => tier.serviceTier === serviceTier)
     if (serviceTier !== 'standard' && !tiers?.length)
         throw new Error(`No ${serviceTier} pricing for ${options.provider}/${options.model}`)
@@ -272,7 +319,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     // Explicit TTL counts must never silently receive a shorter TTL's rate.
     if ((writes1h > 0 && rates.cacheCreationInputCost1h == null) || (writes12h > 0 && rates.cacheCreationInputCost12h == null))
         throw new Error(`Missing cache TTL rate for ${options.provider}/${options.model}`)
-    const multiplier = options.provider === 'anthropic' && options.inferenceGeo === 'us' ? 1.1 : 1
+    const multiplier = regionalMultiplier * (options.provider === 'anthropic' && options.inferenceGeo === 'us' ? 1.1 : 1)
     const audioTokens = (details?: GoogleModalityTokenCount[]) => (details ?? []).reduce((total, item) =>
         item.modality?.toUpperCase() === 'AUDIO' ? total + toNonNegativeAmount(item.tokenCount) : total, 0)
     let promptAudioTokens = audioTokens(metadata?.promptTokensDetails)
