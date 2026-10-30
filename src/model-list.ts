@@ -1,7 +1,7 @@
-// Last updated: 2026-10-30T16:25:10.315Z
-// Next update: 2026-10-30T22:25:10.315Z
+// Last updated: 2026-10-30T20:23:39.970Z
+// Next update: 2026-10-31T02:23:39.970Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe" | "gemini-api" | "clf_ai_gateway"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -27009,9 +27009,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4",
             "type": "chat",
-            "inputCost": 0.0000029999900000000002,
+            "inputCost": 0.00000299999,
             "inputCostUnit": "token",
-            "outputCost": 0.000015000020000000002,
+            "outputCost": 0.00001500002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 3.0002e-7,
             "cacheReadInputCostUnit": "token",
@@ -27232,7 +27232,7 @@ const provider21 = [
             "inputCost": 0.00000249998,
             "inputCostAbove200kTokens": 0.00000500003,
             "inputCostUnit": "token",
-            "outputCost": 0.000015000020000000002,
+            "outputCost": 0.00001500002,
             "outputCostAbove200kTokens": 0.0000225,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.4997e-7,
@@ -27436,7 +27436,7 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gemma-3-12b",
             "type": "chat",
-            "inputCost": 1.5000999999999998e-7,
+            "inputCost": 1.5001e-7,
             "inputCostUnit": "token",
             "outputCost": 5.0001e-7,
             "outputCostUnit": "token",
@@ -27524,7 +27524,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 0.00000124999,
             "inputCostUnit": "token",
-            "outputCost": 0.000009999990000000002,
+            "outputCost": 0.00000999999,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.2502e-7,
             "cacheReadInputCostUnit": "token",
@@ -27548,7 +27548,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 0.00000124999,
             "inputCostUnit": "token",
-            "outputCost": 0.000009999990000000002,
+            "outputCost": 0.00000999999,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.2502e-7,
             "cacheReadInputCostUnit": "token",
@@ -27620,7 +27620,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 0.00000249998,
             "inputCostUnit": "token",
-            "outputCost": 0.000015000020000000002,
+            "outputCost": 0.00001500002,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.4997e-7,
             "cacheReadInputCostUnit": "token",
@@ -27874,9 +27874,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-mini",
             "type": "chat",
-            "inputCost": 2.4997000000000006e-7,
+            "inputCost": 2.4997e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000019999700000000004,
+            "outputCost": 0.00000199997,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.499e-8,
             "cacheReadInputCostUnit": "token",
@@ -27900,7 +27900,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 4.998e-8,
             "inputCostUnit": "token",
-            "outputCost": 3.9998000000000007e-7,
+            "outputCost": 3.9998e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 4.97e-9,
             "cacheReadInputCostUnit": "token",
@@ -27912,7 +27912,7 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gpt-oss-120b",
             "type": "chat",
-            "inputCost": 1.5000999999999998e-7,
+            "inputCost": 1.5001e-7,
             "inputCostUnit": "token",
             "outputCost": 5.9997e-7,
             "outputCostUnit": "token",
@@ -27928,7 +27928,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 7e-8,
             "inputCostUnit": "token",
-            "outputCost": 3.0001999999999996e-7,
+            "outputCost": 3.0002e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 7e-8,
             "cacheReadInputCostUnit": "token",
@@ -27954,7 +27954,7 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-gte-large-en",
             "type": "embedding",
-            "inputCost": 1.2999000000000001e-7,
+            "inputCost": 1.2999e-7,
             "inputCostUnit": "token",
             "outputCost": 0,
             "outputCostUnit": "token",
@@ -28021,7 +28021,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015000300000000002,
+            "outputCost": 0.00000150003,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5.0001e-7,
             "cacheReadInputCostUnit": "token",
@@ -28033,9 +28033,9 @@ const provider21 = [
             "maxTokens": null,
             "name": "databricks/databricks-meta-llama-3-1-8b-instruct",
             "type": "chat",
-            "inputCost": 1.5000999999999998e-7,
+            "inputCost": 1.5001e-7,
             "inputCostUnit": "token",
-            "outputCost": 4.5003000000000007e-7,
+            "outputCost": 4.5003e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.5001e-7,
             "cacheReadInputCostUnit": "token",
@@ -28049,7 +28049,7 @@ const provider21 = [
             "type": "chat",
             "inputCost": 5.0001e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015000300000000002,
+            "outputCost": 0.00000150003,
             "outputCostUnit": "token",
             "cacheReadInputCost": 5.0001e-7,
             "cacheReadInputCostUnit": "token",
@@ -35983,6 +35983,20 @@ const provider28 = [
             "outputCost": 8.4e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 4.2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/models/ultramarine-1-flash-us",
+            "type": "chat",
+            "inputCost": 2.25e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -48774,11 +48788,11 @@ const provider68 = [
             "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.7-Max",
             "type": "chat",
-            "inputCost": 0.0000025,
+            "inputCost": 0.0000015,
             "inputCostUnit": "token",
-            "outputCost": 0.0000075,
+            "outputCost": 0.0000045,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCost": 3e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -55826,6 +55840,20 @@ const provider85 = [
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-5v-turbo",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
@@ -61835,6 +61863,34 @@ const provider100 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "aiand/deepseek-ai/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "aiand/meta/muse-spark-open",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000425,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
@@ -64467,6 +64523,149 @@ const provider111 = [
         }
     ] as const
 
+const provider112 = [
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.3",
+            "type": "chat",
+            "inputCost": 5.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.04e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.3-flash",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.2",
+            "type": "chat",
+            "inputCost": 5.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.04e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 2.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4-pro",
+            "type": "chat",
+            "inputCost": 5.28e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.7e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 1.76e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.28e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/kimi-k2.6",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/kimi-k2.7-code",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/qwen3.8-27b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000128,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ] as const
+
 export const AICostModelList: {
     readonly "abliteration": typeof provider0
     readonly "bedrock": typeof provider1
@@ -64580,6 +64779,7 @@ export const AICostModelList: {
     readonly "bigmodel": typeof provider109
     readonly "typesafe": typeof provider110
     readonly "gemini-api": typeof provider111
+    readonly "clf_ai_gateway": typeof provider112
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -64693,4 +64893,5 @@ export const AICostModelList: {
     "bigmodel": provider109,
     "typesafe": provider110,
     "gemini-api": provider111,
+    "clf_ai_gateway": provider112,
 }
