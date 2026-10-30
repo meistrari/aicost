@@ -115,3 +115,5 @@ Use `gemini-api` for the paid Gemini Developer API and `vertex-ai` for Vertex. P
 `usageMetadata.serviceTier` and Vertex `trafficType` select the billed service tier. Contradictory metadata and provisioned throughput throw because they cannot establish a PayGo token charge. Cache, audio, thinking and long-context rates remain request-specific.
 
 The manually verified Google entries live in `scripts/google-models.ts`, with links to the provider pricing pages. Introductory rates have a conservative UTC expiry guard: refresh the catalog before the published price transition. For delayed calculations, pass the original request timestamp as `pricingDate`; otherwise the current time is used. Expired rates throw instead of extending a promotion. These token calculations do not establish net account spend after credits, free-tier allowances, cache storage or grounding charges.
+
+`pricingDate` controls the expiry check; it does not retrieve historical rate versions. Preserve the calculated cost or the original price catalog for historical accounting. A compatible refreshed catalog may remove an introductory expiry when replacing its rates with permanent prices.

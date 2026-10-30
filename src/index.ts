@@ -95,7 +95,6 @@ function preservesGooglePricingDimensions(list: AICostModelListGeneric): boolean
         const remote = list[provider]?.find(candidate => candidate.name === model.name)
         return (provider !== 'gemini-api' || remote?.tokenPricing?.length)
             && (model.nonGlobalCostMultiplier === undefined || remote?.nonGlobalCostMultiplier !== undefined)
-            && (model.pricingValidUntil === undefined || remote?.pricingValidUntil !== undefined)
     }))
 }
 
