@@ -137,3 +137,29 @@ export const vertexPricingValidUntil: Record<string, string> = {
     'gemini-3.7-flash': '2027-01-01T00:00:00Z',
     'gemini-3.6-flash': '2027-01-01T00:00:00Z',
 }
+
+// Explicit Vertex audio dimensions verified against the Standard, Priority and
+// Flex/Batch tables on 2026-10-30. Missing upstream audio fields must not fall
+// back to text prices. Do not copy Developer API rates: Vertex 2.5 Flash Lite
+// publishes $0.05/M for discounted audio (the direct API publishes $0.15/M).
+// These patches do not assert cache prices where the Vertex table omits them.
+export const vertexAudioPricing: Record<string, TokenPricingTier[]> = {
+    'gemini-3.1-flash-lite': [
+        { serviceTier: 'standard', aboveInputTokens: 0, inputAudioCost: 0.5e-6, cacheReadAudioCost: 0.05e-6 },
+        { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 0.9e-6, cacheReadAudioCost: 0.09e-6 },
+        { serviceTier: 'batch', aboveInputTokens: 0, inputAudioCost: 0.25e-6, cacheReadAudioCost: 0.025e-6 },
+        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.25e-6, cacheReadAudioCost: 0.025e-6 },
+    ],
+    'gemini-3-flash-preview': [
+        { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 1.8e-6, cacheReadAudioCost: 0.18e-6 },
+        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.5e-6 },
+    ],
+    'gemini-2.5-flash': [
+        { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 1.8e-6, cacheReadAudioCost: 0.18e-6 },
+        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.5e-6 },
+    ],
+    'gemini-2.5-flash-lite': [
+        { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 0.54e-6, cacheReadAudioCost: 0.054e-6 },
+        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.05e-6 },
+    ],
+}

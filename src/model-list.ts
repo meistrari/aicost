@@ -1,5 +1,5 @@
-// Last updated: 2026-10-30T09:51:35.081Z
-// Next update: 2026-10-30T15:51:35.081Z
+// Last updated: 2026-10-30T10:35:30.021Z
+// Next update: 2026-10-30T16:35:30.021Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe" | "gemini-api"
 
@@ -36118,7 +36118,8 @@ const provider30 = [
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 3e-8,
                     "inputCost": 1.5e-7,
-                    "outputCost": 0.00000125
+                    "outputCost": 0.00000125,
+                    "inputAudioCost": 5e-7
                 },
                 {
                     "serviceTier": "priority",
@@ -36126,7 +36127,8 @@ const provider30 = [
                     "cacheReadInputCost": 5.4e-8,
                     "inputCost": 5.4e-7,
                     "inputAudioCost": 0.0000018,
-                    "outputCost": 0.0000045
+                    "outputCost": 0.0000045,
+                    "cacheReadAudioCost": 1.8e-7
                 },
                 {
                     "serviceTier": "standard",
@@ -36178,14 +36180,17 @@ const provider30 = [
                     "cacheReadInputCost": 1.25e-8,
                     "inputCost": 1.25e-7,
                     "outputCost": 7.5e-7,
-                    "inputAudioCost": 2.5e-7
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5e-8
                 },
                 {
                     "serviceTier": "flex",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.25e-8,
                     "inputCost": 1.25e-7,
-                    "outputCost": 7.5e-7
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5e-8
                 },
                 {
                     "serviceTier": "priority",
@@ -36193,7 +36198,8 @@ const provider30 = [
                     "cacheReadInputCost": 4.5e-8,
                     "inputCost": 4.5e-7,
                     "inputAudioCost": 9e-7,
-                    "outputCost": 0.0000027
+                    "outputCost": 0.0000027,
+                    "cacheReadAudioCost": 9e-8
                 },
                 {
                     "serviceTier": "standard",
@@ -36291,7 +36297,8 @@ const provider30 = [
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1e-8,
                     "inputCost": 5e-8,
-                    "outputCost": 2e-7
+                    "outputCost": 2e-7,
+                    "inputAudioCost": 5e-8
                 },
                 {
                     "serviceTier": "priority",
@@ -36299,7 +36306,8 @@ const provider30 = [
                     "cacheReadInputCost": 1.8e-8,
                     "inputCost": 1.8e-7,
                     "inputAudioCost": 5.4e-7,
-                    "outputCost": 7.2e-7
+                    "outputCost": 7.2e-7,
+                    "cacheReadAudioCost": 5.4e-8
                 },
                 {
                     "serviceTier": "standard",
@@ -36694,7 +36702,8 @@ const provider30 = [
                     "serviceTier": "flex",
                     "aboveInputTokens": 0,
                     "inputCost": 2.5e-7,
-                    "outputCost": 0.0000015
+                    "outputCost": 0.0000015,
+                    "inputAudioCost": 5e-7
                 },
                 {
                     "serviceTier": "priority",
@@ -36702,7 +36711,8 @@ const provider30 = [
                     "cacheReadInputCost": 9e-8,
                     "inputAudioCost": 0.0000018,
                     "inputCost": 9e-7,
-                    "outputCost": 0.0000054
+                    "outputCost": 0.0000054,
+                    "cacheReadAudioCost": 1.8e-7
                 },
                 {
                     "serviceTier": "standard",

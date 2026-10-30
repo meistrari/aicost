@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test'
 
-function probeCatalog(mode: 'legacy' | 'pre-google' | 'current') {
+function probeCatalog(mode: 'legacy' | 'pre-google' | 'pre-audio' | 'current') {
     // A fresh process exercises the real module cache and remote-fetch path independently.
     const script = `
         const { AICostModelList } = await import(${JSON.stringify(new URL('./model-list.ts', import.meta.url).href)});
@@ -19,6 +19,10 @@ function probeCatalog(mode: 'legacy' | 'pre-google' | 'current') {
                 delete model.nonGlobalCostMultiplier;
                 delete model.pricingValidUntil;
             }
+        }
+        if (${JSON.stringify(mode)} === 'pre-audio') {
+            const model = remote['vertex-ai'].find(model => model.name === 'gemini-3.1-flash-lite');
+            for (const tier of model.tokenPricing) if (tier.serviceTier === 'flex') delete tier.cacheReadAudioCost;
         }
         let fetches = 0;
         globalThis.fetch = async () => { fetches++; return Response.json(remote); };
@@ -46,6 +50,12 @@ test('a compatible remote catalog still updates prices', () => {
 
 test('a remote catalog with old billing dimensions cannot erase Google backend or regional prices', () => {
     const { cost, fetches } = probeCatalog('pre-google')
+    expect(fetches).toBe(1)
+    expect(cost.inputCost).toBeCloseTo(100 * 3e-6, 12)
+})
+
+test('a remote catalog missing verified audio dimensions cannot replace the bundled catalog', () => {
+    const { cost, fetches } = probeCatalog('pre-audio')
     expect(fetches).toBe(1)
     expect(cost.inputCost).toBeCloseTo(100 * 3e-6, 12)
 })

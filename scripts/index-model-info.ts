@@ -2,7 +2,7 @@ import { extractTokenPricing } from '../src/token-pricing'
 import type { TokenPricingTier } from '../src/token-pricing'
 import { join } from 'node:path'
 import { additionalModels } from './additional-models'
-import { geminiApiModels, vertexNonGlobalMultipliers, vertexPricingValidUntil } from './google-models'
+import { geminiApiModels, vertexAudioPricing, vertexNonGlobalMultipliers, vertexPricingValidUntil } from './google-models'
 
 type ModelMode = 'chat' | 'completion' | 'embedding' | 'responses'
 type InputCostUnit = 'token' | 'request' | 'pixel' | null
@@ -304,11 +304,20 @@ export function mergeAdditionalModels(models: Record<string, IndexedModel[]>): R
         result[provider] = [...byName.values()]
     }
     result['gemini-api'] = buildModelPerProvider(geminiApiModels)['gemini-api'] ?? []
-    result['vertex-ai'] = (result['vertex-ai'] ?? []).map(model => ({
-        ...model,
-        ...(vertexNonGlobalMultipliers[model.name] === undefined ? {} : { nonGlobalCostMultiplier: vertexNonGlobalMultipliers[model.name] }),
-        ...(vertexPricingValidUntil[model.name] ? { pricingValidUntil: vertexPricingValidUntil[model.name] } : {}),
-    }))
+    result['vertex-ai'] = (result['vertex-ai'] ?? []).map((model) => {
+        const patches = vertexAudioPricing[model.name]
+        const tiers = new Map((model.tokenPricing ?? []).map(tier => [`${tier.serviceTier}:${tier.aboveInputTokens}`, tier]))
+        for (const patch of patches ?? []) {
+            const key = `${patch.serviceTier}:${patch.aboveInputTokens}`
+            tiers.set(key, { ...tiers.get(key), ...patch })
+        }
+        return {
+            ...model,
+            ...(patches ? { tokenPricing: [...tiers.values()] } : {}),
+            ...(vertexNonGlobalMultipliers[model.name] === undefined ? {} : { nonGlobalCostMultiplier: vertexNonGlobalMultipliers[model.name] }),
+            ...(vertexPricingValidUntil[model.name] ? { pricingValidUntil: vertexPricingValidUntil[model.name] } : {}),
+        }
+    })
     return result
 }
 

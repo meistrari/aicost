@@ -95,6 +95,13 @@ function preservesGooglePricingDimensions(list: AICostModelListGeneric): boolean
         const remote = list[provider]?.find(candidate => candidate.name === model.name)
         return (provider !== 'gemini-api' || remote?.tokenPricing?.length)
             && (model.nonGlobalCostMultiplier === undefined || remote?.nonGlobalCostMultiplier !== undefined)
+            && (model.tokenPricing ?? []).every((tier) => {
+                if (tier.inputAudioCost === undefined && tier.cacheReadAudioCost === undefined)
+                    return true
+                const remoteTier = remote?.tokenPricing?.find(candidate => candidate.serviceTier === tier.serviceTier && candidate.aboveInputTokens === tier.aboveInputTokens)
+                return (tier.inputAudioCost === undefined || remoteTier?.inputAudioCost !== undefined)
+                    && (tier.cacheReadAudioCost === undefined || remoteTier?.cacheReadAudioCost !== undefined)
+            })
     }))
 }
 
@@ -350,6 +357,16 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         throw new Error('Modality token counts exceed their totals')
     // With identical audio/text rates an unknown cache modality split cannot affect cost.
     const inputAudioTokens = Math.min(inputAmount, promptAudioTokens - cachedAudioTokens)
+    // When this model publishes a distinct audio dimension, a missing tier-specific
+    // rate is unknown, not permission to bill audio at the text price.
+    if (google && inputAudioTokens > 0 && rates.inputAudioCost === undefined
+        && modelInfo.tokenPricing?.some(tier => tier.inputAudioCost !== undefined)) {
+        throw new Error(`Missing ${serviceTier} audio input rate for ${options.provider}/${options.model}`)
+    }
+    if (google && cachedAudioTokens > 0 && rates.cacheReadAudioCost === undefined
+        && modelInfo.tokenPricing?.some(tier => tier.cacheReadAudioCost !== undefined)) {
+        throw new Error(`Missing ${serviceTier} audio cache read rate for ${options.provider}/${options.model}`)
+    }
     const resolvedInputCost = (
         price(rates.inputCost, inputAmount - inputAudioTokens, 'input')
         + price(rates.inputAudioCost ?? rates.inputCost, inputAudioTokens, 'audio input')
