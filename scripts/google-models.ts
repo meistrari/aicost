@@ -5,7 +5,7 @@ import type { TokenPricingTier } from '../src/token-pricing'
 // https://ai.google.dev/gemini-api/docs/pricing
 // Keep this provider separate from Vertex: cache rates and supported models differ.
 // Storage, grounding, account allowances and promotional credits are not token rates.
-type Rates = { input: number, output: number, cache: number, audio?: number, cachedAudio?: number }
+type Rates = { input: number, output: number, cache: number, audio?: number | null, cachedAudio?: number }
 
 function tier(rates: Rates, serviceTier: string, aboveInputTokens = 0): TokenPricingTier {
     return {
@@ -14,12 +14,13 @@ function tier(rates: Rates, serviceTier: string, aboveInputTokens = 0): TokenPri
         inputCost: rates.input / 1e6,
         outputCost: rates.output / 1e6,
         cacheReadInputCost: rates.cache / 1e6,
-        ...(rates.audio === undefined ? {} : { inputAudioCost: rates.audio / 1e6 }),
+        ...(rates.audio === undefined ? {} : { inputAudioCost: rates.audio === null ? null : rates.audio / 1e6 }),
         ...(rates.cachedAudio === undefined ? {} : { cacheReadAudioCost: rates.cachedAudio / 1e6 }),
     }
 }
 
 function model(standard: Rates, discounted: Rates, priority: Rates, options?: {
+    batch?: Rates
     long?: { standard: Rates, discounted: Rates, priority: Rates }
     pricingValidUntil?: string
 }): RawModel {
@@ -32,7 +33,7 @@ function model(standard: Rates, discounted: Rates, priority: Rates, options?: {
         pricingValidUntil: options?.pricingValidUntil,
         tokenPricing: [
             tier(standard, 'standard'),
-            tier(discounted, 'batch'),
+            tier(options?.batch ?? discounted, 'batch'),
             tier(discounted, 'flex'),
             tier(priority, 'priority'),
             ...(options?.long
@@ -110,6 +111,9 @@ export const geminiApiModels: Record<string, RawModel> = {
         { input: 0.1, output: 0.4, cache: 0.01, audio: 0.3, cachedAudio: 0.03 },
         { input: 0.05, output: 0.2, cache: 0.01, audio: 0.15, cachedAudio: 0.03 },
         { input: 0.18, output: 0.72, cache: 0.018, audio: 0.54, cachedAudio: 0.054 },
+        // Developer API pricing says $0.15/M; Gemini API SKU 5134-590C-995E
+        // says $0.25/M. Keep consumed batch audio unpriced until reconciled.
+        { batch: { input: 0.05, output: 0.2, cache: 0.01, audio: null, cachedAudio: 0.03 } },
     ),
 }
 
@@ -140,8 +144,9 @@ export const vertexPricingValidUntil: Record<string, string> = {
 
 // Explicit Vertex audio dimensions verified against the Standard, Priority and
 // Flex/Batch tables on 2026-10-30. Missing upstream audio fields must not fall
-// back to text prices. Do not copy Developer API rates: Vertex 2.5 Flash Lite
-// publishes $0.05/M for discounted audio (the direct API publishes $0.15/M).
+// back to text prices. The public billing SKU takes precedence over the summary
+// page for Vertex Flash Lite batch audio: C4C5-C7D4-C865 is $0.15/M, not $0.05/M.
+// https://cloud.google.com/skus?filter=Vertex%20AI%20Gemini%202.5%20Flash%20Lite%20Audio&currency=USD
 // These patches do not assert cache prices where the Vertex table omits them.
 export const vertexAudioPricing: Record<string, TokenPricingTier[]> = {
     'gemini-3.1-flash-lite': [
@@ -155,11 +160,16 @@ export const vertexAudioPricing: Record<string, TokenPricingTier[]> = {
         { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.5e-6 },
     ],
     'gemini-2.5-flash': [
+        // Long audio SKU ED99-92A5-E00B is $1/M, matching short audio. The
+        // summary page's >200K $0.30/M cell conflicts with this billing SKU.
+        { serviceTier: 'standard', aboveInputTokens: 0, inputAudioCost: 1e-6, cacheReadAudioCost: 0.1e-6 },
         { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 1.8e-6, cacheReadAudioCost: 0.18e-6 },
         { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.5e-6 },
     ],
     'gemini-2.5-flash-lite': [
         { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 0.54e-6, cacheReadAudioCost: 0.054e-6 },
-        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.05e-6 },
+        { serviceTier: 'batch', aboveInputTokens: 0, inputAudioCost: 0.15e-6 },
+        // No matching Flex SKU was found; do not infer its price from Batch.
+        { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: null },
     ],
 }

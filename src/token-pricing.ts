@@ -2,7 +2,8 @@
 export interface TokenPricingTier {
     aboveInputTokens: number
     serviceTier: string
-    inputAudioCost?: number
+    /** null explicitly marks a disputed/unverified audio tariff. */
+    inputAudioCost?: number | null
     outputAudioCost?: number
     cacheReadAudioCost?: number
     inputCost?: number

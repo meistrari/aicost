@@ -36253,7 +36253,7 @@
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
-                    "inputAudioCost": 5e-8,
+                    "inputAudioCost": 1.5e-7,
                     "inputCost": 5e-8,
                     "outputCost": 2e-7
                 },
@@ -36263,7 +36263,7 @@
                     "cacheReadInputCost": 1e-8,
                     "inputCost": 5e-8,
                     "outputCost": 2e-7,
-                    "inputAudioCost": 5e-8
+                    "inputAudioCost": null
                 },
                 {
                     "serviceTier": "priority",
@@ -64213,7 +64213,7 @@
                     "inputCost": 5.0000000000000004e-8,
                     "outputCost": 2.0000000000000002e-7,
                     "cacheReadInputCost": 1e-8,
-                    "inputAudioCost": 1.5e-7,
+                    "inputAudioCost": null,
                     "cacheReadAudioCost": 3e-8
                 },
                 {

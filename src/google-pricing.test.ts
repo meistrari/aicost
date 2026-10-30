@@ -50,12 +50,19 @@ describe('Google backend and endpoint prices', () => {
         })
     }
 
-    it('keeps Vertex discounted Flash Lite audio distinct from the direct API', async () => {
-        const base = { ...request, model: 'gemini-2.5-flash-lite' as const, serviceTier: 'flex', usageMetadata: { promptTokenCount: 1000, cachedContentTokenCount: 0, candidatesTokenCount: 10, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 1000 }] } }
+    it('uses the Vertex Flash Lite batch audio billing SKU and rejects disputed audio tariffs', async () => {
+        const base = { ...request, model: 'gemini-2.5-flash-lite' as const, serviceTier: 'batch', usageMetadata: { promptTokenCount: 1000, cachedContentTokenCount: 0, candidatesTokenCount: 10, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 1000 }] } }
         const vertex = await calculateCost({ ...base, provider: 'vertex-ai', region: 'global' })
-        const direct = await calculateCost({ ...base, provider: 'gemini-api' })
-        expect(vertex.inputCost).toBeCloseTo(0.00005, 12)
-        expect(direct.inputCost).toBeCloseTo(0.00015, 12)
+        expect(vertex.inputCost).toBeCloseTo(0.00015, 12)
+        expect(await calculateCost({ ...base, provider: 'gemini-api' }).then(() => null, (error: Error) => error.message)).toContain('Missing batch audio input rate')
+        expect(await calculateCost({ ...base, provider: 'vertex-ai', serviceTier: 'flex' }).then(() => null, (error: Error) => error.message)).toContain('Missing flex audio input rate')
+        const text = await calculateCost({ ...request, provider: 'gemini-api', model: 'gemini-2.5-flash-lite', serviceTier: 'batch' })
+        expect(text.inputCost).toBeCloseTo(0.00005, 12)
+    })
+
+    it('keeps the published Vertex long-context audio SKU at $1/M above 200K', async () => {
+        const cost = await calculateCost({ ...request, provider: 'vertex-ai', model: 'gemini-2.5-flash', region: 'global', usageMetadata: { promptTokenCount: 201000, cachedContentTokenCount: 0, candidatesTokenCount: 10, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 201000 }] } })
+        expect(cost.inputCost).toBeCloseTo(0.201, 12)
     })
 
     it('rejects an absent cache modality split when discounted audio and text prices differ', async () => {
@@ -63,7 +70,7 @@ describe('Google backend and endpoint prices', () => {
     })
 
     it('leaves discounted Vertex audio cache unpriced when its tariff is not published', async () => {
-        for (const model of ['gemini-2.5-flash', 'gemini-2.5-flash-lite', 'gemini-3-flash-preview'] as const) {
+        for (const model of ['gemini-2.5-flash', 'gemini-3-flash-preview'] as const) {
             expect(await calculateCost({ ...request, provider: 'vertex-ai', model, serviceTier: 'flex', usageMetadata: mixedAudioUsage }).then(() => null, (error: Error) => error.message)).toContain('Missing flex audio cache read rate')
         }
     })
@@ -109,12 +116,12 @@ describe('Google backend and endpoint prices', () => {
         expect(long.outputCost).toBeCloseTo(0.00075, 12)
     })
 
-    it('prices direct Gemini Flash Lite audio batch input and cache separately', async () => {
+    it('prices direct Gemini Flash Lite audio flex input and cache separately', async () => {
         const cost = await calculateCost({
             ...request,
             provider: 'gemini-api',
             model: 'gemini-2.5-flash-lite',
-            serviceTier: 'batch',
+            serviceTier: 'flex',
             usageMetadata: {
                 promptTokenCount: 1000,
                 cachedContentTokenCount: 400,

@@ -290,7 +290,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         outputCost: serviceTier === 'standard' ? modelInfo.outputCost : null,
         cacheReadInputCost: serviceTier === 'standard' ? modelInfo.cacheReadInputCost : null,
         cacheCreationInputCost: serviceTier === 'standard' ? modelInfo.cacheCreationInputCost : null,
-        inputAudioCost: undefined as number | undefined,
+        inputAudioCost: undefined as number | null | undefined,
         outputAudioCost: undefined as number | undefined,
         cacheReadAudioCost: undefined as number | undefined,
         cacheCreationInputCost1h: undefined as number | undefined,
@@ -308,7 +308,9 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
             continue
         for (const field of Object.keys(rates) as (keyof typeof rates)[]) {
             const value = tier[field]
-            if (value !== undefined)
+            if (field === 'inputAudioCost' && value !== undefined)
+                rates.inputAudioCost = value
+            else if (typeof value === 'number')
                 rates[field] = value
         }
     }
@@ -359,7 +361,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const inputAudioTokens = Math.min(inputAmount, promptAudioTokens - cachedAudioTokens)
     // When this model publishes a distinct audio dimension, a missing tier-specific
     // rate is unknown, not permission to bill audio at the text price.
-    if (google && inputAudioTokens > 0 && rates.inputAudioCost === undefined
+    if (google && inputAudioTokens > 0 && rates.inputAudioCost == null
         && modelInfo.tokenPricing?.some(tier => tier.inputAudioCost !== undefined)) {
         throw new Error(`Missing ${serviceTier} audio input rate for ${options.provider}/${options.model}`)
     }
@@ -369,7 +371,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     }
     const resolvedInputCost = (
         price(rates.inputCost, inputAmount - inputAudioTokens, 'input')
-        + price(rates.inputAudioCost ?? rates.inputCost, inputAudioTokens, 'audio input')
+        + price(rates.inputAudioCost === undefined ? rates.inputCost : rates.inputAudioCost, inputAudioTokens, 'audio input')
     ) * multiplier
     const resolvedOutputCost = (
         price(rates.outputCost, outputAmount - outputAudioTokens, 'output')
