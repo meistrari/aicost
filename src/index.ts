@@ -1,3 +1,4 @@
+import type { TokenPricingTier } from './token-pricing'
 import type { AICostModelProvider } from './model-list'
 import { AICostModelList } from './model-list'
 
@@ -29,6 +30,7 @@ export type GoogleUsageMetadata = {
 }
 
 type ProviderModel = {
+    tokenPricing?: TokenPricingTier[]
     maxTokens: number | null
     name: string
     type: string
@@ -156,6 +158,15 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     cacheReadInputTokens?: number
     cacheCreationInputTokens?: number
     usageMetadata?: GoogleUsageMetadata
+    /** Subsets of cacheCreationInputTokens. */
+    cacheCreationInputTokens1h?: number
+    cacheCreationInputTokens12h?: number
+    /** Actual billed tier reported by the provider, not the requested `auto` tier. */
+    serviceTier?: string
+    /** Direct Anthropic US-only inference adds 10% to all token categories. */
+    inferenceGeo?: string
+    /** Reject missing rates for consumed categories instead of treating them as free. */
+    strict?: boolean
 }): Promise<{
     inputCost: number
     outputCost: number
@@ -202,27 +213,58 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const contextAmount = metadata
         ? promptTokens + separatelyReportedToolUseTokens
         : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
-    const useLongContextPricing = contextAmount > 200_000
-
-    const inputCost = useLongContextPricing
-        ? modelInfo.inputCostAbove200kTokens ?? modelInfo.inputCost
-        : modelInfo.inputCost
-    const outputCost = useLongContextPricing
-        ? modelInfo.outputCostAbove200kTokens ?? modelInfo.outputCost
-        : modelInfo.outputCost
-    const cacheReadInputCost = useLongContextPricing
-        ? modelInfo.cacheReadInputCostAbove200kTokens ?? modelInfo.cacheReadInputCost
-        : modelInfo.cacheReadInputCost
-    const cacheCreationInputCost = useLongContextPricing
-        ? modelInfo.cacheCreationInputCostAbove200kTokens ?? modelInfo.cacheCreationInputCost
-        : modelInfo.cacheCreationInputCost
-
-    const pricedCacheReadInputTokens = cacheReadInputCost != null ? cacheReadInputTokens : 0
-    const pricedCacheCreationInputTokens = cacheCreationInputCost != null ? cacheCreationInputTokens : 0
-    const resolvedInputCost = calculateResolvedCost(inputCost, inputAmount)
-    const resolvedOutputCost = calculateResolvedCost(outputCost, outputAmount)
-    const resolvedCacheReadInputCost = calculateResolvedCost(cacheReadInputCost, pricedCacheReadInputTokens)
-    const resolvedCacheCreationInputCost = calculateResolvedCost(cacheCreationInputCost, pricedCacheCreationInputTokens)
+    const serviceTier = options.serviceTier === 'default' || options.serviceTier === 'auto'
+        ? 'standard'
+        : options.serviceTier ?? 'standard'
+    const tiers = modelInfo.tokenPricing?.filter(tier => tier.serviceTier === serviceTier)
+    if (serviceTier !== 'standard' && !tiers?.length)
+        throw new Error(`No ${serviceTier} pricing for ${options.provider}/${options.model}`)
+    const rates = {
+        inputCost: serviceTier === 'standard' ? modelInfo.inputCost : null,
+        outputCost: serviceTier === 'standard' ? modelInfo.outputCost : null,
+        cacheReadInputCost: serviceTier === 'standard' ? modelInfo.cacheReadInputCost : null,
+        cacheCreationInputCost: serviceTier === 'standard' ? modelInfo.cacheCreationInputCost : null,
+        cacheCreationInputCost1h: undefined as number | undefined,
+        cacheCreationInputCost12h: undefined as number | undefined,
+    }
+    // Compatibility with previously published catalogs. New catalogs use explicit thresholds.
+    if (!modelInfo.tokenPricing && contextAmount > 200_000) {
+        rates.inputCost = modelInfo.inputCostAbove200kTokens ?? rates.inputCost
+        rates.outputCost = modelInfo.outputCostAbove200kTokens ?? rates.outputCost
+        rates.cacheReadInputCost = modelInfo.cacheReadInputCostAbove200kTokens ?? rates.cacheReadInputCost
+        rates.cacheCreationInputCost = modelInfo.cacheCreationInputCostAbove200kTokens ?? rates.cacheCreationInputCost
+    }
+    for (const tier of [...(tiers ?? [])].sort((a, b) => a.aboveInputTokens - b.aboveInputTokens)) {
+        if (tier.aboveInputTokens > 0 && contextAmount <= tier.aboveInputTokens)
+            continue
+        for (const field of Object.keys(rates) as (keyof typeof rates)[]) {
+            const value = tier[field]
+            if (value !== undefined)
+                rates[field] = value
+        }
+    }
+    const writes1h = toNonNegativeAmount(options.cacheCreationInputTokens1h)
+    const writes12h = toNonNegativeAmount(options.cacheCreationInputTokens12h)
+    if (writes1h + writes12h > cacheCreationInputTokens)
+        throw new Error('Cache TTL token counts exceed total cache creation tokens')
+    const defaultWrites = cacheCreationInputTokens - writes1h - writes12h
+    function price(rate: number | null | undefined, amount: number, category: string): number {
+        if (options.strict && amount > 0 && rate == null)
+            throw new Error(`Missing ${category} rate for ${options.provider}/${options.model}`)
+        return calculateResolvedCost(rate ?? null, amount)
+    }
+    // Explicit TTL counts must never silently receive a shorter TTL's rate.
+    if ((writes1h > 0 && rates.cacheCreationInputCost1h == null) || (writes12h > 0 && rates.cacheCreationInputCost12h == null))
+        throw new Error(`Missing cache TTL rate for ${options.provider}/${options.model}`)
+    const multiplier = options.provider === 'anthropic' && options.inferenceGeo === 'us' ? 1.1 : 1
+    const resolvedInputCost = price(rates.inputCost, inputAmount, 'input') * multiplier
+    const resolvedOutputCost = price(rates.outputCost, outputAmount, 'output') * multiplier
+    const resolvedCacheReadInputCost = price(rates.cacheReadInputCost, cacheReadInputTokens, 'cache read') * multiplier
+    const resolvedCacheCreationInputCost = (
+        price(rates.cacheCreationInputCost, defaultWrites, 'cache write')
+        + price(rates.cacheCreationInputCost1h, writes1h, 'one-hour cache write')
+        + price(rates.cacheCreationInputCost12h, writes12h, 'twelve-hour cache write')
+    ) * multiplier
 
     return {
         inputCost: resolvedInputCost,

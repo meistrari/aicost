@@ -1,3 +1,5 @@
+import { extractTokenPricing } from '../src/token-pricing'
+import type { TokenPricingTier } from '../src/token-pricing'
 import { join } from 'node:path'
 import { additionalModels } from './additional-models'
 
@@ -7,6 +9,7 @@ type OutputCostUnit = 'token' | 'request' | 'image' | null
 type CacheInputCostUnit = 'token' | null
 
 export type RawModel = {
+    tokenPricing?: TokenPricingTier[]
     litellm_provider?: string
     mode?: string
     max_tokens?: number | null
@@ -27,6 +30,7 @@ export type RawModel = {
 type RawModelIndex = Record<string, RawModel>
 
 type IndexedModel = {
+    tokenPricing?: TokenPricingTier[]
     maxTokens: number | null
     name: string
     type: ModelMode
@@ -85,6 +89,7 @@ function normalizeRawModel(value: unknown): RawModel | null {
     const model = value as Record<string, unknown>
 
     return {
+        tokenPricing: extractTokenPricing(model),
         litellm_provider: toOptionalString(model.litellm_provider),
         mode: toOptionalString(model.mode),
         max_tokens: toNullableNumber(model.max_tokens),
@@ -261,6 +266,7 @@ export function buildModelPerProvider(modelIndex: RawModelIndex): Record<string,
         const priceTier = calculatePriceTier(inputCost, outputCost, inputCostUnit, outputCostUnit)
 
         const structured: IndexedModel = {
+            ...(model.tokenPricing?.length ? { tokenPricing: model.tokenPricing } : {}),
             maxTokens: toNullableNumber(model.max_tokens),
             name,
             type: mode,
