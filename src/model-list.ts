@@ -1,7 +1,7 @@
-// Last updated: 2026-10-30T18:06:19.583Z
-// Next update: 2026-10-31T00:06:19.583Z
+// Last updated: 2026-10-30T20:23:39.970Z
+// Next update: 2026-10-31T02:23:39.970Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "kyma" | "bigmodel" | "typesafe" | "gemini-api" | "clf_ai_gateway"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -482,7 +482,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000034375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -696,7 +703,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -710,7 +725,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -724,7 +747,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -738,7 +769,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -752,7 +791,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -766,7 +813,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -780,7 +835,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -794,7 +857,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -836,7 +907,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -850,7 +929,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -864,7 +951,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -878,7 +973,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000147
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -892,7 +995,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -906,7 +1017,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -920,7 +1039,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -934,7 +1061,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -948,7 +1083,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -962,7 +1105,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -976,7 +1127,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -990,7 +1149,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1032,7 +1199,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1046,7 +1221,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1060,7 +1243,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1074,7 +1265,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1208,7 +1407,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1222,7 +1429,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1236,7 +1451,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1278,7 +1501,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1292,7 +1523,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1306,7 +1545,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1348,7 +1595,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1362,7 +1617,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1376,7 +1639,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 5.05e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1390,7 +1661,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 9.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1446,7 +1725,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1460,7 +1747,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1474,7 +1769,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1530,7 +1833,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1544,7 +1855,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1558,7 +1877,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1572,7 +1899,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1586,7 +1921,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1600,7 +1943,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1804,7 +2155,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1818,7 +2177,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1832,7 +2199,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1846,7 +2221,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1860,7 +2243,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1874,7 +2265,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1888,7 +2287,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1902,7 +2309,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1916,7 +2331,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1930,7 +2353,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1944,7 +2375,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -1958,7 +2397,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2056,7 +2503,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2070,7 +2524,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2238,7 +2699,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2252,7 +2720,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2484,7 +2959,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2498,7 +2981,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2512,7 +3003,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2526,7 +3025,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2540,7 +3047,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2554,7 +3069,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2586,7 +3109,29 @@ const provider1 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2838,7 +3383,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2852,7 +3405,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -2992,7 +3553,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3020,7 +3589,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 2.06e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 2.06e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.21e-8,
+                    "outputCost": 7.21e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3034,7 +3623,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8025e-7,
+                    "outputCost": 5.4075e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3048,7 +3657,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3062,7 +3691,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3076,7 +3725,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3090,7 +3759,27 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 8.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3258,7 +3947,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3272,7 +3969,15 @@ const provider1 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3370,7 +4075,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000024
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3384,7 +4096,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000024
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3482,7 +4201,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3496,7 +4222,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3510,7 +4243,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3524,7 +4264,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3538,7 +4285,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3636,7 +4390,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3650,7 +4411,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3664,7 +4432,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3678,7 +4453,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3692,7 +4474,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3706,7 +4495,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3720,7 +4516,14 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3734,7 +4537,23 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3748,7 +4567,23 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3804,7 +4639,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3818,7 +4668,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3832,7 +4697,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3846,7 +4726,39 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheCreationInputCost": 3.125e-7,
+                    "cacheReadInputCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3860,7 +4772,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3874,7 +4801,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3888,7 +4830,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3902,7 +4859,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3916,7 +4888,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3930,7 +4917,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3944,7 +4946,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3958,7 +4975,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3972,7 +5004,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -3986,7 +5033,22 @@ const provider1 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         }
     ] as const
 
@@ -4059,7 +5121,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4073,7 +5155,15 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4087,7 +5177,22 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.000004375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4101,7 +5206,26 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021875,
+                    "outputCost": 0.0000175
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4129,7 +5253,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4157,7 +5288,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4171,7 +5309,29 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.65e-7,
+                    "outputCost": 0.000001375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 1.65e-7,
+                    "outputCost": 0.000001375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.44375e-7,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4185,7 +5345,26 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000240625,
+                    "outputCost": 0.00001925
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4199,7 +5378,15 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-8,
+                    "outputCost": 7e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4213,7 +5400,22 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00000625
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000109375,
+                    "inputCost": 0.000004375,
+                    "outputCost": 0.000021875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4227,7 +5429,29 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4241,7 +5465,20 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4255,7 +5492,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4311,7 +5555,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4325,7 +5576,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4339,7 +5597,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4353,7 +5618,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4367,7 +5639,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4381,7 +5660,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4395,7 +5681,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4409,7 +5702,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4423,7 +5723,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4437,7 +5744,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4451,7 +5765,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4465,7 +5786,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4479,7 +5807,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4493,7 +5828,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4507,7 +5849,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4521,7 +5870,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4535,7 +5891,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4549,7 +5912,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4563,7 +5933,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4577,7 +5954,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4591,7 +5975,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4605,7 +5996,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4619,7 +6017,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4633,7 +6038,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4647,7 +6059,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4661,7 +6080,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4675,7 +6101,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4689,7 +6122,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4703,7 +6143,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4717,7 +6164,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4731,7 +6185,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4745,7 +6206,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4759,7 +6227,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4773,7 +6248,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4787,7 +6269,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4801,7 +6290,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4815,7 +6311,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4829,7 +6332,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4843,7 +6353,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4857,7 +6374,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4871,7 +6395,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4885,7 +6416,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4899,7 +6437,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4913,7 +6458,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4927,7 +6479,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4941,7 +6500,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4955,7 +6521,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4969,7 +6542,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4983,7 +6563,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -4997,7 +6584,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5015,7 +6609,17 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5033,7 +6637,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5075,7 +6701,16 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.05e-7,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000168
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5089,7 +6724,15 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5107,7 +6750,17 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5125,7 +6778,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostAbove200kTokens": 0.00000825,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5153,7 +6828,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5195,7 +6890,43 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
+        },
+        {
+            "maxTokens": null,
+            "name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5241,7 +6972,17 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5259,7 +7000,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostAbove200kTokens": 0.00000825,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5287,7 +7050,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 5.1e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5301,7 +7084,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 6.7e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5315,7 +7118,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 1.4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5333,7 +7156,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5351,7 +7196,17 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5365,7 +7220,20 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5379,7 +7247,22 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.000004375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5397,7 +7280,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostAbove200kTokens": 0.00000825,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5411,7 +7316,20 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5425,7 +7343,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5439,7 +7365,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.85e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5453,7 +7387,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.5e-8,
+                    "outputCost": 3.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5467,7 +7409,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.2e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5481,7 +7443,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5495,7 +7477,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5509,7 +7511,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000035
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5523,7 +7545,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5537,7 +7579,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 3.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5551,7 +7613,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 1.7e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5565,7 +7647,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 2.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5579,7 +7681,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5593,7 +7715,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5607,7 +7749,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 5.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5621,7 +7783,21 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000438
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5635,7 +7811,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5649,7 +7845,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5663,7 +7879,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5677,7 +7913,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5691,7 +7947,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.0000011375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5705,7 +7981,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5719,7 +8015,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5733,7 +8049,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5747,7 +8083,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5775,7 +8131,21 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5789,7 +8159,21 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5803,7 +8187,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5831,7 +8235,21 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.3e-7,
+                    "outputCost": 0.00000466
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5845,7 +8263,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5859,7 +8297,15 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5873,7 +8319,15 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-8,
+                    "outputCost": 7e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5887,7 +8341,29 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5901,7 +8377,20 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5947,7 +8436,29 @@ const provider2 = [
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostAbove200kTokens": 0.00000825,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5965,7 +8476,23 @@ const provider2 = [
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostAbove200kTokens": 0.000009,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000027,
+                    "cacheCreationInputCost": 0.000009,
+                    "cacheCreationInputCost1h": 0.0000144,
+                    "cacheReadInputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5979,7 +8506,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -5993,7 +8527,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6007,7 +8548,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6021,7 +8569,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6035,7 +8590,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6147,7 +8709,20 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6175,7 +8750,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6189,7 +8771,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6203,7 +8792,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6221,7 +8817,17 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6249,7 +8855,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6263,7 +8889,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6277,7 +8911,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6291,7 +8933,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.85e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6305,7 +8955,15 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.5e-8,
+                    "outputCost": 3.3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6333,7 +8991,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000385
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6347,7 +9025,21 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000056
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6361,7 +9053,27 @@ const provider2 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 7e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6375,7 +9087,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6389,7 +9111,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6403,7 +9135,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6417,7 +9159,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6431,7 +9183,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4.4e-7,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "outputCost": 0.00000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6445,7 +9207,16 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000055,
+                    "cacheReadInputCost": 5.5e-7,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6459,7 +9230,16 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "cacheReadInputCost": 5e-7,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6473,7 +9253,16 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000011,
+                    "cacheReadInputCost": 0.0000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6487,7 +9276,16 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "cacheReadInputCost": 0.000001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6501,7 +9299,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6515,7 +9323,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000022,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000825,
+                    "cacheReadInputCost": 0.0000066,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.00033
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000165,
+                    "cacheReadInputCost": 0.0000132,
+                    "inputCost": 0.000132,
+                    "outputCost": 0.000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6529,7 +9363,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000165
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6543,7 +9387,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.2e-7,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6557,7 +9411,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00002,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000075,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.0003
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00015,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6571,7 +9451,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6585,7 +9475,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6599,7 +9499,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6613,7 +9523,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6627,7 +9547,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6641,7 +9577,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.0000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6655,7 +9607,25 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6669,7 +9639,25 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000065625,
+                    "cacheReadInputCost": 5.25e-7,
+                    "inputCost": 0.00000525,
+                    "outputCost": 0.00002625
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6683,7 +9671,25 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6697,7 +9703,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6711,7 +9724,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6725,7 +9745,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6739,7 +9766,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6753,7 +9787,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6767,7 +9808,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6781,7 +9829,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6795,7 +9850,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6809,7 +9871,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006875,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6823,7 +9892,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6837,7 +9913,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6851,7 +9934,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6865,7 +9955,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000034375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6879,7 +9976,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000034375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6893,7 +9997,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000034375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6935,7 +10046,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6949,7 +10067,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6963,7 +10088,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6977,7 +10109,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -6991,7 +10130,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7005,7 +10151,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7019,7 +10172,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7033,7 +10193,14 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7047,7 +10214,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.0000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7061,7 +10244,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7075,7 +10274,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000015,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000012,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000012,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7089,7 +10314,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000165,
+                    "cacheReadInputCost": 6.6e-7,
+                    "inputCost": 0.0000132,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000033,
+                    "cacheReadInputCost": 0.00000132,
+                    "inputCost": 0.0000264,
+                    "outputCost": 0.000099
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7103,7 +10354,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000021,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000105,
+                    "cacheReadInputCost": 1.56e-7,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000105,
+                    "cacheReadInputCost": 1.56e-7,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003675,
+                    "cacheReadInputCost": 5.46e-7,
+                    "inputCost": 0.00000294,
+                    "outputCost": 0.00000924
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7117,7 +10394,33 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000231,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001155,
+                    "cacheReadInputCost": 1.716e-7,
+                    "inputCost": 9.24e-7,
+                    "outputCost": 0.000002904
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001155,
+                    "cacheReadInputCost": 1.716e-7,
+                    "inputCost": 9.24e-7,
+                    "outputCost": 0.000002904
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000040425,
+                    "cacheReadInputCost": 6.006e-7,
+                    "inputCost": 0.000003234,
+                    "outputCost": 0.000010164
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7131,7 +10434,25 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000004125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7145,7 +10466,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7159,7 +10496,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7173,7 +10526,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7187,7 +10556,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7201,7 +10586,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7215,7 +10616,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7229,7 +10646,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7243,7 +10676,23 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7257,7 +10706,29 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.98e-7,
+                    "outputCost": 0.0000016555
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 1.98e-7,
+                    "outputCost": 0.0000016555
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.7325e-7,
+                    "inputCost": 6.93e-7,
+                    "outputCost": 0.00000579425
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7271,7 +10742,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7285,7 +10766,17 @@ const provider2 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ]
         }
     ] as const
 
@@ -7542,7 +11033,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7556,7 +11055,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7570,7 +11077,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7584,7 +11099,14 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7598,7 +11120,14 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7612,7 +11141,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055,
+                    "cacheReadInputCost": 6.875e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7626,7 +11171,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011,
+                    "cacheReadInputCost": 1.375e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7640,7 +11201,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7682,7 +11259,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7,
+                    "cacheReadInputCost": 2.75e-9
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7696,7 +11282,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7710,7 +11304,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7724,7 +11326,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7738,7 +11348,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7752,7 +11370,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7766,7 +11392,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7780,7 +11414,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7808,7 +11450,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7822,7 +11472,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -7836,7 +11494,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8060,7 +11734,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8074,7 +11763,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8088,7 +11792,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8102,7 +11821,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8116,7 +11850,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8130,7 +11872,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8144,7 +11894,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000375,
+                    "outputCost": 0.000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8172,7 +11930,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8186,7 +11952,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8200,7 +11974,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8214,7 +11996,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8228,7 +12018,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8242,7 +12040,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8256,7 +12062,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8270,7 +12084,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8284,7 +12106,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8298,7 +12128,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8326,7 +12164,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8340,7 +12186,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8354,7 +12208,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 6.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8368,7 +12238,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8382,7 +12261,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8396,7 +12284,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8410,7 +12314,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 6.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8438,7 +12358,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8452,7 +12388,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001,
+                    "cacheReadInputCost": 1.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8466,7 +12418,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8480,7 +12441,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7,
+                    "cacheReadInputCost": 2.5e-9
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8494,7 +12464,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8508,7 +12486,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8732,7 +12726,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8746,7 +12756,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007,
+                    "cacheReadInputCost": 8.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8774,7 +12800,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8788,7 +12823,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8802,7 +12845,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8816,7 +12867,57 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8830,7 +12931,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.43e-7,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8844,7 +12975,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.43e-7,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8858,7 +13019,57 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 1.3e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8872,7 +13083,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825,
+                    "cacheReadInputCost": 1.43e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8886,7 +13127,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825,
+                    "cacheReadInputCost": 1.43e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8900,7 +13171,40 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8914,7 +13218,40 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8928,7 +13265,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8942,7 +13305,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8956,7 +13361,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8970,7 +13417,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8984,7 +13473,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -8998,7 +13529,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9012,7 +13585,49 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9026,7 +13641,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9040,7 +13665,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9054,7 +13689,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9068,7 +13713,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9082,7 +13737,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9096,7 +13777,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9110,7 +13817,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9124,7 +13841,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9138,7 +13865,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9152,7 +13889,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9166,7 +13913,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9180,7 +13937,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000003,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 0.0000024,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9194,7 +13961,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9208,7 +13985,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000003,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 0.0000024,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9222,7 +14009,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9264,7 +14061,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9278,7 +14101,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9292,7 +14141,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.0000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9306,7 +14181,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000011,
+                    "cacheReadInputCost": 8.8e-8,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9320,7 +14221,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "inputCost": 0.000022,
+                    "outputCost": 0.0000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9334,7 +14245,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9348,7 +14269,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9376,7 +14323,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9390,7 +14363,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9404,7 +14403,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.0000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9418,7 +14443,33 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000011,
+                    "cacheReadInputCost": 8.8e-8,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9432,7 +14483,55 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9446,7 +14545,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9460,7 +14589,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9474,7 +14633,55 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9488,7 +14695,55 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9502,7 +14757,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9516,7 +14801,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165,
+                    "cacheReadInputCost": 2.75e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9530,7 +14845,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9544,7 +14889,37 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165,
+                    "cacheReadInputCost": 2.75e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9558,7 +14933,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9572,7 +14956,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9586,7 +14979,30 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9600,7 +15016,30 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9614,7 +15053,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9628,7 +15083,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7,
+                    "cacheReadInputCost": 1e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9684,7 +15155,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9698,7 +15177,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9712,7 +15199,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9740,7 +15235,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9782,7 +15285,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9796,7 +15307,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9810,7 +15329,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9838,7 +15365,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9894,7 +15429,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9908,7 +15458,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9922,7 +15487,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9936,7 +15509,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9950,7 +15531,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9964,7 +15553,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000138,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9978,7 +15575,14 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -9992,7 +15596,14 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10006,7 +15617,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055,
+                    "cacheReadInputCost": 6.875e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10020,7 +15647,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011,
+                    "cacheReadInputCost": 1.375e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10034,7 +15677,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7,
+                    "cacheReadInputCost": 2.75e-9
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10048,7 +15700,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10090,7 +15758,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10104,7 +15780,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10118,7 +15802,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10132,7 +15824,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10146,7 +15846,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10160,7 +15868,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10174,7 +15890,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10188,7 +15912,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10202,7 +15934,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10300,7 +16040,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10314,7 +16069,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10328,7 +16098,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10342,7 +16120,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10356,7 +16142,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10384,7 +16186,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.375e-8,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10398,7 +16216,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-9,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10412,7 +16239,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10440,7 +16275,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-8,
+                    "inputCost": 9.625e-7,
+                    "outputCost": 0.0000077
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10468,7 +16319,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001155,
+                    "outputCost": 0.0000924
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10482,7 +16341,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10496,7 +16364,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 4.125e-7,
+                    "outputCost": 0.000002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.0000099
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10510,7 +16394,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-8,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 6.875e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10524,7 +16417,27 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000165,
+                    "outputCost": 0.000099
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000033,
+                    "outputCost": 0.0001485
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.000297
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10538,7 +16451,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000024,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10552,7 +16475,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 3e-7,
+                    "cacheReadInputCost": 2.4e-8,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 9e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10566,7 +16499,17 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 4.8e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10580,7 +16523,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10594,7 +16545,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10608,7 +16567,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10636,7 +16603,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10650,7 +16625,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10734,7 +16717,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10748,7 +16746,22 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10762,7 +16775,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10776,7 +16797,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10790,7 +16819,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10818,7 +16863,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.375e-8,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10832,7 +16893,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-9,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10846,7 +16916,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000066
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10874,7 +16952,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-8,
+                    "inputCost": 9.625e-7,
+                    "outputCost": 0.0000077
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10902,7 +16996,15 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001155,
+                    "outputCost": 0.0000924
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10916,7 +17018,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10930,7 +17041,23 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 4.125e-7,
+                    "outputCost": 0.000002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.0000099
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10944,7 +17071,16 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-8,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 6.875e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10958,7 +17094,27 @@ const provider4 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000165,
+                    "outputCost": 0.000099
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000033,
+                    "outputCost": 0.0001485
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.000297
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -10972,7 +17128,15 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11059,7 +17223,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11073,7 +17244,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11087,7 +17265,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11101,7 +17286,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11115,7 +17307,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11129,7 +17328,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11143,7 +17349,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11157,7 +17370,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11171,7 +17391,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11185,7 +17412,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11199,7 +17433,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11213,7 +17454,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11241,7 +17489,17 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11255,7 +17513,17 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11269,7 +17537,17 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11283,7 +17561,17 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11297,7 +17585,17 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11311,7 +17609,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11353,7 +17674,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11367,7 +17711,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11381,7 +17748,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11395,7 +17785,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11409,7 +17822,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00036
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11423,7 +17859,30 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00036
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11437,7 +17896,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11451,7 +17919,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11465,7 +17942,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000025
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -11479,7 +17965,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000025
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12011,7 +18506,14 @@ const provider5 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12196,7 +18698,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12213,7 +18724,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12717,7 +19237,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12748,7 +19275,16 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12762,7 +19298,23 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12804,7 +19356,14 @@ const provider5 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12880,7 +19439,15 @@ const provider7 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12894,7 +19461,15 @@ const provider7 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12908,7 +19483,15 @@ const provider7 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-7,
+                    "outputCost": 9e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -12922,7 +19505,15 @@ const provider7 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13127,7 +19718,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13141,7 +19747,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13155,7 +19776,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13169,7 +19805,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13183,7 +19834,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13197,7 +19863,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13211,7 +19892,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13225,7 +19921,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13239,7 +19950,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13253,7 +19979,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13267,7 +20008,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13281,7 +20037,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13295,7 +20066,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13309,7 +20095,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13323,7 +20124,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13337,7 +20153,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13351,7 +20182,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13365,7 +20211,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13379,7 +20240,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13393,7 +20269,22 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13407,7 +20298,14 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -13421,7 +20319,39 @@ const provider10 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheCreationInputCost": 3.125e-7,
+                    "cacheReadInputCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         }
     ] as const
 
@@ -14209,7 +21139,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14279,7 +21217,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-7,
+                    "inputCost": 0.000002225,
+                    "outputCost": 0.0000125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14307,7 +21254,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14321,7 +21277,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14335,7 +21300,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14349,7 +21323,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14363,7 +21346,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14391,7 +21383,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14405,7 +21405,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14447,7 +21455,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14489,7 +21505,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14503,7 +21527,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14517,7 +21556,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14531,7 +21585,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14545,7 +21614,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14559,7 +21643,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14573,7 +21672,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14587,7 +21701,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14601,7 +21730,21 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000875,
+                    "outputCost": 0.00002625
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14615,7 +21758,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14629,7 +21787,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14643,7 +21816,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14657,7 +21838,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14671,7 +21860,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14685,7 +21882,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14699,7 +21904,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14713,7 +21926,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14727,7 +21948,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14741,7 +21970,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14755,7 +21992,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14769,7 +22021,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14783,7 +22050,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14797,7 +22072,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14811,7 +22094,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14825,7 +22116,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14839,7 +22138,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14853,7 +22160,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14881,7 +22211,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14951,7 +22304,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -14965,7 +22341,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15007,7 +22406,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15021,7 +22443,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15035,7 +22465,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15049,7 +22487,95 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000125,
+                    "cacheReadInputCost": 5e-7,
+                    "cacheCreationInputCost": 0.00000625,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000025,
+                    "cacheReadInputCost": 0.000001,
+                    "cacheCreationInputCost": 0.0000125,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000125,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000025,
+                    "cacheCreationInputCost": 0.0000125,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.0001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0001,
+                    "cacheCreationInputCost": 0.00005,
+                    "cacheReadInputCost": 0.000004,
+                    "inputCost": 0.00004,
+                    "outputCost": 0.00015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00015,
+                    "cacheCreationInputCost": 0.000075,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.0003
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0003,
+                    "cacheCreationInputCost": 0.00015,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15063,7 +22589,77 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15077,7 +22673,93 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 1.25e-7,
+                    "cacheReadInputCost": 5e-9,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "decisions",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 0
+                },
+                {
+                    "serviceTier": "decisions",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 0
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 1.25e-7,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15091,7 +22773,75 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00004,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15105,7 +22855,77 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00004,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15119,7 +22939,77 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15133,7 +23023,77 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000002,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15147,7 +23107,22 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00003125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15161,7 +23136,17 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15175,7 +23160,17 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15189,7 +23184,17 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15203,7 +23208,17 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15231,7 +23246,51 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225,
+                    "cacheReadInputCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15245,7 +23304,51 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225,
+                    "cacheReadInputCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15259,7 +23362,33 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15273,7 +23402,33 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15287,7 +23442,51 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15301,7 +23500,51 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15315,7 +23558,39 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15329,7 +23604,39 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15343,7 +23650,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15357,7 +23687,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15371,7 +23724,23 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15385,7 +23754,23 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15399,7 +23784,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15413,7 +23806,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15427,7 +23828,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15469,7 +23893,16 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15497,7 +23930,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15511,7 +23967,30 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15525,7 +24004,23 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15539,7 +24034,23 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15553,7 +24064,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15567,7 +24086,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15581,7 +24108,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000075,
+                    "outputCost": 0.0003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15595,7 +24130,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000075,
+                    "outputCost": 0.0003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15609,7 +24152,29 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15651,7 +24216,29 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15665,7 +24252,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15679,7 +24274,15 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15693,7 +24296,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15707,7 +24318,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15721,7 +24340,29 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.38e-7,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15763,7 +24404,29 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.38e-7,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15777,7 +24440,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 0
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15791,7 +24462,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-8,
+                    "outputCost": 0
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15819,7 +24498,15 @@ const provider16 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 0
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15916,7 +24603,95 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00003,
+                    "cacheCreationInputCost": 0.000015,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000012,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00006,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000012,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -15944,7 +24719,77 @@ const provider16 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00000125,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00000125,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ]
         }
     ] as const
 
@@ -17941,7 +26786,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001249997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001999998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -17955,7 +26807,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001249997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001999998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -17969,7 +26828,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000124999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000199997
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -17983,7 +26849,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001874999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002999997
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -17997,7 +26870,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001874999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002999997
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18011,7 +26891,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18025,7 +26912,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18039,7 +26933,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18053,7 +26954,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18067,7 +26975,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18081,7 +26996,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000500003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000800002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18123,7 +27045,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000374997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000599998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18137,7 +27066,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000374997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000599998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18151,7 +27087,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000400001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18234,7 +27177,25 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 3.1248e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6252e-7,
+                    "outputCost": 0.00000337498,
+                    "cacheReadInputCost": 5.628e-8,
+                    "cacheCreationInputCost": 5.6252e-7,
+                    "inputAudioCost": 0.00000112497,
+                    "cacheReadAudioCost": 1.1249e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 6.251e-8,
+                    "inputAudioCost": 6.2503e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18279,7 +27240,31 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002699998,
+                    "cacheReadInputCost": 4.5003e-7,
+                    "cacheCreationInputCost": 0.00000450002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000899997,
+                    "outputCost": 0.00004049997,
+                    "cacheReadInputCost": 8.9999e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18293,7 +27278,25 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 6.2503e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112497,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.1249e-7,
+                    "cacheCreationInputCost": 0.00000112497,
+                    "inputAudioCost": 0.00000225001,
+                    "cacheReadAudioCost": 2.2498e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.2502e-7,
+                    "inputAudioCost": 0.00000124999
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18321,7 +27324,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 7.4998e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18335,7 +27348,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 7.4998e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18349,7 +27372,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 7.4998e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18363,7 +27396,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000187502,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00002025002,
+                    "cacheReadInputCost": 3.3747e-7,
+                    "cacheCreationInputCost": 0.00000337498
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18377,7 +27420,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 3.7499e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.7501e-7,
+                    "outputCost": 0.00000562499,
+                    "cacheReadInputCost": 6.748e-8,
+                    "cacheCreationInputCost": 6.7501e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18405,7 +27458,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000014,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000245,
+                    "outputCost": 0.0000077,
+                    "cacheReadInputCost": 4.55e-7,
+                    "cacheCreationInputCost": 0.00000245
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18419,7 +27482,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000014,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000245,
+                    "outputCost": 0.0000077,
+                    "cacheReadInputCost": 4.55e-7,
+                    "cacheCreationInputCost": 0.00000245
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18433,7 +27506,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5001e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 8.75e-7,
+                    "cacheReadInputCost": 5.25e-8,
+                    "cacheCreationInputCost": 2.625e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18447,7 +27530,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000124999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000249998,
+                    "outputCost": 0.00001999998,
+                    "cacheReadInputCost": 2.4997e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18461,7 +27554,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000124999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000249998,
+                    "outputCost": 0.00001999998,
+                    "cacheReadInputCost": 2.4997e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18475,7 +27578,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000175,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028,
+                    "cacheReadInputCost": 3.5e-7,
+                    "cacheCreationInputCost": 0.0000035
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18489,7 +27602,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000175,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028,
+                    "cacheReadInputCost": 3.5e-7,
+                    "cacheCreationInputCost": 0.0000035
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18503,7 +27626,31 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.00002999997,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.00002999997,
+                    "cacheReadInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18517,7 +27664,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 7.4998e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000150003,
+                    "outputCost": 0.00000899997,
+                    "cacheReadInputCost": 1.5001e-7,
+                    "cacheCreationInputCost": 0.00000150003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18545,7 +27702,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000500003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00004000003,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001599997,
+                    "outputCost": 0.00006000001,
+                    "cacheReadInputCost": 0.00000159999,
+                    "cacheCreationInputCost": 0.00001999998
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000999999,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18559,7 +27742,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.00002399999,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00003600002,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18573,7 +27782,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.4997e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.00000240002,
+                    "cacheReadInputCost": 3.997e-8,
+                    "cacheCreationInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 8.0003e-7,
+                    "outputCost": 0.00000360003,
+                    "cacheReadInputCost": 8.001e-8,
+                    "cacheCreationInputCost": 0.00000100002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.0001e-7,
+                    "cacheReadInputCost": 3.997e-8,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.00000179998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18587,7 +27822,31 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000500003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001249997,
+                    "outputCost": 0.0000750001,
+                    "cacheReadInputCost": 0.00000124999,
+                    "cacheCreationInputCost": 0.00001249997
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001249997,
+                    "outputCost": 0.0000750001,
+                    "cacheReadInputCost": 0.00000124999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.00000100002,
+                    "inputCost": 0.00000999999,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18601,7 +27860,15 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00002999997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18615,7 +27882,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.4997e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5003e-7,
+                    "outputCost": 0.00000360003,
+                    "cacheReadInputCost": 4.501e-8,
+                    "cacheCreationInputCost": 4.5003e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18713,7 +27990,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000299999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000525,
+                    "outputCost": 0.00002625,
+                    "cacheReadInputCost": 5.25e-7,
+                    "cacheCreationInputCost": 0.00000525
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18782,7 +28069,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.2001e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.85e-7,
+                    "outputCost": 0.00000385,
+                    "cacheReadInputCost": 3.85e-7,
+                    "cacheCreationInputCost": 3.85e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18824,7 +28121,23 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.2502e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 1.9999e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.2503e-7,
+                    "cacheCreationInputCost1h": 0.00000100002,
+                    "cacheReadInputCost": 4.998e-8,
+                    "inputCost": 5.0001e-7,
+                    "outputCost": 0.00000249998
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18838,7 +28151,14 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000400001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18852,7 +28172,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 3.0002e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021,
+                    "cacheReadInputCost": 5.25e-8,
+                    "cacheCreationInputCost": 5.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18880,7 +28210,15 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.2502e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.752e-8,
+                    "inputAudioCost": 3.7499e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18908,7 +28246,17 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002250003,
+                    "cacheReadInputCost": 2.2498e-7,
+                    "cacheCreationInputCost": 0.00000450002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18922,7 +28270,15 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00002999997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18936,7 +28292,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000199997,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.0000299999,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18950,7 +28332,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000124999,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000199997,
+                    "outputCost": 0.00000999999,
+                    "cacheReadInputCost": 1.0003e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.00001500002,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000249998,
+                    "cacheReadInputCost": 1.0003e-7,
+                    "inputCost": 0.00000199997,
+                    "outputCost": 0.00000750001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18964,7 +28372,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001249997,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001999998,
+                    "outputCost": 0.0000999999,
+                    "cacheReadInputCost": 0.00000199997,
+                    "cacheCreationInputCost": 0.00002500001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00004000003,
+                    "outputCost": 0.0001500002,
+                    "cacheReadInputCost": 0.00000400001,
+                    "cacheCreationInputCost": 0.00005000002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.00000199997,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.0000750001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18978,7 +28412,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.2502e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9999e-7,
+                    "outputCost": 0.0000010003,
+                    "cacheReadInputCost": 2.002e-8,
+                    "cacheCreationInputCost": 2.4997e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.0000015001,
+                    "cacheReadInputCost": 3.997e-8,
+                    "cacheCreationInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.4997e-7,
+                    "cacheReadInputCost": 2.002e-8,
+                    "inputCost": 1.9999e-7,
+                    "outputCost": 7.497e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -18992,7 +28452,33 @@ const provider21 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000199997,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.0000299999,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000150003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21097,7 +30583,15 @@ const provider23 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.45e-7,
+                    "inputAudioCost": 0.000001725
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21167,7 +30661,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00000625,
+                    "cacheReadInputCost": 1.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21181,7 +30684,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018,
+                    "cacheReadInputCost": 8e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21195,7 +30707,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7,
+                    "cacheReadInputCost": 1e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21209,7 +30730,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.6e-7,
+                    "outputCost": 0.00000139,
+                    "cacheReadInputCost": 2e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21223,7 +30753,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 9e-8,
+                    "cacheReadInputCost": 1e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21237,7 +30776,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7,
+                    "cacheReadInputCost": 4e-9
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21251,7 +30799,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.000002,
+                    "cacheReadInputCost": 1e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21265,7 +30822,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 3e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21279,7 +30845,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7,
+                    "cacheReadInputCost": 4e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21293,7 +30868,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 0.000001,
+                    "cacheReadInputCost": 2e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21321,7 +30905,16 @@ const provider24 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 4e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ]
         }
     ] as const
 
@@ -21597,7 +31190,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-8,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21611,7 +31213,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-8,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21709,7 +31320,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21723,7 +31343,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21807,7 +31436,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21821,7 +31459,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.85e-7,
+                    "inputCost": 0.000001425,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -21961,7 +31608,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -22087,7 +31743,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -22101,7 +31766,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -22143,7 +31817,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -22171,7 +31854,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.85e-7,
+                    "inputCost": 0.000001425,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -22213,7 +31905,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25237,7 +34938,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25251,7 +34961,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25265,7 +34984,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25279,7 +35007,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25293,7 +35030,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25307,7 +35053,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25321,7 +35076,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25335,7 +35099,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25349,7 +35122,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25391,7 +35173,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25419,7 +35210,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-7,
+                    "inputCost": 0.000005625,
+                    "outputCost": 0.000028125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25433,7 +35233,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25447,7 +35256,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-8,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.00000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25461,7 +35279,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 6.25e-8,
+                    "outputCost": 2.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25475,7 +35302,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.000003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25489,7 +35325,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-8,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.00000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25503,7 +35348,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-7,
+                    "inputCost": 0.000001875,
+                    "outputCost": 0.000006375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25517,7 +35371,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 6.25e-8,
+                    "outputCost": 2.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25531,7 +35394,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.000003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25545,7 +35417,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000009
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25601,7 +35482,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-7,
+                    "inputCost": 0.000005625,
+                    "outputCost": 0.000028125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25615,7 +35505,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.25e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25629,7 +35528,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.875e-7,
+                    "inputCost": 0.000002625,
+                    "outputCost": 0.00000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25643,7 +35551,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.25e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25657,7 +35574,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.875e-7,
+                    "inputCost": 0.000002625,
+                    "outputCost": 0.00000825
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25738,7 +35664,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25752,7 +35687,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-8,
+                    "inputCost": 2.8125e-7,
+                    "outputCost": 9.375e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25766,7 +35710,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25780,7 +35733,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-8,
+                    "inputCost": 2.8125e-7,
+                    "outputCost": 9.375e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25794,7 +35756,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.7e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000405
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25822,7 +35793,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25835,7 +35815,16 @@ const provider28 = [
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25849,7 +35838,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25863,7 +35861,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25877,7 +35884,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-8,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -25891,7 +35907,16 @@ const provider28 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26093,7 +36118,40 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputCost": 5.4e-7,
+                    "inputAudioCost": 0.0000018,
+                    "outputCost": 0.0000045,
+                    "cacheReadAudioCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                }
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -26107,7 +36165,14 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26121,7 +36186,43 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "inputAudioCost": 9e-7,
+                    "outputCost": 0.0000027,
+                    "cacheReadAudioCost": 9e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -26135,7 +36236,31 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -26149,7 +36274,16 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26163,7 +36297,40 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 1.5e-7,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7,
+                    "inputAudioCost": null
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputCost": 1.8e-7,
+                    "inputAudioCost": 5.4e-7,
+                    "outputCost": 7.2e-7,
+                    "cacheReadAudioCost": 5.4e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3e-8,
+                    "inputAudioCost": 3e-7
+                }
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -26177,7 +36344,14 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26191,7 +36365,14 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26209,7 +36390,51 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-7,
+                    "inputCost": 0.00000225,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4.5e-7,
+                    "inputCost": 0.0000045,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                }
+            ],
+            "nonGlobalCostMultiplier": 1
         },
         {
             "maxTokens": null,
@@ -26227,7 +36452,49 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 7.2e-7,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26245,7 +36512,23 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26259,7 +36542,20 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7e-7,
+                    "outputAudioCost": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26273,7 +36569,14 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26289,7 +36592,15 @@ const provider30 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26303,7 +36614,14 @@ const provider30 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26317,7 +36635,20 @@ const provider30 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26331,7 +36662,20 @@ const provider30 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26359,7 +36703,38 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
+                    "inputCost": 9e-7,
+                    "outputCost": 0.0000054,
+                    "cacheReadAudioCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26373,7 +36748,14 @@ const provider30 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26387,7 +36769,37 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1
         },
         {
             "maxTokens": null,
@@ -26401,7 +36813,32 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -26415,7 +36852,32 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -26429,7 +36891,32 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675
+                }
+            ],
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
             "maxTokens": null,
@@ -26443,7 +36930,30 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000135
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26609,7 +37119,14 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26623,7 +37140,38 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "inputAudioCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "inputAudioCost": 9e-7,
+                    "outputCost": 0.0000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26637,7 +37185,30 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26651,7 +37222,16 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26665,9 +37245,39 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
             "maxTokens": 1048576,
             "name": "gemini-4-argon",
             "type": "chat",
@@ -26679,7 +37289,9 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2026-12-01T00:00:00Z"
         }
     ] as const
 
@@ -26700,7 +37312,37 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26714,7 +37356,36 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
+                    "inputCost": 9e-7,
+                    "outputCost": 0.0000054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26728,7 +37399,36 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26742,7 +37442,30 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26756,7 +37479,30 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26770,7 +37516,30 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26784,7 +37553,30 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000135
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26802,7 +37594,49 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 7.2e-7,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26820,7 +37654,37 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26834,7 +37698,20 @@ const provider31 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26848,7 +37725,20 @@ const provider31 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26893,7 +37783,16 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26910,7 +37809,16 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26927,7 +37835,16 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -26944,7 +37861,16 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27000,7 +37926,21 @@ const provider31 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27014,7 +37954,21 @@ const provider31 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3.75e-8,
+                    "inputCost": 3.75e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27031,7 +37985,16 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27045,7 +38008,21 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27059,7 +38036,37 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputAudioCost": 0.000001,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-7,
+                    "inputAudioCost": 0.0000036,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27073,7 +38080,37 @@ const provider31 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ]
         }
     ] as const
 
@@ -27132,7 +38169,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27468,7 +38515,16 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27496,7 +38552,16 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27514,7 +38579,17 @@ const provider32 = [
             "cacheCreationInputCost": 2.5e-7,
             "cacheCreationInputCostAbove200kTokens": 5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27528,7 +38603,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27542,7 +38627,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27556,7 +38651,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27570,7 +38675,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27584,7 +38699,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27598,7 +38723,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27724,7 +38859,16 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27741,7 +38885,16 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27758,7 +38911,16 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -27772,7 +38934,17 @@ const provider32 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ]
         }
     ] as const
 
@@ -30863,7 +42035,16 @@ const provider51 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.0000024,
+                    "cacheReadInputCost": 1.2e-7
+                }
+            ]
         }
     ] as const
 
@@ -31695,7 +42876,14 @@ const provider53 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000002,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -31709,7 +42897,14 @@ const provider53 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -33488,7 +44683,16 @@ const provider57 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -33505,7 +44709,16 @@ const provider57 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -33522,7 +44735,16 @@ const provider57 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -33539,7 +44761,16 @@ const provider57 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35094,7 +46325,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003,
+                    "cacheReadInputCost": 8e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35108,7 +46348,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35122,7 +46371,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018,
+                    "cacheReadInputCost": 4e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35136,7 +46394,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35150,7 +46416,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35237,7 +46511,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35324,7 +46607,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35341,7 +46633,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35357,7 +46658,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35373,7 +46682,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35389,7 +46706,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35405,7 +46730,15 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35517,7 +46850,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35531,7 +46873,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35559,7 +46910,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -35590,7 +46950,16 @@ const provider60 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 0.000001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -36144,7 +47513,15 @@ const provider62 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -38954,7 +50331,16 @@ const provider70 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -39895,7 +51281,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -39909,7 +51310,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40035,7 +51451,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40049,7 +51480,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40063,7 +51509,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40077,7 +51538,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40091,7 +51567,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40105,7 +51596,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40119,7 +51625,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40133,7 +51654,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40147,7 +51683,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40161,7 +51712,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40175,7 +51741,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40189,7 +51770,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40203,7 +51799,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40217,7 +51828,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000005,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40231,7 +51857,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40245,7 +51886,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000625,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40263,7 +51919,31 @@ const provider71 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075,
+                    "cacheCreationInputCost": 0.00000188
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40277,7 +51957,20 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40291,7 +51984,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000188,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40309,7 +52017,31 @@ const provider71 = [
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostAbove200kTokens": 0.0000075,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075,
+                    "cacheCreationInputCost": 0.00000188
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40323,7 +52055,20 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40337,7 +52082,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000188,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40351,7 +52111,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40365,7 +52140,22 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40379,7 +52169,31 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40393,7 +52207,31 @@ const provider71 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ]
         }
     ] as const
 
@@ -40679,7 +52517,15 @@ const provider73 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40693,7 +52539,15 @@ const provider73 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 8.4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40707,7 +52561,15 @@ const provider73 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.75e-7,
+                    "outputCost": 0.0000027
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40867,7 +52729,15 @@ const provider75 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-7,
+                    "outputCost": 5.75e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40881,7 +52751,15 @@ const provider75 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-7,
+                    "outputCost": 5.75e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40895,7 +52773,15 @@ const provider75 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 3.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40909,7 +52795,15 @@ const provider75 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 3.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -40965,7 +52859,15 @@ const provider75 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ]
         }
     ] as const
 
@@ -41075,7 +52977,15 @@ const provider79 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 1.8e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -41089,7 +52999,15 @@ const provider79 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.25e-7
+                }
+            ]
         }
     ] as const
 
@@ -41106,7 +53024,15 @@ const provider80 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -41120,7 +53046,15 @@ const provider80 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 9e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42381,7 +54315,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42398,7 +54341,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42415,7 +54367,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42432,7 +54407,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42449,7 +54433,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 3.2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42466,7 +54473,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 3.2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42483,7 +54513,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42500,7 +54539,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42517,7 +54565,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42534,7 +54591,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42551,7 +54617,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000016,
+                    "outputCost": 0.0000048
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.0000032,
+                    "outputCost": 0.0000096
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42568,7 +54657,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42585,7 +54697,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42602,7 +54737,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42619,7 +54763,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42636,7 +54803,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42653,7 +54843,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42670,7 +54883,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42687,7 +54923,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42704,7 +54963,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42721,7 +55003,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42738,7 +55043,30 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42755,7 +55083,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42772,7 +55109,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42789,7 +55135,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42806,7 +55161,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42823,7 +55187,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42840,7 +55213,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42857,7 +55239,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42874,7 +55265,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42891,7 +55291,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42908,7 +55317,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42925,7 +55343,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42942,7 +55369,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42959,7 +55395,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42976,7 +55421,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -42993,7 +55447,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43010,7 +55473,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43027,7 +55499,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43044,7 +55525,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43061,7 +55551,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43078,7 +55577,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -43095,7 +55603,16 @@ const provider84 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ]
         }
     ] as const
 
@@ -43141,20 +55658,6 @@ const provider85 = [
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "zai/glm-5v-turbo",
-            "type": "chat",
-            "inputCost": 0.0000012,
-            "inputCostUnit": "token",
-            "outputCost": 0.000004,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.4e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -43336,6 +55839,20 @@ const provider85 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "zai/glm-5v-turbo",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         }
     ] as const
@@ -45815,7 +58332,14 @@ const provider90 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0
+                }
+            ]
         }
     ] as const
 
@@ -45832,7 +58356,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45846,7 +58390,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45860,7 +58424,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45874,7 +58458,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45888,7 +58492,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45902,7 +58516,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45930,7 +58554,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45944,7 +58578,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 2.75e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4.4e-7,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "outputCost": 0.00000198
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45958,7 +58602,33 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000022,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000825,
+                    "cacheReadInputCost": 0.0000066,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.00033
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000165,
+                    "cacheReadInputCost": 0.0000132,
+                    "inputCost": 0.000132,
+                    "outputCost": 0.000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45972,7 +58642,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000165
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -45986,7 +58666,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.2e-7,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "outputCost": 8.25e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46000,7 +58690,16 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000011,
+                    "cacheReadInputCost": 0.0000011,
+                    "outputCost": 0.0000495
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46014,7 +58713,16 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000055,
+                    "cacheReadInputCost": 5.5e-7,
+                    "outputCost": 0.00002475
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46028,7 +58736,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.45e-7,
+                    "outputCost": 7e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46042,7 +58770,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.275e-7,
+                    "outputCost": 7e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46056,7 +58804,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 1.4e-7
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46070,7 +58838,30 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000021875,
+                    "outputCost": 0.000004375
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46084,7 +58875,23 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46098,7 +58905,20 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46112,7 +58932,14 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46126,7 +58953,14 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46140,7 +58974,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000054,
+                    "cacheCreationInputCost": 0.00000675,
+                    "cacheReadInputCost": 5.4e-7,
+                    "outputCost": 0.0000243
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46154,7 +58998,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 3.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 5.4e-7,
+                    "cacheCreationInputCost": 6.75e-7,
+                    "cacheReadInputCost": 5.4e-8,
+                    "outputCost": 0.00000243
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46280,7 +59134,14 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000006,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 5
+            "priceTier": 5,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46294,7 +59155,14 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46364,7 +59232,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.9e-7,
+                    "outputCost": 8.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.9e-7,
+                    "outputCost": 8.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001015,
+                    "outputCost": 0.00000294
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46378,7 +59266,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000438
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46392,7 +59300,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.85e-7,
+                    "outputCost": 0.00000154
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46406,7 +59334,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46420,7 +59368,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46434,7 +59402,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.875e-7,
+                    "outputCost": 0.00000315
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46448,7 +59436,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.0000021
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46462,7 +59470,27 @@ const provider91 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.3e-7,
+                    "outputCost": 0.00000466
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46476,7 +59504,33 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000165,
+                    "cacheReadInputCost": 6.6e-7,
+                    "inputCost": 0.0000132,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000033,
+                    "cacheReadInputCost": 0.00000132,
+                    "inputCost": 0.0000264,
+                    "outputCost": 0.000099
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46490,7 +59544,23 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.375e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46504,7 +59574,23 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 1.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -46518,7 +59604,17 @@ const provider91 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ]
         }
     ] as const
 
@@ -46958,7 +60054,16 @@ const provider93 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000048
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -48621,20 +61726,6 @@ const provider100 = [
         },
         {
             "maxTokens": null,
-            "name": "aiand/deepseek-ai/deepseek-v4.1-flash-1017",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 6e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
             "name": "aiand/google/gemma-4-31b-it",
             "type": "chat",
             "inputCost": 2e-7,
@@ -48646,20 +61737,6 @@ const provider100 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "aiand/meta/muse-spark-open",
-            "type": "chat",
-            "inputCost": 0.00000125,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000425,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -48786,6 +61863,34 @@ const provider100 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "aiand/deepseek-ai/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "aiand/meta/muse-spark-open",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000425,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
@@ -49485,149 +62590,6 @@ const provider107 = [
 const provider108 = [
         {
             "maxTokens": null,
-            "name": "clf_ai_gateway/glm-5.3",
-            "type": "chat",
-            "inputCost": 5.6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000176,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.04e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/glm-5.3-flash",
-            "type": "chat",
-            "inputCost": 6e-8,
-            "inputCostUnit": "token",
-            "outputCost": 2e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.2e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/glm-5.2",
-            "type": "chat",
-            "inputCost": 5.6e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000176,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.04e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/glm-4.7-flash",
-            "type": "chat",
-            "inputCost": 2.4e-8,
-            "inputCostUnit": "token",
-            "outputCost": 1.6e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/deepseek-v4-pro",
-            "type": "chat",
-            "inputCost": 5.28e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.000001584,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.7e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/deepseek-v4-flash",
-            "type": "chat",
-            "inputCost": 1.76e-7,
-            "inputCostUnit": "token",
-            "outputCost": 5.28e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/deepseek-v4.1-flash",
-            "type": "chat",
-            "inputCost": 1.2e-7,
-            "inputCostUnit": "token",
-            "outputCost": 4.8e-7,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-9,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 1
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/kimi-k2.6",
-            "type": "chat",
-            "inputCost": 3.8e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000016,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 6.4e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/kimi-k2.7-code",
-            "type": "chat",
-            "inputCost": 3.8e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000016,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 7.6e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "clf_ai_gateway/qwen3.8-27b",
-            "type": "chat",
-            "inputCost": 1.8e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000128,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        }
-    ] as const
-
-const provider109 = [
-        {
-            "maxTokens": null,
             "name": "kyma/claude-fable-5",
             "type": "chat",
             "inputCost": 0.0000135,
@@ -50114,7 +63076,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 4,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.0000243
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50156,7 +63126,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.0000010125
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50170,7 +63148,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.00002025
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50228,7 +63214,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000003375,
+                    "outputCost": 0.00000675
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50286,7 +63280,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000054
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50650,7 +63652,15 @@ const provider109 = [
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001755,
+                    "outputCost": 0.000005265
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50678,7 +63688,15 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001296,
+                    "outputCost": 0.000005184
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50706,7 +63724,21 @@ const provider109 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 32000,
+                    "inputCost": 1.35e-7,
+                    "outputCost": 5.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.00000108
+                }
+            ]
         },
         {
             "maxTokens": null,
@@ -50794,7 +63826,7 @@ const provider109 = [
         }
     ] as const
 
-const provider110 = [
+const provider109 = [
         {
             "maxTokens": null,
             "name": "bigmodel/glm-5.3",
@@ -50839,7 +63871,7 @@ const provider110 = [
         }
     ] as const
 
-const provider111 = [
+const provider110 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -50853,6 +63885,784 @@ const provider111 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        }
+    ] as const
+
+const provider111 = [
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputAudioCost": 0.0000015,
+                    "cacheReadAudioCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "inputAudioCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000027,
+                    "cacheReadAudioCost": 2.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "inputAudioCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputAudioCost": 3.75e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputAudioCost": 0.00000135,
+                    "cacheReadAudioCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2026-12-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-argon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0000000000000001e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.8-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.6-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash-lite",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 2.5000000000000002e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5000000000000003e-7,
+                    "outputCost": 0.0000027,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputAudioCost": 9.000000000000001e-7,
+                    "cacheReadAudioCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5000000000000002e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000003,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.000000000000001e-7,
+                    "outputCost": 0.0000054,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.0000000000000004e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072000000000000005,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.0000000000000002e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000225,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 2.2500000000000002e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000045,
+                    "outputCost": 0.000027,
+                    "cacheReadInputCost": 4.5000000000000003e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.0000000000000001e-7,
+                    "outputCost": 4.0000000000000003e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 3e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": null,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 1.5e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputAudioCost": 5.4e-7,
+                    "cacheReadAudioCost": 5.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash-lite",
+            "type": "chat",
+            "inputCost": 1.0000000000000001e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.0000000000000003e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
+const provider112 = [
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.3",
+            "type": "chat",
+            "inputCost": 5.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.04e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.3-flash",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-5.2",
+            "type": "chat",
+            "inputCost": 5.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.04e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 2.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4-pro",
+            "type": "chat",
+            "inputCost": 5.28e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.7e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 1.76e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.28e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/kimi-k2.6",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/kimi-k2.7-code",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "clf_ai_gateway/qwen3.8-27b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000128,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ] as const
 
@@ -50965,10 +64775,11 @@ export const AICostModelList: {
     readonly "openinfer": typeof provider105
     readonly "opencode_go": typeof provider106
     readonly "refuseless": typeof provider107
-    readonly "clf_ai_gateway": typeof provider108
-    readonly "kyma": typeof provider109
-    readonly "bigmodel": typeof provider110
-    readonly "typesafe": typeof provider111
+    readonly "kyma": typeof provider108
+    readonly "bigmodel": typeof provider109
+    readonly "typesafe": typeof provider110
+    readonly "gemini-api": typeof provider111
+    readonly "clf_ai_gateway": typeof provider112
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -51078,8 +64889,9 @@ export const AICostModelList: {
     "openinfer": provider105,
     "opencode_go": provider106,
     "refuseless": provider107,
-    "clf_ai_gateway": provider108,
-    "kyma": provider109,
-    "bigmodel": provider110,
-    "typesafe": provider111,
+    "kyma": provider108,
+    "bigmodel": provider109,
+    "typesafe": provider110,
+    "gemini-api": provider111,
+    "clf_ai_gateway": provider112,
 }

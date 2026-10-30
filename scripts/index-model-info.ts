@@ -1,5 +1,8 @@
+import { extractTokenPricing } from '../src/token-pricing'
+import type { TokenPricingTier } from '../src/token-pricing'
 import { join } from 'node:path'
 import { additionalModels } from './additional-models'
+import { geminiApiModels, vertexAudioPricing, vertexNonGlobalMultipliers, vertexPricingValidUntil } from './google-models'
 
 type ModelMode = 'chat' | 'completion' | 'embedding' | 'responses'
 type InputCostUnit = 'token' | 'request' | 'pixel' | null
@@ -7,6 +10,8 @@ type OutputCostUnit = 'token' | 'request' | 'image' | null
 type CacheInputCostUnit = 'token' | null
 
 export type RawModel = {
+    pricingValidUntil?: string
+    tokenPricing?: TokenPricingTier[]
     litellm_provider?: string
     mode?: string
     max_tokens?: number | null
@@ -27,6 +32,9 @@ export type RawModel = {
 type RawModelIndex = Record<string, RawModel>
 
 type IndexedModel = {
+    nonGlobalCostMultiplier?: number
+    pricingValidUntil?: string
+    tokenPricing?: TokenPricingTier[]
     maxTokens: number | null
     name: string
     type: ModelMode
@@ -85,6 +93,7 @@ function normalizeRawModel(value: unknown): RawModel | null {
     const model = value as Record<string, unknown>
 
     return {
+        tokenPricing: extractTokenPricing(model),
         litellm_provider: toOptionalString(model.litellm_provider),
         mode: toOptionalString(model.mode),
         max_tokens: toNullableNumber(model.max_tokens),
@@ -261,6 +270,8 @@ export function buildModelPerProvider(modelIndex: RawModelIndex): Record<string,
         const priceTier = calculatePriceTier(inputCost, outputCost, inputCostUnit, outputCostUnit)
 
         const structured: IndexedModel = {
+            ...(model.pricingValidUntil ? { pricingValidUntil: model.pricingValidUntil } : {}),
+            ...(model.tokenPricing?.length ? { tokenPricing: model.tokenPricing } : {}),
             maxTokens: toNullableNumber(model.max_tokens),
             name,
             type: mode,
@@ -292,6 +303,21 @@ export function mergeAdditionalModels(models: Record<string, IndexedModel[]>): R
             byName.set(model.name, model)
         result[provider] = [...byName.values()]
     }
+    result['gemini-api'] = buildModelPerProvider(geminiApiModels)['gemini-api'] ?? []
+    result['vertex-ai'] = (result['vertex-ai'] ?? []).map((model) => {
+        const patches = vertexAudioPricing[model.name]
+        const tiers = new Map((model.tokenPricing ?? []).map(tier => [`${tier.serviceTier}:${tier.aboveInputTokens}`, tier]))
+        for (const patch of patches ?? []) {
+            const key = `${patch.serviceTier}:${patch.aboveInputTokens}`
+            tiers.set(key, { ...tiers.get(key), ...patch })
+        }
+        return {
+            ...model,
+            ...(patches ? { tokenPricing: [...tiers.values()] } : {}),
+            ...(vertexNonGlobalMultipliers[model.name] === undefined ? {} : { nonGlobalCostMultiplier: vertexNonGlobalMultipliers[model.name] }),
+            ...(vertexPricingValidUntil[model.name] ? { pricingValidUntil: vertexPricingValidUntil[model.name] } : {}),
+        }
+    })
     return result
 }
 
