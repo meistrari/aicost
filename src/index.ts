@@ -155,6 +155,8 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     model: P extends AICostModelProvider ? typeof AICostModelList[P][number]['name'] : string
     inputAmount: number
     outputAmount?: number
+    /** With Google metadata lacking candidatesTokenCount, outputAmount already includes thinking. Defaults to false. */
+    outputAmountIncludesThinking?: boolean
     cacheReadInputTokens?: number
     cacheCreationInputTokens?: number
     usageMetadata?: GoogleUsageMetadata
@@ -199,8 +201,9 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
         : rawCacheReadInputTokens
     const cacheCreationInputTokens = toNonNegativeAmount(options.cacheCreationInputTokens)
     const thinkingTokens = toNonNegativeAmount(metadata?.thoughtsTokenCount)
-    // Callers pass inclusive output totals; a thinking-only response may omit candidates.
-    const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, Math.max(0, toNonNegativeAmount(options.outputAmount) - thinkingTokens))
+    // Preserve the public visible-output fallback unless the caller explicitly supplies an inclusive total.
+    const fallbackCandidates = Math.max(0, toNonNegativeAmount(options.outputAmount) - (options.outputAmountIncludesThinking ? thinkingTokens : 0))
+    const candidateTokens = toNonNegativeAmount(metadata?.candidatesTokenCount, fallbackCandidates)
     const toolUsePromptTokens = toNonNegativeAmount(metadata?.toolUsePromptTokenCount)
     const accountedMetadataTokens = promptTokens + candidateTokens + thinkingTokens
     const reportedTotalTokens = toNonNegativeAmount(metadata?.totalTokenCount, accountedMetadataTokens)
@@ -263,9 +266,22 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const multiplier = options.provider === 'anthropic' && options.inferenceGeo === 'us' ? 1.1 : 1
     const audioTokens = (details?: GoogleModalityTokenCount[]) => (details ?? []).reduce((total, item) =>
         item.modality?.toUpperCase() === 'AUDIO' ? total + toNonNegativeAmount(item.tokenCount) : total, 0)
-    const promptAudioTokens = audioTokens(metadata?.promptTokensDetails)
+    let promptAudioTokens = audioTokens(metadata?.promptTokensDetails)
     const outputAudioTokens = audioTokens(metadata?.candidatesTokensDetails)
     let cachedAudioTokens = audioTokens(metadata?.cacheTokensDetails)
+    if (!metadata?.promptTokensDetails?.length && cachedAudioTokens > 0) {
+        // A wholly cached prompt is fully described by its cache modalities.
+        if (promptTokens === cacheReadInputTokens) {
+            promptAudioTokens = cachedAudioTokens
+        }
+        else if (rates.inputAudioCost !== undefined && rates.inputAudioCost !== rates.inputCost) {
+            throw new Error('Missing prompt modality breakdown for partially cached audio input')
+        }
+        else {
+            // The fresh split cannot change cost when fresh audio and text have the same rate.
+            promptAudioTokens = cachedAudioTokens
+        }
+    }
     if (promptAudioTokens > 0 && cacheReadInputTokens > 0 && !metadata?.cacheTokensDetails?.length) {
         if (promptAudioTokens === promptTokens) {
             cachedAudioTokens = cacheReadInputTokens

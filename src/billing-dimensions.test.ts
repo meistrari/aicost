@@ -13,12 +13,40 @@ afterAll(() => {
 })
 
 describe('provider billing dimensions', () => {
+    it('preserves visible-output fallback semantics with Google thinking', async () => {
+        const cost = await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 10, outputAmount: 20, usageMetadata: { promptTokenCount: 10, thoughtsTokenCount: 80 } })
+        expect(cost.outputCost).toBeCloseTo(100 * 2.5e-6, 12)
+    })
+
+    it('prices fully cached audio without a redundant prompt modality breakdown', async () => {
+        const cost = await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 0, strict: true, usageMetadata: { promptTokenCount: 400, cachedContentTokenCount: 400, cacheTokensDetails: [{ modality: 'AUDIO', tokenCount: 400 }] } })
+        expect(cost.inputCost).toBe(0)
+        expect(cost.cacheReadInputCost).toBeCloseTo(400 * 0.1e-6, 12)
+    })
+
+    it('rejects an unknown fresh audio split but accepts explicit zero audio', async () => {
+        expect(await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 0, usageMetadata: { promptTokenCount: 500, cachedContentTokenCount: 400, cacheTokensDetails: [{ modality: 'AUDIO', tokenCount: 400 }] } }).then(() => null, (error: Error) => error.message)).toContain('Missing prompt modality breakdown')
+        expect(await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 0, usageMetadata: { promptTokenCount: 400, cachedContentTokenCount: 400, promptTokensDetails: [{ modality: 'TEXT', tokenCount: 400 }], cacheTokensDetails: [{ modality: 'AUDIO', tokenCount: 400 }] } }).then(() => null, (error: Error) => error.message)).toContain('Modality token counts exceed')
+    })
+
+    it('accepts an explicitly free model rate in strict mode', async () => {
+        const cost = await calculateCost({ provider: 'cloudflare', model: 'cloudflare/@cf/google/gemma-2b-it-lora', inputAmount: 10, outputAmount: 20, strict: true })
+        expect(cost.inputCost + cost.outputCost).toBe(0)
+    })
+
+    it('strictly rejects a missing consumed rate but permits an unused category', async () => {
+        expect(await calculateCost({ provider: 'openai', model: 'gpt-4o', inputAmount: 10, cacheCreationInputTokens: 1, strict: true }).then(() => null, (error: Error) => error.message)).toContain('Missing cache write rate')
+        const cost = await calculateCost({ provider: 'openai', model: 'gpt-4o', inputAmount: 10, cacheCreationInputTokens: 0, strict: true })
+        expect(cost.cacheCreationInputCost).toBe(0)
+    })
+
     it('counts thinking-only Google output once when candidate usage is omitted', async () => {
         const cost = await calculateCost({
             provider: 'vertex-ai',
             model: 'gemini-2.5-flash',
             inputAmount: 10,
             outputAmount: 50,
+            outputAmountIncludesThinking: true,
             usageMetadata: { promptTokenCount: 10, thoughtsTokenCount: 50, totalTokenCount: 60 },
         })
         expect(cost.outputCost).toBeCloseTo(50 * 2.5e-6, 12)

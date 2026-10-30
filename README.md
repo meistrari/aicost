@@ -43,6 +43,8 @@ const cost = await calculateCost({
 })
 ```
 
+When Google metadata omits `candidatesTokenCount`, `outputAmount` means visible output tokens. Set `outputAmountIncludesThinking: true` if your normalized output already includes thinking.
+
 When `usageMetadata` is present, its prompt, tool-use prompt, cached-content, candidate, thinking, and total counts are authoritative. The reported total prevents tool-use breakdowns from being counted twice across Google API variants. The effective prompt size selects the applicable context tier; Google charges all input and output tokens at the long-context rate when the prompt exceeds 200,000 tokens.
 
 ### Get information for a model
