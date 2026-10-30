@@ -80,6 +80,10 @@ function isAICostModelList(value: unknown): value is AICostModelListGeneric {
     )
 }
 
+function hasTokenPricingDimensions(list: AICostModelListGeneric): boolean {
+    return Object.values(list).some(models => models.some(model => Array.isArray(model.tokenPricing) && model.tokenPricing.length > 0))
+}
+
 function calculateResolvedCost(unitCost: number | null, amount: number): number {
     return Number(((unitCost ?? 0) * amount).toFixed(10))
 }
@@ -125,6 +129,11 @@ export async function getAICostModelList(): Promise<AICostModelListGeneric> {
                 const json = await res.json()
                 if (!isAICostModelList(json)) {
                     throw new Error('Failed to fetch model list: invalid JSON format')
+                }
+                // During rollout/CDN propagation the remote catalog can still have the old schema.
+                // Replacing the bundled list would silently erase TTL, context and service-tier rates.
+                if (hasTokenPricingDimensions(AICostModelList as unknown as AICostModelListGeneric) && !hasTokenPricingDimensions(json)) {
+                    throw new Error('Remote model list predates billing dimensions')
                 }
 
                 lastFetchTime = Date.now()
