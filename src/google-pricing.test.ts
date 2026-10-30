@@ -102,7 +102,34 @@ describe('Google backend and endpoint prices', () => {
 
     it('rejects an unverified regional endpoint or a model missing from the direct API catalog', async () => {
         expect(await calculateCost({ ...request, provider: 'vertex-ai', model: 'gemini-3.1-pro-preview', region: 'us-east1' }).then(() => null, (error: Error) => error.message)).toContain('No regional pricing')
-        expect(await calculateCost({ ...request, provider: 'gemini-api' as string, model: 'gemini-3.7-flash' }).then(() => null, (error: Error) => error.message)).toContain('not found')
+        expect(await calculateCost({ ...request, provider: 'gemini-api' as string, model: 'gemini-3.8-flash-cyber' }).then(() => null, (error: Error) => error.message)).toContain('not found')
+    })
+
+    for (const [model, input, output, cache] of [
+        ['gemini-3.5-flash', 1.5, 9, 0.15],
+        ['gemini-3.7-flash', 0.75, 3.75, 0.075],
+    ] as const) {
+        it(`prices ${model} direct API standard usage from published billing SKUs`, async () => {
+            const cost = await calculateCost({ ...request, provider: 'gemini-api', model })
+            expect(cost.inputCost).toBeCloseTo(input * 1000 / 1e6, 12)
+            expect(cost.outputCost).toBeCloseTo(output * 100 / 1e6, 12)
+            expect(cost.cacheReadInputCost).toBeCloseTo(cache * 2000 / 1e6, 12)
+        })
+
+        it(`does not invent a Batch cache tariff for ${model}`, async () => {
+            const base = { ...request, provider: 'gemini-api', model, serviceTier: 'batch' }
+            expect(await calculateCost(base).then(() => null, (error: Error) => error.message)).toContain('Missing cache read rate')
+            const uncached = await calculateCost({ ...base, cacheReadInputTokens: 0 })
+            expect(uncached.inputCost).toBeCloseTo(input / 2 * 1000 / 1e6, 12)
+            expect(uncached.outputCost).toBeCloseTo(output / 2 * 100 / 1e6, 12)
+        })
+    }
+
+    it('retains the distinct Gemini 3.7 Flex audio cache SKU in mixed usage', async () => {
+        const cost = await calculateCost({ ...request, provider: 'gemini-api', model: 'gemini-3.7-flash', serviceTier: 'flex', usageMetadata: mixedAudioUsage })
+        expect(cost.inputCost).toBeCloseTo(600 * 0.375 / 1e6, 12)
+        expect(cost.cacheReadInputCost).toBeCloseTo((100 * 0.0375 + 300 * 0.075) / 1e6, 12)
+        expect(cost.outputCost).toBeCloseTo(30 * 1.875 / 1e6, 12)
     })
 
     it('retains standard cache prices in discounted direct Gemini long-context requests', async () => {

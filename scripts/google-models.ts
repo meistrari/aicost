@@ -48,7 +48,38 @@ function model(standard: Rates, discounted: Rates, priority: Rates, options?: {
     }
 }
 
+// Older models can disappear from the summary pricing page while their billing
+// SKUs remain active. These tiers are verified against Gemini API service
+// AEFD-7695-64FA at https://cloud.google.com/skus (2026-10-30).
+// No separate Batch cache tariff was verified; do not borrow Flex's cache rate.
+function skuModel(standard: Rates, flex: Rates & { audio: number }, priority: Rates, pricingValidUntil?: string): RawModel {
+    return {
+        ...model(standard, flex, priority, { pricingValidUntil }),
+        tokenPricing: [
+            tier(standard, 'standard'),
+            { serviceTier: 'batch', aboveInputTokens: 0, inputCost: flex.input / 1e6, outputCost: flex.output / 1e6, inputAudioCost: flex.audio / 1e6 },
+            tier(flex, 'flex'),
+            tier(priority, 'priority'),
+        ],
+    }
+}
+
 export const geminiApiModels: Record<string, RawModel> = {
+    // Standard input/output/cache: 63AC-2BA8-3F85, F9BE-D8E8-69E9,
+    // AA25-11AF-C82D. Flex cache: 013B-FED5-AA5A; priority: E727-324A-5AE4.
+    'gemini-3.5-flash': skuModel(
+        { input: 1.5, output: 9, cache: 0.15, audio: 1.5, cachedAudio: 0.15 },
+        { input: 0.75, output: 4.5, cache: 0.075, audio: 0.75, cachedAudio: 0.075 },
+        { input: 2.7, output: 16.2, cache: 0.27, audio: 2.7, cachedAudio: 0.27 },
+    ),
+    // Standard: 01FB-5D61-EA5A, 2156-A528-227F, 43CF-1C24-D5F0.
+    // Flex audio cache 791B-DB56-1F3D is $0.075/M, unlike text at $0.0375/M.
+    'gemini-3.7-flash': skuModel(
+        { input: 0.75, output: 3.75, cache: 0.075, audio: 0.75, cachedAudio: 0.075 },
+        { input: 0.375, output: 1.875, cache: 0.0375, audio: 0.375, cachedAudio: 0.075 },
+        { input: 1.35, output: 6.75, cache: 0.135, audio: 1.35, cachedAudio: 0.135 },
+        '2027-01-01T00:00:00Z',
+    ),
     'gemini-4-argon': model(
         { input: 2, output: 10, cache: 0.1 },
         { input: 1, output: 5, cache: 0.05 },

@@ -63718,6 +63718,107 @@
     ],
     "gemini-api": [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputAudioCost": 0.0000015,
+                    "cacheReadAudioCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "inputAudioCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000027,
+                    "cacheReadAudioCost": 2.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "inputAudioCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputAudioCost": 3.75e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputAudioCost": 0.00000135,
+                    "cacheReadAudioCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "pricingValidUntil": "2026-12-01T00:00:00Z",
             "tokenPricing": [
                 {
