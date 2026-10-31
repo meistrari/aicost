@@ -15924,6 +15924,20 @@
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "gpt-6-rosalind",
+            "type": "chat",
+            "inputCost": 0.000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "deepseek": [
@@ -27989,6 +28003,19 @@
         {
             "maxTokens": null,
             "name": "chatgpt/gpt-6.1-terra",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "chatgpt/gpt-6-rosalind",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
