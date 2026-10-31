@@ -15952,6 +15952,20 @@
             "cacheCreationInputCost": 0.00001875,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "gpt-6-astra-law",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
         }
     ],
     "deepseek": [
@@ -28030,6 +28044,19 @@
         {
             "maxTokens": null,
             "name": "chatgpt/gpt-6-rosalind",
+            "type": "responses",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "chatgpt/gpt-6-astra-law",
             "type": "responses",
             "inputCost": null,
             "inputCostUnit": null,
