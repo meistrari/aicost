@@ -29282,6 +29282,64 @@
             "cacheCreationInputCostUnit": null
         }
     ],
+    "hostinger_router": [
+        {
+            "maxTokens": null,
+            "name": "hostinger_router/gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.0000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000168,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "hostinger_router/claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.64e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000033,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "hostinger_router/text-embedding-3-large",
+            "type": "embedding",
+            "inputCost": 1.716e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "hostinger_router/text-embedding-3-small",
+            "type": "embedding",
+            "inputCost": 3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ],
     "hyperbolic": [
         {
             "maxTokens": null,
