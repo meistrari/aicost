@@ -83,6 +83,25 @@ describe('provider billing dimensions', () => {
         expect(error).toContain('Missing cache modality breakdown')
     })
 
+    it.each(['vertex-ai', 'gemini-api'])('prices separate tool-use audio for %s without charging text rates', async (provider) => {
+        const cost = await calculateCost({ provider, model: 'gemini-2.5-flash', inputAmount: 0, strict: true, usageMetadata: { promptTokenCount: 100, toolUsePromptTokenCount: 1000, totalTokenCount: 1100, toolUsePromptTokensDetails: [{ modality: 'AUDIO', tokenCount: 1000 }] } })
+        expect(cost.inputCost).toBeCloseTo(100 * 0.3e-6 + 1000 * 1e-6, 12)
+    })
+
+    it('does not count tool-use audio already included in the prompt twice', async () => {
+        const cost = await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 0, strict: true, usageMetadata: { promptTokenCount: 1100, cachedContentTokenCount: 400, toolUsePromptTokenCount: 1000, totalTokenCount: 1100, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 1000 }, { modality: 'TEXT', tokenCount: 100 }], cacheTokensDetails: [{ modality: 'AUDIO', tokenCount: 400 }], toolUsePromptTokensDetails: [{ modality: 'AUDIO', tokenCount: 1000 }] } })
+        expect(cost.inputCost).toBeCloseTo(100 * 0.3e-6 + 600 * 1e-6, 12)
+        expect(cost.cacheReadInputCost).toBeCloseTo(400 * 0.1e-6, 12)
+    })
+
+    it('prices mixed separate tool-use tokens and rejects ambiguous partial overlap', async () => {
+        const base = { provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 0, strict: true }
+        const usageMetadata = { promptTokenCount: 1000, toolUsePromptTokenCount: 1000, totalTokenCount: 2000, toolUsePromptTokensDetails: [{ modality: 'AUDIO', tokenCount: 600 }, { modality: 'TEXT', tokenCount: 400 }] }
+        expect((await calculateCost({ ...base, usageMetadata })).inputCost).toBeCloseTo(1400 * 0.3e-6 + 600 * 1e-6, 12)
+        expect(await calculateCost({ ...base, usageMetadata: { ...usageMetadata, totalTokenCount: 1500 } }).then(() => null, (error: Error) => error.message)).toContain('Ambiguous modality breakdown')
+        expect(await calculateCost({ ...base, usageMetadata: { ...usageMetadata, toolUsePromptTokenCount: 500 } }).then(() => null, (error: Error) => error.message)).toContain('Tool-use modality token counts exceed')
+    })
+
     it('extracts audio rates including service and context tiers', () => {
         expect(extractTokenPricing({ input_cost_per_audio_token: 1e-6, cache_read_input_audio_token_cost: 0.1e-6, input_cost_per_audio_token_above_200k_tokens_priority: 2e-6 })).toEqual([
             { serviceTier: 'priority', aboveInputTokens: 200000, inputAudioCost: 2e-6 },

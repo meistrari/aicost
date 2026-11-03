@@ -357,8 +357,20 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     }
     if (promptAudioTokens > promptTokens || cachedAudioTokens > promptAudioTokens || cachedAudioTokens > cacheReadInputTokens || outputAudioTokens > outputAmount)
         throw new Error('Modality token counts exceed their totals')
-    // With identical audio/text rates an unknown cache modality split cannot affect cost.
-    const inputAudioTokens = Math.min(inputAmount, promptAudioTokens - cachedAudioTokens)
+    const toolUseAudioTokens = audioTokens(metadata?.toolUsePromptTokensDetails)
+    if (toolUseAudioTokens > toolUsePromptTokens)
+        throw new Error('Tool-use modality token counts exceed their total')
+    let separateToolAudioTokens = 0
+    if (separatelyReportedToolUseTokens > 0) {
+        if (separatelyReportedToolUseTokens === toolUsePromptTokens)
+            separateToolAudioTokens = toolUseAudioTokens
+        else if (toolUseAudioTokens === toolUsePromptTokens)
+            separateToolAudioTokens = separatelyReportedToolUseTokens
+        else if (toolUseAudioTokens > 0 && rates.inputAudioCost !== undefined && rates.inputAudioCost !== rates.inputCost)
+            throw new Error('Ambiguous modality breakdown for partially included tool-use input')
+    }
+    // Tool-use modalities are additional only when the total excludes them from the prompt.
+    const inputAudioTokens = Math.min(inputAmount, promptAudioTokens - cachedAudioTokens + separateToolAudioTokens)
     // When this model publishes a distinct audio dimension, a missing tier-specific
     // rate is unknown, not permission to bill audio at the text price.
     if (google && inputAudioTokens > 0 && rates.inputAudioCost == null
