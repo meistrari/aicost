@@ -31305,29 +31305,29 @@
             "maxTokens": null,
             "name": "mistral/mistral-large-4",
             "type": "chat",
-            "inputCost": 0.00000136,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000418,
+            "outputCost": 0.0000021,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.4e-7,
+            "cacheReadInputCost": 7e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": null,
             "name": "mistral/mistral-large-4-0",
             "type": "chat",
-            "inputCost": 0.00000136,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.00000418,
+            "outputCost": 0.0000021,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.4e-7,
+            "cacheReadInputCost": 7e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 2
         },
         {
             "maxTokens": null,
