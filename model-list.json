@@ -25596,6 +25596,20 @@
         },
         {
             "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000096,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot",
             "type": "chat",
             "inputCost": 2.1e-7,
@@ -25612,15 +25626,15 @@
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ultramarine-1-flash-us",
             "type": "chat",
-            "inputCost": 2.25e-7,
+            "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 7.5e-7,
+            "outputCost": 5e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 4.5e-8,
+            "cacheReadInputCost": 3e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 1
         }
     ],
     "friendliai": [
@@ -37963,6 +37977,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/moonshotai/Kimi-K3.1-Pro",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "v0": [
