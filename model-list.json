@@ -4037,6 +4037,34 @@
             "cacheCreationInputCost": 0.0000045,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-3-haiku-20240307-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-3-haiku-20240307-v1:0",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "bedrock_converse": [
@@ -7349,6 +7377,34 @@
             "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-gov-east-1/moonshotai.kimi-k3",
+            "type": "chat",
+            "inputCost": 0.00000396,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000198,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.96e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000495,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-gov-west-1/moonshotai.kimi-k3",
+            "type": "chat",
+            "inputCost": 0.00000396,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000198,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.96e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000495,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
         }
     ],
     "anyscale": [
@@ -39419,6 +39475,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/ricursive-ai/Ripple-65B-Preview",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "v0": [
@@ -47585,6 +47655,48 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-east-1/xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000792,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000792,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock_mantle/xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "tensormesh": [
