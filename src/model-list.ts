@@ -1,5 +1,5 @@
-// Last updated: 2026-11-05T12:08:26.555Z
-// Next update: 2026-11-05T18:08:26.555Z
+// Last updated: 2026-11-05T18:06:27.655Z
+// Next update: 2026-11-06T00:06:27.655Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe"
 
@@ -26892,6 +26892,20 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-omni-1.2-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
@@ -28589,6 +28603,34 @@ const provider35 = [
         },
         {
             "maxTokens": null,
+            "name": "gmi/XiaomiMiMo/MiMo-V2.6-Flash",
+            "type": "chat",
+            "inputCost": 1.12e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.24e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.24e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "gmi/XiaomiMiMo/MiMo-V2.6-Pro",
+            "type": "chat",
+            "inputCost": 3.48e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.96e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.88e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
             "name": "gmi/deepseek-ai/DeepSeek-Prover-V2-671B",
             "type": "chat",
             "inputCost": 5e-7,
@@ -28799,6 +28841,20 @@ const provider35 = [
         },
         {
             "maxTokens": null,
+            "name": "gmi/deepseek-ai/DeepSeek-V4.1-Flash",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
             "name": "gmi/deepseek-ai/deepseek-v4-flash-vision-exp",
             "type": "chat",
             "inputCost": 4.4e-7,
@@ -28810,6 +28866,34 @@ const provider35 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "gmi/deepseek-ai/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "gmi/gmicloud/Ripple-65B-Preview",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -29317,6 +29401,20 @@ const provider35 = [
         },
         {
             "maxTokens": null,
+            "name": "gmi/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
             "name": "gmi/stepfun-ai/Step-3.7-Flash",
             "type": "chat",
             "inputCost": 2e-7,
@@ -29384,6 +29482,20 @@ const provider35 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "gmi/tencent/hy4",
+            "type": "chat",
+            "inputCost": 4.17e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012505,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -53369,7 +53481,7 @@ const provider112 = [
             "inputCostUnit": "token",
             "outputCost": 0.0000027,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
