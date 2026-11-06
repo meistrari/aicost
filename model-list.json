@@ -7156,6 +7156,20 @@
         },
         {
             "maxTokens": null,
+            "name": "us-gov.xai.grok-4.7",
+            "type": "chat",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000792,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "global.openai.gpt-6.1-sol",
             "type": "chat",
             "inputCost": 0.000002,
@@ -15698,6 +15712,20 @@
             "cacheReadInputCost": 0.0000015,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "gpt-6-cyber",
+            "type": "chat",
+            "inputCost": 0.00002,
+            "inputCostUnit": "token",
+            "outputCost": 0.0001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000002,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000025,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -33950,6 +33978,20 @@
             "outputCost": 0.000004,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "nebius/moonshotai/Kimi-K3.1-Pro",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -52487,6 +52529,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "empiriolabs/kimi-k3-1-pro",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000018,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "maxTokens": null,
