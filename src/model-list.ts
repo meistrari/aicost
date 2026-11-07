@@ -1,5 +1,5 @@
-// Last updated: 2026-11-06T18:08:04.573Z
-// Next update: 2026-11-07T00:08:04.573Z
+// Last updated: 2026-11-07T00:14:01.815Z
+// Next update: 2026-11-07T06:14:01.815Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe"
 
@@ -7426,6 +7426,62 @@ const provider2 = [
             "cacheCreationInputCost": 0.00000495,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "moonshotai.kimi-k3.1",
+            "type": "chat",
+            "inputCost": 0.0000044,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000055,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "us.moonshotai.kimi-k3.1",
+            "type": "chat",
+            "inputCost": 0.0000044,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000055,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "global.moonshotai.kimi-k3.1",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "in.moonshotai.kimi-k3.1",
+            "type": "chat",
+            "inputCost": 0.0000044,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000055,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ] as const
 
@@ -12135,15 +12191,15 @@ const provider5 = [
             "maxTokens": null,
             "name": "azure_ai/jais-30b-chat",
             "type": "chat",
-            "inputCost": 0.0032,
+            "inputCost": 0.0000032,
             "inputCostUnit": "token",
-            "outputCost": 0.00971,
+            "outputCost": 0.00000971,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 3
         },
         {
             "maxTokens": null,
@@ -43292,15 +43348,15 @@ const provider84 = [
             "maxTokens": null,
             "name": "watsonx/core42/jais-13b-chat",
             "type": "chat",
-            "inputCost": 0.0005,
+            "inputCost": 0.0000018,
             "inputCostUnit": "token",
-            "outputCost": 0.002,
+            "outputCost": 0.0000018,
             "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 5
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -48646,6 +48702,34 @@ const provider95 = [
         },
         {
             "maxTokens": null,
+            "name": "tencent/hy4",
+            "type": "chat",
+            "inputCost": 8.34e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002501,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "tencent/hy4-preview",
+            "type": "chat",
+            "inputCost": 8.34e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002501,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
             "name": "tencent/minimax-m3",
             "type": "chat",
             "inputCost": 3e-7,
@@ -52301,12 +52385,12 @@ const provider112 = [
             "maxTokens": null,
             "name": "empiriolabs/deepseek-v4-1-flash-1017",
             "type": "chat",
-            "inputCost": 3e-7,
+            "inputCost": 2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000012,
+            "outputCost": 8e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
