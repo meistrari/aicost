@@ -1,5 +1,5 @@
-// Last updated: 2026-11-07T18:06:17.192Z
-// Next update: 2026-11-08T00:06:17.192Z
+// Last updated: 2026-11-08T00:17:07.568Z
+// Next update: 2026-11-08T06:17:07.568Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe"
 
@@ -33156,6 +33156,20 @@ const provider54 = [
         },
         {
             "maxTokens": null,
+            "name": "moonshot/kimi-k3.1-pro-highspeed",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000004,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
             "name": "moonshot/kimi-k3",
             "type": "chat",
             "inputCost": 0.000003,
@@ -38966,11 +38980,11 @@ const provider69 = [
             "maxTokens": null,
             "name": "together_ai/Qwen/Qwen3.7-Max",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 0.0000025,
             "inputCostUnit": "token",
-            "outputCost": 0.0000045,
+            "outputCost": 0.0000075,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCost": 5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -39521,6 +39535,20 @@ const provider69 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/essentialai/rnj-1-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
