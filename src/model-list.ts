@@ -1,7 +1,7 @@
-// Last updated: 2026-11-09T12:09:24.794Z
-// Next update: 2026-11-09T18:09:24.794Z
+// Last updated: 2026-11-09T13:35:53.164Z
+// Next update: 2026-11-09T19:35:53.164Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -471,6 +471,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-mythos-preview",
             "type": "chat",
@@ -685,6 +692,26 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/deepseek.v3.2",
             "type": "chat",
@@ -699,6 +726,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -713,6 +760,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -727,6 +794,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -741,6 +816,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -755,6 +850,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -769,6 +872,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -783,6 +894,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -825,6 +944,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/deepseek.v3.2",
             "type": "chat",
@@ -839,6 +978,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -853,6 +1012,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -867,6 +1046,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000147
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -881,6 +1068,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -895,6 +1102,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -909,6 +1124,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.425e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-2/minimax.minimax-m2.5",
             "type": "chat",
@@ -923,6 +1158,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-3/deepseek.v3.2",
             "type": "chat",
@@ -937,6 +1180,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-3/minimax.minimax-m2.1",
             "type": "chat",
@@ -951,6 +1202,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-3/minimax.minimax-m2.5",
             "type": "chat",
@@ -965,6 +1224,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-3/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -979,6 +1246,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-3/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1021,6 +1296,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-north-1/deepseek.v3.2",
             "type": "chat",
@@ -1035,6 +1330,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-north-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1049,6 +1364,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-north-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1063,6 +1398,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-north-1/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -1197,6 +1552,26 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-central-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1211,6 +1586,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-central-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1225,6 +1620,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-central-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1267,6 +1670,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1281,6 +1704,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1295,6 +1738,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1337,6 +1788,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.225e-7,
+                    "outputCost": 0.000003255
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/minimax.minimax-m2.1",
             "type": "chat",
@@ -1351,6 +1822,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.225e-7,
+                    "outputCost": 0.000003255
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/minimax.minimax-m2.5",
             "type": "chat",
@@ -1365,6 +1856,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 5.05e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 5.05e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000017675
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -1379,6 +1890,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001365,
+                    "outputCost": 0.000003255
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1435,6 +1966,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-south-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1449,6 +1988,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-south-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1463,6 +2010,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-south-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1519,6 +2074,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/deepseek.v3.2",
             "type": "chat",
@@ -1533,6 +2108,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1547,6 +2142,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1561,6 +2176,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -1575,6 +2198,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -1589,6 +2232,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1793,6 +2444,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/deepseek.v3.2",
             "type": "chat",
@@ -1807,6 +2478,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/minimax.minimax-m2.1",
             "type": "chat",
@@ -1821,6 +2512,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/minimax.minimax-m2.5",
             "type": "chat",
@@ -1835,6 +2546,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -1849,6 +2568,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -1863,6 +2602,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/qwen.qwen3-coder-next",
             "type": "chat",
@@ -1877,6 +2636,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/deepseek.v3.2",
             "type": "chat",
@@ -1891,6 +2670,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/minimax.minimax-m2.1",
             "type": "chat",
@@ -1905,6 +2704,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/minimax.minimax-m2.5",
             "type": "chat",
@@ -1919,6 +2738,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -1933,6 +2760,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -1947,6 +2794,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-2/qwen.qwen3-coder-next",
             "type": "chat",
@@ -2045,6 +2900,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -2059,6 +2921,13 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -2101,6 +2970,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.1e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-2-multimodal-embeddings-v1:0",
             "type": "embedding",
@@ -2115,6 +2991,14 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-lite-v1:0",
             "type": "chat",
@@ -2129,6 +3013,14 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-8,
+                    "outputCost": 8.4e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-micro-v1:0",
             "type": "chat",
@@ -2143,6 +3035,28 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.8e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 4.8e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.2e-7,
+                    "inputCost": 0.00000168,
+                    "outputCost": 0.00000672
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/amazon.nova-pro-v1:0",
             "type": "chat",
@@ -2227,6 +3141,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -2241,6 +3162,13 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -2473,6 +3401,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/deepseek.v3.2",
             "type": "chat",
@@ -2487,6 +3435,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/minimax.minimax-m2.1",
             "type": "chat",
@@ -2501,6 +3469,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/minimax.minimax-m2.5",
             "type": "chat",
@@ -2515,6 +3503,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -2529,6 +3525,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/moonshotai.kimi-k2.5",
             "type": "chat",
@@ -2543,6 +3559,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/qwen.qwen3-coder-next",
             "type": "chat",
@@ -2571,6 +3595,28 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -2827,6 +3873,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
@@ -2841,6 +3895,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ],
             "maxTokens": null,
             "name": "meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
@@ -2981,6 +4043,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.mistral-small-2402-v1:0",
             "type": "chat",
@@ -3009,6 +4079,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 2.06e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 2.06e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.21e-8,
+                    "outputCost": 7.21e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-2/mistral.voxtral-mini-3b-2507",
             "type": "chat",
@@ -3023,6 +4113,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8025e-7,
+                    "outputCost": 5.4075e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-southeast-2/mistral.voxtral-small-24b-2507",
             "type": "chat",
@@ -3037,6 +4147,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/mistral.voxtral-mini-3b-2507",
             "type": "chat",
@@ -3051,6 +4181,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/mistral.voxtral-small-24b-2507",
             "type": "chat",
@@ -3065,6 +4215,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/mistral.voxtral-mini-3b-2507",
             "type": "chat",
@@ -3079,6 +4249,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 8.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/mistral.voxtral-small-24b-2507",
             "type": "chat",
@@ -3093,6 +4283,20 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-northeast-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -3107,6 +4311,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/ap-south-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -3135,6 +4359,20 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -3149,6 +4387,20 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000326
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/eu-west-2/qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -3163,6 +4415,20 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/sa-east-1/qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -3247,6 +4513,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.meta.llama3-1-70b-instruct-v1:0",
             "type": "chat",
@@ -3261,6 +4535,14 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.meta.llama3-1-8b-instruct-v1:0",
             "type": "chat",
@@ -3331,6 +4613,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000056
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-east-1/zai.glm-5",
             "type": "chat",
@@ -3345,6 +4647,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000056
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-west-2/zai.glm-5",
             "type": "chat",
@@ -3359,6 +4681,13 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000024
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -3373,6 +4702,13 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000024
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -3387,6 +4723,26 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
@@ -3401,6 +4757,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
@@ -3415,6 +4791,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 4.8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
@@ -3429,6 +4825,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -3443,6 +4859,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
@@ -3457,6 +4893,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
@@ -3471,6 +4927,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-5",
             "type": "chat",
@@ -3485,6 +4948,13 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-4-8",
             "type": "chat",
@@ -3499,6 +4969,19 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-5",
             "type": "chat",
@@ -3513,6 +4996,13 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-opus-5-5",
             "type": "chat",
@@ -3527,6 +5017,13 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-fable-5-1",
             "type": "chat",
@@ -3541,6 +5038,26 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
@@ -3555,6 +5072,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
@@ -3569,6 +5106,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 4.8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
@@ -3583,6 +5140,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -3597,6 +5174,26 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0",
             "type": "chat",
@@ -3611,6 +5208,26 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/openai.gpt-oss-120b-1:0",
             "type": "chat",
@@ -3625,6 +5242,13 @@ const provider1 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5",
             "type": "chat",
@@ -3639,6 +5263,13 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-4-8",
             "type": "chat",
@@ -3653,6 +5284,19 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-5",
             "type": "chat",
@@ -3667,6 +5311,13 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-opus-5-5",
             "type": "chat",
@@ -3681,6 +5332,13 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-fable-5-1",
             "type": "chat",
@@ -3695,6 +5353,13 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -3709,6 +5374,13 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -3723,6 +5395,22 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -3737,6 +5425,22 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -3793,6 +5497,21 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-fable-5",
             "type": "chat",
@@ -3807,6 +5526,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-fable-5-1",
             "type": "chat",
@@ -3821,6 +5555,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-haiku-4-5",
             "type": "chat",
@@ -3835,6 +5584,38 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheCreationInputCost": 3.125e-7,
+                    "cacheReadInputCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-haiku-5-5",
             "type": "chat",
@@ -3849,6 +5630,21 @@ const provider1 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-5",
             "type": "chat",
@@ -3863,6 +5659,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-6",
             "type": "chat",
@@ -3877,6 +5688,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-7",
             "type": "chat",
@@ -3891,6 +5717,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-4-8",
             "type": "chat",
@@ -3905,6 +5746,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-5",
             "type": "chat",
@@ -3919,6 +5775,21 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-opus-5-5",
             "type": "chat",
@@ -3933,6 +5804,21 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-4-5",
             "type": "chat",
@@ -3947,6 +5833,21 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-4-6",
             "type": "chat",
@@ -3961,6 +5862,21 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-5",
             "type": "chat",
@@ -3975,6 +5891,21 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/claude_platform/claude-sonnet-5-5",
             "type": "chat",
@@ -3989,6 +5920,14 @@ const provider1 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -4017,6 +5956,14 @@ const provider1 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-3-5-sonnet-20240620-v1:0",
             "type": "chat",
@@ -4132,6 +6079,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "writer.palmyra-vision-7b",
             "type": "chat",
@@ -4146,6 +6113,14 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-lite-v1:0",
             "type": "chat",
@@ -4160,6 +6135,21 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.000004375
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-2-lite-v1:0",
             "type": "chat",
@@ -4174,6 +6164,25 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021875,
+                    "outputCost": 0.0000175
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000125
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
@@ -4202,6 +6211,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ],
             "maxTokens": null,
             "name": "apac.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
@@ -4230,6 +6246,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ],
             "maxTokens": null,
             "name": "eu.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
@@ -4244,6 +6267,28 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.65e-7,
+                    "outputCost": 0.000001375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 1.65e-7,
+                    "outputCost": 0.000001375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.44375e-7,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ],
             "maxTokens": null,
             "name": "us.amazon.nova-2-lite-v1:0",
             "type": "chat",
@@ -4258,6 +6303,25 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000240625,
+                    "outputCost": 0.00001925
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001375
+                }
+            ],
             "maxTokens": null,
             "name": "us.amazon.nova-2-pro-preview-20251202-v1:0",
             "type": "chat",
@@ -4272,6 +6336,14 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-8,
+                    "outputCost": 7e-8
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-micro-v1:0",
             "type": "chat",
@@ -4286,6 +6358,21 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00000625
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000109375,
+                    "inputCost": 0.000004375,
+                    "outputCost": 0.000021875
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-premier-v1:0",
             "type": "chat",
@@ -4300,6 +6387,28 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
             "maxTokens": null,
             "name": "amazon.nova-pro-v1:0",
             "type": "chat",
@@ -4314,6 +6423,19 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -4328,6 +6450,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-haiku-4-5@20251001",
             "type": "chat",
@@ -4384,6 +6513,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
@@ -4398,6 +6534,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-4-6-v1",
             "type": "chat",
@@ -4412,6 +6555,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-6-v1",
             "type": "chat",
@@ -4426,6 +6576,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-6-v1",
             "type": "chat",
@@ -4440,6 +6597,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-6-v1",
             "type": "chat",
@@ -4454,6 +6618,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-6-v1",
             "type": "chat",
@@ -4468,6 +6639,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4482,6 +6660,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4496,6 +6681,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4510,6 +6702,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4524,6 +6723,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4538,6 +6744,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-fable-5",
             "type": "chat",
@@ -4552,6 +6765,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-fable-5-1",
             "type": "chat",
@@ -4566,6 +6786,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-fable-5",
             "type": "chat",
@@ -4580,6 +6807,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-fable-5-1",
             "type": "chat",
@@ -4594,6 +6828,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-fable-5",
             "type": "chat",
@@ -4608,6 +6849,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-fable-5-1",
             "type": "chat",
@@ -4622,6 +6870,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-fable-5",
             "type": "chat",
@@ -4636,6 +6891,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-fable-5-1",
             "type": "chat",
@@ -4650,6 +6912,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-5",
             "type": "chat",
@@ -4664,6 +6939,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4678,6 +6960,19 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-5",
             "type": "chat",
@@ -4692,6 +6987,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4706,6 +7008,19 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00001375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-5",
             "type": "chat",
@@ -4720,6 +7035,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4734,6 +7056,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00001375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-5",
             "type": "chat",
@@ -4748,6 +7083,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4762,6 +7104,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00001375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-opus-5",
             "type": "chat",
@@ -4776,6 +7131,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4790,6 +7152,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00001375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-opus-5",
             "type": "chat",
@@ -4804,6 +7179,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -4818,6 +7200,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4832,6 +7221,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4846,6 +7242,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4860,6 +7263,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4874,6 +7284,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4888,6 +7305,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -4902,6 +7326,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -4916,6 +7347,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-sonnet-5",
             "type": "chat",
@@ -4930,6 +7368,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -4944,6 +7389,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -4958,6 +7410,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -4972,6 +7431,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -4986,6 +7452,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -5000,6 +7473,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5014,6 +7494,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5028,6 +7515,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5042,6 +7536,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5056,6 +7557,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5070,6 +7578,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -5084,6 +7599,16 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
@@ -5102,6 +7627,28 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -5148,6 +7695,15 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.05e-7,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000168
+                }
+            ],
             "maxTokens": null,
             "name": "apac.amazon.nova-pro-v1:0",
             "type": "chat",
@@ -5162,6 +7718,14 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -5176,6 +7740,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
@@ -5194,6 +7768,28 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -5226,6 +7822,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
             "maxTokens": null,
             "name": "deepseek.v3.2",
             "type": "chat",
@@ -5268,6 +7884,15 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "eu.amazon.nova-pro-v1:0",
             "type": "chat",
@@ -5282,6 +7907,19 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -5324,6 +7962,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
@@ -5342,6 +7990,28 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -5374,6 +8044,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
             "maxTokens": null,
             "name": "google.gemma-3-12b-it",
             "type": "chat",
@@ -5388,6 +8078,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 6.7e-7
+                }
+            ],
             "maxTokens": null,
             "name": "google.gemma-3-27b-it",
             "type": "chat",
@@ -5402,6 +8112,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 1.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "google.gemma-3-4b-it",
             "type": "chat",
@@ -5416,6 +8146,28 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -5434,6 +8186,16 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
@@ -5452,6 +8214,19 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -5466,6 +8241,21 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.000004375
+                }
+            ],
             "maxTokens": null,
             "name": "global.amazon.nova-2-lite-v1:0",
             "type": "chat",
@@ -5480,6 +8270,28 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -5498,6 +8310,19 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -5512,6 +8337,14 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "meta.llama3-3-70b-instruct-v1:0",
             "type": "chat",
@@ -5526,6 +8359,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.85e-7
+                }
+            ],
             "maxTokens": null,
             "name": "meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
@@ -5540,6 +8381,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.5e-8,
+                    "outputCost": 3.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
@@ -5554,6 +8403,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.2e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "minimax.minimax-m2",
             "type": "chat",
@@ -5568,6 +8437,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "minimax.minimax-m2.1",
             "type": "chat",
@@ -5582,6 +8471,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "minimax.minimax-m2.5",
             "type": "chat",
@@ -5596,6 +8505,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000035
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.devstral-2-123b",
             "type": "chat",
@@ -5610,6 +8539,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.magistral-small-2509",
             "type": "chat",
@@ -5624,6 +8573,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.ministral-3-14b-instruct",
             "type": "chat",
@@ -5638,6 +8607,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 1.7e-7
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.ministral-3-3b-instruct",
             "type": "chat",
@@ -5652,6 +8641,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 2.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.ministral-3-8b-instruct",
             "type": "chat",
@@ -5666,6 +8675,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.mistral-large-3-675b-instruct",
             "type": "chat",
@@ -5680,6 +8709,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.voxtral-mini-3b-2507",
             "type": "chat",
@@ -5694,6 +8743,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 5.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "mistral.voxtral-small-24b-2507",
             "type": "chat",
@@ -5708,6 +8777,20 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000438
+                }
+            ],
             "maxTokens": null,
             "name": "moonshot.kimi-k2-thinking",
             "type": "chat",
@@ -5722,6 +8805,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "moonshotai.kimi-k2.5",
             "type": "chat",
@@ -5736,6 +8839,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "nvidia.nemotron-nano-12b-v2",
             "type": "chat",
@@ -5750,6 +8873,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "nvidia.nemotron-nano-9b-v2",
             "type": "chat",
@@ -5764,6 +8907,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "nvidia.nemotron-nano-3-30b",
             "type": "chat",
@@ -5778,6 +8941,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.0000011375
+                }
+            ],
             "maxTokens": null,
             "name": "nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -5792,6 +8975,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-oss-120b-1:0",
             "type": "chat",
@@ -5806,6 +9009,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-oss-20b-1:0",
             "type": "chat",
@@ -5820,6 +9043,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-oss-safeguard-120b",
             "type": "chat",
@@ -5834,6 +9077,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-oss-safeguard-20b",
             "type": "chat",
@@ -5862,6 +9125,20 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-235b-a22b-2507-v1:0",
             "type": "chat",
@@ -5876,6 +9153,20 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-coder-30b-a3b-v1:0",
             "type": "chat",
@@ -5890,6 +9181,26 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-32b-v1:0",
             "type": "chat",
@@ -5904,6 +9215,20 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-next-80b-a3b",
             "type": "chat",
@@ -5918,6 +9243,20 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.3e-7,
+                    "outputCost": 0.00000466
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-vl-235b-a22b",
             "type": "chat",
@@ -5932,6 +9271,26 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "qwen.qwen3-coder-next",
             "type": "chat",
@@ -5946,6 +9305,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.amazon.nova-lite-v1:0",
             "type": "chat",
@@ -5960,6 +9327,14 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-8,
+                    "outputCost": 7e-8
+                }
+            ],
             "maxTokens": null,
             "name": "us.amazon.nova-micro-v1:0",
             "type": "chat",
@@ -5974,6 +9349,28 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
             "maxTokens": null,
             "name": "us.amazon.nova-pro-v1:0",
             "type": "chat",
@@ -5988,6 +9385,19 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -6030,6 +9440,28 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000066,
+                    "outputCost": 0.00002475,
+                    "cacheCreationInputCost": 0.00000825,
+                    "cacheCreationInputCost1h": 0.0000132,
+                    "cacheReadInputCost": 6.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -6048,6 +9480,22 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000072
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000027,
+                    "cacheCreationInputCost": 0.000009,
+                    "cacheCreationInputCost1h": 0.0000144,
+                    "cacheReadInputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
@@ -6066,6 +9514,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -6080,6 +9535,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -6094,6 +9556,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-5",
             "type": "chat",
@@ -6108,6 +9583,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -6122,6 +9604,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-fable-5-1",
             "type": "chat",
@@ -6234,6 +9723,19 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-haiku-4-5-20251001-v1:0",
             "type": "chat",
@@ -6262,6 +9764,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
@@ -6276,6 +9785,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
@@ -6290,6 +9806,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
             "type": "chat",
@@ -6304,6 +9827,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-4-20250514-v1:0",
             "type": "chat",
@@ -6336,6 +9869,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
             "maxTokens": null,
             "name": "us.deepseek.v3.2",
             "type": "chat",
@@ -6350,6 +9903,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                }
+            ],
             "maxTokens": null,
             "name": "eu.deepseek.v3.2",
             "type": "chat",
@@ -6364,6 +9925,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.meta.llama3-3-70b-instruct-v1:0",
             "type": "chat",
@@ -6378,6 +9947,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.85e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.meta.llama4-maverick-17b-instruct-v1:0",
             "type": "chat",
@@ -6392,6 +9969,14 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.5e-8,
+                    "outputCost": 3.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.meta.llama4-scout-17b-instruct-v1:0",
             "type": "chat",
@@ -6420,6 +10005,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000385
+                }
+            ],
             "maxTokens": null,
             "name": "zai.glm-4.7",
             "type": "chat",
@@ -6434,6 +10039,20 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000056
+                }
+            ],
             "maxTokens": null,
             "name": "zai.glm-5",
             "type": "chat",
@@ -6448,6 +10067,26 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 7e-7
+                }
+            ],
             "maxTokens": null,
             "name": "zai.glm-4.7-flash",
             "type": "chat",
@@ -6462,6 +10101,16 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-5.6-sol",
             "type": "chat",
@@ -6476,6 +10125,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-5.6-sol",
             "type": "chat",
@@ -6490,6 +10149,16 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000198
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-5.6-terra",
             "type": "chat",
@@ -6504,6 +10173,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-5.6-terra",
             "type": "chat",
@@ -6518,6 +10197,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4.4e-7,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "outputCost": 0.00000198
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-5.6-luna",
             "type": "chat",
@@ -6532,6 +10221,15 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000055,
+                    "cacheReadInputCost": 5.5e-7,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-5.4",
             "type": "chat",
@@ -6546,6 +10244,15 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "cacheReadInputCost": 5e-7,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-5.4",
             "type": "chat",
@@ -6560,6 +10267,15 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000011,
+                    "cacheReadInputCost": 0.0000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-5.5",
             "type": "chat",
@@ -6574,6 +10290,15 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "cacheReadInputCost": 0.000001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-5.5",
             "type": "chat",
@@ -6588,6 +10313,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-5.6-luna",
             "type": "chat",
@@ -6602,6 +10337,32 @@ const provider2 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000022,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000825,
+                    "cacheReadInputCost": 0.0000066,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.00033
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000165,
+                    "cacheReadInputCost": 0.0000132,
+                    "inputCost": 0.000132,
+                    "outputCost": 0.000495
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-6-astra",
             "type": "chat",
@@ -6616,6 +10377,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000165
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-6-sol",
             "type": "chat",
@@ -6630,6 +10401,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.2e-7,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-6-luna",
             "type": "chat",
@@ -6644,6 +10425,32 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00002,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000075,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.0003
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00015,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00045
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-6-astra",
             "type": "chat",
@@ -6658,6 +10465,16 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-6-sol",
             "type": "chat",
@@ -6672,6 +10489,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-6-sol",
             "type": "chat",
@@ -6686,6 +10513,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "openai.gpt-6-luna",
             "type": "chat",
@@ -6700,6 +10537,16 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-6-luna",
             "type": "chat",
@@ -6714,6 +10561,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ],
             "maxTokens": null,
             "name": "us.xai.grok-4.6",
             "type": "chat",
@@ -6728,6 +10591,22 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.0000105
+                }
+            ],
             "maxTokens": null,
             "name": "global.xai.grok-4.6",
             "type": "chat",
@@ -6742,6 +10621,24 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ],
             "maxTokens": null,
             "name": "moonshotai.kimi-k3",
             "type": "chat",
@@ -6756,6 +10653,24 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000065625,
+                    "cacheReadInputCost": 5.25e-7,
+                    "inputCost": 0.00000525,
+                    "outputCost": 0.00002625
+                }
+            ],
             "maxTokens": null,
             "name": "global.moonshotai.kimi-k3",
             "type": "chat",
@@ -6770,6 +10685,24 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ],
             "maxTokens": null,
             "name": "us.moonshotai.kimi-k3",
             "type": "chat",
@@ -6784,6 +10717,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-mythos-5-1",
             "type": "chat",
@@ -6798,6 +10738,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-mythos-5-1",
             "type": "chat",
@@ -6812,6 +10759,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-mythos-5-1",
             "type": "chat",
@@ -6826,6 +10780,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-mythos-5",
             "type": "chat",
@@ -6840,6 +10801,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-fable-5",
             "type": "chat",
@@ -6854,6 +10822,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-fable-5",
             "type": "chat",
@@ -6868,6 +10843,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-opus-4-7",
             "type": "chat",
@@ -6882,6 +10864,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-opus-4-8",
             "type": "chat",
@@ -6896,6 +10885,19 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00001375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-opus-5",
             "type": "chat",
@@ -6910,6 +10912,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-opus-5-5",
             "type": "chat",
@@ -6924,6 +10933,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000066
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-4-6",
             "type": "chat",
@@ -6938,6 +10954,13 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-5",
             "type": "chat",
@@ -6952,6 +10975,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-mythos-preview",
             "type": "chat",
@@ -6966,6 +10996,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-mythos-preview",
             "type": "chat",
@@ -6980,6 +11017,13 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000055
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-mythos-preview",
             "type": "chat",
@@ -7022,6 +11066,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7036,6 +11087,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7050,6 +11108,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7064,6 +11129,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7078,6 +11150,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7092,6 +11171,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7106,6 +11192,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7120,6 +11213,13 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -7134,6 +11234,22 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.0000105
+                }
+            ],
             "maxTokens": null,
             "name": "global.xai.grok-4.7",
             "type": "chat",
@@ -7148,6 +11264,22 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ],
             "maxTokens": null,
             "name": "us.xai.grok-4.7",
             "type": "chat",
@@ -7162,6 +11294,28 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.3e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001155,
+                    "inputCost": 0.00000462,
+                    "outputCost": 0.00001386
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.xai.grok-4.7",
             "type": "chat",
@@ -7176,6 +11330,32 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000015,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000012,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000012,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-6.1-sol",
             "type": "chat",
@@ -7190,6 +11370,32 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000165,
+                    "cacheReadInputCost": 6.6e-7,
+                    "inputCost": 0.0000132,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000033,
+                    "cacheReadInputCost": 0.00000132,
+                    "inputCost": 0.0000264,
+                    "outputCost": 0.000099
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-6.1-sol",
             "type": "chat",
@@ -7204,6 +11410,32 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000105,
+                    "cacheReadInputCost": 1.56e-7,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000105,
+                    "cacheReadInputCost": 1.56e-7,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003675,
+                    "cacheReadInputCost": 5.46e-7,
+                    "inputCost": 0.00000294,
+                    "outputCost": 0.00000924
+                }
+            ],
             "maxTokens": null,
             "name": "global.zai.glm-5.3",
             "type": "chat",
@@ -7218,6 +11450,32 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001155,
+                    "cacheReadInputCost": 1.716e-7,
+                    "inputCost": 9.24e-7,
+                    "outputCost": 0.000002904
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001155,
+                    "cacheReadInputCost": 1.716e-7,
+                    "inputCost": 9.24e-7,
+                    "outputCost": 0.000002904
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000040425,
+                    "cacheReadInputCost": 6.006e-7,
+                    "inputCost": 0.000003234,
+                    "outputCost": 0.000010164
+                }
+            ],
             "maxTokens": null,
             "name": "us.zai.glm-5.3",
             "type": "chat",
@@ -7232,6 +11490,24 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000020625,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000721875,
+                    "cacheReadInputCost": 5.775e-7,
+                    "inputCost": 0.000005775,
+                    "outputCost": 0.000028875
+                }
+            ],
             "maxTokens": null,
             "name": "in.moonshotai.kimi-k3",
             "type": "chat",
@@ -7246,6 +11522,22 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7260,6 +11552,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "apac.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7274,6 +11582,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "au.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7288,6 +11612,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "eu.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7302,6 +11642,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "global.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7316,6 +11672,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "jp.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7330,6 +11702,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ],
             "maxTokens": null,
             "name": "us-gov.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7344,6 +11732,22 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "us.anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -7358,6 +11762,28 @@ const provider2 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.98e-7,
+                    "outputCost": 0.0000016555
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 1.98e-7,
+                    "outputCost": 0.0000016555
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.7325e-7,
+                    "inputCost": 6.93e-7,
+                    "outputCost": 0.00000579425
+                }
+            ],
             "maxTokens": null,
             "name": "jp.amazon.nova-2-lite-v1:0",
             "type": "chat",
@@ -7372,6 +11798,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "global.openai.gpt-6.1-terra",
             "type": "chat",
@@ -7386,6 +11822,16 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "us.openai.gpt-6.1-terra",
             "type": "chat",
@@ -7400,6 +11846,30 @@ const provider2 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000198,
+                    "outputCost": 0.0000099
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000002475,
+                    "cacheReadInputCost": 1.98e-7,
+                    "inputCost": 0.00000198,
+                    "outputCost": 0.0000099
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000086625,
+                    "cacheReadInputCost": 6.93e-7,
+                    "inputCost": 0.00000693,
+                    "outputCost": 0.00003465
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/moonshotai.kimi-k3",
             "type": "chat",
@@ -7414,6 +11884,30 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000198,
+                    "outputCost": 0.0000099
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000002475,
+                    "cacheReadInputCost": 1.98e-7,
+                    "inputCost": 0.00000198,
+                    "outputCost": 0.0000099
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000086625,
+                    "cacheReadInputCost": 6.93e-7,
+                    "inputCost": 0.00000693,
+                    "outputCost": 0.00003465
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/moonshotai.kimi-k3",
             "type": "chat",
@@ -7428,6 +11922,24 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000009625,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.0000077,
+                    "outputCost": 0.0000385
+                }
+            ],
             "maxTokens": null,
             "name": "moonshotai.kimi-k3.1",
             "type": "chat",
@@ -7442,6 +11954,24 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000009625,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.0000077,
+                    "outputCost": 0.0000385
+                }
+            ],
             "maxTokens": null,
             "name": "us.moonshotai.kimi-k3.1",
             "type": "chat",
@@ -7456,6 +11986,24 @@ const provider2 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000875,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.000007,
+                    "outputCost": 0.000035
+                }
+            ],
             "maxTokens": null,
             "name": "global.moonshotai.kimi-k3.1",
             "type": "chat",
@@ -7470,6 +12018,24 @@ const provider2 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000009625,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.0000077,
+                    "outputCost": 0.0000385
+                }
+            ],
             "maxTokens": null,
             "name": "in.moonshotai.kimi-k3.1",
             "type": "chat",
@@ -7713,6 +12279,14 @@ const provider4 = [
             "cacheCreationInputCostUnit": null
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-08-06",
             "type": "chat",
@@ -7727,6 +12301,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o",
             "type": "chat",
@@ -7741,6 +12323,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-11-20",
             "type": "chat",
@@ -7755,6 +12345,13 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o-mini",
             "type": "chat",
@@ -7769,6 +12366,13 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o-mini-2024-07-18",
             "type": "chat",
@@ -7783,6 +12387,22 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055,
+                    "cacheReadInputCost": 6.875e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-2025-08-07",
             "type": "chat",
@@ -7797,6 +12417,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011,
+                    "cacheReadInputCost": 1.375e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-mini-2025-08-07",
             "type": "chat",
@@ -7811,6 +12447,22 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.1",
             "type": "chat",
@@ -7853,6 +12505,15 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7,
+                    "cacheReadInputCost": 2.75e-9
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-nano-2025-08-07",
             "type": "chat",
@@ -7867,6 +12528,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o1",
             "type": "chat",
@@ -7881,6 +12550,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o1-2024-12-17",
             "type": "chat",
@@ -7895,6 +12572,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o1-mini-2024-09-12",
             "type": "chat",
@@ -7909,6 +12594,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o3-mini",
             "type": "chat",
@@ -7923,6 +12616,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o3-mini-2025-01-31",
             "type": "chat",
@@ -7937,6 +12638,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/global-standard/gpt-4o-2024-08-06",
             "type": "chat",
@@ -7951,6 +12660,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/global-standard/gpt-4o-2024-11-20",
             "type": "chat",
@@ -7979,6 +12696,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/global/gpt-4o-2024-08-06",
             "type": "chat",
@@ -7993,6 +12718,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/global/gpt-4o-2024-11-20",
             "type": "chat",
@@ -8007,6 +12740,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/global/gpt-5.1",
             "type": "chat",
@@ -8147,6 +12896,21 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1",
             "type": "chat",
@@ -8161,6 +12925,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1-2025-04-14",
             "type": "chat",
@@ -8175,6 +12954,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1-mini",
             "type": "chat",
@@ -8189,6 +12983,21 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1-mini-2025-04-14",
             "type": "chat",
@@ -8203,6 +13012,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1-nano",
             "type": "chat",
@@ -8217,6 +13034,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4.1-nano-2025-04-14",
             "type": "chat",
@@ -8231,6 +13056,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o",
             "type": "chat",
@@ -8245,6 +13078,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-2024-05-13",
             "type": "chat",
@@ -8259,6 +13100,14 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-2024-08-06",
             "type": "chat",
@@ -8273,6 +13122,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-2024-11-20",
             "type": "chat",
@@ -8287,6 +13144,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio",
             "type": "chat",
@@ -8301,6 +13166,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio-2025-08-28",
             "type": "chat",
@@ -8315,6 +13188,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio-1.5",
             "type": "chat",
@@ -8329,6 +13210,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio-1.5-2026-02-23",
             "type": "chat",
@@ -8343,6 +13232,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio-mini",
             "type": "chat",
@@ -8357,6 +13254,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-audio-mini-2025-10-06",
             "type": "chat",
@@ -8371,6 +13276,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-audio-preview-2024-12-17",
             "type": "chat",
@@ -8385,6 +13298,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-mini",
             "type": "chat",
@@ -8399,6 +13320,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-mini-2024-07-18",
             "type": "chat",
@@ -8413,6 +13342,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
@@ -8427,6 +13364,22 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 6.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.1-2025-11-13",
             "type": "chat",
@@ -8441,6 +13394,15 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.1-codex-2025-11-13",
             "type": "responses",
@@ -8455,6 +13417,15 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.1-codex-mini-2025-11-13",
             "type": "responses",
@@ -8469,6 +13440,22 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5",
             "type": "chat",
@@ -8483,6 +13470,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 6.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-2025-08-07",
             "type": "chat",
@@ -8511,6 +13514,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-mini",
             "type": "chat",
@@ -8525,6 +13544,22 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001,
+                    "cacheReadInputCost": 1.25e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-mini-2025-08-07",
             "type": "chat",
@@ -8539,6 +13574,15 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-nano",
             "type": "chat",
@@ -8553,6 +13597,15 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7,
+                    "cacheReadInputCost": 2.5e-9
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-nano-2025-08-07",
             "type": "chat",
@@ -8567,6 +13620,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5-pro",
             "type": "responses",
@@ -8581,6 +13642,22 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.1",
             "type": "chat",
@@ -8777,6 +13854,22 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.2",
             "type": "chat",
@@ -8791,6 +13884,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007,
+                    "cacheReadInputCost": 8.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.2-2025-12-11",
             "type": "chat",
@@ -8819,6 +13928,15 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.3-codex",
             "type": "responses",
@@ -8833,6 +13951,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.2-pro",
             "type": "responses",
@@ -8847,6 +13973,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.2-pro-2025-12-11",
             "type": "responses",
@@ -8861,6 +13995,56 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4",
             "type": "chat",
@@ -8875,6 +14059,36 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.43e-7,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.4",
             "type": "chat",
@@ -8889,6 +14103,36 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.43e-7,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.4",
             "type": "chat",
@@ -8903,6 +14147,56 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 1.3e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-2026-03-05",
             "type": "chat",
@@ -8917,6 +14211,36 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825,
+                    "cacheReadInputCost": 1.43e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.4-2026-03-05",
             "type": "chat",
@@ -8931,6 +14255,36 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.00000825,
+                    "cacheReadInputCost": 1.43e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000012375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.4-2026-03-05",
             "type": "chat",
@@ -8945,6 +14299,39 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-pro",
             "type": "responses",
@@ -8959,6 +14346,39 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-pro-2026-03-05",
             "type": "responses",
@@ -8973,6 +14393,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6",
             "type": "chat",
@@ -8987,6 +14433,48 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-sol",
             "type": "chat",
@@ -9001,6 +14489,48 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-sol-2026-07-09",
             "type": "chat",
@@ -9015,6 +14545,48 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-terra",
             "type": "chat",
@@ -9029,6 +14601,48 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-terra-2026-07-09",
             "type": "chat",
@@ -9043,6 +14657,48 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-luna",
             "type": "chat",
@@ -9057,6 +14713,48 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.6-luna-2026-07-09",
             "type": "chat",
@@ -9071,6 +14769,32 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025,
+                    "cacheReadInputCost": 5e-7,
+                    "cacheCreationInputCost": 0.00000625
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000125,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-astra",
             "type": "chat",
@@ -9085,6 +14809,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025,
+                    "cacheReadInputCost": 5e-7,
+                    "cacheCreationInputCost": 0.00000625
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000125,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-astra-2026-09-03",
             "type": "chat",
@@ -9099,6 +14849,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-luna",
             "type": "chat",
@@ -9113,6 +14889,32 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-luna-2026-09-22",
             "type": "chat",
@@ -9127,6 +14929,48 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-sol",
             "type": "chat",
@@ -9141,6 +14985,48 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6-sol-2026-09-22",
             "type": "chat",
@@ -9155,6 +15041,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6.1-terra",
             "type": "chat",
@@ -9169,6 +15065,32 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5e-8,
+                    "cacheCreationInputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6.1-sol",
             "type": "chat",
@@ -9183,6 +15105,32 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5e-8,
+                    "cacheCreationInputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-6.1-sol-2026-09-29",
             "type": "chat",
@@ -9197,6 +15145,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-6.1-terra",
             "type": "chat",
@@ -9211,6 +15169,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-6.1-sol",
             "type": "chat",
@@ -9225,6 +15193,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000003,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 0.0000024,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-6.1-terra",
             "type": "chat",
@@ -9239,6 +15217,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-6.1-sol",
             "type": "chat",
@@ -9253,6 +15241,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000003,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 0.0000024,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure/apac/gpt-6.1-terra",
             "type": "chat",
@@ -9267,6 +15265,16 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/apac/gpt-6.1-sol",
             "type": "chat",
@@ -9309,6 +15317,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.6",
             "type": "chat",
@@ -9323,6 +15357,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.6-sol",
             "type": "chat",
@@ -9337,6 +15397,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.0000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000198
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.6-terra",
             "type": "chat",
@@ -9351,6 +15437,32 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000011,
+                    "cacheReadInputCost": 8.8e-8,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000198
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.6-luna",
             "type": "chat",
@@ -9365,6 +15477,16 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "inputCost": 0.000022,
+                    "outputCost": 0.0000825
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-6-astra",
             "type": "chat",
@@ -9379,6 +15501,16 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-6-luna",
             "type": "chat",
@@ -9393,6 +15525,32 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-6-sol",
             "type": "chat",
@@ -9421,6 +15579,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.6",
             "type": "chat",
@@ -9435,6 +15619,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000022,
+                    "cacheReadInputCost": 0.00000176,
+                    "inputCost": 0.0000176,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.6-sol",
             "type": "chat",
@@ -9449,6 +15659,32 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "inputCost": 0.0000088,
+                    "outputCost": 0.0000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000198
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.6-terra",
             "type": "chat",
@@ -9463,6 +15699,32 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000264
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000011,
+                    "cacheReadInputCost": 8.8e-8,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000198
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.6-luna",
             "type": "chat",
@@ -9477,6 +15739,54 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.5",
             "type": "chat",
@@ -9491,6 +15801,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.5",
             "type": "chat",
@@ -9505,6 +15845,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.5",
             "type": "chat",
@@ -9519,6 +15889,54 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.5-2026-04-23",
             "type": "chat",
@@ -9533,6 +15951,54 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.5-2026-04-24",
             "type": "chat",
@@ -9547,6 +16013,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.5-2026-04-23",
             "type": "chat",
@@ -9561,6 +16057,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165,
+                    "cacheReadInputCost": 2.75e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.5-2026-04-24",
             "type": "chat",
@@ -9575,6 +16101,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.5-2026-04-23",
             "type": "chat",
@@ -9589,6 +16145,36 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.0000165,
+                    "cacheReadInputCost": 2.75e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.5e-7,
+                    "inputCost": 0.0000055,
+                    "outputCost": 0.00002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001375,
+                    "inputCost": 0.00001375,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.0000011,
+                    "inputCost": 0.000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.5-2026-04-24",
             "type": "chat",
@@ -9603,6 +16189,15 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.5-pro",
             "type": "responses",
@@ -9617,6 +16212,15 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.5-pro-2026-04-23",
             "type": "responses",
@@ -9631,6 +16235,29 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-mini",
             "type": "chat",
@@ -9645,6 +16272,29 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-mini-2026-03-17",
             "type": "chat",
@@ -9659,6 +16309,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-nano",
             "type": "chat",
@@ -9673,6 +16339,22 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7,
+                    "cacheReadInputCost": 1e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/gpt-5.4-nano-2026-03-17",
             "type": "chat",
@@ -9729,6 +16411,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o1-2024-12-17",
             "type": "chat",
@@ -9743,6 +16433,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o1-mini",
             "type": "chat",
@@ -9757,6 +16455,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o1-mini-2024-09-12",
             "type": "chat",
@@ -9771,6 +16477,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3",
             "type": "chat",
@@ -9785,6 +16499,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3-2025-04-16",
             "type": "chat",
@@ -9813,6 +16535,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3-mini",
             "type": "chat",
@@ -9827,6 +16557,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3-mini-2025-01-31",
             "type": "chat",
@@ -9841,6 +16579,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3-pro",
             "type": "responses",
@@ -9855,6 +16601,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o3-pro-2025-06-10",
             "type": "responses",
@@ -9869,6 +16623,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o4-mini",
             "type": "chat",
@@ -9883,6 +16645,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/o4-mini-2025-04-16",
             "type": "chat",
@@ -9939,6 +16709,21 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1-2025-04-14",
             "type": "chat",
@@ -9953,6 +16738,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1-mini-2025-04-14",
             "type": "chat",
@@ -9967,6 +16767,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1-nano-2025-04-14",
             "type": "chat",
@@ -9981,6 +16789,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-08-06",
             "type": "chat",
@@ -9995,6 +16811,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o",
             "type": "chat",
@@ -10009,6 +16833,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001375,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-11-20",
             "type": "chat",
@@ -10023,6 +16855,13 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o-mini",
             "type": "chat",
@@ -10037,6 +16876,13 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.3e-8
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o-mini-2024-07-18",
             "type": "chat",
@@ -10051,6 +16897,22 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055,
+                    "cacheReadInputCost": 6.875e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-2025-08-07",
             "type": "chat",
@@ -10065,6 +16927,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011,
+                    "cacheReadInputCost": 1.375e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-mini-2025-08-07",
             "type": "chat",
@@ -10079,6 +16957,15 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7,
+                    "cacheReadInputCost": 2.75e-9
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-nano-2025-08-07",
             "type": "chat",
@@ -10093,6 +16980,22 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.1",
             "type": "chat",
@@ -10135,6 +17038,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o1",
             "type": "chat",
@@ -10149,6 +17060,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o1-2024-12-17",
             "type": "chat",
@@ -10163,6 +17082,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o1-mini-2024-09-12",
             "type": "chat",
@@ -10177,6 +17104,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o3",
             "type": "chat",
@@ -10191,6 +17126,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o3-2025-04-16",
             "type": "chat",
@@ -10205,6 +17148,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o3-mini",
             "type": "chat",
@@ -10219,6 +17170,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o3-mini-2025-01-31",
             "type": "chat",
@@ -10233,6 +17192,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o4-mini",
             "type": "chat",
@@ -10247,6 +17214,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o4-mini-2025-04-16",
             "type": "chat",
@@ -10345,6 +17320,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4.1",
             "type": "chat",
@@ -10359,6 +17349,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4.1-mini",
             "type": "chat",
@@ -10373,6 +17378,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4.1-nano",
             "type": "chat",
@@ -10387,6 +17400,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-4o-2024-05-13",
             "type": "chat",
@@ -10401,6 +17422,22 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5",
             "type": "chat",
@@ -10429,6 +17466,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.375e-8,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-mini",
             "type": "chat",
@@ -10443,6 +17496,15 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-9,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-nano",
             "type": "chat",
@@ -10457,6 +17519,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000066
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5-pro",
             "type": "responses",
@@ -10485,6 +17555,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-8,
+                    "inputCost": 9.625e-7,
+                    "outputCost": 0.0000077
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.2",
             "type": "chat",
@@ -10513,6 +17599,14 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001155,
+                    "outputCost": 0.0000924
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.2-pro",
             "type": "responses",
@@ -10527,6 +17621,15 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.3-codex",
             "type": "responses",
@@ -10541,6 +17644,22 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 4.125e-7,
+                    "outputCost": 0.000002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.0000099
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.4-mini",
             "type": "chat",
@@ -10555,6 +17674,15 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-8,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 6.875e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.4-nano",
             "type": "chat",
@@ -10569,6 +17697,26 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000165,
+                    "outputCost": 0.000099
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000033,
+                    "outputCost": 0.0001485
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.000297
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-5.4-pro",
             "type": "responses",
@@ -10583,6 +17731,16 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000024,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-6-astra",
             "type": "chat",
@@ -10597,6 +17755,16 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 3e-7,
+                    "cacheReadInputCost": 2.4e-8,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 9e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-6-luna",
             "type": "chat",
@@ -10611,6 +17779,16 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000006,
+                    "cacheReadInputCost": 4.8e-7,
+                    "inputCost": 0.0000048,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/gpt-6-sol",
             "type": "chat",
@@ -10625,6 +17803,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o1-mini",
             "type": "chat",
@@ -10639,6 +17825,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o3",
             "type": "chat",
@@ -10653,6 +17847,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o3-2025-04-16",
             "type": "chat",
@@ -10681,6 +17883,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o4-mini",
             "type": "chat",
@@ -10695,6 +17905,14 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/eu/o4-mini-2025-04-16",
             "type": "chat",
@@ -10779,6 +17997,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000044
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.63e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000154
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1",
             "type": "chat",
@@ -10793,6 +18026,21 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.2e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.93e-7,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.00000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1-mini",
             "type": "chat",
@@ -10807,6 +18055,14 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4.1-nano",
             "type": "chat",
@@ -10821,6 +18077,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-4o-2024-05-13",
             "type": "chat",
@@ -10835,6 +18099,22 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.875e-8,
+                    "inputCost": 6.875e-7,
+                    "outputCost": 0.0000055
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.00000275,
+                    "outputCost": 0.000022
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5",
             "type": "chat",
@@ -10863,6 +18143,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.375e-8,
+                    "inputCost": 1.375e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.95e-8,
+                    "inputCost": 4.95e-7,
+                    "outputCost": 0.00000396
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-mini",
             "type": "chat",
@@ -10877,6 +18173,15 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-9,
+                    "inputCost": 2.75e-8,
+                    "outputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-nano",
             "type": "chat",
@@ -10891,6 +18196,14 @@ const provider4 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000825,
+                    "outputCost": 0.000066
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5-pro",
             "type": "responses",
@@ -10919,6 +18232,22 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-8,
+                    "inputCost": 9.625e-7,
+                    "outputCost": 0.0000077
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.2",
             "type": "chat",
@@ -10947,6 +18276,14 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001155,
+                    "outputCost": 0.0000924
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.2-pro",
             "type": "responses",
@@ -10961,6 +18298,15 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.0000308
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.3-codex",
             "type": "responses",
@@ -10975,6 +18321,22 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.125e-8,
+                    "inputCost": 4.125e-7,
+                    "outputCost": 0.000002475
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.65e-7,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.0000099
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.4-mini",
             "type": "chat",
@@ -10989,6 +18351,15 @@ const provider4 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-8,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 6.875e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.4-nano",
             "type": "chat",
@@ -11003,6 +18374,26 @@ const provider4 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000165,
+                    "outputCost": 0.000099
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000033,
+                    "outputCost": 0.0001485
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.000297
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/gpt-5.4-pro",
             "type": "responses",
@@ -11017,6 +18408,14 @@ const provider4 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.05e-7,
+                    "outputCost": 0.00000242
+                }
+            ],
             "maxTokens": null,
             "name": "azure/us/o1-mini",
             "type": "chat",
@@ -11104,6 +18503,13 @@ const provider4 = [
 
 const provider5 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-haiku-4-5",
             "type": "chat",
@@ -11118,6 +18524,13 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-4-5",
             "type": "chat",
@@ -11132,6 +18545,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-4-6",
             "type": "chat",
@@ -11146,6 +18566,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-4-7",
             "type": "chat",
@@ -11160,6 +18587,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-fable-5",
             "type": "chat",
@@ -11174,6 +18608,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-fable-5-1",
             "type": "chat",
@@ -11188,6 +18629,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-mythos-5-1",
             "type": "chat",
@@ -11202,6 +18650,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-5",
             "type": "chat",
@@ -11216,6 +18671,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-5-5",
             "type": "chat",
@@ -11230,6 +18692,13 @@ const provider5 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-4-8",
             "type": "chat",
@@ -11244,6 +18713,13 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-sonnet-4-5",
             "type": "chat",
@@ -11258,6 +18734,13 @@ const provider5 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-sonnet-5",
             "type": "chat",
@@ -11272,6 +18755,13 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-sonnet-4-6",
             "type": "chat",
@@ -11300,6 +18790,16 @@ const provider5 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-6-astra",
             "type": "chat",
@@ -11314,6 +18814,16 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-6-luna",
             "type": "chat",
@@ -11328,6 +18838,16 @@ const provider5 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-6-sol",
             "type": "chat",
@@ -11342,6 +18862,16 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-6.1-sol",
             "type": "chat",
@@ -11356,6 +18886,16 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-6.1-terra",
             "type": "chat",
@@ -11370,6 +18910,29 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.5",
             "type": "chat",
@@ -11412,6 +18975,29 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.5-2026-04-23",
             "type": "chat",
@@ -11426,6 +19012,29 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.5-2026-04-24",
             "type": "chat",
@@ -11440,6 +19049,29 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4",
             "type": "chat",
@@ -11454,6 +19086,29 @@ const provider5 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-2026-03-05",
             "type": "chat",
@@ -11468,6 +19123,29 @@ const provider5 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00036
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-pro",
             "type": "responses",
@@ -11482,6 +19160,29 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00036
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00054
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-pro-2026-03-05",
             "type": "responses",
@@ -11496,6 +19197,15 @@ const provider5 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-mini",
             "type": "chat",
@@ -11510,6 +19220,15 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-mini-2026-03-17",
             "type": "chat",
@@ -11524,6 +19243,15 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000025
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-nano",
             "type": "chat",
@@ -11538,6 +19266,15 @@ const provider5 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000025
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/gpt-5.4-nano-2026-03-17",
             "type": "chat",
@@ -11916,6 +19653,13 @@ const provider5 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/Phi-4-multimodal-instruct",
             "type": "chat",
@@ -12084,6 +19828,15 @@ const provider5 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/grok-4.3",
             "type": "chat",
@@ -12101,6 +19854,15 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/grok-4.6",
             "type": "chat",
@@ -12552,6 +20314,13 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-sonnet-5-5",
             "type": "chat",
@@ -12580,6 +20349,15 @@ const provider5 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/grok-4.7",
             "type": "chat",
@@ -12597,6 +20375,22 @@ const provider5 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-haiku-5-5",
             "type": "chat",
@@ -12639,6 +20433,13 @@ const provider5 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
             "maxTokens": null,
             "name": "azure_ai/claude-opus-5-5-fast",
             "type": "chat",
@@ -12715,6 +20516,14 @@ const provider6 = [
 
 const provider7 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "babbage-002",
             "type": "completion",
@@ -12729,6 +20538,14 @@ const provider7 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "davinci-002",
             "type": "completion",
@@ -12743,6 +20560,14 @@ const provider7 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-7,
+                    "outputCost": 9e-7
+                }
+            ],
             "maxTokens": null,
             "name": "ft:babbage-002",
             "type": "completion",
@@ -12757,6 +20582,14 @@ const provider7 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "ft:davinci-002",
             "type": "completion",
@@ -12948,6 +20781,21 @@ const provider9 = [
 
 const provider10 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-haiku-4-5-20251001",
             "type": "chat",
@@ -12962,6 +20810,21 @@ const provider10 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-haiku-4-5",
             "type": "chat",
@@ -12976,6 +20839,21 @@ const provider10 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-4-5",
             "type": "chat",
@@ -12990,6 +20868,21 @@ const provider10 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-4-5-20250929",
             "type": "chat",
@@ -13004,6 +20897,21 @@ const provider10 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-5",
             "type": "chat",
@@ -13018,6 +20926,21 @@ const provider10 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-5-5",
             "type": "chat",
@@ -13032,6 +20955,21 @@ const provider10 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000001875,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "claude-sonnet-4-6",
             "type": "chat",
@@ -13046,6 +20984,21 @@ const provider10 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-5-20251101",
             "type": "chat",
@@ -13060,6 +21013,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-5",
             "type": "chat",
@@ -13074,6 +21042,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-6",
             "type": "chat",
@@ -13088,6 +21071,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-6-20260205",
             "type": "chat",
@@ -13102,6 +21100,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-7",
             "type": "chat",
@@ -13116,6 +21129,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-7-20260416",
             "type": "chat",
@@ -13130,6 +21158,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-fable-5",
             "type": "chat",
@@ -13144,6 +21187,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-fable-5-1",
             "type": "chat",
@@ -13158,6 +21216,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-5-5",
             "type": "chat",
@@ -13172,6 +21245,21 @@ const provider10 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-5",
             "type": "chat",
@@ -13186,6 +21274,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "claude-opus-4-8",
             "type": "chat",
@@ -13200,6 +21303,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-mythos-5",
             "type": "chat",
@@ -13214,6 +21332,21 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-mythos-5-1",
             "type": "chat",
@@ -13228,6 +21361,13 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "claude-mythos-preview",
             "type": "chat",
@@ -13242,6 +21382,38 @@ const provider10 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheCreationInputCost": 3.125e-7,
+                    "cacheReadInputCost": 2.5e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "claude-haiku-5-5",
             "type": "chat",
@@ -14030,6 +22202,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000003
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-3.5-turbo",
             "type": "chat",
@@ -14100,6 +22280,15 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-7,
+                    "inputCost": 0.000002225,
+                    "outputCost": 0.0000125
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-4o-2024-08-06",
             "type": "chat",
@@ -14128,6 +22317,15 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-4o-mini-2024-07-18",
             "type": "chat",
@@ -14142,6 +22340,15 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-4.1-2025-04-14",
             "type": "chat",
@@ -14156,6 +22363,15 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-4.1-mini-2025-04-14",
             "type": "chat",
@@ -14170,6 +22386,15 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "ft:gpt-4.1-nano-2025-04-14",
             "type": "chat",
@@ -14184,6 +22409,15 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "ft:o4-mini-2025-04-16",
             "type": "chat",
@@ -14212,6 +22446,14 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-3.5-turbo-0125",
             "type": "chat",
@@ -14226,6 +22468,14 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-3.5-turbo-1106",
             "type": "chat",
@@ -14268,6 +22518,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4-0613",
             "type": "chat",
@@ -14310,6 +22568,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4-turbo-2024-04-09",
             "type": "chat",
@@ -14324,6 +22590,21 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1",
             "type": "chat",
@@ -14338,6 +22619,21 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1-2025-04-14",
             "type": "chat",
@@ -14352,6 +22648,21 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1-mini",
             "type": "chat",
@@ -14366,6 +22677,21 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000028
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1-mini-2025-04-14",
             "type": "chat",
@@ -14380,6 +22706,21 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1-nano",
             "type": "chat",
@@ -14394,6 +22735,21 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4.1-nano-2025-04-14",
             "type": "chat",
@@ -14408,6 +22764,21 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o",
             "type": "chat",
@@ -14422,6 +22793,20 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000875,
+                    "outputCost": 0.00002625
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-2024-05-13",
             "type": "chat",
@@ -14436,6 +22821,21 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-2024-08-06",
             "type": "chat",
@@ -14450,6 +22850,21 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000002125,
+                    "inputCost": 0.00000425,
+                    "outputCost": 0.000017
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-2024-11-20",
             "type": "chat",
@@ -14464,6 +22879,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-audio-preview-2024-12-17",
             "type": "chat",
@@ -14478,6 +22901,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00004,
+                    "outputAudioCost": 0.00008
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-audio-preview-2025-06-03",
             "type": "chat",
@@ -14492,6 +22923,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio",
             "type": "chat",
@@ -14506,6 +22945,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio-1.5",
             "type": "chat",
@@ -14520,6 +22967,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000032,
+                    "outputAudioCost": 0.000064
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio-2025-08-28",
             "type": "chat",
@@ -14534,6 +22989,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio-mini",
             "type": "chat",
@@ -14548,6 +23011,14 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio-mini-2025-10-06",
             "type": "chat",
@@ -14562,6 +23033,14 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-audio-mini-2025-12-15",
             "type": "chat",
@@ -14576,6 +23055,21 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-mini",
             "type": "chat",
@@ -14590,6 +23084,21 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-mini-2024-07-18",
             "type": "chat",
@@ -14604,6 +23113,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00001,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-mini-audio-preview-2024-12-17",
             "type": "chat",
@@ -14618,6 +23135,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-mini-search-preview",
             "type": "chat",
@@ -14632,6 +23157,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-mini-search-preview-2025-03-11",
             "type": "chat",
@@ -14646,6 +23179,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-search-preview",
             "type": "chat",
@@ -14660,6 +23201,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-4o-search-preview-2025-03-11",
             "type": "chat",
@@ -14674,6 +23223,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5",
             "type": "chat",
@@ -14702,6 +23274,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.1",
             "type": "chat",
@@ -14772,6 +23367,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.1-2025-11-13",
             "type": "chat",
@@ -14786,6 +23404,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.2",
             "type": "chat",
@@ -14828,6 +23469,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.2-2025-12-11",
             "type": "chat",
@@ -14842,6 +23506,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.2-pro",
             "type": "responses",
@@ -14856,6 +23528,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000105,
+                    "outputCost": 0.000084
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.2-pro-2025-12-11",
             "type": "responses",
@@ -14870,6 +23550,94 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000125,
+                    "cacheReadInputCost": 5e-7,
+                    "cacheCreationInputCost": 0.00000625,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000025,
+                    "cacheReadInputCost": 0.000001,
+                    "cacheCreationInputCost": 0.0000125,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000125,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000025,
+                    "cacheCreationInputCost": 0.0000125,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.0001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0001,
+                    "cacheCreationInputCost": 0.00005,
+                    "cacheReadInputCost": 0.000004,
+                    "inputCost": 0.00004,
+                    "outputCost": 0.00015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00015,
+                    "cacheCreationInputCost": 0.000075,
+                    "cacheReadInputCost": 0.000006,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.0003
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0003,
+                    "cacheCreationInputCost": 0.00015,
+                    "cacheReadInputCost": 0.000012,
+                    "inputCost": 0.00012,
+                    "outputCost": 0.00045
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6-astra",
             "type": "chat",
@@ -14884,6 +23652,76 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6-sol",
             "type": "chat",
@@ -14898,6 +23736,92 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 1.25e-7,
+                    "cacheReadInputCost": 5e-9,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "decisions",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 0
+                },
+                {
+                    "serviceTier": "decisions",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 0
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 1.25e-7,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6-luna",
             "type": "chat",
@@ -14912,6 +23836,74 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00004,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.6",
             "type": "chat",
@@ -14926,6 +23918,76 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00004,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.6-sol",
             "type": "chat",
@@ -14940,6 +24002,76 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.00000125,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.6-terra",
             "type": "chat",
@@ -14954,6 +24086,76 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 2.5e-7,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000002,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000001,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.6-luna",
             "type": "chat",
@@ -14968,6 +24170,21 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00003125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.6-cyber",
             "type": "chat",
@@ -14982,6 +24199,16 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ],
             "maxTokens": null,
             "name": "daybreak-red-latest",
             "type": "chat",
@@ -14996,6 +24223,16 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00003125,
+                    "cacheReadInputCost": 0.0000025,
+                    "inputCost": 0.000025,
+                    "outputCost": 0.0001125
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-daybreak-red-latest",
             "type": "responses",
@@ -15010,6 +24247,16 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "daybreak-blue-latest",
             "type": "chat",
@@ -15024,6 +24271,16 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-daybreak-blue-latest",
             "type": "responses",
@@ -15052,6 +24309,50 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225,
+                    "cacheReadInputCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.5",
             "type": "chat",
@@ -15066,6 +24367,50 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225,
+                    "cacheReadInputCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.00000125,
+                    "inputCost": 0.0000125,
+                    "outputCost": 0.000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.5-2026-04-23",
             "type": "chat",
@@ -15080,6 +24425,32 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.5-pro",
             "type": "responses",
@@ -15094,6 +24465,32 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.5-pro-2026-04-23",
             "type": "responses",
@@ -15108,6 +24505,50 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4",
             "type": "chat",
@@ -15122,6 +24563,50 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-2026-03-05",
             "type": "chat",
@@ -15136,6 +24621,38 @@ const provider16 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-pro",
             "type": "responses",
@@ -15150,6 +24667,38 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.000135
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-pro-2026-03-05",
             "type": "responses",
@@ -15164,6 +24713,29 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-mini",
             "type": "chat",
@@ -15178,6 +24750,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-mini-2026-03-17",
             "type": "chat",
@@ -15192,6 +24787,22 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-nano",
             "type": "chat",
@@ -15206,6 +24817,22 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.4-nano-2026-03-17",
             "type": "chat",
@@ -15220,6 +24847,14 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-pro",
             "type": "responses",
@@ -15234,6 +24869,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00006
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-pro-2025-10-06",
             "type": "responses",
@@ -15248,6 +24891,29 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-2025-08-07",
             "type": "chat",
@@ -15290,6 +24956,15 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5.3-codex",
             "type": "responses",
@@ -15318,6 +24993,29 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-mini",
             "type": "chat",
@@ -15332,6 +25030,29 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000036
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-mini-2025-08-07",
             "type": "chat",
@@ -15346,6 +25067,22 @@ const provider16 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-nano",
             "type": "chat",
@@ -15360,6 +25097,22 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-5-nano-2025-08-07",
             "type": "chat",
@@ -15374,6 +25127,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "o1",
             "type": "chat",
@@ -15388,6 +25149,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000075,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "o1-2024-12-17",
             "type": "chat",
@@ -15402,6 +25171,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000075,
+                    "outputCost": 0.0003
+                }
+            ],
             "maxTokens": null,
             "name": "o1-pro",
             "type": "responses",
@@ -15416,6 +25193,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000075,
+                    "outputCost": 0.0003
+                }
+            ],
             "maxTokens": null,
             "name": "o1-pro-2025-03-19",
             "type": "responses",
@@ -15430,6 +25215,28 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "o3",
             "type": "chat",
@@ -15472,6 +25279,28 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000014
+                }
+            ],
             "maxTokens": null,
             "name": "o3-2025-04-16",
             "type": "chat",
@@ -15486,6 +25315,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "o3-mini",
             "type": "chat",
@@ -15500,6 +25337,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                }
+            ],
             "maxTokens": null,
             "name": "o3-mini-2025-01-31",
             "type": "chat",
@@ -15514,6 +25359,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ],
             "maxTokens": null,
             "name": "o3-pro",
             "type": "responses",
@@ -15528,6 +25381,14 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00004
+                }
+            ],
             "maxTokens": null,
             "name": "o3-pro-2025-06-10",
             "type": "responses",
@@ -15542,6 +25403,28 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.38e-7,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "o4-mini",
             "type": "chat",
@@ -15584,6 +25467,28 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.38e-7,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.0000022
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "o4-mini-2025-04-16",
             "type": "chat",
@@ -15598,6 +25503,14 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 0
+                }
+            ],
             "maxTokens": null,
             "name": "text-embedding-3-large",
             "type": "embedding",
@@ -15612,6 +25525,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-8,
+                    "outputCost": 0
+                }
+            ],
             "maxTokens": null,
             "name": "text-embedding-3-small",
             "type": "embedding",
@@ -15640,6 +25561,14 @@ const provider16 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 0
+                }
+            ],
             "maxTokens": null,
             "name": "text-embedding-ada-002-v2",
             "type": "embedding",
@@ -15737,6 +25666,94 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00002,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00003,
+                    "cacheCreationInputCost": 0.000015,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000012,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00006,
+                    "cacheCreationInputCost": 0.00003,
+                    "cacheReadInputCost": 0.0000012,
+                    "inputCost": 0.000024,
+                    "outputCost": 0.00009
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6.1-sol",
             "type": "chat",
@@ -15765,6 +25782,76 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00000125,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00000125,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.0000025,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.00001,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000005,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6.1-terra",
             "type": "chat",
@@ -15779,6 +25866,22 @@ const provider16 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.0000375
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost12h": 0.000075,
+                    "cacheCreationInputCost": 0.0000375,
+                    "cacheReadInputCost": 0.000003,
+                    "inputCost": 0.00003,
+                    "outputCost": 0.0001125
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6-rosalind",
             "type": "chat",
@@ -15793,6 +25896,13 @@ const provider16 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost12h": 0.00005
+                }
+            ],
             "maxTokens": null,
             "name": "gpt-6-cyber",
             "type": "chat",
@@ -17804,6 +27914,13 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001999998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5",
             "type": "chat",
@@ -17818,6 +27935,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001999998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-fable-5-1",
             "type": "chat",
@@ -17832,6 +27956,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000199997
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-haiku-4-5",
             "type": "chat",
@@ -17846,6 +27977,13 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002999997
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4",
             "type": "chat",
@@ -17860,6 +27998,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002999997
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-1",
             "type": "chat",
@@ -17874,6 +28019,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-5",
             "type": "chat",
@@ -17888,6 +28040,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-6",
             "type": "chat",
@@ -17902,6 +28061,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-7",
             "type": "chat",
@@ -17916,6 +28082,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-4-8",
             "type": "chat",
@@ -17930,6 +28103,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000999999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-5",
             "type": "chat",
@@ -17944,6 +28124,13 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000800002
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-opus-5-5",
             "type": "chat",
@@ -17986,6 +28173,13 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000599998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-5",
             "type": "chat",
@@ -18000,6 +28194,13 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000599998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-4-6",
             "type": "chat",
@@ -18014,6 +28215,13 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000400001
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-5",
             "type": "chat",
@@ -18097,6 +28305,24 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6252e-7,
+                    "outputCost": 0.00000337498,
+                    "cacheReadInputCost": 5.628e-8,
+                    "cacheCreationInputCost": 5.6252e-7,
+                    "inputAudioCost": 0.00000112497,
+                    "cacheReadAudioCost": 1.1249e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 6.251e-8,
+                    "inputAudioCost": 6.2503e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-flash-lite",
             "type": "chat",
@@ -18139,6 +28365,30 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002699998,
+                    "cacheReadInputCost": 4.5003e-7,
+                    "cacheCreationInputCost": 0.00000450002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000899997,
+                    "outputCost": 0.00004049997,
+                    "cacheReadInputCost": 8.9999e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-1-pro",
             "type": "chat",
@@ -18156,6 +28406,24 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112497,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.1249e-7,
+                    "cacheCreationInputCost": 0.00000112497,
+                    "inputAudioCost": 0.00000225001,
+                    "cacheReadAudioCost": 2.2498e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.2502e-7,
+                    "inputAudioCost": 0.00000124999
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-flash",
             "type": "chat",
@@ -18184,6 +28452,16 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-8-flash",
             "type": "chat",
@@ -18198,6 +28476,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-7-flash",
             "type": "chat",
@@ -18212,6 +28500,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135002,
+                    "outputCost": 0.00000675003,
+                    "cacheReadInputCost": 1.3503e-7,
+                    "cacheCreationInputCost": 0.00000135002
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-6-flash",
             "type": "chat",
@@ -18226,6 +28524,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00002025002,
+                    "cacheReadInputCost": 3.3747e-7,
+                    "cacheCreationInputCost": 0.00000337498
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-5-flash",
             "type": "chat",
@@ -18240,6 +28548,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.7501e-7,
+                    "outputCost": 0.00000562499,
+                    "cacheReadInputCost": 6.748e-8,
+                    "cacheCreationInputCost": 6.7501e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-3-5-flash-lite",
             "type": "chat",
@@ -18268,6 +28586,16 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000245,
+                    "outputCost": 0.0000077,
+                    "cacheReadInputCost": 4.55e-7,
+                    "cacheCreationInputCost": 0.00000245
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-glm-5-2",
             "type": "chat",
@@ -18282,6 +28610,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000245,
+                    "outputCost": 0.0000077,
+                    "cacheReadInputCost": 4.55e-7,
+                    "cacheCreationInputCost": 0.00000245
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-glm-5-3",
             "type": "chat",
@@ -18296,6 +28634,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 8.75e-7,
+                    "cacheReadInputCost": 5.25e-8,
+                    "cacheCreationInputCost": 2.625e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-glm-5-3-flash",
             "type": "chat",
@@ -18310,6 +28658,16 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000249998,
+                    "outputCost": 0.00001999998,
+                    "cacheReadInputCost": 2.4997e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5",
             "type": "chat",
@@ -18324,6 +28682,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000249998,
+                    "outputCost": 0.00001999998,
+                    "cacheReadInputCost": 2.4997e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-1",
             "type": "chat",
@@ -18338,6 +28706,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028,
+                    "cacheReadInputCost": 3.5e-7,
+                    "cacheCreationInputCost": 0.0000035
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-2",
             "type": "chat",
@@ -18352,6 +28730,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028,
+                    "cacheReadInputCost": 3.5e-7,
+                    "cacheCreationInputCost": 0.0000035
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-3-codex",
             "type": "responses",
@@ -18366,6 +28754,30 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.00002999997,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.00002999997,
+                    "cacheReadInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5.0001e-7,
+                    "inputCost": 0.00000500003,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4",
             "type": "chat",
@@ -18380,6 +28792,16 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000150003,
+                    "outputCost": 0.00000899997,
+                    "cacheReadInputCost": 1.5001e-7,
+                    "cacheCreationInputCost": 0.00000150003
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4-mini",
             "type": "chat",
@@ -18408,6 +28830,32 @@ const provider21 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00004000003,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001599997,
+                    "outputCost": 0.00006000001,
+                    "cacheReadInputCost": 0.00000159999,
+                    "cacheCreationInputCost": 0.00001999998
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000999999,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-sol",
             "type": "chat",
@@ -18422,6 +28870,32 @@ const provider21 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.00002399999,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.00003600002,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-terra",
             "type": "chat",
@@ -18436,6 +28910,32 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.00000240002,
+                    "cacheReadInputCost": 3.997e-8,
+                    "cacheCreationInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 8.0003e-7,
+                    "outputCost": 0.00000360003,
+                    "cacheReadInputCost": 8.001e-8,
+                    "cacheCreationInputCost": 0.00000100002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.0001e-7,
+                    "cacheReadInputCost": 3.997e-8,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.00000179998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-6-luna",
             "type": "chat",
@@ -18450,6 +28950,30 @@ const provider21 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001249997,
+                    "outputCost": 0.0000750001,
+                    "cacheReadInputCost": 0.00000124999,
+                    "cacheCreationInputCost": 0.00001249997
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001249997,
+                    "outputCost": 0.0000750001,
+                    "cacheReadInputCost": 0.00000124999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.00000100002,
+                    "inputCost": 0.00000999999,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-5",
             "type": "responses",
@@ -18464,6 +28988,14 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-5-pro",
             "type": "responses",
@@ -18478,6 +29010,16 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5003e-7,
+                    "outputCost": 0.00000360003,
+                    "cacheReadInputCost": 4.501e-8,
+                    "cacheCreationInputCost": 4.5003e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-mini",
             "type": "chat",
@@ -18576,6 +29118,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000525,
+                    "outputCost": 0.00002625,
+                    "cacheReadInputCost": 5.25e-7,
+                    "cacheCreationInputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-kimi-k3",
             "type": "chat",
@@ -18645,6 +29197,16 @@ const provider21 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.85e-7,
+                    "outputCost": 0.00000385,
+                    "cacheReadInputCost": 3.85e-7,
+                    "cacheCreationInputCost": 3.85e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-qwen35-122b-a10b",
             "type": "chat",
@@ -18687,6 +29249,22 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 1.9999e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.2503e-7,
+                    "cacheCreationInputCost1h": 0.00000100002,
+                    "cacheReadInputCost": 4.998e-8,
+                    "inputCost": 5.0001e-7,
+                    "outputCost": 0.00000249998
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-haiku-5-5",
             "type": "chat",
@@ -18701,6 +29279,13 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000400001
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-claude-sonnet-5-5",
             "type": "chat",
@@ -18715,6 +29300,16 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021,
+                    "cacheReadInputCost": 5.25e-8,
+                    "cacheCreationInputCost": 5.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-deepseek-v4-1-flash",
             "type": "chat",
@@ -18743,6 +29338,14 @@ const provider21 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.752e-8,
+                    "inputAudioCost": 3.7499e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-2-5-flash-lite",
             "type": "chat",
@@ -18771,6 +29374,16 @@ const provider21 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002250003,
+                    "cacheReadInputCost": 2.2498e-7,
+                    "cacheCreationInputCost": 0.00000450002
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-4-argon",
             "type": "chat",
@@ -18785,6 +29398,14 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00006,
+                    "outputCost": 0.00027
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-5-4-pro",
             "type": "responses",
@@ -18799,6 +29420,32 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000199997,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.0000299999,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-6-1-sol",
             "type": "responses",
@@ -18813,6 +29460,32 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000199997,
+                    "outputCost": 0.00000999999,
+                    "cacheReadInputCost": 1.0003e-7,
+                    "cacheCreationInputCost": 0.00000249998
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.00001500002,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000249998,
+                    "cacheReadInputCost": 1.0003e-7,
+                    "inputCost": 0.00000199997,
+                    "outputCost": 0.00000750001
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-6-1-terra",
             "type": "chat",
@@ -18827,6 +29500,32 @@ const provider21 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00001999998,
+                    "outputCost": 0.0000999999,
+                    "cacheReadInputCost": 0.00000199997,
+                    "cacheCreationInputCost": 0.00002500001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00004000003,
+                    "outputCost": 0.0001500002,
+                    "cacheReadInputCost": 0.00000400001,
+                    "cacheCreationInputCost": 0.00005000002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.00000199997,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.0000750001
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-6-astra",
             "type": "chat",
@@ -18841,6 +29540,32 @@ const provider21 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9999e-7,
+                    "outputCost": 0.0000010003,
+                    "cacheReadInputCost": 2.002e-8,
+                    "cacheCreationInputCost": 2.4997e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 3.9998e-7,
+                    "outputCost": 0.0000015001,
+                    "cacheReadInputCost": 3.997e-8,
+                    "cacheCreationInputCost": 5.0001e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.4997e-7,
+                    "cacheReadInputCost": 2.002e-8,
+                    "inputCost": 1.9999e-7,
+                    "outputCost": 7.497e-7
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-6-luna",
             "type": "responses",
@@ -18855,6 +29580,32 @@ const provider21 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000199997,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "cacheCreationInputCost": 0.00000500003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.0000299999,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "cacheCreationInputCost": 0.00000999999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000150003
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gpt-6-sol",
             "type": "responses",
@@ -20974,6 +31725,14 @@ const provider23 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3.45e-7,
+                    "inputAudioCost": 0.000001725
+                }
+            ],
             "maxTokens": null,
             "name": "volcengine/doubao-seed-2-1-lite-260915",
             "type": "chat",
@@ -21044,6 +31803,15 @@ const provider23 = [
 
 const provider24 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00000625,
+                    "cacheReadInputCost": 1.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "sail/moonshotai/Kimi-K3",
             "type": "chat",
@@ -21058,6 +31826,15 @@ const provider24 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018,
+                    "cacheReadInputCost": 8e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/zai-org/GLM-5.3",
             "type": "chat",
@@ -21072,6 +31849,15 @@ const provider24 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7,
+                    "cacheReadInputCost": 1e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/zai-org/GLM-5.3-Flash",
             "type": "chat",
@@ -21086,6 +31872,15 @@ const provider24 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.6e-7,
+                    "outputCost": 0.00000139,
+                    "cacheReadInputCost": 2e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4-Pro-0813",
             "type": "chat",
@@ -21100,6 +31895,15 @@ const provider24 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 9e-8,
+                    "cacheReadInputCost": 1e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4-Flash-0731",
             "type": "chat",
@@ -21114,6 +31918,15 @@ const provider24 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7,
+                    "cacheReadInputCost": 4e-9
+                }
+            ],
             "maxTokens": null,
             "name": "sail/deepseek-ai/DeepSeek-V4.1-Flash",
             "type": "chat",
@@ -21128,6 +31941,15 @@ const provider24 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.000002,
+                    "cacheReadInputCost": 1e-7
+                }
+            ],
             "maxTokens": null,
             "name": "sail/moonshotai/Kimi-K2.6",
             "type": "chat",
@@ -21142,6 +31964,15 @@ const provider24 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 3e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/google/gemma-4-31B-it",
             "type": "chat",
@@ -21156,6 +31987,15 @@ const provider24 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7,
+                    "cacheReadInputCost": 4e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/nvidia/Gemma-4-31B-IT-NVFP4",
             "type": "chat",
@@ -21170,6 +32010,15 @@ const provider24 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 0.000001,
+                    "cacheReadInputCost": 2e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/google/gemma-4-12B-it",
             "type": "chat",
@@ -21198,6 +32047,15 @@ const provider24 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 4e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ],
             "maxTokens": null,
             "name": "sail/Qwen/Qwen3.6-35B-A3B",
             "type": "chat",
@@ -21474,6 +32332,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-8,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000495
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro-0813",
             "type": "chat",
@@ -21488,6 +32355,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.5e-8,
+                    "inputCost": 0.00000165,
+                    "outputCost": 0.00000495
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-pro-0813",
             "type": "chat",
@@ -21586,6 +32462,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p2",
             "type": "chat",
@@ -21600,6 +32485,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/gpt-oss-120b",
             "type": "chat",
@@ -21684,6 +32578,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p6",
             "type": "chat",
@@ -21698,6 +32601,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.85e-7,
+                    "inputCost": 0.000001425,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k2p7-code",
             "type": "chat",
@@ -21838,6 +32750,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3",
             "type": "chat",
@@ -21964,6 +32885,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/glm-5p2",
             "type": "chat",
@@ -21978,6 +32908,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/gpt-oss-120b",
             "type": "chat",
@@ -22020,6 +32959,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p6",
             "type": "chat",
@@ -22048,6 +32996,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.85e-7,
+                    "inputCost": 0.000001425,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/kimi-k2p7-code",
             "type": "chat",
@@ -22090,6 +33047,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/minimax-m3",
             "type": "chat",
@@ -25114,6 +36080,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-0731",
             "type": "chat",
@@ -25128,6 +36103,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash",
             "type": "chat",
@@ -25142,6 +36126,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-us",
             "type": "chat",
@@ -25156,6 +36149,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-flash-vision-exp",
             "type": "chat",
@@ -25170,6 +36172,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k3",
             "type": "chat",
@@ -25184,6 +36195,15 @@ const provider28 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-flash-0731",
             "type": "chat",
@@ -25198,6 +36218,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4p1-flash",
             "type": "chat",
@@ -25212,6 +36241,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4p1-flash-us",
             "type": "chat",
@@ -25226,6 +36264,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-9,
+                    "inputCost": 2.75e-7,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/deepseek-v4-flash-vision-exp",
             "type": "chat",
@@ -25268,6 +36315,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/kimi-k3",
             "type": "chat",
@@ -25296,6 +36352,15 @@ const provider28 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-7,
+                    "inputCost": 0.000005625,
+                    "outputCost": 0.000028125
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/kimi-k3-us",
             "type": "chat",
@@ -25310,6 +36375,15 @@ const provider28 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/qwen3p8-max",
             "type": "chat",
@@ -25324,6 +36398,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-8,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/muse-glimmer-30b",
             "type": "chat",
@@ -25338,6 +36421,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 6.25e-8,
+                    "outputCost": 2.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/nemotron-lightning-3p5-30b-a3b",
             "type": "chat",
@@ -25352,6 +36444,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.000003
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/nemotron-3-ultra-nvfp4",
             "type": "chat",
@@ -25366,6 +36467,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-8,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/muse-glimmer-30b",
             "type": "chat",
@@ -25380,6 +36490,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-7,
+                    "inputCost": 0.000001875,
+                    "outputCost": 0.000006375
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/muse-spark-open",
             "type": "chat",
@@ -25394,6 +36513,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 6.25e-8,
+                    "outputCost": 2.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
             "type": "chat",
@@ -25408,6 +36536,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.000003
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4",
             "type": "chat",
@@ -25422,6 +36559,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000009
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/qwen3p8-max",
             "type": "chat",
@@ -25478,6 +36624,15 @@ const provider28 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-7,
+                    "inputCost": 0.000005625,
+                    "outputCost": 0.000028125
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-us",
             "type": "chat",
@@ -25492,6 +36647,15 @@ const provider28 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.25e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3",
             "type": "chat",
@@ -25506,6 +36670,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.875e-7,
+                    "inputCost": 0.000002625,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-us",
             "type": "chat",
@@ -25520,6 +36693,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.25e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/glm-5p3",
             "type": "chat",
@@ -25534,6 +36716,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.875e-7,
+                    "inputCost": 0.000002625,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-us",
             "type": "chat",
@@ -25615,6 +36806,15 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3-flash",
             "type": "chat",
@@ -25629,6 +36829,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-8,
+                    "inputCost": 2.8125e-7,
+                    "outputCost": 9.375e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p3-flash-us",
             "type": "chat",
@@ -25643,6 +36852,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-flash",
             "type": "chat",
@@ -25657,6 +36875,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.625e-8,
+                    "inputCost": 2.8125e-7,
+                    "outputCost": 9.375e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/glm-5p3-flash-us",
             "type": "chat",
@@ -25671,6 +36898,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.7e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000405
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/inkling",
             "type": "chat",
@@ -25699,6 +36935,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000012
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4-pro",
             "type": "chat",
@@ -25713,6 +36958,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000012
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m2p7",
             "type": "chat",
@@ -25726,6 +36980,15 @@ const provider28 = [
             "cacheCreationInputCostUnit": null
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ember-1",
             "type": "chat",
@@ -25740,6 +37003,15 @@ const provider28 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017",
             "type": "chat",
@@ -25754,6 +37026,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-8,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash",
             "type": "chat",
@@ -25768,6 +37049,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017-us",
             "type": "chat",
@@ -25866,6 +37156,15 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/ultramarine-1-flash-us",
             "type": "chat",
@@ -25880,6 +37179,15 @@ const provider28 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/kimi-k3p1-pro",
             "type": "chat",
@@ -25998,6 +37306,58 @@ const provider29 = [
 
 const provider30 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.8e-7,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputAudioCost": 0.0000018,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.0000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-flash",
             "type": "chat",
@@ -26009,9 +37369,17 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "nonGlobalCostMultiplier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.1-flash-lite-preview",
             "type": "chat",
@@ -26026,6 +37394,61 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 2.5e-8,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 2.5e-8,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 9e-8,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputAudioCost": 9e-7,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000027
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 9e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.1-flash-lite",
             "type": "chat",
@@ -26037,9 +37460,33 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "nonGlobalCostMultiplier": 1.1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.5-flash-lite",
             "type": "chat",
@@ -26051,9 +37498,19 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 2
+            "priceTier": 2,
+            "nonGlobalCostMultiplier": 1.1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "deep-research-pro-preview-12-2025",
             "type": "chat",
@@ -26068,6 +37525,58 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 1.5e-7,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": null,
+                    "inputCost": 5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": null
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5.4e-8,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputAudioCost": 5.4e-7,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 3e-8,
+                    "inputAudioCost": 3e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-flash-lite",
             "type": "chat",
@@ -26079,9 +37588,17 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 1,
+            "nonGlobalCostMultiplier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-flash-lite-preview-09-2025",
             "type": "chat",
@@ -26096,6 +37613,13 @@ const provider30 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-flash-preview-09-2025",
             "type": "chat",
@@ -26110,6 +37634,55 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.25e-7,
+                    "inputCost": 0.00000225,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4.5e-7,
+                    "inputCost": 0.0000045,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-pro",
             "type": "chat",
@@ -26125,9 +37698,58 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostAbove200kTokens": 2.5e-7,
             "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 7.2e-7,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.1-pro-preview",
             "type": "chat",
@@ -26146,6 +37768,22 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.1-pro-preview-customtools",
             "type": "chat",
@@ -26164,6 +37802,19 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7e-7,
+                    "outputAudioCost": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-pro-preview-tts",
             "type": "chat",
@@ -26178,6 +37829,13 @@ const provider30 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-robotics-er-1.5-preview",
             "type": "chat",
@@ -26192,6 +37850,14 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-2.5-computer-use-preview-10-2025",
             "type": "chat",
@@ -26208,6 +37874,13 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-embedding-001",
             "type": "embedding",
@@ -26222,6 +37895,19 @@ const provider30 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-embedding-2-preview",
             "type": "embedding",
@@ -26236,6 +37922,19 @@ const provider30 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-embedding-2",
             "type": "embedding",
@@ -26264,6 +37963,57 @@ const provider30 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.8e-7,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
+                    "inputCost": 9e-7,
+                    "outputCost": 0.0000054
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.0000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3-flash-preview",
             "type": "chat",
@@ -26278,6 +38028,13 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-omni-flash-preview",
             "type": "chat",
@@ -26292,6 +38049,35 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.5-flash",
             "type": "chat",
@@ -26303,9 +38089,33 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.6-flash",
             "type": "chat",
@@ -26317,9 +38127,34 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.7-flash",
             "type": "chat",
@@ -26331,9 +38166,34 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.8-flash",
             "type": "chat",
@@ -26345,9 +38205,34 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 3
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2027-01-01T00:00:00Z"
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000135
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-3.8-flash-cyber",
             "type": "chat",
@@ -26514,6 +38399,13 @@ const provider30 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-flash-lite-preview",
             "type": "chat",
@@ -26528,6 +38420,61 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 2.5e-8,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 2.5e-8,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 9e-8,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputAudioCost": 9e-7,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000027
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 9e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 5e-8,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-flash-lite",
             "type": "chat",
@@ -26542,6 +38489,29 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-8,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.5-flash-lite",
             "type": "chat",
@@ -26556,6 +38526,15 @@ const provider30 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/deep-research-pro-preview-12-2025",
             "type": "chat",
@@ -26570,6 +38549,13 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "gemini-robotics-er-2-preview",
             "type": "chat",
@@ -26584,6 +38570,22 @@ const provider30 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
             "maxTokens": 1048576,
             "name": "gemini-4-argon",
             "type": "chat",
@@ -26595,12 +38597,234 @@ const provider30 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
+            "priceTier": 3,
+            "nonGlobalCostMultiplier": 1.1,
+            "pricingValidUntil": "2026-12-01T00:00:00Z"
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostAbove200kTokens": 0.000018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostAbove200kTokens": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "gemini-omni-1.1-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "gemini-omni-1.1-flash-preview",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.0-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3.75e-8,
+                    "inputCost": 3.75e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7.5e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.0-flash-lite",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-argon-cyber-permissive",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "gemini-omni-1.2-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         }
     ] as const
 
 const provider31 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3-pro-preview",
             "type": "chat",
@@ -26619,6 +38843,57 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1.8e-7,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018,
+                    "inputCost": 9e-7,
+                    "outputCost": 0.0000054
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.0000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 1e-7,
+                    "inputAudioCost": 0.000001
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3-flash-preview",
             "type": "chat",
@@ -26633,6 +38908,35 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "inputAudioCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000015
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.5-flash",
             "type": "chat",
@@ -26647,6 +38951,29 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.6-flash",
             "type": "chat",
@@ -26661,6 +38988,29 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.7-flash",
             "type": "chat",
@@ -26675,6 +39025,29 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.8-flash",
             "type": "chat",
@@ -26689,6 +39062,29 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000135
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.8-flash-cyber",
             "type": "chat",
@@ -26703,6 +39099,54 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 7.2e-7,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-pro-preview",
             "type": "chat",
@@ -26721,6 +39165,36 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-3.1-pro-preview-customtools",
             "type": "chat",
@@ -26739,6 +39213,19 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-embedding-2-preview",
             "type": "embedding",
@@ -26753,6 +39240,19 @@ const provider31 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.00000325,
+                    "inputCost": 1e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.0000065
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-embedding-2",
             "type": "embedding",
@@ -26795,6 +39295,15 @@ const provider31 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.20-non-reasoning",
             "type": "chat",
@@ -26812,6 +39321,15 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.20-reasoning",
             "type": "chat",
@@ -26829,6 +39347,15 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.3",
             "type": "chat",
@@ -26846,6 +39373,15 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.6",
             "type": "chat",
@@ -26905,6 +39441,20 @@ const provider31 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 5e-7,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-2.0-flash",
             "type": "chat",
@@ -26919,6 +39469,20 @@ const provider31 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 3.75e-8,
+                    "inputCost": 3.75e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 7.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-2.0-flash-lite",
             "type": "chat",
@@ -26933,6 +39497,15 @@ const provider31 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.7",
             "type": "chat",
@@ -26950,6 +39523,13 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-robotics-er-2-preview",
             "type": "chat",
@@ -26964,6 +39544,36 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputAudioCost": 0.000001,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-7,
+                    "inputAudioCost": 0.0000036,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-4-argon",
             "type": "chat",
@@ -26978,6 +39588,36 @@ const provider31 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/gemini-4-argon-cyber-permissive",
             "type": "chat",
@@ -27051,6 +39691,16 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/claude-haiku-5.5",
             "type": "chat",
@@ -27387,6 +40037,15 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-5.4",
             "type": "chat",
@@ -27415,6 +40074,15 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-5.5",
             "type": "responses",
@@ -27429,6 +40097,16 @@ const provider32 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-5.6-luna",
             "type": "responses",
@@ -27447,6 +40125,16 @@ const provider32 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-5.6-sol",
             "type": "responses",
@@ -27461,6 +40149,16 @@ const provider32 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-5.6-terra",
             "type": "responses",
@@ -27475,6 +40173,16 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-6-astra",
             "type": "responses",
@@ -27489,6 +40197,16 @@ const provider32 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-6-luna",
             "type": "responses",
@@ -27503,6 +40221,16 @@ const provider32 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-6-sol",
             "type": "responses",
@@ -27517,6 +40245,16 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-6.1-sol",
             "type": "responses",
@@ -27640,6 +40378,15 @@ const provider32 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/grok-4.5",
             "type": "chat",
@@ -27657,6 +40404,15 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/grok-4.6",
             "type": "chat",
@@ -27674,6 +40430,15 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/grok-4.7",
             "type": "chat",
@@ -27691,6 +40456,16 @@ const provider32 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
             "maxTokens": null,
             "name": "github_copilot/gpt-6.1-terra",
             "type": "responses",
@@ -30702,6 +43477,13 @@ const provider42 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00000528
+                }
+            ],
             "maxTokens": null,
             "name": "hostinger_router/claude-sonnet-5",
             "type": "chat",
@@ -32309,6 +45091,15 @@ const provider52 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.0000024,
+                    "cacheReadInputCost": 1.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "minimax/MiniMax-M3",
             "type": "chat",
@@ -33141,6 +45932,13 @@ const provider54 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "moonshot/kimi-k3.1-pro",
             "type": "chat",
@@ -33155,6 +45953,13 @@ const provider54 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "moonshot/kimi-k3.1-pro-highspeed",
             "type": "chat",
@@ -33169,6 +45974,13 @@ const provider54 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "moonshot/kimi-k3",
             "type": "chat",
@@ -35015,6 +47827,15 @@ const provider58 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "oci/xai.grok-4.20-0309-non-reasoning",
             "type": "chat",
@@ -35032,6 +47853,15 @@ const provider58 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "oci/xai.grok-4.20-0309-reasoning",
             "type": "chat",
@@ -35049,6 +47879,15 @@ const provider58 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "oci/xai.grok-4.20-non-reasoning",
             "type": "chat",
@@ -35066,6 +47905,15 @@ const provider58 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "oci/xai.grok-4.20-reasoning",
             "type": "chat",
@@ -36624,6 +49472,15 @@ const provider61 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003,
+                    "cacheReadInputCost": 8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-5.6-sol",
             "type": "responses",
@@ -36638,6 +49495,15 @@ const provider61 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-5.6-terra",
             "type": "responses",
@@ -36652,6 +49518,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018,
+                    "cacheReadInputCost": 4e-8
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-5.6-luna",
             "type": "responses",
@@ -36666,6 +49541,15 @@ const provider61 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045,
+                    "cacheReadInputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-5.5",
             "type": "responses",
@@ -36680,6 +49564,14 @@ const provider61 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-5.4",
             "type": "responses",
@@ -36764,6 +49656,15 @@ const provider61 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/google/gemini-3.1-pro-preview",
             "type": "responses",
@@ -36865,6 +49766,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.6",
             "type": "responses",
@@ -36882,6 +49792,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.5",
             "type": "responses",
@@ -36899,6 +49818,14 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.3",
             "type": "responses",
@@ -36915,6 +49842,14 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.20-reasoning",
             "type": "responses",
@@ -36931,6 +49866,14 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.20-non-reasoning",
             "type": "responses",
@@ -36947,6 +49890,14 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.20-multi-agent",
             "type": "responses",
@@ -37075,6 +50026,15 @@ const provider61 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-6.1-sol",
             "type": "responses",
@@ -37089,6 +50049,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-6-sol",
             "type": "responses",
@@ -37103,6 +50072,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075,
+                    "cacheReadInputCost": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-6-astra",
             "type": "responses",
@@ -37117,6 +50095,15 @@ const provider61 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 2e-8
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/openai/gpt-6-luna",
             "type": "responses",
@@ -37145,6 +50132,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/xai/grok-4.7",
             "type": "responses",
@@ -37162,6 +50158,15 @@ const provider61 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "perplexity/anthropic/claude-haiku-5-5",
             "type": "responses",
@@ -37700,6 +50705,14 @@ const provider63 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
             "maxTokens": null,
             "name": "replicate/google/gemini-3-pro",
             "type": "chat",
@@ -40341,6 +53354,15 @@ const provider71 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vercel_ai_gateway/google/gemini-2.5-pro",
             "type": "chat",
@@ -41285,6 +54307,21 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-haiku-4-5",
             "type": "chat",
@@ -41299,6 +54336,21 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-haiku-4-5@20251001",
             "type": "chat",
@@ -41397,6 +54449,21 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-5",
             "type": "chat",
@@ -41411,6 +54478,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-5@20251101",
             "type": "chat",
@@ -41425,6 +54507,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-6",
             "type": "chat",
@@ -41439,6 +54536,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-6@default",
             "type": "chat",
@@ -41453,6 +54565,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-7",
             "type": "chat",
@@ -41467,6 +54594,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-7@default",
             "type": "chat",
@@ -41481,6 +54623,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-fable-5",
             "type": "chat",
@@ -41495,6 +54652,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-fable-5-1",
             "type": "chat",
@@ -41509,6 +54681,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-fable-5@default",
             "type": "chat",
@@ -41523,6 +54710,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-fable-5-1@default",
             "type": "chat",
@@ -41537,6 +54739,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-5",
             "type": "chat",
@@ -41551,6 +54768,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-5@default",
             "type": "chat",
@@ -41565,6 +54797,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-5-5",
             "type": "chat",
@@ -41579,6 +54826,21 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-5-5@default",
             "type": "chat",
@@ -41593,6 +54855,21 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-8",
             "type": "chat",
@@ -41607,6 +54884,21 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000003125,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.0000125
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-opus-4-8@default",
             "type": "chat",
@@ -41621,6 +54913,30 @@ const provider72 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075,
+                    "cacheCreationInputCost": 0.00000188
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-5",
             "type": "chat",
@@ -41639,6 +54955,19 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5",
             "type": "chat",
@@ -41653,6 +54982,21 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000188,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-6",
             "type": "chat",
@@ -41667,6 +55011,30 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075,
+                    "cacheCreationInputCost": 0.00000188
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheCreationInputCost1h": 0.000012,
+                    "inputCost": 0.000006,
+                    "outputCost": 0.0000225,
+                    "cacheCreationInputCost": 0.0000075,
+                    "cacheReadInputCost": 6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-5@20250929",
             "type": "chat",
@@ -41685,6 +55053,19 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5@default",
             "type": "chat",
@@ -41699,6 +55080,21 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000188,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-4-6@default",
             "type": "chat",
@@ -41713,6 +55109,21 @@ const provider72 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5-5",
             "type": "chat",
@@ -41727,6 +55138,21 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-sonnet-5-5@default",
             "type": "chat",
@@ -41741,6 +55167,30 @@ const provider72 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-haiku-5-5",
             "type": "chat",
@@ -41755,6 +55205,30 @@ const provider72 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/claude-haiku-5-5@default",
             "type": "chat",
@@ -42041,6 +55515,14 @@ const provider73 = [
 
 const provider74 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.1-maas",
             "type": "chat",
@@ -42055,6 +55537,14 @@ const provider74 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-v3.2-maas",
             "type": "chat",
@@ -42069,6 +55559,14 @@ const provider74 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.75e-7,
+                    "outputCost": 0.0000027
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/deepseek-ai/deepseek-r1-0528-maas",
             "type": "chat",
@@ -42229,6 +55727,14 @@ const provider76 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-7,
+                    "outputCost": 5.75e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-maverick-17b-128e-instruct-maas",
             "type": "chat",
@@ -42243,6 +55749,14 @@ const provider76 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.75e-7,
+                    "outputCost": 5.75e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-maverick-17b-16e-instruct-maas",
             "type": "chat",
@@ -42257,6 +55771,14 @@ const provider76 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-scout-17b-128e-instruct-maas",
             "type": "chat",
@@ -42271,6 +55793,14 @@ const provider76 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-4-scout-17b-16e-instruct-maas",
             "type": "chat",
@@ -42327,6 +55857,14 @@ const provider76 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 3.6e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.3-70b-instruct-maas",
             "type": "chat",
@@ -42437,6 +55975,14 @@ const provider80 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 1.8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/openai/gpt-oss-120b-maas",
             "type": "chat",
@@ -42451,6 +55997,14 @@ const provider80 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/openai/gpt-oss-20b-maas",
             "type": "chat",
@@ -42468,6 +56022,14 @@ const provider80 = [
 
 const provider81 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-235b-a22b-instruct-2507-maas",
             "type": "chat",
@@ -42482,6 +56044,14 @@ const provider81 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 9e-7
+                }
+            ],
             "maxTokens": null,
             "name": "vertex_ai/qwen/qwen3-coder-480b-a35b-instruct-maas",
             "type": "chat",
@@ -43754,6 +57324,15 @@ const provider84 = [
 
 const provider85 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-beta-0309",
             "type": "responses",
@@ -43771,6 +57350,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309-reasoning",
             "type": "chat",
@@ -43788,6 +57376,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-0309-reasoning",
             "type": "chat",
@@ -43805,6 +57416,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309-non-reasoning",
             "type": "chat",
@@ -43822,6 +57442,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 3.2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.3",
             "type": "chat",
@@ -43839,6 +57482,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 3.2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.3-latest",
             "type": "chat",
@@ -43856,6 +57522,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.5",
             "type": "chat",
@@ -43873,6 +57548,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.5-latest",
             "type": "chat",
@@ -43890,6 +57574,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-build-latest",
             "type": "chat",
@@ -43907,6 +57600,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.6",
             "type": "chat",
@@ -43924,6 +57626,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000016,
+                    "outputCost": 0.0000048
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.0000032,
+                    "outputCost": 0.0000096
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.7",
             "type": "chat",
@@ -43941,6 +57666,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-0309-non-reasoning",
             "type": "chat",
@@ -43958,6 +57706,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-0309",
             "type": "responses",
@@ -43975,6 +57746,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-build-0.1",
             "type": "chat",
@@ -43992,6 +57772,29 @@ const provider85 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20",
             "type": "chat",
@@ -44009,6 +57812,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-reasoning",
             "type": "chat",
@@ -44026,6 +57852,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-reasoning-latest",
             "type": "chat",
@@ -44043,6 +57892,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning",
             "type": "chat",
@@ -44060,6 +57932,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning-latest",
             "type": "chat",
@@ -44077,6 +57972,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent",
             "type": "responses",
@@ -44094,6 +58012,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-latest",
             "type": "responses",
@@ -44111,6 +58052,29 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004,
+                    "cacheReadInputCost": 3.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-0309",
             "type": "chat",
@@ -44128,6 +58092,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta",
             "type": "chat",
@@ -44145,6 +58118,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-0309",
             "type": "chat",
@@ -44162,6 +58144,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest",
             "type": "chat",
@@ -44179,6 +58170,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest-non-reasoning",
             "type": "chat",
@@ -44196,6 +58196,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-latest-reasoning",
             "type": "chat",
@@ -44213,6 +58222,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-non-reasoning",
             "type": "chat",
@@ -44230,6 +58248,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-beta-reasoning",
             "type": "chat",
@@ -44247,6 +58274,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304",
             "type": "chat",
@@ -44264,6 +58300,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304-non-reasoning",
             "type": "chat",
@@ -44281,6 +58326,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-0304-reasoning",
             "type": "chat",
@@ -44298,6 +58352,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-latest",
             "type": "chat",
@@ -44315,6 +58378,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-non-reasoning-latest",
             "type": "chat",
@@ -44332,6 +58404,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-experimental-beta-reasoning-latest",
             "type": "chat",
@@ -44349,6 +58430,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-beta-latest",
             "type": "responses",
@@ -44366,6 +58456,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-experimental-beta-0304",
             "type": "responses",
@@ -44383,6 +58482,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-multi-agent-experimental-beta-latest",
             "type": "responses",
@@ -44400,6 +58508,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-non-reasoning-gv2",
             "type": "chat",
@@ -44417,6 +58534,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-4.20-reasoning-gv2",
             "type": "chat",
@@ -44434,6 +58560,15 @@ const provider85 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-code-fast",
             "type": "chat",
@@ -44451,6 +58586,15 @@ const provider85 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-code-fast-1",
             "type": "chat",
@@ -44468,6 +58612,15 @@ const provider85 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "xai/grok-code-fast-1-0825",
             "type": "chat",
@@ -47191,6 +61344,13 @@ const provider90 = [
 
 const provider91 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0
+                }
+            ],
             "maxTokens": null,
             "name": "sarvam/sarvam-m",
             "type": "chat",
@@ -47208,6 +61368,26 @@ const provider91 = [
 
 const provider92 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-120b",
             "type": "chat",
@@ -47222,6 +61402,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-20b",
             "type": "chat",
@@ -47236,6 +61436,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-120b",
             "type": "chat",
@@ -47250,6 +61470,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-oss-safeguard-20b",
             "type": "chat",
@@ -47264,6 +61504,16 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-sol",
             "type": "responses",
@@ -47278,6 +61528,16 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000198
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-terra",
             "type": "responses",
@@ -47306,6 +61566,16 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000088,
+                    "cacheCreationInputCost": 0.000011,
+                    "cacheReadInputCost": 8.8e-7,
+                    "outputCost": 0.000033
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-daybreak-blue-5.6-sol",
             "type": "responses",
@@ -47320,6 +61590,16 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4.4e-7,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "outputCost": 0.00000198
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.6-luna",
             "type": "responses",
@@ -47334,6 +61614,32 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000022,
+                    "cacheCreationInputCost": 0.0000275,
+                    "cacheReadInputCost": 0.0000022,
+                    "outputCost": 0.0000825
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000825,
+                    "cacheReadInputCost": 0.0000066,
+                    "inputCost": 0.000066,
+                    "outputCost": 0.00033
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000165,
+                    "cacheReadInputCost": 0.0000132,
+                    "inputCost": 0.000132,
+                    "outputCost": 0.000495
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-astra",
             "type": "responses",
@@ -47348,6 +61654,16 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000044,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "outputCost": 0.0000165
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-sol",
             "type": "responses",
@@ -47362,6 +61678,16 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.2e-7,
+                    "cacheCreationInputCost": 2.75e-7,
+                    "cacheReadInputCost": 2.2e-8,
+                    "outputCost": 8.25e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6-luna",
             "type": "responses",
@@ -47376,6 +61702,15 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000011,
+                    "cacheReadInputCost": 0.0000011,
+                    "outputCost": 0.0000495
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.5",
             "type": "responses",
@@ -47390,6 +61725,15 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000055,
+                    "cacheReadInputCost": 5.5e-7,
+                    "outputCost": 0.00002475
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-5.4",
             "type": "responses",
@@ -47404,6 +61748,26 @@ const provider92 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.45e-7,
+                    "outputCost": 7e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-31b",
             "type": "chat",
@@ -47418,6 +61782,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.275e-7,
+                    "outputCost": 7e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-26b-a4b",
             "type": "chat",
@@ -47432,6 +61816,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 1.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/google.gemma-4-e2b",
             "type": "chat",
@@ -47446,6 +61850,29 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000021875,
+                    "outputCost": 0.000004375
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/xai.grok-4.3",
             "type": "chat",
@@ -47460,6 +61887,22 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/xai.grok-4.6",
             "type": "chat",
@@ -47474,6 +61917,19 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-haiku-4-5",
             "type": "chat",
@@ -47488,6 +61944,13 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-opus-5-5",
             "type": "chat",
@@ -47502,6 +61965,13 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -47516,6 +61986,48 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000165,
+                    "cacheReadInputCost": 1.32e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000792
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000033,
+                    "cacheReadInputCost": 2.64e-7,
+                    "inputCost": 0.00000264,
+                    "outputCost": 0.00001188
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000066,
+                    "cacheReadInputCost": 5.28e-7,
+                    "inputCost": 0.00000528,
+                    "outputCost": 0.00003168
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000132,
+                    "cacheReadInputCost": 0.000001056,
+                    "inputCost": 0.00001056,
+                    "outputCost": 0.00004752
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000528,
+                    "cacheCreationInputCost": 0.0000066,
+                    "cacheReadInputCost": 5.28e-7,
+                    "outputCost": 0.00002376
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-terra",
             "type": "responses",
@@ -47530,6 +62042,48 @@ const provider92 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.65e-7,
+                    "cacheReadInputCost": 1.32e-8,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 7.92e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 3.3e-7,
+                    "cacheReadInputCost": 2.64e-8,
+                    "inputCost": 2.64e-7,
+                    "outputCost": 0.000001188
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.6e-7,
+                    "cacheReadInputCost": 5.28e-8,
+                    "inputCost": 5.28e-7,
+                    "outputCost": 0.000003168
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000132,
+                    "cacheReadInputCost": 1.056e-7,
+                    "inputCost": 0.000001056,
+                    "outputCost": 0.000004752
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 5.28e-7,
+                    "cacheCreationInputCost": 6.6e-7,
+                    "cacheReadInputCost": 5.28e-8,
+                    "outputCost": 0.000002376
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-5.6-luna",
             "type": "responses",
@@ -47558,6 +62112,29 @@ const provider92 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.2e-7,
+                    "inputCost": 0.000002625,
+                    "outputCost": 0.00000525
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.3",
             "type": "chat",
@@ -47572,6 +62149,22 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.3e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001155,
+                    "inputCost": 0.00000462,
+                    "outputCost": 0.00001386
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.6",
             "type": "chat",
@@ -47586,6 +62179,25 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 1.68e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-e2b",
             "type": "chat",
@@ -47600,6 +62212,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.8e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.8e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.73e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-26b-a4b",
             "type": "chat",
@@ -47614,6 +62246,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.94e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/google.gemma-4-31b",
             "type": "chat",
@@ -47628,6 +62280,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-20b",
             "type": "chat",
@@ -47642,6 +62314,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/openai.gpt-oss-120b",
             "type": "chat",
@@ -47656,6 +62348,13 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000096
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5",
             "type": "chat",
@@ -47670,6 +62369,13 @@ const provider92 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-sonnet-5-5",
             "type": "chat",
@@ -47698,6 +62404,22 @@ const provider92 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.3e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001155,
+                    "inputCost": 0.00000462,
+                    "outputCost": 0.00001386
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/xai.grok-4.6",
             "type": "chat",
@@ -47712,6 +62434,26 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-20b",
             "type": "chat",
@@ -47726,6 +62468,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/openai.gpt-oss-120b",
             "type": "chat",
@@ -47740,6 +62502,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.9e-7,
+                    "outputCost": 8.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.9e-7,
+                    "outputCost": 8.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001015,
+                    "outputCost": 0.00000294
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/deepseek.v3.1",
             "type": "chat",
@@ -47754,6 +62536,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.00000125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000438
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/moonshotai.kimi-k2-thinking",
             "type": "chat",
@@ -47768,6 +62570,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.85e-7,
+                    "outputCost": 0.00000154
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-235b-a22b-2507",
             "type": "chat",
@@ -47782,6 +62604,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-32b",
             "type": "chat",
@@ -47796,6 +62638,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-coder-30b-a3b-instruct",
             "type": "chat",
@@ -47810,6 +62672,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.25e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.875e-7,
+                    "outputCost": 0.00000315
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-coder-480b-a35b-instruct",
             "type": "chat",
@@ -47824,6 +62706,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-next-80b-a3b-instruct",
             "type": "chat",
@@ -47838,6 +62740,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 0.00000133
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.3e-7,
+                    "outputCost": 0.00000466
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/qwen.qwen3-vl-235b-a22b-instruct",
             "type": "chat",
@@ -47852,6 +62774,32 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 2.2e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000165
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000165,
+                    "cacheReadInputCost": 6.6e-7,
+                    "inputCost": 0.0000132,
+                    "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000033,
+                    "cacheReadInputCost": 0.00000132,
+                    "inputCost": 0.0000264,
+                    "outputCost": 0.000099
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6.1-sol",
             "type": "responses",
@@ -47866,6 +62814,22 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -47880,6 +62844,22 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.000003,
+                    "cacheCreationInputCost": 7.5e-7,
+                    "cacheCreationInputCost1h": 0.0000012,
+                    "cacheReadInputCost": 6e-8
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-haiku-5-5",
             "type": "chat",
@@ -47894,6 +62874,16 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000275,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 0.0000022,
+                    "outputCost": 0.00000825
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/openai.gpt-6.1-terra",
             "type": "responses",
@@ -47908,6 +62898,26 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
@@ -47922,6 +62932,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
@@ -47936,6 +62966,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 4.8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
@@ -47950,6 +63000,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -47964,6 +63034,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/nvidia.nemotron-nano-12b-v2",
             "type": "chat",
@@ -47978,6 +63068,26 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/nvidia.nemotron-nano-3-30b",
             "type": "chat",
@@ -47992,6 +63102,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 4.8e-7
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/nvidia.nemotron-nano-9b-v2",
             "type": "chat",
@@ -48006,6 +63136,26 @@ const provider92 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/nvidia.nemotron-super-3-120b",
             "type": "chat",
@@ -48020,6 +63170,28 @@ const provider92 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.3e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001155,
+                    "inputCost": 0.00000462,
+                    "outputCost": 0.00001386
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-east-1/xai.grok-4.7",
             "type": "chat",
@@ -48034,6 +63206,28 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.3e-7,
+                    "inputCost": 0.00000132,
+                    "outputCost": 0.00000396
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001155,
+                    "inputCost": 0.00000462,
+                    "outputCost": 0.00001386
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/us-gov-west-1/xai.grok-4.7",
             "type": "chat",
@@ -48048,6 +63242,28 @@ const provider92 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.75e-7,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.0000033
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.625e-7,
+                    "inputCost": 0.00000385,
+                    "outputCost": 0.00001155
+                }
+            ],
             "maxTokens": null,
             "name": "bedrock_mantle/xai.grok-4.7",
             "type": "chat",
@@ -48488,6 +63704,15 @@ const provider94 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "cacheReadInputCost": 2.4e-7,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "streamlake/minimax-m3",
             "type": "chat",
@@ -51672,6 +66897,14 @@ const provider110 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.0000243
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/gpt-5.6-terra",
             "type": "chat",
@@ -51714,6 +66947,14 @@ const provider110 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.0000010125
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/gpt-6-luna",
             "type": "chat",
@@ -51728,6 +66969,14 @@ const provider110 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.00002025
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/gpt-6.1-sol",
             "type": "chat",
@@ -51784,6 +67033,14 @@ const provider110 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000003375,
+                    "outputCost": 0.00000675
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/grok-4.3",
             "type": "chat",
@@ -51842,6 +67099,14 @@ const provider110 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000054
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/grok-build",
             "type": "chat",
@@ -52208,6 +67473,14 @@ const provider110 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001755,
+                    "outputCost": 0.000005265
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/qwen-3.6-plus",
             "type": "chat",
@@ -52236,6 +67509,14 @@ const provider110 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001296,
+                    "outputCost": 0.000005184
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/qwen-3.7-plus",
             "type": "chat",
@@ -52264,6 +67545,20 @@ const provider110 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 32000,
+                    "inputCost": 1.35e-7,
+                    "outputCost": 5.4e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.00000108
+                }
+            ],
             "maxTokens": null,
             "name": "kyma/qwen3.7-flash",
             "type": "chat",
@@ -52550,6 +67845,15 @@ const provider112 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000015,
+                    "outputCost": 0.0000675,
+                    "cacheReadInputCost": 0.000003
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/fugu-ultra-v1-0",
             "type": "chat",
@@ -52564,6 +67868,15 @@ const provider112 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045,
+                    "cacheReadInputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/fugu-ultra-v1-1",
             "type": "chat",
@@ -52578,6 +67891,15 @@ const provider112 = [
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045,
+                    "cacheReadInputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/fugu-ultra-v2-0",
             "type": "chat",
@@ -52634,6 +67956,15 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 32000,
+                    "inputCost": 0.0000011,
+                    "outputCost": 0.000003851,
+                    "cacheReadInputCost": 2.2e-7
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/glm-5-1",
             "type": "chat",
@@ -52872,6 +68203,15 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018,
+                    "cacheReadInputCost": 9e-8
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/minimax-m3",
             "type": "chat",
@@ -52900,6 +68240,15 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 512000,
+                    "inputCost": 6.75e-7,
+                    "outputCost": 0.0000027,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/minimax-m3:priority",
             "type": "chat",
@@ -53124,6 +68473,14 @@ const provider112 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 2.87e-7,
+                    "outputCost": 0.000002294
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-122b-a10b",
             "type": "chat",
@@ -53138,6 +68495,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 2.58e-7,
+                    "outputCost": 0.000002064
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-27b",
             "type": "chat",
@@ -53152,6 +68517,14 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 2.29e-7,
+                    "outputCost": 0.000001835
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-35b-a3b",
             "type": "chat",
@@ -53166,6 +68539,14 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 4.3e-7,
+                    "outputCost": 0.00000258
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-397b-a17b",
             "type": "chat",
@@ -53222,6 +68603,20 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 0.000001147
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 1.72e-7,
+                    "outputCost": 0.00000172
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-flash:variant1",
             "type": "chat",
@@ -53264,6 +68659,14 @@ const provider112 = [
             "priceTier": 4
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.00000276
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-plus",
             "type": "chat",
@@ -53278,6 +68681,20 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 2.87e-7,
+                    "outputCost": 0.00000172
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 5.73e-7,
+                    "outputCost": 0.00000344
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-5-plus:variant1",
             "type": "chat",
@@ -53320,6 +68737,14 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000004
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-6-flash",
             "type": "chat",
@@ -53334,6 +68759,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 6.6e-7,
+                    "outputCost": 0.000003961
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-6-flash:variant1",
             "type": "chat",
@@ -53348,6 +68781,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000006
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-6-plus",
             "type": "chat",
@@ -53362,6 +68803,14 @@ const provider112 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.000001101,
+                    "outputCost": 0.000006602
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-6-plus:variant1",
             "type": "chat",
@@ -53376,6 +68825,22 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 32000,
+                    "inputCost": 1e-7,
+                    "outputCost": 4e-7,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 2e-7,
+                    "outputCost": 8e-7,
+                    "cacheReadInputCost": 4e-8
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-7-flash",
             "type": "chat",
@@ -53390,6 +68855,22 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 32000,
+                    "inputCost": 8.3e-8,
+                    "outputCost": 3.3e-7,
+                    "cacheReadInputCost": 1.7e-8
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 1.65e-7,
+                    "outputCost": 6.6e-7,
+                    "cacheReadInputCost": 3.3e-8
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-7-flash:variant1",
             "type": "chat",
@@ -53432,6 +68913,14 @@ const provider112 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 0.0000012,
+                    "outputCost": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-7-plus",
             "type": "chat",
@@ -53446,6 +68935,15 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 256000,
+                    "inputCost": 8.26e-7,
+                    "outputCost": 0.000003301,
+                    "cacheReadInputCost": 1.66e-7
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/qwen3-7-plus:variant1",
             "type": "chat",
@@ -53544,6 +69042,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000048
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/seed-2-0-code",
             "type": "chat",
@@ -53558,6 +69064,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 6.2e-7,
+                    "outputCost": 0.000005
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/seed-2-0-lite",
             "type": "chat",
@@ -53572,6 +69086,14 @@ const provider112 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.000001
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/seed-2-0-mini",
             "type": "chat",
@@ -53586,6 +69108,14 @@ const provider112 = [
             "priceTier": 1
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 128000,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000758
+                }
+            ],
             "maxTokens": null,
             "name": "empiriolabs/seed-2-0-pro",
             "type": "chat",
@@ -53915,6 +69445,641 @@ const provider114 = [
         }
     ] as const
 
+const provider115 = [
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputAudioCost": 0.0000015,
+                    "cacheReadAudioCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "inputAudioCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000162,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000027,
+                    "cacheReadAudioCost": 2.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 7.5e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "inputAudioCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputAudioCost": 3.75e-7,
+                    "cacheReadAudioCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputAudioCost": 0.00000135,
+                    "cacheReadAudioCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2026-12-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-argon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0000000000000001e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.8-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "pricingValidUntil": "2027-01-01T00:00:00Z",
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-7,
+                    "outputCost": 0.00000375,
+                    "cacheReadInputCost": 7.5e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.000001875,
+                    "cacheReadInputCost": 3.75e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000135,
+                    "outputCost": 0.00000675,
+                    "cacheReadInputCost": 1.35e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.6-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.0000000000000004e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.5-flash-lite",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 2.5000000000000002e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 5.0000000000000004e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 7.5e-7,
+                    "cacheReadInputCost": 1.2500000000000001e-8,
+                    "inputAudioCost": 2.5e-7,
+                    "cacheReadAudioCost": 2.5000000000000002e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5000000000000003e-7,
+                    "outputCost": 0.0000027,
+                    "cacheReadInputCost": 4.5e-8,
+                    "inputAudioCost": 9.000000000000001e-7,
+                    "cacheReadAudioCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-flash-lite",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5000000000000002e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000003,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 0.0000015,
+                    "cacheReadInputCost": 5.0000000000000004e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.000000000000001e-7,
+                    "outputCost": 0.0000054,
+                    "cacheReadInputCost": 9e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3-flash-preview",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.0000000000000004e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000012,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006,
+                    "cacheReadInputCost": 2.0000000000000002e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000036000000000000003,
+                    "outputCost": 0.0000216,
+                    "cacheReadInputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009,
+                    "cacheReadInputCost": 4.0000000000000003e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000072000000000000005,
+                    "outputCost": 0.0000324,
+                    "cacheReadInputCost": 7.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-3.1-pro-preview",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.0000000000000002e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.00001,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005,
+                    "cacheReadInputCost": 1.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000225,
+                    "outputCost": 0.000018,
+                    "cacheReadInputCost": 2.2500000000000002e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 200000,
+                    "inputCost": 0.0000045,
+                    "outputCost": 0.000027,
+                    "cacheReadInputCost": 4.5000000000000003e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-pro",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000025,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 0.000001,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 0.00000125,
+                    "cacheReadInputCost": 3e-8,
+                    "inputAudioCost": 5e-7,
+                    "cacheReadAudioCost": 1.0000000000000001e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.0000045,
+                    "cacheReadInputCost": 5.4e-8,
+                    "inputAudioCost": 0.0000018000000000000001,
+                    "cacheReadAudioCost": 1.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.0000000000000001e-7,
+                    "outputCost": 4.0000000000000003e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 3e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": null,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.0000000000000004e-8,
+                    "outputCost": 2.0000000000000002e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputAudioCost": 1.5e-7,
+                    "cacheReadAudioCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7,
+                    "cacheReadInputCost": 1.8e-8,
+                    "inputAudioCost": 5.4e-7,
+                    "cacheReadAudioCost": 5.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-2.5-flash-lite",
+            "type": "chat",
+            "inputCost": 1.0000000000000001e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.0000000000000003e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
 export const AICostModelList: {
     readonly "abliteration": typeof provider0
     readonly "bedrock": typeof provider1
@@ -54031,6 +70196,7 @@ export const AICostModelList: {
     readonly "empiriolabs": typeof provider112
     readonly "wally": typeof provider113
     readonly "typesafe": typeof provider114
+    readonly "gemini-api": typeof provider115
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -54147,4 +70313,5 @@ export const AICostModelList: {
     "empiriolabs": provider112,
     "wally": provider113,
     "typesafe": provider114,
+    "gemini-api": provider115,
 }
