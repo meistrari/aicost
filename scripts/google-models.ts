@@ -201,7 +201,9 @@ export const vertexAudioPricing: Record<string, TokenPricingTier[]> = {
     'gemini-2.5-flash-lite': [
         { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 0.54e-6, cacheReadAudioCost: 0.054e-6 },
         { serviceTier: 'batch', aboveInputTokens: 0, inputAudioCost: 0.15e-6 },
+        { serviceTier: 'batch', aboveInputTokens: 200_000, inputAudioCost: 0.15e-6 },
         // No matching Flex SKU was found; do not infer its price from Batch.
         { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: null },
+        { serviceTier: 'flex', aboveInputTokens: 200_000, inputAudioCost: null },
     ],
 }

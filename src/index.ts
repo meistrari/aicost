@@ -216,12 +216,15 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     cacheCreationInputCostUnit: CacheInputCostUnit
 }> {
     const modelList = await getAICostModelList()
-    const providerModels = modelList[options.provider]
+    const vertexGeminiAlias = options.provider === 'vertex_ai' && options.model.startsWith('vertex_ai/gemini-')
+    const pricingProvider = vertexGeminiAlias ? 'vertex-ai' : options.provider
+    const pricingModel = vertexGeminiAlias ? options.model.slice('vertex_ai/'.length) : options.model
+    const providerModels = modelList[pricingProvider]
 
     if (!providerModels)
         throw new Error(`Provider ${options.provider} not found`)
 
-    const modelInfo = providerModels.find(m => m.name === options.model)
+    const modelInfo = providerModels.find(m => m.name === pricingModel)
 
     if (!modelInfo)
         throw new Error(`Model ${options.model} not found for provider ${options.provider}`)
@@ -232,7 +235,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     if (modelInfo.pricingValidUntil && pricingTime >= Date.parse(modelInfo.pricingValidUntil))
         throw new Error(`Expired pricing for ${options.provider}/${options.model}; refresh rates before pricing this request`)
     let regionalMultiplier = 1
-    if (options.provider === 'vertex-ai' && options.region !== undefined && options.region !== 'global') {
+    if (pricingProvider === 'vertex-ai' && options.region !== undefined && options.region !== 'global') {
         if (!options.region || modelInfo.nonGlobalCostMultiplier === undefined)
             throw new Error(`No regional pricing for ${options.provider}/${options.model} in ${options.region}`)
         regionalMultiplier = modelInfo.nonGlobalCostMultiplier
@@ -265,7 +268,7 @@ export async function calculateCost<P extends LooseString<AICostModelProvider>>(
     const contextAmount = metadata
         ? promptTokens + separatelyReportedToolUseTokens
         : inputAmount + cacheReadInputTokens + cacheCreationInputTokens
-    const google = options.provider === 'vertex-ai' || options.provider === 'gemini-api'
+    const google = pricingProvider === 'vertex-ai' || options.provider === 'gemini-api'
     const metadataTier = google ? metadata?.serviceTier?.toLowerCase() : undefined
     const trafficTier = google && metadata?.trafficType
         ? ({ ON_DEMAND: 'standard', ON_DEMAND_PRIORITY: 'priority', ON_DEMAND_FLEX: 'flex' } as Record<string, string>)[metadata.trafficType]
@@ -416,12 +419,15 @@ export async function getModelInfo(options: {
     model: string
 }): Promise<ProviderModel | undefined> {
     const modelList = await getAICostModelList()
-    const providerModels = modelList[options.provider]
+    const vertexGeminiAlias = options.provider === 'vertex_ai' && options.model.startsWith('vertex_ai/gemini-')
+    const pricingProvider = vertexGeminiAlias ? 'vertex-ai' : options.provider
+    const pricingModel = vertexGeminiAlias ? options.model.slice('vertex_ai/'.length) : options.model
+    const providerModels = modelList[pricingProvider]
 
     if (!providerModels)
         return undefined
 
-    return providerModels.find(m => m.name === options.model)
+    return providerModels.find(m => m.name === pricingModel)
 }
 
 export async function getProviderList(): Promise<Array<LooseString<AICostModelProvider>>> {

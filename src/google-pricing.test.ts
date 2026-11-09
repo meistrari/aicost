@@ -60,6 +60,19 @@ describe('Google backend and endpoint prices', () => {
         expect(text.inputCost).toBeCloseTo(0.00005, 12)
     })
 
+    it('keeps Vertex Flash Lite batch and flex audio rules above 200K', async () => {
+        const long = { ...request, provider: 'vertex-ai' as const, model: 'gemini-2.5-flash-lite' as const, usageMetadata: { promptTokenCount: 201000, cachedContentTokenCount: 0, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 201000 }] } }
+        expect((await calculateCost({ ...long, serviceTier: 'batch' })).inputCost).toBeCloseTo(0.03015, 12)
+        expect(await calculateCost({ ...long, serviceTier: 'flex' }).then(() => null, (error: Error) => error.message)).toContain('Missing flex audio input rate')
+    })
+
+    it('uses canonical Vertex pricing and expiry for prefixed Gemini names', async () => {
+        const usage = { ...request, region: 'us-east1', usageMetadata: { promptTokenCount: 1000, trafficType: 'ON_DEMAND_PRIORITY' } }
+        const alias = { ...usage, provider: 'vertex_ai' as const, model: 'vertex_ai/gemini-4-argon' as const }
+        expect(await calculateCost(alias)).toEqual(await calculateCost({ ...usage, provider: 'vertex-ai', model: 'gemini-4-argon' }))
+        expect(await calculateCost({ ...alias, pricingDate: '2026-12-02' }).then(() => null, (error: Error) => error.message)).toContain('Expired pricing')
+    })
+
     it('keeps the published Vertex long-context audio SKU at $1/M above 200K', async () => {
         const cost = await calculateCost({ ...request, provider: 'vertex-ai', model: 'gemini-2.5-flash', region: 'global', usageMetadata: { promptTokenCount: 201000, cachedContentTokenCount: 0, candidatesTokenCount: 10, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 201000 }] } })
         expect(cost.inputCost).toBeCloseTo(0.201, 12)
