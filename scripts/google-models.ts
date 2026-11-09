@@ -194,6 +194,7 @@ export const vertexAudioPricing: Record<string, TokenPricingTier[]> = {
         // Long audio SKU ED99-92A5-E00B is $1/M, matching short audio. The
         // summary page's >200K $0.30/M cell conflicts with this billing SKU.
         { serviceTier: 'standard', aboveInputTokens: 0, inputAudioCost: 1e-6, cacheReadAudioCost: 0.1e-6 },
+        { serviceTier: 'standard', aboveInputTokens: 200_000, inputAudioCost: 1e-6 },
         { serviceTier: 'priority', aboveInputTokens: 0, inputAudioCost: 1.8e-6, cacheReadAudioCost: 0.18e-6 },
         { serviceTier: 'flex', aboveInputTokens: 0, inputAudioCost: 0.5e-6 },
     ],
