@@ -304,7 +304,15 @@ export function mergeAdditionalModels(models: Record<string, IndexedModel[]>): R
         result[provider] = [...byName.values()]
     }
     result['gemini-api'] = buildModelPerProvider(geminiApiModels)['gemini-api'] ?? []
-    result['vertex-ai'] = (result['vertex-ai'] ?? []).map((model) => {
+    const vertexModels = new Map((result['vertex-ai'] ?? []).map(model => [model.name, model]))
+    for (const model of result.vertex_ai ?? []) {
+        if (!model.name.startsWith('vertex_ai/gemini-'))
+            continue
+        const name = model.name.slice('vertex_ai/'.length)
+        if (!vertexModels.has(name))
+            vertexModels.set(name, { ...model, name })
+    }
+    result['vertex-ai'] = [...vertexModels.values()].map((model) => {
         const patches = vertexAudioPricing[model.name]
         const tiers = new Map((model.tokenPricing ?? []).map(tier => [`${tier.serviceTier}:${tier.aboveInputTokens}`, tier]))
         for (const patch of patches ?? []) {

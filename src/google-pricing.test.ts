@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from 'bun:test'
-import { calculateCost } from './index'
+import { calculateCost, getModelInfo } from './index'
 
 const originalFetch = globalThis.fetch
 beforeAll(() => {
@@ -64,6 +64,13 @@ describe('Google backend and endpoint prices', () => {
         const long = { ...request, provider: 'vertex-ai' as const, model: 'gemini-2.5-flash-lite' as const, usageMetadata: { promptTokenCount: 201000, cachedContentTokenCount: 0, promptTokensDetails: [{ modality: 'AUDIO', tokenCount: 201000 }] } }
         expect((await calculateCost({ ...long, serviceTier: 'batch' })).inputCost).toBeCloseTo(0.03015, 12)
         expect(await calculateCost({ ...long, serviceTier: 'flex' }).then(() => null, (error: Error) => error.message)).toContain('Missing flex audio input rate')
+    })
+
+    it('keeps prefixed-only Gemini models available with Vertex pricing checks', async () => {
+        const model = { provider: 'vertex_ai' as const, model: 'vertex_ai/gemini-3-pro-preview' as const }
+        expect(await getModelInfo(model)).toBeDefined()
+        expect((await calculateCost({ ...request, ...model })).inputCost).toBeGreaterThan(0)
+        expect(await calculateCost({ ...request, ...model, usageMetadata: { trafficType: 'UNKNOWN' } }).then(() => null, (error: Error) => error.message)).toContain('Unsupported Google traffic type')
     })
 
     it('uses canonical Vertex pricing and expiry for prefixed Gemini names', async () => {
