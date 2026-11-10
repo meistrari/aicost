@@ -1,5 +1,5 @@
-// Last updated: 2026-11-10T12:08:08.058Z
-// Next update: 2026-11-10T18:08:08.058Z
+// Last updated: 2026-11-10T18:05:46.398Z
+// Next update: 2026-11-11T00:05:46.398Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -20799,6 +20799,48 @@ const provider5 = [
                 }
             ],
             "maxTokens": null,
+            "name": "azure_ai/claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000032
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/claude-mythos-5-2-fast",
+            "type": "chat",
+            "inputCost": 0.000016,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00002,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
             "name": "azure_ai/claude-fable-5-2",
             "type": "chat",
             "inputCost": 0.000008,
@@ -21722,6 +21764,35 @@ const provider10 = [
             "cacheReadInputCost": 2.5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -39155,6 +39226,80 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputAudioCost": 0.000001,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-7,
+                    "inputAudioCost": 0.0000036,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000002
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-carbon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-carbon-cyber-permissive",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ] as const
 
@@ -40003,6 +40148,80 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputAudioCost": 0.000001,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.8e-7,
+                    "inputAudioCost": 0.0000036,
+                    "inputCost": 0.0000036,
+                    "outputCost": 0.000018
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000002
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-4-carbon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputAudioCost": 0.000002,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.6e-7,
+                    "inputAudioCost": 0.0000072,
+                    "inputCost": 0.0000072,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-4-carbon-cyber-permissive",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ] as const
 
@@ -55141,6 +55360,35 @@ const provider72 = [
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
                     "cacheCreationInputCost": 0.00000625,
                     "cacheReadInputCost": 5e-7,
                     "inputCost": 0.000005,
@@ -55212,6 +55460,35 @@ const provider72 = [
             ],
             "maxTokens": null,
             "name": "vertex_ai/claude-fable-5-2@default",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/claude-mythos-5-2@default",
             "type": "chat",
             "inputCost": 0.000008,
             "inputCostUnit": "token",
