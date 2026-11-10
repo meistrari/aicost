@@ -1,5 +1,5 @@
-// Last updated: 2026-11-09T18:08:10.176Z
-// Next update: 2026-11-10T00:08:10.176Z
+// Last updated: 2026-11-10T00:14:35.875Z
+// Next update: 2026-11-10T06:14:35.875Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -5040,6 +5040,27 @@ const provider1 = [
         {
             "tokenPricing": [
                 {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
                     "inputCost": 3.6e-8,
@@ -5349,6 +5370,27 @@ const provider1 = [
             "cacheReadInputCost": 3e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000015,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
@@ -6018,6 +6060,77 @@ const provider1 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/claude_platform/claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-gov-east-1/anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-gov-west-1/anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ] as const
 
@@ -12046,6 +12159,216 @@ const provider2 = [
             "cacheReadInputCost": 2.2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000055,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000176
+                }
+            ],
+            "maxTokens": null,
+            "name": "eu.anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.0000088,
+            "inputCostUnit": "token",
+            "outputCost": 0.000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000011,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000176
+                }
+            ],
+            "maxTokens": null,
+            "name": "eu.anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.0000088,
+            "inputCostUnit": "token",
+            "outputCost": 0.000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000011,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "global.anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "global.anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "us-gov.anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "us-gov.anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.0000096,
+            "inputCostUnit": "token",
+            "outputCost": 0.000048,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000176
+                }
+            ],
+            "maxTokens": null,
+            "name": "us.anthropic.claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.0000088,
+            "inputCostUnit": "token",
+            "outputCost": 0.000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000011,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000176
+                }
+            ],
+            "maxTokens": null,
+            "name": "us.anthropic.claude-mythos-5-2",
+            "type": "chat",
+            "inputCost": 0.0000088,
+            "inputCostUnit": "token",
+            "outputCost": 0.000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000011,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         }
@@ -20466,6 +20789,48 @@ const provider5 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000032
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/claude-fable-5-2-fast",
+            "type": "chat",
+            "inputCost": 0.000016,
+            "inputCostUnit": "token",
+            "outputCost": 0.00008,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00002,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ] as const
 
@@ -21426,6 +21791,35 @@ const provider10 = [
             "cacheCreationInputCost": 1.25e-7,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ] as const
 
@@ -25901,6 +26295,13 @@ const provider16 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 0,
                     "cacheCreationInputCost12h": 0.00005
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000004,
+                    "inputCost": 0.00004,
+                    "outputCost": 0.00015
                 }
             ],
             "maxTokens": null,
@@ -31334,7 +31735,7 @@ const provider22 = [
             "maxTokens": null,
             "name": "deepinfra/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B",
             "type": "chat",
-            "inputCost": 8.5e-8,
+            "inputCost": 7.5e-8,
             "inputCostUnit": "token",
             "outputCost": 4e-7,
             "outputCostUnit": "token",
@@ -37262,34 +37663,6 @@ const provider29 = [
         },
         {
             "maxTokens": null,
-            "name": "friendliai/deepseek-ai/DeepSeek-V3.2",
-            "type": "chat",
-            "inputCost": 5e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000015,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 2.5e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
-            "name": "friendliai/MiniMaxAI/MiniMax-M2.5",
-            "type": "chat",
-            "inputCost": 3e-7,
-            "inputCostUnit": "token",
-            "outputCost": 0.0000012,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 6e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null,
-            "priceTier": 2
-        },
-        {
-            "maxTokens": null,
             "name": "friendliai/zai-org/GLM-5.1",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -37678,7 +38051,6 @@ const provider30 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 2.5e-7,
-                    "cacheCreationInputCost": 2.5e-7,
                     "inputCost": 0.0000025,
                     "outputCost": 0.000015
                 }
@@ -37696,8 +38068,7 @@ const provider30 = [
             "cacheReadInputCostAbove200kTokens": 2.5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3,
             "nonGlobalCostMultiplier": 1
         },
@@ -37744,7 +38115,6 @@ const provider30 = [
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
-                    "cacheCreationInputCost": 2.5e-7,
                     "cacheReadInputCost": 4e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
@@ -37763,8 +38133,7 @@ const provider30 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -37779,7 +38148,6 @@ const provider30 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 4e-7,
-                    "cacheCreationInputCost": 2.5e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
                 }
@@ -37797,8 +38165,7 @@ const provider30 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -38627,7 +38994,6 @@ const provider30 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 4e-7,
-                    "cacheCreationInputCost": 2.5e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
                 }
@@ -38645,8 +39011,7 @@ const provider30 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -38820,7 +39185,6 @@ const provider31 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 4e-7,
-                    "cacheCreationInputCost": 2.5e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
                 }
@@ -38838,8 +39202,7 @@ const provider31 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -39141,7 +39504,6 @@ const provider31 = [
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
-                    "cacheCreationInputCost": 2.5e-7,
                     "cacheReadInputCost": 4e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
@@ -39160,8 +39522,7 @@ const provider31 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -39190,7 +39551,6 @@ const provider31 = [
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 4e-7,
-                    "cacheCreationInputCost": 2.5e-7,
                     "inputCost": 0.000004,
                     "outputCost": 0.000018
                 }
@@ -39208,8 +39568,7 @@ const provider31 = [
             "cacheReadInputCostAbove200kTokens": 4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostAbove200kTokens": 2.5e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
@@ -45112,6 +45471,20 @@ const provider52 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "minimax/MiniMax-M3.1-Flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ] as const
 
@@ -54685,6 +55058,35 @@ const provider72 = [
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
                     "cacheCreationInputCost": 0.00000625,
                     "cacheReadInputCost": 5e-7,
                     "inputCost": 0.000005,
@@ -54735,6 +55137,35 @@ const provider72 = [
             "cacheReadInputCost": 2.5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/claude-fable-5-2@default",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
