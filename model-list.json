@@ -40800,6 +40800,20 @@
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "github_copilot/claude-fable-5.2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "chatgpt": [
@@ -53127,6 +53141,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/elorian-labs/glimpse-1.0",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "v0": [
@@ -57230,15 +57258,15 @@
             "maxTokens": null,
             "name": "wandb/deepseek-ai/DeepSeek-V4.1-Flash-1017",
             "type": "chat",
-            "inputCost": 1.3e-7,
+            "inputCost": 3e-7,
             "inputCostUnit": "token",
-            "outputCost": 6.5e-7,
+            "outputCost": 0.0000012,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 2e-9,
+            "cacheReadInputCost": 6e-9,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 1
+            "priceTier": 2
         }
     ],
     "watsonx": [
