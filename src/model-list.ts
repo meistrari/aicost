@@ -1,5 +1,5 @@
-// Last updated: 2026-11-10T18:05:46.398Z
-// Next update: 2026-11-11T00:05:46.398Z
+// Last updated: 2026-11-11T00:16:02.024Z
+// Next update: 2026-11-11T06:16:02.024Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -33245,6 +33245,29 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9e-8,
+                    "inputCost": 4.5e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/minimax-latest",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/mixtral-8x22b-instruct-hf",
             "type": "chat",
@@ -36671,6 +36694,29 @@ const provider28 = [
                 {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/kimi-latest",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
                     "cacheReadInputCost": 8.75e-9,
                     "inputCost": 2.75e-7,
                     "outputCost": 8.25e-7
@@ -37054,6 +37100,29 @@ const provider28 = [
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000009
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/qwen-max-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/glm-5p2-fast",
             "type": "chat",
@@ -37084,6 +37153,20 @@ const provider28 = [
         {
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3-fast",
+            "type": "chat",
+            "inputCost": 0.0000045,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000225,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/kimi-fast-latest",
             "type": "chat",
             "inputCost": 0.0000045,
             "inputCostUnit": "token",
@@ -37130,6 +37213,29 @@ const provider28 = [
             ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.25e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000055
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/glm-latest",
             "type": "chat",
             "inputCost": 0.0000014,
             "inputCostUnit": "token",
@@ -37226,6 +37332,20 @@ const provider28 = [
         },
         {
             "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/glm-fast-latest",
+            "type": "chat",
+            "inputCost": 0.0000021,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000066,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.9e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/auto",
             "type": "chat",
             "inputCost": null,
@@ -37289,6 +37409,29 @@ const provider28 = [
             ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/glm-5p3-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 1.875e-7,
+                    "outputCost": 6.25e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/glm-flash-latest",
             "type": "chat",
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
@@ -37486,6 +37629,29 @@ const provider28 = [
             ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-9,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-flash-latest",
             "type": "chat",
             "inputCost": 3e-7,
             "inputCostUnit": "token",
@@ -41070,6 +41236,20 @@ const provider32 = [
             "cacheCreationInputCost": 0.00001,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "github_copilot/gemini-4-carbon",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ] as const
 
