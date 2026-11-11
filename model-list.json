@@ -38671,17 +38671,17 @@
                 {
                     "serviceTier": "flex",
                     "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
                     "inputCost": 7.5e-7,
-                    "outputCost": 0.0000045,
-                    "cacheReadInputCost": 7.5e-8
+                    "outputCost": 0.0000045
                 },
                 {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
-                    "inputCost": 0.0000027,
+                    "cacheReadInputCost": 2.7e-7,
                     "inputAudioCost": 0.0000027,
-                    "outputCost": 0.0000162,
-                    "cacheReadInputCost": 2.7e-7
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000162
                 },
                 {
                     "serviceTier": "standard",
@@ -39599,17 +39599,17 @@
                 {
                     "serviceTier": "flex",
                     "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
                     "inputCost": 7.5e-7,
-                    "outputCost": 0.0000045,
-                    "cacheReadInputCost": 7.5e-8
+                    "outputCost": 0.0000045
                 },
                 {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
-                    "inputCost": 0.0000027,
+                    "cacheReadInputCost": 2.7e-7,
                     "inputAudioCost": 0.0000027,
-                    "outputCost": 0.0000162,
-                    "cacheReadInputCost": 2.7e-7
+                    "inputCost": 0.0000027,
+                    "outputCost": 0.0000162
                 },
                 {
                     "serviceTier": "standard",
