@@ -40056,6 +40056,20 @@
         },
         {
             "maxTokens": null,
+            "name": "vertex_ai/deep-research-preview-04-2026",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "vertex_ai/xai/grok-4.1-fast-non-reasoning",
             "type": "chat",
             "inputCost": 2e-7,
