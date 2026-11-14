@@ -1,5 +1,5 @@
-// Last updated: 2026-11-13T18:06:31.007Z
-// Next update: 2026-11-14T00:06:31.007Z
+// Last updated: 2026-11-14T00:15:47.080Z
+// Next update: 2026-11-14T06:15:47.080Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -15107,14 +15107,6 @@ const provider4 = [
             "tokenPricing": [
                 {
                     "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "inputCost": 0.000005,
-                    "outputCost": 0.000025,
-                    "cacheReadInputCost": 5e-7,
-                    "cacheCreationInputCost": 0.00000625
-                },
-                {
-                    "serviceTier": "flex",
                     "aboveInputTokens": 272000,
                     "cacheCreationInputCost": 0.0000125,
                     "cacheReadInputCost": 0.000001,
@@ -15185,22 +15177,6 @@ const provider4 = [
         },
         {
             "tokenPricing": [
-                {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost": 6.25e-8,
-                    "cacheReadInputCost": 5e-9,
-                    "inputCost": 5e-8,
-                    "outputCost": 2.5e-7
-                },
-                {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 272000,
-                    "cacheCreationInputCost": 1.25e-7,
-                    "cacheReadInputCost": 1e-8,
-                    "inputCost": 1e-7,
-                    "outputCost": 3.75e-7
-                },
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 272000,
@@ -24938,12 +24914,6 @@ const provider16 = [
                     "outputCost": 0.00009
                 },
                 {
-                    "serviceTier": "batch",
-                    "aboveInputTokens": 272000,
-                    "inputCost": 0.00003,
-                    "outputCost": 0.000135
-                },
-                {
                     "serviceTier": "flex",
                     "aboveInputTokens": 0,
                     "inputCost": 0.000015,
@@ -32149,6 +32119,62 @@ const provider22 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "deepinfra/zai-org/GLM-5.3-Flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "deepinfra/XiaomiMiMo/MiMo-V2.6-Flash",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.8e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "deepinfra/tencent/Hy4-preview",
+            "type": "chat",
+            "inputCost": 8.34e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002501,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ] as const
 
@@ -39456,13 +39482,6 @@ const provider30 = [
                     "outputCost": 0.00001
                 },
                 {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheReadInputCost": 1e-7,
-                    "inputCost": 0.000002,
-                    "outputCost": 0.00001
-                },
-                {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 3.6e-7,
@@ -39584,13 +39603,6 @@ const provider30 = [
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 3.75e-8,
                     "inputAudioCost": 7.5e-7,
-                    "inputCost": 7.5e-7,
-                    "outputCost": 0.00000375
-                },
-                {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheReadInputCost": 3.75e-8,
                     "inputCost": 7.5e-7,
                     "outputCost": 0.00000375
                 },
@@ -40392,13 +40404,6 @@ const provider31 = [
                     "outputCost": 0.000005
                 },
                 {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheReadInputCost": 5e-8,
-                    "inputCost": 0.000001,
-                    "outputCost": 0.000005
-                },
-                {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1.8e-7,
@@ -40432,13 +40437,6 @@ const provider31 = [
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 1e-7,
                     "inputAudioCost": 0.000002,
-                    "inputCost": 0.000002,
-                    "outputCost": 0.00001
-                },
-                {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheReadInputCost": 1e-7,
                     "inputCost": 0.000002,
                     "outputCost": 0.00001
                 },
@@ -40564,13 +40562,6 @@ const provider31 = [
                     "aboveInputTokens": 0,
                     "cacheReadInputCost": 3.75e-8,
                     "inputAudioCost": 7.5e-7,
-                    "inputCost": 7.5e-7,
-                    "outputCost": 0.00000375
-                },
-                {
-                    "serviceTier": "flex",
-                    "aboveInputTokens": 0,
-                    "cacheReadInputCost": 3.75e-8,
                     "inputCost": 7.5e-7,
                     "outputCost": 0.00000375
                 },
@@ -41458,6 +41449,20 @@ const provider32 = [
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "github_copilot/gemini-4-hydrogen",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -46328,8 +46333,8 @@ const provider53 = [
             "inputCostUnit": "token",
             "outputCost": null,
             "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
@@ -46510,8 +46515,8 @@ const provider53 = [
             "inputCostUnit": "token",
             "outputCost": null,
             "outputCostUnit": null,
-            "cacheReadInputCost": null,
-            "cacheReadInputCostUnit": null,
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
@@ -50796,6 +50801,20 @@ const provider61 = [
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/google/gemini-4-hydrogen",
+            "type": "responses",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
