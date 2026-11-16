@@ -22314,6 +22314,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "cloudflare/@cf/thinkingmachines/inkling-2-small",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "codestral": [
@@ -44368,7 +44382,7 @@
             "inputCostUnit": "token",
             "outputCost": 3e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3.7e-8,
+            "cacheReadInputCost": 3.75e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -48375,6 +48389,20 @@
             "inputCost": 3e-7,
             "inputCostUnit": "token",
             "outputCost": 9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "nebius/thinkingmachines/Inkling-2-Small",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 6e-8,
             "cacheReadInputCostUnit": "token",
