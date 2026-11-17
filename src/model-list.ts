@@ -1,5 +1,5 @@
-// Last updated: 2026-11-17T12:08:29.823Z
-// Next update: 2026-11-17T18:08:29.823Z
+// Last updated: 2026-11-17T18:07:18.400Z
+// Next update: 2026-11-18T00:07:18.400Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -3657,6 +3657,20 @@ const provider1 = [
         {
             "maxTokens": null,
             "name": "cohere.embed-v4:0",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "eu.cohere.embed-v4:0",
             "type": "embedding",
             "inputCost": 1.2e-7,
             "inputCostUnit": "token",
@@ -30574,6 +30588,20 @@ const provider21 = [
             "cacheReadInputCost": 0.000002,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000002,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.gemini-4-hydrogen",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }

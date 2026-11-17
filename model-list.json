@@ -3664,6 +3664,20 @@
         },
         {
             "maxTokens": null,
+            "name": "eu.cohere.embed-v4:0",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
             "name": "us.cohere.embed-v4:0",
             "type": "embedding",
             "inputCost": 1.2e-7,
@@ -30548,6 +30562,20 @@
             "cacheReadInputCost": 0.000002,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000002,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.gemini-4-hydrogen",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000015,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }
