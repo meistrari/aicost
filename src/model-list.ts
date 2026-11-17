@@ -1,7 +1,7 @@
-// Last updated: 2026-11-17T06:09:58.323Z
-// Next update: 2026-11-17T12:09:58.323Z
+// Last updated: 2026-11-17T12:08:29.823Z
+// Next update: 2026-11-17T18:08:29.823Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -6093,6 +6093,180 @@ const provider1 = [
             "cacheReadInputCost": 2.4e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000012,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-fable-5",
+            "type": "chat",
+            "inputCost": 0.000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000011,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-mythos-5",
+            "type": "chat",
+            "inputCost": 0.000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000011,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-opus-4-7",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-opus-4-8",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000022
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-haiku-4-5",
+            "type": "chat",
+            "inputCost": 0.0000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000088
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/mantle/anthropic.claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.0000044,
+            "inputCostUnit": "token",
+            "outputCost": 0.000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000055,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         }
@@ -54842,6 +55016,51 @@ const provider70 = [
 const provider71 = [
         {
             "maxTokens": null,
+            "name": "vispark/vision-small",
+            "type": "chat",
+            "inputCost": 0.00000105,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000316,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "vispark/vision-medium",
+            "type": "chat",
+            "inputCost": 0.00000421,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001263,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "vispark/vision-large",
+            "type": "chat",
+            "inputCost": 0.00000737,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002211,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        }
+    ] as const
+
+const provider72 = [
+        {
+            "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-14b",
             "type": "chat",
             "inputCost": 8e-8,
@@ -56240,7 +56459,7 @@ const provider71 = [
         }
     ] as const
 
-const provider72 = [
+const provider73 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/claude-3-5-haiku",
@@ -57323,7 +57542,7 @@ const provider72 = [
         }
     ] as const
 
-const provider73 = [
+const provider74 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/mistralai/codestral-2@001",
@@ -57592,7 +57811,7 @@ const provider73 = [
         }
     ] as const
 
-const provider74 = [
+const provider75 = [
         {
             "tokenPricing": [
                 {
@@ -57675,7 +57894,7 @@ const provider74 = [
         }
     ] as const
 
-const provider75 = [
+const provider76 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/jamba-1.5",
@@ -57748,7 +57967,7 @@ const provider75 = [
         }
     ] as const
 
-const provider76 = [
+const provider77 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
@@ -57959,7 +58178,7 @@ const provider76 = [
         }
     ] as const
 
-const provider77 = [
+const provider78 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/minimaxai/minimax-m2-maas",
@@ -57976,7 +58195,7 @@ const provider77 = [
         }
     ] as const
 
-const provider78 = [
+const provider79 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/moonshotai/kimi-k2-thinking-maas",
@@ -57993,7 +58212,7 @@ const provider78 = [
         }
     ] as const
 
-const provider79 = [
+const provider80 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-4.7-maas",
@@ -58038,7 +58257,7 @@ const provider79 = [
         }
     ] as const
 
-const provider80 = [
+const provider81 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/google/gemma-4-26b-a4b-it-maas",
@@ -58099,7 +58318,7 @@ const provider80 = [
         }
     ] as const
 
-const provider81 = [
+const provider82 = [
         {
             "tokenPricing": [
                 {
@@ -58174,7 +58393,7 @@ const provider81 = [
         }
     ] as const
 
-const provider82 = [
+const provider83 = [
         {
             "maxTokens": null,
             "name": "voyage/voyage-2",
@@ -58499,7 +58718,7 @@ const provider82 = [
         }
     ] as const
 
-const provider83 = [
+const provider84 = [
         {
             "maxTokens": null,
             "name": "wandb/openai/gpt-oss-120b",
@@ -58978,7 +59197,7 @@ const provider83 = [
         }
     ] as const
 
-const provider84 = [
+const provider85 = [
         {
             "maxTokens": null,
             "name": "watsonx/ibm/granite-3-8b-instruct",
@@ -59401,7 +59620,7 @@ const provider84 = [
         }
     ] as const
 
-const provider85 = [
+const provider86 = [
         {
             "tokenPricing": [
                 {
@@ -60718,7 +60937,7 @@ const provider85 = [
         }
     ] as const
 
-const provider86 = [
+const provider87 = [
         {
             "maxTokens": null,
             "name": "zai/glm-5",
@@ -60959,7 +61178,7 @@ const provider86 = [
         }
     ] as const
 
-const provider87 = [
+const provider88 = [
         {
             "maxTokens": null,
             "name": "scaleway/qwen/qwen3.5-397b-a17b",
@@ -61158,7 +61377,7 @@ const provider87 = [
         }
     ] as const
 
-const provider88 = [
+const provider89 = [
         {
             "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.2",
@@ -63023,7 +63242,7 @@ const provider88 = [
         }
     ] as const
 
-const provider89 = [
+const provider90 = [
         {
             "maxTokens": null,
             "name": "llamagate/llama-3.1-8b",
@@ -63250,7 +63469,7 @@ const provider89 = [
         }
     ] as const
 
-const provider90 = [
+const provider91 = [
         {
             "maxTokens": null,
             "name": "libertai/hermes-3-8b-tee",
@@ -63421,7 +63640,7 @@ const provider90 = [
         }
     ] as const
 
-const provider91 = [
+const provider92 = [
         {
             "tokenPricing": [
                 {
@@ -63445,7 +63664,7 @@ const provider91 = [
         }
     ] as const
 
-const provider92 = [
+const provider93 = [
         {
             "tokenPricing": [
                 {
@@ -64000,25 +64219,25 @@ const provider92 = [
                 {
                     "serviceTier": "batch",
                     "aboveInputTokens": 0,
-                    "inputCost": 5e-7,
-                    "outputCost": 0.0000025
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
                 },
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.000002
+                    "cacheCreationInputCost1h": 0.0000022
                 }
             ],
             "maxTokens": null,
             "name": "bedrock_mantle/anthropic.claude-haiku-4-5",
             "type": "chat",
-            "inputCost": 0.000001,
+            "inputCost": 0.0000011,
             "inputCostUnit": "token",
-            "outputCost": 0.000005,
+            "outputCost": 0.0000055,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCost": 1.1e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCost": 0.000001375,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
@@ -64681,6 +64900,856 @@ const provider92 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 9.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000032375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000185,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 6.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 1.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.2e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-7,
+                    "outputCost": 0.0000035
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 3.5e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 1.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 2.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 7.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.8e-7,
+                    "outputCost": 0.00000263
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2e-8,
+                    "outputCost": 2e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 7e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 5.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000525
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.0000011375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.0000021
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.00000105
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000011
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000385
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000022,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.0000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         },
         {
             "tokenPricing": [
@@ -65369,10 +66438,136 @@ const provider92 = [
             "cacheCreationInputCost": 0.00002109375,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-fable-5",
+            "type": "chat",
+            "inputCost": 0.000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000011,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000022
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-mythos-5",
+            "type": "chat",
+            "inputCost": 0.000011,
+            "inputCostUnit": "token",
+            "outputCost": 0.000055,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000011,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-opus-4-7",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-opus-4-8",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/anthropic.claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
-const provider93 = [
+const provider94 = [
         {
             "maxTokens": null,
             "name": "tensormesh/Qwen/Qwen3.5-397B-A17B-FP8",
@@ -65515,7 +66710,7 @@ const provider93 = [
         }
     ] as const
 
-const provider94 = [
+const provider95 = [
         {
             "maxTokens": null,
             "name": "streamlake/deepseek-v4-flash-0731",
@@ -65891,7 +67086,7 @@ const provider94 = [
         }
     ] as const
 
-const provider95 = [
+const provider96 = [
         {
             "maxTokens": null,
             "name": "tencent/deepseek-v4-pro",
@@ -66104,7 +67299,7 @@ const provider95 = [
         }
     ] as const
 
-const provider96 = [
+const provider97 = [
         {
             "maxTokens": null,
             "name": "cognition/swe-1.6",
@@ -66149,7 +67344,7 @@ const provider96 = [
         }
     ] as const
 
-const provider97 = [
+const provider98 = [
         {
             "maxTokens": null,
             "name": "pinstripes/ps/glm-4.5-air",
@@ -66236,7 +67431,7 @@ const provider97 = [
         }
     ] as const
 
-const provider98 = [
+const provider99 = [
         {
             "maxTokens": null,
             "name": "darkbloom/gemma-4-26b",
@@ -66267,7 +67462,7 @@ const provider98 = [
         }
     ] as const
 
-const provider99 = [
+const provider100 = [
         {
             "maxTokens": null,
             "name": "zerogpu/deepseek-v4.1-flash",
@@ -66452,7 +67647,7 @@ const provider99 = [
         }
     ] as const
 
-const provider100 = [
+const provider101 = [
         {
             "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
@@ -67463,7 +68658,7 @@ const provider100 = [
         }
     ] as const
 
-const provider101 = [
+const provider102 = [
         {
             "maxTokens": null,
             "name": "aiand/deepseek-ai/deepseek-v4-flash",
@@ -67676,7 +68871,7 @@ const provider101 = [
         }
     ] as const
 
-const provider102 = [
+const provider103 = [
         {
             "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
@@ -67707,7 +68902,7 @@ const provider102 = [
         }
     ] as const
 
-const provider103 = [
+const provider104 = [
         {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
@@ -67738,7 +68933,7 @@ const provider103 = [
         }
     ] as const
 
-const provider104 = [
+const provider105 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -67755,7 +68950,7 @@ const provider104 = [
         }
     ] as const
 
-const provider105 = [
+const provider106 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -67828,7 +69023,7 @@ const provider105 = [
         }
     ] as const
 
-const provider106 = [
+const provider107 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -67873,7 +69068,7 @@ const provider106 = [
         }
     ] as const
 
-const provider107 = [
+const provider108 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -68296,7 +69491,7 @@ const provider107 = [
         }
     ] as const
 
-const provider108 = [
+const provider109 = [
         {
             "maxTokens": null,
             "name": "refuseless/glm-5.3-abliterated",
@@ -68369,7 +69564,7 @@ const provider108 = [
         }
     ] as const
 
-const provider109 = [
+const provider110 = [
         {
             "maxTokens": null,
             "name": "clf_ai_gateway/glm-5.3",
@@ -68512,7 +69707,7 @@ const provider109 = [
         }
     ] as const
 
-const provider110 = [
+const provider111 = [
         {
             "maxTokens": null,
             "name": "kyma/claude-fable-5",
@@ -69751,7 +70946,7 @@ const provider110 = [
         }
     ] as const
 
-const provider111 = [
+const provider112 = [
         {
             "maxTokens": null,
             "name": "bigmodel/glm-5.3",
@@ -69796,7 +70991,7 @@ const provider111 = [
         }
     ] as const
 
-const provider112 = [
+const provider113 = [
         {
             "maxTokens": null,
             "name": "empiriolabs/aplomb-1",
@@ -71378,7 +72573,7 @@ const provider112 = [
         }
     ] as const
 
-const provider113 = [
+const provider114 = [
         {
             "maxTokens": null,
             "name": "wally/glm-5.3-flash",
@@ -71521,7 +72716,7 @@ const provider113 = [
         }
     ] as const
 
-const provider114 = [
+const provider115 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -71538,7 +72733,7 @@ const provider114 = [
         }
     ] as const
 
-const provider115 = [
+const provider116 = [
         {
             "tokenPricing": [
                 {
@@ -72245,51 +73440,52 @@ export const AICostModelList: {
     readonly "text-completion-codestral": typeof provider68
     readonly "together_ai": typeof provider69
     readonly "v0": typeof provider70
-    readonly "vercel_ai_gateway": typeof provider71
-    readonly "vertex_ai-anthropic_models": typeof provider72
-    readonly "vertex_ai-mistral_models": typeof provider73
-    readonly "vertex_ai-deepseek_models": typeof provider74
-    readonly "vertex_ai-ai21_models": typeof provider75
-    readonly "vertex_ai-llama_models": typeof provider76
-    readonly "vertex_ai-minimax_models": typeof provider77
-    readonly "vertex_ai-moonshot_models": typeof provider78
-    readonly "vertex_ai-zai_models": typeof provider79
-    readonly "vertex_ai-openai_models": typeof provider80
-    readonly "vertex_ai-qwen_models": typeof provider81
-    readonly "voyage": typeof provider82
-    readonly "wandb": typeof provider83
-    readonly "watsonx": typeof provider84
-    readonly "xai": typeof provider85
-    readonly "zai": typeof provider86
-    readonly "scaleway": typeof provider87
-    readonly "novita": typeof provider88
-    readonly "llamagate": typeof provider89
-    readonly "libertai": typeof provider90
-    readonly "sarvam": typeof provider91
-    readonly "bedrock_mantle": typeof provider92
-    readonly "tensormesh": typeof provider93
-    readonly "streamlake": typeof provider94
-    readonly "tencent": typeof provider95
-    readonly "cognition": typeof provider96
-    readonly "pinstripes": typeof provider97
-    readonly "darkbloom": typeof provider98
-    readonly "zerogpu": typeof provider99
-    readonly "aihubmix": typeof provider100
-    readonly "aiand": typeof provider101
-    readonly "xiaomi_mimo": typeof provider102
-    readonly "prism": typeof provider103
-    readonly "microsoft_365_copilot": typeof provider104
-    readonly "scaledown": typeof provider105
-    readonly "openinfer": typeof provider106
-    readonly "opencode_go": typeof provider107
-    readonly "refuseless": typeof provider108
-    readonly "clf_ai_gateway": typeof provider109
-    readonly "kyma": typeof provider110
-    readonly "bigmodel": typeof provider111
-    readonly "empiriolabs": typeof provider112
-    readonly "wally": typeof provider113
-    readonly "typesafe": typeof provider114
-    readonly "gemini-api": typeof provider115
+    readonly "vispark": typeof provider71
+    readonly "vercel_ai_gateway": typeof provider72
+    readonly "vertex_ai-anthropic_models": typeof provider73
+    readonly "vertex_ai-mistral_models": typeof provider74
+    readonly "vertex_ai-deepseek_models": typeof provider75
+    readonly "vertex_ai-ai21_models": typeof provider76
+    readonly "vertex_ai-llama_models": typeof provider77
+    readonly "vertex_ai-minimax_models": typeof provider78
+    readonly "vertex_ai-moonshot_models": typeof provider79
+    readonly "vertex_ai-zai_models": typeof provider80
+    readonly "vertex_ai-openai_models": typeof provider81
+    readonly "vertex_ai-qwen_models": typeof provider82
+    readonly "voyage": typeof provider83
+    readonly "wandb": typeof provider84
+    readonly "watsonx": typeof provider85
+    readonly "xai": typeof provider86
+    readonly "zai": typeof provider87
+    readonly "scaleway": typeof provider88
+    readonly "novita": typeof provider89
+    readonly "llamagate": typeof provider90
+    readonly "libertai": typeof provider91
+    readonly "sarvam": typeof provider92
+    readonly "bedrock_mantle": typeof provider93
+    readonly "tensormesh": typeof provider94
+    readonly "streamlake": typeof provider95
+    readonly "tencent": typeof provider96
+    readonly "cognition": typeof provider97
+    readonly "pinstripes": typeof provider98
+    readonly "darkbloom": typeof provider99
+    readonly "zerogpu": typeof provider100
+    readonly "aihubmix": typeof provider101
+    readonly "aiand": typeof provider102
+    readonly "xiaomi_mimo": typeof provider103
+    readonly "prism": typeof provider104
+    readonly "microsoft_365_copilot": typeof provider105
+    readonly "scaledown": typeof provider106
+    readonly "openinfer": typeof provider107
+    readonly "opencode_go": typeof provider108
+    readonly "refuseless": typeof provider109
+    readonly "clf_ai_gateway": typeof provider110
+    readonly "kyma": typeof provider111
+    readonly "bigmodel": typeof provider112
+    readonly "empiriolabs": typeof provider113
+    readonly "wally": typeof provider114
+    readonly "typesafe": typeof provider115
+    readonly "gemini-api": typeof provider116
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -72362,49 +73558,50 @@ export const AICostModelList: {
     "text-completion-codestral": provider68,
     "together_ai": provider69,
     "v0": provider70,
-    "vercel_ai_gateway": provider71,
-    "vertex_ai-anthropic_models": provider72,
-    "vertex_ai-mistral_models": provider73,
-    "vertex_ai-deepseek_models": provider74,
-    "vertex_ai-ai21_models": provider75,
-    "vertex_ai-llama_models": provider76,
-    "vertex_ai-minimax_models": provider77,
-    "vertex_ai-moonshot_models": provider78,
-    "vertex_ai-zai_models": provider79,
-    "vertex_ai-openai_models": provider80,
-    "vertex_ai-qwen_models": provider81,
-    "voyage": provider82,
-    "wandb": provider83,
-    "watsonx": provider84,
-    "xai": provider85,
-    "zai": provider86,
-    "scaleway": provider87,
-    "novita": provider88,
-    "llamagate": provider89,
-    "libertai": provider90,
-    "sarvam": provider91,
-    "bedrock_mantle": provider92,
-    "tensormesh": provider93,
-    "streamlake": provider94,
-    "tencent": provider95,
-    "cognition": provider96,
-    "pinstripes": provider97,
-    "darkbloom": provider98,
-    "zerogpu": provider99,
-    "aihubmix": provider100,
-    "aiand": provider101,
-    "xiaomi_mimo": provider102,
-    "prism": provider103,
-    "microsoft_365_copilot": provider104,
-    "scaledown": provider105,
-    "openinfer": provider106,
-    "opencode_go": provider107,
-    "refuseless": provider108,
-    "clf_ai_gateway": provider109,
-    "kyma": provider110,
-    "bigmodel": provider111,
-    "empiriolabs": provider112,
-    "wally": provider113,
-    "typesafe": provider114,
-    "gemini-api": provider115,
+    "vispark": provider71,
+    "vercel_ai_gateway": provider72,
+    "vertex_ai-anthropic_models": provider73,
+    "vertex_ai-mistral_models": provider74,
+    "vertex_ai-deepseek_models": provider75,
+    "vertex_ai-ai21_models": provider76,
+    "vertex_ai-llama_models": provider77,
+    "vertex_ai-minimax_models": provider78,
+    "vertex_ai-moonshot_models": provider79,
+    "vertex_ai-zai_models": provider80,
+    "vertex_ai-openai_models": provider81,
+    "vertex_ai-qwen_models": provider82,
+    "voyage": provider83,
+    "wandb": provider84,
+    "watsonx": provider85,
+    "xai": provider86,
+    "zai": provider87,
+    "scaleway": provider88,
+    "novita": provider89,
+    "llamagate": provider90,
+    "libertai": provider91,
+    "sarvam": provider92,
+    "bedrock_mantle": provider93,
+    "tensormesh": provider94,
+    "streamlake": provider95,
+    "tencent": provider96,
+    "cognition": provider97,
+    "pinstripes": provider98,
+    "darkbloom": provider99,
+    "zerogpu": provider100,
+    "aihubmix": provider101,
+    "aiand": provider102,
+    "xiaomi_mimo": provider103,
+    "prism": provider104,
+    "microsoft_365_copilot": provider105,
+    "scaledown": provider106,
+    "openinfer": provider107,
+    "opencode_go": provider108,
+    "refuseless": provider109,
+    "clf_ai_gateway": provider110,
+    "kyma": provider111,
+    "bigmodel": provider112,
+    "empiriolabs": provider113,
+    "wally": provider114,
+    "typesafe": provider115,
+    "gemini-api": provider116,
 }
