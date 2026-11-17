@@ -1,8 +1,41 @@
 import type { RawModel } from './index-model-info'
 
+// https://developers.openai.com/api/docs/models/gpt-6.2-astra
+// https://developers.openai.com/api/docs/models/gpt-6.2-sol
+// Verified November 17, 2026. Refresh before the Ultrafast promotion ends (Pacific time).
+function gpt62Model(inputPerMillion: number): RawModel {
+    const inputCost = inputPerMillion / 1_000_000
+    return {
+        litellm_provider: 'openai',
+        mode: 'responses',
+        max_tokens: 1_050_000,
+        pricingValidUntil: '2027-03-01T08:00:00Z',
+        input_cost_per_token: inputCost,
+        output_cost_per_token: inputCost * 5,
+        cache_read_input_token_cost: inputCost * 0.05,
+        cache_creation_input_token_cost: inputCost * 1.25,
+        tokenPricing: [
+            { serviceTier: 'standard', multiplier: 1 },
+            { serviceTier: 'batch', multiplier: 0.5 },
+            { serviceTier: 'priority', multiplier: 2 },
+            { serviceTier: 'ultrafast', multiplier: 3 },
+        ].flatMap(({ serviceTier, multiplier }) => [0, 272_000].map(aboveInputTokens => ({
+            serviceTier,
+            aboveInputTokens,
+            inputCost: inputCost * multiplier * (aboveInputTokens ? 2 : 1),
+            outputCost: inputCost * 5 * multiplier * (aboveInputTokens ? 1.5 : 1),
+            cacheReadInputCost: inputCost * 0.05 * multiplier * (aboveInputTokens ? 2 : 1),
+            cacheCreationInputCost: inputCost * 1.25 * multiplier * (aboveInputTokens ? 2 : 1),
+            cacheCreationInputCost12h: inputCost * 2.5 * multiplier * (aboveInputTokens ? 2 : 1),
+        }))),
+    }
+}
+
 // Provider list pricing in USD, verified 2026-09-21:
 // https://typesafe.ai/blog/introducing-system-one-models-and-jev
 export const additionalModels: Record<string, RawModel> = {
+    'gpt-6.2-astra': gpt62Model(8),
+    'gpt-6.2-sol': gpt62Model(2),
     'jev-1.13.0': {
         litellm_provider: 'typesafe',
         mode: 'completion',
