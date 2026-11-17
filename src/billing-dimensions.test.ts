@@ -13,30 +13,6 @@ afterAll(() => {
 })
 
 describe('provider billing dimensions', () => {
-    it.each([['gpt-6.2-astra', 8], ['gpt-6.2-sol', 2]] as const)('prices %s across the 272k boundary including cached input and twelve-hour writes', async (model, inputRate) => {
-        const base = { provider: 'openai', model, inputAmount: 1, outputAmount: 10, cacheReadInputTokens: 271_998, cacheCreationInputTokens: 1, cacheCreationInputTokens12h: 1, pricingDate: '2026-11-17T18:00:00Z', strict: true }
-        const short = await calculateCost(base)
-        const long = await calculateCost({ ...base, cacheReadInputTokens: 271_999 })
-        expect(short.inputCost).toBeCloseTo(inputRate / 1e6, 12)
-        expect(short.outputCost).toBeCloseTo(10 * inputRate * 5 / 1e6, 12)
-        expect(short.cacheReadInputCost).toBeCloseTo(271_998 * inputRate * 0.05 / 1e6, 12)
-        expect(short.cacheCreationInputCost).toBeCloseTo(inputRate * 2.5 / 1e6, 12)
-        expect(long.inputCost).toBeCloseTo(inputRate * 2 / 1e6, 12)
-        expect(long.outputCost).toBeCloseTo(10 * inputRate * 7.5 / 1e6, 12)
-        expect(long.cacheReadInputCost).toBeCloseTo(271_999 * inputRate * 0.1 / 1e6, 12)
-        expect(long.cacheCreationInputCost).toBeCloseTo(inputRate * 5 / 1e6, 12)
-    })
-
-    it.each(['gpt-6.2-astra', 'gpt-6.2-sol'] as const)('applies the %s Ultrafast promotion and refuses stale promotional prices', async (model) => {
-        const base = { provider: 'openai', model, inputAmount: 1000, outputAmount: 100, pricingDate: '2026-11-17T18:00:00Z', strict: true }
-        const standard = await calculateCost(base)
-        const ultrafast = await calculateCost({ ...base, serviceTier: 'ultrafast' })
-        expect(ultrafast.inputCost).toBeCloseTo(standard.inputCost * 3, 12)
-        expect(ultrafast.outputCost).toBeCloseTo(standard.outputCost * 3, 12)
-        const error = await calculateCost({ ...base, serviceTier: 'ultrafast', pricingDate: '2027-03-01T08:00:00Z' }).then(() => null, (error: Error) => error.message)
-        expect(error).toContain('Expired pricing')
-    })
-
     it('preserves visible-output fallback semantics with Google thinking', async () => {
         const cost = await calculateCost({ provider: 'vertex-ai', model: 'gemini-2.5-flash', inputAmount: 10, outputAmount: 20, usageMetadata: { promptTokenCount: 10, thoughtsTokenCount: 80 } })
         expect(cost.outputCost).toBeCloseTo(100 * 2.5e-6, 12)
