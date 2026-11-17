@@ -2921,27 +2921,6 @@
             "priceTier": 4
         },
         {
-            "tokenPricing": [
-                {
-                    "serviceTier": "standard",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.0000072
-                }
-            ],
-            "maxTokens": null,
-            "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
-            "type": "chat",
-            "inputCost": 0.0000036,
-            "inputCostUnit": "token",
-            "outputCost": 0.000018,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.6e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000045,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
-        },
-        {
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
@@ -3150,27 +3129,6 @@
             ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
-            "type": "chat",
-            "inputCost": 0.0000036,
-            "inputCostUnit": "token",
-            "outputCost": 0.000018,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.6e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000045,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
-        },
-        {
-            "tokenPricing": [
-                {
-                    "serviceTier": "standard",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.0000072
-                }
-            ],
-            "maxTokens": null,
-            "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
             "inputCostUnit": "token",

@@ -1,5 +1,5 @@
-// Last updated: 2026-11-17T00:16:02.759Z
-// Next update: 2026-11-17T06:16:02.759Z
+// Last updated: 2026-11-17T06:09:58.323Z
+// Next update: 2026-11-17T12:09:58.323Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -2927,27 +2927,6 @@ const provider1 = [
             "priceTier": 4
         },
         {
-            "tokenPricing": [
-                {
-                    "serviceTier": "standard",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.0000072
-                }
-            ],
-            "maxTokens": null,
-            "name": "bedrock/us-gov-east-1/claude-sonnet-4-5-20250929-v1:0",
-            "type": "chat",
-            "inputCost": 0.0000036,
-            "inputCostUnit": "token",
-            "outputCost": 0.000018,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.6e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000045,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
-        },
-        {
             "maxTokens": null,
             "name": "bedrock/us-gov-east-1/meta.llama3-70b-instruct-v1:0",
             "type": "chat",
@@ -3156,27 +3135,6 @@ const provider1 = [
             ],
             "maxTokens": null,
             "name": "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0",
-            "type": "chat",
-            "inputCost": 0.0000036,
-            "inputCostUnit": "token",
-            "outputCost": 0.000018,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 3.6e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000045,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 4
-        },
-        {
-            "tokenPricing": [
-                {
-                    "serviceTier": "standard",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.0000072
-                }
-            ],
-            "maxTokens": null,
-            "name": "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0",
             "type": "chat",
             "inputCost": 0.0000036,
             "inputCostUnit": "token",
