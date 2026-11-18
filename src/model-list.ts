@@ -1,5 +1,5 @@
-// Last updated: 2026-11-18T12:08:37.511Z
-// Next update: 2026-11-18T18:08:37.511Z
+// Last updated: 2026-11-18T18:06:40.917Z
+// Next update: 2026-11-19T00:06:40.917Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -6285,55 +6285,570 @@ const provider1 = [
             "priceTier": 5
         },
         {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000048,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 5.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000052,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "tokenPricing": [
                 {
-                    "serviceTier": "standard",
+                    "serviceTier": "flex",
                     "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 0.0000044
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.000001545
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000054075
                 }
             ],
             "maxTokens": null,
-            "name": "bedrock/mantle/anthropic.claude-sonnet-5-5",
+            "name": "bedrock/ap-southeast-2/moonshotai.kimi-k2.5",
             "type": "chat",
-            "inputCost": 0.0000022,
+            "inputCost": 6.2e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.000011,
+            "outputCost": 0.00000309,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.1e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000275,
-            "cacheCreationInputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000046,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000138,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 5.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/meta.llama3-2-1b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/meta.llama3-2-3b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         },
         {
             "tokenPricing": [
                 {
-                    "serviceTier": "standard",
+                    "serviceTier": "flex",
                     "aboveInputTokens": 0,
-                    "cacheCreationInputCost1h": 2.2e-7
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
                 },
                 {
-                    "serviceTier": "standard",
-                    "aboveInputTokens": 100000,
-                    "inputCost": 5.5e-7,
-                    "outputCost": 0.00000275,
-                    "cacheCreationInputCost": 6.875e-7,
-                    "cacheCreationInputCost1h": 0.0000011,
-                    "cacheReadInputCost": 5.5e-8
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
                 }
             ],
             "maxTokens": null,
-            "name": "bedrock/mantle/anthropic.claude-haiku-5-5",
+            "name": "bedrock/eu-south-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.meta.llama3-2-1b-instruct-v1:0",
             "type": "chat",
             "inputCost": 1.1e-7,
             "inputCostUnit": "token",
-            "outputCost": 5.5e-7,
+            "outputCost": 1.1e-7,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 1.1e-8,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 1.375e-7,
-            "cacheCreationInputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.meta.llama3-2-3b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/meta.llama3-2-1b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/meta.llama3-2-3b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000043,
+            "inputCostUnit": "token",
+            "outputCost": 0.000013,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 4.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000052,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000156,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.65e-7,
+                    "outputCost": 0.000002325
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000016275,
+                    "outputCost": 0.0000081375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 9.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000465,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/eu.meta.llama3-2-3b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/meta.llama3-2-1b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 1.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/meta.llama3-2-3b-instruct-v1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.mistral-7b-instruct-v0:2",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.mistral-large-2402-v1:0",
+            "type": "chat",
+            "inputCost": 0.0000067,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000202,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.mixtral-8x7b-instruct-v0:1",
+            "type": "chat",
+            "inputCost": 7.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000118,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5.5e-7,
+                    "cacheReadInputCost": 4.4e-8,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000198
+                }
+            ],
+            "maxTokens": null,
+            "name": "in.openai.gpt-5.6-luna",
+            "type": "responses",
+            "inputCost": 2.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.75e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000055,
+                    "cacheReadInputCost": 4.4e-7,
+                    "inputCost": 0.0000044,
+                    "outputCost": 0.0000198
+                }
+            ],
+            "maxTokens": null,
+            "name": "in.openai.gpt-5.6-terra",
+            "type": "responses",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000132,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -10575,6 +11090,30 @@ const provider2 = [
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 272000,
+                    "inputCost": 0.00000528,
+                    "cacheCreationInputCost": 0.0000066,
+                    "cacheReadInputCost": 5.28e-7,
+                    "outputCost": 0.00002376
+                }
+            ],
+            "maxTokens": null,
+            "name": "us-gov.openai.gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.64e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000033,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
                     "inputCost": 0.000004,
                     "cacheCreationInputCost": 0.000005,
                     "cacheReadInputCost": 4e-7,
@@ -10623,6 +11162,30 @@ const provider2 = [
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 272000,
+                    "inputCost": 5.28e-7,
+                    "cacheCreationInputCost": 6.6e-7,
+                    "cacheReadInputCost": 5.28e-8,
+                    "outputCost": 0.000002376
+                }
+            ],
+            "maxTokens": null,
+            "name": "us-gov.openai.gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2.64e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.64e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.3e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
                     "inputCost": 0.0000055,
                     "cacheReadInputCost": 5.5e-7,
                     "outputCost": 0.00002475
@@ -10636,6 +11199,20 @@ const provider2 = [
             "outputCost": 0.0000165,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "us-gov.openai.gpt-5.4",
+            "type": "chat",
+            "inputCost": 0.0000033,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000198,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.3e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -12846,6 +13423,8118 @@ const provider2 = [
             "cacheReadInputCost": 1e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.0000052675
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-east-2/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000301,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.7325e-7,
+                    "inputCost": 6.93e-7,
+                    "outputCost": 0.00000579425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.96e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003311,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.9e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.68e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.05e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 4.8e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.2e-7,
+                    "inputCost": 0.00000168,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.2e-7,
+                    "inputCost": 4.8e-7,
+                    "outputCost": 0.00000192
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/deepseek.v3-v1:0",
+            "type": "chat",
+            "inputCost": 7.01666e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002032411,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.0000052675
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000301,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.9e-7,
+                    "outputCost": 8.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000145,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000128,
+                    "outputCost": 0.0000053
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/moonshot.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000303,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.35e-7,
+                    "outputCost": 5.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000106,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/qwen.qwen3-coder-480b-a35b-v1:0",
+            "type": "chat",
+            "inputCost": 5.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000218,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.00000564
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000322,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.775e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.64e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.025e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1875e-7,
+                    "inputCost": 4.75e-7,
+                    "outputCost": 0.0000019
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.15625e-7,
+                    "inputCost": 0.0000016625,
+                    "outputCost": 0.00000665
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000038,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.375e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.775e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1875e-7,
+                    "inputCost": 4.75e-7,
+                    "outputCost": 0.0000019
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000038,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.375e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000518
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-northeast-2/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000296,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.775e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.64e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.025e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.175e-7,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 0.00000188
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.1125e-7,
+                    "inputCost": 0.000001645,
+                    "outputCost": 0.00000658
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000376,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.35e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.775e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.175e-7,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 0.00000188
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000376,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.35e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/deepseek.v3-v1:0",
+            "type": "chat",
+            "inputCost": 6.82424e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001976678,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.125e-7,
+                    "outputCost": 0.0000051625
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000295,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000124,
+                    "outputCost": 0.00000515
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/moonshot.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000294,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000124
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.125e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000124
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.3e-7,
+                    "outputCost": 5.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000104,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/qwen.qwen3-coder-480b-a35b-v1:0",
+            "type": "chat",
+            "inputCost": 5.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000212,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000548
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000313,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-south-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 8.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.24e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.025e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.175e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.00000216
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.725e-7,
+                    "inputCost": 0.00000189,
+                    "outputCost": 0.00000756
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000108,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000432,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.7e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 8.1e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.24e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.025e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.35e-7,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.00000216
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000108,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000432,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.7e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.175e-7,
+                    "outputCost": 0.0000059325
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000339,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.3e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.52e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.575e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.48e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.25e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.05e-7,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000168
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.675e-7,
+                    "inputCost": 0.00000147,
+                    "outputCost": 0.00000588
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000336,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 9.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.0000033425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000191,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6e-7,
+                    "outputCost": 0.0000046025
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000263,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.425e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000124,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.05e-7,
+                    "outputCost": 0.00000103
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.175e-7,
+                    "outputCost": 0.000003605
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000206,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.35e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.0000011725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.1e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 5.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000124,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.000001135
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000039725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000227,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2.05e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 7.175e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-7,
+                    "outputCost": 0.00000165
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018025,
+                    "outputCost": 0.000005775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-2/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.00000103,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/deepseek.v3-v1:0",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000174,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6e-7,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.425e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.55e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/qwen.qwen3-coder-480b-a35b-v1:0",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000187,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-3/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-4/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.625e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.0875e-7,
+                    "inputCost": 4.35e-7,
+                    "outputCost": 0.00000174
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.80625e-7,
+                    "inputCost": 0.0000015225,
+                    "outputCost": 0.00000609
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-4/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000348,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.175e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.0875e-7,
+                    "inputCost": 4.35e-7,
+                    "outputCost": 0.00000174
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-4/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000348,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.175e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000047425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-4/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000271,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-5/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.175e-7,
+                    "outputCost": 0.0000059325
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-5/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000339,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6e-7,
+                    "outputCost": 0.0000046025
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-6/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000263,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-7/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.175e-7,
+                    "outputCost": 0.0000059325
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ap-southeast-7/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000339,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.54e-7,
+                    "inputCost": 6.16e-7,
+                    "outputCost": 0.0000051975
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.52e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000297,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.6e-7,
+                    "outputCost": 0.0000046725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ca-central-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000267,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.63625e-7,
+                    "inputCost": 6.545e-7,
+                    "outputCost": 0.00000540925
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ca-west-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.74e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003091,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.35e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.95e-7,
+                    "outputCost": 0.0000049175
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/ca-west-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000281,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.87688e-7,
+                    "inputCost": 7.5075e-7,
+                    "outputCost": 0.00000629475
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.29e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003597,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0725e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.12e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.95e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.15e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.3125e-7,
+                    "inputCost": 5.25e-7,
+                    "outputCost": 0.0000021
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.59375e-7,
+                    "inputCost": 0.0000018375,
+                    "outputCost": 0.00000735
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000105,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000042,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.625e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.825e-7,
+                    "outputCost": 0.0000057225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000327,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.575e-7,
+                    "outputCost": 7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.45e-7,
+                    "outputCost": 5.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000116,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-central-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.58813e-7,
+                    "inputCost": 6.3525e-7,
+                    "outputCost": 0.000005236
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.63e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002992,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.075e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.625e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.52e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.0875e-7,
+                    "inputCost": 4.35e-7,
+                    "outputCost": 0.00000174
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.80625e-7,
+                    "inputCost": 0.0000015225,
+                    "outputCost": 0.00000609
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000348,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.175e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.63e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002992,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.075e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.625e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.52e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.0875e-7,
+                    "inputCost": 4.35e-7,
+                    "outputCost": 0.00000174
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000348,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.175e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.00000476
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000272,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-north-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.31e-7,
+                    "inputCost": 9.24e-7,
+                    "outputCost": 0.00000771925
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 5.28e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004411,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.32e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 5.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.24e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 6.4e-7,
+                    "outputCost": 0.000002605
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.6e-7,
+                    "inputCost": 0.00000224,
+                    "outputCost": 0.0000091175
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000128,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000521,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 5.28e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004411,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.32e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 9.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.84e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 5.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.24e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.6e-7,
+                    "inputCost": 6.4e-7,
+                    "outputCost": 0.000002605
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000128,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000521,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4175e-7,
+                    "outputCost": 0.000007175
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.81e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000041,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.575e-7,
+                    "outputCost": 7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.45e-7,
+                    "outputCost": 5.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000116,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000546
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000312,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.58813e-7,
+                    "inputCost": 6.3525e-7,
+                    "outputCost": 0.00000560875
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.63e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003205,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.075e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.64e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.65e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000176
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.85e-7,
+                    "inputCost": 0.00000154,
+                    "outputCost": 0.00000616
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000352,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.63e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003205,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.075e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.64e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.65e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.1e-7,
+                    "inputCost": 4.4e-7,
+                    "outputCost": 0.00000176
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000352,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-south-2/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.63625e-7,
+                    "inputCost": 6.545e-7,
+                    "outputCost": 0.00000552475
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.74e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003157,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.35e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.725e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.15e-7,
+                    "inputCost": 4.6e-7,
+                    "outputCost": 0.00000184
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.025e-7,
+                    "inputCost": 0.00000161,
+                    "outputCost": 0.00000644
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000368,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.74e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003157,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9.35e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.725e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.15e-7,
+                    "inputCost": 4.6e-7,
+                    "outputCost": 0.00000184
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 9.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000368,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.95e-7,
+                    "outputCost": 0.0000050225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000287,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.125e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000546
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000312,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 8.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.36e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.96e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.65e-7,
+                    "outputCost": 0.00000226
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000019775,
+                    "outputCost": 0.00000791
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000113,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000452,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/deepseek.v3-v1:0",
+            "type": "chat",
+            "inputCost": 8.99985e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002606853,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.805e-7,
+                    "outputCost": 0.00000143375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000168175,
+                    "outputCost": 0.000005018125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 9.61e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000028675,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.35e-7,
+                    "outputCost": 0.00000616
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000352,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000103
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.3e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.2e-7,
+                    "outputCost": 0.00000326
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.00000155
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.000005425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000031,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 0.00000117
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000136,
+                    "outputCost": 0.00000408
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 7.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000233,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 5.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 2.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 4.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.00000163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 6.5e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.35e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.925e-7,
+                    "outputCost": 8.225e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 5.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 6.85e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/qwen.qwen3-235b-a22b-2507-v1:0",
+            "type": "chat",
+            "inputCost": 3.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000137,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/qwen.qwen3-coder-480b-a35b-v1:0",
+            "type": "chat",
+            "inputCost": 7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000279,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000144,
+                    "outputCost": 0.00000721
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 8.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000412,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.65e-7,
+                    "outputCost": 0.000001705
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000016275,
+                    "outputCost": 0.0000059675
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 9.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000341,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.925e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.75e-7,
+                    "outputCost": 0.00000248
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027125,
+                    "outputCost": 0.00000868
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-2/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.00000155,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000496,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.1175e-7,
+                    "inputCost": 8.47e-7,
+                    "outputCost": 0.00000710325
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.84e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004059,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.21e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 8.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.52e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 5.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.08e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.475e-7,
+                    "inputCost": 5.9e-7,
+                    "outputCost": 0.00000236
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.1625e-7,
+                    "inputCost": 0.000002065,
+                    "outputCost": 0.00000826
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000118,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000472,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.95e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/eu.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.84e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004059,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.21e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/eu.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 8.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.52e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/eu.amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 5.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.08e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.475e-7,
+                    "inputCost": 5.9e-7,
+                    "outputCost": 0.00000236
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/eu.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000118,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000472,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.95e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.7e-7,
+                    "outputCost": 0.0000064575
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/eu-west-3/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000369,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.875e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 4.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4.375e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.000007
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/apac.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.875e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000002
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.65e-7,
+                    "outputCost": 0.0000054775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/il-central-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000313,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/me-central-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/me-central-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/me-central-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/me-central-1/apac.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.9e-7,
+                    "outputCost": 8.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000145,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000128,
+                    "outputCost": 0.0000053
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/moonshot.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000303,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/openai.gpt-oss-120b-1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/openai.gpt-oss-20b-1:0",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/qwen.qwen3-32b-v1:0",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.00000564
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/qwen.qwen3-vl-235b-a22b",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000322,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/sa-east-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.44375e-7,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-east-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.25e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-east-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-east-1/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-east-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.44375e-7,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-east-2/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.25e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-east-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-east-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-east-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.87688e-7,
+                    "inputCost": 7.5075e-7,
+                    "outputCost": 0.00000586425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.29e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003351,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0725e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.08e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-7,
+                    "outputCost": 0.00000206
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018025,
+                    "outputCost": 0.00000721
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000103,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000412,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.825e-7,
+                    "outputCost": 0.0000056175
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/global.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000321,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5.3625e-8,
+                    "inputCost": 2.145e-7,
+                    "outputCost": 0.0000016755
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.87688e-7,
+                    "inputCost": 7.5075e-7,
+                    "outputCost": 0.00000586425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/us.amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 4.29e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003351,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0725e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/us.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 7.7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.08e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-7,
+                    "outputCost": 0.00000206
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018025,
+                    "outputCost": 0.00000721
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-1/us.amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 0.00000103,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000412,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.44375e-7,
+                    "inputCost": 5.775e-7,
+                    "outputCost": 0.0000048125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-2/amazon.nova-2-lite-v1:0",
+            "type": "chat",
+            "inputCost": 3.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.25e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-west-2/amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "bedrock/us-west-2/amazon.nova-micro-v1:0",
+            "type": "chat",
+            "inputCost": 3.5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 8.75e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000016
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000014,
+                    "outputCost": 0.0000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock/us-west-2/amazon.nova-pro-v1:0",
+            "type": "chat",
+            "inputCost": 8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000032,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "ca.amazon.nova-lite-v1:0",
+            "type": "chat",
+            "inputCost": 6.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.6e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2.2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.875e-7,
+                    "cacheCreationInputCost1h": 0.0000011,
+                    "cacheReadInputCost": 5.5e-8,
+                    "inputCost": 5.5e-7,
+                    "outputCost": 0.00000275
+                }
+            ],
+            "maxTokens": null,
+            "name": "ca.anthropic.claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.375e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
+            "maxTokens": null,
+            "name": "ca.anthropic.claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000011
+                }
+            ],
+            "maxTokens": null,
+            "name": "in.anthropic.claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.0000055,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000006875,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000044
+                }
+            ],
+            "maxTokens": null,
+            "name": "in.anthropic.claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.0000022,
+            "inputCostUnit": "token",
+            "outputCost": 0.000011,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }
@@ -18070,6 +26759,20 @@ const provider4 = [
             "priceTier": 4
         },
         {
+            "maxTokens": null,
+            "name": "azure/us-gov/gpt-4o-mini",
+            "type": "chat",
+            "inputCost": 2.07e-7,
+            "inputCostUnit": "token",
+            "outputCost": 8.25e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.04e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "tokenPricing": [
                 {
                     "serviceTier": "standard",
@@ -19657,6 +28360,62 @@ const provider4 = [
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "azure/us-gov/gpt-4-turbo",
+            "type": "chat",
+            "inputCost": 0.0000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "azure/us-gov/gpt-4o-2024-05-13",
+            "type": "chat",
+            "inputCost": 0.00000625,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001875,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "azure/us-gov/gpt-4o-2024-11-20",
+            "type": "chat",
+            "inputCost": 0.000003438,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001719,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "azure/us-gov/o3-mini-2025-01-31",
+            "type": "chat",
+            "inputCost": 0.000001513,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000605,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.57e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
             "priceTier": 3
         }
     ] as const
@@ -27368,11 +36127,11 @@ const provider16 = [
             "maxTokens": null,
             "name": "gpt-6-rosalind",
             "type": "chat",
-            "inputCost": 0.000015,
+            "inputCost": 0.00001,
             "inputCostUnit": "token",
-            "outputCost": 0.000075,
+            "outputCost": 0.00005,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCost": 0.000001,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00001875,
             "cacheCreationInputCostUnit": "token",
@@ -47946,11 +56705,11 @@ const provider53 = [
             "maxTokens": null,
             "name": "mistral/mistral-large-latest",
             "type": "chat",
-            "inputCost": 5e-7,
+            "inputCost": 7e-7,
             "inputCostUnit": "token",
-            "outputCost": 0.0000015,
+            "outputCost": 0.0000021,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCost": 7e-8,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -54925,6 +63684,132 @@ const provider67 = [
 const provider68 = [
         {
             "maxTokens": null,
+            "name": "snowflake/claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.26e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-opus-4-8",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-opus-4-7",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-opus-4-6",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
+            "name": "snowflake/claude-opus-4-5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "maxTokens": null,
             "name": "snowflake/claude-3-5-sonnet",
             "type": "chat",
             "inputCost": 0.000003,
@@ -55898,6 +64783,20 @@ const provider70 = [
         {
             "maxTokens": null,
             "name": "together_ai/thinkingmachines/Inkling",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000405,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.7e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/thinkingmachines/inkling",
             "type": "chat",
             "inputCost": 0.000001,
             "inputCostUnit": "token",
@@ -65332,6 +74231,104 @@ const provider93 = [
             "cacheCreationInputCost": 0,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/sarvam-105b",
+            "type": "chat",
+            "inputCost": 1.063829787e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.659574468e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.659574468e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/sarvam-105b-conversations",
+            "type": "chat",
+            "inputCost": 1.063829787e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.659574468e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.659574468e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/glm5.3",
+            "type": "chat",
+            "inputCost": 0.000001340425532,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000414893617,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.127659574e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/glm5.3-flash",
+            "type": "chat",
+            "inputCost": 1.436170213e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.787234043e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.659574468e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/gemma4",
+            "type": "chat",
+            "inputCost": 3.723404255e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.574468085e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.063829787e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/deepseekv4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 1.489361702e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.85106383e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.659574468e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "sarvam/deepseekv4.1-flash-1017-interactive",
+            "type": "chat",
+            "inputCost": 2.659574468e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001117021277,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5.319148936e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ] as const
 
@@ -66371,6 +75368,54 @@ const provider94 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.00000528,
+                    "cacheCreationInputCost": 0.0000066,
+                    "cacheReadInputCost": 5.28e-7,
+                    "outputCost": 0.00002376
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-east-1/openai.gpt-5.6-terra",
+            "type": "responses",
+            "inputCost": 0.00000264,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.64e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000033,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 5.28e-7,
+                    "cacheCreationInputCost": 6.6e-7,
+                    "cacheReadInputCost": 5.28e-8,
+                    "outputCost": 0.000002376
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-east-1/openai.gpt-5.6-luna",
+            "type": "responses",
+            "inputCost": 2.64e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001584,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.64e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 3.3e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "tokenPricing": [
@@ -68297,6 +77342,9582 @@ const provider94 = [
             "cacheReadInputCost": 2.2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000275,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.50833e-7,
+                    "outputCost": 0.000001016206
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001227916,
+                    "outputCost": 0.000003556719
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 7.01666e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002032411,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.9e-7,
+                    "outputCost": 8.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000145,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000128,
+                    "outputCost": 0.0000053
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000303,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.35e-7,
+                    "outputCost": 5.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.725e-7,
+                    "outputCost": 0.000001855
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000106,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.00000109
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.45e-7,
+                    "outputCost": 0.000003815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 5.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000218,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000161
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.00000564
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000322,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-northeast-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.41212e-7,
+                    "outputCost": 9.88339e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001194242,
+                    "outputCost": 0.000003459187
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 6.82424e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001976678,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000147
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000124,
+                    "outputCost": 0.00000515
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000294,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000124
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.125e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000124
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.3e-7,
+                    "outputCost": 5.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.55e-7,
+                    "outputCost": 0.00000182
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000104,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.65e-7,
+                    "outputCost": 0.00000106
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.275e-7,
+                    "outputCost": 0.00000371
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 5.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000212,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.00000156
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000548
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000313,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-south-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.987e-7,
+                    "outputCost": 8.652e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000104545,
+                    "outputCost": 0.0000030282
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 5.974e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000017304,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 9.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.0000033425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000191,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.635e-8,
+                    "outputCost": 1.4935e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.62225e-7,
+                    "outputCost": 5.22725e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 9.27e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.987e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1845e-7,
+                    "outputCost": 1.957e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.14575e-7,
+                    "outputCost": 6.8495e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.369e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.914e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 4.12e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.21e-8,
+                    "outputCost": 1.442e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4.12e-8,
+            "inputCostUnit": "token",
+            "outputCost": 8.24e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.545e-7,
+                    "outputCost": 6.18e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4075e-7,
+                    "outputCost": 0.000002163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.09e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001236,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.425e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000124,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.55e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.425e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000124,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.05e-7,
+                    "outputCost": 0.00000103
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.175e-7,
+                    "outputCost": 0.000003605
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000206,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.575e-7,
+                    "outputCost": 7.725e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.0125e-7,
+                    "outputCost": 0.00000270375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.15e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001545,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.03e-7,
+                    "outputCost": 1.03e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.605e-7,
+                    "outputCost": 3.605e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.06e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.06e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 5.15e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8025e-7,
+                    "outputCost": 1.8025e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.03e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.03e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.725e-8,
+                    "outputCost": 7.725e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.70375e-7,
+                    "outputCost": 2.70375e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.545e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.545e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.575e-7,
+                    "outputCost": 7.725e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.0125e-7,
+                    "outputCost": 0.00000270375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 5.15e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001545,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.06e-8,
+                    "outputCost": 2.06e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.21e-8,
+                    "outputCost": 7.21e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4.12e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.12e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8025e-7,
+                    "outputCost": 5.4075e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.03e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.09e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.09e-7,
+                    "outputCost": 0.0000012875
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000010815,
+                    "outputCost": 0.00000450625
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 6.18e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002575,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.000001545
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000054075
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000309,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.03e-7,
+                    "outputCost": 3.09e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.605e-7,
+                    "outputCost": 0.0000010815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.06e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.18e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.09e-8,
+                    "outputCost": 1.236e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.0815e-7,
+                    "outputCost": 4.326e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 6.18e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.472e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.09e-8,
+                    "outputCost": 1.1845e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.0815e-7,
+                    "outputCost": 4.14575e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 6.18e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.369e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.35e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.0000011725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.725e-8,
+                    "outputCost": 3.09e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.70375e-7,
+                    "outputCost": 0.0000010815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.545e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.18e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.605e-8,
+                    "outputCost": 1.545e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26175e-7,
+                    "outputCost": 5.4075e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7.21e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.09e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.725e-8,
+                    "outputCost": 3.09e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.70375e-7,
+                    "outputCost": 0.0000010815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.545e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.18e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.605e-8,
+                    "outputCost": 1.03e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26175e-7,
+                    "outputCost": 3.605e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 7.21e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.06e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.133e-7,
+                    "outputCost": 4.532e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9655e-7,
+                    "outputCost": 0.0000015862
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.266e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.064e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.725e-8,
+                    "outputCost": 3.09e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.70375e-7,
+                    "outputCost": 0.0000010815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.545e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.18e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.725e-8,
+                    "outputCost": 3.09e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.70375e-7,
+                    "outputCost": 0.0000010815
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.545e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.18e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.3175e-7,
+                    "outputCost": 9.27e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.11125e-7,
+                    "outputCost": 0.0000032445
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 4.635e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001854,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.6e-7,
+                    "outputCost": 6.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.1e-7,
+                    "outputCost": 0.00000217
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 5.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000124,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.21e-8,
+                    "outputCost": 6.18e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.5235e-7,
+                    "outputCost": 0.000002163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.442e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001236,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.7295e-7,
+                    "outputCost": 0.0000013699
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.55325e-7,
+                    "outputCost": 0.00000479465
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 5.459e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000027398,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.5e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.625e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.000001135
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.0000039725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000227,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 2.05e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 7.175e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.15e-7,
+                    "outputCost": 0.00000165
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000018025,
+                    "outputCost": 0.000005775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-2/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.00000103,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000033,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.000003045
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000174,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-8,
+                    "outputCost": 1.74e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.89e-7,
+                    "outputCost": 6.09e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.08e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.48e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.38e-7,
+                    "outputCost": 2.28e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.83e-7,
+                    "outputCost": 7.98e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.76e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 1.68e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9.6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000315
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 3.15e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 2.4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 8.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000525
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.38e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 4.83e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-8,
+                    "outputCost": 1.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.225e-7,
+                    "outputCost": 5.425e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.55e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000015925
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.35e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.225e-7,
+                    "outputCost": 0.0000032725
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000187,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.94e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.18e-7,
+                    "outputCost": 0.000001596
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001113,
+                    "outputCost": 0.000005586
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.36e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003192,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/ap-southeast-3/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-8,
+                    "outputCost": 1.74e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.89e-7,
+                    "outputCost": 6.09e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.08e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.48e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.38e-7,
+                    "outputCost": 2.28e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.83e-7,
+                    "outputCost": 7.98e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.76e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 1.68e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9.6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.8e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.73e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-4-26b-a4b",
+            "type": "chat",
+            "inputCost": 1.56e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.94e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-4-31b",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 1.68e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/google.gemma-4-e2b",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9.6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000315
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 3.15e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 2.4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 8.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.38e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 4.83e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.575e-7,
+                    "outputCost": 7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.45e-7,
+                    "outputCost": 5.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.075e-7,
+                    "outputCost": 0.00000203
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000116,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.94e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.18e-7,
+                    "outputCost": 0.000001596
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001113,
+                    "outputCost": 0.000005586
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.36e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003192,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-central-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-8,
+                    "outputCost": 1.74e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.89e-7,
+                    "outputCost": 6.09e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.08e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.48e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.38e-7,
+                    "outputCost": 2.28e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.83e-7,
+                    "outputCost": 7.98e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.76e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.56e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 4.8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 1.68e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9.6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000315
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 3.15e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-8,
+                    "outputCost": 2.4e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 8.4e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 4.8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000525
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.44e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 5.04e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.88e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-8,
+                    "outputCost": 1.38e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.26e-7,
+                    "outputCost": 4.83e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7.2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.76e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.47e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8.4e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.94e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.18e-7,
+                    "outputCost": 0.000001596
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001113,
+                    "outputCost": 0.000005586
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.36e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003192,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-north-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.575e-7,
+                    "outputCost": 7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.45e-7,
+                    "outputCost": 5.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.075e-7,
+                    "outputCost": 0.00000203
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000116,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.95e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.0000013825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.00000156
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000546
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000312,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-south-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.7e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.6e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 9e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.1e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000141,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 8.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000103,
+                    "outputCost": 0.00000308
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 5.9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000176,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.125e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000122
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.28e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.62e-7,
+                    "outputCost": 0.000001848
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.64e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001056,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001225
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000247
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.00000156
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000109,
+                    "outputCost": 0.00000546
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000312,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.49993e-7,
+                    "outputCost": 0.000001303427
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001574974,
+                    "outputCost": 0.000004561993
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 8.99985e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002606853,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.805e-7,
+                    "outputCost": 0.00000143375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000168175,
+                    "outputCost": 0.000005018125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 9.61e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000028675,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7e-8,
+                    "outputCost": 2.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 7.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000103
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.3e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.2e-7,
+                    "outputCost": 0.00000326
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.225e-7,
+                    "outputCost": 0.000003255
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.35e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.225e-7,
+                    "outputCost": 0.000003255
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 4.7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.1e-7,
+                    "outputCost": 0.00000155
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001085,
+                    "outputCost": 0.000005425
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 6.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000031,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 0.00000117
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000136,
+                    "outputCost": 0.00000408
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 7.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000233,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 5.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 8e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 2.8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.1e-7,
+                    "outputCost": 1.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 6e-8,
+            "inputCostUnit": "token",
+            "outputCost": 6e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8e-8,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.8e-7,
+                    "outputCost": 8.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.65e-7,
+                    "outputCost": 0.0000019375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000016275,
+                    "outputCost": 0.00000678125
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 9.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003875,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.65e-7,
+                    "outputCost": 0.000002325
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000016275,
+                    "outputCost": 0.0000081375
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 9.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000465,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.5e-7,
+                    "outputCost": 4.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.4e-7,
+                    "outputCost": 0.00000163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 3.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 6.5e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.6e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 5.05e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000017675
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000101,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 2.35e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.925e-7,
+                    "outputCost": 8.225e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.7e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000163
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 5.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.7e-7,
+                    "outputCost": 6.85e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.95e-7,
+                    "outputCost": 0.0000023975
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 3.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000137,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.5e-7,
+                    "outputCost": 0.000001395
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001225,
+                    "outputCost": 0.0000048825
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 7e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000279,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.9e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001365,
+                    "outputCost": 0.000003255
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 7.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 9.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.00000326
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 2.17e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000186,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.1e-7,
+                    "outputCost": 0.00000206
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000144,
+                    "outputCost": 0.00000721
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 8.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000412,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.15e-7,
+                    "outputCost": 4.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.025e-7,
+                    "outputCost": 0.0000016275
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 2.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 9.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.65e-7,
+                    "outputCost": 0.000001705
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000016275,
+                    "outputCost": 0.0000059675
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 9.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000341,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 5.5e-8,
+                    "outputCost": 3.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.925e-7,
+                    "outputCost": 0.000001085
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 7.75e-7,
+                    "outputCost": 0.00000248
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000027125,
+                    "outputCost": 0.00000868
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/eu-west-2/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.00000155,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000496,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.48e-7,
+                    "outputCost": 0.000001008
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001218,
+                    "outputCost": 0.000003528
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/deepseek.v3.1",
+            "type": "chat",
+            "inputCost": 6.96e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002016,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.7e-7,
+                    "outputCost": 0.00000111
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.000001295,
+                    "outputCost": 0.000003885
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/deepseek.v3.2",
+            "type": "chat",
+            "inputCost": 7.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000222,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.7e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.9e-7,
+                    "outputCost": 6.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/google.gemma-3-12b-it",
+            "type": "chat",
+            "inputCost": 1.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 2.3e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.9e-7,
+                    "outputCost": 8.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/google.gemma-3-27b-it",
+            "type": "chat",
+            "inputCost": 2.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 4.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 5e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 1.7e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/google.gemma-3-4b-it",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/minimax.minimax-m2",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000145,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/minimax.minimax-m2.1",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.8e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6.3e-7,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/minimax.minimax-m2.5",
+            "type": "chat",
+            "inputCost": 3.6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.4e-7,
+                    "outputCost": 0.0000012
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 8.4e-7,
+                    "outputCost": 0.0000042
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.devstral-2-123b",
+            "type": "chat",
+            "inputCost": 4.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000024,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.magistral-small-2509",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.ministral-3-14b-instruct",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 6e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 2.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.ministral-3-3b-instruct",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 3.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.ministral-3-8b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 9.1e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000107,
+                    "outputCost": 0.00000318
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.mistral-large-3-675b-instruct",
+            "type": "chat",
+            "inputCost": 6.1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000182,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 3e-8
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 9e-8
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.voxtral-mini-3b-2507",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 5e-8,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.1e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/mistral.voxtral-small-24b-2507",
+            "type": "chat",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000152
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000128,
+                    "outputCost": 0.0000053
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/moonshotai.kimi-k2-thinking",
+            "type": "chat",
+            "inputCost": 7.3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000303,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.0000018
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.0000063
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/moonshotai.kimi-k2.5",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000036,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/nvidia.nemotron-nano-12b-v2",
+            "type": "chat",
+            "inputCost": 2.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.5e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 5.1e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/nvidia.nemotron-nano-3-30b",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.9e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-8,
+                    "outputCost": 1.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.2e-7,
+                    "outputCost": 4.9e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/nvidia.nemotron-nano-9b-v2",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.000001365
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/nvidia.nemotron-super-3-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/openai.gpt-oss-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.8e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 6.3e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/openai.gpt-oss-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.6e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000128
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/openai.gpt-oss-safeguard-120b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 1.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 4.2e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/openai.gpt-oss-safeguard-20b",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.32e-7,
+                    "outputCost": 5.28e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4.62e-7,
+                    "outputCost": 0.000001848
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-235b-a22b-2507",
+            "type": "chat",
+            "inputCost": 2.64e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001056,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-32b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.65e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.0000012775
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.3e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 2.7e-7,
+                    "outputCost": 0.00000108
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9.45e-7,
+                    "outputCost": 0.00000378
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-coder-480b-a35b-instruct",
+            "type": "chat",
+            "inputCost": 5.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000216,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3e-7,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000105,
+                    "outputCost": 0.00000252
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-coder-next",
+            "type": "chat",
+            "inputCost": 6e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 7.2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000254
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-next-80b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 1.68e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000144,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.2e-7,
+                    "outputCost": 0.00000161
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000112,
+                    "outputCost": 0.00000564
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/qwen.qwen3-vl-235b-a22b-instruct",
+            "type": "chat",
+            "inputCost": 6.4e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000322,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 9e-8,
+                    "outputCost": 3.6e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.15e-7,
+                    "outputCost": 0.00000126
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/writer.palmyra-vision-7b",
+            "type": "chat",
+            "inputCost": 1.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.2e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 3.6e-7,
+                    "outputCost": 0.00000132
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.00000126,
+                    "outputCost": 0.00000462
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/zai.glm-4.7",
+            "type": "chat",
+            "inputCost": 7.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000264,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 4e-8,
+                    "outputCost": 2.4e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 1.4e-7,
+                    "outputCost": 8.4e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/zai.glm-4.7-flash",
+            "type": "chat",
+            "inputCost": 8e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "inputCost": 6e-7,
+                    "outputCost": 0.00000192
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "inputCost": 0.0000021,
+                    "outputCost": 0.00000672
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/sa-east-1/zai.glm-5",
+            "type": "chat",
+            "inputCost": 0.0000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000384,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000024
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-fable-5-1",
+            "type": "chat",
+            "inputCost": 0.000012,
+            "inputCostUnit": "token",
+            "outputCost": 0.00006,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000015,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-4-8",
+            "type": "chat",
+            "inputCost": 0.000006,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000075,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.000006,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000075,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.0000048
+                }
+            ],
+            "maxTokens": null,
+            "name": "bedrock_mantle/us-gov-west-1/anthropic.claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.0000024,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }
