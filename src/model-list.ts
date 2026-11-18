@@ -1,7 +1,7 @@
-// Last updated: 2026-11-18T00:16:04.606Z
-// Next update: 2026-11-18T06:16:04.606Z
+// Last updated: 2026-11-18T06:09:54.716Z
+// Next update: 2026-11-18T12:09:54.716Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -42745,6 +42745,54 @@ const provider32 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                }
+            ],
+            "maxTokens": null,
+            "name": "github_copilot/gpt-6.2-astra",
+            "type": "responses",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "github_copilot/gpt-6.2-sol",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ] as const
 
@@ -53949,6 +53997,659 @@ const provider63 = [
 const provider64 = [
         {
             "maxTokens": null,
+            "name": "nvidia_nim/01-ai/yi-large",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/aisingapore/sea-lion-7b-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/bigcode/starcoder2-15b",
+            "type": "completion",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/databricks/dbrx-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/deepseek-ai/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/google/codegemma-7b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/google/diffusiongemma-26b-a4b-it",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/google/gemma-2b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/google/gemma-4-31b-it",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/google/recurrentgemma-2b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/ibm/granite-34b-code-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/ibm/granite-8b-code-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/meta/codellama-70b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/meta/llama-3.2-90b-vision-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/meta/llama-guard-4-12b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/meta/llama2-70b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/meta/muse-glimmer-30b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/minimaxai/minimax-m3.1-flash",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/mistralai/mistral-large-4-1t-a52b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nv-mistralai/mistral-nemo-12b-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/cosmos-reason2-8b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/embed-qa-4",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/ising-calibration-1.5-31b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/llama-nemotron-embed-vl-1b-v2",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/mistral-nemo-minitron-8b-8k-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3-embed-1b",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3-super-120b-a12b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3-ultra-550b-a55b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3.5-bolt-e4b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3.5-content-safety",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3.5-lightning-30b-a3b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-3.5-super-vl-120b-a12b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-4-340b-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-4-340b-reward",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-parse",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nemotron-parse-2.0",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nv-embedqa-mistral-7b-v2",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/nvclip",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/riva-translate-4b-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/nvidia/riva-translate-4b-instruct-v2",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/openai/gpt-oss-20b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/poolside/laguna-xs-2.1",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/snowflake/arctic-embed-l",
+            "type": "embedding",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/stepfun-ai/step-5-preview",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/writer/palmyra-creative-122b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/writer/palmyra-fin-70b-32k",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/writer/palmyra-med-70b",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/writer/palmyra-med-70b-32k",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
+            "name": "nvidia_nim/zyphra/zamba2-7b-instruct",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        }
+    ] as const
+
+const provider65 = [
+        {
+            "maxTokens": null,
             "name": "sagemaker/meta-textgeneration-llama-2-13b",
             "type": "completion",
             "inputCost": 0,
@@ -54033,7 +54734,7 @@ const provider64 = [
         }
     ] as const
 
-const provider65 = [
+const provider66 = [
         {
             "maxTokens": null,
             "name": "sambanova/MiniMax-M2.7",
@@ -54148,7 +54849,7 @@ const provider65 = [
         }
     ] as const
 
-const provider66 = [
+const provider67 = [
         {
             "maxTokens": null,
             "name": "scx-ai/DeepSeek-V4.1-flash",
@@ -54221,7 +54922,7 @@ const provider66 = [
         }
     ] as const
 
-const provider67 = [
+const provider68 = [
         {
             "maxTokens": null,
             "name": "snowflake/claude-3-5-sonnet",
@@ -54729,7 +55430,7 @@ const provider67 = [
         }
     ] as const
 
-const provider68 = [
+const provider69 = [
         {
             "maxTokens": null,
             "name": "text-completion-codestral/codestral-2405",
@@ -54760,7 +55461,7 @@ const provider68 = [
         }
     ] as const
 
-const provider69 = [
+const provider70 = [
         {
             "maxTokens": null,
             "name": "together-ai-21.1b-41b",
@@ -55924,7 +56625,7 @@ const provider69 = [
         }
     ] as const
 
-const provider70 = [
+const provider71 = [
         {
             "maxTokens": null,
             "name": "v0/v0-1.0-md",
@@ -55969,7 +56670,7 @@ const provider70 = [
         }
     ] as const
 
-const provider71 = [
+const provider72 = [
         {
             "maxTokens": null,
             "name": "vispark/vision-small",
@@ -56014,7 +56715,7 @@ const provider71 = [
         }
     ] as const
 
-const provider72 = [
+const provider73 = [
         {
             "maxTokens": null,
             "name": "vercel_ai_gateway/alibaba/qwen-3-14b",
@@ -57415,7 +58116,7 @@ const provider72 = [
         }
     ] as const
 
-const provider73 = [
+const provider74 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/claude-3-5-haiku",
@@ -58498,7 +59199,7 @@ const provider73 = [
         }
     ] as const
 
-const provider74 = [
+const provider75 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/mistralai/codestral-2@001",
@@ -58767,7 +59468,7 @@ const provider74 = [
         }
     ] as const
 
-const provider75 = [
+const provider76 = [
         {
             "tokenPricing": [
                 {
@@ -58850,7 +59551,7 @@ const provider75 = [
         }
     ] as const
 
-const provider76 = [
+const provider77 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/jamba-1.5",
@@ -58923,7 +59624,7 @@ const provider76 = [
         }
     ] as const
 
-const provider77 = [
+const provider78 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/meta/llama-3.1-405b-instruct-maas",
@@ -59134,7 +59835,7 @@ const provider77 = [
         }
     ] as const
 
-const provider78 = [
+const provider79 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/minimaxai/minimax-m2-maas",
@@ -59151,7 +59852,7 @@ const provider78 = [
         }
     ] as const
 
-const provider79 = [
+const provider80 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/moonshotai/kimi-k2-thinking-maas",
@@ -59168,7 +59869,7 @@ const provider79 = [
         }
     ] as const
 
-const provider80 = [
+const provider81 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/zai-org/glm-4.7-maas",
@@ -59213,7 +59914,7 @@ const provider80 = [
         }
     ] as const
 
-const provider81 = [
+const provider82 = [
         {
             "maxTokens": null,
             "name": "vertex_ai/google/gemma-4-26b-a4b-it-maas",
@@ -59274,7 +59975,7 @@ const provider81 = [
         }
     ] as const
 
-const provider82 = [
+const provider83 = [
         {
             "tokenPricing": [
                 {
@@ -59349,7 +60050,7 @@ const provider82 = [
         }
     ] as const
 
-const provider83 = [
+const provider84 = [
         {
             "maxTokens": null,
             "name": "voyage/voyage-2",
@@ -59674,7 +60375,7 @@ const provider83 = [
         }
     ] as const
 
-const provider84 = [
+const provider85 = [
         {
             "maxTokens": null,
             "name": "wandb/openai/gpt-oss-120b",
@@ -60153,7 +60854,7 @@ const provider84 = [
         }
     ] as const
 
-const provider85 = [
+const provider86 = [
         {
             "maxTokens": null,
             "name": "watsonx/ibm/granite-3-8b-instruct",
@@ -60576,7 +61277,7 @@ const provider85 = [
         }
     ] as const
 
-const provider86 = [
+const provider87 = [
         {
             "tokenPricing": [
                 {
@@ -61893,7 +62594,7 @@ const provider86 = [
         }
     ] as const
 
-const provider87 = [
+const provider88 = [
         {
             "maxTokens": null,
             "name": "zai/glm-5",
@@ -62134,7 +62835,7 @@ const provider87 = [
         }
     ] as const
 
-const provider88 = [
+const provider89 = [
         {
             "maxTokens": null,
             "name": "scaleway/qwen/qwen3.5-397b-a17b",
@@ -62333,7 +63034,7 @@ const provider88 = [
         }
     ] as const
 
-const provider89 = [
+const provider90 = [
         {
             "maxTokens": null,
             "name": "novita/deepseek/deepseek-v3.2",
@@ -64198,7 +64899,7 @@ const provider89 = [
         }
     ] as const
 
-const provider90 = [
+const provider91 = [
         {
             "maxTokens": null,
             "name": "llamagate/llama-3.1-8b",
@@ -64425,7 +65126,7 @@ const provider90 = [
         }
     ] as const
 
-const provider91 = [
+const provider92 = [
         {
             "maxTokens": null,
             "name": "libertai/hermes-3-8b-tee",
@@ -64596,7 +65297,7 @@ const provider91 = [
         }
     ] as const
 
-const provider92 = [
+const provider93 = [
         {
             "tokenPricing": [
                 {
@@ -64620,7 +65321,7 @@ const provider92 = [
         }
     ] as const
 
-const provider93 = [
+const provider94 = [
         {
             "tokenPricing": [
                 {
@@ -67034,6 +67735,22 @@ const provider93 = [
                     "cacheReadInputCost": 8.8e-7,
                     "inputCost": 0.0000176,
                     "outputCost": 0.000066
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000033,
+                    "cacheReadInputCost": 0.00000132,
+                    "inputCost": 0.0000264,
+                    "outputCost": 0.000132
+                },
+                {
+                    "serviceTier": "ultrafast",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000066,
+                    "cacheReadInputCost": 0.00000264,
+                    "inputCost": 0.0000528,
+                    "outputCost": 0.000198
                 }
             ],
             "maxTokens": null,
@@ -67571,7 +68288,7 @@ const provider93 = [
         }
     ] as const
 
-const provider94 = [
+const provider95 = [
         {
             "maxTokens": null,
             "name": "tensormesh/Qwen/Qwen3.5-397B-A17B-FP8",
@@ -67714,7 +68431,7 @@ const provider94 = [
         }
     ] as const
 
-const provider95 = [
+const provider96 = [
         {
             "maxTokens": null,
             "name": "streamlake/deepseek-v4-flash-0731",
@@ -68090,7 +68807,7 @@ const provider95 = [
         }
     ] as const
 
-const provider96 = [
+const provider97 = [
         {
             "maxTokens": null,
             "name": "tencent/deepseek-v4-pro",
@@ -68303,7 +69020,7 @@ const provider96 = [
         }
     ] as const
 
-const provider97 = [
+const provider98 = [
         {
             "maxTokens": null,
             "name": "cognition/swe-1.6",
@@ -68348,7 +69065,7 @@ const provider97 = [
         }
     ] as const
 
-const provider98 = [
+const provider99 = [
         {
             "maxTokens": null,
             "name": "pinstripes/ps/glm-4.5-air",
@@ -68435,7 +69152,7 @@ const provider98 = [
         }
     ] as const
 
-const provider99 = [
+const provider100 = [
         {
             "maxTokens": null,
             "name": "darkbloom/gemma-4-26b",
@@ -68466,7 +69183,7 @@ const provider99 = [
         }
     ] as const
 
-const provider100 = [
+const provider101 = [
         {
             "maxTokens": null,
             "name": "zerogpu/deepseek-v4.1-flash",
@@ -68651,7 +69368,7 @@ const provider100 = [
         }
     ] as const
 
-const provider101 = [
+const provider102 = [
         {
             "maxTokens": null,
             "name": "aihubmix/agnes-2.5-flash",
@@ -69662,7 +70379,7 @@ const provider101 = [
         }
     ] as const
 
-const provider102 = [
+const provider103 = [
         {
             "maxTokens": null,
             "name": "aiand/deepseek-ai/deepseek-v4-flash",
@@ -69875,7 +70592,7 @@ const provider102 = [
         }
     ] as const
 
-const provider103 = [
+const provider104 = [
         {
             "maxTokens": null,
             "name": "xiaomi_mimo/mimo-v2.6-pro",
@@ -69906,7 +70623,7 @@ const provider103 = [
         }
     ] as const
 
-const provider104 = [
+const provider105 = [
         {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
@@ -69937,7 +70654,7 @@ const provider104 = [
         }
     ] as const
 
-const provider105 = [
+const provider106 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -69954,7 +70671,7 @@ const provider105 = [
         }
     ] as const
 
-const provider106 = [
+const provider107 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -70027,7 +70744,7 @@ const provider106 = [
         }
     ] as const
 
-const provider107 = [
+const provider108 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -70072,7 +70789,7 @@ const provider107 = [
         }
     ] as const
 
-const provider108 = [
+const provider109 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -70495,7 +71212,7 @@ const provider108 = [
         }
     ] as const
 
-const provider109 = [
+const provider110 = [
         {
             "maxTokens": null,
             "name": "refuseless/glm-5.3-abliterated",
@@ -70568,7 +71285,7 @@ const provider109 = [
         }
     ] as const
 
-const provider110 = [
+const provider111 = [
         {
             "maxTokens": null,
             "name": "clf_ai_gateway/glm-5.3",
@@ -70711,7 +71428,7 @@ const provider110 = [
         }
     ] as const
 
-const provider111 = [
+const provider112 = [
         {
             "maxTokens": null,
             "name": "kyma/claude-fable-5",
@@ -71950,7 +72667,7 @@ const provider111 = [
         }
     ] as const
 
-const provider112 = [
+const provider113 = [
         {
             "maxTokens": null,
             "name": "bigmodel/glm-5.3",
@@ -71995,7 +72712,7 @@ const provider112 = [
         }
     ] as const
 
-const provider113 = [
+const provider114 = [
         {
             "maxTokens": null,
             "name": "empiriolabs/aplomb-1",
@@ -73577,7 +74294,7 @@ const provider113 = [
         }
     ] as const
 
-const provider114 = [
+const provider115 = [
         {
             "maxTokens": null,
             "name": "wally/glm-5.3-flash",
@@ -73720,7 +74437,7 @@ const provider114 = [
         }
     ] as const
 
-const provider115 = [
+const provider116 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -73737,7 +74454,7 @@ const provider115 = [
         }
     ] as const
 
-const provider116 = [
+const provider117 = [
         {
             "tokenPricing": [
                 {
@@ -74437,59 +75154,60 @@ export const AICostModelList: {
     readonly "perplexity": typeof provider61
     readonly "publicai": typeof provider62
     readonly "replicate": typeof provider63
-    readonly "sagemaker": typeof provider64
-    readonly "sambanova": typeof provider65
-    readonly "scx-ai": typeof provider66
-    readonly "snowflake": typeof provider67
-    readonly "text-completion-codestral": typeof provider68
-    readonly "together_ai": typeof provider69
-    readonly "v0": typeof provider70
-    readonly "vispark": typeof provider71
-    readonly "vercel_ai_gateway": typeof provider72
-    readonly "vertex_ai-anthropic_models": typeof provider73
-    readonly "vertex_ai-mistral_models": typeof provider74
-    readonly "vertex_ai-deepseek_models": typeof provider75
-    readonly "vertex_ai-ai21_models": typeof provider76
-    readonly "vertex_ai-llama_models": typeof provider77
-    readonly "vertex_ai-minimax_models": typeof provider78
-    readonly "vertex_ai-moonshot_models": typeof provider79
-    readonly "vertex_ai-zai_models": typeof provider80
-    readonly "vertex_ai-openai_models": typeof provider81
-    readonly "vertex_ai-qwen_models": typeof provider82
-    readonly "voyage": typeof provider83
-    readonly "wandb": typeof provider84
-    readonly "watsonx": typeof provider85
-    readonly "xai": typeof provider86
-    readonly "zai": typeof provider87
-    readonly "scaleway": typeof provider88
-    readonly "novita": typeof provider89
-    readonly "llamagate": typeof provider90
-    readonly "libertai": typeof provider91
-    readonly "sarvam": typeof provider92
-    readonly "bedrock_mantle": typeof provider93
-    readonly "tensormesh": typeof provider94
-    readonly "streamlake": typeof provider95
-    readonly "tencent": typeof provider96
-    readonly "cognition": typeof provider97
-    readonly "pinstripes": typeof provider98
-    readonly "darkbloom": typeof provider99
-    readonly "zerogpu": typeof provider100
-    readonly "aihubmix": typeof provider101
-    readonly "aiand": typeof provider102
-    readonly "xiaomi_mimo": typeof provider103
-    readonly "prism": typeof provider104
-    readonly "microsoft_365_copilot": typeof provider105
-    readonly "scaledown": typeof provider106
-    readonly "openinfer": typeof provider107
-    readonly "opencode_go": typeof provider108
-    readonly "refuseless": typeof provider109
-    readonly "clf_ai_gateway": typeof provider110
-    readonly "kyma": typeof provider111
-    readonly "bigmodel": typeof provider112
-    readonly "empiriolabs": typeof provider113
-    readonly "wally": typeof provider114
-    readonly "typesafe": typeof provider115
-    readonly "gemini-api": typeof provider116
+    readonly "nvidia_nim": typeof provider64
+    readonly "sagemaker": typeof provider65
+    readonly "sambanova": typeof provider66
+    readonly "scx-ai": typeof provider67
+    readonly "snowflake": typeof provider68
+    readonly "text-completion-codestral": typeof provider69
+    readonly "together_ai": typeof provider70
+    readonly "v0": typeof provider71
+    readonly "vispark": typeof provider72
+    readonly "vercel_ai_gateway": typeof provider73
+    readonly "vertex_ai-anthropic_models": typeof provider74
+    readonly "vertex_ai-mistral_models": typeof provider75
+    readonly "vertex_ai-deepseek_models": typeof provider76
+    readonly "vertex_ai-ai21_models": typeof provider77
+    readonly "vertex_ai-llama_models": typeof provider78
+    readonly "vertex_ai-minimax_models": typeof provider79
+    readonly "vertex_ai-moonshot_models": typeof provider80
+    readonly "vertex_ai-zai_models": typeof provider81
+    readonly "vertex_ai-openai_models": typeof provider82
+    readonly "vertex_ai-qwen_models": typeof provider83
+    readonly "voyage": typeof provider84
+    readonly "wandb": typeof provider85
+    readonly "watsonx": typeof provider86
+    readonly "xai": typeof provider87
+    readonly "zai": typeof provider88
+    readonly "scaleway": typeof provider89
+    readonly "novita": typeof provider90
+    readonly "llamagate": typeof provider91
+    readonly "libertai": typeof provider92
+    readonly "sarvam": typeof provider93
+    readonly "bedrock_mantle": typeof provider94
+    readonly "tensormesh": typeof provider95
+    readonly "streamlake": typeof provider96
+    readonly "tencent": typeof provider97
+    readonly "cognition": typeof provider98
+    readonly "pinstripes": typeof provider99
+    readonly "darkbloom": typeof provider100
+    readonly "zerogpu": typeof provider101
+    readonly "aihubmix": typeof provider102
+    readonly "aiand": typeof provider103
+    readonly "xiaomi_mimo": typeof provider104
+    readonly "prism": typeof provider105
+    readonly "microsoft_365_copilot": typeof provider106
+    readonly "scaledown": typeof provider107
+    readonly "openinfer": typeof provider108
+    readonly "opencode_go": typeof provider109
+    readonly "refuseless": typeof provider110
+    readonly "clf_ai_gateway": typeof provider111
+    readonly "kyma": typeof provider112
+    readonly "bigmodel": typeof provider113
+    readonly "empiriolabs": typeof provider114
+    readonly "wally": typeof provider115
+    readonly "typesafe": typeof provider116
+    readonly "gemini-api": typeof provider117
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -74555,57 +75273,58 @@ export const AICostModelList: {
     "perplexity": provider61,
     "publicai": provider62,
     "replicate": provider63,
-    "sagemaker": provider64,
-    "sambanova": provider65,
-    "scx-ai": provider66,
-    "snowflake": provider67,
-    "text-completion-codestral": provider68,
-    "together_ai": provider69,
-    "v0": provider70,
-    "vispark": provider71,
-    "vercel_ai_gateway": provider72,
-    "vertex_ai-anthropic_models": provider73,
-    "vertex_ai-mistral_models": provider74,
-    "vertex_ai-deepseek_models": provider75,
-    "vertex_ai-ai21_models": provider76,
-    "vertex_ai-llama_models": provider77,
-    "vertex_ai-minimax_models": provider78,
-    "vertex_ai-moonshot_models": provider79,
-    "vertex_ai-zai_models": provider80,
-    "vertex_ai-openai_models": provider81,
-    "vertex_ai-qwen_models": provider82,
-    "voyage": provider83,
-    "wandb": provider84,
-    "watsonx": provider85,
-    "xai": provider86,
-    "zai": provider87,
-    "scaleway": provider88,
-    "novita": provider89,
-    "llamagate": provider90,
-    "libertai": provider91,
-    "sarvam": provider92,
-    "bedrock_mantle": provider93,
-    "tensormesh": provider94,
-    "streamlake": provider95,
-    "tencent": provider96,
-    "cognition": provider97,
-    "pinstripes": provider98,
-    "darkbloom": provider99,
-    "zerogpu": provider100,
-    "aihubmix": provider101,
-    "aiand": provider102,
-    "xiaomi_mimo": provider103,
-    "prism": provider104,
-    "microsoft_365_copilot": provider105,
-    "scaledown": provider106,
-    "openinfer": provider107,
-    "opencode_go": provider108,
-    "refuseless": provider109,
-    "clf_ai_gateway": provider110,
-    "kyma": provider111,
-    "bigmodel": provider112,
-    "empiriolabs": provider113,
-    "wally": provider114,
-    "typesafe": provider115,
-    "gemini-api": provider116,
+    "nvidia_nim": provider64,
+    "sagemaker": provider65,
+    "sambanova": provider66,
+    "scx-ai": provider67,
+    "snowflake": provider68,
+    "text-completion-codestral": provider69,
+    "together_ai": provider70,
+    "v0": provider71,
+    "vispark": provider72,
+    "vercel_ai_gateway": provider73,
+    "vertex_ai-anthropic_models": provider74,
+    "vertex_ai-mistral_models": provider75,
+    "vertex_ai-deepseek_models": provider76,
+    "vertex_ai-ai21_models": provider77,
+    "vertex_ai-llama_models": provider78,
+    "vertex_ai-minimax_models": provider79,
+    "vertex_ai-moonshot_models": provider80,
+    "vertex_ai-zai_models": provider81,
+    "vertex_ai-openai_models": provider82,
+    "vertex_ai-qwen_models": provider83,
+    "voyage": provider84,
+    "wandb": provider85,
+    "watsonx": provider86,
+    "xai": provider87,
+    "zai": provider88,
+    "scaleway": provider89,
+    "novita": provider90,
+    "llamagate": provider91,
+    "libertai": provider92,
+    "sarvam": provider93,
+    "bedrock_mantle": provider94,
+    "tensormesh": provider95,
+    "streamlake": provider96,
+    "tencent": provider97,
+    "cognition": provider98,
+    "pinstripes": provider99,
+    "darkbloom": provider100,
+    "zerogpu": provider101,
+    "aihubmix": provider102,
+    "aiand": provider103,
+    "xiaomi_mimo": provider104,
+    "prism": provider105,
+    "microsoft_365_copilot": provider106,
+    "scaledown": provider107,
+    "openinfer": provider108,
+    "opencode_go": provider109,
+    "refuseless": provider110,
+    "clf_ai_gateway": provider111,
+    "kyma": provider112,
+    "bigmodel": provider113,
+    "empiriolabs": provider114,
+    "wally": provider115,
+    "typesafe": provider116,
+    "gemini-api": provider117,
 }
