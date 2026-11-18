@@ -56547,6 +56547,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/Qwen/Qwen4-Max",
+            "type": "chat",
+            "inputCost": 0.000001425,
+            "inputCostUnit": "token",
+            "outputCost": 0.000004275,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.125e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "v0": [
