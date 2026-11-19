@@ -1,7 +1,7 @@
-// Last updated: 2026-11-19T00:16:01.791Z
-// Next update: 2026-11-19T06:16:01.791Z
+// Last updated: 2026-11-19T06:10:01.982Z
+// Next update: 2026-11-19T12:10:01.982Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -32203,40 +32203,43 @@ const provider14 = [
             "maxTokens": null,
             "name": "command-a-reasoning-08-2025",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
             "name": "command-a-translate-08-2025",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
             "name": "command-a-vision-07-2025",
             "type": "chat",
-            "inputCost": null,
-            "inputCostUnit": null,
-            "outputCost": null,
-            "outputCostUnit": null,
+            "inputCost": 0,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
             "cacheReadInputCost": null,
             "cacheReadInputCostUnit": null,
             "cacheCreationInputCost": null,
-            "cacheCreationInputCostUnit": null
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         },
         {
             "maxTokens": null,
@@ -40219,6 +40222,86 @@ const provider21 = [
             "cacheReadInputCost": 0.0000015,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.0000015,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001999998,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "inputCost": 0.00001599997,
+                    "outputCost": 0.0000800002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00004000003,
+                    "cacheReadInputCost": 0.00000159999,
+                    "inputCost": 0.00003200001,
+                    "outputCost": 0.0001200003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001999998,
+                    "cacheReadInputCost": 8.0003e-7,
+                    "inputCost": 0.00001599997,
+                    "outputCost": 0.0000599998
+                }
+            ],
+            "maxTokens": null,
+            "name": "databricks/system.ai.gpt-6-2-astra",
+            "type": "chat",
+            "inputCost": 0.00000800002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004000003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.9998e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000999999,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.0000199997
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000999999,
+                    "cacheReadInputCost": 3.9998e-7,
+                    "inputCost": 0.00000800002,
+                    "outputCost": 0.0000299999
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000500003,
+                    "cacheReadInputCost": 1.9999e-7,
+                    "inputCost": 0.00000400001,
+                    "outputCost": 0.00001500002
+                }
+            ],
+            "maxTokens": null,
+            "name": "databricks/system.ai.gpt-6-2-sol",
+            "type": "responses",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.0003e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }
@@ -51626,6 +51709,20 @@ const provider32 = [
             "cacheCreationInputCost": 0.0000025,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "github_copilot/gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ] as const
 
@@ -93148,6 +93245,159 @@ const provider115 = [
 
 const provider116 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                }
+            ],
+            "maxTokens": null,
+            "name": "openrouter/openai/gpt-6.2-astra",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "openrouter/openai/gpt-6.2-sol",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "openrouter/anthropic/claude-fable-5.2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheReadAudioCost": 7.5e-8,
+                    "inputAudioCost": 0.0000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "openrouter/google/gemini-4-hydrogen",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 8.33333333333333e-8,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        }
+    ] as const
+
+const provider117 = [
+        {
+            "maxTokens": null,
+            "name": "jina-embeddings-v5-text-small",
+            "type": "embedding",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "jina-embeddings-v5-text-nano",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "jina-embeddings-v5-omni-small",
+            "type": "embedding",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "jina-embeddings-v5-omni-nano",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": 0,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        }
+    ] as const
+
+const provider118 = [
+        {
             "maxTokens": null,
             "name": "jev-1.13.0",
             "type": "completion",
@@ -93163,7 +93413,7 @@ const provider116 = [
         }
     ] as const
 
-const provider117 = [
+const provider119 = [
         {
             "tokenPricing": [
                 {
@@ -93915,8 +94165,10 @@ export const AICostModelList: {
     readonly "bigmodel": typeof provider113
     readonly "empiriolabs": typeof provider114
     readonly "wally": typeof provider115
-    readonly "typesafe": typeof provider116
-    readonly "gemini-api": typeof provider117
+    readonly "openrouter": typeof provider116
+    readonly "jina_ai": typeof provider117
+    readonly "typesafe": typeof provider118
+    readonly "gemini-api": typeof provider119
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -94034,6 +94286,8 @@ export const AICostModelList: {
     "bigmodel": provider113,
     "empiriolabs": provider114,
     "wally": provider115,
-    "typesafe": provider116,
-    "gemini-api": provider117,
+    "openrouter": provider116,
+    "jina_ai": provider117,
+    "typesafe": provider118,
+    "gemini-api": provider119,
 }
