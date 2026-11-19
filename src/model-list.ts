@@ -1,5 +1,5 @@
-// Last updated: 2026-11-18T18:06:40.917Z
-// Next update: 2026-11-19T00:06:40.917Z
+// Last updated: 2026-11-19T00:16:01.791Z
+// Next update: 2026-11-19T06:16:01.791Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "typesafe" | "gemini-api"
 
@@ -46839,23 +46839,23 @@ const provider28 = [
                 {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
-                    "cacheReadInputCost": 3.75e-7,
-                    "inputCost": 0.00000375,
-                    "outputCost": 0.00001875
+                    "cacheReadInputCost": 3e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
                 }
             ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-latest",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCost": 2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "tokenPricing": [
@@ -49641,6 +49641,43 @@ const provider30 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 0.0000015,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000054,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000003
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ] as const
 
@@ -50600,6 +50637,43 @@ const provider31 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 0.0000015,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000054,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000003
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ] as const
 

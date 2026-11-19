@@ -46806,23 +46806,23 @@
                 {
                     "serviceTier": "priority",
                     "aboveInputTokens": 0,
-                    "cacheReadInputCost": 3.75e-7,
-                    "inputCost": 0.00000375,
-                    "outputCost": 0.00001875
+                    "cacheReadInputCost": 3e-7,
+                    "inputCost": 0.000003,
+                    "outputCost": 0.000015
                 }
             ],
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/kimi-latest",
             "type": "chat",
-            "inputCost": 0.000003,
+            "inputCost": 0.000002,
             "inputCostUnit": "token",
-            "outputCost": 0.000015,
+            "outputCost": 0.00001,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCost": 2e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
-            "priceTier": 4
+            "priceTier": 3
         },
         {
             "tokenPricing": [
@@ -49606,6 +49606,43 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 0.0000015,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000054,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000003
+                }
+            ],
+            "maxTokens": null,
+            "name": "gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ],
     "vertex_ai": [
@@ -50564,6 +50601,43 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7.5e-8,
+                    "inputAudioCost": 0.0000015,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.7e-7,
+                    "inputAudioCost": 0.0000054,
+                    "inputCost": 0.0000054,
+                    "outputCost": 0.000027
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "inputAudioCost": 0.000003
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
         }
     ],
     "github_copilot": [
