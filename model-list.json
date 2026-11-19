@@ -30487,6 +30487,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "azure_ai/kimi-k3.1-pro",
+            "type": "chat",
+            "inputCost": 0.0000023,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000115,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "azure_text": [
@@ -53136,6 +53150,20 @@
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "gmi/google/gemini-4-hydrogen",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000001875,
+            "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
