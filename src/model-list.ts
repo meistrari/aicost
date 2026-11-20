@@ -1,5 +1,5 @@
-// Last updated: 2026-11-20T06:09:48.261Z
-// Next update: 2026-11-20T12:09:48.261Z
+// Last updated: 2026-11-20T12:08:32.786Z
+// Next update: 2026-11-20T18:08:32.786Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
@@ -36129,16 +36129,16 @@ const provider16 = [
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 0,
-                    "cacheCreationInputCost12h": 0.0000375
+                    "cacheCreationInputCost12h": 0.000025
                 },
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 272000,
-                    "cacheCreationInputCost12h": 0.000075,
-                    "cacheCreationInputCost": 0.0000375,
-                    "cacheReadInputCost": 0.000003,
-                    "inputCost": 0.00003,
-                    "outputCost": 0.0001125
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
                 }
             ],
             "maxTokens": null,
@@ -36150,7 +36150,7 @@ const provider16 = [
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.000001,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },

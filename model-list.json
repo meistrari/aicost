@@ -36108,16 +36108,16 @@
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 0,
-                    "cacheCreationInputCost12h": 0.0000375
+                    "cacheCreationInputCost12h": 0.000025
                 },
                 {
                     "serviceTier": "standard",
                     "aboveInputTokens": 272000,
-                    "cacheCreationInputCost12h": 0.000075,
-                    "cacheCreationInputCost": 0.0000375,
-                    "cacheReadInputCost": 0.000003,
-                    "inputCost": 0.00003,
-                    "outputCost": 0.0001125
+                    "cacheCreationInputCost12h": 0.00005,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
                 }
             ],
             "maxTokens": null,
@@ -36129,7 +36129,7 @@
             "outputCostUnit": "token",
             "cacheReadInputCost": 0.000001,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00001875,
+            "cacheCreationInputCost": 0.0000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 5
         },
