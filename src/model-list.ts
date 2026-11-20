@@ -1,5 +1,5 @@
-// Last updated: 2026-11-20T12:08:32.786Z
-// Next update: 2026-11-20T18:08:32.786Z
+// Last updated: 2026-11-20T18:07:00.754Z
+// Next update: 2026-11-21T00:07:00.754Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
@@ -40348,30 +40348,6 @@ const provider21 = [
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
-        },
-        {
-            "tokenPricing": [
-                {
-                    "serviceTier": "priority",
-                    "aboveInputTokens": 0,
-                    "cacheCreationInputCost": 0.00000337498,
-                    "cacheReadInputCost": 3.3747e-7,
-                    "inputCost": 0.00000337498,
-                    "outputCost": 0.00001687497
-                }
-            ],
-            "maxTokens": null,
-            "name": "databricks/databricks-gemini-nano-banana-2-1",
-            "type": "chat",
-            "inputCost": 0.00000187502,
-            "inputCostUnit": "token",
-            "outputCost": 0.00000937503,
-            "outputCostUnit": "token",
-            "cacheReadInputCost": 1.8753e-7,
-            "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.00000187502,
-            "cacheCreationInputCostUnit": "token",
-            "priceTier": 3
         }
     ] as const
 
@@ -55844,6 +55820,34 @@ const provider47 = [
         },
         {
             "maxTokens": null,
+            "name": "inferenceapis/MiniMaxAI/MiniMax-M3.1-Flash",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 7.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "inferenceapis/moonshotai/Kimi-K2.6",
+            "type": "chat",
+            "inputCost": 9.8e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000455,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
             "name": "inferenceapis/moonshotai/Kimi-K2.7-Code",
             "type": "chat",
             "inputCost": 8.9e-7,
@@ -55855,6 +55859,34 @@ const provider47 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "inferenceapis/moonshotai/Kimi-K3.1-Pro",
+            "type": "chat",
+            "inputCost": 0.0000026,
+            "inputCostUnit": "token",
+            "outputCost": 0.000013,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "inferenceapis/nvidia/NVIDIA-Nemotron-3.5-Super-VL",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 6.5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         },
         {
             "maxTokens": null,
@@ -60821,6 +60853,34 @@ const provider61 = [
         },
         {
             "maxTokens": null,
+            "name": "perplexity/pplx-embed-v2-context-0.6b",
+            "type": "embedding",
+            "inputCost": 2e-8,
+            "inputCostUnit": "token",
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity/pplx-embed-v2-context-9b",
+            "type": "embedding",
+            "inputCost": 1.2e-7,
+            "inputCostUnit": "token",
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
             "name": "perplexity/pplx-embed-v1-0.6b",
             "type": "embedding",
             "inputCost": 4e-9,
@@ -61540,6 +61600,78 @@ const provider61 = [
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075,
+                    "cacheReadInputCost": 1e-7,
+                    "cacheCreationInputCost": 0.0000025
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity/openai/gpt-6.1-terra",
+            "type": "responses",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006,
+                    "cacheReadInputCost": 8e-7,
+                    "cacheCreationInputCost": 0.00002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity/openai/gpt-6.2-astra",
+            "type": "responses",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.000005
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity/openai/gpt-6.2-sol",
+            "type": "responses",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         },
         {
             "tokenPricing": [
