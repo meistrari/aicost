@@ -40172,44 +40172,74 @@
             "priceTier": 5
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000450002,
+                    "cacheReadInputCost": 2.2498e-7,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002250003
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/databricks-gemini-4-carbon",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 0.00000249998,
             "inputCostUnit": "token",
-            "outputCost": 0.00001,
+            "outputCost": 0.00001249997,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0.000002,
+            "cacheReadInputCost": 1.2502e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000002,
+            "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000450002,
+                    "cacheReadInputCost": 2.2498e-7,
+                    "inputCost": 0.00000450002,
+                    "outputCost": 0.00002250003
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/system.ai.gemini-4-carbon",
             "type": "chat",
-            "inputCost": 0.000002,
+            "inputCost": 0.00000249998,
             "inputCostUnit": "token",
-            "outputCost": 0.00001,
+            "outputCost": 0.00001249997,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0.000002,
+            "cacheReadInputCost": 1.2502e-7,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.000002,
+            "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000421876,
+                    "cacheReadInputCost": 1.6877e-7,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00001687497
+                }
+            ],
             "maxTokens": null,
             "name": "databricks/system.ai.gemini-4-hydrogen",
             "type": "chat",
-            "inputCost": 0.0000015,
+            "inputCost": 0.00000187502,
             "inputCostUnit": "token",
-            "outputCost": 0.0000075,
+            "outputCost": 0.00000937503,
             "outputCostUnit": "token",
-            "cacheReadInputCost": 0.0000015,
+            "cacheReadInputCost": 9.373e-8,
             "cacheReadInputCostUnit": "token",
-            "cacheCreationInputCost": 0.0000015,
+            "cacheCreationInputCost": 0.00000234374,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         },
@@ -40290,6 +40320,30 @@
             "cacheReadInputCost": 1.0003e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000337498,
+                    "cacheReadInputCost": 3.3747e-7,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00001687497
+                }
+            ],
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-nano-banana-2-1",
+            "type": "chat",
+            "inputCost": 0.00000187502,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000937503,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8753e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000187502,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }
@@ -65673,6 +65727,20 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "together_ai/tencent/Hy4",
+            "type": "chat",
+            "inputCost": 8.34e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002501,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "v0": [
@@ -69838,7 +69906,7 @@
             "type": "chat",
             "inputCost": 1.5e-7,
             "inputCostUnit": "token",
-            "outputCost": 5e-7,
+            "outputCost": 4.7e-7,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2e-8,
             "cacheReadInputCostUnit": "token",
