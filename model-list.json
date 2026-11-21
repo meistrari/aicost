@@ -63355,6 +63355,78 @@
             "priceTier": 3
         }
     ],
+    "resetdata": [
+        {
+            "maxTokens": null,
+            "name": "resetdata/deepseek/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 7.432e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.486e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.351e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "resetdata/google/gemma-4-26b-a4b-it",
+            "type": "chat",
+            "inputCost": 6.054e-8,
+            "inputCostUnit": "token",
+            "outputCost": 3.328e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "resetdata/qwen/qwen3-coder-30b-a3b-instruct",
+            "type": "chat",
+            "inputCost": 7.061e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.723e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "resetdata/qwen/qwen3.8-27b",
+            "type": "chat",
+            "inputCost": 2.905e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002453,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "resetdata/zai/glm-5.3",
+            "type": "chat",
+            "inputCost": 0.000001189,
+            "inputCostUnit": "token",
+            "outputCost": 0.000003736,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.757e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        }
+    ],
     "nvidia_nim": [
         {
             "maxTokens": null,
