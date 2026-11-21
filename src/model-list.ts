@@ -1,5 +1,5 @@
-// Last updated: 2026-11-21T00:16:07.780Z
-// Next update: 2026-11-21T06:16:07.780Z
+// Last updated: 2026-11-21T06:09:00.930Z
+// Next update: 2026-11-21T12:09:00.930Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
@@ -28827,6 +28827,278 @@ const provider5 = [
             "cacheCreationInputCost": 0.00000125,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "cacheReadInputCost": 8e-7,
+                    "cacheCreationInputCost": 0.00001,
+                    "outputCost": 0.00003
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000008,
+                    "cacheReadInputCost": 8e-7,
+                    "cacheCreationInputCost": 0.00001,
+                    "outputCost": 0.00003
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-sol-2026-07-09",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "outputCost": 0.000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000002,
+                    "cacheReadInputCost": 2e-7,
+                    "cacheCreationInputCost": 0.0000025,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 0.000004,
+                    "cacheReadInputCost": 4e-7,
+                    "cacheCreationInputCost": 0.000005,
+                    "outputCost": 0.000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-terra-2026-07-09",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "cacheCreationInputCost": 5e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 2e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "inputCost": 4e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "cacheCreationInputCost": 5e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "azure_ai/gpt-5.6-luna-2026-07-09",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
         },
         {
             "tokenPricing": [
@@ -93486,6 +93758,34 @@ const provider115 = [
     ] as const
 
 const provider116 = [
+        {
+            "maxTokens": null,
+            "name": "openrouter/deepseek/deepseek-v4-pro",
+            "type": "chat",
+            "inputCost": 9e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": null,
+            "name": "openrouter/deepseek/deepseek-v4-flash",
+            "type": "chat",
+            "inputCost": 9e-8,
+            "inputCostUnit": "token",
+            "outputCost": 1.8e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
         {
             "tokenPricing": [
                 {
