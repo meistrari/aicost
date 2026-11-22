@@ -1,5 +1,5 @@
-// Last updated: 2026-11-21T18:06:15.846Z
-// Next update: 2026-11-22T00:06:15.846Z
+// Last updated: 2026-11-22T00:17:23.683Z
+// Next update: 2026-11-22T06:17:23.683Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
@@ -48254,6 +48254,29 @@ const provider28 = [
             "priceTier": 2
         },
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.125e-8,
+                    "inputCost": 5.625e-7,
+                    "outputCost": 0.00000225
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/deepseek-v4p1-flash-1017-us",
+            "type": "chat",
+            "inputCost": 4.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000018,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 9e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
             "maxTokens": null,
             "name": "fireworks_ai/accounts/fireworks/routers/spot-deepseek-v4-flash",
             "type": "chat",
@@ -48392,6 +48415,29 @@ const provider28 = [
             "outputCost": 0.00001,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-7,
+                    "inputCost": 0.00000375,
+                    "outputCost": 0.00001875
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/routers/kimi-k3p1-pro-us",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
@@ -50570,6 +50616,60 @@ const provider31 = [
             "outputCost": 0.000012,
             "outputCostUnit": "token",
             "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "vertex_ai/meta/muse-wonder-1.0",
+            "type": "responses",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 1.2e-8,
+                    "inputCost": 3e-7,
+                    "outputCost": 0.0000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "vertex_ai/meta/muse-ember-1.0",
+            "type": "responses",
+            "inputCost": 1e-7,
+            "inputCostAbove200kTokens": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostAbove200kTokens": 0.0000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-9,
+            "cacheReadInputCostAbove200kTokens": 1.2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "vertex_ai/meta/muse-spark-1.3",
+            "type": "responses",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000425,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
