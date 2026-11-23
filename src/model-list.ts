@@ -1,7 +1,7 @@
-// Last updated: 2026-11-23T06:14:09.732Z
-// Next update: 2026-11-23T12:14:09.732Z
+// Last updated: 2026-11-23T12:09:09.624Z
+// Next update: 2026-11-23T18:09:09.624Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "perplexity_orchestrator" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -90118,6 +90118,1407 @@ const provider105 = [
 
 const provider106 = [
         {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000016
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-fable-5-2",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-fable-5-1",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-fable-5",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000008
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-5-5",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-sonnet-5-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-sonnet-5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 2e-7
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 100000,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheCreationInputCost1h": 0.000001,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-haiku-5-5",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-4-8",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-4-7",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-4-6",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.00001
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-opus-4-5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000625,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-sonnet-4-6",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000006
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-sonnet-4-5",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost1h": 0.000002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/anthropic/claude-haiku-4-5",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00008
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00004,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000032,
+                    "outputCost": 0.00012
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6.2-astra",
+            "type": "chat",
+            "inputCost": 0.000008,
+            "inputCostUnit": "token",
+            "outputCost": 0.00004,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00001,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6.2-sol",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6.1-sol",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-7,
+                    "cacheReadInputCost": 2.5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.0000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.00000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6.1-terra",
+            "type": "chat",
+            "inputCost": 0.000001,
+            "inputCostUnit": "token",
+            "outputCost": 0.000005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000625,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.000025
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000125,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.0000375
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.0001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00005,
+                    "cacheReadInputCost": 0.000004,
+                    "inputCost": 0.00004,
+                    "outputCost": 0.00015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000025,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.000075
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6-astra",
+            "type": "chat",
+            "inputCost": 0.00001,
+            "inputCostUnit": "token",
+            "outputCost": 0.00005,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000125,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.00002
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6-sol",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 6.25e-8,
+                    "cacheReadInputCost": 5e-9,
+                    "inputCost": 5e-8,
+                    "outputCost": 2.5e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 3.75e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000015
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 7.5e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-6-luna",
+            "type": "chat",
+            "inputCost": 1e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 1.25e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.00001
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00004
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00002,
+                    "cacheReadInputCost": 0.0000016,
+                    "inputCost": 0.000016,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.00003
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.6-sol",
+            "type": "chat",
+            "inputCost": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.00002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000005,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000125,
+                    "cacheReadInputCost": 1e-7,
+                    "inputCost": 0.000001,
+                    "outputCost": 0.000006
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.0000025,
+                    "cacheReadInputCost": 2e-7,
+                    "inputCost": 0.000002,
+                    "outputCost": 0.000009
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.00001,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.000008,
+                    "outputCost": 0.000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000005,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.6-terra",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostUnit": "token",
+            "outputCost": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.0000025,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 1.25e-7,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6e-7
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 2.5e-7,
+                    "cacheReadInputCost": 2e-8,
+                    "inputCost": 2e-7,
+                    "outputCost": 9e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000024
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 0.000001,
+                    "cacheReadInputCost": 8e-8,
+                    "inputCost": 8e-7,
+                    "outputCost": 0.0000036
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheCreationInputCost": 5e-7,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000018
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.6-luna",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 2.5e-7,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.000015
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.00006
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000002,
+                    "inputCost": 0.00002,
+                    "outputCost": 0.00009
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.5",
+            "type": "chat",
+            "inputCost": 0.000005,
+            "inputCostUnit": "token",
+            "outputCost": 0.00003,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-7,
+                    "inputCost": 0.00000125,
+                    "outputCost": 0.0000075
+                },
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00001125
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.00003
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.00001,
+                    "outputCost": 0.000045
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 272000,
+                    "cacheReadInputCost": 5e-7,
+                    "inputCost": 0.000005,
+                    "outputCost": 0.0000225
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.4",
+            "type": "chat",
+            "inputCost": 0.0000025,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000225
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.5e-7,
+                    "inputCost": 0.0000015,
+                    "outputCost": 0.000009
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.4-mini",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 6.25e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-8,
+                    "inputCost": 4e-7,
+                    "outputCost": 0.0000025
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.4-nano",
+            "type": "chat",
+            "inputCost": 2e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.75e-7,
+                    "inputCost": 0.00000175,
+                    "outputCost": 0.000014
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 7e-7,
+                    "inputCost": 0.000007,
+                    "outputCost": 0.000056
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.3-codex",
+            "type": "chat",
+            "inputCost": 0.0000035,
+            "inputCostUnit": "token",
+            "outputCost": 0.000028,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 5
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 8.75e-8,
+                    "inputCost": 8.75e-7,
+                    "outputCost": 0.000007
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.5e-7,
+                    "inputCost": 0.0000035,
+                    "outputCost": 0.000028
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.2",
+            "type": "chat",
+            "inputCost": 0.00000175,
+            "inputCostUnit": "token",
+            "outputCost": 0.000014,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.75e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5.1",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 6.25e-8,
+                    "inputCost": 6.25e-7,
+                    "outputCost": 0.000005
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-7,
+                    "inputCost": 0.0000025,
+                    "outputCost": 0.00002
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5",
+            "type": "chat",
+            "inputCost": 0.00000125,
+            "inputCostUnit": "token",
+            "outputCost": 0.00001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.25e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1.25e-8,
+                    "inputCost": 1.25e-7,
+                    "outputCost": 0.000001
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 5e-8,
+                    "inputCost": 5e-7,
+                    "outputCost": 0.000004
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5-mini",
+            "type": "chat",
+            "inputCost": 2.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000002,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "flex",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 2.5e-9,
+                    "inputCost": 2.5e-8,
+                    "outputCost": 2e-7
+                },
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 1e-8,
+                    "inputCost": 1e-7,
+                    "outputCost": 8e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/openai/gpt-5-nano",
+            "type": "chat",
+            "inputCost": 5e-8,
+            "inputCostUnit": "token",
+            "outputCost": 4e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/google/gemini-3.8-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/google/gemini-3.7-flash",
+            "type": "chat",
+            "inputCost": 7.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000375,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/google/gemini-3.6-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000075,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/google/gemini-3.5-flash",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.000009,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/google/gemini-3.5-flash-lite",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000025,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/xai/grok-4.7",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/xai/grok-4.6",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 6e-7,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/xai/grok-4.5",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostAbove200kTokens": 6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/perplexity/glm-5.3",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/perplexity/glm-5.3-flash",
+            "type": "chat",
+            "inputCost": 1.5e-7,
+            "inputCostUnit": "token",
+            "outputCost": 5e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/perplexity/deepseek-v4-pro-0813",
+            "type": "chat",
+            "inputCost": 0.00000132,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000396,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 4.4e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "perplexity_orchestrator/perplexity/kimi-k3",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 4
+        }
+    ] as const
+
+const provider107 = [
+        {
             "maxTokens": null,
             "name": "prism/deepseek-v4.1-flash",
             "type": "chat",
@@ -90147,7 +91548,7 @@ const provider106 = [
         }
     ] as const
 
-const provider107 = [
+const provider108 = [
         {
             "maxTokens": null,
             "name": "microsoft_365_copilot/chat",
@@ -90164,7 +91565,7 @@ const provider107 = [
         }
     ] as const
 
-const provider108 = [
+const provider109 = [
         {
             "maxTokens": null,
             "name": "scaledown/extract",
@@ -90237,7 +91638,7 @@ const provider108 = [
         }
     ] as const
 
-const provider109 = [
+const provider110 = [
         {
             "maxTokens": null,
             "name": "openinfer/@oi/GLM-5.3-Flash",
@@ -90282,7 +91683,7 @@ const provider109 = [
         }
     ] as const
 
-const provider110 = [
+const provider111 = [
         {
             "maxTokens": null,
             "name": "opencode_go/grok-4.7",
@@ -90705,7 +92106,7 @@ const provider110 = [
         }
     ] as const
 
-const provider111 = [
+const provider112 = [
         {
             "maxTokens": null,
             "name": "refuseless/glm-5.3-abliterated",
@@ -90778,7 +92179,7 @@ const provider111 = [
         }
     ] as const
 
-const provider112 = [
+const provider113 = [
         {
             "maxTokens": null,
             "name": "clf_ai_gateway/glm-5.3",
@@ -90921,7 +92322,7 @@ const provider112 = [
         }
     ] as const
 
-const provider113 = [
+const provider114 = [
         {
             "maxTokens": null,
             "name": "kyma/claude-fable-5",
@@ -92160,7 +93561,7 @@ const provider113 = [
         }
     ] as const
 
-const provider114 = [
+const provider115 = [
         {
             "maxTokens": null,
             "name": "bigmodel/glm-5.3",
@@ -92205,7 +93606,7 @@ const provider114 = [
         }
     ] as const
 
-const provider115 = [
+const provider116 = [
         {
             "maxTokens": null,
             "name": "empiriolabs/aplomb-1",
@@ -93787,7 +95188,7 @@ const provider115 = [
         }
     ] as const
 
-const provider116 = [
+const provider117 = [
         {
             "maxTokens": null,
             "name": "wally/glm-5.3-flash",
@@ -93930,7 +95331,7 @@ const provider116 = [
         }
     ] as const
 
-const provider117 = [
+const provider118 = [
         {
             "maxTokens": null,
             "name": "openrouter/deepseek/deepseek-v4-pro",
@@ -94052,7 +95453,7 @@ const provider117 = [
         }
     ] as const
 
-const provider118 = [
+const provider119 = [
         {
             "maxTokens": null,
             "name": "jina-embeddings-v5-text-small",
@@ -94111,7 +95512,7 @@ const provider118 = [
         }
     ] as const
 
-const provider119 = [
+const provider120 = [
         {
             "maxTokens": null,
             "name": "jev-1.13.0",
@@ -94128,7 +95529,7 @@ const provider119 = [
         }
     ] as const
 
-const provider120 = [
+const provider121 = [
         {
             "tokenPricing": [
                 {
@@ -94870,21 +96271,22 @@ export const AICostModelList: {
     readonly "aihubmix": typeof provider103
     readonly "aiand": typeof provider104
     readonly "xiaomi_mimo": typeof provider105
-    readonly "prism": typeof provider106
-    readonly "microsoft_365_copilot": typeof provider107
-    readonly "scaledown": typeof provider108
-    readonly "openinfer": typeof provider109
-    readonly "opencode_go": typeof provider110
-    readonly "refuseless": typeof provider111
-    readonly "clf_ai_gateway": typeof provider112
-    readonly "kyma": typeof provider113
-    readonly "bigmodel": typeof provider114
-    readonly "empiriolabs": typeof provider115
-    readonly "wally": typeof provider116
-    readonly "openrouter": typeof provider117
-    readonly "jina_ai": typeof provider118
-    readonly "typesafe": typeof provider119
-    readonly "gemini-api": typeof provider120
+    readonly "perplexity_orchestrator": typeof provider106
+    readonly "prism": typeof provider107
+    readonly "microsoft_365_copilot": typeof provider108
+    readonly "scaledown": typeof provider109
+    readonly "openinfer": typeof provider110
+    readonly "opencode_go": typeof provider111
+    readonly "refuseless": typeof provider112
+    readonly "clf_ai_gateway": typeof provider113
+    readonly "kyma": typeof provider114
+    readonly "bigmodel": typeof provider115
+    readonly "empiriolabs": typeof provider116
+    readonly "wally": typeof provider117
+    readonly "openrouter": typeof provider118
+    readonly "jina_ai": typeof provider119
+    readonly "typesafe": typeof provider120
+    readonly "gemini-api": typeof provider121
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -94992,19 +96394,20 @@ export const AICostModelList: {
     "aihubmix": provider103,
     "aiand": provider104,
     "xiaomi_mimo": provider105,
-    "prism": provider106,
-    "microsoft_365_copilot": provider107,
-    "scaledown": provider108,
-    "openinfer": provider109,
-    "opencode_go": provider110,
-    "refuseless": provider111,
-    "clf_ai_gateway": provider112,
-    "kyma": provider113,
-    "bigmodel": provider114,
-    "empiriolabs": provider115,
-    "wally": provider116,
-    "openrouter": provider117,
-    "jina_ai": provider118,
-    "typesafe": provider119,
-    "gemini-api": provider120,
+    "perplexity_orchestrator": provider106,
+    "prism": provider107,
+    "microsoft_365_copilot": provider108,
+    "scaledown": provider109,
+    "openinfer": provider110,
+    "opencode_go": provider111,
+    "refuseless": provider112,
+    "clf_ai_gateway": provider113,
+    "kyma": provider114,
+    "bigmodel": provider115,
+    "empiriolabs": provider116,
+    "wally": provider117,
+    "openrouter": provider118,
+    "jina_ai": provider119,
+    "typesafe": provider120,
+    "gemini-api": provider121,
 }
