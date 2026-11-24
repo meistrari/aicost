@@ -63851,6 +63851,19 @@
         },
         {
             "maxTokens": null,
+            "name": "nvidia_nim/moonshotai/kimi-k3.1-pro",
+            "type": "chat",
+            "inputCost": null,
+            "inputCostUnit": null,
+            "outputCost": null,
+            "outputCostUnit": null,
+            "cacheReadInputCost": null,
+            "cacheReadInputCostUnit": null,
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null
+        },
+        {
+            "maxTokens": null,
             "name": "nvidia_nim/nv-mistralai/mistral-nemo-12b-instruct",
             "type": "chat",
             "inputCost": null,
