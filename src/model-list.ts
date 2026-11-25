@@ -1,7 +1,7 @@
-// Last updated: 2026-11-25T00:16:00.741Z
-// Next update: 2026-11-25T06:16:00.741Z
+// Last updated: 2026-11-25T06:10:09.288Z
+// Next update: 2026-11-25T12:10:09.288Z
 
-export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "perplexity_orchestrator" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "typesafe" | "gemini-api"
+export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "perplexity_orchestrator" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "huawei_maas" | "typesafe" | "gemini-api"
 
 // Generated from LiteLLM and manually maintained additions
 const provider0 = [
@@ -95837,6 +95837,65 @@ const provider119 = [
 
 const provider120 = [
         {
+            "maxTokens": 128000,
+            "name": "huawei_maas/glm-5.3",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "huawei_maas/glm-5.2",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 384000,
+            "name": "huawei_maas/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 384000,
+            "name": "huawei_maas/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ] as const
+
+const provider121 = [
+        {
             "maxTokens": null,
             "name": "jev-1.13.0",
             "type": "completion",
@@ -95852,7 +95911,7 @@ const provider120 = [
         }
     ] as const
 
-const provider121 = [
+const provider122 = [
         {
             "tokenPricing": [
                 {
@@ -96608,8 +96667,9 @@ export const AICostModelList: {
     readonly "wally": typeof provider117
     readonly "openrouter": typeof provider118
     readonly "jina_ai": typeof provider119
-    readonly "typesafe": typeof provider120
-    readonly "gemini-api": typeof provider121
+    readonly "huawei_maas": typeof provider120
+    readonly "typesafe": typeof provider121
+    readonly "gemini-api": typeof provider122
 } = {
     "abliteration": provider0,
     "bedrock": provider1,
@@ -96731,6 +96791,7 @@ export const AICostModelList: {
     "wally": provider117,
     "openrouter": provider118,
     "jina_ai": provider119,
-    "typesafe": provider120,
-    "gemini-api": provider121,
+    "huawei_maas": provider120,
+    "typesafe": provider121,
+    "gemini-api": provider122,
 }

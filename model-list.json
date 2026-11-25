@@ -95710,6 +95710,64 @@
             "priceTier": 1
         }
     ],
+    "huawei_maas": [
+        {
+            "maxTokens": 128000,
+            "name": "huawei_maas/glm-5.3",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 128000,
+            "name": "huawei_maas/glm-5.2",
+            "type": "chat",
+            "inputCost": 0.0000014,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000044,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 2.6e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "maxTokens": 384000,
+            "name": "huawei_maas/deepseek-v4.1-flash-1017",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 6e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        },
+        {
+            "maxTokens": 384000,
+            "name": "huawei_maas/deepseek-v4.1-flash",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
+        }
+    ],
     "typesafe": [
         {
             "maxTokens": null,
