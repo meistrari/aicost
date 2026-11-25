@@ -95806,7 +95806,7 @@
     ],
     "huawei_maas": [
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "huawei_maas/glm-5.3",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -95820,7 +95820,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 128000,
+            "maxTokens": null,
             "name": "huawei_maas/glm-5.2",
             "type": "chat",
             "inputCost": 0.0000014,
@@ -95834,7 +95834,7 @@
             "priceTier": 3
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "huawei_maas/deepseek-v4.1-flash-1017",
             "type": "chat",
             "inputCost": 3e-7,
@@ -95848,7 +95848,7 @@
             "priceTier": 2
         },
         {
-            "maxTokens": 384000,
+            "maxTokens": null,
             "name": "huawei_maas/deepseek-v4.1-flash",
             "type": "chat",
             "inputCost": 3e-7,
