@@ -71558,6 +71558,20 @@
         {
             "tokenPricing": [
                 {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000016,
+                    "outputCost": 0.0000048
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.0000032,
+                    "outputCost": 0.0000096
+                },
+                {
                     "serviceTier": "standard",
                     "aboveInputTokens": 200000,
                     "cacheReadInputCost": 0.000001,
@@ -72592,6 +72606,86 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 2
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000016,
+                    "outputCost": 0.0000048
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.0000032,
+                    "outputCost": 0.0000096
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "xai/grok-4.7-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 4e-7,
+                    "inputCost": 0.0000016,
+                    "outputCost": 0.0000048
+                },
+                {
+                    "serviceTier": "batch",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 8e-7,
+                    "inputCost": 0.0000032,
+                    "outputCost": 0.0000096
+                },
+                {
+                    "serviceTier": "standard",
+                    "aboveInputTokens": 200000,
+                    "cacheReadInputCost": 0.000001,
+                    "inputCost": 0.000004,
+                    "outputCost": 0.000012
+                }
+            ],
+            "maxTokens": null,
+            "name": "xai/grok-4.6-latest",
+            "type": "chat",
+            "inputCost": 0.000002,
+            "inputCostAbove200kTokens": 0.000004,
+            "inputCostUnit": "token",
+            "outputCost": 0.000006,
+            "outputCostAbove200kTokens": 0.000012,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 5e-7,
+            "cacheReadInputCostAbove200kTokens": 0.000001,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
         }
     ],
     "zai": [
