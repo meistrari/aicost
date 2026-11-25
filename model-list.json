@@ -21530,6 +21530,20 @@
             "cacheCreationInputCost": 0.00000275,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "us-gov.openai.gpt-5.6-cyber",
+            "type": "chat",
+            "inputCost": 0.000016875,
+            "inputCostUnit": "token",
+            "outputCost": 0.00010125,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 0.0000016875,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00002109375,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 5
         }
     ],
     "anyscale": [
@@ -48571,6 +48585,52 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 9.375e-8,
+                    "inputCost": 0.000001875,
+                    "outputCost": 0.000005625
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/models/qwen4-max",
+            "type": "chat",
+            "inputCost": 0.0000015,
+            "inputCostUnit": "token",
+            "outputCost": 0.0000045,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 7.5e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-9,
+                    "inputCost": 8.75e-8,
+                    "outputCost": 3.5125e-7
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/models/hy4-flash",
+            "type": "chat",
+            "inputCost": 7e-8,
+            "inputCostUnit": "token",
+            "outputCost": 2.81e-7,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-9,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 1
         }
     ],
     "friendliai": [
