@@ -48631,6 +48631,29 @@
             "cacheCreationInputCost": null,
             "cacheCreationInputCostUnit": null,
             "priceTier": 1
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheReadInputCost": 3.75e-8,
+                    "inputCost": 3.75e-7,
+                    "outputCost": 0.00000125
+                }
+            ],
+            "maxTokens": null,
+            "name": "fireworks_ai/accounts/fireworks/models/inkling-2-small",
+            "type": "chat",
+            "inputCost": 3e-7,
+            "inputCostUnit": "token",
+            "outputCost": 0.000001,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 3e-8,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": null,
+            "cacheCreationInputCostUnit": null,
+            "priceTier": 2
         }
     ],
     "friendliai": [
