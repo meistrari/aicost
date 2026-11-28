@@ -1,5 +1,5 @@
-// Last updated: 2026-11-27T18:06:39.363Z
-// Next update: 2026-11-28T00:06:39.363Z
+// Last updated: 2026-11-28T00:15:21.527Z
+// Next update: 2026-11-28T06:15:21.527Z
 
 export type AICostModelProvider = "abliteration" | "bedrock" | "bedrock_converse" | "anyscale" | "azure" | "azure_ai" | "azure_text" | "text-completion-openai" | "cerebras" | "nlp_cloud" | "anthropic" | "cloudflare" | "codestral" | "cohere" | "cohere_chat" | "coralbricks" | "openai" | "deepseek" | "dashscope" | "qwencloud" | "qwen_ai_platform" | "databricks" | "deepinfra" | "volcengine" | "sail" | "fal_ai" | "featherless_ai" | "fireworks_ai-embedding-models" | "fireworks_ai" | "friendliai" | "vertex-ai" | "vertex_ai" | "github_copilot" | "chatgpt" | "gigachat" | "gmi" | "baseten" | "gradient_ai" | "lemonade" | "amazon_nova" | "groq" | "heroku" | "hostinger_router" | "hyperbolic" | "ai21" | "crusoe" | "inception" | "inferenceapis" | "text-completion-inception" | "lambda_ai" | "meta" | "meta_llama" | "minimax" | "mistral" | "moonshot" | "morph" | "nscale" | "nebius" | "oci" | "ollama" | "ovhcloud" | "perplexity" | "publicai" | "replicate" | "resetdata" | "nvidia_nim" | "sagemaker" | "sambanova" | "scx-ai" | "snowflake" | "text-completion-codestral" | "together_ai" | "v0" | "vispark" | "vercel_ai_gateway" | "vertex_ai-anthropic_models" | "vertex_ai-mistral_models" | "vertex_ai-deepseek_models" | "vertex_ai-ai21_models" | "vertex_ai-llama_models" | "vertex_ai-minimax_models" | "vertex_ai-moonshot_models" | "vertex_ai-zai_models" | "vertex_ai-openai_models" | "vertex_ai-qwen_models" | "voyage" | "wandb" | "watsonx" | "xai" | "zai" | "scaleway" | "novita" | "llamagate" | "libertai" | "sarvam" | "bedrock_mantle" | "tensormesh" | "streamlake" | "tencent" | "cognition" | "pinstripes" | "darkbloom" | "zerogpu" | "aihubmix" | "aiand" | "xiaomi_mimo" | "perplexity_orchestrator" | "prism" | "microsoft_365_copilot" | "scaledown" | "openinfer" | "opencode_go" | "refuseless" | "clf_ai_gateway" | "kyma" | "bigmodel" | "empiriolabs" | "wally" | "openrouter" | "jina_ai" | "huawei_maas" | "typesafe" | "gemini-api"
 
@@ -40794,6 +40794,58 @@ const provider21 = [
             "cacheReadInputCost": 1.0003e-7,
             "cacheReadInputCostUnit": "token",
             "cacheCreationInputCost": 0.00000249998,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000337498,
+                    "cacheReadInputCost": 3.3747e-7,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00001687497
+                }
+            ],
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-nano-banana-2-1",
+            "type": "chat",
+            "inputCost": 0.00000187502,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000937503,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8753e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000187502,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-kimi-k3-1-pro-fast",
+            "type": "chat",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9999e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000199997,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
         }

@@ -40770,6 +40770,58 @@
             "cacheCreationInputCost": 0.00000249998,
             "cacheCreationInputCostUnit": "token",
             "priceTier": 3
+        },
+        {
+            "tokenPricing": [
+                {
+                    "serviceTier": "priority",
+                    "aboveInputTokens": 0,
+                    "cacheCreationInputCost": 0.00000337498,
+                    "cacheReadInputCost": 3.3747e-7,
+                    "inputCost": 0.00000337498,
+                    "outputCost": 0.00001687497
+                }
+            ],
+            "maxTokens": null,
+            "name": "databricks/databricks-gemini-nano-banana-2-1",
+            "type": "chat",
+            "inputCost": 0.00000187502,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000937503,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.8753e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000187502,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/system.ai.gemini-4-neon",
+            "type": "chat",
+            "inputCost": 0.000003,
+            "inputCostUnit": "token",
+            "outputCost": 0.000015,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.5e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.000003,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 4
+        },
+        {
+            "maxTokens": null,
+            "name": "databricks/databricks-kimi-k3-1-pro-fast",
+            "type": "chat",
+            "inputCost": 0.00000199997,
+            "inputCostUnit": "token",
+            "outputCost": 0.00000999999,
+            "outputCostUnit": "token",
+            "cacheReadInputCost": 1.9999e-7,
+            "cacheReadInputCostUnit": "token",
+            "cacheCreationInputCost": 0.00000199997,
+            "cacheCreationInputCostUnit": "token",
+            "priceTier": 3
         }
     ],
     "deepinfra": [
